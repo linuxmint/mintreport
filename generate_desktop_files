@@ -1,0 +1,41 @@
+#!/usr/bin/python3
+
+DOMAIN = "mintreport"
+PATH = "/usr/share/linuxmint/locale"
+
+import os
+import gettext
+import sys
+sys.path.append('/usr/lib/linuxmint/common')
+import additionalfiles
+
+os.environ['LANGUAGE'] = "en_US.UTF-8"
+gettext.install(DOMAIN, PATH)
+
+prefix = "[Desktop Entry]\n"
+
+suffix = """Exec=mintreport
+Icon=mintreport
+Terminal=false
+Type=Application
+Encoding=UTF-8
+Categories=Application;System;Settings;
+StartupNotify=false
+NotShowIn=KDE;
+"""
+
+additionalfiles.generate(DOMAIN, PATH, "usr/share/applications/mintreport.desktop", prefix, _("System Reports"), _("Troubleshoot problems"), suffix)
+
+prefix = "[Desktop Entry]\n"
+
+suffix = """Exec=mintreport
+Icon=mintreport
+Terminal=false
+Type=Application
+Encoding=UTF-8
+Categories=Qt;KDE;Settings;
+X-KDE-StartupNotify=false
+OnlyShowIn=KDE;
+"""
+
+additionalfiles.generate(DOMAIN, PATH, "usr/share/applications/kde4/mintreport.desktop", prefix, _("System Reports"), _("Troubleshoot problems"), suffix, genericName=_("Troubleshooting Tool"))

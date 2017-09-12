@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=System Reports
+Comment=Troubleshoot problems
+Exec=mintreport
+Icon=mintreport
+Terminal=false
+Type=Application
+Encoding=UTF-8
+Categories=Application;System;Settings;
+StartupNotify=false
+NotShowIn=KDE;
