@@ -9,6 +9,7 @@ import gi
 gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk, Gdk
 import subprocess
+import shutil
 import time
 
 # i18n
@@ -16,6 +17,7 @@ gettext.install("mintreport", "/usr/share/linuxmint/locale")
 
 CRASH_DIR = "/var/crash"
 UNPACK_DIR = "/tmp/mintreport/crash"
+CRASH_ARCHIVE = "/tmp/mintreport/crash.tar.gz"
 
 class MintReport():
 
@@ -58,6 +60,8 @@ class MintReport():
         if os.path.exists(CRASH_DIR):
             for file in os.listdir(CRASH_DIR):
                 if file.endswith(".crash"):
+                    if ".py" in file or "apport" in file or "mintreport" in file:
+                        continue
                     iter = self.model_crashes.insert_before(None, None)
                     mtime = time.ctime(os.path.getmtime(os.path.join(CRASH_DIR, file)))
                     self.model_crashes.set_value(iter, 0, mtime)
@@ -70,6 +74,21 @@ class MintReport():
         if os.path.exists(file):
             subprocess.call(["apport-unpack", file, UNPACK_DIR])
             os.chdir(UNPACK_DIR)
+
+            # Add info about the Linux Mint release
+            if os.path.exists("/etc/linuxmint/info"):
+                shutil.copyfile("/etc/linuxmint/info", "LinuxMintInfo")
+
+            # Produce an Inxi report
+            if os.path.exists("/usr/bin/inxi"):
+                with open("Inxi", "w") as f:
+                    subprocess.call(['inxi', '-Fxxrzc0'], stdout=f)
+
+            # Produce a list of installed packages
+            with open("Packages", "w") as f:
+                subprocess.call(['dpkg', '-l'], stdout=f)
+
+            # Produce a stack trace
             if os.path.exists("CoreDump") and os.path.exists("ExecutablePath"):
                 with open("ExecutablePath") as f:
                     path = f.readlines()[0]
@@ -77,6 +96,9 @@ class MintReport():
                     with open("StackTrace") as s:
                         text = s.read()
                         self.textview.get_buffer().set_text(text)
+
+            # Archive the crash report - exclude the CoreDump as it can be very big (close to 1GB)
+            subprocess.call(["tar", "cf", CRASH_ARCHIVE, UNPACK_DIR, "--exclude", "CoreDump"])
 
 if __name__ == "__main__":
     os.system("mkdir -p %s" % UNPACK_DIR)
