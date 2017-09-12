@@ -79,6 +79,8 @@
               <object class="GtkTextView" id="textview_crash">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
+                <property name="left_margin">6</property>
+                <property name="right_margin">6</property>
                 <property name="top_margin">6</property>
                 <property name="monospace">True</property>
               </object>
