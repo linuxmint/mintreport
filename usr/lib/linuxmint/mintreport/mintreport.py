@@ -16,8 +16,10 @@ import time
 gettext.install("mintreport", "/usr/share/linuxmint/locale")
 
 CRASH_DIR = "/var/crash"
-UNPACK_DIR = "/tmp/mintreport/crash"
-CRASH_ARCHIVE = "/tmp/mintreport/crash.tar.gz"
+
+TMP_DIR = "/tmp/mintreport"
+UNPACK_DIR = os.path.join(TMP_DIR, "crash")
+CRASH_ARCHIVE = os.path.join(TMP_DIR, "crash.tar.gz")
 
 class MintReport():
 
@@ -52,6 +54,8 @@ class MintReport():
         self.textview = builder.get_object("textview_crash")
 
         self.treeview_crashes.get_selection().connect("changed", self.on_crash_selected)
+
+        builder.get_object("button_browse_crash_report").connect("clicked", self.on_button_browse_crash_report_clicked)
 
         self.window.show_all()
 
@@ -98,7 +102,11 @@ class MintReport():
                         self.textview.get_buffer().set_text(text)
 
             # Archive the crash report - exclude the CoreDump as it can be very big (close to 1GB)
-            subprocess.call(["tar", "cf", CRASH_ARCHIVE, UNPACK_DIR, "--exclude", "CoreDump"])
+            os.chdir(TMP_DIR)
+            subprocess.call(["tar", "caf", CRASH_ARCHIVE, "crash", "--exclude", "CoreDump"])
+
+    def on_button_browse_crash_report_clicked(self, button):
+        os.system("xdg-open %s" % TMP_DIR)
 
 if __name__ == "__main__":
     os.system("mkdir -p %s" % UNPACK_DIR)
