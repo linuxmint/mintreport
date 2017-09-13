@@ -106,7 +106,7 @@
                 <property name="layout_style">start</property>
                 <child>
                   <object class="GtkButton" id="button_browse_crash_report">
-                    <property name="label" translatable="yes">Report Files</property>
+                    <property name="label" translatable="yes">Local Files</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
