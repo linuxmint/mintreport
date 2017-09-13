@@ -57,8 +57,11 @@ class MintReport():
 
         self.bugtracker = "https://bugs.launchpad.net/"
 
-        builder.get_object("button_browse_crash_report").connect("clicked", self.on_button_browse_crash_report_clicked)
-        builder.get_object("button_open_bugtracker").connect("clicked", self.on_button_open_bugtracker_clicked)
+        self.localfiles_button = builder.get_object("button_browse_crash_report")
+        self.bugtracker_button = builder.get_object("button_open_bugtracker")
+
+        self.localfiles_button.connect("clicked", self.on_button_browse_crash_report_clicked)
+        self.bugtracker_button.connect("clicked", self.on_button_open_bugtracker_clicked)
 
         self.window.show_all()
 
@@ -75,6 +78,10 @@ class MintReport():
                     self.model_crashes.set_value(iter, 1, file)
 
     def on_crash_selected(self, selection):
+
+        self.localfiles_button.set_sensitive(True)
+        self.bugtracker_button.set_sensitive(True)
+
         os.system("rm -rf %s/*" % UNPACK_DIR)
         model, iter = selection.get_selected()
         file = os.path.join(CRASH_DIR, model.get_value(iter, 1))
@@ -105,6 +112,14 @@ class MintReport():
             output = subprocess.check_output(["dpkg", "-S", executable_path]).decode("utf-8")
             if ":" in output:
                 output = output.split(":")[0]
+                # Check if -dbg package is missing
+                dbg_name = "%s-dbg" % output
+                if dbg_name in self.cache and not self.cache[dbg_name].is_installed:
+                    self.localfiles_button.set_sensitive(False)
+                    self.bugtracker_button.set_sensitive(False)
+                    self.textview.get_buffer().set_text(_("The debug symbols are missing for %s.\nPlease install %s.") % (output, dbg_name))
+                    return
+
                 if "mate" in output or output in ["caja", "atril", "pluma", "engrampa", "eog"]:
                     self.bugtracker = "https://github.com/mate-desktop/%s/issues" % output
                 elif output in self.cache:

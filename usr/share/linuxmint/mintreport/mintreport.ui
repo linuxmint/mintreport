@@ -108,6 +108,7 @@
                   <object class="GtkButton" id="button_browse_crash_report">
                     <property name="label" translatable="yes">Local Files</property>
                     <property name="visible">True</property>
+                    <property name="sensitive">False</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
                   </object>
@@ -121,6 +122,7 @@
                   <object class="GtkButton" id="button_open_bugtracker">
                     <property name="label" translatable="yes">Bug Tracker</property>
                     <property name="visible">True</property>
+                    <property name="sensitive">False</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
                     <property name="tooltip_text" translatable="yes">Look for existing bugs before reporting new ones.
