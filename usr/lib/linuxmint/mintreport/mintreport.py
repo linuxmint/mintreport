@@ -51,6 +51,9 @@ class MintReport():
         self.window.set_icon_name("mintreport")
         self.window.connect("delete_event", Gtk.main_quit)
 
+        self.stack = builder.get_object("crash_stack")
+        self.spinner = builder.get_object("crash_spinner")
+
         # the treeview
         self.treeview_crashes = builder.get_object("treeview_crashes")
 
@@ -103,6 +106,9 @@ class MintReport():
                         self.model_crashes.set_value(iter, 1, file)
 
     def on_crash_selected(self, selection):
+        self.stack.set_visible_child_name("page0")
+        self.spinner.start()
+        self.spinner.show()
         self.treeview_crashes.set_sensitive(False)
         self.localfiles_button.set_sensitive(False)
         self.bugtracker_button.set_sensitive(False)
@@ -197,6 +203,8 @@ class MintReport():
     def on_unpack_crash_report_finished(self):
         self.treeview_crashes.set_sensitive(True)
         self.localfiles_button.set_sensitive(True)
+        self.spinner.stop()
+        self.stack.set_visible_child_name("page1")
 
     @idle
     def show_stack_trace(self, text, language):
