@@ -1,10 +1,9 @@
 #!/usr/bin/python3
 
+import apt
 import os
-import re
 import sys
 import gettext
-import fileinput
 import gi
 gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk, Gdk
@@ -24,6 +23,7 @@ CRASH_ARCHIVE = os.path.join(TMP_DIR, "crash.tar.gz")
 class MintReport():
 
     def __init__(self):
+        self.cache = apt.Cache()
         # Set the Glade file
         gladefile = "/usr/share/linuxmint/mintreport/mintreport.ui"
         builder = Gtk.Builder()
@@ -55,7 +55,10 @@ class MintReport():
 
         self.treeview_crashes.get_selection().connect("changed", self.on_crash_selected)
 
+        self.bugtracker = "https://bugs.launchpad.net/"
+
         builder.get_object("button_browse_crash_report").connect("clicked", self.on_button_browse_crash_report_clicked)
+        builder.get_object("button_open_bugtracker").connect("clicked", self.on_button_open_bugtracker_clicked)
 
         self.window.show_all()
 
@@ -92,14 +95,32 @@ class MintReport():
             with open("Packages", "w") as f:
                 subprocess.call(['dpkg', '-l'], stdout=f)
 
-            # Produce a stack trace
-            if os.path.exists("CoreDump") and os.path.exists("ExecutablePath"):
+            executable_path = ""
+            if os.path.exists("ExecutablePath"):
                 with open("ExecutablePath") as f:
-                    path = f.readlines()[0]
-                    os.system("LANG=C gdb %s CoreDump --batch > StackTrace 2>&1" % path)
-                    with open("StackTrace") as s:
-                        text = s.read()
-                        self.textview.get_buffer().set_text(text)
+                    executable_path = f.readlines()[0]
+
+            # Identify bug tracker
+            self.bugtracker = "https://bugs.launchpad.net/"
+            output = subprocess.check_output(["dpkg", "-S", executable_path]).decode("utf-8")
+            if ":" in output:
+                output = output.split(":")[0]
+                if "mate" in output or output in ["caja", "atril", "pluma", "engrampa", "eog"]:
+                    self.bugtracker = "https://github.com/mate-desktop/%s/issues" % output
+                elif output in self.cache:
+                    pkg = self.cache[output]
+                    self.bugtracker = "https://bugs.launchpad.net/%s" % output
+                    for origin in pkg.installed.origins:
+                        if origin.origin == "linuxmint":
+                            self.bugtracker = "https://github.com/linuxmint/%s/issues" % output
+                            break
+
+            # Produce a stack trace
+            if os.path.exists("CoreDump"):
+                os.system("LANG=C gdb %s CoreDump --batch > StackTrace 2>&1" % executable_path)
+                with open("StackTrace") as s:
+                    text = s.read()
+                    self.textview.get_buffer().set_text(text)
 
             # Archive the crash report - exclude the CoreDump as it can be very big (close to 1GB)
             os.chdir(TMP_DIR)
@@ -107,6 +128,9 @@ class MintReport():
 
     def on_button_browse_crash_report_clicked(self, button):
         os.system("xdg-open %s" % TMP_DIR)
+
+    def on_button_open_bugtracker_clicked(self, button):
+        os.system("xdg-open %s" % self.bugtracker)
 
 if __name__ == "__main__":
     os.system("mkdir -p %s" % UNPACK_DIR)

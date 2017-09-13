@@ -106,7 +106,7 @@
                 <property name="layout_style">start</property>
                 <child>
                   <object class="GtkButton" id="button_browse_crash_report">
-                    <property name="label" translatable="yes">Open</property>
+                    <property name="label" translatable="yes">Report Files</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
@@ -115,6 +115,22 @@
                     <property name="expand">True</property>
                     <property name="fill">True</property>
                     <property name="position">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="button_open_bugtracker">
+                    <property name="label" translatable="yes">Bug Tracker</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="tooltip_text" translatable="yes">Look for existing bugs before reporting new ones.
+Explain how to reproduce the crash and provide the report files when reporting a new bug.
+If the development team can't reproduce the issue or cannot understand what causes it, it won't be able to fix it and the report is likely to be closed.</property>
+                  </object>
+                  <packing>
+                    <property name="expand">True</property>
+                    <property name="fill">True</property>
+                    <property name="position">1</property>
                   </packing>
                 </child>
               </object>

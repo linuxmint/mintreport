@@ -9,6 +9,7 @@ Package: mintreport
 Architecture: all
 Depends: python3,
          python3-gi,
+         python3-apt,
          mint-common,
          apport,
          ${misc:Depends},
