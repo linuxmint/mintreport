@@ -152,7 +152,8 @@ class MintReport():
             # Check if -dbg package is missing
             dbg_name = "%s-dbg" % output
             if dbg_name in self.cache and not self.cache[dbg_name].is_installed:
-                self.buffer.set_text(_("The debug symbols are missing for %s.\nPlease install %s.") % (output, dbg_name))
+                self.buffer.set_text(_("The debug symbols are missing for %(program)s.\nPlease install %(package)s.") % {'program':output, 'package':dbg_name})
+                self.on_unpack_crash_report_finished()
                 return
 
             if "mate" in output or output in ["caja", "atril", "pluma", "engrampa", "eog"]:
