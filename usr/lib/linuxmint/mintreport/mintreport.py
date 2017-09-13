@@ -70,8 +70,6 @@ class MintReport():
         if os.path.exists(CRASH_DIR):
             for file in os.listdir(CRASH_DIR):
                 if file.endswith(".crash"):
-                    if ".py" in file or "apport" in file or "mintreport" in file:
-                        continue
                     iter = self.model_crashes.insert_before(None, None)
                     mtime = time.ctime(os.path.getmtime(os.path.join(CRASH_DIR, file)))
                     self.model_crashes.set_value(iter, 0, mtime)
@@ -133,8 +131,12 @@ class MintReport():
             # Produce a stack trace
             if os.path.exists("CoreDump"):
                 os.system("LANG=C gdb %s CoreDump --batch > StackTrace 2>&1" % executable_path)
-                with open("StackTrace") as s:
-                    text = s.read()
+                with open("StackTrace") as f:
+                    text = f.read()
+                    self.textview.get_buffer().set_text(text)
+            elif os.path.exists("Traceback"):
+                with open("Traceback") as f:
+                    text = f.read()
                     self.textview.get_buffer().set_text(text)
 
             # Archive the crash report - exclude the CoreDump as it can be very big (close to 1GB)
