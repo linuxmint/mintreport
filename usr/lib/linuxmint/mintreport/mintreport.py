@@ -6,7 +6,8 @@ import sys
 import gettext
 import gi
 gi.require_version("Gtk", "3.0")
-from gi.repository import Gtk, Gdk
+gi.require_version('GtkSource', '3.0')
+from gi.repository import Gtk, Gdk, GtkSource
 import subprocess
 import shutil
 import time
@@ -51,7 +52,13 @@ class MintReport():
 
         self.load_crashes()
 
-        self.textview = builder.get_object("textview_crash")
+        self.buffer = GtkSource.Buffer()
+        self.language_manager = GtkSource.LanguageManager()
+        style_manager = GtkSource.StyleSchemeManager()
+        self.buffer.set_style_scheme(style_manager.get_scheme("oblivion"))
+        self.sourceview = GtkSource.View.new_with_buffer(self.buffer)
+        builder.get_object("scrolledwindow_crash").add(self.sourceview)
+        self.sourceview.show()
 
         self.treeview_crashes.get_selection().connect("changed", self.on_crash_selected)
 
@@ -70,15 +77,17 @@ class MintReport():
         if os.path.exists(CRASH_DIR):
             for file in os.listdir(CRASH_DIR):
                 if file.endswith(".crash"):
-                    iter = self.model_crashes.insert_before(None, None)
-                    mtime = time.ctime(os.path.getmtime(os.path.join(CRASH_DIR, file)))
-                    self.model_crashes.set_value(iter, 0, mtime)
-                    self.model_crashes.set_value(iter, 1, file)
+                    if "apport" not in file:
+                        iter = self.model_crashes.insert_before(None, None)
+                        mtime = time.ctime(os.path.getmtime(os.path.join(CRASH_DIR, file)))
+                        self.model_crashes.set_value(iter, 0, mtime)
+                        self.model_crashes.set_value(iter, 1, file)
 
     def on_crash_selected(self, selection):
 
         self.localfiles_button.set_sensitive(True)
         self.bugtracker_button.set_sensitive(True)
+        self.buffer.set_language(self.language_manager.get_language(""))
 
         os.system("rm -rf %s/*" % UNPACK_DIR)
         model, iter = selection.get_selected()
@@ -115,7 +124,7 @@ class MintReport():
                 if dbg_name in self.cache and not self.cache[dbg_name].is_installed:
                     self.localfiles_button.set_sensitive(False)
                     self.bugtracker_button.set_sensitive(False)
-                    self.textview.get_buffer().set_text(_("The debug symbols are missing for %s.\nPlease install %s.") % (output, dbg_name))
+                    self.buffer.set_text(_("The debug symbols are missing for %s.\nPlease install %s.") % (output, dbg_name))
                     return
 
                 if "mate" in output or output in ["caja", "atril", "pluma", "engrampa", "eog"]:
@@ -130,14 +139,27 @@ class MintReport():
 
             # Produce a stack trace
             if os.path.exists("CoreDump"):
-                os.system("LANG=C gdb %s CoreDump --batch > StackTrace 2>&1" % executable_path)
+                os.system("echo '===================================================================' > StackTrace")
+                os.system("echo ' GDB Log                                                           ' >> StackTrace")
+                os.system("echo '===================================================================' >> StackTrace")
+                os.system("LANG=C gdb %s CoreDump --batch >> StackTrace 2>&1" % executable_path)
+                os.system("echo '\n===================================================================' >> StackTrace")
+                os.system("echo ' GDB Backtrace                                                     ' >> StackTrace")
+                os.system("echo '===================================================================' >> StackTrace")
+                os.system("LANG=C gdb %s CoreDump --batch --ex bt >> StackTrace 2>&1" % executable_path)
+                os.system("echo '\n===================================================================' >> StackTrace")
+                os.system("echo ' GDB Backtrace (all threads)                                       ' >> StackTrace")
+                os.system("echo '===================================================================' >> StackTrace")
+                os.system("LANG=C gdb %s CoreDump --batch --ex 'thread apply all bt full' --ex bt >> StackTrace 2>&1" % executable_path)
                 with open("StackTrace") as f:
                     text = f.read()
-                    self.textview.get_buffer().set_text(text)
+                    self.buffer.set_text(text)
+                    self.buffer.set_language(self.language_manager.get_language("gdb-log"))
             elif os.path.exists("Traceback"):
                 with open("Traceback") as f:
                     text = f.read()
-                    self.textview.get_buffer().set_text(text)
+                    self.buffer.set_text(text)
+                    self.buffer.set_language(self.language_manager.get_language("python"))
 
             # Archive the crash report - exclude the CoreDump as it can be very big (close to 1GB)
             os.chdir(TMP_DIR)
