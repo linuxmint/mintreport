@@ -11,6 +11,9 @@ from gi.repository import Gtk, Gdk, GtkSource
 import subprocess
 import shutil
 import time
+import setproctitle
+
+setproctitle.setproctitle("mintreport")
 
 # i18n
 gettext.install("mintreport", "/usr/share/linuxmint/locale")
