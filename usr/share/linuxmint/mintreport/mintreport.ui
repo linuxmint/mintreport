@@ -34,7 +34,7 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="shadow_type">in</property>
-            <property name="min_content_height">200</property>
+            <property name="min_content_height">100</property>
             <child>
               <object class="GtkTreeView" id="treeview_crashes">
                 <property name="visible">True</property>
@@ -53,9 +53,6 @@
             <property name="fill">True</property>
             <property name="position">1</property>
           </packing>
-        </child>
-        <child>
-          <placeholder/>
         </child>
         <child>
           <object class="GtkStack" id="crash_stack">
@@ -94,6 +91,23 @@
                   </packing>
                 </child>
                 <child>
+                  <object class="GtkLabel">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="label" translatable="yes">When seeking help, check for existing bug reports, pastebin the trace, share crash.tar.gz (from Local Files) and explain how to reproduce the crash.</property>
+                    <property name="wrap">True</property>
+                    <property name="xalign">0</property>
+                    <attributes>
+                      <attribute name="scale" value="0.90000000000000002"/>
+                    </attributes>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">1</property>
+                  </packing>
+                </child>
+                <child>
                   <object class="GtkBox" id="box2">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
@@ -127,6 +141,7 @@
                             <property name="sensitive">False</property>
                             <property name="can_focus">True</property>
                             <property name="receives_default">True</property>
+                            <property name="tooltip_text" translatable="yes">Opens the directory containing crash.tar.gz and its content.</property>
                           </object>
                           <packing>
                             <property name="expand">True</property>
@@ -141,9 +156,7 @@
                             <property name="sensitive">False</property>
                             <property name="can_focus">True</property>
                             <property name="receives_default">True</property>
-                            <property name="tooltip_text" translatable="yes">Look for existing bugs before reporting new ones.
-Explain how to reproduce the crash and provide the report files when reporting a new bug.
-If the development team can't reproduce the issue or cannot understand what causes it, it won't be able to fix it and the report is likely to be closed.</property>
+                            <property name="tooltip_text" translatable="yes">Finds the most appropriate bug tracker.</property>
                           </object>
                           <packing>
                             <property name="expand">True</property>
@@ -157,7 +170,7 @@ If the development team can't reproduce the issue or cannot understand what caus
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
                             <property name="receives_default">True</property>
-                            <property name="tooltip_text" translatable="yes">Click this button to upload the trace to the Internet.</property>
+                            <property name="tooltip_text" translatable="yes">Uploads the trace to the Internet.</property>
                           </object>
                           <packing>
                             <property name="expand">True</property>
@@ -176,7 +189,24 @@ If the development team can't reproduce the issue or cannot understand what caus
                   <packing>
                     <property name="expand">True</property>
                     <property name="fill">True</property>
-                    <property name="position">1</property>
+                    <property name="position">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="label" translatable="yes">Developers need to know where the code fails or how to reproduce the issue. Always provide a trace and reliable instructions to trigger/observe the problem.</property>
+                    <property name="wrap">True</property>
+                    <property name="xalign">0</property>
+                    <attributes>
+                      <attribute name="scale" value="0.90000000000000002"/>
+                    </attributes>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">3</property>
                   </packing>
                 </child>
               </object>
