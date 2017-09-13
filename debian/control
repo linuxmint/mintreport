@@ -13,6 +13,7 @@ Depends: python3,
          gir1.2-gtksource-3.0,
          mint-common,
          apport,
+         xapps-common,
          ${misc:Depends},
 Description: Troubleshooting tool for Linux Mint
  Reports issues and important information about the operating system.

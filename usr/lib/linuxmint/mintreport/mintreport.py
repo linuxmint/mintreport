@@ -66,9 +66,11 @@ class MintReport():
 
         self.localfiles_button = builder.get_object("button_browse_crash_report")
         self.bugtracker_button = builder.get_object("button_open_bugtracker")
+        self.pastebin_button = builder.get_object("button_pastebin")
 
         self.localfiles_button.connect("clicked", self.on_button_browse_crash_report_clicked)
         self.bugtracker_button.connect("clicked", self.on_button_open_bugtracker_clicked)
+        self.pastebin_button.connect("clicked", self.on_button_pastebin_clicked)
 
         self.window.show_all()
 
@@ -86,8 +88,10 @@ class MintReport():
     def on_crash_selected(self, selection):
 
         self.localfiles_button.set_sensitive(True)
-        self.bugtracker_button.set_sensitive(True)
+        self.bugtracker_button.set_sensitive(False)
+        self.pastebin_button.set_sensitive(False)
         self.buffer.set_language(self.language_manager.get_language(""))
+        self.buffer.set_text("")
 
         os.system("rm -rf %s/*" % UNPACK_DIR)
         model, iter = selection.get_selected()
@@ -122,8 +126,6 @@ class MintReport():
                 # Check if -dbg package is missing
                 dbg_name = "%s-dbg" % output
                 if dbg_name in self.cache and not self.cache[dbg_name].is_installed:
-                    self.localfiles_button.set_sensitive(False)
-                    self.bugtracker_button.set_sensitive(False)
                     self.buffer.set_text(_("The debug symbols are missing for %s.\nPlease install %s.") % (output, dbg_name))
                     return
 
@@ -138,6 +140,7 @@ class MintReport():
                             break
 
             # Produce a stack trace
+            self.trace = None
             if os.path.exists("CoreDump"):
                 os.system("echo '===================================================================' > StackTrace")
                 os.system("echo ' GDB Log                                                           ' >> StackTrace")
@@ -151,15 +154,18 @@ class MintReport():
                 os.system("echo ' GDB Backtrace (all threads)                                       ' >> StackTrace")
                 os.system("echo '===================================================================' >> StackTrace")
                 os.system("LANG=C gdb %s CoreDump --batch --ex 'thread apply all bt full' --ex bt >> StackTrace 2>&1" % executable_path)
-                with open("StackTrace") as f:
-                    text = f.read()
-                    self.buffer.set_text(text)
-                    self.buffer.set_language(self.language_manager.get_language("gdb-log"))
+                self.trace = "StackTrace"
+                self.buffer.set_language(self.language_manager.get_language("gdb-log"))
             elif os.path.exists("Traceback"):
-                with open("Traceback") as f:
+                self.trace = "Traceback"
+                self.buffer.set_language(self.language_manager.get_language("python"))
+
+            if self.trace is not None:
+                with open(self.trace) as f:
                     text = f.read()
                     self.buffer.set_text(text)
-                    self.buffer.set_language(self.language_manager.get_language("python"))
+                self.bugtracker_button.set_sensitive(True)
+                self.pastebin_button.set_sensitive(True)
 
             # Archive the crash report - exclude the CoreDump as it can be very big (close to 1GB)
             os.chdir(TMP_DIR)
@@ -170,6 +176,14 @@ class MintReport():
 
     def on_button_open_bugtracker_clicked(self, button):
         os.system("xdg-open %s" % self.bugtracker)
+
+    def on_button_pastebin_clicked(self, button):
+        if self.trace is not None:
+            pastebin = subprocess.Popen(['/usr/bin/pastebin', os.path.join(UNPACK_DIR, self.trace)], stdout=subprocess.PIPE)
+            output = pastebin.communicate()[0]
+            output = output.split()[0] # if we have more than one URL, only use the first one
+            pastebin.wait()
+            subprocess.call(['xdg-open', output])
 
 if __name__ == "__main__":
     os.system("mkdir -p %s" % UNPACK_DIR)
