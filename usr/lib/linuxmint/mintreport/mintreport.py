@@ -7,12 +7,12 @@ import gettext
 import gi
 gi.require_version("Gtk", "3.0")
 gi.require_version('GtkSource', '3.0')
-from gi.repository import Gtk, Gdk, GtkSource
+from gi.repository import Gtk, Gdk, GtkSource, GObject
 import subprocess
 import shutil
 import time
 import setproctitle
-
+import threading
 setproctitle.setproctitle("mintreport")
 
 # i18n
@@ -23,6 +23,20 @@ CRASH_DIR = "/var/crash"
 TMP_DIR = "/tmp/mintreport"
 UNPACK_DIR = os.path.join(TMP_DIR, "crash")
 CRASH_ARCHIVE = os.path.join(TMP_DIR, "crash.tar.gz")
+
+
+def async(func):
+    def wrapper(*args, **kwargs):
+        thread = threading.Thread(target=func, args=args, kwargs=kwargs)
+        thread.daemon = True
+        thread.start()
+        return thread
+    return wrapper
+
+def idle(func):
+    def wrapper(*args):
+        GObject.idle_add(func, *args)
+    return wrapper
 
 class MintReport():
 
@@ -89,90 +103,108 @@ class MintReport():
                         self.model_crashes.set_value(iter, 1, file)
 
     def on_crash_selected(self, selection):
-
-        self.localfiles_button.set_sensitive(True)
+        self.treeview_crashes.set_sensitive(False)
+        self.localfiles_button.set_sensitive(False)
         self.bugtracker_button.set_sensitive(False)
         self.pastebin_button.set_sensitive(False)
         self.buffer.set_language(self.language_manager.get_language(""))
         self.buffer.set_text("")
-
         os.system("rm -rf %s/*" % UNPACK_DIR)
         model, iter = selection.get_selected()
         file = os.path.join(CRASH_DIR, model.get_value(iter, 1))
         if os.path.exists(file):
-            subprocess.call(["apport-unpack", file, UNPACK_DIR])
-            os.chdir(UNPACK_DIR)
+            self.unpack_crash_report(file)
 
-            # Add info about the Linux Mint release
-            if os.path.exists("/etc/linuxmint/info"):
-                shutil.copyfile("/etc/linuxmint/info", "LinuxMintInfo")
+    @async
+    def unpack_crash_report(self, file):
+        subprocess.call(["apport-unpack", file, UNPACK_DIR])
+        os.chdir(UNPACK_DIR)
 
-            # Produce an Inxi report
-            if os.path.exists("/usr/bin/inxi"):
-                with open("Inxi", "w") as f:
-                    subprocess.call(['inxi', '-Fxxrzc0'], stdout=f)
+        # Add info about the Linux Mint release
+        if os.path.exists("/etc/linuxmint/info"):
+            shutil.copyfile("/etc/linuxmint/info", "LinuxMintInfo")
 
-            # Produce a list of installed packages
-            with open("Packages", "w") as f:
-                subprocess.call(['dpkg', '-l'], stdout=f)
+        # Produce an Inxi report
+        if os.path.exists("/usr/bin/inxi"):
+            with open("Inxi", "w") as f:
+                subprocess.call(['inxi', '-Fxxrzc0'], stdout=f)
 
-            executable_path = ""
-            if os.path.exists("ExecutablePath"):
-                with open("ExecutablePath") as f:
-                    executable_path = f.readlines()[0]
+        # Produce a list of installed packages
+        with open("Packages", "w") as f:
+            subprocess.call(['dpkg', '-l'], stdout=f)
 
-            # Identify bug tracker
-            self.bugtracker = "https://bugs.launchpad.net/"
-            output = subprocess.check_output(["dpkg", "-S", executable_path]).decode("utf-8")
-            if ":" in output:
-                output = output.split(":")[0]
-                # Check if -dbg package is missing
-                dbg_name = "%s-dbg" % output
-                if dbg_name in self.cache and not self.cache[dbg_name].is_installed:
-                    self.buffer.set_text(_("The debug symbols are missing for %s.\nPlease install %s.") % (output, dbg_name))
-                    return
+        executable_path = ""
+        if os.path.exists("ExecutablePath"):
+            with open("ExecutablePath") as f:
+                executable_path = f.readlines()[0]
 
-                if "mate" in output or output in ["caja", "atril", "pluma", "engrampa", "eog"]:
-                    self.bugtracker = "https://github.com/mate-desktop/%s/issues" % output
-                elif output in self.cache:
-                    pkg = self.cache[output]
-                    self.bugtracker = "https://bugs.launchpad.net/%s" % output
-                    for origin in pkg.installed.origins:
-                        if origin.origin == "linuxmint":
-                            self.bugtracker = "https://github.com/linuxmint/%s/issues" % output
-                            break
+        # Identify bug tracker
+        self.bugtracker = "https://bugs.launchpad.net/"
+        output = subprocess.check_output(["dpkg", "-S", executable_path]).decode("utf-8")
+        if ":" in output:
+            output = output.split(":")[0]
+            # Check if -dbg package is missing
+            dbg_name = "%s-dbg" % output
+            if dbg_name in self.cache and not self.cache[dbg_name].is_installed:
+                self.buffer.set_text(_("The debug symbols are missing for %s.\nPlease install %s.") % (output, dbg_name))
+                return
 
-            # Produce a stack trace
+            if "mate" in output or output in ["caja", "atril", "pluma", "engrampa", "eog"]:
+                self.bugtracker = "https://github.com/mate-desktop/%s/issues" % output
+            elif output in self.cache:
+                pkg = self.cache[output]
+                self.bugtracker = "https://bugs.launchpad.net/%s" % output
+                for origin in pkg.installed.origins:
+                    if origin.origin == "linuxmint":
+                        self.bugtracker = "https://github.com/linuxmint/%s/issues" % output
+                        break
+
+        # Produce a stack trace
+        if os.path.exists("CoreDump"):
+            os.system("echo '===================================================================' > StackTrace")
+            os.system("echo ' GDB Log                                                           ' >> StackTrace")
+            os.system("echo '===================================================================' >> StackTrace")
+            os.system("LANG=C gdb %s CoreDump --batch >> StackTrace 2>&1" % executable_path)
+            os.system("echo '\n===================================================================' >> StackTrace")
+            os.system("echo ' GDB Backtrace                                                     ' >> StackTrace")
+            os.system("echo '===================================================================' >> StackTrace")
+            os.system("LANG=C gdb %s CoreDump --batch --ex bt >> StackTrace 2>&1" % executable_path)
+            os.system("echo '\n===================================================================' >> StackTrace")
+            os.system("echo ' GDB Backtrace (all threads)                                       ' >> StackTrace")
+            os.system("echo '===================================================================' >> StackTrace")
+            os.system("LANG=C gdb %s CoreDump --batch --ex 'thread apply all bt full' --ex bt >> StackTrace 2>&1" % executable_path)
+            self.trace = "StackTrace"
+            language = "gdb-log"
+        elif os.path.exists("Traceback"):
+            self.trace = "Traceback"
+            language = "python"
+        else:
             self.trace = None
-            if os.path.exists("CoreDump"):
-                os.system("echo '===================================================================' > StackTrace")
-                os.system("echo ' GDB Log                                                           ' >> StackTrace")
-                os.system("echo '===================================================================' >> StackTrace")
-                os.system("LANG=C gdb %s CoreDump --batch >> StackTrace 2>&1" % executable_path)
-                os.system("echo '\n===================================================================' >> StackTrace")
-                os.system("echo ' GDB Backtrace                                                     ' >> StackTrace")
-                os.system("echo '===================================================================' >> StackTrace")
-                os.system("LANG=C gdb %s CoreDump --batch --ex bt >> StackTrace 2>&1" % executable_path)
-                os.system("echo '\n===================================================================' >> StackTrace")
-                os.system("echo ' GDB Backtrace (all threads)                                       ' >> StackTrace")
-                os.system("echo '===================================================================' >> StackTrace")
-                os.system("LANG=C gdb %s CoreDump --batch --ex 'thread apply all bt full' --ex bt >> StackTrace 2>&1" % executable_path)
-                self.trace = "StackTrace"
-                self.buffer.set_language(self.language_manager.get_language("gdb-log"))
-            elif os.path.exists("Traceback"):
-                self.trace = "Traceback"
-                self.buffer.set_language(self.language_manager.get_language("python"))
+            language = None
 
-            if self.trace is not None:
-                with open(self.trace) as f:
-                    text = f.read()
-                    self.buffer.set_text(text)
-                self.bugtracker_button.set_sensitive(True)
-                self.pastebin_button.set_sensitive(True)
+        if self.trace is not None:
+            with open(self.trace) as f:
+                text = f.read()
+                self.show_stack_trace(text, language)
 
-            # Archive the crash report - exclude the CoreDump as it can be very big (close to 1GB)
-            os.chdir(TMP_DIR)
-            subprocess.call(["tar", "caf", CRASH_ARCHIVE, "crash", "--exclude", "CoreDump"])
+        # Archive the crash report - exclude the CoreDump as it can be very big (close to 1GB)
+        os.chdir(TMP_DIR)
+        subprocess.call(["tar", "caf", CRASH_ARCHIVE, "crash", "--exclude", "CoreDump"])
+
+        self.on_unpack_crash_report_finished()
+
+    @idle
+    def on_unpack_crash_report_finished(self):
+        self.treeview_crashes.set_sensitive(True)
+        self.localfiles_button.set_sensitive(True)
+
+    @idle
+    def show_stack_trace(self, text, language):
+        if language is not None:
+            self.buffer.set_language(self.language_manager.get_language(language))
+        self.buffer.set_text(text)
+        self.bugtracker_button.set_sensitive(True)
+        self.pastebin_button.set_sensitive(True)
 
     def on_button_browse_crash_report_clicked(self, button):
         os.system("xdg-open %s" % TMP_DIR)
