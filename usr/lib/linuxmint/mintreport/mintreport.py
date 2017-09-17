@@ -24,6 +24,7 @@ TMP_DIR = "/tmp/mintreport"
 UNPACK_DIR = os.path.join(TMP_DIR, "crash")
 CRASH_ARCHIVE = os.path.join(TMP_DIR, "crash.tar.gz")
 
+COL_TIMESTAMP, COL_DATE, COL_FILENAME = range(3)
 
 def async(func):
     def wrapper(*args, **kwargs):
@@ -57,17 +58,17 @@ class MintReport():
         # the treeview
         self.treeview_crashes = builder.get_object("treeview_crashes")
 
-        column = Gtk.TreeViewColumn("", Gtk.CellRendererText(), text=0)
-        column.set_sort_column_id(0)
+        column = Gtk.TreeViewColumn("", Gtk.CellRendererText(), text=COL_DATE)
+        column.set_sort_column_id(COL_TIMESTAMP)
         column.set_resizable(True)
         self.treeview_crashes.append_column(column)
-        column = Gtk.TreeViewColumn("", Gtk.CellRendererText(), text=1)
-        column.set_sort_column_id(1)
+        column = Gtk.TreeViewColumn("", Gtk.CellRendererText(), text=COL_FILENAME)
+        column.set_sort_column_id(COL_FILENAME)
         column.set_resizable(True)
         self.treeview_crashes.append_column(column)
         self.treeview_crashes.show()
-        self.model_crashes = Gtk.TreeStore(str, str)
-        self.model_crashes.set_sort_column_id(0, Gtk.SortType.DESCENDING)
+        self.model_crashes = Gtk.TreeStore(float, str, str) # timestamp, readable date, filename
+        self.model_crashes.set_sort_column_id(COL_TIMESTAMP, Gtk.SortType.DESCENDING)
         self.treeview_crashes.set_model(self.model_crashes)
 
         self.load_crashes()
@@ -101,9 +102,11 @@ class MintReport():
                 if file.endswith(".crash"):
                     if "apport" not in file:
                         iter = self.model_crashes.insert_before(None, None)
-                        mtime = time.ctime(os.path.getmtime(os.path.join(CRASH_DIR, file)))
-                        self.model_crashes.set_value(iter, 0, mtime)
-                        self.model_crashes.set_value(iter, 1, file)
+                        mtime = os.path.getmtime(os.path.join(CRASH_DIR, file))
+                        readable_date = time.ctime(mtime)
+                        self.model_crashes.set_value(iter, COL_TIMESTAMP, mtime)
+                        self.model_crashes.set_value(iter, COL_DATE, readable_date)
+                        self.model_crashes.set_value(iter, COL_FILENAME, file)
 
     def on_crash_selected(self, selection):
         self.stack.set_visible_child_name("page0")
@@ -117,7 +120,7 @@ class MintReport():
         self.buffer.set_text("")
         os.system("rm -rf %s/*" % UNPACK_DIR)
         model, iter = selection.get_selected()
-        file = os.path.join(CRASH_DIR, model.get_value(iter, 1))
+        file = os.path.join(CRASH_DIR, model.get_value(iter, COL_FILENAME))
         if os.path.exists(file):
             self.unpack_crash_report(file)
 
