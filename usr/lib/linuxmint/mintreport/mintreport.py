@@ -88,14 +88,17 @@ class MintReport():
         self.localfiles_button = builder.get_object("button_browse_crash_report")
         self.bugtracker_button = builder.get_object("button_open_bugtracker")
         self.pastebin_button = builder.get_object("button_pastebin")
+        self.delete_button = builder.get_object("button_delete")
 
         self.localfiles_button.connect("clicked", self.on_button_browse_crash_report_clicked)
         self.bugtracker_button.connect("clicked", self.on_button_open_bugtracker_clicked)
         self.pastebin_button.connect("clicked", self.on_button_pastebin_clicked)
+        self.delete_button.connect("clicked", self.on_button_delete_clicked)
 
         self.window.show_all()
 
     def load_crashes(self):
+        self.loading = True
         self.model_crashes.clear()
         if os.path.exists(CRASH_DIR):
             for file in os.listdir(CRASH_DIR):
@@ -107,8 +110,11 @@ class MintReport():
                         self.model_crashes.set_value(iter, COL_TIMESTAMP, mtime)
                         self.model_crashes.set_value(iter, COL_DATE, readable_date)
                         self.model_crashes.set_value(iter, COL_FILENAME, file)
+        self.loading = False
 
     def on_crash_selected(self, selection):
+        if self.loading:
+            return
         self.stack.set_visible_child_name("page0")
         self.spinner.start()
         self.spinner.show()
@@ -116,13 +122,15 @@ class MintReport():
         self.localfiles_button.set_sensitive(False)
         self.bugtracker_button.set_sensitive(False)
         self.pastebin_button.set_sensitive(False)
+        self.delete_button.set_sensitive(False)
         self.buffer.set_language(self.language_manager.get_language(""))
         self.buffer.set_text("")
         os.system("rm -rf %s/*" % UNPACK_DIR)
         model, iter = selection.get_selected()
-        file = os.path.join(CRASH_DIR, model.get_value(iter, COL_FILENAME))
-        if os.path.exists(file):
-            self.unpack_crash_report(file)
+        if iter is not None:
+            file = os.path.join(CRASH_DIR, model.get_value(iter, COL_FILENAME))
+            if os.path.exists(file):
+                self.unpack_crash_report(file)
 
     @async
     def unpack_crash_report(self, file):
@@ -221,6 +229,7 @@ class MintReport():
     def on_unpack_crash_report_finished(self):
         self.treeview_crashes.set_sensitive(True)
         self.localfiles_button.set_sensitive(True)
+        self.delete_button.set_sensitive(True)
         self.spinner.stop()
         self.stack.set_visible_child_name("page1")
 
@@ -231,6 +240,23 @@ class MintReport():
         self.buffer.set_text(text)
         self.bugtracker_button.set_sensitive(True)
         self.pastebin_button.set_sensitive(True)
+
+    def on_button_delete_clicked(self, button):
+        model, iter = self.treeview_crashes.get_selection().get_selected()
+        if iter is not None:
+            file = os.path.join(CRASH_DIR, model.get_value(iter, COL_FILENAME))
+            if os.path.exists(file):
+                if os.access(CRASH_DIR, os.W_OK) and os.access(file, os.W_OK):
+                    os.remove(file)
+                    self.buffer.set_text("")
+                    self.delete_button.set_sensitive(False)
+                    self.load_crashes()
+                else:
+                    # Show an error message
+                    dialog = Gtk.MessageDialog(self.window, 0, Gtk.MessageType.ERROR, Gtk.ButtonsType.CANCEL, _("The report could not be deleted."))
+                    dialog.format_secondary_text(_("Check the permissions for /var/crash and %s.") % file)
+                    dialog.run()
+                    dialog.destroy()
 
     def on_button_browse_crash_report_clicked(self, button):
         os.system("xdg-open %s" % TMP_DIR)
