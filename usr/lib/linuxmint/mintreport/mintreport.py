@@ -197,7 +197,10 @@ class MintReport():
         if self.trace is not None:
             with open(self.trace) as f:
                 text = f.read()
-                self.show_stack_trace(text, language)
+                if "is not at the expected address (wrong library or version mismatch" in text:
+                    self.buffer.set_text(_("The headers or binaries installed on your system do not match the code which was executed during the crash.\nThey probably got upgraded since.\nA stack trace is available in 'Local Files' but its content is probably inaccurate."))
+                else:
+                    self.show_stack_trace(text, language)
 
         # Archive the crash report - exclude the CoreDump as it can be very big (close to 1GB)
         os.chdir(TMP_DIR)
