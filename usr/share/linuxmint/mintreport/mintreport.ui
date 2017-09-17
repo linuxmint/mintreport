@@ -140,7 +140,7 @@
                             <property name="sensitive">False</property>
                             <property name="can_focus">True</property>
                             <property name="receives_default">True</property>
-                            <property name="tooltip_text" translatable="yes">Opens the directory containing crash.tar.gz and its content.</property>
+                            <property name="tooltip_text" translatable="yes">Open the directory containing crash.tar.gz and its content.</property>
                           </object>
                           <packing>
                             <property name="expand">True</property>
@@ -155,7 +155,7 @@
                             <property name="sensitive">False</property>
                             <property name="can_focus">True</property>
                             <property name="receives_default">True</property>
-                            <property name="tooltip_text" translatable="yes">Finds the most appropriate bug tracker.</property>
+                            <property name="tooltip_text" translatable="yes">Find the most appropriate bug tracker.</property>
                           </object>
                           <packing>
                             <property name="expand">True</property>
@@ -169,7 +169,7 @@
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
                             <property name="receives_default">True</property>
-                            <property name="tooltip_text" translatable="yes">Uploads the trace to the Internet.</property>
+                            <property name="tooltip_text" translatable="yes">Upload the trace to the Internet.</property>
                           </object>
                           <packing>
                             <property name="expand">True</property>
@@ -183,7 +183,7 @@
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
                             <property name="receives_default">True</property>
-                            <property name="tooltip_text" translatable="yes">Deletes this crash report.</property>
+                            <property name="tooltip_text" translatable="yes">Delete this crash report.</property>
                           </object>
                           <packing>
                             <property name="expand">True</property>
