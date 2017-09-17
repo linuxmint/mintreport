@@ -123,6 +123,12 @@ class MintReport():
 
     @async
     def unpack_crash_report(self, file):
+
+        if not os.access(file , os.R_OK):
+            self.buffer.set_text(_("The file %s could not be read.\nPlease fix its permissions.") % file)
+            self.on_unpack_crash_report_finished()
+            return
+
         subprocess.call(["apport-unpack", file, UNPACK_DIR])
         os.chdir(UNPACK_DIR)
 
