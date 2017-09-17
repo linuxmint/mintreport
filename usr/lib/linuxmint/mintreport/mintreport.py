@@ -145,26 +145,31 @@ class MintReport():
                 executable_path = f.readlines()[0]
 
         # Identify bug tracker
-        self.bugtracker = "https://bugs.launchpad.net/"
-        output = subprocess.check_output(["dpkg", "-S", executable_path]).decode("utf-8")
-        if ":" in output:
-            output = output.split(":")[0]
-            # Check if -dbg package is missing
-            dbg_name = "%s-dbg" % output
-            if dbg_name in self.cache and not self.cache[dbg_name].is_installed:
-                self.buffer.set_text(_("The debug symbols are missing for %(program)s.\nPlease install %(package)s.") % {'program':output, 'package':dbg_name})
-                self.on_unpack_crash_report_finished()
-                return
+        try:
+            self.bugtracker = "https://bugs.launchpad.net/"
+            output = subprocess.check_output(["dpkg", "-S", executable_path]).decode("utf-8")
+            if ":" in output:
+                output = output.split(":")[0]
+                # Check if -dbg package is missing
+                dbg_name = "%s-dbg" % output
+                if dbg_name in self.cache and not self.cache[dbg_name].is_installed:
+                    self.buffer.set_text(_("The debug symbols are missing for %(program)s.\nPlease install %(package)s.") % {'program':output, 'package':dbg_name})
+                    self.on_unpack_crash_report_finished()
+                    return
 
-            if "mate" in output or output in ["caja", "atril", "pluma", "engrampa", "eog"]:
-                self.bugtracker = "https://github.com/mate-desktop/%s/issues" % output
-            elif output in self.cache:
-                pkg = self.cache[output]
-                self.bugtracker = "https://bugs.launchpad.net/%s" % output
-                for origin in pkg.installed.origins:
-                    if origin.origin == "linuxmint":
-                        self.bugtracker = "https://github.com/linuxmint/%s/issues" % output
-                        break
+                if "mate" in output or output in ["caja", "atril", "pluma", "engrampa", "eog"]:
+                    self.bugtracker = "https://github.com/mate-desktop/%s/issues" % output
+                elif output in self.cache:
+                    pkg = self.cache[output]
+                    self.bugtracker = "https://bugs.launchpad.net/%s" % output
+                    for origin in pkg.installed.origins:
+                        if origin.origin == "linuxmint":
+                            self.bugtracker = "https://github.com/linuxmint/%s/issues" % output
+                            break
+        except:
+            self.buffer.set_text(_("The package providing %s could not be found.\nIf you want to generate a stack trace for this crash report, please reinstall it.") % executable_path)
+            self.on_unpack_crash_report_finished()
+            return
 
         # Produce a stack trace
         if os.path.exists("CoreDump"):
