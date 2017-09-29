@@ -7,7 +7,8 @@ import gettext
 import gi
 gi.require_version("Gtk", "3.0")
 gi.require_version('GtkSource', '3.0')
-from gi.repository import Gtk, Gdk, GtkSource, GObject
+gi.require_version('WebKit', '3.0')
+from gi.repository import Gtk, Gdk, GdkPixbuf, GtkSource, GObject, WebKit
 import subprocess
 import shutil
 import time
@@ -15,8 +16,15 @@ import setproctitle
 import threading
 setproctitle.setproctitle("mintreport")
 
+import imp
+import json
+
+import environment
+
 # i18n
 gettext.install("mintreport", "/usr/share/linuxmint/locale")
+
+INFO_DIR = "/usr/share/linuxmint/mintreport/reports"
 
 CRASH_DIR = "/var/crash"
 
@@ -24,8 +32,11 @@ TMP_DIR = "/tmp/mintreport"
 UNPACK_DIR = os.path.join(TMP_DIR, "crash")
 CRASH_ARCHIVE = os.path.join(TMP_DIR, "crash.tar.gz")
 
-COL_TIMESTAMP, COL_DATE, COL_FILENAME = range(3)
+COL_CRASH_TIMESTAMP, COL_CRASH_DATE, COL_CRASH_FILENAME = range(3)
 
+COL_INFO_ICON, COL_INFO_NAME, COL_INFO_REPORT = range(3)
+
+# Used as a decorator to run things in the background
 def async(func):
     def wrapper(*args, **kwargs):
         thread = threading.Thread(target=func, args=args, kwargs=kwargs)
@@ -34,68 +45,176 @@ def async(func):
         return thread
     return wrapper
 
+# Used as a decorator to run things in the main loop, from another thread
 def idle(func):
     def wrapper(*args):
         GObject.idle_add(func, *args)
     return wrapper
 
+class InfoReport():
+    def __init__(self, path, environment):
+        sys.path.insert(0, path)
+        import MintReportInfo
+        imp.reload(MintReportInfo)
+        self.report = MintReportInfo.Report(environment)
+        sys.path.remove(path)
+        self.path = path
+        self.environment = environment
+
+    def load_metadata(self):
+        with open(os.path.join(self.path, 'metadata.json')) as metadata_file:
+            self.metadata = json.load(metadata_file)
+        self.name = self.metadata["name"]
+        for prop in ("name[%s]" % self.environment.language, "name[%s]" % self.environment.locale):
+            try:
+                self.name = self.metadata[prop]
+            except:
+                pass
+        self.icon = self.environment.info_icon
+        if self.metadata["type"] == "warning":
+            self.icon = self.environment.warning_icon
+        elif self.metadata["type"] == "error":
+            self.icon = self.environment.error_icon
+        elif self.metadata["type"] == "question":
+            self.icon = self.environment.question_icon
+
 class MintReport():
 
     def __init__(self):
+
+        self.environment = environment.Environment()
+
         self.cache = apt.Cache()
         # Set the Glade file
         gladefile = "/usr/share/linuxmint/mintreport/mintreport.ui"
-        builder = Gtk.Builder()
-        builder.add_from_file(gladefile)
-        self.window = builder.get_object("main_window")
+        self.builder = Gtk.Builder()
+        self.builder.add_from_file(gladefile)
+        self.window = self.builder.get_object("main_window")
         self.window.set_title(_("System Reports"))
         self.window.set_icon_name("mintreport")
         self.window.connect("delete_event", Gtk.main_quit)
 
-        self.stack = builder.get_object("crash_stack")
-        self.spinner = builder.get_object("crash_spinner")
+        self.stack = self.builder.get_object("crash_stack")
+        self.spinner = self.builder.get_object("crash_spinner")
 
-        # the treeview
-        self.treeview_crashes = builder.get_object("treeview_crashes")
+        # the crashes treeview
+        self.treeview_crashes = self.builder.get_object("treeview_crashes")
 
-        column = Gtk.TreeViewColumn("", Gtk.CellRendererText(), text=COL_DATE)
-        column.set_sort_column_id(COL_TIMESTAMP)
+        column = Gtk.TreeViewColumn("", Gtk.CellRendererText(), text=COL_CRASH_DATE)
+        column.set_sort_column_id(COL_CRASH_TIMESTAMP)
         column.set_resizable(True)
         self.treeview_crashes.append_column(column)
-        column = Gtk.TreeViewColumn("", Gtk.CellRendererText(), text=COL_FILENAME)
-        column.set_sort_column_id(COL_FILENAME)
+        column = Gtk.TreeViewColumn("", Gtk.CellRendererText(), text=COL_CRASH_FILENAME)
+        column.set_sort_column_id(COL_CRASH_FILENAME)
         column.set_resizable(True)
         self.treeview_crashes.append_column(column)
         self.treeview_crashes.show()
         self.model_crashes = Gtk.TreeStore(float, str, str) # timestamp, readable date, filename
-        self.model_crashes.set_sort_column_id(COL_TIMESTAMP, Gtk.SortType.DESCENDING)
+        self.model_crashes.set_sort_column_id(COL_CRASH_TIMESTAMP, Gtk.SortType.DESCENDING)
         self.treeview_crashes.set_model(self.model_crashes)
-
-        self.load_crashes()
 
         self.buffer = GtkSource.Buffer()
         self.language_manager = GtkSource.LanguageManager()
         style_manager = GtkSource.StyleSchemeManager()
         self.buffer.set_style_scheme(style_manager.get_scheme("oblivion"))
         self.sourceview = GtkSource.View.new_with_buffer(self.buffer)
-        builder.get_object("scrolledwindow_crash").add(self.sourceview)
+        self.builder.get_object("scrolledwindow_crash").add(self.sourceview)
         self.sourceview.show()
 
         self.treeview_crashes.get_selection().connect("changed", self.on_crash_selected)
 
         self.bugtracker = "https://bugs.launchpad.net/"
 
-        self.localfiles_button = builder.get_object("button_browse_crash_report")
-        self.bugtracker_button = builder.get_object("button_open_bugtracker")
-        self.pastebin_button = builder.get_object("button_pastebin")
-        self.delete_button = builder.get_object("button_delete")
+        self.localfiles_button = self.builder.get_object("button_browse_crash_report")
+        self.bugtracker_button = self.builder.get_object("button_open_bugtracker")
+        self.pastebin_button = self.builder.get_object("button_pastebin")
+        self.delete_button = self.builder.get_object("button_delete")
 
         self.localfiles_button.connect("clicked", self.on_button_browse_crash_report_clicked)
         self.bugtracker_button.connect("clicked", self.on_button_open_bugtracker_clicked)
         self.pastebin_button.connect("clicked", self.on_button_pastebin_clicked)
         self.delete_button.connect("clicked", self.on_button_delete_clicked)
 
+        # the info treeview
+        self.treeview_info = self.builder.get_object("treeview_info")
+        renderer = Gtk.CellRendererPixbuf()
+        column = Gtk.TreeViewColumn("", renderer)
+        column.add_attribute(renderer, "pixbuf", COL_INFO_ICON)
+        self.treeview_info.append_column(column)
+
+        column = Gtk.TreeViewColumn("", Gtk.CellRendererText(), text=COL_INFO_NAME)
+        column.set_sort_column_id(COL_INFO_NAME)
+        column.set_resizable(True)
+        self.treeview_info.append_column(column)
+        self.treeview_info.show()
+        self.model_info = Gtk.TreeStore(GdkPixbuf.Pixbuf, str, object) # icon, name, report
+        self.model_info.set_sort_column_id(COL_INFO_NAME, Gtk.SortType.ASCENDING)
+        self.treeview_info.set_model(self.model_info)
+
+        self.infoview = None # Don't load webkit view just yet
+
+        self.treeview_info.get_selection().connect("changed", self.on_info_selected)
+
+        self.load_crashes()
+
+        self.load_info()
+
         self.window.show_all()
+
+    @idle
+    def add_report_to_treeview(self, report):
+        iter = self.model_info.insert_before(None, None)
+        self.model_info.set_value(iter, COL_INFO_ICON, report.icon)
+        self.model_info.set_value(iter, COL_INFO_NAME, report.name)
+        self.model_info.set_value(iter, COL_INFO_REPORT, report)
+
+    @async
+    def load_info(self):
+        self.info_reports = []
+
+        for dir_name in os.listdir(INFO_DIR):
+            path = os.path.join(INFO_DIR, dir_name)
+            try:
+                report = InfoReport(path, self.environment)
+                self.info_reports.append(report)
+            except Exception as e:
+                print("Failed to load report %s: \n%s\n" % (dir_name, e))
+
+        for report in self.info_reports:
+            if report.report.is_pertinent():
+                report.load_metadata()
+                self.add_report_to_treeview(report)
+
+    def on_info_selected(self, selection):
+        if self.infoview is None:
+            self.infoview = WebKit.WebView()
+            # kill right click menus in webkit views
+            self.infoview.connect("button-press-event", lambda w, e: e.button == 3)
+            self.infoview.connect("navigation-requested", self.on_link_clicked)
+            self.builder.get_object("scrolledwindow_info").add(self.infoview)
+            self.infoview.show()
+
+        model, iter = selection.get_selected()
+        if iter is not None:
+            report = model.get_value(iter, COL_INFO_REPORT)
+            content = os.path.join(report.path, "content.html")
+            if os.path.exists(content):
+                self.infoview.open("file://%s" % content)
+            else:
+                print("Could not find %s" % content)
+
+    def on_link_clicked(self, view, frame, request, data=None):
+        uri = request.get_uri()
+        scheme, path = uri.split('://', 1)
+        if scheme == 'file':
+            return False
+        elif scheme == 'launch':
+            command = path.split("%20")
+            subprocess.Popen(command)
+            return True
+        else:
+            subprocess.Popen(["xdg-open", uri])
+            return True
 
     def load_crashes(self):
         self.loading = True
@@ -107,9 +226,9 @@ class MintReport():
                         iter = self.model_crashes.insert_before(None, None)
                         mtime = os.path.getmtime(os.path.join(CRASH_DIR, file))
                         readable_date = time.ctime(mtime)
-                        self.model_crashes.set_value(iter, COL_TIMESTAMP, mtime)
-                        self.model_crashes.set_value(iter, COL_DATE, readable_date)
-                        self.model_crashes.set_value(iter, COL_FILENAME, file)
+                        self.model_crashes.set_value(iter, COL_CRASH_TIMESTAMP, mtime)
+                        self.model_crashes.set_value(iter, COL_CRASH_DATE, readable_date)
+                        self.model_crashes.set_value(iter, COL_CRASH_FILENAME, file)
         self.loading = False
 
     def on_crash_selected(self, selection):
@@ -128,7 +247,7 @@ class MintReport():
         os.system("rm -rf %s/*" % UNPACK_DIR)
         model, iter = selection.get_selected()
         if iter is not None:
-            file = os.path.join(CRASH_DIR, model.get_value(iter, COL_FILENAME))
+            file = os.path.join(CRASH_DIR, model.get_value(iter, COL_CRASH_FILENAME))
             if os.path.exists(file):
                 self.unpack_crash_report(file)
 
@@ -244,7 +363,7 @@ class MintReport():
     def on_button_delete_clicked(self, button):
         model, iter = self.treeview_crashes.get_selection().get_selected()
         if iter is not None:
-            file = os.path.join(CRASH_DIR, model.get_value(iter, COL_FILENAME))
+            file = os.path.join(CRASH_DIR, model.get_value(iter, COL_CRASH_FILENAME))
             if os.path.exists(file):
                 if os.access(CRASH_DIR, os.W_OK) and os.access(file, os.W_OK):
                     os.remove(file)

@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="../../style.css">
+
+<h1>Problem</h1>
+
+<p>When both thumbnail previews and the nemo-media-columns extension are enable in Nemo, the file browser can get into a state where it loads directory contents indefinitely.</p>
+
+<h1>Workaround</h1>
+
+<p>When this happens, the workaround is to kill nemo with the command:</p>
+
+	<code>killall nemo</code>
+
+<h1>Solution</h1>
+
+<p>Until this issue is fixed, we recommend to remove nemo-media-columns or to disable it in Nemo's plugins preferences.</p>
+
+	<code>apt remove nemo-media-columns</code>

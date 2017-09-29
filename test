@@ -1,4 +1,5 @@
 #!/bin/bash
 sudo rm -rf /usr/lib/linuxmint/mintreport
+sudo rm -rf /usr/share/linuxmint/mintreport
 sudo cp -R usr /
 mintreport
