@@ -8,7 +8,7 @@ import gi
 gi.require_version("Gtk", "3.0")
 gi.require_version('GtkSource', '3.0')
 gi.require_version('WebKit', '3.0')
-from gi.repository import Gtk, Gdk, GdkPixbuf, GtkSource, GObject, WebKit
+from gi.repository import Gtk, Gdk, GdkPixbuf, GtkSource, GObject, WebKit, Gio
 import subprocess
 import shutil
 import time
@@ -64,6 +64,7 @@ class InfoReport():
     def load_metadata(self):
         with open(os.path.join(self.path, 'metadata.json')) as metadata_file:
             self.metadata = json.load(metadata_file)
+        self.uuid = self.metadata["uuid"]
         self.name = self.metadata["name"]
         for prop in ("name[%s]" % self.environment.language, "name[%s]" % self.environment.locale):
             try:
@@ -83,6 +84,7 @@ class MintReport():
     def __init__(self):
 
         self.environment = environment.Environment()
+        self.settings = Gio.Settings("com.linuxmint.report")
 
         self.cache = apt.Cache()
         # Set the Glade file
@@ -155,6 +157,9 @@ class MintReport():
 
         self.treeview_info.get_selection().connect("changed", self.on_info_selected)
 
+        self.delete_info_button = self.builder.get_object("button_delete_info")
+        self.delete_info_button.connect("clicked", self.on_button_delete_info_clicked)
+
         self.load_crashes()
 
         self.load_info()
@@ -168,9 +173,16 @@ class MintReport():
         self.model_info.set_value(iter, COL_INFO_NAME, report.name)
         self.model_info.set_value(iter, COL_INFO_REPORT, report)
 
+    @idle
+    def clear_info_treeview(self):
+        self.model_info.clear()
+        self.infoview.load_html_string('', '')
+
     @async
     def load_info(self):
+        self.loading = True
         self.info_reports = []
+        self.clear_info_treeview()
 
         for dir_name in os.listdir(INFO_DIR):
             path = os.path.join(INFO_DIR, dir_name)
@@ -181,11 +193,14 @@ class MintReport():
                 print("Failed to load report %s: \n%s\n" % (dir_name, e))
 
         for report in self.info_reports:
-            if report.report.is_pertinent():
-                report.load_metadata()
+            report.load_metadata()
+            if report.uuid not in self.settings.get_strv("deleted-reports") and report.report.is_pertinent():
                 self.add_report_to_treeview(report)
+        self.loading = False
 
     def on_info_selected(self, selection):
+        if self.loading:
+            return
         if self.infoview is None:
             self.infoview = WebKit.WebView()
             # kill right click menus in webkit views
@@ -202,6 +217,22 @@ class MintReport():
                 self.infoview.open("file://%s" % content)
             else:
                 print("Could not find %s" % content)
+
+    def on_button_delete_info_clicked(self, button):
+        model, iter = self.treeview_info.get_selection().get_selected()
+        if iter is not None:
+            report = model.get_value(iter, COL_INFO_REPORT)
+            dialog = Gtk.MessageDialog(self.window, 0, Gtk.MessageType.QUESTION, Gtk.ButtonsType.OK_CANCEL, _("Are you sure you want to delete this report?"))
+            dialog.format_secondary_text(_("The report will be permanently deleted and will no longer be visible."))
+            response = dialog.run()
+            dialog.destroy()
+
+            if response == Gtk.ResponseType.OK:
+                deleted_reports = self.settings.get_strv("deleted-reports")
+                if report.uuid not in deleted_reports:
+                    deleted_reports.append(report.uuid)
+                    self.settings.set_strv("deleted-reports", deleted_reports)
+                    self.load_info()
 
     def on_link_clicked(self, view, frame, request, data=None):
         uri = request.get_uri()

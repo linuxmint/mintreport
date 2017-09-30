@@ -387,13 +387,12 @@
                                 <property name="spacing">6</property>
                                 <property name="layout_style">start</property>
                                 <child>
-                                  <object class="GtkButton" id="button_archive">
-                                    <property name="label" translatable="yes">Archive</property>
+                                  <object class="GtkButton" id="button_delete_info">
+                                    <property name="label" translatable="yes">Delete</property>
                                     <property name="visible">True</property>
-                                    <property name="sensitive">False</property>
                                     <property name="can_focus">True</property>
                                     <property name="receives_default">True</property>
-                                    <property name="tooltip_text" translatable="yes">Archive this report</property>
+                                    <property name="tooltip_text" translatable="yes">Delete this report</property>
                                   </object>
                                   <packing>
                                     <property name="expand">True</property>
