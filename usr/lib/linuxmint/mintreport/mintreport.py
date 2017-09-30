@@ -203,6 +203,8 @@ class MintReport():
             return
         if self.infoview is None:
             self.infoview = WebKit.WebView()
+            self.infoview.set_zoom_level(0.9)
+            self.infoview.set_full_content_zoom(True)
             # kill right click menus in webkit views
             self.infoview.connect("button-press-event", lambda w, e: e.button == 3)
             self.infoview.connect("navigation-requested", self.on_link_clicked)
