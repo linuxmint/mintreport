@@ -11,6 +11,7 @@ In Mint 18.x, you can get Glade 3.20 via Flatpak.
 ```
 sudo add-apt-repository ppa:alexlarsson/flatpak
 sudo apt update && sudo apt install flatpak
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak install flathub org.gnome.Glade
 flatpak run org.gnome.Glade
 ```
