@@ -1,0 +1,24 @@
+<div class="columns">
+    <div class="column">
+      <div class="tabs" data-bulma="tabs">
+        <ul>
+          <li class="is-active"><a data-tab="#tab1">Problem</a></li>
+          <li><a data-tab="#tab2">Workaround</a></li>
+          <li><a data-tab="#tab3">Solution</a></li>
+        </ul>
+      </div>
+    </div>
+</div>
+<div class="columns">
+  <div class="colum">
+    <section class="section" id="tab1">
+      $INCLUDE:PROBLEM
+    </section>
+    <section class="section" id="tab2">
+      $INCLUDE:WORKAROUND
+    </section>
+    <section class="section" id="tab3">
+      $INCLUDE:SOLUTION
+    </section>
+  </div>
+</div>
