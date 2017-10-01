@@ -172,11 +172,13 @@ class MintReport():
         self.model_info.set_value(iter, COL_INFO_ICON, report.icon)
         self.model_info.set_value(iter, COL_INFO_NAME, report.name)
         self.model_info.set_value(iter, COL_INFO_REPORT, report)
+        self.builder.get_object("main_stack").child_set_property(self.builder.get_object("box_info_reports"), 'needs-attention', True)
 
     @idle
     def clear_info_treeview(self):
         self.model_info.clear()
         self.infoview.load_html_string('', '')
+        self.builder.get_object("main_stack").child_set_property(self.builder.get_object("box_info_reports"), 'needs-attention', False)
 
     @async
     def load_info(self):
