@@ -11,6 +11,7 @@ class Environment():
     def __init__(self):
         # Current desktop
         self.desktop = xapp.os.get_current_desktop()
+        self.is_lmde = os.path.exists("/usr/share/doc/debian-system-adjustments/copyright")
 
         # Current locale
         self.locale = ""

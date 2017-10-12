@@ -24,13 +24,15 @@ import environment
 # i18n
 gettext.install("mintreport", "/usr/share/linuxmint/locale")
 
-INFO_DIR = "/usr/share/linuxmint/mintreport/reports"
+DATA_DIR = "/usr/share/linuxmint/mintreport"
+INFO_DIR = os.path.join(DATA_DIR, "reports")
+TMP_DIR = "/tmp/mintreport"
+TMP_INFO_DIR = os.path.join(TMP_DIR, "reports")
 
 CRASH_DIR = "/var/crash"
-
-TMP_DIR = "/tmp/mintreport"
 UNPACK_DIR = os.path.join(TMP_DIR, "crash")
 CRASH_ARCHIVE = os.path.join(TMP_DIR, "crash.tar.gz")
+
 
 COL_CRASH_TIMESTAMP, COL_CRASH_DATE, COL_CRASH_FILENAME = range(3)
 
@@ -85,6 +87,10 @@ class MintReport():
 
         self.environment = environment.Environment()
         self.settings = Gio.Settings("com.linuxmint.report")
+
+        os.system("mkdir -p %s" % TMP_DIR)
+        os.system("rm -rf %s/*" % TMP_DIR)
+        os.system("cp -R %s/* %s/" % (DATA_DIR, TMP_DIR))
 
         self.cache = apt.Cache()
         # Set the Glade file
@@ -177,7 +183,8 @@ class MintReport():
     @idle
     def clear_info_treeview(self):
         self.model_info.clear()
-        self.infoview.load_html_string('', '')
+        if self.infoview is not None:
+            self.infoview.load_html_string('', '')
         self.builder.get_object("main_stack").child_set_property(self.builder.get_object("box_info_reports"), 'needs-attention', False)
 
     @async
@@ -217,8 +224,18 @@ class MintReport():
         if iter is not None:
             report = model.get_value(iter, COL_INFO_REPORT)
             content = os.path.join(report.path, "content.html")
+            new_path = report.path.replace(INFO_DIR, TMP_INFO_DIR)
+            new_content = os.path.join(new_path, "content.generated")
             if os.path.exists(content):
-                self.infoview.open("file://%s" % content)
+                if "parse_content" in dir(report.report):
+                    with open(content) as c:
+                        html = c.read()
+                        new_html = report.report.parse_content(html)
+                        with open(new_content, "w") as new_c:
+                            new_c.write(new_html)
+                            self.infoview.open("file://%s" % new_content)
+                else:
+                    self.infoview.open("file://%s" % content)
             else:
                 print("Could not find %s" % content)
 
@@ -244,8 +261,17 @@ class MintReport():
         if scheme == 'file':
             return False
         elif scheme == 'launch':
-            command = path.split("%20")
-            subprocess.Popen(command)
+            try:
+                command = path.split("%20")
+                subprocess.Popen(command)
+            except Exception as e:
+                print(e)
+            return True
+        elif scheme == 'install':
+            try:
+                subprocess.Popen(["apturl", "apt://%s?refresh=yes" % path])
+            except Exception as e:
+                print(e)
             return True
         else:
             subprocess.Popen(["xdg-open", uri])
