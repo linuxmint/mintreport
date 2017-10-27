@@ -1,3 +1,40 @@
+mintreport (1.0.1) sylvia; urgency=medium
+
+  * l10n: Add POT file and include UI file in makepot
+  * test: Don't run mintreport with admin privs
+  * Set some margins in the stack trace textview widget
+  * Add more info into bug report and create an archive that people can upload
+  * Add the ability to open the crash report
+  * Add a button to open the bugtracker
+  * Rename files button to "Local Files"
+  * Warn the user when debug symbols are missing.
+  * Add support for Python traceback
+  * Add syntax highlighting and full threaded bt support
+  * Add a pastebin button
+  * Set process name via setproctitle
+  * Multithread application
+  * Add a spinner a stack and an animation.
+  * Create README.md
+  * Improve button tooltips and add labels to explain what's expected when seeking help.
+  * l10n: Update POT file
+  * Show a message when the executable is missing
+  * Show a message in case of lib/code mismatch.
+  * Show a message when a .crash file only has root permissions.
+  * Fix ordering by date
+  * Add the ability to delete crash reports
+  * l10n: Update POT file
+  * Add info reports
+  * Update README.md
+  * Add the ability to delete info reports
+  * Info reports: Render HTML with font awesome and bulma css
+  * Set the info stack to require attention when info reports are present
+  * Use templates to generate info reports
+  * Remove report about nemo-media-columns (fixed by mtwebster ;))
+  * l10n: Update POT file
+  * Add install-media-codecs report
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 27 Oct 2017 12:56:44 +0100
+
 mintreport (1.0.0) sylvia; urgency=low
 
   * Initial release
