@@ -1,3 +1,9 @@
+mintreport (1.0.2) sylvia; urgency=medium
+
+  * l10n: Generate desktop files
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 04 Nov 2017 11:45:51 +0000
+
 mintreport (1.0.1) sylvia; urgency=medium
 
   * l10n: Add POT file and include UI file in makepot
