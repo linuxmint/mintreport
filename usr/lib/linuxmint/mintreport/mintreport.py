@@ -15,14 +15,19 @@ import time
 import setproctitle
 import threading
 setproctitle.setproctitle("mintreport")
-
+import locale
 import imp
 import json
 
 import environment
 
 # i18n
-gettext.install("mintreport", "/usr/share/linuxmint/locale")
+APP = 'mintreport'
+LOCALE_DIR = "/usr/share/linuxmint/locale"
+locale.bindtextdomain(APP, LOCALE_DIR)
+gettext.bindtextdomain(APP, LOCALE_DIR)
+gettext.textdomain(APP)
+_ = gettext.gettext
 
 DATA_DIR = "/usr/share/linuxmint/mintreport"
 INFO_DIR = os.path.join(DATA_DIR, "reports")
@@ -96,6 +101,7 @@ class MintReport():
         # Set the Glade file
         gladefile = "/usr/share/linuxmint/mintreport/mintreport.ui"
         self.builder = Gtk.Builder()
+        self.builder.set_translation_domain(APP)
         self.builder.add_from_file(gladefile)
         self.window = self.builder.get_object("main_window")
         self.window.set_title(_("System Reports"))
