@@ -239,7 +239,7 @@ class MintReport():
                         new_html = report.report.parse_content(html)
                         with open(new_content, "w") as new_c:
                             new_c.write(new_html)
-                            self.infoview.open("file://%s" % new_content)
+                        self.infoview.open("file://%s" % new_content)
                 else:
                     self.infoview.open("file://%s" % content)
             else:
