@@ -1,3 +1,13 @@
+mintreport (1.0.4) sylvia; urgency=medium
+
+  [ Eduardo Orochena ]
+  * replaced os module with the subprocess one
+
+  [ Clement Lefebvre ]
+  * Info reports: Close newly written file before reading it.
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 22 Nov 2017 15:56:13 +0000
+
 mintreport (1.0.3) sylvia; urgency=medium
 
   * l10n: Fix locale not set in UI
