@@ -360,7 +360,7 @@ class MintReport():
                     self.on_unpack_crash_report_finished()
                     return
 
-                if "mate" in output or output in ["caja", "atril", "pluma", "engrampa", "eog"]:
+                if "mate" in output or output in ["caja", "atril", "pluma", "engrampa", "eom"]:
                     self.bugtracker = "https://github.com/mate-desktop/%s/issues" % output
                 elif output in self.cache:
                     pkg = self.cache[output]
