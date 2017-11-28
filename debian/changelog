@@ -1,3 +1,9 @@
+mintreport (1.0.5) sylvia; urgency=medium
+
+  * Add missing dependency on gir1.2-webkit-3.0
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 28 Nov 2017 09:57:28 +0000
+
 mintreport (1.0.4) sylvia; urgency=medium
 
   [ Eduardo Orochena ]
