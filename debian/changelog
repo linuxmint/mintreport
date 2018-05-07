@@ -1,3 +1,14 @@
+mintreport (1.0.6) tara; urgency=medium
+
+  [ monsta ]
+  * count eom as MATE package, not eog (#5)
+
+  [ Clement Lefebvre ]
+  * Timeshift: Use pkexec
+  * l10n: Update files
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 07 May 2018 12:15:48 +0100
+
 mintreport (1.0.5) sylvia; urgency=medium
 
   * Add missing dependency on gir1.2-webkit-3.0
