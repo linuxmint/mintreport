@@ -8,7 +8,8 @@ import gi
 gi.require_version("Gtk", "3.0")
 gi.require_version('GtkSource', '3.0')
 gi.require_version('WebKit', '3.0')
-from gi.repository import Gtk, Gdk, GdkPixbuf, GtkSource, GObject, WebKit, Gio
+gi.require_version('XApp', '1.0')
+from gi.repository import Gtk, Gdk, GdkPixbuf, GtkSource, GObject, WebKit, Gio, XApp
 import subprocess
 import shutil
 import time

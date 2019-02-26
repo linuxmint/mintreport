@@ -2,9 +2,9 @@
 <!-- Generated with glade 3.22.1 -->
 <interface>
   <requires lib="gtk+" version="3.12"/>
+  <requires lib="xapp" version="0.0"/>
   <object class="GtkWindow" id="main_window">
     <property name="can_focus">False</property>
-    <property name="border_width">12</property>
     <property name="default_width">800</property>
     <property name="default_height">480</property>
     <child>
@@ -16,10 +16,9 @@
         <property name="can_focus">False</property>
         <property name="spacing">12</property>
         <child>
-          <object class="GtkStackSwitcher">
+          <object class="XAppStackSidebar">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="orientation">vertical</property>
             <property name="stack">main_stack</property>
           </object>
           <packing>
@@ -29,21 +28,12 @@
           </packing>
         </child>
         <child>
-          <object class="GtkSeparator">
-            <property name="visible">True</property>
-            <property name="can_focus">False</property>
-            <property name="orientation">vertical</property>
-          </object>
-          <packing>
-            <property name="expand">False</property>
-            <property name="fill">True</property>
-            <property name="position">1</property>
-          </packing>
-        </child>
-        <child>
           <object class="GtkStack" id="main_stack">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
+            <property name="margin_right">12</property>
+            <property name="margin_top">12</property>
+            <property name="margin_bottom">12</property>
             <child>
               <object class="GtkBox" id="box_sysinfo">
                 <property name="visible">True</property>
@@ -51,25 +41,10 @@
                 <property name="orientation">vertical</property>
                 <property name="spacing">12</property>
                 <child>
-                  <object class="GtkLabel">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="label" translatable="yes">System information</property>
-                    <property name="xalign">0</property>
-                    <attributes>
-                      <attribute name="weight" value="bold"/>
-                    </attributes>
-                  </object>
-                  <packing>
-                    <property name="expand">False</property>
-                    <property name="fill">True</property>
-                    <property name="position">0</property>
-                  </packing>
-                </child>
-                <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
+                    <property name="orientation">vertical</property>
                     <property name="spacing">6</property>
                     <child>
                       <object class="GtkScrolledWindow" id="scrolledwindow_sysinfo">
@@ -99,9 +74,8 @@
                       <object class="GtkButtonBox" id="buttonbox3">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="orientation">vertical</property>
                         <property name="spacing">6</property>
-                        <property name="layout_style">start</property>
+                        <property name="layout_style">end</property>
                         <child>
                           <object class="GtkButton" id="button_sysinfo_copy">
                             <property name="label" translatable="yes">Copy</property>
