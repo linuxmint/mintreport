@@ -82,7 +82,7 @@
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
                             <property name="receives_default">True</property>
-                            <property name="tooltip_text" translatable="yes">Copy to clipboard</property>
+                            <property name="tooltip_text" translatable="yes">Copy to clipboard (code tags are added to make it easy to paste the system information into the forums)</property>
                           </object>
                           <packing>
                             <property name="expand">True</property>
