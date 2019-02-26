@@ -190,7 +190,7 @@ class MintReport():
             sysinfo = subprocess.check_output("LANG=C inxi -Fxxrzc0", encoding='UTF-8', shell=True)
             self.add_sysinfo_to_textview(sysinfo)
         except Exception as e:
-            subprocess.Popen(['notify-send', '-i', 'applications-system-symbolic', _("An error occured while gathering the system information."), str(e)])
+            subprocess.Popen(['notify-send', '-i', 'dialog-error-symbolic', _("An error occured while gathering the system information."), str(e)])
             print (e)
 
     @idle
@@ -204,7 +204,7 @@ class MintReport():
         buff = self.builder.get_object("textview_sysinfo").get_buffer()
         text = buff.get_text(buff.get_start_iter(), buff.get_end_iter(), False)
         clipboard.set_text(f"[code]\n{text}[/code]\n", -1)
-        subprocess.Popen(['notify-send', '-i', 'applications-system-symbolic', _("System information copied"), _("Your system information was copied into your clipboard.")])
+        subprocess.Popen(['notify-send', '-i', 'dialog-information-symbolic', _("System information copied"), _("Your system information was copied into your clipboard so you can paste it on the forums.")])
 
     def upload_sysinfo(self, button):
         try:
@@ -213,9 +213,9 @@ class MintReport():
             clipboard = Gtk.Clipboard.get(Gdk.SELECTION_CLIPBOARD)
             buff = self.builder.get_object("textview_sysinfo").get_buffer()
             clipboard.set_text(link, -1)
-            subprocess.Popen(['notify-send', '-i', 'applications-system-symbolic', _("System information uploaded"), _("Your system information was uploaded to %s. This link was copied into your clipboard.") % link])
+            subprocess.Popen(['notify-send', '-i', 'dialog-information-symbolic', _("System information uploaded"), _("Your system information was uploaded to %s. This link was placed in your clipboard so you can paste it on IRC.") % link])
         except Exception as e:
-            subprocess.Popen(['notify-send', '-i', 'applications-system-symbolic', _("An error occured while uploading the system information"), str(e)])
+            subprocess.Popen(['notify-send', '-i', 'dialog-error-symbolic', _("An error occured while uploading the system information"), _("Copy and paste the system information manually into a pastebin site like https://pastebin.org and share the link on IRC."), str(e)])
 
     @idle
     def add_report_to_treeview(self, report):
