@@ -186,7 +186,7 @@ class MintReport():
 
     @async
     def load_sysinfo(self):
-        sysinfo = subprocess.check_output("LANG=C inxi -Fxxrzc0", encoding='UTF-8', shell=True)
+        sysinfo = subprocess.check_output("LANG=C inxi -Fxxrzc0 -y 500", encoding='UTF-8', shell=True)
         self.add_sysinfo_to_textview(sysinfo)
 
     @idle
