@@ -111,6 +111,11 @@ class MintReport():
         self.stack = self.builder.get_object("crash_stack")
         self.spinner = self.builder.get_object("crash_spinner")
 
+        # Fill in the sysinfo pane
+        self.load_sysinfo()
+        self.builder.get_object("button_sysinfo_copy").connect("clicked", self.copy_sysinfo)
+        self.builder.get_object("button_sysinfo_upload").connect("clicked", self.upload_sysinfo)
+
         # the crashes treeview
         self.treeview_crashes = self.builder.get_object("treeview_crashes")
 
@@ -177,6 +182,27 @@ class MintReport():
         self.load_info()
 
         self.window.show_all()
+
+    @async
+    def load_sysinfo(self):
+        sysinfo = subprocess.check_output("LANG=C inxi -Fxxrzc0", encoding='UTF-8', shell=True)
+        self.add_sysinfo_to_textview(sysinfo)
+
+    @idle
+    def add_sysinfo_to_textview(self, text):
+        buff = Gtk.TextBuffer()
+        buff.set_text(text)
+        self.builder.get_object("textview_sysinfo").set_buffer(buff)
+
+    def copy_sysinfo(self, button):
+        clipboard = Gtk.Clipboard.get(Gdk.SELECTION_CLIPBOARD)
+        buff = self.builder.get_object("textview_sysinfo").get_buffer()
+        text = buff.get_text(buff.get_start_iter(), buff.get_end_iter(), False)
+        clipboard.set_text(text, -1)
+        subprocess.Popen(['notify-send', '-i', 'applications-system-symbolic', "System information copied", "Your system information is now copied into your clipboard"])
+
+    def upload_sysinfo(self, button):
+        subprocess.call("upload-system-info")
 
     @idle
     def add_report_to_treeview(self, report):
