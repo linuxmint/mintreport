@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-07 12:15+0100\n"
+"POT-Creation-Date: 2019-02-26 12:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,34 +17,34 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: usr/lib/linuxmint/mintreport/mintreport.py:107 generate_desktop_files:27
+#: usr/lib/linuxmint/mintreport/mintreport.py:108 generate_desktop_files:27
 #: generate_desktop_files:41
 msgid "System Reports"
 msgstr ""
 
-#: usr/lib/linuxmint/mintreport/mintreport.py:252
+#: usr/lib/linuxmint/mintreport/mintreport.py:279
 msgid "Are you sure you want to delete this report?"
 msgstr ""
 
-#: usr/lib/linuxmint/mintreport/mintreport.py:253
+#: usr/lib/linuxmint/mintreport/mintreport.py:280
 msgid "The report will be permanently deleted and will no longer be visible."
 msgstr ""
 
-#: usr/lib/linuxmint/mintreport/mintreport.py:325
+#: usr/lib/linuxmint/mintreport/mintreport.py:352
 #, python-format
 msgid ""
 "The file %s could not be read.\n"
 "Please fix its permissions."
 msgstr ""
 
-#: usr/lib/linuxmint/mintreport/mintreport.py:359
+#: usr/lib/linuxmint/mintreport/mintreport.py:386
 #, python-format
 msgid ""
 "The debug symbols are missing for %(program)s.\n"
 "Please install %(package)s."
 msgstr ""
 
-#: usr/lib/linuxmint/mintreport/mintreport.py:373
+#: usr/lib/linuxmint/mintreport/mintreport.py:400
 #, python-format
 msgid ""
 "The package providing %s could not be found.\n"
@@ -52,7 +52,7 @@ msgid ""
 "reinstall it."
 msgstr ""
 
-#: usr/lib/linuxmint/mintreport/mintreport.py:404
+#: usr/lib/linuxmint/mintreport/mintreport.py:431
 msgid ""
 "The headers or binaries installed on your system do not match the code which "
 "was executed during the crash.\n"
@@ -61,11 +61,11 @@ msgid ""
 "inaccurate."
 msgstr ""
 
-#: usr/lib/linuxmint/mintreport/mintreport.py:442
+#: usr/lib/linuxmint/mintreport/mintreport.py:469
 msgid "The report could not be deleted."
 msgstr ""
 
-#: usr/lib/linuxmint/mintreport/mintreport.py:443
+#: usr/lib/linuxmint/mintreport/mintreport.py:470
 #, python-format
 msgid "Check the permissions for /var/crash and %s."
 msgstr ""
@@ -79,78 +79,98 @@ msgid "Troubleshooting Tool"
 msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:1
-msgid "Crash reports:"
+msgid "Copy"
 msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:2
-msgid "Stack trace:"
+msgid "Copy to clipboard"
 msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:3
+msgid "Upload"
+msgstr ""
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:4
+msgid "Upload to a pastebin service (no personal information included)"
+msgstr ""
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:5
+msgid "System information"
+msgstr ""
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:6
+msgid "Crash reports:"
+msgstr ""
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:7
+msgid "Stack trace:"
+msgstr ""
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:8
 msgid ""
 "When seeking help, check for existing bug reports, pastebin the trace, share "
 "crash.tar.gz (from Local Files) and explain how to reproduce the crash."
 msgstr ""
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:4
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:9
 msgid "Local Files"
 msgstr ""
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:5
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:10
 msgid "Open the directory containing crash.tar.gz and its content."
 msgstr ""
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:6
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:11
 msgid "Bug Tracker"
 msgstr ""
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:7
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:12
 msgid "Find the most appropriate bug tracker."
 msgstr ""
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:8
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:13
 msgid "Pastebin"
 msgstr ""
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:9
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:14
 msgid "Upload the trace to the Internet."
 msgstr ""
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:10
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:15
 msgid "Delete"
 msgstr ""
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:11
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:16
 msgid "Delete this crash report."
 msgstr ""
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:12
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:17
 msgid ""
 "Developers need to know where the code fails or how to reproduce the issue. "
 "Always provide a trace and reliable instructions to trigger/observe the "
 "problem."
 msgstr ""
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:13
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:18
 msgid "Crash reports"
 msgstr ""
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:14
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:19
 msgid "Information reports:"
 msgstr ""
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:15
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:20
 msgid "Report:"
 msgstr ""
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:16
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:21
 msgid "Delete this report"
 msgstr ""
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:17
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:22
 msgid "Note: Information reports can only be shown in English."
 msgstr ""
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:18
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:23
 msgid "Information reports"
 msgstr ""
