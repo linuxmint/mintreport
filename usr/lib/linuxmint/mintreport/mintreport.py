@@ -398,6 +398,11 @@ class MintReport():
         with open("Packages", "w") as f:
             subprocess.call(['dpkg', '-l'], stdout=f)
 
+        # Produce an Inxi report
+        if os.path.exists("/usr/bin/inxi"):
+            with open("Inxi", "w") as f:
+                subprocess.run(['inxi -Fxxrzc0'], shell=True, stdout=f)
+
         executable_path = report.executable
 
         # Identify bug tracker
