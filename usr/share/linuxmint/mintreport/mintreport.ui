@@ -126,138 +126,166 @@
               </packing>
             </child>
             <child>
-              <object class="GtkBox" id="box_crash_reports">
+              <object class="GtkStack" id="crash_internal_stack">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
-                <property name="orientation">vertical</property>
-                <property name="spacing">12</property>
                 <child>
-                  <object class="GtkLabel" id="label1">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="label" translatable="yes">Crash reports:</property>
-                    <property name="xalign">0</property>
-                    <attributes>
-                      <attribute name="weight" value="bold"/>
-                    </attributes>
-                  </object>
-                  <packing>
-                    <property name="expand">False</property>
-                    <property name="fill">True</property>
-                    <property name="position">0</property>
-                  </packing>
+                  <placeholder/>
                 </child>
                 <child>
-                  <object class="GtkScrolledWindow" id="scrolledwindow_crash_list">
+                  <object class="GtkBox">
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="shadow_type">in</property>
-                    <property name="min_content_height">100</property>
+                    <property name="can_focus">False</property>
+                    <property name="halign">center</property>
+                    <property name="valign">center</property>
+                    <property name="orientation">vertical</property>
+                    <property name="spacing">6</property>
                     <child>
-                      <object class="GtkTreeView" id="treeview_crashes">
+                      <object class="GtkLabel">
                         <property name="visible">True</property>
-                        <property name="can_focus">True</property>
-                        <property name="headers_visible">False</property>
-                        <property name="rules_hint">True</property>
-                        <child internal-child="selection">
-                          <object class="GtkTreeSelection"/>
-                        </child>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">Crash reports are not available</property>
+                        <property name="wrap">True</property>
+                        <attributes>
+                          <attribute name="weight" value="bold"/>
+                        </attributes>
                       </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">To enable crash reporting, install systemd-coredump and reboot your computer.</property>
+                        <property name="wrap">True</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
                     </child>
                   </object>
                   <packing>
-                    <property name="expand">False</property>
-                    <property name="fill">True</property>
+                    <property name="name">page_error</property>
                     <property name="position">1</property>
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkStack" id="crash_stack">
+                  <object class="GtkBox" id="box_crash_reports">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="transition_type">over-up-down</property>
+                    <property name="orientation">vertical</property>
+                    <property name="spacing">12</property>
                     <child>
-                      <object class="GtkSpinner" id="crash_spinner">
+                      <object class="GtkLabel" id="label1">
+                        <property name="visible">True</property>
                         <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">Crash reports:</property>
+                        <property name="xalign">0</property>
+                        <attributes>
+                          <attribute name="weight" value="bold"/>
+                        </attributes>
                       </object>
                       <packing>
-                        <property name="name">page0</property>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkBox" id="box3">
+                      <object class="GtkScrolledWindow" id="scrolledwindow_crash_list">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="shadow_type">in</property>
+                        <property name="min_content_height">100</property>
+                        <child>
+                          <object class="GtkTreeView" id="treeview_crashes">
+                            <property name="visible">True</property>
+                            <property name="can_focus">True</property>
+                            <property name="headers_visible">False</property>
+                            <property name="rules_hint">True</property>
+                            <child internal-child="selection">
+                              <object class="GtkTreeSelection"/>
+                            </child>
+                          </object>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkStack" id="crash_stack">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="orientation">vertical</property>
-                        <property name="spacing">12</property>
+                        <property name="transition_type">over-up-down</property>
                         <child>
-                          <object class="GtkLabel" id="label2">
-                            <property name="visible">True</property>
+                          <object class="GtkSpinner" id="crash_spinner">
                             <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">Stack trace:</property>
-                            <property name="xalign">0</property>
-                            <attributes>
-                              <attribute name="weight" value="bold"/>
-                            </attributes>
                           </object>
                           <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="position">0</property>
+                            <property name="name">page0</property>
                           </packing>
                         </child>
                         <child>
-                          <object class="GtkLabel">
+                          <object class="GtkBox" id="box3">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">When seeking help, check for existing bug reports, pastebin the trace, share crash.tar.gz (from Local Files) and explain how to reproduce the crash.</property>
-                            <property name="wrap">True</property>
-                            <property name="xalign">0</property>
-                            <attributes>
-                              <attribute name="scale" value="0.90000000000000002"/>
-                            </attributes>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="position">1</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkBox" id="box2">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="spacing">6</property>
+                            <property name="orientation">vertical</property>
+                            <property name="spacing">12</property>
                             <child>
-                              <object class="GtkScrolledWindow" id="scrolledwindow_crash">
+                              <object class="GtkLabel" id="label2">
                                 <property name="visible">True</property>
-                                <property name="can_focus">True</property>
-                                <property name="shadow_type">in</property>
-                                <child>
-                                  <placeholder/>
-                                </child>
+                                <property name="can_focus">False</property>
+                                <property name="label" translatable="yes">Stack trace:</property>
+                                <property name="xalign">0</property>
+                                <attributes>
+                                  <attribute name="weight" value="bold"/>
+                                </attributes>
                               </object>
                               <packing>
-                                <property name="expand">True</property>
+                                <property name="expand">False</property>
                                 <property name="fill">True</property>
                                 <property name="position">0</property>
                               </packing>
                             </child>
                             <child>
-                              <object class="GtkButtonBox" id="buttonbox1">
+                              <object class="GtkLabel">
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
-                                <property name="orientation">vertical</property>
+                                <property name="label" translatable="yes">When seeking help, check for existing bug reports, pastebin the trace, share crash.tar.gz (from Local Files) and explain how to reproduce the crash.</property>
+                                <property name="wrap">True</property>
+                                <property name="xalign">0</property>
+                                <attributes>
+                                  <attribute name="scale" value="0.90000000000000002"/>
+                                </attributes>
+                              </object>
+                              <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">True</property>
+                                <property name="position">1</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <object class="GtkBox" id="box2">
+                                <property name="visible">True</property>
+                                <property name="can_focus">False</property>
                                 <property name="spacing">6</property>
-                                <property name="layout_style">start</property>
                                 <child>
-                                  <object class="GtkButton" id="button_browse_crash_report">
-                                    <property name="label" translatable="yes">Local Files</property>
+                                  <object class="GtkScrolledWindow" id="scrolledwindow_crash">
                                     <property name="visible">True</property>
-                                    <property name="sensitive">False</property>
                                     <property name="can_focus">True</property>
-                                    <property name="receives_default">True</property>
-                                    <property name="tooltip_text" translatable="yes">Open the directory containing crash.tar.gz and its content.</property>
+                                    <property name="shadow_type">in</property>
+                                    <child>
+                                      <placeholder/>
+                                    </child>
                                   </object>
                                   <packing>
                                     <property name="expand">True</property>
@@ -266,76 +294,104 @@
                                   </packing>
                                 </child>
                                 <child>
-                                  <object class="GtkButton" id="button_open_bugtracker">
-                                    <property name="label" translatable="yes">Bug Tracker</property>
+                                  <object class="GtkButtonBox" id="buttonbox1">
                                     <property name="visible">True</property>
-                                    <property name="sensitive">False</property>
-                                    <property name="can_focus">True</property>
-                                    <property name="receives_default">True</property>
-                                    <property name="tooltip_text" translatable="yes">Find the most appropriate bug tracker.</property>
+                                    <property name="can_focus">False</property>
+                                    <property name="orientation">vertical</property>
+                                    <property name="spacing">6</property>
+                                    <property name="layout_style">start</property>
+                                    <child>
+                                      <object class="GtkButton" id="button_browse_crash_report">
+                                        <property name="label" translatable="yes">Local Files</property>
+                                        <property name="visible">True</property>
+                                        <property name="sensitive">False</property>
+                                        <property name="can_focus">True</property>
+                                        <property name="receives_default">True</property>
+                                        <property name="tooltip_text" translatable="yes">Open the directory containing crash.tar.gz and its content.</property>
+                                      </object>
+                                      <packing>
+                                        <property name="expand">True</property>
+                                        <property name="fill">True</property>
+                                        <property name="position">0</property>
+                                      </packing>
+                                    </child>
+                                    <child>
+                                      <object class="GtkButton" id="button_open_bugtracker">
+                                        <property name="label" translatable="yes">Bug Tracker</property>
+                                        <property name="visible">True</property>
+                                        <property name="sensitive">False</property>
+                                        <property name="can_focus">True</property>
+                                        <property name="receives_default">True</property>
+                                        <property name="tooltip_text" translatable="yes">Find the most appropriate bug tracker.</property>
+                                      </object>
+                                      <packing>
+                                        <property name="expand">True</property>
+                                        <property name="fill">True</property>
+                                        <property name="position">1</property>
+                                      </packing>
+                                    </child>
+                                    <child>
+                                      <object class="GtkButton" id="button_pastebin">
+                                        <property name="label" translatable="yes">Pastebin</property>
+                                        <property name="visible">True</property>
+                                        <property name="can_focus">True</property>
+                                        <property name="receives_default">True</property>
+                                        <property name="tooltip_text" translatable="yes">Upload the trace to the Internet.</property>
+                                      </object>
+                                      <packing>
+                                        <property name="expand">True</property>
+                                        <property name="fill">True</property>
+                                        <property name="position">2</property>
+                                      </packing>
+                                    </child>
                                   </object>
                                   <packing>
-                                    <property name="expand">True</property>
+                                    <property name="expand">False</property>
                                     <property name="fill">True</property>
                                     <property name="position">1</property>
                                   </packing>
                                 </child>
-                                <child>
-                                  <object class="GtkButton" id="button_pastebin">
-                                    <property name="label" translatable="yes">Pastebin</property>
-                                    <property name="visible">True</property>
-                                    <property name="can_focus">True</property>
-                                    <property name="receives_default">True</property>
-                                    <property name="tooltip_text" translatable="yes">Upload the trace to the Internet.</property>
-                                  </object>
-                                  <packing>
-                                    <property name="expand">True</property>
-                                    <property name="fill">True</property>
-                                    <property name="position">2</property>
-                                  </packing>
-                                </child>
+                              </object>
+                              <packing>
+                                <property name="expand">True</property>
+                                <property name="fill">True</property>
+                                <property name="position">2</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <object class="GtkLabel">
+                                <property name="visible">True</property>
+                                <property name="can_focus">False</property>
+                                <property name="label" translatable="yes">Developers need to know where the code fails or how to reproduce the issue. Always provide a trace and reliable instructions to trigger/observe the problem.</property>
+                                <property name="wrap">True</property>
+                                <property name="xalign">0</property>
+                                <attributes>
+                                  <attribute name="scale" value="0.90000000000000002"/>
+                                </attributes>
                               </object>
                               <packing>
                                 <property name="expand">False</property>
                                 <property name="fill">True</property>
-                                <property name="position">1</property>
+                                <property name="position">3</property>
                               </packing>
                             </child>
                           </object>
                           <packing>
-                            <property name="expand">True</property>
-                            <property name="fill">True</property>
-                            <property name="position">2</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkLabel">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">Developers need to know where the code fails or how to reproduce the issue. Always provide a trace and reliable instructions to trigger/observe the problem.</property>
-                            <property name="wrap">True</property>
-                            <property name="xalign">0</property>
-                            <attributes>
-                              <attribute name="scale" value="0.90000000000000002"/>
-                            </attributes>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="position">3</property>
+                            <property name="name">page1</property>
+                            <property name="position">1</property>
                           </packing>
                         </child>
                       </object>
                       <packing>
-                        <property name="name">page1</property>
-                        <property name="position">1</property>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">3</property>
                       </packing>
                     </child>
                   </object>
                   <packing>
-                    <property name="expand">True</property>
-                    <property name="fill">True</property>
-                    <property name="position">3</property>
+                    <property name="name">page_reports</property>
+                    <property name="position">2</property>
                   </packing>
                 </child>
               </object>

@@ -187,7 +187,11 @@ class MintReport():
         self.delete_info_button = self.builder.get_object("button_delete_info")
         self.delete_info_button.connect("clicked", self.on_button_delete_info_clicked)
 
-        self.load_crashes()
+        if os.path.exists("/usr/bin/coredumpctl"):
+            self.builder.get_object("crash_internal_stack").set_visible_child_name("page_reports")
+            self.load_crashes()
+        else:
+            self.builder.get_object("crash_internal_stack").set_visible_child_name("page_error")
 
         self.load_info()
 
