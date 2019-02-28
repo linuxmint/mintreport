@@ -35,12 +35,11 @@ INFO_DIR = os.path.join(DATA_DIR, "reports")
 TMP_DIR = "/tmp/mintreport"
 TMP_INFO_DIR = os.path.join(TMP_DIR, "reports")
 
-CRASH_DIR = "/var/crash"
 UNPACK_DIR = os.path.join(TMP_DIR, "crash")
 CRASH_ARCHIVE = os.path.join(TMP_DIR, "crash.tar.gz")
 
 
-COL_CRASH_TIMESTAMP, COL_CRASH_DATE, COL_CRASH_FILENAME = range(3)
+COL_CRASH_TIMESTAMP, COL_CRASH_PID, COL_CRASH_EXE, COL_CRASH_OBJECT = range(4)
 
 COL_INFO_ICON, COL_INFO_NAME, COL_INFO_REPORT = range(3)
 
@@ -87,6 +86,14 @@ class InfoReport():
         elif self.metadata["type"] == "question":
             self.icon = self.environment.question_icon
 
+class CrashReport():
+
+    def __init__(self, timestamp, pid, sig, executable):
+        self.timestamp = timestamp
+        self.pid = pid
+        self.sig = sig
+        self.executable = executable
+
 class MintReport():
 
     def __init__(self):
@@ -96,6 +103,7 @@ class MintReport():
 
         os.system("mkdir -p %s" % TMP_DIR)
         os.system("rm -rf %s/*" % TMP_DIR)
+        os.system("mkdir -p %s" % UNPACK_DIR)
         os.system("cp -R %s/* %s/" % (DATA_DIR, TMP_DIR))
 
         self.cache = apt.Cache()
@@ -120,16 +128,20 @@ class MintReport():
         # the crashes treeview
         self.treeview_crashes = self.builder.get_object("treeview_crashes")
 
-        column = Gtk.TreeViewColumn("", Gtk.CellRendererText(), text=COL_CRASH_DATE)
+        column = Gtk.TreeViewColumn("", Gtk.CellRendererText(), text=COL_CRASH_TIMESTAMP)
         column.set_sort_column_id(COL_CRASH_TIMESTAMP)
         column.set_resizable(True)
         self.treeview_crashes.append_column(column)
-        column = Gtk.TreeViewColumn("", Gtk.CellRendererText(), text=COL_CRASH_FILENAME)
-        column.set_sort_column_id(COL_CRASH_FILENAME)
+        column = Gtk.TreeViewColumn("", Gtk.CellRendererText(), text=COL_CRASH_PID)
+        column.set_sort_column_id(COL_CRASH_PID)
+        column.set_resizable(True)
+        self.treeview_crashes.append_column(column)
+        column = Gtk.TreeViewColumn("", Gtk.CellRendererText(), text=COL_CRASH_EXE)
+        column.set_sort_column_id(COL_CRASH_EXE)
         column.set_resizable(True)
         self.treeview_crashes.append_column(column)
         self.treeview_crashes.show()
-        self.model_crashes = Gtk.TreeStore(float, str, str) # timestamp, readable date, filename
+        self.model_crashes = Gtk.TreeStore(str, str, str, object) # timestamp, pid, exe, object
         self.model_crashes.set_sort_column_id(COL_CRASH_TIMESTAMP, Gtk.SortType.DESCENDING)
         self.treeview_crashes.set_model(self.model_crashes)
 
@@ -148,12 +160,9 @@ class MintReport():
         self.localfiles_button = self.builder.get_object("button_browse_crash_report")
         self.bugtracker_button = self.builder.get_object("button_open_bugtracker")
         self.pastebin_button = self.builder.get_object("button_pastebin")
-        self.delete_button = self.builder.get_object("button_delete")
-
         self.localfiles_button.connect("clicked", self.on_button_browse_crash_report_clicked)
         self.bugtracker_button.connect("clicked", self.on_button_open_bugtracker_clicked)
         self.pastebin_button.connect("clicked", self.on_button_pastebin_clicked)
-        self.delete_button.connect("clicked", self.on_button_delete_clicked)
 
         # the info treeview
         self.treeview_info = self.builder.get_object("treeview_info")
@@ -325,16 +334,32 @@ class MintReport():
     def load_crashes(self):
         self.loading = True
         self.model_crashes.clear()
-        if os.path.exists(CRASH_DIR):
-            for file in os.listdir(CRASH_DIR):
-                if file.endswith(".crash"):
-                    if "apport" not in file:
-                        iter = self.model_crashes.insert_before(None, None)
-                        mtime = os.path.getmtime(os.path.join(CRASH_DIR, file))
-                        readable_date = time.ctime(mtime)
-                        self.model_crashes.set_value(iter, COL_CRASH_TIMESTAMP, mtime)
-                        self.model_crashes.set_value(iter, COL_CRASH_DATE, readable_date)
-                        self.model_crashes.set_value(iter, COL_CRASH_FILENAME, file)
+
+        coredumps = subprocess.run(['coredumpctl', 'list', '--no-legend', '-r', '-q'], check=True, stdout=subprocess.PIPE).stdout
+        lines = coredumps.decode('utf-8').split('\n')
+        for line in lines:
+            # Ignore empty lines
+            if not line.strip():
+                continue
+            line = " ".join(line.split()) # remove blank spaces between fields in the coredumpctl output
+            try:
+                (day, date, time, timezone, pid, uid, gid, sig, corefile, exe) = line.split(" ", 10)
+            except:
+                print("coredumpctl output: '%s' could not be split" % line)
+                continue
+            # Ignore python crashes, we don't handle tracebacks with systemd-coredump yet
+            if "python" in exe:
+                continue
+            # Ignore crashes for which the info isn't available
+            if corefile != "present":
+                continue
+            timestamp = " ".join([day, date, time, timezone])
+            report = CrashReport(timestamp, pid, sig, exe)
+            iter = self.model_crashes.insert_before(None, None)
+            self.model_crashes.set_value(iter, COL_CRASH_TIMESTAMP, timestamp)
+            self.model_crashes.set_value(iter, COL_CRASH_PID, pid)
+            self.model_crashes.set_value(iter, COL_CRASH_EXE, exe)
+            self.model_crashes.set_value(iter, COL_CRASH_OBJECT, report)
         self.loading = False
 
     def on_crash_selected(self, selection):
@@ -347,44 +372,29 @@ class MintReport():
         self.localfiles_button.set_sensitive(False)
         self.bugtracker_button.set_sensitive(False)
         self.pastebin_button.set_sensitive(False)
-        self.delete_button.set_sensitive(False)
         self.buffer.set_language(self.language_manager.get_language(""))
         self.buffer.set_text("")
         os.system("rm -rf %s/*" % UNPACK_DIR)
         model, iter = selection.get_selected()
         if iter is not None:
-            file = os.path.join(CRASH_DIR, model.get_value(iter, COL_CRASH_FILENAME))
-            if os.path.exists(file):
-                self.unpack_crash_report(file)
+            report = model.get_value(iter, COL_CRASH_OBJECT)
+            self.dump_crash_report(report)
 
     @async
-    def unpack_crash_report(self, file):
+    def dump_crash_report(self, report):
 
-        if not os.access(file , os.R_OK):
-            self.buffer.set_text(_("The file %s could not be read.\nPlease fix its permissions.") % file)
-            self.on_unpack_crash_report_finished()
-            return
-
-        subprocess.call(["apport-unpack", file, UNPACK_DIR])
         os.chdir(UNPACK_DIR)
+        subprocess.call(["coredumpctl", "dump", report.pid, "-o", "CoreDump"])
 
         # Add info about the Linux Mint release
         if os.path.exists("/etc/linuxmint/info"):
             shutil.copyfile("/etc/linuxmint/info", "LinuxMintInfo")
 
-        # Produce an Inxi report
-        if os.path.exists("/usr/bin/inxi"):
-            with open("Inxi", "w") as f:
-                subprocess.call(['inxi', '-Fxxrzc0'], stdout=f)
-
         # Produce a list of installed packages
         with open("Packages", "w") as f:
             subprocess.call(['dpkg', '-l'], stdout=f)
 
-        executable_path = ""
-        if os.path.exists("ExecutablePath"):
-            with open("ExecutablePath") as f:
-                executable_path = f.readlines()[0]
+        executable_path = report.executable
 
         # Identify bug tracker
         try:
@@ -413,9 +423,15 @@ class MintReport():
             self.on_unpack_crash_report_finished()
             return
 
+        # Produce an info trace (coredumpctl info PID)
+        os.system("echo '===================================================================' > StackTrace")
+        os.system("echo ' Info                                                              ' >> StackTrace")
+        os.system("echo '===================================================================' >> StackTrace")
+        os.system("coredumpctl info %s >> StackTrace" % report.pid)
+
         # Produce a stack trace
         if os.path.exists("CoreDump"):
-            os.system("echo '===================================================================' > StackTrace")
+            os.system("echo '===================================================================' >> StackTrace")
             os.system("echo ' GDB Log                                                           ' >> StackTrace")
             os.system("echo '===================================================================' >> StackTrace")
             os.system("LANG=C gdb %s CoreDump --batch >> StackTrace 2>&1" % executable_path)
@@ -427,22 +443,13 @@ class MintReport():
             os.system("echo ' GDB Backtrace (all threads)                                       ' >> StackTrace")
             os.system("echo '===================================================================' >> StackTrace")
             os.system("LANG=C gdb %s CoreDump --batch --ex 'thread apply all bt full' --ex bt >> StackTrace 2>&1" % executable_path)
-            self.trace = "StackTrace"
-            language = "gdb-log"
-        elif os.path.exists("Traceback"):
-            self.trace = "Traceback"
-            language = "python"
-        else:
-            self.trace = None
-            language = None
 
-        if self.trace is not None:
-            with open(self.trace) as f:
-                text = f.read()
-                if "is not at the expected address (wrong library or version mismatch" in text:
-                    self.buffer.set_text(_("The headers or binaries installed on your system do not match the code which was executed during the crash.\nThey probably got upgraded since.\nA stack trace is available in 'Local Files' but its content is probably inaccurate."))
-                else:
-                    self.show_stack_trace(text, language)
+        with open("StackTrace") as f:
+            text = f.read()
+            if "is not at the expected address (wrong library or version mismatch" in text:
+                self.buffer.set_text(_("The headers or binaries installed on your system do not match the code which was executed during the crash.\nThey probably got upgraded since.\nA stack trace is available in 'Local Files' but its content is probably inaccurate."))
+            else:
+                self.show_stack_info(text)
 
         # Archive the crash report - exclude the CoreDump as it can be very big (close to 1GB)
         os.chdir(TMP_DIR)
@@ -454,34 +461,15 @@ class MintReport():
     def on_unpack_crash_report_finished(self):
         self.treeview_crashes.set_sensitive(True)
         self.localfiles_button.set_sensitive(True)
-        self.delete_button.set_sensitive(True)
         self.spinner.stop()
         self.stack.set_visible_child_name("page1")
 
     @idle
-    def show_stack_trace(self, text, language):
-        if language is not None:
-            self.buffer.set_language(self.language_manager.get_language(language))
+    def show_stack_info(self, text):
+        self.buffer.set_language(self.language_manager.get_language("gdb-log"))
         self.buffer.set_text(text)
         self.bugtracker_button.set_sensitive(True)
         self.pastebin_button.set_sensitive(True)
-
-    def on_button_delete_clicked(self, button):
-        model, iter = self.treeview_crashes.get_selection().get_selected()
-        if iter is not None:
-            file = os.path.join(CRASH_DIR, model.get_value(iter, COL_CRASH_FILENAME))
-            if os.path.exists(file):
-                if os.access(CRASH_DIR, os.W_OK) and os.access(file, os.W_OK):
-                    os.remove(file)
-                    self.buffer.set_text("")
-                    self.delete_button.set_sensitive(False)
-                    self.load_crashes()
-                else:
-                    # Show an error message
-                    dialog = Gtk.MessageDialog(self.window, 0, Gtk.MessageType.ERROR, Gtk.ButtonsType.CANCEL, _("The report could not be deleted."))
-                    dialog.format_secondary_text(_("Check the permissions for /var/crash and %s.") % file)
-                    dialog.run()
-                    dialog.destroy()
 
     def on_button_browse_crash_report_clicked(self, button):
         os.system("xdg-open %s" % TMP_DIR)
@@ -490,14 +478,12 @@ class MintReport():
         os.system("xdg-open %s" % self.bugtracker)
 
     def on_button_pastebin_clicked(self, button):
-        if self.trace is not None:
-            pastebin = subprocess.Popen(['/usr/bin/pastebin', os.path.join(UNPACK_DIR, self.trace)], stdout=subprocess.PIPE)
-            output = pastebin.communicate()[0]
-            output = output.split()[0] # if we have more than one URL, only use the first one
-            pastebin.wait()
-            subprocess.call(['xdg-open', output])
+        pastebin = subprocess.Popen(['/usr/bin/pastebin', os.path.join(UNPACK_DIR, "StackTrace")], stdout=subprocess.PIPE)
+        output = pastebin.communicate()[0]
+        output = output.split()[0] # if we have more than one URL, only use the first one
+        pastebin.wait()
+        subprocess.call(['xdg-open', output])
 
 if __name__ == "__main__":
-    os.system("mkdir -p %s" % UNPACK_DIR)
     MintReport()
     Gtk.main()

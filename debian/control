@@ -15,7 +15,7 @@ Depends: python3,
          gir1.2-webkit-3.0,
          inxi,
          mint-common,
-         apport,
+         systemd-coredump,
          xapps-common,
          ${misc:Depends},
 Description: Troubleshooting tool for Linux Mint
