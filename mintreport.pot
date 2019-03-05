@@ -23,7 +23,7 @@ msgid "System Reports"
 msgstr ""
 
 #: usr/lib/linuxmint/mintreport/mintreport.py:193
-msgid "An error occured while gathering the system information."
+msgid "An error occurred while gathering the system information."
 msgstr ""
 
 #: usr/lib/linuxmint/mintreport/mintreport.py:207
@@ -48,7 +48,7 @@ msgid ""
 msgstr ""
 
 #: usr/lib/linuxmint/mintreport/mintreport.py:218
-msgid "An error occured while uploading the system information"
+msgid "An error occurred while uploading the system information"
 msgstr ""
 
 #: usr/lib/linuxmint/mintreport/mintreport.py:218
