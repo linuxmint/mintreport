@@ -34,6 +34,7 @@ DATA_DIR = "/usr/share/linuxmint/mintreport"
 INFO_DIR = os.path.join(DATA_DIR, "reports")
 TMP_DIR = "/tmp/mintreport"
 TMP_INFO_DIR = os.path.join(TMP_DIR, "reports")
+TMP_INXI_FILE = os.path.join(TMP_DIR, "inxi")
 
 UNPACK_DIR = os.path.join(TMP_DIR, "crash")
 CRASH_ARCHIVE = os.path.join(TMP_DIR, "crash.tar.gz")
@@ -202,6 +203,8 @@ class MintReport():
         try:
             sysinfo = subprocess.check_output("LANG=C inxi -Fxxrzc0", encoding='UTF-8', shell=True)
             self.add_sysinfo_to_textview(sysinfo)
+            with open(TMP_INXI_FILE, "w") as f:
+                f.write(sysinfo)
         except Exception as e:
             subprocess.Popen(['notify-send', '-i', 'dialog-error-symbolic', _("An error occurred while gathering the system information."), str(e)])
             print (e)
@@ -221,7 +224,7 @@ class MintReport():
 
     def upload_sysinfo(self, button):
         try:
-            output = subprocess.check_output("inxi -Fxxrzc0 | pastebin", encoding='UTF-8', shell=True)
+            output = subprocess.check_output("pastebin %s" % TMP_INXI_FILE, encoding='UTF-8', shell=True)
             link = output.rstrip('\x00').strip() # Remove ASCII null termination with \x00
             clipboard = Gtk.Clipboard.get(Gdk.SELECTION_CLIPBOARD)
             buff = self.builder.get_object("textview_sysinfo").get_buffer()
@@ -399,9 +402,8 @@ class MintReport():
             subprocess.call(['dpkg', '-l'], stdout=f)
 
         # Produce an Inxi report
-        if os.path.exists("/usr/bin/inxi"):
-            with open("Inxi", "w") as f:
-                subprocess.run(['inxi -Fxxrzc0'], shell=True, stdout=f)
+        if os.path.exists(TMP_INXI_FILE):
+            os.system("cp %s Inxi" % TMP_INXI_FILE)
 
         executable_path = report.executable
 
