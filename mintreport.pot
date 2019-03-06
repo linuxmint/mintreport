@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-26 17:14+0000\n"
+"POT-Creation-Date: 2019-03-06 15:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,69 +17,62 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: usr/lib/linuxmint/mintreport/mintreport.py:108 generate_desktop_files:27
-#: generate_desktop_files:41
+#: usr/lib/linuxmint/mintreport/mintreport.py:116 generate_desktop_files:25
+#: generate_desktop_files:39
 msgid "System Reports"
 msgstr ""
 
-#: usr/lib/linuxmint/mintreport/mintreport.py:193
+#: usr/lib/linuxmint/mintreport/mintreport.py:206
 msgid "An error occurred while gathering the system information."
 msgstr ""
 
-#: usr/lib/linuxmint/mintreport/mintreport.py:207
+#: usr/lib/linuxmint/mintreport/mintreport.py:220
 msgid "System information copied"
 msgstr ""
 
-#: usr/lib/linuxmint/mintreport/mintreport.py:207
+#: usr/lib/linuxmint/mintreport/mintreport.py:220
 msgid ""
 "Your system information was copied into your clipboard so you can paste it "
 "on the forums."
 msgstr ""
 
-#: usr/lib/linuxmint/mintreport/mintreport.py:216
+#: usr/lib/linuxmint/mintreport/mintreport.py:229
 msgid "System information uploaded"
 msgstr ""
 
-#: usr/lib/linuxmint/mintreport/mintreport.py:216
+#: usr/lib/linuxmint/mintreport/mintreport.py:229
 #, python-format
 msgid ""
 "Your system information was uploaded to %s. This link was placed in your "
 "clipboard so you can paste it on IRC."
 msgstr ""
 
-#: usr/lib/linuxmint/mintreport/mintreport.py:218
+#: usr/lib/linuxmint/mintreport/mintreport.py:231
 msgid "An error occurred while uploading the system information"
 msgstr ""
 
-#: usr/lib/linuxmint/mintreport/mintreport.py:218
+#: usr/lib/linuxmint/mintreport/mintreport.py:231
 msgid ""
 "Copy and paste the system information manually into a pastebin site like "
 "https://pastebin.org and share the link on IRC."
 msgstr ""
 
-#: usr/lib/linuxmint/mintreport/mintreport.py:291
+#: usr/lib/linuxmint/mintreport/mintreport.py:304
 msgid "Are you sure you want to delete this report?"
 msgstr ""
 
-#: usr/lib/linuxmint/mintreport/mintreport.py:292
+#: usr/lib/linuxmint/mintreport/mintreport.py:305
 msgid "The report will be permanently deleted and will no longer be visible."
 msgstr ""
 
-#: usr/lib/linuxmint/mintreport/mintreport.py:364
-#, python-format
-msgid ""
-"The file %s could not be read.\n"
-"Please fix its permissions."
-msgstr ""
-
-#: usr/lib/linuxmint/mintreport/mintreport.py:398
+#: usr/lib/linuxmint/mintreport/mintreport.py:417
 #, python-format
 msgid ""
 "The debug symbols are missing for %(program)s.\n"
 "Please install %(package)s."
 msgstr ""
 
-#: usr/lib/linuxmint/mintreport/mintreport.py:412
+#: usr/lib/linuxmint/mintreport/mintreport.py:431
 #, python-format
 msgid ""
 "The package providing %s could not be found.\n"
@@ -87,7 +80,7 @@ msgid ""
 "reinstall it."
 msgstr ""
 
-#: usr/lib/linuxmint/mintreport/mintreport.py:443
+#: usr/lib/linuxmint/mintreport/mintreport.py:459
 msgid ""
 "The headers or binaries installed on your system do not match the code which "
 "was executed during the crash.\n"
@@ -96,20 +89,11 @@ msgid ""
 "inaccurate."
 msgstr ""
 
-#: usr/lib/linuxmint/mintreport/mintreport.py:481
-msgid "The report could not be deleted."
-msgstr ""
-
-#: usr/lib/linuxmint/mintreport/mintreport.py:482
-#, python-format
-msgid "Check the permissions for /var/crash and %s."
-msgstr ""
-
-#: generate_desktop_files:27 generate_desktop_files:41
+#: generate_desktop_files:25 generate_desktop_files:39
 msgid "Troubleshoot problems"
 msgstr ""
 
-#: generate_desktop_files:41
+#: generate_desktop_files:39
 msgid "Troubleshooting Tool"
 msgstr ""
 
@@ -136,49 +120,50 @@ msgid "System information"
 msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:6
-msgid "Crash reports:"
+msgid "Crash reports are not available"
 msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:7
-msgid "Stack trace:"
+msgid ""
+"To enable crash reporting, install systemd-coredump and reboot your computer."
 msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:8
+msgid "Crash reports:"
+msgstr ""
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:9
+msgid "Stack trace:"
+msgstr ""
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:10
 msgid ""
 "When seeking help, check for existing bug reports, pastebin the trace, share "
 "crash.tar.gz (from Local Files) and explain how to reproduce the crash."
 msgstr ""
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:9
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:11
 msgid "Local Files"
 msgstr ""
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:10
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:12
 msgid "Open the directory containing crash.tar.gz and its content."
 msgstr ""
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:11
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:13
 msgid "Bug Tracker"
 msgstr ""
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:12
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:14
 msgid "Find the most appropriate bug tracker."
 msgstr ""
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:13
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:15
 msgid "Pastebin"
 msgstr ""
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:14
-msgid "Upload the trace to the Internet."
-msgstr ""
-
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:15
-msgid "Delete"
-msgstr ""
-
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:16
-msgid "Delete this crash report."
+msgid "Upload the trace to the Internet."
 msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:17
@@ -201,13 +186,17 @@ msgid "Report:"
 msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:21
-msgid "Delete this report"
+msgid "Delete"
 msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:22
-msgid "Note: Information reports can only be shown in English."
+msgid "Delete this report"
 msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:23
+msgid "Note: Information reports can only be shown in English."
+msgstr ""
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:24
 msgid "Information reports"
 msgstr ""
