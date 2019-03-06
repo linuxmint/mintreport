@@ -203,7 +203,7 @@ class MintReport():
             sysinfo = subprocess.check_output("LANG=C inxi -Fxxrzc0", encoding='UTF-8', shell=True)
             self.add_sysinfo_to_textview(sysinfo)
         except Exception as e:
-            subprocess.Popen(['notify-send', '-i', 'dialog-error-symbolic', _("An error occured while gathering the system information."), str(e)])
+            subprocess.Popen(['notify-send', '-i', 'dialog-error-symbolic', _("An error occurred while gathering the system information."), str(e)])
             print (e)
 
     @idle
@@ -228,7 +228,7 @@ class MintReport():
             clipboard.set_text(link, -1)
             subprocess.Popen(['notify-send', '-i', 'dialog-information-symbolic', _("System information uploaded"), _("Your system information was uploaded to %s. This link was placed in your clipboard so you can paste it on IRC.") % link])
         except Exception as e:
-            subprocess.Popen(['notify-send', '-i', 'dialog-error-symbolic', _("An error occured while uploading the system information"), _("Copy and paste the system information manually into a pastebin site like https://pastebin.org and share the link on IRC."), str(e)])
+            subprocess.Popen(['notify-send', '-i', 'dialog-error-symbolic', _("An error occurred while uploading the system information"), _("Copy and paste the system information manually into a pastebin site like https://pastebin.org and share the link on IRC."), str(e)])
 
     @idle
     def add_report_to_treeview(self, report):
