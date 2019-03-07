@@ -1,3 +1,32 @@
+mintreport (1.0.7) tina; urgency=medium
+
+  [ Clement Lefebvre ]
+  * Add a system info page
+  * UI: Use an XAppStackSidebar
+  * Packaging: Depend on inxi
+  * l10n: Update POT
+  * UI: Make window wider and ask inxi not to split output
+  * Sysinfo: Handle errors around subprocess.check_output()
+  * Sysinfo: On upload copy link to clipboard instead of launching the browser
+  * Sysinfo: Add bbcode code tags when copying content
+  * Sysinfo: Add more info into some of the msgids
+  * l10n: Update POT
+  * Fix generate_desktop_files
+  * Switch to systemd-coredump for crash reports
+  * Don't depend on systemd-coredump
+  * Add inxi output to error report
+
+  [ Noah Wood ]
+  * Fixed spelling error (#23)
+
+  [ Clement Lefebvre ]
+  * l10n: Update POT
+  * Store inxi output in a tmp file
+  * Add --usb flag to inxi call
+  * l10n: Fix msgid
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 07 Mar 2019 14:27:37 +0000
+
 mintreport (1.0.6) tara; urgency=medium
 
   [ monsta ]
