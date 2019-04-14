@@ -342,7 +342,7 @@ class MintReport():
         self.loading = True
         self.model_crashes.clear()
 
-        coredumps = subprocess.run(['coredumpctl', 'list', '--no-legend', '-r', '-q'], check=True, stdout=subprocess.PIPE).stdout
+        coredumps = subprocess.run(['coredumpctl', 'list', '--no-legend', '-r', '-q'], stdout=subprocess.PIPE).stdout
         lines = coredumps.decode('utf-8').split('\n')
         for line in lines:
             # Ignore empty lines
