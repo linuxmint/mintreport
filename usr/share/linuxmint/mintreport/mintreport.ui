@@ -263,9 +263,6 @@
                                 <property name="label" translatable="yes">When seeking help, check for existing bug reports, pastebin the trace, share crash.tar.gz (from Local Files) and explain how to reproduce the crash.</property>
                                 <property name="wrap">True</property>
                                 <property name="xalign">0</property>
-                                <attributes>
-                                  <attribute name="scale" value="0.90000000000000002"/>
-                                </attributes>
                               </object>
                               <packing>
                                 <property name="expand">False</property>
@@ -365,9 +362,6 @@
                                 <property name="label" translatable="yes">Developers need to know where the code fails or how to reproduce the issue. Always provide a trace and reliable instructions to trigger/observe the problem.</property>
                                 <property name="wrap">True</property>
                                 <property name="xalign">0</property>
-                                <attributes>
-                                  <attribute name="scale" value="0.90000000000000002"/>
-                                </attributes>
                               </object>
                               <packing>
                                 <property name="expand">False</property>
@@ -557,9 +551,6 @@
                             <property name="label" translatable="yes">Note: Information reports can only be shown in English.</property>
                             <property name="wrap">True</property>
                             <property name="xalign">0</property>
-                            <attributes>
-                              <attribute name="scale" value="0.90000000000000002"/>
-                            </attributes>
                           </object>
                           <packing>
                             <property name="expand">False</property>
