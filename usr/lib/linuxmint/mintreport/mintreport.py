@@ -13,6 +13,7 @@ from gi.repository import Gtk, Gdk, GdkPixbuf, GtkSource, GObject, WebKit, Gio, 
 import subprocess
 import shutil
 import time
+import datetime
 import setproctitle
 import threading
 setproctitle.setproctitle("mintreport")
@@ -40,7 +41,7 @@ UNPACK_DIR = os.path.join(TMP_DIR, "crash")
 CRASH_ARCHIVE = os.path.join(TMP_DIR, "crash.tar.gz")
 
 
-COL_CRASH_TIMESTAMP, COL_CRASH_PID, COL_CRASH_EXE, COL_CRASH_OBJECT = range(4)
+COL_CRASH_DAY, COL_CRASH_DATE, COL_CRASH_TIME, COL_CRASH_TIMEZONE, COL_CRASH_PID, COL_CRASH_EXE, COL_CRASH_OBJECT = range(7)
 
 COL_INFO_ICON, COL_INFO_NAME, COL_INFO_REPORT = range(3)
 
@@ -129,8 +130,34 @@ class MintReport():
         # the crashes treeview
         self.treeview_crashes = self.builder.get_object("treeview_crashes")
 
-        column = Gtk.TreeViewColumn("", Gtk.CellRendererText(), text=COL_CRASH_TIMESTAMP)
-        column.set_sort_column_id(COL_CRASH_TIMESTAMP)
+        def render_date(column, cell, model, i, *args):
+            cell.props.text = " ".join([model[i][COL_CRASH_DAY],
+                                        model[i][COL_CRASH_DATE],
+                                        model[i][COL_CRASH_TIME],
+                                        model[i][COL_CRASH_TIMEZONE]])
+
+        def sort_by_date(model, a, b, *args):
+            date_a = datetime.date.from_iso_format(model[a][COL_CRASH_DATE])
+            date_b = datetime.date.from_iso_format(model[b][COL_CRASH_DATE])
+
+            if date_a < date_b:
+                return -1
+            elif date_a > date_b:
+                return 1
+
+            time_a = datetime.time.fromisoformat(model[a][COL_CRASH_TIME])
+            time_b = datetime.time.fromisoformat(model[b][COL_CRASH_TIME])
+
+            if time_a < time_b:
+                return -1
+            elif time_a > time_b:
+                return 1
+
+            return 0
+
+        cell_renderer = Gtk.CellRendererText()
+        column = Gtk.TreeViewColumn('', cell_renderer)
+        column.set_cell_data_func(cell_renderer, render_date)
         column.set_resizable(True)
         self.treeview_crashes.append_column(column)
         column = Gtk.TreeViewColumn("", Gtk.CellRendererText(), text=COL_CRASH_PID)
@@ -142,8 +169,9 @@ class MintReport():
         column.set_resizable(True)
         self.treeview_crashes.append_column(column)
         self.treeview_crashes.show()
-        self.model_crashes = Gtk.TreeStore(str, str, str, object) # timestamp, pid, exe, object
-        self.model_crashes.set_sort_column_id(COL_CRASH_TIMESTAMP, Gtk.SortType.DESCENDING)
+        self.model_crashes = Gtk.ListStore(str, str, str, str, str, str, object) # timestamp, pid, exe, object
+        self.model_sort = self.model_crashes.sort_new_with_model()
+        self.model_sort.set_sort_func(COL_CRASH_DATE, sort_by_date)
         self.treeview_crashes.set_model(self.model_crashes)
 
         self.buffer = GtkSource.Buffer()
@@ -362,11 +390,7 @@ class MintReport():
                 continue
             timestamp = " ".join([day, date, time, timezone])
             report = CrashReport(timestamp, pid, sig, exe)
-            iter = self.model_crashes.insert_before(None, None)
-            self.model_crashes.set_value(iter, COL_CRASH_TIMESTAMP, timestamp)
-            self.model_crashes.set_value(iter, COL_CRASH_PID, pid)
-            self.model_crashes.set_value(iter, COL_CRASH_EXE, exe)
-            self.model_crashes.set_value(iter, COL_CRASH_OBJECT, report)
+            self.model_crashes.append([day, date, time, timezone, pid, exe, report])
         self.loading = False
 
     def on_crash_selected(self, selection):
