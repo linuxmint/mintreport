@@ -1,3 +1,16 @@
+mintreport (1.0.8) tina; urgency=medium
+
+  [ Clement Lefebvre ]
+  * Coredump: Don't check subprocess.run when calling coredumpctl
+
+  [ JosephMcc ]
+  * ui: Don't use scaled down text (#26)
+
+  [ Stephen Collins ]
+  * Crash report: sort timestamp properly (#28)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sun, 30 Jun 2019 15:26:57 +0200
+
 mintreport (1.0.7) tina; urgency=medium
 
   [ Clement Lefebvre ]
