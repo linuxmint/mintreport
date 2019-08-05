@@ -247,7 +247,7 @@ class MintReport():
         clipboard = Gtk.Clipboard.get(Gdk.SELECTION_CLIPBOARD)
         buff = self.builder.get_object("textview_sysinfo").get_buffer()
         text = buff.get_text(buff.get_start_iter(), buff.get_end_iter(), False)
-        clipboard.set_text(f"[code]\n{text}[/code]\n", -1)
+        clipboard.set_text("[code]\n%s[/code]\n" % text, -1)
         subprocess.Popen(['notify-send', '-i', 'dialog-information-symbolic', _("System information copied"), _("Your system information was copied into your clipboard so you can paste it on the forums.")])
 
     def upload_sysinfo(self, button):
