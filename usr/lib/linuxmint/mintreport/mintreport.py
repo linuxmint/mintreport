@@ -370,7 +370,11 @@ class MintReport():
         self.loading = True
         self.model_crashes.clear()
 
-        coredumps = subprocess.run(['coredumpctl', 'list', '--no-legend', '-r', '-q'], stdout=subprocess.PIPE).stdout
+        process = subprocess.run(['coredumpctl', 'list', '--no-legend', '-r', '-q'], stdout=subprocess.PIPE)
+        if process.returncode != 0:
+        	# in LMDE 3, coredumpctl doesn't have -r and -q options
+        	process = subprocess.run(['coredumpctl', 'list', '--no-legend'], stdout=subprocess.PIPE)
+        coredumps = process.stdout
         lines = coredumps.decode('utf-8').split('\n')
         for line in lines:
             # Ignore empty lines
