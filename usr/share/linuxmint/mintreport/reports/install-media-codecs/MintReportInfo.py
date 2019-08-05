@@ -14,9 +14,5 @@ class Report():
 
     def parse_content(self, content):
         codecs = "mint-meta-codecs"
-        if self.environment.is_lmde:
-            codecs = "mint-meta-debian-codecs"
-        elif self.environment.desktop == "KDE":
-            codecs = "mint-meta-codecs-kde"
         content = content.replace("$codecs", codecs)
         return content
