@@ -1,3 +1,12 @@
+mintreport (1.0.9) tina; urgency=medium
+
+  * Remove f-strings
+  * install-media-codecs: Fix pkg name in LMDE
+  * Remove python3.6 code
+  * Fix coredumpctl call in LMDE
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 05 Aug 2019 11:02:34 +0200
+
 mintreport (1.0.8) tina; urgency=medium
 
   [ Clement Lefebvre ]
