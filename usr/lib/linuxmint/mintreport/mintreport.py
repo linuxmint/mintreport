@@ -229,7 +229,7 @@ class MintReport():
     @async
     def load_sysinfo(self):
         try:
-            sysinfo = subprocess.check_output("LANG=C inxi -Fxxrzc0 --usb", encoding='UTF-8', shell=True)
+            sysinfo = subprocess.check_output("LANG=C inxi -Fxxrzc0 --usb", shell=True).decode("UTF-8")
             self.add_sysinfo_to_textview(sysinfo)
             with open(TMP_INXI_FILE, "w") as f:
                 f.write(sysinfo)
@@ -252,7 +252,7 @@ class MintReport():
 
     def upload_sysinfo(self, button):
         try:
-            output = subprocess.check_output("pastebin %s" % TMP_INXI_FILE, encoding='UTF-8', shell=True)
+            output = subprocess.check_output("pastebin %s" % TMP_INXI_FILE, shell=True).decode("UTF-8")
             link = output.rstrip('\x00').strip() # Remove ASCII null termination with \x00
             clipboard = Gtk.Clipboard.get(Gdk.SELECTION_CLIPBOARD)
             buff = self.builder.get_object("textview_sysinfo").get_buffer()
