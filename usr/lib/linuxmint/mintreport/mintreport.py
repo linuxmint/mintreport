@@ -7,9 +7,8 @@ import gettext
 import gi
 gi.require_version("Gtk", "3.0")
 gi.require_version('GtkSource', '3.0')
-gi.require_version('WebKit', '3.0')
 gi.require_version('XApp', '1.0')
-from gi.repository import Gtk, Gdk, GdkPixbuf, GtkSource, GObject, WebKit, Gio, XApp
+from gi.repository import Gtk, Gdk, GdkPixbuf, GtkSource, GObject, Gio, XApp
 import subprocess
 import shutil
 import time
@@ -19,9 +18,6 @@ import threading
 setproctitle.setproctitle("mintreport")
 import locale
 import imp
-import json
-
-import environment
 
 # i18n
 APP = 'mintreport'
@@ -40,10 +36,9 @@ TMP_INXI_FILE = os.path.join(TMP_DIR, "inxi")
 UNPACK_DIR = os.path.join(TMP_DIR, "crash")
 CRASH_ARCHIVE = os.path.join(TMP_DIR, "crash.tar.gz")
 
-
 COL_CRASH_DAY, COL_CRASH_DATE, COL_CRASH_TIME, COL_CRASH_TIMEZONE, COL_CRASH_PID, COL_CRASH_EXE, COL_CRASH_OBJECT = range(7)
 
-COL_INFO_ICON, COL_INFO_NAME, COL_INFO_REPORT = range(3)
+COL_INFO_ICON, COL_INFO_TITLE, COL_INFO_REPORT = range(3)
 
 # Used as a decorator to run things in the background
 def async(func):
@@ -61,32 +56,13 @@ def idle(func):
     return wrapper
 
 class InfoReport():
-    def __init__(self, path, environment):
+    def __init__(self, path):
+        self.path = path
         sys.path.insert(0, path)
         import MintReportInfo
         imp.reload(MintReportInfo)
-        self.report = MintReportInfo.Report(environment)
+        self.instance = MintReportInfo.Report()
         sys.path.remove(path)
-        self.path = path
-        self.environment = environment
-
-    def load_metadata(self):
-        with open(os.path.join(self.path, 'metadata.json')) as metadata_file:
-            self.metadata = json.load(metadata_file)
-        self.uuid = self.metadata["uuid"]
-        self.name = self.metadata["name"]
-        for prop in ("name[%s]" % self.environment.language, "name[%s]" % self.environment.locale):
-            try:
-                self.name = self.metadata[prop]
-            except:
-                pass
-        self.icon = self.environment.info_icon
-        if self.metadata["type"] == "warning":
-            self.icon = self.environment.warning_icon
-        elif self.metadata["type"] == "error":
-            self.icon = self.environment.error_icon
-        elif self.metadata["type"] == "question":
-            self.icon = self.environment.question_icon
 
 class CrashReport():
 
@@ -100,7 +76,6 @@ class MintReport():
 
     def __init__(self):
 
-        self.environment = environment.Environment()
         self.settings = Gio.Settings("com.linuxmint.report")
 
         os.system("mkdir -p %s" % TMP_DIR)
@@ -194,27 +169,24 @@ class MintReport():
         self.pastebin_button.connect("clicked", self.on_button_pastebin_clicked)
 
         # the info treeview
+        self.info_button_box = self.builder.get_object("info_button_box")
+        self.info_descriptions_box = self.builder.get_object("info_descriptions_box")
+
         self.treeview_info = self.builder.get_object("treeview_info")
         renderer = Gtk.CellRendererPixbuf()
-        column = Gtk.TreeViewColumn("", renderer)
-        column.add_attribute(renderer, "pixbuf", COL_INFO_ICON)
+        column = Gtk.TreeViewColumn("", renderer, icon_name=COL_INFO_ICON)
         self.treeview_info.append_column(column)
 
-        column = Gtk.TreeViewColumn("", Gtk.CellRendererText(), text=COL_INFO_NAME)
-        column.set_sort_column_id(COL_INFO_NAME)
+        column = Gtk.TreeViewColumn("", Gtk.CellRendererText(), text=COL_INFO_TITLE)
+        column.set_sort_column_id(COL_INFO_TITLE)
         column.set_resizable(True)
         self.treeview_info.append_column(column)
         self.treeview_info.show()
-        self.model_info = Gtk.TreeStore(GdkPixbuf.Pixbuf, str, object) # icon, name, report
-        self.model_info.set_sort_column_id(COL_INFO_NAME, Gtk.SortType.ASCENDING)
+        self.model_info = Gtk.TreeStore(str, str, object) # icon, name, report
+        self.model_info.set_sort_column_id(COL_INFO_TITLE, Gtk.SortType.ASCENDING)
         self.treeview_info.set_model(self.model_info)
 
-        self.infoview = None # Don't load webkit view just yet
-
         self.treeview_info.get_selection().connect("changed", self.on_info_selected)
-
-        self.delete_info_button = self.builder.get_object("button_delete_info")
-        self.delete_info_button.connect("clicked", self.on_button_delete_info_clicked)
 
         if os.path.exists("/usr/bin/coredumpctl"):
             self.builder.get_object("crash_internal_stack").set_visible_child_name("page_reports")
@@ -264,16 +236,14 @@ class MintReport():
     @idle
     def add_report_to_treeview(self, report):
         iter = self.model_info.insert_before(None, None)
-        self.model_info.set_value(iter, COL_INFO_ICON, report.icon)
-        self.model_info.set_value(iter, COL_INFO_NAME, report.name)
+        self.model_info.set_value(iter, COL_INFO_ICON, report.instance.icon)
+        self.model_info.set_value(iter, COL_INFO_TITLE, report.instance.title)
         self.model_info.set_value(iter, COL_INFO_REPORT, report)
         self.builder.get_object("main_stack").child_set_property(self.builder.get_object("box_info_reports"), 'needs-attention', True)
 
     @idle
     def clear_info_treeview(self):
         self.model_info.clear()
-        if self.infoview is not None:
-            self.infoview.load_html_string('', '')
         self.builder.get_object("main_stack").child_set_property(self.builder.get_object("box_info_reports"), 'needs-attention', False)
 
     @async
@@ -285,64 +255,40 @@ class MintReport():
         for dir_name in os.listdir(INFO_DIR):
             path = os.path.join(INFO_DIR, dir_name)
             try:
-                report = InfoReport(path, self.environment)
+                report = InfoReport(path)
                 self.info_reports.append(report)
             except Exception as e:
                 print("Failed to load report %s: \n%s\n" % (dir_name, e))
 
         for report in self.info_reports:
-            report.load_metadata()
-            if report.uuid not in self.settings.get_strv("deleted-reports") and report.report.is_pertinent():
+            if report.instance.is_pertinent():
                 self.add_report_to_treeview(report)
         self.loading = False
 
     def on_info_selected(self, selection):
         if self.loading:
             return
-        if self.infoview is None:
-            self.infoview = WebKit.WebView()
-            self.infoview.set_zoom_level(0.9)
-            self.infoview.set_full_content_zoom(True)
-            # kill right click menus in webkit views
-            self.infoview.connect("button-press-event", lambda w, e: e.button == 3)
-            self.infoview.connect("navigation-requested", self.on_link_clicked)
-            self.builder.get_object("scrolledwindow_info").add(self.infoview)
-            self.infoview.show()
 
         model, iter = selection.get_selected()
         if iter is not None:
             report = model.get_value(iter, COL_INFO_REPORT)
-            content = os.path.join(report.path, "content.html")
-            new_path = report.path.replace(INFO_DIR, TMP_INFO_DIR)
-            new_content = os.path.join(new_path, "content.generated")
-            if os.path.exists(content):
-                if "parse_content" in dir(report.report):
-                    with open(content) as c:
-                        html = c.read()
-                        new_html = report.report.parse_content(html)
-                        with open(new_content, "w") as new_c:
-                            new_c.write(new_html)
-                        self.infoview.open("file://%s" % new_content)
-                else:
-                    self.infoview.open("file://%s" % content)
-            else:
-                print("Could not find %s" % content)
-
-    def on_button_delete_info_clicked(self, button):
-        model, iter = self.treeview_info.get_selection().get_selected()
-        if iter is not None:
-            report = model.get_value(iter, COL_INFO_REPORT)
-            dialog = Gtk.MessageDialog(self.window, 0, Gtk.MessageType.QUESTION, Gtk.ButtonsType.OK_CANCEL, _("Are you sure you want to delete this report?"))
-            dialog.format_secondary_text(_("The report will be permanently deleted and will no longer be visible."))
-            response = dialog.run()
-            dialog.destroy()
-
-            if response == Gtk.ResponseType.OK:
-                deleted_reports = self.settings.get_strv("deleted-reports")
-                if report.uuid not in deleted_reports:
-                    deleted_reports.append(report.uuid)
-                    self.settings.set_strv("deleted-reports", deleted_reports)
-                    self.load_info()
+            descriptions = report.instance.get_descriptions()
+            actions = report.instance.get_actions()
+            self.builder.get_object("info_icon_image").set_from_icon_name(report.instance.icon, Gtk.IconSize.DIALOG)
+            self.builder.get_object("info_title_label").set_text(report.instance.title)
+            for child in self.info_descriptions_box.get_children():
+                self.info_descriptions_box.remove(child)
+            for description in descriptions:
+                label = Gtk.Label(description)
+                self.info_descriptions_box.add(label)
+            for child in self.info_button_box.get_children():
+                self.info_button_box.remove(child)
+            for action in actions:
+                (name, callback) = action
+                button = Gtk.Button(name)
+                button.connect("clicked", callback)
+                self.info_button_box.add(button)
+            self.builder.get_object("info_box").show_all()
 
     def on_link_clicked(self, view, frame, request, data=None):
         uri = request.get_uri()
