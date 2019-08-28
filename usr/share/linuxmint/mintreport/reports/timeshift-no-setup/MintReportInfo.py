@@ -32,5 +32,5 @@ class Report():
         actions.append([_("Launch Timeshift"), self.launch_timeshift])
         return actions
 
-    def launch_timeshift(self, button):
+    def launch_timeshift(self):
         subprocess.run(["pkexec", "timeshift-gtk"])

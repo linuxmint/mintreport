@@ -30,5 +30,5 @@ class Report():
         actions.append([_("Install the Multimedia Codecs"), self.install_codecs])
         return actions
 
-    def install_codecs(self, button):
+    def install_codecs(self):
         subprocess.run(["apturl", "apt://mint-meta-codecs?refresh=yes"])

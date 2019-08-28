@@ -245,6 +245,7 @@ class MintReport():
     def clear_info_treeview(self):
         self.model_info.clear()
         self.builder.get_object("main_stack").child_set_property(self.builder.get_object("box_info_reports"), 'needs-attention', False)
+        self.builder.get_object("info_box").hide()
 
     @async
     def load_info(self):
@@ -268,7 +269,6 @@ class MintReport():
     def on_info_selected(self, selection):
         if self.loading:
             return
-
         model, iter = selection.get_selected()
         if iter is not None:
             report = model.get_value(iter, COL_INFO_REPORT)
@@ -286,9 +286,13 @@ class MintReport():
             for action in actions:
                 (name, callback) = action
                 button = Gtk.Button(name)
-                button.connect("clicked", callback)
+                button.connect("clicked", self.on_info_action_clicked, callback)
                 self.info_button_box.add(button)
             self.builder.get_object("info_box").show_all()
+
+    def on_info_action_clicked(self, button, callback):
+        callback()
+        self.load_info()
 
     def on_link_clicked(self, view, frame, request, data=None):
         uri = request.get_uri()
