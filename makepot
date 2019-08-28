@@ -1,4 +1,4 @@
 #!/bin/bash
 intltool-extract --type=gettext/glade usr/share/linuxmint/mintreport/mintreport.ui
-xgettext --language=Python --keyword=_ --keyword=N_ --output=mintreport.pot usr/lib/linuxmint/mintreport/mintreport.py generate_desktop_files usr/share/linuxmint/mintreport/mintreport.ui.h
+xgettext --language=Python --keyword=_ --keyword=N_ --output=mintreport.pot usr/lib/linuxmint/mintreport/mintreport.py generate_desktop_files usr/share/linuxmint/mintreport/mintreport.ui.h usr/share/linuxmint/mintreport/reports/*/*.py
 rm -f usr/share/linuxmint/mintreport/mintreport.ui.h

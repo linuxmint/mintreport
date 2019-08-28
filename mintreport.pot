@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-07 14:25+0000\n"
+"POT-Creation-Date: 2019-08-28 16:16+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: usr/lib/linuxmint/mintreport/mintreport.py:117 generate_desktop_files:25
+#: usr/lib/linuxmint/mintreport/mintreport.py:93 generate_desktop_files:25
 #: generate_desktop_files:39
 msgid "System Reports"
 msgstr ""
@@ -57,22 +57,14 @@ msgid ""
 "https://pastebin.com and share the link on IRC."
 msgstr ""
 
-#: usr/lib/linuxmint/mintreport/mintreport.py:307
-msgid "Are you sure you want to delete this report?"
-msgstr ""
-
-#: usr/lib/linuxmint/mintreport/mintreport.py:308
-msgid "The report will be permanently deleted and will no longer be visible."
-msgstr ""
-
-#: usr/lib/linuxmint/mintreport/mintreport.py:419
+#: usr/lib/linuxmint/mintreport/mintreport.py:393
 #, python-format
 msgid ""
 "The debug symbols are missing for %(program)s.\n"
 "Please install %(package)s."
 msgstr ""
 
-#: usr/lib/linuxmint/mintreport/mintreport.py:433
+#: usr/lib/linuxmint/mintreport/mintreport.py:407
 #, python-format
 msgid ""
 "The package providing %s could not be found.\n"
@@ -80,7 +72,7 @@ msgid ""
 "reinstall it."
 msgstr ""
 
-#: usr/lib/linuxmint/mintreport/mintreport.py:461
+#: usr/lib/linuxmint/mintreport/mintreport.py:435
 msgid ""
 "The headers or binaries installed on your system do not match the code which "
 "was executed during the crash.\n"
@@ -120,83 +112,105 @@ msgid "System information"
 msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:6
-msgid "Crash reports are not available"
+msgid "Information reports:"
 msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:7
+msgid "Information reports"
+msgstr ""
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:8
+msgid "Crash reports are not available"
+msgstr ""
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:9
 msgid ""
 "To enable crash reporting, install systemd-coredump and reboot your computer."
 msgstr ""
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:8
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:10
 msgid "Crash reports:"
 msgstr ""
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:9
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:11
 msgid "Stack trace:"
 msgstr ""
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:10
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:12
 msgid ""
 "When seeking help, check for existing bug reports, pastebin the trace, share "
 "crash.tar.gz (from Local Files) and explain how to reproduce the crash."
 msgstr ""
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:11
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:13
 msgid "Local Files"
 msgstr ""
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:12
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:14
 msgid "Open the directory containing crash.tar.gz and its content."
 msgstr ""
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:13
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:15
 msgid "Bug Tracker"
 msgstr ""
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:14
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:16
 msgid "Find the most appropriate bug tracker."
 msgstr ""
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:15
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:17
 msgid "Pastebin"
 msgstr ""
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:16
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:18
 msgid "Upload the trace to the Internet."
 msgstr ""
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:17
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:19
 msgid ""
 "Developers need to know where the code fails or how to reproduce the issue. "
 "Always provide a trace and reliable instructions to trigger/observe the "
 "problem."
 msgstr ""
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:18
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:20
 msgid "Crash reports"
 msgstr ""
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:19
-msgid "Information reports:"
+#: usr/share/linuxmint/mintreport/reports/install-media-codecs/MintReportInfo.py:11
+msgid "Install multimedia codecs"
 msgstr ""
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:20
-msgid "Report:"
+#: usr/share/linuxmint/mintreport/reports/install-media-codecs/MintReportInfo.py:24
+msgid ""
+"Multimedia codecs are required to play some video formats and to properly "
+"render some websites."
 msgstr ""
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:21
-msgid "Delete"
+#: usr/share/linuxmint/mintreport/reports/install-media-codecs/MintReportInfo.py:30
+msgid "Install the Multimedia Codecs"
 msgstr ""
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:22
-msgid "Delete this report"
+#: usr/share/linuxmint/mintreport/reports/timeshift-no-setup/MintReportInfo.py:11
+msgid "Set up the system restore utility"
 msgstr ""
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:23
-msgid "Note: Information reports can only be shown in English."
+#: usr/share/linuxmint/mintreport/reports/timeshift-no-setup/MintReportInfo.py:24
+msgid "Linux Mint provides a system restore utility called Timeshift."
 msgstr ""
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:24
-msgid "Information reports"
+#: usr/share/linuxmint/mintreport/reports/timeshift-no-setup/MintReportInfo.py:25
+msgid ""
+"Thanks to Timeshift you can take snapshots of the system, either manually or "
+"automatically."
+msgstr ""
+
+#: usr/share/linuxmint/mintreport/reports/timeshift-no-setup/MintReportInfo.py:26
+msgid ""
+"If something goes wrong you can then restore your operating system from a "
+"previously saved snapshot."
+msgstr ""
+
+#: usr/share/linuxmint/mintreport/reports/timeshift-no-setup/MintReportInfo.py:32
+msgid "Launch Timeshift"
 msgstr ""
