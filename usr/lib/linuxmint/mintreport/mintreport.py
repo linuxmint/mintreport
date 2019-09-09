@@ -86,15 +86,16 @@ class MyApplication(Gtk.Application):
             window.present()
             window.show_all()
         else:
-            window = MintReportWindow(self)
+            window = MintReportWindow(self, tray_mode)
             self.add_window(window.window)
             if not tray_mode:
                 window.window.show_all()
 
 class MintReportWindow():
 
-    def __init__(self, application):
+    def __init__(self, application, tray_mode):
 
+        self.tray_mode = tray_mode
         self.application = application
         self.settings = Gio.Settings("com.linuxmint.report")
 
@@ -381,6 +382,7 @@ class MintReportWindow():
 
     @async
     def load_info(self):
+        print ("Checking reports...")
         self.loading = True
         self.info_reports = []
         self.clear_info_treeview()
@@ -389,14 +391,20 @@ class MintReportWindow():
             path = os.path.join(INFO_DIR, dir_name)
             try:
                 report = InfoReport(path)
-                self.info_reports.append(report)
+                if report.instance.is_pertinent():
+                    self.info_reports.append(report)
             except Exception as e:
                 print("Failed to load report %s: \n%s\n" % (dir_name, e))
 
         for report in self.info_reports:
-            if report.instance.is_pertinent():
-                self.add_report_to_treeview(report)
+            self.add_report_to_treeview(report)
+
         self.loading = False
+        print ("Done...")
+        print(len(self.info_reports))
+        if len(self.info_reports) == 0 and self.tray_mode:
+            print ("Not enough info, exiting!")
+            self.application.quit()
 
     def on_info_selected(self, selection):
         if self.loading:
