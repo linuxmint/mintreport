@@ -37,3 +37,17 @@ OnlyShowIn=KDE;
 """
 
 additionalfiles.generate(DOMAIN, PATH, "usr/share/applications/kde4/mintreport.desktop", prefix, _("System Reports"), _("Troubleshoot problems"), suffix, genericName=_("Troubleshooting Tool"))
+
+prefix = """[Desktop Entry]
+Encoding=UTF-8\n"""
+
+suffix = """Exec=mintreport-tray
+Icon=mintreport
+Terminal=false
+Type=Application
+Categories=
+X-GNOME-Autostart-Delay=40
+X-MATE-Autostart-Delay=40
+"""
+
+additionalfiles.generate(DOMAIN, PATH, "etc/xdg/autostart/mintreport.desktop", prefix, _("System Reports"), _("Troubleshoot problems"), suffix)

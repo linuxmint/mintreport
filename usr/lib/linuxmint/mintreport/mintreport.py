@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 import apt
+import argparse
 import os
 import sys
 import gettext
@@ -72,10 +73,29 @@ class CrashReport():
         self.sig = sig
         self.executable = executable
 
-class MintReport():
+class MyApplication(Gtk.Application):
+    # Main initialization routine
+    def __init__(self, application_id, flags, tray_mode):
+        Gtk.Application.__init__(self, application_id=application_id, flags=flags)
+        self.connect("activate", self.activate, tray_mode)
 
-    def __init__(self):
+    def activate(self, application, tray_mode):
+        windows = self.get_windows()
+        if (len(windows) > 0):
+            window = windows[0]
+            window.present()
+            window.show_all()
+        else:
+            window = MintReportWindow(self)
+            self.add_window(window.window)
+            if not tray_mode:
+                window.window.show_all()
 
+class MintReportWindow():
+
+    def __init__(self, application):
+
+        self.application = application
         self.settings = Gio.Settings("com.linuxmint.report")
 
         os.system("mkdir -p %s" % TMP_DIR)
@@ -92,7 +112,7 @@ class MintReport():
         self.window = self.builder.get_object("main_window")
         self.window.set_title(_("System Reports"))
         self.window.set_icon_name("mintreport")
-        self.window.connect("delete_event", Gtk.main_quit)
+        self.window.connect("delete_event", self.on_window_deleted)
 
         self.stack = self.builder.get_object("crash_stack")
         self.spinner = self.builder.get_object("crash_spinner")
@@ -196,7 +216,53 @@ class MintReport():
 
         self.load_info()
 
-        self.window.show_all()
+        # Status icon
+        menu = Gtk.Menu()
+        menu = Gtk.Menu()
+        menuItem = Gtk.ImageMenuItem.new_with_label(_("Quit"))
+        image = Gtk.Image.new_from_icon_name("application-exit-symbolic", Gtk.IconSize.MENU)
+        menuItem.set_image(image)
+        menuItem.connect('activate', self.quit)
+        menu.append(menuItem)
+        menu.show_all()
+
+        self.status_icon = XApp.StatusIcon()
+        self.status_icon.set_name("mintreport")
+        self.status_icon.set_tooltip_text(_("System Reports"))
+        self.status_icon.set_icon_name("dialog-warning-symbolic")
+        self.status_icon.connect("button-press-event", self.on_statusicon_pressed)
+        self.status_icon.connect("button-release-event", self.on_statusicon_released, menu)
+
+    def quit(self, widget):
+        self.application.quit()
+
+    def on_window_deleted(self, window, event):
+        self.window.hide()
+        return True
+
+    def on_statusicon_pressed(self, widget, x, y, button, time, position):
+        if button == 1:
+            if self.window.is_active():
+                self.window.hide()
+            else:
+                self.window.present()
+
+    def on_statusicon_released(self, icon, x, y, button, time, position, menu):
+        if button == 3:
+            if position == -1:
+                # The position and coordinates are unknown. This is the
+                # case when the XAppStatusIcon fallbacks as a Gtk.StatusIcon
+                menu.popup(None, None, None, None, button, time)
+            else:
+                def position_menu_cb(menu, pointer_x, pointer_y, user_data):
+                    [x, y, position] = user_data;
+                    if (position == Gtk.PositionType.BOTTOM):
+                        y = y - menu.get_allocation().height;
+                    if (position == Gtk.PositionType.RIGHT):
+                        x = x - menu.get_allocation().width;
+                    return (x, y, False)
+                device = Gdk.Display.get_default().get_device_manager().get_client_pointer()
+                menu.popup_for_device(device, None, None, position_menu_cb, [x, y, position], button, time)
 
     @async
     def load_sysinfo(self):
@@ -474,5 +540,8 @@ class MintReport():
         subprocess.call(['xdg-open', output])
 
 if __name__ == "__main__":
-    MintReport()
-    Gtk.main()
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--tray', dest='tray', action='store_true', default=False)
+    args = parser.parse_args()
+    application = MyApplication("com.linuxmint.reports", Gio.ApplicationFlags.FLAGS_NONE, args.tray)
+    application.run()
