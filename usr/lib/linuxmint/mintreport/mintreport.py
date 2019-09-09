@@ -216,13 +216,48 @@ class MintReportWindow():
 
         self.load_info()
 
+        accel_group = Gtk.AccelGroup()
+        self.window.add_accel_group(accel_group)
+
+        # Menubar
+        menubar = self.builder.get_object("menubar")
+        menu = Gtk.MenuItem.new_with_mnemonic(_("_File"))
+        menubar.append(menu)
+        submenu = Gtk.Menu()
+        menu.set_submenu(submenu)
+        item = Gtk.ImageMenuItem()
+        item.set_image(Gtk.Image.new_from_icon_name("window-close-symbolic", Gtk.IconSize.MENU))
+        item.set_label(_("Close window"))
+        item.connect("activate", self.on_menu_close)
+        key, mod = Gtk.accelerator_parse("<Control>W")
+        item.add_accelerator("activate", accel_group, key, mod, Gtk.AccelFlags.VISIBLE)
+        submenu.append(item)
+        submenu.append(Gtk.SeparatorMenuItem())
+        item = Gtk.ImageMenuItem.new_with_label(_("Quit"))
+        image = Gtk.Image.new_from_icon_name("application-exit-symbolic", Gtk.IconSize.MENU)
+        item.set_image(image)
+        item.connect('activate', self.on_menu_quit)
+        key, mod = Gtk.accelerator_parse("<Control>Q")
+        item.add_accelerator("activate", accel_group, key, mod, Gtk.AccelFlags.VISIBLE)
+        submenu.append(item)
+        menubar.show_all()
+
+        menu = Gtk.MenuItem.new_with_mnemonic(_("_Help"))
+        menubar.append(menu)
+        submenu = Gtk.Menu()
+        menu.set_submenu(submenu)
+        item = Gtk.ImageMenuItem()
+        item.set_image(Gtk.Image.new_from_icon_name("help-about-symbolic", Gtk.IconSize.MENU))
+        item.set_label(_("About"))
+        item.connect("activate", self.open_about)
+        submenu.append(item)
+
         # Status icon
-        menu = Gtk.Menu()
         menu = Gtk.Menu()
         menuItem = Gtk.ImageMenuItem.new_with_label(_("Quit"))
         image = Gtk.Image.new_from_icon_name("application-exit-symbolic", Gtk.IconSize.MENU)
         menuItem.set_image(image)
-        menuItem.connect('activate', self.quit)
+        menuItem.connect('activate', self.on_menu_quit)
         menu.append(menuItem)
         menu.show_all()
 
@@ -233,7 +268,38 @@ class MintReportWindow():
         self.status_icon.connect("button-press-event", self.on_statusicon_pressed)
         self.status_icon.connect("button-release-event", self.on_statusicon_released, menu)
 
-    def quit(self, widget):
+    def open_about(self, widget):
+        dlg = Gtk.AboutDialog()
+        dlg.set_transient_for(self.window)
+        dlg.set_title(_("About"))
+        dlg.set_program_name("mintReport")
+        dlg.set_comments(_("System Reports"))
+        try:
+            h = open('/usr/share/common-licenses/GPL', encoding="utf-8")
+            s = h.readlines()
+            gpl = ""
+            for line in s:
+                gpl += line
+            h.close()
+            dlg.set_license(gpl)
+        except Exception as e:
+            print (e)
+            print(sys.exc_info()[0])
+
+        dlg.set_version("__DEB_VERSION__")
+        dlg.set_icon_name("mintreport")
+        dlg.set_logo_icon_name("mintreport")
+        dlg.set_website("https://www.github.com/linuxmint/mintreport")
+        def close(w, res):
+            if res == Gtk.ResponseType.CANCEL or res == Gtk.ResponseType.DELETE_EVENT:
+                w.destroy()
+        dlg.connect("response", close)
+        dlg.show()
+
+    def on_menu_close(self, widget):
+        self.window.hide()
+
+    def on_menu_quit(self, widget):
         self.application.quit()
 
     def on_window_deleted(self, window, event):
