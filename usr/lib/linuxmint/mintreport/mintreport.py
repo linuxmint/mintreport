@@ -19,6 +19,7 @@ import threading
 setproctitle.setproctitle("mintreport")
 import locale
 import imp
+import xapp.os
 
 # i18n
 APP = 'mintreport'
@@ -617,5 +618,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--tray', dest='tray', action='store_true', default=False)
     args = parser.parse_args()
+    if args.tray and xapp.os.is_process_running("mintreport"):
+        print ("We're launched in tray mode and mintreport is already running. Exiting..")
+        sys.exit(0)
     application = MyApplication("com.linuxmint.reports", Gio.ApplicationFlags.FLAGS_NONE, args.tray)
     application.run()
