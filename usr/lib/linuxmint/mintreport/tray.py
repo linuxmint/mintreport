@@ -31,6 +31,8 @@ class MyApplication(Gtk.Application):
         Gtk.Application.__init__(self, application_id=application_id, flags=flags)
         self.connect("activate", self.activate)
 
+        self.settings = Gio.Settings("com.linuxmint.report")
+
         # Status icon
         menu = Gtk.Menu()
         menuItem = Gtk.MenuItem.new_with_label(_("Show System Reports"))
@@ -47,6 +49,7 @@ class MyApplication(Gtk.Application):
         self.status_icon.set_name("mintreport")
         self.status_icon.connect("button-press-event", self.on_statusicon_pressed)
         self.status_icon.connect("button-release-event", self.on_statusicon_released, menu)
+        self.status_icon.set_visible(False)
 
     def on_statusicon_pressed(self, widget, x, y, button, time, position):
         if button == 1:
@@ -89,18 +92,18 @@ class MyApplication(Gtk.Application):
     def load_info(self):
         pertinent_reports = []
         if os.path.exists(INFO_DIR):
+            ignored_paths = self.settings.get_strv("ignored-reports")
             for dir_name in os.listdir(INFO_DIR):
                 path = os.path.join(INFO_DIR, dir_name)
-                try:
-                    report = InfoReport(path)
-                    if report.instance.is_pertinent():
-                        pertinent_reports.append(report)
-                except Exception as e:
-                    print("Failed to load report %s: \n%s\n" % (dir_name, e))
+                if path not in ignored_paths:
+                    try:
+                        report = InfoReport(path)
+                        if report.instance.is_pertinent():
+                            pertinent_reports.append(report)
+                    except Exception as e:
+                        print("Failed to load report %s: \n%s\n" % (dir_name, e))
 
         if len(pertinent_reports) == 0:
-            self.status_icon.set_icon_name("dialog-warning-symbolic")
-            self.status_icon.set_tooltip_text(_("No reports available"))
             self.status_icon.set_visible(False)
         elif len(pertinent_reports) == 1:
             self.status_icon.set_visible(True)
