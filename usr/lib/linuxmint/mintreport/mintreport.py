@@ -301,22 +301,18 @@ class MintReportWindow():
     @async
     def load_info(self):
         self.loading = True
-        self.info_reports = []
         self.clear_info_treeview()
-
         if os.path.exists(INFO_DIR):
+            ignored_paths = self.settings.get_strv("ignored-reports")
             for dir_name in os.listdir(INFO_DIR):
                 path = os.path.join(INFO_DIR, dir_name)
-                try:
-                    report = InfoReport(path)
-                    if report.instance.is_pertinent():
-                        self.info_reports.append(report)
-                except Exception as e:
-                    print("Failed to load report %s: \n%s\n" % (dir_name, e))
-
-        for report in self.info_reports:
-            self.add_report_to_treeview(report)
-
+                if path not in ignored_paths:
+                    try:
+                        report = InfoReport(path)
+                        if report.instance.is_pertinent():
+                            self.add_report_to_treeview(report)
+                    except Exception as e:
+                        print("Failed to load report %s: \n%s\n" % (dir_name, e))
         self.loading = False
 
     def on_info_selected(self, selection):
@@ -337,15 +333,36 @@ class MintReportWindow():
             for child in self.info_button_box.get_children():
                 self.info_button_box.remove(child)
             for action in actions:
-                (name, callback) = action
+                (name, style, callback) = action
                 button = Gtk.Button(name)
                 button.connect("clicked", self.on_info_action_clicked, callback)
+                if style is not None:
+                    button.get_style_context().add_class(style)
+                self.info_button_box.add(button)
+            if report.instance.has_ignore_button:
+                button = Gtk.Button(_("Ignore this problem"))
+                button.connect("clicked", self.on_ignore_button_clicked)
                 self.info_button_box.add(button)
             self.builder.get_object("info_box").show_all()
 
     def on_info_action_clicked(self, button, callback):
         callback()
         self.load_info()
+
+    def on_ignore_button_clicked(self, button):
+            model, iter = self.treeview_info.get_selection().get_selected()
+            if iter is not None:
+                report = model.get_value(iter, COL_INFO_REPORT)
+                dialog = Gtk.MessageDialog(self.window, 0, Gtk.MessageType.QUESTION, Gtk.ButtonsType.OK_CANCEL, _("Are you sure you want to ignore this problem?"))
+                dialog.format_secondary_text(_("The problem will be permanently ignored and will no longer be visible."))
+                response = dialog.run()
+                dialog.destroy()
+                if response == Gtk.ResponseType.OK:
+                    ignored_paths = self.settings.get_strv("ignored-reports")
+                    if report.path not in ignored_paths:
+                        ignored_paths.append(report.path)
+                        self.settings.set_strv("ignored-reports", ignored_paths)
+                        self.load_info()
 
     def on_link_clicked(self, view, frame, request, data=None):
         uri = request.get_uri()

@@ -1,6 +1,7 @@
 import os
 import subprocess
 import gettext
+from gi.repository import Gtk
 
 class Report():
 
@@ -10,6 +11,7 @@ class Report():
 
         self.title = _("Install multimedia codecs")
         self.icon = "applications-multimedia-symbolic"
+        self.has_ignore_button = True
 
     def is_pertinent(self):
         # Defines whether this report should show up
@@ -27,7 +29,7 @@ class Report():
     def get_actions(self):
         # Return available actions
         actions = []
-        actions.append([_("Install the Multimedia Codecs"), self.install_codecs])
+        actions.append([_("Install the Multimedia Codecs"), Gtk.STYLE_CLASS_SUGGESTED_ACTION, self.install_codecs])
         return actions
 
     def install_codecs(self):

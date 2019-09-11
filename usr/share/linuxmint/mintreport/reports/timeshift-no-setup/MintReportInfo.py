@@ -1,6 +1,7 @@
 import os
 import subprocess
 import gettext
+from gi.repository import Gtk
 
 class Report():
 
@@ -10,6 +11,7 @@ class Report():
 
         self.title = _("Set up the system restore utility")
         self.icon = "document-open-recent-symbolic"
+        self.has_ignore_button = True
 
     def is_pertinent(self):
         # Defines whether this report should show up
@@ -29,7 +31,7 @@ class Report():
     def get_actions(self):
         # Return available actions
         actions = []
-        actions.append([_("Launch Timeshift"), self.launch_timeshift])
+        actions.append([_("Launch Timeshift"), Gtk.STYLE_CLASS_SUGGESTED_ACTION, self.launch_timeshift])
         return actions
 
     def launch_timeshift(self):

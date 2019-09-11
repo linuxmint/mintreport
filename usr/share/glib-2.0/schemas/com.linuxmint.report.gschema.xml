@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
   <schema id="com.linuxmint.report" path="/com/linuxmint/report/">
-    <key type="as" name="deleted-reports">
+    <key type="as" name="ignored-reports">
       <default>[]</default>
       <summary></summary>
       <description></description>
