@@ -26,6 +26,20 @@ additionalfiles.generate(DOMAIN, PATH, "usr/share/applications/mintreport.deskto
 
 prefix = "[Desktop Entry]\n"
 
+suffix = """Exec=mintreport-tray
+Icon=mintreport
+Terminal=false
+Type=Application
+Encoding=UTF-8
+Categories=Application;System;Settings;
+StartupNotify=false
+NoDisplay=true
+"""
+
+additionalfiles.generate(DOMAIN, PATH, "usr/share/applications/mintreport-tray.desktop", prefix, _("System Reports"), _("Troubleshoot problems"), suffix)
+
+prefix = "[Desktop Entry]\n"
+
 suffix = """Exec=mintreport
 Icon=mintreport
 Terminal=false
@@ -51,3 +65,4 @@ X-MATE-Autostart-Delay=40
 """
 
 additionalfiles.generate(DOMAIN, PATH, "etc/xdg/autostart/mintreport.desktop", prefix, _("System Reports"), _("Troubleshoot problems"), suffix)
+

@@ -1,5 +1,2 @@
-#!/usr/bin/python3
-
-import subprocess
-
-subprocess.call(["/usr/lib/linuxmint/mintreport/mintreport.py", "--tray"])
+#!/bin/bash
+/usr/lib/linuxmint/mintreport/tray.py &

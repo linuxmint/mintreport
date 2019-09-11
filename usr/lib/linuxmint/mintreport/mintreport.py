@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 
 import apt
-import argparse
 import os
 import sys
 import gettext
@@ -18,7 +17,8 @@ import setproctitle
 import threading
 import locale
 import imp
-import psutil
+
+from common import async, idle, InfoReport, DATA_DIR, INFO_DIR
 
 setproctitle.setproctitle("mintreport")
 
@@ -30,8 +30,6 @@ gettext.bindtextdomain(APP, LOCALE_DIR)
 gettext.textdomain(APP)
 _ = gettext.gettext
 
-DATA_DIR = "/usr/share/linuxmint/mintreport"
-INFO_DIR = os.path.join(DATA_DIR, "reports")
 TMP_DIR = "/tmp/mintreport"
 TMP_INFO_DIR = os.path.join(TMP_DIR, "reports")
 TMP_INXI_FILE = os.path.join(TMP_DIR, "inxi")
@@ -43,30 +41,6 @@ COL_CRASH_DAY, COL_CRASH_DATE, COL_CRASH_TIME, COL_CRASH_TIMEZONE, COL_CRASH_PID
 
 COL_INFO_ICON, COL_INFO_TITLE, COL_INFO_REPORT = range(3)
 
-# Used as a decorator to run things in the background
-def async(func):
-    def wrapper(*args, **kwargs):
-        thread = threading.Thread(target=func, args=args, kwargs=kwargs)
-        thread.daemon = True
-        thread.start()
-        return thread
-    return wrapper
-
-# Used as a decorator to run things in the main loop, from another thread
-def idle(func):
-    def wrapper(*args):
-        GObject.idle_add(func, *args)
-    return wrapper
-
-class InfoReport():
-    def __init__(self, path):
-        self.path = path
-        sys.path.insert(0, path)
-        import MintReportInfo
-        imp.reload(MintReportInfo)
-        self.instance = MintReportInfo.Report()
-        sys.path.remove(path)
-
 class CrashReport():
 
     def __init__(self, timestamp, pid, sig, executable):
@@ -77,27 +51,25 @@ class CrashReport():
 
 class MyApplication(Gtk.Application):
     # Main initialization routine
-    def __init__(self, application_id, flags, tray_mode):
+    def __init__(self, application_id, flags):
         Gtk.Application.__init__(self, application_id=application_id, flags=flags)
-        self.connect("activate", self.activate, tray_mode)
+        self.connect("activate", self.activate)
 
-    def activate(self, application, tray_mode):
+    def activate(self, application):
         windows = self.get_windows()
         if (len(windows) > 0):
             window = windows[0]
             window.present()
             window.show_all()
         else:
-            window = MintReportWindow(self, tray_mode)
+            window = MintReportWindow(self)
             self.add_window(window.window)
-            if not tray_mode:
-                window.window.show_all()
+            window.window.show_all()
 
 class MintReportWindow():
 
-    def __init__(self, application, tray_mode):
+    def __init__(self, application):
 
-        self.tray_mode = tray_mode
         self.application = application
         self.settings = Gio.Settings("com.linuxmint.report")
 
@@ -115,7 +87,6 @@ class MintReportWindow():
         self.window = self.builder.get_object("main_window")
         self.window.set_title(_("System Reports"))
         self.window.set_icon_name("mintreport")
-        self.window.connect("delete_event", self.on_window_deleted)
 
         self.stack = self.builder.get_object("crash_stack")
         self.spinner = self.builder.get_object("crash_spinner")
@@ -228,19 +199,13 @@ class MintReportWindow():
         menubar.append(menu)
         submenu = Gtk.Menu()
         menu.set_submenu(submenu)
-        item = Gtk.ImageMenuItem()
-        item.set_image(Gtk.Image.new_from_icon_name("window-close-symbolic", Gtk.IconSize.MENU))
-        item.set_label(_("Close window"))
-        item.connect("activate", self.on_menu_close)
-        key, mod = Gtk.accelerator_parse("<Control>W")
-        item.add_accelerator("activate", accel_group, key, mod, Gtk.AccelFlags.VISIBLE)
-        submenu.append(item)
-        submenu.append(Gtk.SeparatorMenuItem())
         item = Gtk.ImageMenuItem.new_with_label(_("Quit"))
         image = Gtk.Image.new_from_icon_name("application-exit-symbolic", Gtk.IconSize.MENU)
         item.set_image(image)
         item.connect('activate', self.on_menu_quit)
         key, mod = Gtk.accelerator_parse("<Control>Q")
+        item.add_accelerator("activate", accel_group, key, mod, Gtk.AccelFlags.VISIBLE)
+        key, mod = Gtk.accelerator_parse("<Control>W")
         item.add_accelerator("activate", accel_group, key, mod, Gtk.AccelFlags.VISIBLE)
         submenu.append(item)
         menubar.show_all()
@@ -254,22 +219,6 @@ class MintReportWindow():
         item.set_label(_("About"))
         item.connect("activate", self.open_about)
         submenu.append(item)
-
-        # Status icon
-        menu = Gtk.Menu()
-        menuItem = Gtk.ImageMenuItem.new_with_label(_("Quit"))
-        image = Gtk.Image.new_from_icon_name("application-exit-symbolic", Gtk.IconSize.MENU)
-        menuItem.set_image(image)
-        menuItem.connect('activate', self.on_menu_quit)
-        menu.append(menuItem)
-        menu.show_all()
-
-        self.status_icon = XApp.StatusIcon()
-        self.status_icon.set_name("mintreport")
-        self.status_icon.set_tooltip_text(_("System Reports"))
-        self.status_icon.set_icon_name("dialog-warning-symbolic")
-        self.status_icon.connect("button-press-event", self.on_statusicon_pressed)
-        self.status_icon.connect("button-release-event", self.on_statusicon_released, menu)
 
     def open_about(self, widget):
         dlg = Gtk.AboutDialog()
@@ -299,39 +248,8 @@ class MintReportWindow():
         dlg.connect("response", close)
         dlg.show()
 
-    def on_menu_close(self, widget):
-        self.window.hide()
-
     def on_menu_quit(self, widget):
         self.application.quit()
-
-    def on_window_deleted(self, window, event):
-        self.window.hide()
-        return True
-
-    def on_statusicon_pressed(self, widget, x, y, button, time, position):
-        if button == 1:
-            if self.window.is_active():
-                self.window.hide()
-            else:
-                self.window.present()
-
-    def on_statusicon_released(self, icon, x, y, button, time, position, menu):
-        if button == 3:
-            if position == -1:
-                # The position and coordinates are unknown. This is the
-                # case when the XAppStatusIcon fallbacks as a Gtk.StatusIcon
-                menu.popup(None, None, None, None, button, time)
-            else:
-                def position_menu_cb(menu, pointer_x, pointer_y, user_data):
-                    [x, y, position] = user_data;
-                    if (position == Gtk.PositionType.BOTTOM):
-                        y = y - menu.get_allocation().height;
-                    if (position == Gtk.PositionType.RIGHT):
-                        x = x - menu.get_allocation().width;
-                    return (x, y, False)
-                device = Gdk.Display.get_default().get_device_manager().get_client_pointer()
-                menu.popup_for_device(device, None, None, position_menu_cb, [x, y, position], button, time)
 
     @async
     def load_sysinfo(self):
@@ -384,29 +302,24 @@ class MintReportWindow():
 
     @async
     def load_info(self):
-        print ("Checking reports...")
         self.loading = True
         self.info_reports = []
         self.clear_info_treeview()
 
-        for dir_name in os.listdir(INFO_DIR):
-            path = os.path.join(INFO_DIR, dir_name)
-            try:
-                report = InfoReport(path)
-                if report.instance.is_pertinent():
-                    self.info_reports.append(report)
-            except Exception as e:
-                print("Failed to load report %s: \n%s\n" % (dir_name, e))
+        if os.path.exists(INFO_DIR):
+            for dir_name in os.listdir(INFO_DIR):
+                path = os.path.join(INFO_DIR, dir_name)
+                try:
+                    report = InfoReport(path)
+                    if report.instance.is_pertinent():
+                        self.info_reports.append(report)
+                except Exception as e:
+                    print("Failed to load report %s: \n%s\n" % (dir_name, e))
 
         for report in self.info_reports:
             self.add_report_to_treeview(report)
 
         self.loading = False
-        print ("Done...")
-        print(len(self.info_reports))
-        if len(self.info_reports) == 0 and self.tray_mode:
-            print ("Not enough info, exiting!")
-            self.application.quit()
 
     def on_info_selected(self, selection):
         if self.loading:
@@ -616,14 +529,5 @@ class MintReportWindow():
         subprocess.call(['xdg-open', output])
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--tray', dest='tray', action='store_true', default=False)
-    args = parser.parse_args()
-    if args.tray:
-        for pid in psutil.pids():
-            p = psutil.Process(pid)
-            if p.name() == "mintreport" and p.pid != os.getpid():
-                print ("We're launched in tray mode and mintreport is already running. Exiting..")
-                sys.exit(0)
-    application = MyApplication("com.linuxmint.reports", Gio.ApplicationFlags.FLAGS_NONE, args.tray)
+    application = MyApplication("com.linuxmint.reports", Gio.ApplicationFlags.FLAGS_NONE)
     application.run()
