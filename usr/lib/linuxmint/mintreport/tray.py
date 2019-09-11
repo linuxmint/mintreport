@@ -99,7 +99,7 @@ class MyApplication(Gtk.Application):
                     print("Failed to load report %s: \n%s\n" % (dir_name, e))
 
         if len(pertinent_reports) == 0:
-            self.status_icon.set_icon_name("task-due-symbolic")
+            self.status_icon.set_icon_name("dialog-warning-symbolic")
             self.status_icon.set_tooltip_text(_("No reports available"))
             self.status_icon.set_visible(False)
         elif len(pertinent_reports) == 1:
@@ -109,7 +109,7 @@ class MyApplication(Gtk.Application):
             self.status_icon.set_tooltip_text(report.instance.title)
         else:
             self.status_icon.set_visible(True)
-            self.status_icon.set_icon_name("task-due-symbolic")
+            self.status_icon.set_icon_name("dialog-warning-symbolic")
             self.status_icon.set_tooltip_text(_("Some problems were detected which require your attention"))
 
 if __name__ == "__main__":
