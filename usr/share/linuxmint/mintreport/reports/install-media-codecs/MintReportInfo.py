@@ -1,5 +1,8 @@
 import os
 import gettext
+
+import gi
+gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
 
 from mintreport import InfoReport, InfoReportAction
@@ -37,3 +40,7 @@ class Report(InfoReport):
 
     def callback(self):
         self.install_packages(["mint-meta-codecs"])
+
+if __name__ == "__main__":
+    report = Report()
+    print(report.is_pertinent())
