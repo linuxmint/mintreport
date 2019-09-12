@@ -369,6 +369,7 @@ class MintReportWindow():
                 self.info_descriptions_box.remove(child)
             for description in descriptions:
                 label = Gtk.Label(description)
+                label.set_use_markup(True)
                 label.set_line_wrap(True)
                 self.info_descriptions_box.add(label)
             for child in self.info_button_box.get_children():
