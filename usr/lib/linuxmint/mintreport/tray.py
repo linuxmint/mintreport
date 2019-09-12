@@ -100,6 +100,11 @@ class MyApplication(Gtk.Application):
                         report = InfoReport(path)
                         if report.instance.is_pertinent():
                             pertinent_reports.append(report)
+                            if len(pertinent_reports) > 1:
+                                # If we detect more than 1 report, we don't need
+                                # to go further, we'll show that multiple
+                                # reports are available..
+                                break
                     except Exception as e:
                         print("Failed to load report %s: \n%s\n" % (dir_name, e))
 
