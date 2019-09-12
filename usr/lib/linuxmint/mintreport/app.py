@@ -319,10 +319,25 @@ class MintReportWindow():
         self.model_info.clear()
         self.builder.get_object("info_box").hide()
 
+    @idle
+    def show_info_spinner(self):
+        self.builder.get_object("box_info_stack").set_visible_child_name("spinner")
+        self.builder.get_object("info_spinner").start()
+
+    @idle
+    def show_info_reports(self):
+        if self.num_info_found > 0:
+            self.builder.get_object("box_info_stack").set_visible_child_name("reports")
+        else:
+            self.builder.get_object("box_info_stack").set_visible_child_name("done")
+        self.builder.get_object("info_spinner").stop()
+
     @async
     def load_info(self):
         self.loading = True
         self.clear_info_treeview()
+        self.show_info_spinner()
+        self.num_info_found = 0
         if os.path.exists(INFO_DIR):
             ignored_paths = self.settings.get_strv("ignored-reports")
             for dir_name in sorted(os.listdir(INFO_DIR)):
@@ -334,9 +349,11 @@ class MintReportWindow():
                         report = InfoReportContainer(uuid, path)
                         if report.instance.is_pertinent():
                             self.add_report_to_treeview(report)
+                            self.num_info_found += 1
                     except Exception as e:
                         print("Failed to load report %s: \n%s\n" % (dir_name, e))
         self.loading = False
+        self.show_info_reports()
 
     def on_info_selected(self, selection):
         if self.loading:
@@ -388,7 +405,10 @@ class MintReportWindow():
                     if report.uuid not in ignored_uuids:
                         ignored_uuids.append(report.uuid)
                         self.settings.set_strv("ignored-reports", ignored_uuids)
+                        self.num_info_found -= 1
                         model.remove(iter)
+                        if self.num_info_found == 0:
+                            self.show_info_reports()
 
     def on_link_clicked(self, view, frame, request, data=None):
         uri = request.get_uri()
