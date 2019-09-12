@@ -30,7 +30,7 @@ class Report(InfoReport):
                     continue
                 driver = driver_packages[package_name]
                 # if the package isn't installed, add it
-                if not os.path.exists("/var/lib/dpkg/info/%s.list" % package_name):
+                if not os.path.exists("/var/libdpkg/info/%s.list" % package_name):
                     self.drivers.append("%s %s" % (driver['vendor'], driver['model']))
             return (len(self.drivers) > 0)
         except Exception as e:
@@ -54,6 +54,8 @@ class Report(InfoReport):
 
     def callback(self):
         subprocess.run(["pkexec", "driver-manager"])
+        # don't reload
+        return False
 
 if __name__ == "__main__":
     report = Report()

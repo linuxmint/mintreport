@@ -40,6 +40,8 @@ class Report(InfoReport):
 
     def callback(self):
         self.install_packages(["mint-meta-codecs"])
+        # reload
+        return True
 
 if __name__ == "__main__":
     report = Report()

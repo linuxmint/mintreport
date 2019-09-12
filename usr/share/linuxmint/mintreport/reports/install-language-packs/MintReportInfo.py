@@ -53,6 +53,8 @@ class Report(InfoReport):
 
     def callback(self):
         self.install_packages(self.missing_pack_names)
+        # reload
+        return True
 
     def check_missing_packages(self, locale):
         self.missing_pack_names = []

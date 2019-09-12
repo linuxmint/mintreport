@@ -43,6 +43,8 @@ class Report(InfoReport):
 
     def launch_timeshift(self):
         subprocess.run(["pkexec", "timeshift-gtk"])
+        # reload
+        return True
 
 if __name__ == "__main__":
     report = Report()

@@ -347,8 +347,9 @@ class MintReportWindow():
 
     def on_info_action_clicked(self, button, callback):
         self.window.set_sensitive(False)
-        callback()
-        self.load_info()
+        reload_requested = callback()
+        if reload_requested:
+            self.load_info()
         self.window.set_sensitive(True)
 
     def on_ignore_button_clicked(self, button):
