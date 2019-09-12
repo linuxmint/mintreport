@@ -266,6 +266,8 @@ class MintReportWindow():
 
     def on_menu_refresh(self, widget):
         self.load_info()
+        self.load_sysinfo()
+        self.load_crashes()
 
     def on_menu_quit(self, widget):
         self.application.quit()
@@ -326,6 +328,7 @@ class MintReportWindow():
             for dir_name in sorted(os.listdir(INFO_DIR)):
                 path = os.path.join(INFO_DIR, dir_name)
                 uuid = dir_name.split("_")[-1]
+                print ("Checking %s" % dir_name)
                 if uuid not in ignored_paths:
                     try:
                         report = InfoReportContainer(uuid, path)
@@ -409,6 +412,7 @@ class MintReportWindow():
             subprocess.Popen(["xdg-open", uri])
             return True
 
+    @idle
     def load_crashes(self):
         self.loading = True
         self.model_crashes.clear()
