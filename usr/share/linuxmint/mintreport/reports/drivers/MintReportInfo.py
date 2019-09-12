@@ -28,7 +28,11 @@ class Report(InfoReport):
                 if "virtualbox" in package_name:
                     # Ignore them, they're not recommended
                     continue
-
+                driver = driver_packages[package_name]
+                # if the package isn't installed, add it
+                if not os.path.exists("/var/lib/dpkg/info/%s.list" % package_name):
+                    self.drivers.append("%s %s" % (driver['vendor'], driver['model']))
+            return (len(self.drivers) > 0)
         except Exception as e:
             print ("Failed to assess drivers availability: %s" % e)
             return False
