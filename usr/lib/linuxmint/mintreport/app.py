@@ -305,11 +305,11 @@ class MintReportWindow():
         if os.path.exists(INFO_DIR):
             ignored_paths = self.settings.get_strv("ignored-reports")
             for dir_name in sorted(os.listdir(INFO_DIR)):
-                print ("checking %s" % dir_name)
                 path = os.path.join(INFO_DIR, dir_name)
-                if path not in ignored_paths:
+                uuid = dir_name.split("_")[-1]
+                if uuid not in ignored_paths:
                     try:
-                        report = InfoReportContainer(path)
+                        report = InfoReportContainer(uuid, path)
                         if report.instance.is_pertinent():
                             self.add_report_to_treeview(report)
                     except Exception as e:
@@ -362,10 +362,10 @@ class MintReportWindow():
                 response = dialog.run()
                 dialog.destroy()
                 if response == Gtk.ResponseType.OK:
-                    ignored_paths = self.settings.get_strv("ignored-reports")
-                    if report.path not in ignored_paths:
-                        ignored_paths.append(report.path)
-                        self.settings.set_strv("ignored-reports", ignored_paths)
+                    ignored_uuids = self.settings.get_strv("ignored-reports")
+                    if report.uuid not in ignored_uuids:
+                        ignored_uuids.append(report.uuid)
+                        self.settings.set_strv("ignored-reports", ignored_uuids)
                         self.load_info()
 
     def on_link_clicked(self, view, frame, request, data=None):

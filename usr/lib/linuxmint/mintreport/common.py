@@ -33,7 +33,8 @@ def idle(func):
     return wrapper
 
 class InfoReportContainer():
-    def __init__(self, path):
+    def __init__(self, uuid, path):
+        self.uuid = uuid
         self.path = path
         sys.path.insert(0, path)
         import MintReportInfo

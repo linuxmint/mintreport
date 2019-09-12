@@ -95,9 +95,10 @@ class MyApplication(Gtk.Application):
             ignored_paths = self.settings.get_strv("ignored-reports")
             for dir_name in sorted(os.listdir(INFO_DIR)):
                 path = os.path.join(INFO_DIR, dir_name)
-                if path not in ignored_paths:
+                uuid = dir_name.split("_")[-1]
+                if uuid not in ignored_paths:
                     try:
-                        report = InfoReportContainer(path)
+                        report = InfoReportContainer(uuid, path)
                         if report.instance.is_pertinent():
                             pertinent_reports.append(report)
                             if len(pertinent_reports) > 1:
