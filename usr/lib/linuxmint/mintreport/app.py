@@ -18,7 +18,7 @@ import threading
 import locale
 import imp
 
-from common import async, idle, InfoReport, DATA_DIR, INFO_DIR
+from common import async, idle, InfoReportContainer, DATA_DIR, INFO_DIR
 
 setproctitle.setproctitle("mintreport")
 
@@ -308,7 +308,7 @@ class MintReportWindow():
                 path = os.path.join(INFO_DIR, dir_name)
                 if path not in ignored_paths:
                     try:
-                        report = InfoReport(path)
+                        report = InfoReportContainer(path)
                         if report.instance.is_pertinent():
                             self.add_report_to_treeview(report)
                     except Exception as e:
@@ -329,15 +329,15 @@ class MintReportWindow():
                 self.info_descriptions_box.remove(child)
             for description in descriptions:
                 label = Gtk.Label(description)
+                label.set_line_wrap(True)
                 self.info_descriptions_box.add(label)
             for child in self.info_button_box.get_children():
                 self.info_button_box.remove(child)
             for action in actions:
-                (name, style, callback) = action
-                button = Gtk.Button(name)
-                button.connect("clicked", self.on_info_action_clicked, callback)
-                if style is not None:
-                    button.get_style_context().add_class(style)
+                button = Gtk.Button(action.label)
+                button.connect("clicked", self.on_info_action_clicked, action.callback)
+                if action.style is not None:
+                    button.get_style_context().add_class(action.style)
                 self.info_button_box.add(button)
             if report.instance.has_ignore_button:
                 button = Gtk.Button(_("Ignore this problem"))
@@ -346,8 +346,10 @@ class MintReportWindow():
             self.builder.get_object("info_box").show_all()
 
     def on_info_action_clicked(self, button, callback):
+        self.window.set_sensitive(False)
         callback()
         self.load_info()
+        self.window.set_sensitive(True)
 
     def on_ignore_button_clicked(self, button):
             model, iter = self.treeview_info.get_selection().get_selected()

@@ -1,9 +1,10 @@
 import os
-import subprocess
 import gettext
 from gi.repository import Gtk
 
-class Report():
+from mintreport import InfoReport, InfoReportAction
+
+class Report(InfoReport):
 
     def __init__(self):
 
@@ -29,8 +30,10 @@ class Report():
     def get_actions(self):
         # Return available actions
         actions = []
-        actions.append([_("Install the Multimedia Codecs"), Gtk.STYLE_CLASS_SUGGESTED_ACTION, self.install_codecs])
+        action = InfoReportAction(label=_("Install the Multimedia Codecs"), callback=self.callback)
+        action.set_style(Gtk.STYLE_CLASS_SUGGESTED_ACTION)
+        actions.append(action)
         return actions
 
-    def install_codecs(self):
-        subprocess.run(["apturl", "apt://mint-meta-codecs?refresh=yes"])
+    def callback(self):
+        self.install_packages(["mint-meta-codecs"])

@@ -1,2 +1,2 @@
 #/bin/sh
-/usr/lib/linuxmint/mintreport/mintreport.py &
+/usr/lib/linuxmint/mintreport/app.py &

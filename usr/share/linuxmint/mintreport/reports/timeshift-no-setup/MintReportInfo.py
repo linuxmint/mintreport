@@ -3,7 +3,9 @@ import subprocess
 import gettext
 from gi.repository import Gtk
 
-class Report():
+from mintreport import InfoReport, InfoReportAction
+
+class Report(InfoReport):
 
     def __init__(self):
 
@@ -31,7 +33,9 @@ class Report():
     def get_actions(self):
         # Return available actions
         actions = []
-        actions.append([_("Launch Timeshift"), Gtk.STYLE_CLASS_SUGGESTED_ACTION, self.launch_timeshift])
+        action = InfoReportAction(label=_("Launch Timeshift"), callback=self.launch_timeshift)
+        action.set_style(Gtk.STYLE_CLASS_SUGGESTED_ACTION)
+        actions.append(action)
         return actions
 
     def launch_timeshift(self):

@@ -32,7 +32,7 @@ def idle(func):
         GObject.idle_add(func, *args)
     return wrapper
 
-class InfoReport():
+class InfoReportContainer():
     def __init__(self, path):
         self.path = path
         sys.path.insert(0, path)
