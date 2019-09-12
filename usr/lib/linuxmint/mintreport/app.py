@@ -304,7 +304,8 @@ class MintReportWindow():
         self.clear_info_treeview()
         if os.path.exists(INFO_DIR):
             ignored_paths = self.settings.get_strv("ignored-reports")
-            for dir_name in os.listdir(INFO_DIR):
+            for dir_name in sorted(os.listdir(INFO_DIR)):
+                print ("checking %s" % dir_name)
                 path = os.path.join(INFO_DIR, dir_name)
                 if path not in ignored_paths:
                     try:

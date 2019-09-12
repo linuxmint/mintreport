@@ -13,7 +13,7 @@ import threading
 import locale
 import imp
 
-from common import async, idle, InfoReport, INFO_DIR
+from common import async, idle, InfoReportContainer, INFO_DIR
 
 setproctitle.setproctitle("mintreport-tray")
 
@@ -93,11 +93,11 @@ class MyApplication(Gtk.Application):
         pertinent_reports = []
         if os.path.exists(INFO_DIR):
             ignored_paths = self.settings.get_strv("ignored-reports")
-            for dir_name in os.listdir(INFO_DIR):
+            for dir_name in sorted(os.listdir(INFO_DIR)):
                 path = os.path.join(INFO_DIR, dir_name)
                 if path not in ignored_paths:
                     try:
-                        report = InfoReport(path)
+                        report = InfoReportContainer(path)
                         if report.instance.is_pertinent():
                             pertinent_reports.append(report)
                             if len(pertinent_reports) > 1:
