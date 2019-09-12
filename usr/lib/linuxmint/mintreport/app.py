@@ -199,6 +199,14 @@ class MintReportWindow():
         menubar.append(menu)
         submenu = Gtk.Menu()
         menu.set_submenu(submenu)
+
+        item = Gtk.ImageMenuItem.new_with_label(_("Refresh"))
+        image = Gtk.Image.new_from_icon_name("view-refresh-symbolic", Gtk.IconSize.MENU)
+        item.set_image(image)
+        item.connect('activate', self.on_menu_refresh)
+        key, mod = Gtk.accelerator_parse("<Control>R")
+        item.add_accelerator("activate", accel_group, key, mod, Gtk.AccelFlags.VISIBLE)
+        submenu.append(item)
         item = Gtk.ImageMenuItem.new_with_label(_("Quit"))
         image = Gtk.Image.new_from_icon_name("application-exit-symbolic", Gtk.IconSize.MENU)
         item.set_image(image)
@@ -247,6 +255,9 @@ class MintReportWindow():
                 w.destroy()
         dlg.connect("response", close)
         dlg.show()
+
+    def on_menu_refresh(self, widget):
+        self.load_info()
 
     def on_menu_quit(self, widget):
         self.application.quit()
