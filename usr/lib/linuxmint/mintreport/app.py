@@ -207,6 +207,10 @@ class MintReportWindow():
         key, mod = Gtk.accelerator_parse("<Control>R")
         item.add_accelerator("activate", accel_group, key, mod, Gtk.AccelFlags.VISIBLE)
         submenu.append(item)
+        item = Gtk.ImageMenuItem.new_with_label(_("Restore ignored reports"))
+        item.connect('activate', self.on_menu_restore)
+        submenu.append(item)
+        submenu.append(Gtk.SeparatorMenuItem())
         item = Gtk.ImageMenuItem.new_with_label(_("Quit"))
         image = Gtk.Image.new_from_icon_name("application-exit-symbolic", Gtk.IconSize.MENU)
         item.set_image(image)
@@ -255,6 +259,10 @@ class MintReportWindow():
                 w.destroy()
         dlg.connect("response", close)
         dlg.show()
+
+    def on_menu_restore(self, widget):
+        self.settings.reset("ignored-reports")
+        self.load_info()
 
     def on_menu_refresh(self, widget):
         self.load_info()
@@ -377,7 +385,7 @@ class MintReportWindow():
                     if report.uuid not in ignored_uuids:
                         ignored_uuids.append(report.uuid)
                         self.settings.set_strv("ignored-reports", ignored_uuids)
-                        self.load_info()
+                        model.remove(iter)
 
     def on_link_clicked(self, view, frame, request, data=None):
         uri = request.get_uri()
