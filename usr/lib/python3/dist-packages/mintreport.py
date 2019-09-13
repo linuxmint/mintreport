@@ -1,10 +1,10 @@
-from abc import ABC, abstractmethod
-import apt_pkg
-import mintcommon.aptdaemon
-import os
 import gi
+import mintcommon.aptdaemon
+
 gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
+
+from abc import ABC, abstractmethod
 
 class InfoReport(ABC):
 
