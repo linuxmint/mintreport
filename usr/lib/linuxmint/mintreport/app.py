@@ -328,6 +328,9 @@ class MintReportWindow():
     def show_info_reports(self):
         if self.num_info_found > 0:
             self.builder.get_object("box_info_stack").set_visible_child_name("reports")
+            iter_first = self.model_info.get_iter_first()
+            if iter_first is not None:
+                self.treeview_info.get_selection().select_iter(iter_first)
         else:
             self.builder.get_object("box_info_stack").set_visible_child_name("done")
         self.builder.get_object("info_spinner").stop()
