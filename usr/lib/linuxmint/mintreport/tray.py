@@ -12,6 +12,7 @@ import setproctitle
 import threading
 import locale
 import imp
+import xapp.os
 
 from common import async, idle, InfoReportContainer, INFO_DIR
 
@@ -122,5 +123,6 @@ class MyApplication(Gtk.Application):
             self.status_icon.set_tooltip_text(_("Some problems were detected which require your attention"))
 
 if __name__ == "__main__":
-    application = MyApplication("com.linuxmint.reports-tray", Gio.ApplicationFlags.FLAGS_NONE)
-    application.run()
+    if ((not xapp.os.is_live_session()) and (not xapp.os.is_guest_session())):
+        application = MyApplication("com.linuxmint.reports-tray", Gio.ApplicationFlags.FLAGS_NONE)
+        application.run()
