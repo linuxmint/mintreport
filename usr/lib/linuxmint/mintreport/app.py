@@ -1,22 +1,18 @@
 #!/usr/bin/python3
-
 import apt
-import os
-import sys
+import datetime
 import gettext
 import gi
+import locale
+import os
+import setproctitle
+import shutil
+import subprocess
+
 gi.require_version("Gtk", "3.0")
 gi.require_version('GtkSource', '3.0')
 gi.require_version('XApp', '1.0')
-from gi.repository import Gtk, Gdk, GdkPixbuf, GtkSource, GObject, Gio, XApp
-import subprocess
-import shutil
-import time
-import datetime
-import setproctitle
-import threading
-import locale
-import imp
+from gi.repository import Gtk, Gdk, GtkSource, Gio, XApp
 
 from common import async, idle, InfoReportContainer, DATA_DIR, INFO_DIR
 
@@ -248,7 +244,6 @@ class MintReportWindow():
             dlg.set_license(gpl)
         except Exception as e:
             print (e)
-            print(sys.exc_info()[0])
 
         dlg.set_version("__DEB_VERSION__")
         dlg.set_icon_name("mintreport")

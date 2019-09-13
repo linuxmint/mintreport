@@ -1,18 +1,15 @@
 #!/usr/bin/python3
-import os
-import sys
 import gettext
 import gi
-gi.require_version("Gtk", "3.0")
-gi.require_version('GtkSource', '3.0')
-gi.require_version('XApp', '1.0')
-from gi.repository import Gtk, Gdk, GObject, Gio, XApp, GLib
-import subprocess
-import setproctitle
-import threading
 import locale
-import imp
+import os
+import setproctitle
+import subprocess
 import xapp.os
+
+gi.require_version("Gtk", "3.0")
+gi.require_version('XApp', '1.0')
+from gi.repository import Gtk, Gdk, Gio, XApp, GLib
 
 from common import async, idle, InfoReportContainer, INFO_DIR
 

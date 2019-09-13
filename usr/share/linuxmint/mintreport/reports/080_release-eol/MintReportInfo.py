@@ -1,12 +1,9 @@
-import gettext
-import gi
-import time
-from datetime import datetime
-gi.require_version('Gtk', '3.0')
-from gi.repository import Gtk
-
-from mintreport import InfoReport, InfoReportAction
 import configobj
+import gettext
+import time
+
+from datetime import datetime
+from mintreport import InfoReport, InfoReportAction
 
 class Report(InfoReport):
 
