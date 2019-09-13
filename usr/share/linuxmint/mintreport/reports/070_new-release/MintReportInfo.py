@@ -44,7 +44,7 @@ class Report(InfoReport):
     def get_descriptions(self):
         # Return the descriptions
         descriptions = []
-        descriptions.append(_("Visit the <a href='https://blog.linuxmint.com'>Linux Mint blog</a> for the latest announcements"))
+        descriptions.append(_("Visit %s for the latest announcements.") % "<a href='https://blog.linuxmint.com'>https://blog.linuxmint.com</a>")
         return descriptions
 
     def get_actions(self):
