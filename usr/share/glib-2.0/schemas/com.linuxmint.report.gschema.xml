@@ -6,5 +6,10 @@
       <summary></summary>
       <description></description>
     </key>
+    <key type="i" name="autorefresh-seconds">
+      <default>3600</default>
+      <summary></summary>
+      <description></description>
+    </key>
   </schema>
 </schemalist>
