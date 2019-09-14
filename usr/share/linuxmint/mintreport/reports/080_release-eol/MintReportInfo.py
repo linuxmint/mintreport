@@ -18,24 +18,30 @@ class Report(InfoReport):
         # Defines whether this report should show up
         self.eol_date = None
         base_codename = None
+        base_distro = None
 
         config = configobj.ConfigObj("/etc/os-release")
         for base_distribution in ['ubuntu', 'debian']:
             if '%s_CODENAME' % base_distribution.upper() in config:
                 base_codename = config.get('%s_CODENAME' % base_distribution.upper())
-                distro_info = open("/usr/share/distro-info/%s.csv" % base_distribution, "r").readlines()
-                for line in distro_info[1:]:
-                    elements = line.split(",")
-                    if len(elements) == 6:
-                        version, codename, series, created, release, eol = line.split(",")
-                    elif len(elements) == 7:
-                        version, codename, series, created, release, eol, eol_server = line.split(",")
-                    else:
-                        continue
-                    if series != base_codename:
-                        continue
-                    self.eol_date = time.mktime(time.strptime(eol.rstrip(), '%Y-%m-%d'))
-                    self.eol_date = datetime.fromtimestamp(self.eol_date)
+                base_distro = base_distribution
+                break
+
+        distro_info = open("/usr/share/distro-info/%s.csv" % base_distro, "r").readlines()
+        for line in distro_info[1:]:
+            elements = line.split(",")
+            if len(elements) >= 6:
+            	codename = elements[2]
+            	eol = elements[5]            
+            	if codename != base_codename:
+                	continue
+
+            	self.eol_date = time.mktime(time.strptime(eol.rstrip(), '%Y-%m-%d'))
+            	self.eol_date = datetime.fromtimestamp(self.eol_date)
+
+        if not self.eol_date:
+        	print ("Could not find the EOL date for %s" % base_codename)
+        	return False
 
         self.days_before_eol = (self.eol_date - datetime.now()).days
         if self.days_before_eol < 90:
