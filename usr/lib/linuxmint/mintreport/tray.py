@@ -119,6 +119,8 @@ class MyApplication(Gtk.Application):
             self.status_icon.set_icon_name("dialog-warning-symbolic")
             self.status_icon.set_tooltip_text(_("Some problems were detected which require your attention"))
 
+        return True
+
 if __name__ == "__main__":
     if ((not xapp.os.is_live_session()) and (not xapp.os.is_guest_session())):
         application = MyApplication("com.linuxmint.reports-tray", Gio.ApplicationFlags.FLAGS_NONE)
