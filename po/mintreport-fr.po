@@ -1,0 +1,431 @@
+# French translation for linuxmint
+# Copyright (c) 2017 Rosetta Contributors and Canonical Ltd 2017
+# This file is distributed under the same license as the linuxmint package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: linuxmint\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2019-09-23 11:57+0100\n"
+"PO-Revision-Date: 2019-09-23 11:07+0000\n"
+"Last-Translator: Clement Lefebvre <root@linuxmint.com>\n"
+"Language-Team: French <fr@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Launchpad-Export-Date: 2019-09-23 12:19+0000\n"
+"X-Generator: Launchpad (build 19048)\n"
+
+#: usr/lib/linuxmint/mintreport/app.py:84
+#: usr/lib/linuxmint/mintreport/app.py:236 generate_desktop_files:25
+#: generate_desktop_files:39 generate_desktop_files:53
+#: generate_desktop_files:67
+msgid "System Reports"
+msgstr "Rapports système"
+
+#: usr/lib/linuxmint/mintreport/app.py:194
+msgid "_File"
+msgstr "_Fichier"
+
+#: usr/lib/linuxmint/mintreport/app.py:199
+msgid "Refresh"
+msgstr "Actualiser"
+
+#: usr/lib/linuxmint/mintreport/app.py:206
+msgid "Restore ignored reports"
+msgstr "Reprendre en compte les problèmes ignorés"
+
+#: usr/lib/linuxmint/mintreport/app.py:210
+#: usr/lib/linuxmint/mintreport/tray.py:40
+msgid "Quit"
+msgstr "Fermer"
+
+#: usr/lib/linuxmint/mintreport/app.py:221
+msgid "_Help"
+msgstr "Aide (_H)"
+
+#: usr/lib/linuxmint/mintreport/app.py:227
+#: usr/lib/linuxmint/mintreport/app.py:234
+msgid "About"
+msgstr "À propos"
+
+#: usr/lib/linuxmint/mintreport/app.py:278
+msgid "An error occurred while gathering the system information."
+msgstr ""
+"Une erreur s'est produite lors de la collecte des informations système."
+
+#: usr/lib/linuxmint/mintreport/app.py:292
+msgid "System information copied"
+msgstr "Informations système copiées"
+
+#: usr/lib/linuxmint/mintreport/app.py:292
+msgid ""
+"Your system information was copied into your clipboard so you can paste it "
+"on the forums."
+msgstr ""
+"Vos informations système ont été copiées dans le presse-papiers afin que "
+"vous puissiez les partager sur les forums de discussion."
+
+#: usr/lib/linuxmint/mintreport/app.py:301
+msgid "System information uploaded"
+msgstr "Informations système téléversées"
+
+#: usr/lib/linuxmint/mintreport/app.py:301
+#, python-format
+msgid ""
+"Your system information was uploaded to %s. This link was placed in your "
+"clipboard so you can paste it on IRC."
+msgstr ""
+"Vos informations système ont été téléversées sur %s. Ce lien se trouve "
+"maintenant dans votre presse-papiers et vous pouvez le coller sur IRC."
+
+#: usr/lib/linuxmint/mintreport/app.py:303
+msgid "An error occurred while uploading the system information"
+msgstr ""
+"Une erreur s'est produite lors du téléversement des informations systèmes"
+
+#: usr/lib/linuxmint/mintreport/app.py:303
+msgid ""
+"Copy and paste the system information manually into a pastebin site like "
+"https://pastebin.com and share the link on IRC."
+msgstr ""
+"Copiez et collez les informations système manuellement sur un site comme "
+"https://pastebin.com et partagez le lien sur IRC."
+
+#: usr/lib/linuxmint/mintreport/app.py:382
+msgid "Ignore this problem"
+msgstr "Ignorer ce problème"
+
+#: usr/lib/linuxmint/mintreport/app.py:398
+msgid "Are you sure you want to ignore this problem?"
+msgstr "Êtes-vous sûr de vouloir ignorer ce problème ?"
+
+#: usr/lib/linuxmint/mintreport/app.py:399
+msgid ""
+"The problem will be permanently ignored and will no longer be visible."
+msgstr "Ce problème sera ignoré définitivement et ne sera plus visible."
+
+#: usr/lib/linuxmint/mintreport/app.py:513
+#, python-format
+msgid ""
+"The debug symbols are missing for %(program)s.\n"
+"Please install %(package)s."
+msgstr ""
+"Les symboles de débogage sont introuvables pour %(program)s.\n"
+"Veuillez installer %(package)s."
+
+#: usr/lib/linuxmint/mintreport/app.py:527
+#, python-format
+msgid ""
+"The package providing %s could not be found.\n"
+"If you want to generate a stack trace for this crash report, please "
+"reinstall it."
+msgstr ""
+"Le paquet fournissant %s est introuvable.\n"
+"Pour générer une trace de pile pour ce rapport de plantage, veuillez le "
+"réinstaller."
+
+#: usr/lib/linuxmint/mintreport/app.py:555
+msgid ""
+"The headers or binaries installed on your system do not match the code which "
+"was executed during the crash.\n"
+"They probably got upgraded since.\n"
+"A stack trace is available in 'Local Files' but its content is probably "
+"inaccurate."
+msgstr ""
+"Les fichiers binaires ou d'entêtes installés sur ce système ne correspondent "
+"pas au code exécuté lors du plantage.\n"
+"Il ont probablement été mis à jour depuis.\n"
+"Un trace de pile est disponible dans 'Fichiers locaux' mais son contenu "
+"n'est probablement pas fidèle."
+
+#: usr/lib/linuxmint/mintreport/tray.py:36
+msgid "Show System Reports"
+msgstr "Afficher les rapports du système"
+
+#: usr/lib/linuxmint/mintreport/tray.py:120
+msgid "Some problems were detected which require your attention"
+msgstr "Des problèmes ont été détectés et requièrent votre attention"
+
+#: generate_desktop_files:25 generate_desktop_files:39
+#: generate_desktop_files:53 generate_desktop_files:67
+msgid "Troubleshoot problems"
+msgstr "Dépannage de problèmes"
+
+#: generate_desktop_files:53
+msgid "Troubleshooting Tool"
+msgstr "Outil de dépannage"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:1
+msgid "Running system checks..."
+msgstr "Analyse du système en cours ..."
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:2
+msgid "No problems were detected"
+msgstr "Aucun problème n'a été détecté"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:3
+msgid "Detected problems"
+msgstr "Problèmes détectés"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:4
+msgid "Copy"
+msgstr "Copier"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:5
+msgid ""
+"Copy to clipboard (code tags are added to make it easy to paste the system "
+"information into the forums)"
+msgstr ""
+"Copier dans le presse-papiers (des balises de code seront ajoutées pour "
+"faciliter la publication des informations système sur les forums)"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:6
+msgid "Upload"
+msgstr "Téléverser"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:7
+msgid "Upload to a pastebin service (no personal information included)"
+msgstr ""
+"Téléverser sur un site de partage de texte (aucun renseignement personnel ne "
+"sera exposé)"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:8
+msgid "System information"
+msgstr "Informations système"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:9
+msgid "Crash reports are not available"
+msgstr "Les rapports de plantage ne sont pas disponibles"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:10
+msgid ""
+"To enable crash reporting, install systemd-coredump and reboot your computer."
+msgstr ""
+"Pour activer la fonction de rapport de plantage, installez systemd-coredump "
+"et redémarrez l'ordinateur."
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:11
+msgid "Crash reports:"
+msgstr "Rapports de plantage :"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:12
+msgid "Stack trace:"
+msgstr "Trace de la pile :"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:13
+msgid ""
+"When seeking help, check for existing bug reports, pastebin the trace, share "
+"crash.tar.gz (from Local Files) and explain how to reproduce the crash."
+msgstr ""
+"Si vous demandez de l'aide, cherchez parmi les rapports de bogues existants, "
+"téléversez la trace sur pastebin, partagez le fichier crash.tar.gz (Fichiers "
+"locaux) et expliquez comment reproduire la plantage."
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:14
+msgid "Local Files"
+msgstr "Fichiers locaux"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:15
+msgid "Open the directory containing crash.tar.gz and its content."
+msgstr "Ouvrir le dossier parent de crash.tar.gz et son contenu."
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:16
+msgid "Bug Tracker"
+msgstr "Suivi des bogues"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:17
+msgid "Find the most appropriate bug tracker."
+msgstr "Trouver le suivi de bogues le plus approprié."
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:18
+msgid "Pastebin"
+msgstr "Pastebin"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:19
+msgid "Upload the trace to the Internet."
+msgstr "Téléverser la trace de pile sur Internet."
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:20
+msgid ""
+"Developers need to know where the code fails or how to reproduce the issue. "
+"Always provide a trace and reliable instructions to trigger/observe the "
+"problem."
+msgstr ""
+"Les développeurs ont besoin de savoir où se trouve l'erreur dans le code ou "
+"bien comment reproduire le bogue. Veillez à toujours fournir une trace de "
+"pile et les instructions nécessaires pour déclencher ou observer le problème."
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:21
+msgid "Crash reports"
+msgstr "Rapports de plantage"
+
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:12
+msgid "Set the root password"
+msgstr "Définir le mot de passe root"
+
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:23
+msgid ""
+"The root account is locked by default in Linux Mint and its password is not "
+"set."
+msgstr ""
+"Le compte root est verrouillé par défaut dans Linux Mint et son mot de passe "
+"n'est pas défini."
+
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:27
+msgid ""
+"Your boot menu's emergency mode does not require a password. Set the root "
+"password to protect it."
+msgstr ""
+"Le mode d'urgence du menu de démarrage de votre ordinateur ne nécessite pas "
+"de mot de passe. Définissez le mot de passe root pour le protéger."
+
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:30
+msgid ""
+"Your boot menu's emergency mode requires a password which isn't set. Set the "
+"root password to fix it."
+msgstr ""
+"Le mode d'urgence de votre menu de démarrage nécessite un mot de passe qui "
+"n'est pas défini. Définissez le mot de passe root pour que cela fonctionne."
+
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:32
+msgid "To set the root password, open a terminal and type:"
+msgstr ""
+"Pour définir le mot de passe root, ouvrez un terminal et entrez la commande :"
+
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:35
+msgid ""
+"Disclaimer: Proper security can only be achieved by restricting physical "
+"access to your computer and encrypting your data. BIOS passwords can be "
+"reset and your root account can be accessed without a password by booting "
+"another operating system."
+msgstr ""
+"Clause de non-responsabilité : Une sécurité adéquate ne peut être obtenue "
+"qu'en limitant l'accès physique à votre ordinateur et en cryptant vos "
+"données. Les mots de passe du BIOS peuvent être réinitialisés et l'on "
+"pourrait accéder à votre compte root sans mot de passe en démarrant un autre "
+"système d'exploitation."
+
+#: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:16
+msgid "Install multimedia codecs"
+msgstr "Installer les codecs multimédia"
+
+#: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:30
+msgid ""
+"Multimedia codecs are required to play some video formats and to properly "
+"render some websites."
+msgstr ""
+"Les codecs multimédia sont nécessaires pour pouvoir lire certains formats de "
+"vidéos et pour afficher correctement certains sites web."
+
+#: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:36
+msgid "Install the Multimedia Codecs"
+msgstr "Installer les codecs multimédia"
+
+#: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:17
+msgid "Set up the system restore utility"
+msgstr "Configurer l'utilitaire de restauration du système"
+
+#: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:31
+msgid "Linux Mint provides a system restore utility called Timeshift."
+msgstr ""
+"Linux Mint contient un utilitaire de restauration du système nommé Timeshift."
+
+#: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:32
+msgid ""
+"Thanks to Timeshift you can take snapshots of the system, either manually or "
+"automatically."
+msgstr ""
+"Grâce à Timeshift, vous pouvez réaliser des instantanés du système, que ce "
+"soit manuellement ou automatiquement."
+
+#: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:33
+msgid ""
+"If something goes wrong you can then restore your operating system from a "
+"previously saved snapshot."
+msgstr ""
+"Si un problème survient, vous pouvez alors restaurer votre système "
+"d'exploitation à partir d'un instantané enregistré avant cela."
+
+#: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:39
+msgid "Launch Timeshift"
+msgstr "Lancer Timeshift"
+
+#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:17
+msgid "A new version of Linux Mint is available"
+msgstr "Une nouvelle version de Linux Mint est disponible"
+
+#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:47
+#, python-format
+msgid "Visit %s for the latest announcements."
+msgstr ""
+"Visitez %s pour consulter les dernières annonces concernant cette nouvelle "
+"version."
+
+#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:53
+#, python-format
+msgid "Upgrade to %s"
+msgstr "Mettre à jour vers %s"
+
+#: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:49
+msgid "Your version of Linux Mint will soon reach End-Of-Life (EOL)"
+msgstr "Votre version de Linux Mint va bientôt atteindre sa fin de vie"
+
+#: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:50
+#, python-brace-format
+msgid "It will stop receiving support and updates in a day."
+msgid_plural "It will stop receiving support and updates in {num_days} days."
+msgstr[0] ""
+"Dès demain, elle ne disposera plus du support technique ni de mises à jour."
+msgstr[1] ""
+"Dans {num_days} jours, elle ne disposera plus du support technique ni de "
+"mises à jour."
+
+#: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:54
+msgid "Your version of Linux Mint is no longer supported"
+msgstr ""
+"Votre version de Linux Mint, trop ancienne, ne dispose plus de support "
+"technique ni de mises à jour"
+
+#: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:55
+#, python-brace-format
+msgid "It reached End-Of-Life (EOL) yesterday."
+msgid_plural "It reached End-Of-Life (EOL) {num_days} days ago."
+msgstr[0] "Elle a atteint sa fin de vie hier."
+msgstr[1] "Elle a atteint sa date de fin de vie il y a {num_days} jours."
+
+#: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:66
+#, python-format
+msgid "Visit %s to find information about newer releases."
+msgstr ""
+"Visitez %s afin d'obtenir des informations sur des versions plus récentes."
+
+#: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:26
+msgid "Install language packs"
+msgstr "Installer les paquets linguistiques"
+
+#: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:41
+msgid ""
+"The following localization packages are missing to properly support your "
+"language:"
+msgstr ""
+"Les paquets linguistiques suivants manquent pour prendre en charge "
+"correctement votre langue :"
+
+#: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:48
+msgid "Install the Language Packs"
+msgstr "Installer les paquets linguistiques"
+
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:17
+msgid "Install hardware drivers"
+msgstr "Installer les pilotes du matériel"
+
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:54
+msgid "Hardware drivers are available for the following devices:"
+msgstr "Des pilotes sont disponibles pour les matériels suivants :"
+
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:61
+msgid "Launch the Driver Manager"
+msgstr "Lancer le Gestionnaire de Pilotes"

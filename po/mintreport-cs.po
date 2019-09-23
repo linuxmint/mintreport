@@ -1,0 +1,425 @@
+# Czech translation for linuxmint
+# Copyright (c) 2017 Rosetta Contributors and Canonical Ltd 2017
+# This file is distributed under the same license as the linuxmint package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: linuxmint\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2019-09-23 11:57+0100\n"
+"PO-Revision-Date: 2019-09-19 06:58+0000\n"
+"Last-Translator: Pavel Borecki <Unknown>\n"
+"Language-Team: Czech <cs@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Launchpad-Export-Date: 2019-09-23 12:19+0000\n"
+"X-Generator: Launchpad (build 19048)\n"
+
+#: usr/lib/linuxmint/mintreport/app.py:84
+#: usr/lib/linuxmint/mintreport/app.py:236 generate_desktop_files:25
+#: generate_desktop_files:39 generate_desktop_files:53
+#: generate_desktop_files:67
+msgid "System Reports"
+msgstr "Systémová hlášení"
+
+#: usr/lib/linuxmint/mintreport/app.py:194
+msgid "_File"
+msgstr "_Soubor"
+
+#: usr/lib/linuxmint/mintreport/app.py:199
+msgid "Refresh"
+msgstr "Načíst znovu"
+
+#: usr/lib/linuxmint/mintreport/app.py:206
+msgid "Restore ignored reports"
+msgstr "Obnovit ignorovaná hlášení"
+
+#: usr/lib/linuxmint/mintreport/app.py:210
+#: usr/lib/linuxmint/mintreport/tray.py:40
+msgid "Quit"
+msgstr "Ukončit"
+
+#: usr/lib/linuxmint/mintreport/app.py:221
+msgid "_Help"
+msgstr "_Nápověda"
+
+#: usr/lib/linuxmint/mintreport/app.py:227
+#: usr/lib/linuxmint/mintreport/app.py:234
+msgid "About"
+msgstr "O aplikaci"
+
+#: usr/lib/linuxmint/mintreport/app.py:278
+msgid "An error occurred while gathering the system information."
+msgstr "Došlo k chybě při shromažďování informací o systému."
+
+#: usr/lib/linuxmint/mintreport/app.py:292
+msgid "System information copied"
+msgstr "Informace o systému zkopírovány"
+
+#: usr/lib/linuxmint/mintreport/app.py:292
+msgid ""
+"Your system information was copied into your clipboard so you can paste it "
+"on the forums."
+msgstr ""
+"Informace o vašem systému byly zkopírovány do vaší schránky, takže ho můžete "
+"vložit do diskuzních fór."
+
+#: usr/lib/linuxmint/mintreport/app.py:301
+msgid "System information uploaded"
+msgstr "Informace o systému odeslány"
+
+#: usr/lib/linuxmint/mintreport/app.py:301
+#, python-format
+msgid ""
+"Your system information was uploaded to %s. This link was placed in your "
+"clipboard so you can paste it on IRC."
+msgstr ""
+"Informace o vašem systému byly nahrány na %s. Tento odkaz byl vložen do vaší "
+"schránky, takže ho můžete vložit do IRC chatu."
+
+#: usr/lib/linuxmint/mintreport/app.py:303
+msgid "An error occurred while uploading the system information"
+msgstr "Došlo k chybě při odesílání informací o systému"
+
+#: usr/lib/linuxmint/mintreport/app.py:303
+msgid ""
+"Copy and paste the system information manually into a pastebin site like "
+"https://pastebin.com and share the link on IRC."
+msgstr ""
+"Ručně zkopírujte a vložte informace o systému do pastebin stránky jako "
+"https://pastebin.com a sdílejte odkaz IRC chatu.\r\n"
+"Current Czech:"
+
+#: usr/lib/linuxmint/mintreport/app.py:382
+msgid "Ignore this problem"
+msgstr "Ignorovat tento problém"
+
+#: usr/lib/linuxmint/mintreport/app.py:398
+msgid "Are you sure you want to ignore this problem?"
+msgstr "Opravdu chcete tento problém ignorovat?"
+
+#: usr/lib/linuxmint/mintreport/app.py:399
+msgid ""
+"The problem will be permanently ignored and will no longer be visible."
+msgstr "Hlášení problému bude trvale ignorováno a nebude zobrazováno."
+
+#: usr/lib/linuxmint/mintreport/app.py:513
+#, python-format
+msgid ""
+"The debug symbols are missing for %(program)s.\n"
+"Please install %(package)s."
+msgstr ""
+"Chybí ladící symboly pro %(program)s.\n"
+"Nainstalujte balíček %(package)s."
+
+#: usr/lib/linuxmint/mintreport/app.py:527
+#, python-format
+msgid ""
+"The package providing %s could not be found.\n"
+"If you want to generate a stack trace for this crash report, please "
+"reinstall it."
+msgstr ""
+"Balíček který poskytuje %s se nepodařilo najít.\n"
+"Pokud pro toto hlášení o pádu chcete vytvořit výpis zásobníku (stack trace), "
+"balíček opět nainstalujte."
+
+#: usr/lib/linuxmint/mintreport/app.py:555
+msgid ""
+"The headers or binaries installed on your system do not match the code which "
+"was executed during the crash.\n"
+"They probably got upgraded since.\n"
+"A stack trace is available in 'Local Files' but its content is probably "
+"inaccurate."
+msgstr ""
+"Nainstalované hlavičkové nebo spustitelné soubory neodpovídají kódu který "
+"byl spuštěný v okamžiku pádu.\n"
+"Nejspíš byly od té doby nahrazeny novější verzí.\n"
+"Výpis zásobníku je sice v „Místních souborech“ k dispozici ale jeho obsah je "
+"nejspíš nepřesný."
+
+#: usr/lib/linuxmint/mintreport/tray.py:36
+msgid "Show System Reports"
+msgstr "Zobrazit systémová hlášení"
+
+#: usr/lib/linuxmint/mintreport/tray.py:120
+msgid "Some problems were detected which require your attention"
+msgstr "Byly zjištěny nějaké problémy, které vyžadují vaši pozornost"
+
+#: generate_desktop_files:25 generate_desktop_files:39
+#: generate_desktop_files:53 generate_desktop_files:67
+msgid "Troubleshoot problems"
+msgstr "Řešení problémů"
+
+#: generate_desktop_files:53
+msgid "Troubleshooting Tool"
+msgstr "Nástroj pro řešení problémů"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:1
+msgid "Running system checks..."
+msgstr ""
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:2
+msgid "No problems were detected"
+msgstr "Nebyly zjištěny žádné problémy"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:3
+msgid "Detected problems"
+msgstr "Zjištěné problémy"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:4
+msgid "Copy"
+msgstr "Zkopírovat"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:5
+msgid ""
+"Copy to clipboard (code tags are added to make it easy to paste the system "
+"information into the forums)"
+msgstr ""
+"Zkopírovat do schránky (jsou přidány formátovací značky pro snazší vkládání "
+"informací o systému do diskuzních fór)"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:6
+msgid "Upload"
+msgstr "Odeslat"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:7
+msgid "Upload to a pastebin service (no personal information included)"
+msgstr "Nahrát na službu pastebin (nejsou zahrnuty žádné osobní údaje)"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:8
+msgid "System information"
+msgstr "Informace o systému"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:9
+msgid "Crash reports are not available"
+msgstr "Jsou k dispozici hlášení o pádu"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:10
+msgid ""
+"To enable crash reporting, install systemd-coredump and reboot your computer."
+msgstr ""
+"Pro zapnutí hlášení o pádech, nainstalujte balíček systemd-coredump a "
+"restartujte počítač."
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:11
+msgid "Crash reports:"
+msgstr "Hlášení pádů:"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:12
+msgid "Stack trace:"
+msgstr "Výpis zásobníku (stack trace):"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:13
+msgid ""
+"When seeking help, check for existing bug reports, pastebin the trace, share "
+"crash.tar.gz (from Local Files) and explain how to reproduce the crash."
+msgstr ""
+"Při hledání pomoci se podívejte do existujících hlášení chyb, nasdílejte "
+"přes pastebin výpis zásobníku (stack trace), nasdílejte crash.tar.gz (z "
+"Místní soubory) a popište postup, jakým pád přivodit."
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:14
+msgid "Local Files"
+msgstr "Místní soubory"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:15
+msgid "Open the directory containing crash.tar.gz and its content."
+msgstr "Otevřít složku obsahující crash.tar.gz a jeho obsah."
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:16
+msgid "Bug Tracker"
+msgstr "Systém správy hlášení chyb"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:17
+msgid "Find the most appropriate bug tracker."
+msgstr "Najít nejpříhodnější sekci systému správy hlášení chyb."
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:18
+msgid "Pastebin"
+msgstr "Pastebin"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:19
+msgid "Upload the trace to the Internet."
+msgstr "Nahrát výpis (trace) na Internet."
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:20
+msgid ""
+"Developers need to know where the code fails or how to reproduce the issue. "
+"Always provide a trace and reliable instructions to trigger/observe the "
+"problem."
+msgstr ""
+"Vývojáři potřebují vědět ve kterém místě kódu došlo k pádu nebo jak projev "
+"problému zopakovat. Vždy poskytněte výpis zásobníku (trace) a spolehlivé "
+"pokyny jak vyvolat/zpozorovat problém."
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:21
+msgid "Crash reports"
+msgstr "Hlášení o pádu"
+
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:12
+msgid "Set the root password"
+msgstr "Nastavit heslo správce systému (root)"
+
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:23
+msgid ""
+"The root account is locked by default in Linux Mint and its password is not "
+"set."
+msgstr ""
+"V Linux Mint je účet správce (root) ve výchozím stavu uzamčen a heslo k němu "
+"proto není nastavené."
+
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:27
+msgid ""
+"Your boot menu's emergency mode does not require a password. Set the root "
+"password to protect it."
+msgstr ""
+"Nouzový režim nabídky pro zavádění systému nevyžaduje heslo. Abyste ho "
+"ochránili, nastavte heslo pro účet správce systému (root)."
+
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:30
+msgid ""
+"Your boot menu's emergency mode requires a password which isn't set. Set the "
+"root password to fix it."
+msgstr ""
+"Nouzový režim nabídky pro zavádění systému vyžaduje heslo, které není "
+"nastavené. Opravte to nastavením hesla pro účet správce systému (root)."
+
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:32
+msgid "To set the root password, open a terminal and type:"
+msgstr ""
+"Pro nastavení hesla pro účet správce systému (root), otevřete terminál a "
+"zadejte:"
+
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:35
+msgid ""
+"Disclaimer: Proper security can only be achieved by restricting physical "
+"access to your computer and encrypting your data. BIOS passwords can be "
+"reset and your root account can be accessed without a password by booting "
+"another operating system."
+msgstr ""
+"Zřeknutí se odpovědnosti: správného zabezpečení lze dosáhnout pouze "
+"zamezením fyzického přístupu k počítači a zašifrováním dat. Heslo do "
+"firmware počítače (BIOS/UEFI) je možné resetovat a operační systém "
+"kompromitovat z jiného operačního systému, spuštěného namísto vaší instalace "
+"Linux Mint (nebo připojením vymontované jednotky datového úložiště z vašeho "
+"počítač k jinému)."
+
+#: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:16
+msgid "Install multimedia codecs"
+msgstr "Nainstalovat kodeky multimédií"
+
+#: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:30
+msgid ""
+"Multimedia codecs are required to play some video formats and to properly "
+"render some websites."
+msgstr ""
+"Kodeky multimédií jsou potřebné pro přehrávání některých videoformátů a pro "
+"správné vykreslování některých webových stránek."
+
+#: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:36
+msgid "Install the Multimedia Codecs"
+msgstr "Nainstalovat kodeky multimédií"
+
+#: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:17
+msgid "Set up the system restore utility"
+msgstr "Nastavit nástroj pro obnovení systému"
+
+#: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:31
+msgid "Linux Mint provides a system restore utility called Timeshift."
+msgstr "Linux Mint poskytuje nástroj pro obnovení systému nazvanou Timeshift"
+
+#: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:32
+msgid ""
+"Thanks to Timeshift you can take snapshots of the system, either manually or "
+"automatically."
+msgstr ""
+"Díky Timeshift je možné pořizovat zachycené stavy systému, ať už ručně nebo "
+"automaticky."
+
+#: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:33
+msgid ""
+"If something goes wrong you can then restore your operating system from a "
+"previously saved snapshot."
+msgstr ""
+"Pokud se něco pokazí, je možné operační systém obnovit z předtím uloženého "
+"zachyceného stavu."
+
+#: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:39
+msgid "Launch Timeshift"
+msgstr "Spustit Timeshift"
+
+#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:17
+msgid "A new version of Linux Mint is available"
+msgstr "Je k dispozici nová verze Linux Mint"
+
+#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:47
+#, python-format
+msgid "Visit %s for the latest announcements."
+msgstr "Pro nejnovější oznámení navštivte %s"
+
+#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:53
+#, python-format
+msgid "Upgrade to %s"
+msgstr "Přejít na verzi %s"
+
+#: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:49
+msgid "Your version of Linux Mint will soon reach End-Of-Life (EOL)"
+msgstr "Vámi používaná verze Linux Mint brzy zcela přestane být podporována"
+
+#: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:50
+#, python-brace-format
+msgid "It will stop receiving support and updates in a day."
+msgid_plural "It will stop receiving support and updates in {num_days} days."
+msgstr[0] "Podpora a aktualizace přestanou být poskytovány zítra."
+msgstr[1] ""
+"Podpora a aktualizace přestanou být poskytovány za {num_days} dny."
+msgstr[2] ""
+"Podpora a aktualizace přestanou být poskytovány za {num_days} dní."
+
+#: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:54
+msgid "Your version of Linux Mint is no longer supported"
+msgstr "Vámi používaná verze Linux Mint už není podporována"
+
+#: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:55
+#, python-brace-format
+msgid "It reached End-Of-Life (EOL) yesterday."
+msgid_plural "It reached End-Of-Life (EOL) {num_days} days ago."
+msgstr[0] "Veškerá podpora skončila včera."
+msgstr[1] "Veškerá podpora skončila před {num_days} dny."
+msgstr[2] "Veškerá podpora skončila před {num_days} dny."
+
+#: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:66
+#, python-format
+msgid "Visit %s to find information about newer releases."
+msgstr "Pro informace o novějších vydáních navštivte %s"
+
+#: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:26
+msgid "Install language packs"
+msgstr "Nainstalovat jazykové balíčky"
+
+#: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:41
+msgid ""
+"The following localization packages are missing to properly support your "
+"language:"
+msgstr ""
+"Pro správnou podporu vámi používaného jazyka zbývá doinstalovat následující "
+"jazykové balíčky:"
+
+#: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:48
+msgid "Install the Language Packs"
+msgstr "Nainstalovat jazykové balíčky"
+
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:17
+msgid "Install hardware drivers"
+msgstr "Nainstalovat ovladače pro zařízení"
+
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:54
+msgid "Hardware drivers are available for the following devices:"
+msgstr "Jsou k dispozici ovladače pro následující zařízení:"
+
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:61
+msgid "Launch the Driver Manager"
+msgstr "Spustit správu dodatečných ovladačů zařízení"

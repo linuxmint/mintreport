@@ -1,0 +1,418 @@
+# Danish translation for linuxmint
+# Copyright (c) 2017 Rosetta Contributors and Canonical Ltd 2017
+# This file is distributed under the same license as the linuxmint package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: linuxmint\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2019-09-23 11:57+0100\n"
+"PO-Revision-Date: 2019-09-14 17:48+0000\n"
+"Last-Translator: Alan Mortensen <alanmortensen.am@gmail.com>\n"
+"Language-Team: Danish <da@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Launchpad-Export-Date: 2019-09-23 12:19+0000\n"
+"X-Generator: Launchpad (build 19048)\n"
+
+#: usr/lib/linuxmint/mintreport/app.py:84
+#: usr/lib/linuxmint/mintreport/app.py:236 generate_desktop_files:25
+#: generate_desktop_files:39 generate_desktop_files:53
+#: generate_desktop_files:67
+msgid "System Reports"
+msgstr "Systemrapporter"
+
+#: usr/lib/linuxmint/mintreport/app.py:194
+msgid "_File"
+msgstr "_Filer"
+
+#: usr/lib/linuxmint/mintreport/app.py:199
+msgid "Refresh"
+msgstr "Opdatér"
+
+#: usr/lib/linuxmint/mintreport/app.py:206
+msgid "Restore ignored reports"
+msgstr "Gendan ignorerede rapporter"
+
+#: usr/lib/linuxmint/mintreport/app.py:210
+#: usr/lib/linuxmint/mintreport/tray.py:40
+msgid "Quit"
+msgstr "Afslut"
+
+#: usr/lib/linuxmint/mintreport/app.py:221
+msgid "_Help"
+msgstr "_Hjælp"
+
+#: usr/lib/linuxmint/mintreport/app.py:227
+#: usr/lib/linuxmint/mintreport/app.py:234
+msgid "About"
+msgstr "Om"
+
+#: usr/lib/linuxmint/mintreport/app.py:278
+msgid "An error occurred while gathering the system information."
+msgstr "Der opstod en fejl under indsamlingen af systeminformation."
+
+#: usr/lib/linuxmint/mintreport/app.py:292
+msgid "System information copied"
+msgstr "Systeminformationen blev kopieret"
+
+#: usr/lib/linuxmint/mintreport/app.py:292
+msgid ""
+"Your system information was copied into your clipboard so you can paste it "
+"on the forums."
+msgstr ""
+"Din systeminformation blev kopieret til udklipsholderen, så du kan indsætte "
+"det i foraene."
+
+#: usr/lib/linuxmint/mintreport/app.py:301
+msgid "System information uploaded"
+msgstr "Systeminformationen blev uploadet"
+
+#: usr/lib/linuxmint/mintreport/app.py:301
+#, python-format
+msgid ""
+"Your system information was uploaded to %s. This link was placed in your "
+"clipboard so you can paste it on IRC."
+msgstr ""
+"Din systeminformation blev uploadet til %s. Linket blev gemt i "
+"udklipsholderen, så du kan indsætte det på IRC."
+
+#: usr/lib/linuxmint/mintreport/app.py:303
+msgid "An error occurred while uploading the system information"
+msgstr "Der opstod en fejl, da systeminformationen skulle uploades."
+
+#: usr/lib/linuxmint/mintreport/app.py:303
+msgid ""
+"Copy and paste the system information manually into a pastebin site like "
+"https://pastebin.com and share the link on IRC."
+msgstr ""
+"Kopiér og indsæt manuelt systeminformationen på et pastebinsite som f.eks. "
+"https://pastebin.com og del linket på IRC."
+
+#: usr/lib/linuxmint/mintreport/app.py:382
+msgid "Ignore this problem"
+msgstr "Ignorér dette problem"
+
+#: usr/lib/linuxmint/mintreport/app.py:398
+msgid "Are you sure you want to ignore this problem?"
+msgstr "Er du sikker på, du vil ignorere dette problem?"
+
+#: usr/lib/linuxmint/mintreport/app.py:399
+msgid ""
+"The problem will be permanently ignored and will no longer be visible."
+msgstr ""
+"Problemet bliver ignoreret permanent og vil ikke længere være synlig."
+
+#: usr/lib/linuxmint/mintreport/app.py:513
+#, python-format
+msgid ""
+"The debug symbols are missing for %(program)s.\n"
+"Please install %(package)s."
+msgstr ""
+"Fejlfindingssymbolerne til %(program)s mangler.\n"
+"Installér venligst %(package)s."
+
+#: usr/lib/linuxmint/mintreport/app.py:527
+#, python-format
+msgid ""
+"The package providing %s could not be found.\n"
+"If you want to generate a stack trace for this crash report, please "
+"reinstall it."
+msgstr ""
+"Pakken, som indeholder %s, kunne ikke findes.\n"
+"Hvis du vil danne et stakspor for denne nedbrudsrapport, skal du "
+"geninstallere pakken."
+
+#: usr/lib/linuxmint/mintreport/app.py:555
+msgid ""
+"The headers or binaries installed on your system do not match the code which "
+"was executed during the crash.\n"
+"They probably got upgraded since.\n"
+"A stack trace is available in 'Local Files' but its content is probably "
+"inaccurate."
+msgstr ""
+"De \"headers\" eller binære filer, som er installeret på dit system, stemmer "
+"ikke overens med koden, som blev kørt under nedbrudet.\n"
+"De er sandsynligvis blevet opgraderet siden da.\n"
+"Et stakspor er tilgængelig i \"Lokale filer\", men dets indhold er "
+"sandsynligvis unøjagtigt."
+
+#: usr/lib/linuxmint/mintreport/tray.py:36
+msgid "Show System Reports"
+msgstr "Vis systemrapporter"
+
+#: usr/lib/linuxmint/mintreport/tray.py:120
+msgid "Some problems were detected which require your attention"
+msgstr "Der blev fundet nogle problemer, som kræver din opmærksomhed"
+
+#: generate_desktop_files:25 generate_desktop_files:39
+#: generate_desktop_files:53 generate_desktop_files:67
+msgid "Troubleshoot problems"
+msgstr "Fejlfinding af problemer"
+
+#: generate_desktop_files:53
+msgid "Troubleshooting Tool"
+msgstr "Fejlfindingsværktøj"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:1
+msgid "Running system checks..."
+msgstr ""
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:2
+msgid "No problems were detected"
+msgstr "Der blev ikke fundet nogen problemer"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:3
+msgid "Detected problems"
+msgstr "Fundne problemer"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:4
+msgid "Copy"
+msgstr "Kopiér"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:5
+msgid ""
+"Copy to clipboard (code tags are added to make it easy to paste the system "
+"information into the forums)"
+msgstr ""
+"Kopiér til udklipsholderen (kodemærkater tilføjes, så systeminformationen "
+"lettere kan indsættes i foraene)"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:6
+msgid "Upload"
+msgstr "Upload"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:7
+msgid "Upload to a pastebin service (no personal information included)"
+msgstr "Upload til en pastebintjeneste (personlig information medtages ikke)"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:8
+msgid "System information"
+msgstr "Systeminformation"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:9
+msgid "Crash reports are not available"
+msgstr "Nedbrudsrapporter er ikke tilgængelige"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:10
+msgid ""
+"To enable crash reporting, install systemd-coredump and reboot your computer."
+msgstr ""
+"Installér systemd-coredump og genstart computeren for at aktivere "
+"rapportering af nedbrud."
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:11
+msgid "Crash reports:"
+msgstr "Nedbrudsrapporter:"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:12
+msgid "Stack trace:"
+msgstr "Stakspor:"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:13
+msgid ""
+"When seeking help, check for existing bug reports, pastebin the trace, share "
+"crash.tar.gz (from Local Files) and explain how to reproduce the crash."
+msgstr ""
+"Når du søger hjælp, så søg efter eksisterende fejlrapporter, overfør sporet "
+"til en pastebin, del crash.tar.gz (fra Lokale filer) og forklar, hvordan "
+"nedbruddet kan reproduceres."
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:14
+msgid "Local Files"
+msgstr "Lokale filer"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:15
+msgid "Open the directory containing crash.tar.gz and its content."
+msgstr "Åbn mappen, som indeholder crash.tar.gz og dens indhold."
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:16
+msgid "Bug Tracker"
+msgstr "Fejlsporing"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:17
+msgid "Find the most appropriate bug tracker."
+msgstr "Find det bedst egnet værktøj til fejlsporing."
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:18
+msgid "Pastebin"
+msgstr "Pastebin"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:19
+msgid "Upload the trace to the Internet."
+msgstr "Overfør sporet til internettet."
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:20
+msgid ""
+"Developers need to know where the code fails or how to reproduce the issue. "
+"Always provide a trace and reliable instructions to trigger/observe the "
+"problem."
+msgstr ""
+"Udviklere har brug for at vide, hvor koden fejler og hvordan det kan "
+"reproduceres. Tilvejebring altid et spor og pålidelige instruktioner til at "
+"udløse/observere problemet."
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:21
+msgid "Crash reports"
+msgstr "Nedbrudsrapporter"
+
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:12
+msgid "Set the root password"
+msgstr "Angiv adgangskode for root"
+
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:23
+msgid ""
+"The root account is locked by default in Linux Mint and its password is not "
+"set."
+msgstr ""
+"Root-kontoen er som standard låst i Linux Mint, og adgangskoden er ikke "
+"angivet."
+
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:27
+msgid ""
+"Your boot menu's emergency mode does not require a password. Set the root "
+"password to protect it."
+msgstr ""
+"Bootmenuens nødtilstand kræver ikke en adgangskode. Angiv en adgangskode for "
+"root for at beskytte den."
+
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:30
+msgid ""
+"Your boot menu's emergency mode requires a password which isn't set. Set the "
+"root password to fix it."
+msgstr ""
+"Bootmenuens nødtilstand kræver en adgangskode, som ikke er angivet. Angiv en "
+"adgangskode for root for at løse det."
+
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:32
+msgid "To set the root password, open a terminal and type:"
+msgstr "Adgangskode for root kan angives ved at åbne en terminal og skrive:"
+
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:35
+msgid ""
+"Disclaimer: Proper security can only be achieved by restricting physical "
+"access to your computer and encrypting your data. BIOS passwords can be "
+"reset and your root account can be accessed without a password by booting "
+"another operating system."
+msgstr ""
+"Ansvarsfraskrivelse: Ordentlig sikkerhed kan kun opnås ved fysisk at "
+"begrænse adgangen til din computer og ved kryptering af dine data. "
+"Adgangskoder til BIOS kan nulstilles, og din root-konto kan tilgås uden "
+"adgangskode ved at boote et andet styresystem."
+
+#: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:16
+msgid "Install multimedia codecs"
+msgstr "Installér multimediecodecs"
+
+#: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:30
+msgid ""
+"Multimedia codecs are required to play some video formats and to properly "
+"render some websites."
+msgstr ""
+"Multimediecodecs er nødvendige for at kunne afspille visse videoformater og "
+"for at kunne gengive visse websteder korrekt."
+
+#: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:36
+msgid "Install the Multimedia Codecs"
+msgstr "Installér multimediecodecs"
+
+#: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:17
+msgid "Set up the system restore utility"
+msgstr "Indstil værktøjet til gendannelse af systemet"
+
+#: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:31
+msgid "Linux Mint provides a system restore utility called Timeshift."
+msgstr ""
+"Linux Mint indeholder et værktøj kaldet Timeshift til gendannelse af "
+"systemet."
+
+#: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:32
+msgid ""
+"Thanks to Timeshift you can take snapshots of the system, either manually or "
+"automatically."
+msgstr ""
+"Takket være Timeshift kan du, manuelt eller automatisk, tage "
+"øjebliksbilleder af systemet."
+
+#: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:33
+msgid ""
+"If something goes wrong you can then restore your operating system from a "
+"previously saved snapshot."
+msgstr ""
+"Går noget galt, kan du gendanne dit styresystem fra et tidligere "
+"øjebliksbillede."
+
+#: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:39
+msgid "Launch Timeshift"
+msgstr "Start Timeshift"
+
+#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:17
+msgid "A new version of Linux Mint is available"
+msgstr "En ny version af Linux Mint er tilgængelig"
+
+#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:47
+#, python-format
+msgid "Visit %s for the latest announcements."
+msgstr "Besøg %s for at se de seneste meddelelser."
+
+#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:53
+#, python-format
+msgid "Upgrade to %s"
+msgstr "Opgradér til %s"
+
+#: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:49
+msgid "Your version of Linux Mint will soon reach End-Of-Life (EOL)"
+msgstr "Din version af Linux Mint vil snart nå end-of-life (EOL)"
+
+#: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:50
+#, python-brace-format
+msgid "It will stop receiving support and updates in a day."
+msgid_plural "It will stop receiving support and updates in {num_days} days."
+msgstr[0] "Support og opdateringer ophører om én dag."
+msgstr[1] "Support og opdateringer ophører om {num_days} dage."
+
+#: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:54
+msgid "Your version of Linux Mint is no longer supported"
+msgstr "Din version af Linux Mint undesrtøttes ikke længere"
+
+#: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:55
+#, python-brace-format
+msgid "It reached End-Of-Life (EOL) yesterday."
+msgid_plural "It reached End-Of-Life (EOL) {num_days} days ago."
+msgstr[0] "Den nåede end-of-life (EOL) i går."
+msgstr[1] "Den nåede end-of-life (EOL) for {num_days} siden."
+
+#: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:66
+#, python-format
+msgid "Visit %s to find information about newer releases."
+msgstr "Besøg %s for at få mere at vide om nyere udgaver."
+
+#: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:26
+msgid "Install language packs"
+msgstr "Installér sprogpakker"
+
+#: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:41
+msgid ""
+"The following localization packages are missing to properly support your "
+"language:"
+msgstr ""
+"Følgende lokaliseringspakker mangler for at understøtter dit sprog fuldt ud:"
+
+#: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:48
+msgid "Install the Language Packs"
+msgstr "Installér sprogpakkerne"
+
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:17
+msgid "Install hardware drivers"
+msgstr "Installér hardwaredrivere"
+
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:54
+msgid "Hardware drivers are available for the following devices:"
+msgstr "Hardwaredrivere er tilgængelige til følgende enheder:"
+
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:61
+msgid "Launch the Driver Manager"
+msgstr "Start Driverhåndtering"

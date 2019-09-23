@@ -1,0 +1,429 @@
+# Lithuanian translation for linuxmint
+# Copyright (c) 2017 Rosetta Contributors and Canonical Ltd 2017
+# This file is distributed under the same license as the linuxmint package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: linuxmint\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2019-09-23 11:57+0100\n"
+"PO-Revision-Date: 2019-09-13 20:12+0000\n"
+"Last-Translator: Moo <hazap@hotmail.com>\n"
+"Language-Team: Lithuanian <lt@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"(n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Launchpad-Export-Date: 2019-09-23 12:19+0000\n"
+"X-Generator: Launchpad (build 19048)\n"
+
+#: usr/lib/linuxmint/mintreport/app.py:84
+#: usr/lib/linuxmint/mintreport/app.py:236 generate_desktop_files:25
+#: generate_desktop_files:39 generate_desktop_files:53
+#: generate_desktop_files:67
+msgid "System Reports"
+msgstr "Sistemos pranešimai"
+
+#: usr/lib/linuxmint/mintreport/app.py:194
+msgid "_File"
+msgstr "_Failas"
+
+#: usr/lib/linuxmint/mintreport/app.py:199
+msgid "Refresh"
+msgstr "Įkelti iš naujo"
+
+#: usr/lib/linuxmint/mintreport/app.py:206
+msgid "Restore ignored reports"
+msgstr "Atkurti nepaisomus pranešimus"
+
+#: usr/lib/linuxmint/mintreport/app.py:210
+#: usr/lib/linuxmint/mintreport/tray.py:40
+msgid "Quit"
+msgstr "Išeiti"
+
+#: usr/lib/linuxmint/mintreport/app.py:221
+msgid "_Help"
+msgstr "Ž_inynas"
+
+#: usr/lib/linuxmint/mintreport/app.py:227
+#: usr/lib/linuxmint/mintreport/app.py:234
+msgid "About"
+msgstr "Apie"
+
+#: usr/lib/linuxmint/mintreport/app.py:278
+msgid "An error occurred while gathering the system information."
+msgstr "Renkant sistemos informaciją, įvyko klaida."
+
+#: usr/lib/linuxmint/mintreport/app.py:292
+msgid "System information copied"
+msgstr "Sistemos informacija nukopijuota"
+
+#: usr/lib/linuxmint/mintreport/app.py:292
+msgid ""
+"Your system information was copied into your clipboard so you can paste it "
+"on the forums."
+msgstr ""
+"Jūsų sistemos informacija buvo nukopijuota į iškarpinę, taigi, galite ją "
+"įdėti forumuose."
+
+#: usr/lib/linuxmint/mintreport/app.py:301
+msgid "System information uploaded"
+msgstr "Sistemos informacija įkelta"
+
+#: usr/lib/linuxmint/mintreport/app.py:301
+#, python-format
+msgid ""
+"Your system information was uploaded to %s. This link was placed in your "
+"clipboard so you can paste it on IRC."
+msgstr ""
+"Jūsų sistemos informacija buvo įkelta į %s. Ši nuoroda buvo patalpinta jūsų "
+"iškarpinėje, taigi, galite ją įdėti IRC."
+
+#: usr/lib/linuxmint/mintreport/app.py:303
+msgid "An error occurred while uploading the system information"
+msgstr "Įkeliant sistemos informaciją, įvyko klaida."
+
+#: usr/lib/linuxmint/mintreport/app.py:303
+msgid ""
+"Copy and paste the system information manually into a pastebin site like "
+"https://pastebin.com and share the link on IRC."
+msgstr ""
+"Nukopijuokite ir rankiniu būdu įdėkite sistemos informaciją į įdėjimų "
+"paslaugos svetainę, tokią kaip https://pastebin.com ir bendrinkite nuorodą "
+"IRC."
+
+#: usr/lib/linuxmint/mintreport/app.py:382
+msgid "Ignore this problem"
+msgstr "Nepaisyti šios problemos"
+
+#: usr/lib/linuxmint/mintreport/app.py:398
+msgid "Are you sure you want to ignore this problem?"
+msgstr "Ar tikrai norite nepaisyti šios problemos?"
+
+#: usr/lib/linuxmint/mintreport/app.py:399
+msgid ""
+"The problem will be permanently ignored and will no longer be visible."
+msgstr ""
+"Šios problemos bus visą laiką nepaisoma ir ji daugiau nebebus matoma."
+
+#: usr/lib/linuxmint/mintreport/app.py:513
+#, python-format
+msgid ""
+"The debug symbols are missing for %(program)s.\n"
+"Please install %(package)s."
+msgstr ""
+"Programai %(program)s trūksta derinimo simbolių.\n"
+"Prašome įdiegti %(package)s."
+
+#: usr/lib/linuxmint/mintreport/app.py:527
+#, python-format
+msgid ""
+"The package providing %s could not be found.\n"
+"If you want to generate a stack trace for this crash report, please "
+"reinstall it."
+msgstr ""
+"Nepavyko rasti paketo, tiekiančio %s.\n"
+"Jeigu šiai strigčiai norite sukurti dėklo pėdsaką, įdiekite tą paketą iš "
+"naujo."
+
+#: usr/lib/linuxmint/mintreport/app.py:555
+msgid ""
+"The headers or binaries installed on your system do not match the code which "
+"was executed during the crash.\n"
+"They probably got upgraded since.\n"
+"A stack trace is available in 'Local Files' but its content is probably "
+"inaccurate."
+msgstr ""
+"Jūsų sistemoje įdiegtos antraštės ar dvejetainės neatitinka kodo, kuris buvo "
+"vykdomas strigties metu.\n"
+"Jos nuo to laiko, tikriausiai, buvo atnaujintos.\n"
+"Dėklo pėdsakas yra prieinamas ties \"Vietiniai failai\", tačiau jo turinys, "
+"tikriausiai, yra netikslus."
+
+#: usr/lib/linuxmint/mintreport/tray.py:36
+msgid "Show System Reports"
+msgstr "Rodyti sistemos pranešimus"
+
+#: usr/lib/linuxmint/mintreport/tray.py:120
+msgid "Some problems were detected which require your attention"
+msgstr "Buvo aptiktos kai kurios problemos, reikalaujančios jūsų dėmesio"
+
+#: generate_desktop_files:25 generate_desktop_files:39
+#: generate_desktop_files:53 generate_desktop_files:67
+msgid "Troubleshoot problems"
+msgstr "Lokalizuoti gedimus"
+
+#: generate_desktop_files:53
+msgid "Troubleshooting Tool"
+msgstr "Nesklandumų šalinimo įrankis"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:1
+msgid "Running system checks..."
+msgstr ""
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:2
+msgid "No problems were detected"
+msgstr "Neaptikta jokių problemų"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:3
+msgid "Detected problems"
+msgstr "Aptiktos problemos"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:4
+msgid "Copy"
+msgstr "Kopijuoti"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:5
+msgid ""
+"Copy to clipboard (code tags are added to make it easy to paste the system "
+"information into the forums)"
+msgstr ""
+"Kopijuoti į iškarpinę (yra pridėtos kodo žymės, kad būtų lengviau įdėti "
+"sistemos informaciją į forumus)"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:6
+msgid "Upload"
+msgstr "Įkelti"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:7
+msgid "Upload to a pastebin service (no personal information included)"
+msgstr ""
+"Įkelti į įdėjimų paslaugą (jokia asmeninė informacija nėra įtraukiama)"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:8
+msgid "System information"
+msgstr "Sistemos informacija"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:9
+msgid "Crash reports are not available"
+msgstr "Strigčių pranešimai neprieinami"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:10
+msgid ""
+"To enable crash reporting, install systemd-coredump and reboot your computer."
+msgstr ""
+"Norėdami įjungti strigčių pranešimus, įdiekite systemd-coredump ir "
+"paleiskite kompiuterį iš naujo."
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:11
+msgid "Crash reports:"
+msgstr "Strigčių pranešimai:"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:12
+msgid "Stack trace:"
+msgstr "Dėklo pėdsakas:"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:13
+msgid ""
+"When seeking help, check for existing bug reports, pastebin the trace, share "
+"crash.tar.gz (from Local Files) and explain how to reproduce the crash."
+msgstr ""
+"Ieškodami pagalbos, patikrinkite esamus pranešimus apie klaidas, įkelkite į "
+"internetą problemos pėdsaką, paviešinkite crash.tar.gz (iš vietinių failų) "
+"ir paaiškinkite kaip galima atkartoti strigtį."
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:14
+msgid "Local Files"
+msgstr "Vietiniai failai"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:15
+msgid "Open the directory containing crash.tar.gz and its content."
+msgstr "Atverti katalogą, kuriame yra failas crash.tar.gz ir jo turinys."
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:16
+msgid "Bug Tracker"
+msgstr "Klaidų seklys"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:17
+msgid "Find the most appropriate bug tracker."
+msgstr "Rasti tinkamiausią klaidų seklį."
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:18
+msgid "Pastebin"
+msgstr "Pastebin"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:19
+msgid "Upload the trace to the Internet."
+msgstr "Įkelti pėdsaką į internetą."
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:20
+msgid ""
+"Developers need to know where the code fails or how to reproduce the issue. "
+"Always provide a trace and reliable instructions to trigger/observe the "
+"problem."
+msgstr ""
+"Kūrėjai turi žinoti kur kodas patiria nesėkmę ar kaip atkartoti problemą. "
+"Visada pateikite patikimus nurodymus kaip galima sukelti/pastebėti problemą."
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:21
+msgid "Crash reports"
+msgstr "Strigčių pranešimai"
+
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:12
+msgid "Set the root password"
+msgstr "Nustatyti pagrindinio naudotojo (root) slaptažodį"
+
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:23
+msgid ""
+"The root account is locked by default in Linux Mint and its password is not "
+"set."
+msgstr ""
+"Pagal numatymą, Linux Mint sistemoje pagrindinio naudotojo (root) paskyra "
+"yra užrakinta, o jos slaptažodis nėra nustatytas."
+
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:27
+msgid ""
+"Your boot menu's emergency mode does not require a password. Set the root "
+"password to protect it."
+msgstr ""
+"Jūsų paleidimo meniu avarinė veiksena nereikalauja slaptažodžio. Norėdami ją "
+"apsaugoti, nustatykite pagrindinio naudotojo (root) slaptažodį."
+
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:30
+msgid ""
+"Your boot menu's emergency mode requires a password which isn't set. Set the "
+"root password to fix it."
+msgstr ""
+"Jūsų paleidimo meniu avarinė veiksena reikalauja slaptažodžio, kuris nėra "
+"nustatytas. Norėdami tai pataisyti, nustatykite pagridinio naudotojo (root) "
+"slaptažodį."
+
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:32
+msgid "To set the root password, open a terminal and type:"
+msgstr ""
+"Norėdami nustatyti pagrindinio naudotojo (root) slaptažodį, atverkite "
+"terminalą ir įrašykite:"
+
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:35
+msgid ""
+"Disclaimer: Proper security can only be achieved by restricting physical "
+"access to your computer and encrypting your data. BIOS passwords can be "
+"reset and your root account can be accessed without a password by booting "
+"another operating system."
+msgstr ""
+"Atsakomybės ribojimas: Tinkamas saugumas gali būti pasiektas tik apribojant "
+"fizinę prieigą prie kompiuterio ir šifruojant savo duomenis. BIOS "
+"slaptažodžiai gali būti atstatyti, o prieigą prie jūsų pagrindinio naudotojo "
+"(root) paskyros galima gauti paleidus kitą operacinę sistemą."
+
+#: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:16
+msgid "Install multimedia codecs"
+msgstr "Įdiegti multimedijos kodekus"
+
+#: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:30
+msgid ""
+"Multimedia codecs are required to play some video formats and to properly "
+"render some websites."
+msgstr ""
+"Multimedijos kodekai yra reikalingi, norint atkurti kai kuriuos vaizdo įrašų "
+"formatus bei tinkamai atvaizduoti kai kurias internetines svetaines."
+
+#: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:36
+msgid "Install the Multimedia Codecs"
+msgstr "Įdiegti multimedijos kodekus"
+
+#: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:17
+msgid "Set up the system restore utility"
+msgstr "Nustatyti sistemos atkūrimo paslaugų programą"
+
+#: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:31
+msgid "Linux Mint provides a system restore utility called Timeshift."
+msgstr ""
+"Linux Mint pateikia sistemos atkūrimo paslaugų programą, pavadinimu "
+"Timeshift."
+
+#: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:32
+msgid ""
+"Thanks to Timeshift you can take snapshots of the system, either manually or "
+"automatically."
+msgstr ""
+"Timeshift dėka, galite daryti sistemos momentines kopijas arba rankiniu "
+"būdu, arba automatiškai."
+
+#: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:33
+msgid ""
+"If something goes wrong you can then restore your operating system from a "
+"previously saved snapshot."
+msgstr ""
+"Jei kas nors nutiks, galėsite atkurti savo operacinę sistemą iš anksčiau "
+"įrašytos momentinės kopijos."
+
+#: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:39
+msgid "Launch Timeshift"
+msgstr "Paleisti Timeshift"
+
+#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:17
+msgid "A new version of Linux Mint is available"
+msgstr "Yra prieinama nauja Linux Mint versija"
+
+#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:47
+#, python-format
+msgid "Visit %s for the latest announcements."
+msgstr "Norėdami skaityti naujausius skelbimus, apsilankykite %s."
+
+#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:53
+#, python-format
+msgid "Upgrade to %s"
+msgstr "Naujinti iki %s"
+
+#: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:49
+msgid "Your version of Linux Mint will soon reach End-Of-Life (EOL)"
+msgstr ""
+"Jūsų Linux Mint versija greitu metu pasieks savo gyvavimo pabaigą (EOL)"
+
+#: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:50
+#, python-brace-format
+msgid "It will stop receiving support and updates in a day."
+msgid_plural "It will stop receiving support and updates in {num_days} days."
+msgstr[0] ""
+"Po vienos dienos jai nebebus teikiamas nei palaikymas, nei atnaujinimai."
+msgstr[1] ""
+"Po {num_days} dienų jai nebebus teikiamas nei palaikymas, nei atnaujinimai."
+msgstr[2] ""
+"Po {num_days} dienų jai nebebus teikiamas nei palaikymas, nei atnaujinimai."
+
+#: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:54
+msgid "Your version of Linux Mint is no longer supported"
+msgstr "Jūsų Linux Mint versija daugiau nebepalaikoma"
+
+#: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:55
+#, python-brace-format
+msgid "It reached End-Of-Life (EOL) yesterday."
+msgid_plural "It reached End-Of-Life (EOL) {num_days} days ago."
+msgstr[0] "Vakar ji pasiekė savo gyvavimo pabaigą (EOL)."
+msgstr[1] "Prieš {num_days} dienas ji pasiekė savo gyvavimo pabaigą (EOL)."
+msgstr[2] "Prieš {num_days} dienų ji pasiekė savo gyvavimo pabaigą (EOL)."
+
+#: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:66
+#, python-format
+msgid "Visit %s to find information about newer releases."
+msgstr "Išsamesnei informacijai apie naujesnes laidas, apsilankykite %s."
+
+#: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:26
+msgid "Install language packs"
+msgstr "Įdiegti kalbos paketus"
+
+#: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:41
+msgid ""
+"The following localization packages are missing to properly support your "
+"language:"
+msgstr ""
+"Norint tinkamai palaikyti jūsų kalbą, trūksta šių lokalizavimo paketų:"
+
+#: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:48
+msgid "Install the Language Packs"
+msgstr "Įdiegti kalbos paketus"
+
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:17
+msgid "Install hardware drivers"
+msgstr "Įdiegti aparatinės įrangos tvarkykles"
+
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:54
+msgid "Hardware drivers are available for the following devices:"
+msgstr "Aparatinės įrangos tvarkyklės yra prieinamos šiems įrenginiams:"
+
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:61
+msgid "Launch the Driver Manager"
+msgstr "Paleisti tvarkyklių tvarkytuvę"
