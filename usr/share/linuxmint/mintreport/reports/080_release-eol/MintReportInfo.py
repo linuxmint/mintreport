@@ -9,7 +9,7 @@ class Report(InfoReport):
 
     def __init__(self):
 
-        gettext.install("mintreport", "/usr/share/linuxmint/locale", names="ngettext")
+        gettext.install("mintreport", "/usr/share/locale", names="ngettext")
 
         self.icon = "software-update-urgent-symbolic"
         self.has_ignore_button = False
@@ -32,7 +32,7 @@ class Report(InfoReport):
             elements = line.split(",")
             if len(elements) >= 6:
             	codename = elements[2]
-            	eol = elements[5]            
+            	eol = elements[5]
             	if codename != base_codename:
                 	continue
 

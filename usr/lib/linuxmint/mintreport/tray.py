@@ -17,7 +17,7 @@ setproctitle.setproctitle("mintreport-tray")
 
 # i18n
 APP = 'mintreport'
-LOCALE_DIR = "/usr/share/linuxmint/locale"
+LOCALE_DIR = "/usr/share/locale"
 locale.bindtextdomain(APP, LOCALE_DIR)
 gettext.bindtextdomain(APP, LOCALE_DIR)
 gettext.textdomain(APP)

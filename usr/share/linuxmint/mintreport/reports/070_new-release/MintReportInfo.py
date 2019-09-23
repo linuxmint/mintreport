@@ -12,7 +12,7 @@ class Report(InfoReport):
 
     def __init__(self):
 
-        gettext.install("mintreport", "/usr/share/linuxmint/locale", names="ngettext")
+        gettext.install("mintreport", "/usr/share/locale", names="ngettext")
 
         self.title = _("A new version of Linux Mint is available")
         self.icon = "mintupdate-type-package-symbolic"

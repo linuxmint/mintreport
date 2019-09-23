@@ -7,7 +7,7 @@ class Report(InfoReport):
 
     def __init__(self):
 
-        gettext.install("mintreport", "/usr/share/linuxmint/locale", names="ngettext")
+        gettext.install("mintreport", "/usr/share/locale", names="ngettext")
 
         self.title = _("Set the root password")
         self.icon = "security-high-symbolic"

@@ -12,7 +12,7 @@ class Report(InfoReport):
 
     def __init__(self):
 
-        gettext.install("mintreport", "/usr/share/linuxmint/locale", names="ngettext")
+        gettext.install("mintreport", "/usr/share/locale", names="ngettext")
 
         self.title = _("Install hardware drivers")
         self.icon = "mintreport-hardware-device-symbolic"
