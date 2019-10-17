@@ -45,31 +45,14 @@ class MyApplication(Gtk.Application):
         self.status_icon = XApp.StatusIcon()
         self.status_icon.set_visible(False)
         self.status_icon.set_name("mintreport")
-        self.status_icon.connect("button-press-event", self.on_statusicon_pressed)
-        self.status_icon.connect("button-release-event", self.on_statusicon_released, menu)
+        self.status_icon.connect("activate", self.on_statusicon_activated)
+        self.status_icon.set_secondary_menu(menu)
         self.status_icon.set_visible(False)
 
-    def on_statusicon_pressed(self, widget, x, y, button, time, position):
-        if button == 1:
+    def on_statusicon_activated(self, icon, button, time):
+        if button == Gdk.BUTTON_PRIMARY:
             subprocess.Popen(["/bin/sh", "/usr/bin/mintreport"])
             self.status_icon.set_visible(False)
-
-    def on_statusicon_released(self, icon, x, y, button, time, position, menu):
-        if button == 3:
-            if position == -1:
-                # The position and coordinates are unknown. This is the
-                # case when the XAppStatusIcon fallbacks as a Gtk.StatusIcon
-                menu.popup(None, None, None, None, button, time)
-            else:
-                def position_menu_cb(menu, pointer_x, pointer_y, user_data):
-                    [x, y, position] = user_data;
-                    if (position == Gtk.PositionType.BOTTOM):
-                        y = y - menu.get_allocation().height;
-                    if (position == Gtk.PositionType.RIGHT):
-                        x = x - menu.get_allocation().width;
-                    return (x, y, False)
-                device = Gdk.Display.get_default().get_device_manager().get_client_pointer()
-                menu.popup_for_device(device, None, None, position_menu_cb, [x, y, position], button, time)
 
     def on_menu_show(self, widget):
         subprocess.Popen(["/bin/sh", "/usr/bin/mintreport"])
