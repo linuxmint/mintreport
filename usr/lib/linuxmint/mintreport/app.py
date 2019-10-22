@@ -374,7 +374,7 @@ class MintReportWindow():
                 self.info_button_box.remove(child)
             for action in actions:
                 button = Gtk.Button(action.label)
-                button.connect("clicked", self.on_info_action_clicked, action.callback)
+                button.connect("clicked", self.on_info_action_clicked, action.callback, action.data)
                 if action.style is not None:
                     button.get_style_context().add_class(action.style)
                 self.info_button_box.add(button)
@@ -384,9 +384,9 @@ class MintReportWindow():
                 self.info_button_box.add(button)
             self.builder.get_object("info_box").show_all()
 
-    def on_info_action_clicked(self, button, callback):
+    def on_info_action_clicked(self, button, callback, data):
         self.window.set_sensitive(False)
-        reload_requested = callback()
+        reload_requested = callback(data)
         if reload_requested:
             self.load_info()
         self.window.set_sensitive(True)

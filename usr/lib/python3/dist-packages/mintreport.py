@@ -69,10 +69,11 @@ class InfoReport(ABC):
 
 class InfoReportAction():
 
-    def __init__(self, label, callback):
+    def __init__(self, label, callback, data=None):
         self.label = label
         self.callback = callback
         self.style = None
+        self.data = data
 
     def set_style(self, style):
         self.style = style

@@ -55,7 +55,7 @@ class Report(InfoReport):
         actions.append(action)
         return actions
 
-    def callback(self):
+    def callback(self, data):
         subprocess.run(["/usr/bin/mint-release-upgrade"])
         # reload
         return True

@@ -41,7 +41,7 @@ class Report(InfoReport):
         actions.append(action)
         return actions
 
-    def launch_timeshift(self):
+    def launch_timeshift(self, data):
         subprocess.run(["pkexec", "timeshift-gtk"])
         # reload
         return True

@@ -38,7 +38,7 @@ class Report(InfoReport):
         actions.append(action)
         return actions
 
-    def callback(self):
+    def callback(self, data):
         self.install_packages(["mint-meta-codecs"])
         # reload
         return True

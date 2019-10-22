@@ -50,7 +50,7 @@ class Report(InfoReport):
         actions.append(action)
         return actions
 
-    def callback(self):
+    def callback(self, data):
         self.install_packages(self.missing_pack_names)
         # reload
         return True
