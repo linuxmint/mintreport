@@ -1,3 +1,66 @@
+mintreport (1.1.0) tricia; urgency=medium
+
+  * Modernize info reports system
+  * UI: Move info reports above crash reports
+  * Remove obsolete file
+  * l10n: Update POT
+  * Info reports: Reload after an action is clicked
+  * Turn the app into an autolaunched singleton with a status tray
+  * Add a menubar
+  * Exit in tray mode when no info reports are present
+  * UI: Fix stack right-margin
+  * Build: Inject version number in about dialog
+  * Fix tray mode showing window on current instance
+  * Fix process checks
+  * Split tray and window processes
+  * UI: Move info reports to top
+  * UI: Don't use needs-attention
+  * Reword info reports tab and use a warning icon
+  * Restore the ability to ignore reports
+  * Tray: Ignore ignored reports
+  * tray: Don't waste time if there are more than 1 pertinent report..
+  * Create an abstract class for reports to extend
+  * Add a report to check missing language packs
+  * l10n: Update POT
+  * Add test and define gtk version in some of the reports
+  * Start implementing reports for missing root password and drivers
+  * Finish implementation of the drivers report
+  * Let reports tell the app whether or not to reload
+  * Load reports alphabetically
+  * Prefix reports and use uuids for the ignore list
+  * Let user refresh infor reports
+  * Let user restore ignored reports
+  * Reload everything when refreshing
+  * Add a spinner and a done page
+  * Finish implementing the root password report
+  * UI: Give the reports viewport the view style
+  * Select the first report
+  * Add a report to check for new releases
+  * Add a report to detect release EOL
+  * l10n: Don't put markup in msgid
+  * Remove obsolete file
+  * Don't run tray in live and guest sessions
+  * Cleanup imports
+  * l10n: Update POT
+  * Cleanup imports
+  * Fix load_info only running twice
+  * Make autorefresh rate configurable in gsettings
+  * Fixes in EOL and drivers checks
+  * Add a loading label
+  * Move gettext domain path to /usr/share/locale
+  * l10n: Update POT
+  * l10n: Add translations
+  * UI: Make the spinner bigger
+  * StatusIcon: Use newer signals
+  * InfoReport: Add a data argument into the callback
+  * Remove obsolete HTML resources
+  * Remove obsolete code
+  * Add a test to check the presence of an Xapp Status applet
+  * Let mintreport work without XAppStatusIcon
+  * l10n: Update POT
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 13 Nov 2019 17:28:56 +0100
+
 mintreport (1.0.9) tina; urgency=medium
 
   * Remove f-strings
