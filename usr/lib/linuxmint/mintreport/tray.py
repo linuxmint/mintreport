@@ -23,6 +23,19 @@ gettext.bindtextdomain(APP, LOCALE_DIR)
 gettext.textdomain(APP)
 _ = gettext.gettext
 
+class GtkStatusIcon(Gtk.StatusIcon):
+
+    def __init__(self):
+        Gtk.StatusIcon.__init__(self)
+
+    def set_secondary_menu(self, menu):
+        pass
+
+    def set_icon_name(self, icon_name):
+        self.set_from_icon_name(icon_name)
+
+
+
 class MyApplication(Gtk.Application):
     # Main initialization routine
     def __init__(self, application_id, flags):
@@ -32,27 +45,38 @@ class MyApplication(Gtk.Application):
         self.settings = Gio.Settings("com.linuxmint.report")
 
         # Status icon
-        menu = Gtk.Menu()
+        self.menu = Gtk.Menu()
         menuItem = Gtk.MenuItem.new_with_label(_("Show System Reports"))
         menuItem.connect('activate', self.on_menu_show)
-        menu.append(menuItem)
-        menu.append(Gtk.SeparatorMenuItem())
+        self.menu.append(menuItem)
+        self.menu.append(Gtk.SeparatorMenuItem())
         menuItem = Gtk.MenuItem.new_with_label(_("Quit"))
         menuItem.connect('activate', self.on_menu_quit)
-        menu.append(menuItem)
-        menu.show_all()
+        self.menu.append(menuItem)
+        self.menu.show_all()
 
-        self.status_icon = XApp.StatusIcon()
-        self.status_icon.set_visible(False)
-        self.status_icon.set_name("mintreport")
-        self.status_icon.connect("activate", self.on_statusicon_activated)
-        self.status_icon.set_secondary_menu(menu)
+        try:
+            self.status_icon = XApp.StatusIcon()
+            self.status_icon.set_name("mintreport")
+            self.status_icon.connect("activate", self.on_statusicon_activated)
+            self.status_icon.set_secondary_menu(self.menu)
+        except Exception as e:
+            print("Couldn't instantiate XApp.StatusIcon: %s" % e)
+            self.status_icon = GtkStatusIcon()
+            self.status_icon.connect("activate", self.on_gtk_statusicon_activated)
+            self.status_icon.connect("popup-menu", self.on_gtk_statusicon_popup)
         self.status_icon.set_visible(False)
 
     def on_statusicon_activated(self, icon, button, time):
         if button == Gdk.BUTTON_PRIMARY:
             subprocess.Popen(["/bin/sh", "/usr/bin/mintreport"])
             self.status_icon.set_visible(False)
+
+    def on_gtk_statusicon_activated(self, status_icon):
+        self.on_statusicon_activated(status_icon, Gdk.BUTTON_PRIMARY, None)
+
+    def on_gtk_statusicon_popup(self, status_icon, button, time):
+        self.menu.popup(None, None, None, None, button, time)
 
     def on_menu_show(self, widget):
         subprocess.Popen(["/bin/sh", "/usr/bin/mintreport"])
