@@ -409,28 +409,6 @@ class MintReportWindow():
                         if self.num_info_found == 0:
                             self.show_info_reports()
 
-    def on_link_clicked(self, view, frame, request, data=None):
-        uri = request.get_uri()
-        scheme, path = uri.split('://', 1)
-        if scheme == 'file':
-            return False
-        elif scheme == 'launch':
-            try:
-                command = path.split("%20")
-                subprocess.Popen(command)
-            except Exception as e:
-                print(e)
-            return True
-        elif scheme == 'install':
-            try:
-                subprocess.Popen(["apturl", "apt://%s?refresh=yes" % path])
-            except Exception as e:
-                print(e)
-            return True
-        else:
-            subprocess.Popen(["xdg-open", uri])
-            return True
-
     @idle
     def load_crashes(self):
         self.loading = True
