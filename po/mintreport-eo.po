@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2019-09-23 11:57+0100\n"
-"PO-Revision-Date: 2019-08-29 20:44+0000\n"
+"POT-Creation-Date: 2019-11-13 17:28+0100\n"
+"PO-Revision-Date: 2019-11-23 18:51+0000\n"
 "Last-Translator: Piet Coppens <Unknown>\n"
 "Language-Team: Esperanto <eo@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2019-09-23 12:19+0000\n"
-"X-Generator: Launchpad (build 19048)\n"
+"X-Launchpad-Export-Date: 2019-11-26 16:03+0000\n"
+"X-Generator: Launchpad (build c597c3229eb023b1e626162d5947141bf7befb13)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
 #: usr/lib/linuxmint/mintreport/app.py:236 generate_desktop_files:25
@@ -27,29 +27,29 @@ msgstr "Sistemraportoj"
 
 #: usr/lib/linuxmint/mintreport/app.py:194
 msgid "_File"
-msgstr ""
+msgstr "_Dosiero"
 
 #: usr/lib/linuxmint/mintreport/app.py:199
 msgid "Refresh"
-msgstr ""
+msgstr "Aktualigi"
 
 #: usr/lib/linuxmint/mintreport/app.py:206
 msgid "Restore ignored reports"
-msgstr ""
+msgstr "Restaŭri malatentitajn raportojn"
 
 #: usr/lib/linuxmint/mintreport/app.py:210
-#: usr/lib/linuxmint/mintreport/tray.py:40
+#: usr/lib/linuxmint/mintreport/tray.py:53
 msgid "Quit"
-msgstr ""
+msgstr "Forlasi"
 
 #: usr/lib/linuxmint/mintreport/app.py:221
 msgid "_Help"
-msgstr ""
+msgstr "_Helpo"
 
 #: usr/lib/linuxmint/mintreport/app.py:227
 #: usr/lib/linuxmint/mintreport/app.py:234
 msgid "About"
-msgstr ""
+msgstr "Pri"
 
 #: usr/lib/linuxmint/mintreport/app.py:278
 msgid "An error occurred while gathering the system information."
@@ -94,18 +94,18 @@ msgstr ""
 
 #: usr/lib/linuxmint/mintreport/app.py:382
 msgid "Ignore this problem"
-msgstr ""
+msgstr "Malatenti ĉi tiun problemon"
 
 #: usr/lib/linuxmint/mintreport/app.py:398
 msgid "Are you sure you want to ignore this problem?"
-msgstr ""
+msgstr "Ĉu vi certas, ke vi volas malatenti ĉi tiun problemon?"
 
 #: usr/lib/linuxmint/mintreport/app.py:399
 msgid ""
 "The problem will be permanently ignored and will no longer be visible."
-msgstr ""
+msgstr "La problemo estos porĉiame malatentita kaj estos ne plu videbla."
 
-#: usr/lib/linuxmint/mintreport/app.py:513
+#: usr/lib/linuxmint/mintreport/app.py:491
 #, python-format
 msgid ""
 "The debug symbols are missing for %(program)s.\n"
@@ -114,7 +114,7 @@ msgstr ""
 "La sencimigaj simboloj mankas por %(program)s.\n"
 "Bonvolu instali %(package)s."
 
-#: usr/lib/linuxmint/mintreport/app.py:527
+#: usr/lib/linuxmint/mintreport/app.py:505
 #, python-format
 msgid ""
 "The package providing %s could not be found.\n"
@@ -125,7 +125,7 @@ msgstr ""
 "Se vi volas generi stakan spurodosieron por ĉi tiu kraŝraporto, tiam bonvolu "
 "reinstali ĝin."
 
-#: usr/lib/linuxmint/mintreport/app.py:555
+#: usr/lib/linuxmint/mintreport/app.py:533
 msgid ""
 "The headers or binaries installed on your system do not match the code which "
 "was executed during the crash.\n"
@@ -139,13 +139,13 @@ msgstr ""
 "Iu staka spurodosiero disponeblas en 'lokaj dosieroj', sed ĝia enhavo "
 "verŝajne neprecizas."
 
-#: usr/lib/linuxmint/mintreport/tray.py:36
+#: usr/lib/linuxmint/mintreport/tray.py:49
 msgid "Show System Reports"
-msgstr ""
+msgstr "Montri sistemraportojn"
 
-#: usr/lib/linuxmint/mintreport/tray.py:120
+#: usr/lib/linuxmint/mintreport/tray.py:127
 msgid "Some problems were detected which require your attention"
-msgstr ""
+msgstr "Kelkaj problemoj estis detektitaj, kiuj postulas vian atenton"
 
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
@@ -158,15 +158,15 @@ msgstr "Ilo por problemsolvado"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:1
 msgid "Running system checks..."
-msgstr ""
+msgstr "Plenumado de sistemkontroloj..."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:2
 msgid "No problems were detected"
-msgstr ""
+msgstr "Neniuj problemoj estis detektitaj"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:3
 msgid "Detected problems"
-msgstr ""
+msgstr "Detektitaj problemoj"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:4
 msgid "Copy"
@@ -260,29 +260,35 @@ msgstr "Kraŝraportoj"
 
 #: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:12
 msgid "Set the root password"
-msgstr ""
+msgstr "Agordi la ĉefuzantan pasvorton"
 
 #: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:23
 msgid ""
 "The root account is locked by default in Linux Mint and its password is not "
 "set."
 msgstr ""
+"La ĉefuzanta konto estas defaŭlte ŝlosita en Linukso Minto kaj ĝia pasvorto "
+"ne estas agordita."
 
 #: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:27
 msgid ""
 "Your boot menu's emergency mode does not require a password. Set the root "
 "password to protect it."
 msgstr ""
+"La kriza reĝimo de via praŝarga menuo ne postulas pasvorton. Agordu la "
+"ĉefuzantan pasvorton por ĝin protekti."
 
 #: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:30
 msgid ""
 "Your boot menu's emergency mode requires a password which isn't set. Set the "
 "root password to fix it."
 msgstr ""
+"La kriza reĝimo de via praŝarga menuo postulas pasvorton, kiu ne estas "
+"agordita. Agordu la ĉefuzantan pasvorton por tion ripari."
 
 #: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:32
 msgid "To set the root password, open a terminal and type:"
-msgstr ""
+msgstr "Por agordi la ĉefuzantan pasvorton malfermu terminalon kaj tajpu:"
 
 #: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:35
 msgid ""
@@ -291,6 +297,31 @@ msgid ""
 "reset and your root account can be accessed without a password by booting "
 "another operating system."
 msgstr ""
+"Malgarantio: Efektivigo de deca sekureco nur eblas per limigo de la fizika "
+"aliro al via komputilo kaj per ĉifrado de viaj datumoj. Eblas restarigi BIOS-"
+"pasvortojn kaj ankaŭ eblas aliri vian ĉefuzantan konton sen pasvorto per "
+"praŝargo de alia operaciumo."
+
+#: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
+msgid "Add the XApp Status applet"
+msgstr "Aldoni la aplikaĵeton pri XApa stato"
+
+#: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:37
+msgid ""
+"The XApp Status applet allows applications to provide a tray icon without "
+"rendering glitches and with support for HiDPI and symbolic icons."
+msgstr ""
+"La aplikaĵeto pri XApa stato permesas al aplikaĵoj provizi taskopletan "
+"piktogramon sen bildigi missignalojn kaj kun subteno por alta bildera "
+"denseco kaj simbolaj piktogramoj."
+
+#: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:39
+msgid "Right-click the panel and choose 'Add to Panel'."
+msgstr "Dekstre alklaku la panelon kaj elektu 'Aldoni al panelo'"
+
+#: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:46
+msgid "Add the XApp Status applet to the panel"
+msgstr "Aldoni la aplikaĵeton pri XApa stato al la panelo"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:16
 msgid "Install multimedia codecs"
@@ -338,67 +369,67 @@ msgstr "Lanĉi Timeshift"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:17
 msgid "A new version of Linux Mint is available"
-msgstr ""
+msgstr "Nova versio de Linukso Minto disponeblas"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:47
 #, python-format
 msgid "Visit %s for the latest announcements."
-msgstr ""
+msgstr "Vizitu %s por la lastaj anoncadoj."
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:53
 #, python-format
 msgid "Upgrade to %s"
-msgstr ""
+msgstr "Promocii al %s"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:49
 msgid "Your version of Linux Mint will soon reach End-Of-Life (EOL)"
-msgstr ""
+msgstr "Via versio de Linukso Minto baldaŭ atingos vivofinon"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:50
 #, python-brace-format
 msgid "It will stop receiving support and updates in a day."
 msgid_plural "It will stop receiving support and updates in {num_days} days."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Ĝi ne plu ricevos subtenon kaj ĝisdatigojn post tago."
+msgstr[1] "Ĝi ne plu ricevos subtenon kaj ĝisdatigojn post {num_days} tagoj."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:54
 msgid "Your version of Linux Mint is no longer supported"
-msgstr ""
+msgstr "Via versio de Linukso Minto ne plu estas subtenata"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:55
 #, python-brace-format
 msgid "It reached End-Of-Life (EOL) yesterday."
 msgid_plural "It reached End-Of-Life (EOL) {num_days} days ago."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Ĝi atingis vivofinon hieraŭ."
+msgstr[1] "Ĝi atingis vivofinon antaŭ {num_days} tagoj."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:66
 #, python-format
 msgid "Visit %s to find information about newer releases."
-msgstr ""
+msgstr "Vizitu %s por trovi informojn pri pli novaj eldonoj."
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:26
 msgid "Install language packs"
-msgstr ""
+msgstr "Instali lingvajn pakojn"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:41
 msgid ""
 "The following localization packages are missing to properly support your "
 "language:"
-msgstr ""
+msgstr "La jenaj tradukpakoj mankas por dece subteni vian lingvon:"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:48
 msgid "Install the Language Packs"
-msgstr ""
+msgstr "Instali la lingvajn pakojn"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:17
 msgid "Install hardware drivers"
-msgstr ""
+msgstr "Instali aparatar-pelilojn"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:54
 msgid "Hardware drivers are available for the following devices:"
-msgstr ""
+msgstr "Aparatar-peliloj disponeblas por jenaj aparatoj:"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:61
 msgid "Launch the Driver Manager"
-msgstr ""
+msgstr "Lanĉi la pelilan mastrumilon"

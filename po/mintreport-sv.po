@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2019-09-23 11:57+0100\n"
-"PO-Revision-Date: 2019-09-15 20:00+0000\n"
+"POT-Creation-Date: 2019-11-13 17:28+0100\n"
+"PO-Revision-Date: 2019-11-13 19:44+0000\n"
 "Last-Translator: Jan-Olof Svensson <jan-olof.svensson@abc.se>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2019-09-23 12:19+0000\n"
-"X-Generator: Launchpad (build 19048)\n"
+"X-Launchpad-Export-Date: 2019-11-26 16:03+0000\n"
+"X-Generator: Launchpad (build c597c3229eb023b1e626162d5947141bf7befb13)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
 #: usr/lib/linuxmint/mintreport/app.py:236 generate_desktop_files:25
@@ -38,7 +38,7 @@ msgid "Restore ignored reports"
 msgstr "Återställ ignorerade rapporter"
 
 #: usr/lib/linuxmint/mintreport/app.py:210
-#: usr/lib/linuxmint/mintreport/tray.py:40
+#: usr/lib/linuxmint/mintreport/tray.py:53
 msgid "Quit"
 msgstr "Avsluta"
 
@@ -105,7 +105,7 @@ msgid ""
 "The problem will be permanently ignored and will no longer be visible."
 msgstr "Problemet ignoreras permanent och kommer inte längre att visas."
 
-#: usr/lib/linuxmint/mintreport/app.py:513
+#: usr/lib/linuxmint/mintreport/app.py:491
 #, python-format
 msgid ""
 "The debug symbols are missing for %(program)s.\n"
@@ -114,7 +114,7 @@ msgstr ""
 "Felsökningssymboler saknas för %(program)s.\n"
 "Installera %(package)s."
 
-#: usr/lib/linuxmint/mintreport/app.py:527
+#: usr/lib/linuxmint/mintreport/app.py:505
 #, python-format
 msgid ""
 "The package providing %s could not be found.\n"
@@ -125,7 +125,7 @@ msgstr ""
 "Installera om paketet, om du vill generera en stackspårning för denna "
 "kraschrapport."
 
-#: usr/lib/linuxmint/mintreport/app.py:555
+#: usr/lib/linuxmint/mintreport/app.py:533
 msgid ""
 "The headers or binaries installed on your system do not match the code which "
 "was executed during the crash.\n"
@@ -139,11 +139,11 @@ msgstr ""
 "En stackspårning finns tillgänglig i \"Lokala filer\", men innehållet är "
 "troligen felaktigt."
 
-#: usr/lib/linuxmint/mintreport/tray.py:36
+#: usr/lib/linuxmint/mintreport/tray.py:49
 msgid "Show System Reports"
 msgstr "Visa systemrapporter"
 
-#: usr/lib/linuxmint/mintreport/tray.py:120
+#: usr/lib/linuxmint/mintreport/tray.py:127
 msgid "Some problems were detected which require your attention"
 msgstr "Vissa problem hittades som kräver din uppmärksamhet"
 
@@ -158,7 +158,7 @@ msgstr "Felsökningsverktyg"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:1
 msgid "Running system checks..."
-msgstr ""
+msgstr "Kör systemkontroller..."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:2
 msgid "No problems were detected"
@@ -304,6 +304,26 @@ msgstr ""
 "åtkomsten till datorn och kryptera dina data. BIOS-lösenord kan återställas "
 "och administratörskontot kan nås utan lösenord genom att datorn startas med "
 "ett annat operativsystem."
+
+#: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
+msgid "Add the XApp Status applet"
+msgstr "Lägg till appen XApp Status"
+
+#: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:37
+msgid ""
+"The XApp Status applet allows applications to provide a tray icon without "
+"rendering glitches and with support for HiDPI and symbolic icons."
+msgstr ""
+"Appen XApp Status ger program möjlighet att lägga till en panel-ikon med hög "
+"kvalitet. Den har stöd för HiDPI och symboliska ikoner."
+
+#: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:39
+msgid "Right-click the panel and choose 'Add to Panel'."
+msgstr "Högerklicka på panelen och välj 'Lägg till i panelen'."
+
+#: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:46
+msgid "Add the XApp Status applet to the panel"
+msgstr "Lägg till appen XApp Status i panelen"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:16
 msgid "Install multimedia codecs"

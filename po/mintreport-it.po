@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2019-09-23 11:57+0100\n"
-"PO-Revision-Date: 2019-09-23 12:04+0000\n"
-"Last-Translator: Clement Lefebvre <root@linuxmint.com>\n"
+"POT-Creation-Date: 2019-11-13 17:28+0100\n"
+"PO-Revision-Date: 2019-11-13 18:31+0000\n"
+"Last-Translator: Dragone2 <Unknown>\n"
 "Language-Team: Italian <it@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2019-09-23 12:19+0000\n"
-"X-Generator: Launchpad (build 19048)\n"
+"X-Launchpad-Export-Date: 2019-11-26 16:03+0000\n"
+"X-Generator: Launchpad (build c597c3229eb023b1e626162d5947141bf7befb13)\n"
 "Language: it\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
@@ -36,10 +36,10 @@ msgstr "Ricarica"
 
 #: usr/lib/linuxmint/mintreport/app.py:206
 msgid "Restore ignored reports"
-msgstr "Ripristina report ignorati"
+msgstr "Ripristina rapporti ignorati"
 
 #: usr/lib/linuxmint/mintreport/app.py:210
-#: usr/lib/linuxmint/mintreport/tray.py:40
+#: usr/lib/linuxmint/mintreport/tray.py:53
 msgid "Quit"
 msgstr "Esci"
 
@@ -109,7 +109,7 @@ msgid ""
 "The problem will be permanently ignored and will no longer be visible."
 msgstr "Il problema verrà definitivamente ignorato e non sarà più visibile."
 
-#: usr/lib/linuxmint/mintreport/app.py:513
+#: usr/lib/linuxmint/mintreport/app.py:491
 #, python-format
 msgid ""
 "The debug symbols are missing for %(program)s.\n"
@@ -118,7 +118,7 @@ msgstr ""
 "I simboli per il debug mancano per %(program)s.\n"
 "Per favore installa %(package)s."
 
-#: usr/lib/linuxmint/mintreport/app.py:527
+#: usr/lib/linuxmint/mintreport/app.py:505
 #, python-format
 msgid ""
 "The package providing %s could not be found.\n"
@@ -129,7 +129,7 @@ msgstr ""
 "Se si desidera generare una traccia di stack per questo rapporto di arresto "
 "anomalo, si prega di reinstallarlo."
 
-#: usr/lib/linuxmint/mintreport/app.py:555
+#: usr/lib/linuxmint/mintreport/app.py:533
 msgid ""
 "The headers or binaries installed on your system do not match the code which "
 "was executed during the crash.\n"
@@ -143,11 +143,11 @@ msgstr ""
 "È disponibile una stack trace in 'File Locali', ma il suo contenuto non è "
 "probabilmente accurato."
 
-#: usr/lib/linuxmint/mintreport/tray.py:36
+#: usr/lib/linuxmint/mintreport/tray.py:49
 msgid "Show System Reports"
 msgstr "Mostra i Report di Sistema"
 
-#: usr/lib/linuxmint/mintreport/tray.py:120
+#: usr/lib/linuxmint/mintreport/tray.py:127
 msgid "Some problems were detected which require your attention"
 msgstr "Sono stati rilevati alcuni problemi che richiedono la tua attenzione"
 
@@ -162,7 +162,7 @@ msgstr "Strumento per la risoluzione dei problemi"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:1
 msgid "Running system checks..."
-msgstr ""
+msgstr "Esecuzione dei controlli di sistema..."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:2
 msgid "No problems were detected"
@@ -306,6 +306,29 @@ msgstr ""
 "l'accesso fisico al computer e crittografando i dati. Le password del BIOS "
 "possono essere ripristinate ed è possibile accedere al proprio account di "
 "root senza password avviando un altro sistema operativo."
+
+#: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
+msgid "Add the XApp Status applet"
+msgstr "Aggiungi l'applet di Stato XApp"
+
+#: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:37
+msgid ""
+"The XApp Status applet allows applications to provide a tray icon without "
+"rendering glitches and with support for HiDPI and symbolic icons."
+msgstr ""
+"L'applet di Stato XApp consente alle applicazioni di fornire un'icona nella "
+"barra delle applicazioni senza problemi di rendering e con supporto per "
+"HiDPI e icone simboliche."
+
+#: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:39
+msgid "Right-click the panel and choose 'Add to Panel'."
+msgstr ""
+"Fai clic con il pulsante destro del mouse sul pannello e scegli \"Aggiungi "
+"al pannello\"."
+
+#: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:46
+msgid "Add the XApp Status applet to the panel"
+msgstr "Aggiungi l'applet di Stato XApp al pannello"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:16
 msgid "Install multimedia codecs"

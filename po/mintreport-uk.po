@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2019-09-23 11:57+0100\n"
-"PO-Revision-Date: 2019-08-31 20:40+0000\n"
-"Last-Translator: Myk <Stuartlittle1970@gmail.com>\n"
+"POT-Creation-Date: 2019-11-13 17:28+0100\n"
+"PO-Revision-Date: 2019-11-24 06:12+0000\n"
+"Last-Translator: Mykola Tkach <Stuartlittle1970@gmail.com>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2019-09-23 12:19+0000\n"
-"X-Generator: Launchpad (build 19048)\n"
+"X-Launchpad-Export-Date: 2019-11-26 16:03+0000\n"
+"X-Generator: Launchpad (build c597c3229eb023b1e626162d5947141bf7befb13)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
 #: usr/lib/linuxmint/mintreport/app.py:236 generate_desktop_files:25
@@ -28,29 +28,29 @@ msgstr "Звіти про систему"
 
 #: usr/lib/linuxmint/mintreport/app.py:194
 msgid "_File"
-msgstr ""
+msgstr "_Файл"
 
 #: usr/lib/linuxmint/mintreport/app.py:199
 msgid "Refresh"
-msgstr ""
+msgstr "Освіжити"
 
 #: usr/lib/linuxmint/mintreport/app.py:206
 msgid "Restore ignored reports"
-msgstr ""
+msgstr "Відновити нехтувані звіти"
 
 #: usr/lib/linuxmint/mintreport/app.py:210
-#: usr/lib/linuxmint/mintreport/tray.py:40
+#: usr/lib/linuxmint/mintreport/tray.py:53
 msgid "Quit"
-msgstr ""
+msgstr "Вийти"
 
 #: usr/lib/linuxmint/mintreport/app.py:221
 msgid "_Help"
-msgstr ""
+msgstr "_Довідка"
 
 #: usr/lib/linuxmint/mintreport/app.py:227
 #: usr/lib/linuxmint/mintreport/app.py:234
 msgid "About"
-msgstr ""
+msgstr "Про"
 
 #: usr/lib/linuxmint/mintreport/app.py:278
 msgid "An error occurred while gathering the system information."
@@ -95,18 +95,18 @@ msgstr ""
 
 #: usr/lib/linuxmint/mintreport/app.py:382
 msgid "Ignore this problem"
-msgstr ""
+msgstr "Нехтувати цю проблему"
 
 #: usr/lib/linuxmint/mintreport/app.py:398
 msgid "Are you sure you want to ignore this problem?"
-msgstr ""
+msgstr "Ви справді бажаєте знехтувати цю проблему?"
 
 #: usr/lib/linuxmint/mintreport/app.py:399
 msgid ""
 "The problem will be permanently ignored and will no longer be visible."
-msgstr ""
+msgstr "Проблема буде назавжди знехтувана й більше не буде показуватися."
 
-#: usr/lib/linuxmint/mintreport/app.py:513
+#: usr/lib/linuxmint/mintreport/app.py:491
 #, python-format
 msgid ""
 "The debug symbols are missing for %(program)s.\n"
@@ -115,7 +115,7 @@ msgstr ""
 "Символи зневадження відсутні для %(program)s.\n"
 "Будь ласка, встановіть %(package)s"
 
-#: usr/lib/linuxmint/mintreport/app.py:527
+#: usr/lib/linuxmint/mintreport/app.py:505
 #, python-format
 msgid ""
 "The package providing %s could not be found.\n"
@@ -126,7 +126,7 @@ msgstr ""
 "Якщо ви хочете створити трасування стеку для звіту про аварійне завершення "
 "роботи, перевстановіть його."
 
-#: usr/lib/linuxmint/mintreport/app.py:555
+#: usr/lib/linuxmint/mintreport/app.py:533
 msgid ""
 "The headers or binaries installed on your system do not match the code which "
 "was executed during the crash.\n"
@@ -140,13 +140,13 @@ msgstr ""
 "Трасування стеку доступно у \"Локальних Файлах\", але його вміст, ймовірно, "
 "неточний."
 
-#: usr/lib/linuxmint/mintreport/tray.py:36
+#: usr/lib/linuxmint/mintreport/tray.py:49
 msgid "Show System Reports"
-msgstr ""
+msgstr "Показати звіти про систему"
 
-#: usr/lib/linuxmint/mintreport/tray.py:120
+#: usr/lib/linuxmint/mintreport/tray.py:127
 msgid "Some problems were detected which require your attention"
-msgstr ""
+msgstr "Виявлено декілька проблем, що потребують вашої уваги"
 
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
@@ -159,15 +159,15 @@ msgstr "Знаряддя усунення несправностей"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:1
 msgid "Running system checks..."
-msgstr ""
+msgstr "Запуск перевірки системи..."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:2
 msgid "No problems were detected"
-msgstr ""
+msgstr "Проблем немає"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:3
 msgid "Detected problems"
-msgstr ""
+msgstr "Є проблеми"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:4
 msgid "Copy"
@@ -261,29 +261,37 @@ msgstr "Аварійні звіти"
 
 #: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:12
 msgid "Set the root password"
-msgstr ""
+msgstr "Встановити пароль користувача root"
 
 #: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:23
 msgid ""
 "The root account is locked by default in Linux Mint and its password is not "
 "set."
 msgstr ""
+"Обліківка користувача root в Linux Mint типово відімкнена і пароль для неї "
+"не встановлено."
 
 #: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:27
 msgid ""
 "Your boot menu's emergency mode does not require a password. Set the root "
 "password to protect it."
 msgstr ""
+"Для режиму відновлення системи у завантажувальному меню не потрібен ввід "
+"паролю. Для його захисту встановіть пароль користувача root."
 
 #: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:30
 msgid ""
 "Your boot menu's emergency mode requires a password which isn't set. Set the "
 "root password to fix it."
 msgstr ""
+"Для режиму відновлення системи у завантажувальному меню потрібен ввід "
+"паролю, але пароль не встановлено. Для усунення проблеми встановіть пароль "
+"користувача root."
 
 #: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:32
 msgid "To set the root password, open a terminal and type:"
 msgstr ""
+"Для встановлення паролю для користувача root відкрийте термінал та уведіть:"
 
 #: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:35
 msgid ""
@@ -292,6 +300,31 @@ msgid ""
 "reset and your root account can be accessed without a password by booting "
 "another operating system."
 msgstr ""
+"Відмова від відповідальності: Належна безпека може бути досягнута лише "
+"шляхом обмеження фізичного доступу до вашого комп'ютера та шифрування ваших "
+"даних. Паролі BIOS може бути скинено, а а обліківка користувача root може "
+"бути доступна без паролю при завантаженні иншої операційної системи."
+
+#: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
+msgid "Add the XApp Status applet"
+msgstr "Додати аплет статусу XApp"
+
+#: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:37
+msgid ""
+"The XApp Status applet allows applications to provide a tray icon without "
+"rendering glitches and with support for HiDPI and symbolic icons."
+msgstr ""
+"Аплет статусу XApp дозволяє додаткам показувати піктограму у таці без збоїв "
+"рендерингу з підтримкою HiDPI та символічних піктограм."
+
+#: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:39
+msgid "Right-click the panel and choose 'Add to Panel'."
+msgstr ""
+"Клацніть правою кнопкою миші на панелі та виберіть 'Додати на панель'."
+
+#: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:46
+msgid "Add the XApp Status applet to the panel"
+msgstr "Додати аплет статусу XApp на панель"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:16
 msgid "Install multimedia codecs"
@@ -338,67 +371,73 @@ msgstr "Запустити Timeshift"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:17
 msgid "A new version of Linux Mint is available"
-msgstr ""
+msgstr "Доступна нова версія Linux Mint"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:47
 #, python-format
 msgid "Visit %s for the latest announcements."
-msgstr ""
+msgstr "Відвідайте %s для перегляду останніх сповіщень."
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:53
 #, python-format
 msgid "Upgrade to %s"
-msgstr ""
+msgstr "Оновити до %s"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:49
 msgid "Your version of Linux Mint will soon reach End-Of-Life (EOL)"
-msgstr ""
+msgstr "Ваша версія Linux Mint незабаром досягне кінця життєвого циклу (EOL)"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:50
 #, python-brace-format
 msgid "It will stop receiving support and updates in a day."
 msgid_plural "It will stop receiving support and updates in {num_days} days."
-msgstr[0] ""
+msgstr[0] "Вона перестане отримувати підтримку та оновлення через день."
 msgstr[1] ""
+"Вона перестане отримувати підтримку та оновлення через {num_days} дні."
+msgstr[2] ""
+"Вона перестане отримувати підтримку та оновлення через {num_days} днів."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:54
 msgid "Your version of Linux Mint is no longer supported"
-msgstr ""
+msgstr "Ваша версія Linux Mint більше не підтримується"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:55
 #, python-brace-format
 msgid "It reached End-Of-Life (EOL) yesterday."
 msgid_plural "It reached End-Of-Life (EOL) {num_days} days ago."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "ЇЇ життєвий цикл (EOL) закінчився вчора."
+msgstr[1] "ЇЇ життєвий цикл (EOL) закінчився {num_days} дні тому."
+msgstr[2] "ЇЇ життєвий цикл (EOL) закінчився {num_days} днів тому."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:66
 #, python-format
 msgid "Visit %s to find information about newer releases."
-msgstr ""
+msgstr "Відвідайте %s для перегляду відомостей про нові випуски."
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:26
 msgid "Install language packs"
-msgstr ""
+msgstr "Встановлення мовних пакунків"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:41
 msgid ""
 "The following localization packages are missing to properly support your "
 "language:"
 msgstr ""
+"Для правильної підтримки вашої мови потрібно встановити такі пакунки "
+"локалізації:"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:48
 msgid "Install the Language Packs"
-msgstr ""
+msgstr "Встановити мовні пакунки"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:17
 msgid "Install hardware drivers"
-msgstr ""
+msgstr "Встановлення драйверів обладнання"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:54
 msgid "Hardware drivers are available for the following devices:"
-msgstr ""
+msgstr "Наявні драйвери для таких пристроїв:"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:61
 msgid "Launch the Driver Manager"
-msgstr ""
+msgstr "Запустити Керівник драйверів"

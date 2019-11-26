@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2019-09-23 11:57+0100\n"
-"PO-Revision-Date: 2018-08-27 12:01+0000\n"
-"Last-Translator: Thomas Olsen <Unknown>\n"
+"POT-Creation-Date: 2019-11-13 17:28+0100\n"
+"PO-Revision-Date: 2019-10-16 20:09+0000\n"
+"Last-Translator: Mats Larsen <Unknown>\n"
 "Language-Team: Norwegian Bokmal <nb@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2019-09-23 12:19+0000\n"
-"X-Generator: Launchpad (build 19048)\n"
+"X-Launchpad-Export-Date: 2019-11-26 16:03+0000\n"
+"X-Generator: Launchpad (build c597c3229eb023b1e626162d5947141bf7befb13)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
 #: usr/lib/linuxmint/mintreport/app.py:236 generate_desktop_files:25
@@ -27,47 +27,49 @@ msgstr "Systemrapporter"
 
 #: usr/lib/linuxmint/mintreport/app.py:194
 msgid "_File"
-msgstr ""
+msgstr "_Fil"
 
 #: usr/lib/linuxmint/mintreport/app.py:199
 msgid "Refresh"
-msgstr ""
+msgstr "Oppdater"
 
 #: usr/lib/linuxmint/mintreport/app.py:206
 msgid "Restore ignored reports"
-msgstr ""
+msgstr "Gjenopprett ignorerte rapporter"
 
 #: usr/lib/linuxmint/mintreport/app.py:210
-#: usr/lib/linuxmint/mintreport/tray.py:40
+#: usr/lib/linuxmint/mintreport/tray.py:53
 msgid "Quit"
-msgstr ""
+msgstr "Avslutt"
 
 #: usr/lib/linuxmint/mintreport/app.py:221
 msgid "_Help"
-msgstr ""
+msgstr "_Hjelp"
 
 #: usr/lib/linuxmint/mintreport/app.py:227
 #: usr/lib/linuxmint/mintreport/app.py:234
 msgid "About"
-msgstr ""
+msgstr "Om"
 
 #: usr/lib/linuxmint/mintreport/app.py:278
 msgid "An error occurred while gathering the system information."
-msgstr ""
+msgstr "Det oppstod en feil under samlingen av systeminformasjonen."
 
 #: usr/lib/linuxmint/mintreport/app.py:292
 msgid "System information copied"
-msgstr ""
+msgstr "Systeminformasjon kopiert"
 
 #: usr/lib/linuxmint/mintreport/app.py:292
 msgid ""
 "Your system information was copied into your clipboard so you can paste it "
 "on the forums."
 msgstr ""
+"Systeminformasjonen din ble kopiert til utklippstavlen slik at du kan lime "
+"den inn på forumene."
 
 #: usr/lib/linuxmint/mintreport/app.py:301
 msgid "System information uploaded"
-msgstr ""
+msgstr "Systeminformasjon lastet opp"
 
 #: usr/lib/linuxmint/mintreport/app.py:301
 #, python-format
@@ -75,38 +77,42 @@ msgid ""
 "Your system information was uploaded to %s. This link was placed in your "
 "clipboard so you can paste it on IRC."
 msgstr ""
+"Systeminformasjonen din ble lastet opp til %s. Denne lenken ble plassert i "
+"utklippstavlen din slik at du kan lime den inn på IRC."
 
 #: usr/lib/linuxmint/mintreport/app.py:303
 msgid "An error occurred while uploading the system information"
-msgstr ""
+msgstr "Det oppstod en feil under opplasting av systeminformasjon"
 
 #: usr/lib/linuxmint/mintreport/app.py:303
 msgid ""
 "Copy and paste the system information manually into a pastebin site like "
 "https://pastebin.com and share the link on IRC."
 msgstr ""
+"Kopier og lim inn systeminformasjonen manuelt på et pastebin-nettsted som "
+"https://pastebin.com og del lenken på IRC."
 
 #: usr/lib/linuxmint/mintreport/app.py:382
 msgid "Ignore this problem"
-msgstr ""
+msgstr "Ignorer dette problemet"
 
 #: usr/lib/linuxmint/mintreport/app.py:398
 msgid "Are you sure you want to ignore this problem?"
-msgstr ""
+msgstr "Er du sikker på at du vil ignorere dette problemet?"
 
 #: usr/lib/linuxmint/mintreport/app.py:399
 msgid ""
 "The problem will be permanently ignored and will no longer be visible."
-msgstr ""
+msgstr "Problemet blir ignorert permanent og vil ikke lenger være synlig."
 
-#: usr/lib/linuxmint/mintreport/app.py:513
+#: usr/lib/linuxmint/mintreport/app.py:491
 #, python-format
 msgid ""
 "The debug symbols are missing for %(program)s.\n"
 "Please install %(package)s."
 msgstr ""
 
-#: usr/lib/linuxmint/mintreport/app.py:527
+#: usr/lib/linuxmint/mintreport/app.py:505
 #, python-format
 msgid ""
 "The package providing %s could not be found.\n"
@@ -114,7 +120,7 @@ msgid ""
 "reinstall it."
 msgstr ""
 
-#: usr/lib/linuxmint/mintreport/app.py:555
+#: usr/lib/linuxmint/mintreport/app.py:533
 msgid ""
 "The headers or binaries installed on your system do not match the code which "
 "was executed during the crash.\n"
@@ -123,11 +129,11 @@ msgid ""
 "inaccurate."
 msgstr ""
 
-#: usr/lib/linuxmint/mintreport/tray.py:36
+#: usr/lib/linuxmint/mintreport/tray.py:49
 msgid "Show System Reports"
-msgstr ""
+msgstr "Vis systemrapporter"
 
-#: usr/lib/linuxmint/mintreport/tray.py:120
+#: usr/lib/linuxmint/mintreport/tray.py:127
 msgid "Some problems were detected which require your attention"
 msgstr ""
 
@@ -264,6 +270,24 @@ msgid ""
 "access to your computer and encrypting your data. BIOS passwords can be "
 "reset and your root account can be accessed without a password by booting "
 "another operating system."
+msgstr ""
+
+#: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
+msgid "Add the XApp Status applet"
+msgstr ""
+
+#: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:37
+msgid ""
+"The XApp Status applet allows applications to provide a tray icon without "
+"rendering glitches and with support for HiDPI and symbolic icons."
+msgstr ""
+
+#: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:39
+msgid "Right-click the panel and choose 'Add to Panel'."
+msgstr ""
+
+#: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:46
+msgid "Add the XApp Status applet to the panel"
 msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:16

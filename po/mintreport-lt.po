@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2019-09-23 11:57+0100\n"
-"PO-Revision-Date: 2019-09-13 20:12+0000\n"
+"POT-Creation-Date: 2019-11-13 17:28+0100\n"
+"PO-Revision-Date: 2019-11-18 14:08+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <lt@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -16,8 +16,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "(n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2019-09-23 12:19+0000\n"
-"X-Generator: Launchpad (build 19048)\n"
+"X-Launchpad-Export-Date: 2019-11-26 16:03+0000\n"
+"X-Generator: Launchpad (build c597c3229eb023b1e626162d5947141bf7befb13)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
 #: usr/lib/linuxmint/mintreport/app.py:236 generate_desktop_files:25
@@ -39,7 +39,7 @@ msgid "Restore ignored reports"
 msgstr "Atkurti nepaisomus pranešimus"
 
 #: usr/lib/linuxmint/mintreport/app.py:210
-#: usr/lib/linuxmint/mintreport/tray.py:40
+#: usr/lib/linuxmint/mintreport/tray.py:53
 msgid "Quit"
 msgstr "Išeiti"
 
@@ -108,7 +108,7 @@ msgid ""
 msgstr ""
 "Šios problemos bus visą laiką nepaisoma ir ji daugiau nebebus matoma."
 
-#: usr/lib/linuxmint/mintreport/app.py:513
+#: usr/lib/linuxmint/mintreport/app.py:491
 #, python-format
 msgid ""
 "The debug symbols are missing for %(program)s.\n"
@@ -117,7 +117,7 @@ msgstr ""
 "Programai %(program)s trūksta derinimo simbolių.\n"
 "Prašome įdiegti %(package)s."
 
-#: usr/lib/linuxmint/mintreport/app.py:527
+#: usr/lib/linuxmint/mintreport/app.py:505
 #, python-format
 msgid ""
 "The package providing %s could not be found.\n"
@@ -128,7 +128,7 @@ msgstr ""
 "Jeigu šiai strigčiai norite sukurti dėklo pėdsaką, įdiekite tą paketą iš "
 "naujo."
 
-#: usr/lib/linuxmint/mintreport/app.py:555
+#: usr/lib/linuxmint/mintreport/app.py:533
 msgid ""
 "The headers or binaries installed on your system do not match the code which "
 "was executed during the crash.\n"
@@ -142,11 +142,11 @@ msgstr ""
 "Dėklo pėdsakas yra prieinamas ties \"Vietiniai failai\", tačiau jo turinys, "
 "tikriausiai, yra netikslus."
 
-#: usr/lib/linuxmint/mintreport/tray.py:36
+#: usr/lib/linuxmint/mintreport/tray.py:49
 msgid "Show System Reports"
 msgstr "Rodyti sistemos pranešimus"
 
-#: usr/lib/linuxmint/mintreport/tray.py:120
+#: usr/lib/linuxmint/mintreport/tray.py:127
 msgid "Some problems were detected which require your attention"
 msgstr "Buvo aptiktos kai kurios problemos, reikalaujančios jūsų dėmesio"
 
@@ -161,7 +161,7 @@ msgstr "Nesklandumų šalinimo įrankis"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:1
 msgid "Running system checks..."
-msgstr ""
+msgstr "Vykdomi sistemos patikrinimai..."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:2
 msgid "No problems were detected"
@@ -307,6 +307,28 @@ msgstr ""
 "fizinę prieigą prie kompiuterio ir šifruojant savo duomenis. BIOS "
 "slaptažodžiai gali būti atstatyti, o prieigą prie jūsų pagrindinio naudotojo "
 "(root) paskyros galima gauti paleidus kitą operacinę sistemą."
+
+#: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
+msgid "Add the XApp Status applet"
+msgstr "Pridėti XApp būsenos programėlę"
+
+#: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:37
+msgid ""
+"The XApp Status applet allows applications to provide a tray icon without "
+"rendering glitches and with support for HiDPI and symbolic icons."
+msgstr ""
+"XApp būsenos programėlė leidžia programoms suteikti dėklo piktogramą "
+"neatvaizduojant trikčių ir palaikant HiDPI bei simbolines piktogramas."
+
+#: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:39
+msgid "Right-click the panel and choose 'Add to Panel'."
+msgstr ""
+"Spustelėkite dešiniuoju pelės mygtuku ant skydelio ir pasirinkite \"Pridėti "
+"į skydelį\""
+
+#: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:46
+msgid "Add the XApp Status applet to the panel"
+msgstr "Pridėti XApp būsenos programėlę į skydelį"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:16
 msgid "Install multimedia codecs"

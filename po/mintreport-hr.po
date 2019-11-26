@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2019-09-23 11:57+0100\n"
-"PO-Revision-Date: 2019-09-18 15:50+0000\n"
+"POT-Creation-Date: 2019-11-13 17:28+0100\n"
+"PO-Revision-Date: 2019-11-13 21:47+0000\n"
 "Last-Translator: gogo <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <hr@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -16,8 +16,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2019-09-23 12:19+0000\n"
-"X-Generator: Launchpad (build 19048)\n"
+"X-Launchpad-Export-Date: 2019-11-26 16:03+0000\n"
+"X-Generator: Launchpad (build c597c3229eb023b1e626162d5947141bf7befb13)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
 #: usr/lib/linuxmint/mintreport/app.py:236 generate_desktop_files:25
@@ -39,7 +39,7 @@ msgid "Restore ignored reports"
 msgstr "Obnovi zanemarene izvještaje"
 
 #: usr/lib/linuxmint/mintreport/app.py:210
-#: usr/lib/linuxmint/mintreport/tray.py:40
+#: usr/lib/linuxmint/mintreport/tray.py:53
 msgid "Quit"
 msgstr "Zatvori"
 
@@ -106,7 +106,7 @@ msgid ""
 "The problem will be permanently ignored and will no longer be visible."
 msgstr "Problem će biti trajno zanemaren i više neće biti vidljiv."
 
-#: usr/lib/linuxmint/mintreport/app.py:513
+#: usr/lib/linuxmint/mintreport/app.py:491
 #, python-format
 msgid ""
 "The debug symbols are missing for %(program)s.\n"
@@ -115,7 +115,7 @@ msgstr ""
 "Simboli otklanjanja grešaka nedostaju za %(program)s.\n"
 "Instalirajte %(package)s."
 
-#: usr/lib/linuxmint/mintreport/app.py:527
+#: usr/lib/linuxmint/mintreport/app.py:505
 #, python-format
 msgid ""
 "The package providing %s could not be found.\n"
@@ -126,7 +126,7 @@ msgstr ""
 "Ako želite generirati stavke rušenja za ovaj izvještaj rušenja, "
 "reinstalirajte ga."
 
-#: usr/lib/linuxmint/mintreport/app.py:555
+#: usr/lib/linuxmint/mintreport/app.py:533
 msgid ""
 "The headers or binaries installed on your system do not match the code which "
 "was executed during the crash.\n"
@@ -140,11 +140,11 @@ msgstr ""
 "Stavke rušenja su dostupne u 'Lokalnim datotekama' ali njihov sadržaj je "
 "najvjerojatnije netočan."
 
-#: usr/lib/linuxmint/mintreport/tray.py:36
+#: usr/lib/linuxmint/mintreport/tray.py:49
 msgid "Show System Reports"
 msgstr "Prikaži izvještaje sustava"
 
-#: usr/lib/linuxmint/mintreport/tray.py:120
+#: usr/lib/linuxmint/mintreport/tray.py:127
 msgid "Some problems were detected which require your attention"
 msgstr "Otkriveni su određeni problemi koji zahtjevaju vašu pozornost"
 
@@ -159,7 +159,7 @@ msgstr "Alat otklanjanja problema"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:1
 msgid "Running system checks..."
-msgstr ""
+msgstr "Pokretanje provjera sustava..."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:2
 msgid "No problems were detected"
@@ -303,6 +303,27 @@ msgstr ""
 "podataka. BIOS lozinka se može poništiti što omogućuje pristup vašem "
 "korijenskom računu bez lozinke pokretanjem drugog operativnog sustava."
 
+#: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
+msgid "Add the XApp Status applet"
+msgstr "Dodajte XApp aplet stanja"
+
+#: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:37
+msgid ""
+"The XApp Status applet allows applications to provide a tray icon without "
+"rendering glitches and with support for HiDPI and symbolic icons."
+msgstr ""
+"XApp aplet stanja omogućuje aplikacijama pružanje ikone obavijesnog područja "
+"sustava bez grešaka u prikazu, podršku za zaslone visoke razlučivosti "
+"(HiDPI) i simboličke ikone."
+
+#: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:39
+msgid "Right-click the panel and choose 'Add to Panel'."
+msgstr "Desno kliknite na panel i odaberite 'Dodaj na panel'"
+
+#: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:46
+msgid "Add the XApp Status applet to the panel"
+msgstr "Dodaj XApp aplet stanja na panel"
+
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:16
 msgid "Install multimedia codecs"
 msgstr "Instaliraj multimedijske kôdeke"
@@ -391,7 +412,7 @@ msgstr "Posjetite %s kako bi pronašli informacije o novom izdanju."
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:26
 msgid "Install language packs"
-msgstr "Instaliraj jezični paket"
+msgstr "Instalirajte jezične pakete"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:41
 msgid ""

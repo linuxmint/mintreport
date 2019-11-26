@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2019-09-23 11:57+0100\n"
-"PO-Revision-Date: 2019-06-28 07:46+0000\n"
+"POT-Creation-Date: 2019-11-13 17:28+0100\n"
+"PO-Revision-Date: 2019-11-19 06:56+0000\n"
 "Last-Translator: Panwar <Unknown>\n"
 "Language-Team: Hindi <hi@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2019-09-23 12:19+0000\n"
-"X-Generator: Launchpad (build 19048)\n"
+"X-Launchpad-Export-Date: 2019-11-26 16:03+0000\n"
+"X-Generator: Launchpad (build c597c3229eb023b1e626162d5947141bf7befb13)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
 #: usr/lib/linuxmint/mintreport/app.py:236 generate_desktop_files:25
@@ -27,29 +27,29 @@ msgstr "सिस्टम रिपोर्ट"
 
 #: usr/lib/linuxmint/mintreport/app.py:194
 msgid "_File"
-msgstr ""
+msgstr "फ़ाइल (_F)"
 
 #: usr/lib/linuxmint/mintreport/app.py:199
 msgid "Refresh"
-msgstr ""
+msgstr "रिफ्रेश करें"
 
 #: usr/lib/linuxmint/mintreport/app.py:206
 msgid "Restore ignored reports"
-msgstr ""
+msgstr "अनदेखी की गयी रिपोर्ट पुनः स्थापित करें"
 
 #: usr/lib/linuxmint/mintreport/app.py:210
-#: usr/lib/linuxmint/mintreport/tray.py:40
+#: usr/lib/linuxmint/mintreport/tray.py:53
 msgid "Quit"
-msgstr ""
+msgstr "छोड़ें"
 
 #: usr/lib/linuxmint/mintreport/app.py:221
 msgid "_Help"
-msgstr ""
+msgstr "मदद (_H)"
 
 #: usr/lib/linuxmint/mintreport/app.py:227
 #: usr/lib/linuxmint/mintreport/app.py:234
 msgid "About"
-msgstr ""
+msgstr "के बारे में"
 
 #: usr/lib/linuxmint/mintreport/app.py:278
 msgid "An error occurred while gathering the system information."
@@ -94,18 +94,19 @@ msgstr ""
 
 #: usr/lib/linuxmint/mintreport/app.py:382
 msgid "Ignore this problem"
-msgstr ""
+msgstr "इस समस्या को अनदेखा करें"
 
 #: usr/lib/linuxmint/mintreport/app.py:398
 msgid "Are you sure you want to ignore this problem?"
-msgstr ""
+msgstr "क्या आप वाकई इस समस्या को अनदेखा करना चाहते हैं ?"
 
 #: usr/lib/linuxmint/mintreport/app.py:399
 msgid ""
 "The problem will be permanently ignored and will no longer be visible."
 msgstr ""
+"समस्या को स्थायी रूप से अनदेखा कर दिया जाएगा व यह दृश्यमान भी नहीं रहेगी।"
 
-#: usr/lib/linuxmint/mintreport/app.py:513
+#: usr/lib/linuxmint/mintreport/app.py:491
 #, python-format
 msgid ""
 "The debug symbols are missing for %(program)s.\n"
@@ -114,7 +115,7 @@ msgstr ""
 "%(program)s के लिए दोषमार्जन(डिबग) प्रतीक अनुपस्थित हैं।\n"
 "कृपया %(package)s इंस्टॉल करें।"
 
-#: usr/lib/linuxmint/mintreport/app.py:527
+#: usr/lib/linuxmint/mintreport/app.py:505
 #, python-format
 msgid ""
 "The package providing %s could not be found.\n"
@@ -125,7 +126,7 @@ msgstr ""
 "यदि इस क्रैश रिपोर्ट के लिए स्टैक ट्रेस उत्पन्न करना चाहते हैं, तो इसे पुन: "
 "इंस्टॉल करें।"
 
-#: usr/lib/linuxmint/mintreport/app.py:555
+#: usr/lib/linuxmint/mintreport/app.py:533
 msgid ""
 "The headers or binaries installed on your system do not match the code which "
 "was executed during the crash.\n"
@@ -139,13 +140,13 @@ msgstr ""
 "एक स्टैक ट्रेस 'स्थानीय फाइल' में उपलब्ध है, लेकिन उसकी सामग्री शायद "
 "त्रुटिपूर्ण है।"
 
-#: usr/lib/linuxmint/mintreport/tray.py:36
+#: usr/lib/linuxmint/mintreport/tray.py:49
 msgid "Show System Reports"
-msgstr ""
+msgstr "सिस्टम रिपोर्ट दिखाएँ"
 
-#: usr/lib/linuxmint/mintreport/tray.py:120
+#: usr/lib/linuxmint/mintreport/tray.py:127
 msgid "Some problems were detected which require your attention"
-msgstr ""
+msgstr "कुछ समस्याएँ पाई गई जिन पर आपको ध्यान देने की आवश्यकता है"
 
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
@@ -158,15 +159,15 @@ msgstr "समस्या निवारण हेतु साधन"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:1
 msgid "Running system checks..."
-msgstr ""
+msgstr "सिस्टम जाँच की जा रही है"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:2
 msgid "No problems were detected"
-msgstr ""
+msgstr "कोई समस्या नहीं पाई गई"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:3
 msgid "Detected problems"
-msgstr ""
+msgstr "पाई गई समस्याएँ"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:4
 msgid "Copy"
@@ -262,29 +263,35 @@ msgstr "क्रैश रिपोर्ट"
 
 #: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:12
 msgid "Set the root password"
-msgstr ""
+msgstr "रुट कूटशब्द सेट करें"
 
 #: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:23
 msgid ""
 "The root account is locked by default in Linux Mint and its password is not "
 "set."
 msgstr ""
+"लिनक्स मिंट में, रुट अकाउंट डिफ़ॉल्ट रूप से लॉक है व इसका कूटशब्द सेट नहीं "
+"है।"
 
 #: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:27
 msgid ""
 "Your boot menu's emergency mode does not require a password. Set the root "
 "password to protect it."
 msgstr ""
+"बूट मेन्यू के आपात मोड हेतु कूटशब्द आवश्यक नहीं है। रुट कूटशब्द सेट कर इसे "
+"सुरक्षित करें।"
 
 #: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:30
 msgid ""
 "Your boot menu's emergency mode requires a password which isn't set. Set the "
 "root password to fix it."
 msgstr ""
+"बूट मेन्यू के आपात मोड हेतु कूटशब्द आवश्यक है। इसके निवारण हेतु रुट कूटशब्द "
+"सेट करें।"
 
 #: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:32
 msgid "To set the root password, open a terminal and type:"
-msgstr ""
+msgstr "रुट कूटशब्द सेट करने हेतु, टर्मिनल खोलें व टाइप करें :"
 
 #: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:35
 msgid ""
@@ -294,9 +301,27 @@ msgid ""
 "another operating system."
 msgstr ""
 
+#: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
+msgid "Add the XApp Status applet"
+msgstr "XApp स्थिति एप्लेट जोड़ें"
+
+#: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:37
+msgid ""
+"The XApp Status applet allows applications to provide a tray icon without "
+"rendering glitches and with support for HiDPI and symbolic icons."
+msgstr ""
+
+#: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:39
+msgid "Right-click the panel and choose 'Add to Panel'."
+msgstr ""
+
+#: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:46
+msgid "Add the XApp Status applet to the panel"
+msgstr ""
+
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:16
 msgid "Install multimedia codecs"
-msgstr ""
+msgstr "मल्टीमीडिया कोडेक्स इंस्टॉल करें"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:30
 msgid ""
@@ -306,7 +331,7 @@ msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:36
 msgid "Install the Multimedia Codecs"
-msgstr ""
+msgstr "मल्टीमीडिया कोडेक्स इंस्टॉल करें"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:17
 msgid "Set up the system restore utility"
@@ -330,71 +355,75 @@ msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:39
 msgid "Launch Timeshift"
-msgstr ""
+msgstr "टाइम-शिफ्ट खोलें"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:17
 msgid "A new version of Linux Mint is available"
-msgstr ""
+msgstr "लिनक्स मिंट का नया संस्करण उपलब्ध है"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:47
 #, python-format
 msgid "Visit %s for the latest announcements."
-msgstr ""
+msgstr "नवीनतम घोषणाओं को %s पर जाकर देखें।"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:53
 #, python-format
 msgid "Upgrade to %s"
-msgstr ""
+msgstr "%s में अपग्रेड करें"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:49
 msgid "Your version of Linux Mint will soon reach End-Of-Life (EOL)"
 msgstr ""
+"आपके लिनक्स मिंट संस्करण की उपयोगिता अवधि (EOL) जल्द समाप्त होने वाली है"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:50
 #, python-brace-format
 msgid "It will stop receiving support and updates in a day."
 msgid_plural "It will stop receiving support and updates in {num_days} days."
-msgstr[0] ""
+msgstr[0] "इस संस्करण हेतु समर्थन व अपडेट एक दिन के उपरांत बंद कर दी जाएगी।"
 msgstr[1] ""
+"इस संस्करण हेतु समर्थन व अपडेट {num_days} दिनों के उपरांत बंद कर दी जाएगी।"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:54
 msgid "Your version of Linux Mint is no longer supported"
-msgstr ""
+msgstr "आपका लिनक्स मिंट संस्करण अब समर्थित नहीं है"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:55
 #, python-brace-format
 msgid "It reached End-Of-Life (EOL) yesterday."
 msgid_plural "It reached End-Of-Life (EOL) {num_days} days ago."
-msgstr[0] ""
+msgstr[0] "इस संस्करण की उपयोगिता अवधि (EOL) कल समाप्त हो चुकी है।"
 msgstr[1] ""
+"इस संस्करण की उपयोगिता अवधि (EOL) {num_days} दिन पहले ही समाप्त हो चुकी है।"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:66
 #, python-format
 msgid "Visit %s to find information about newer releases."
-msgstr ""
+msgstr "नए संस्करणों से संबंधी सूचना %s पर जाकर देखें।"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:26
 msgid "Install language packs"
-msgstr ""
+msgstr "भाषीय पैक इंस्टॉल करें"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:41
 msgid ""
 "The following localization packages are missing to properly support your "
 "language:"
 msgstr ""
+"आपके भाषा के उचित समर्थन हेतु निम्नलिखित स्थानिकी पैकेज अनुपलब्ध है :"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:48
 msgid "Install the Language Packs"
-msgstr ""
+msgstr "भाषीय पैक इंस्टॉल करें"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:17
 msgid "Install hardware drivers"
-msgstr ""
+msgstr "हार्डवेयर ड्राइवर इंस्टॉल करें"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:54
 msgid "Hardware drivers are available for the following devices:"
-msgstr ""
+msgstr "निम्नलिखित डिवाइस हेतु हार्डवेयर ड्राइवर उपलब्ध है :"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:61
 msgid "Launch the Driver Manager"
-msgstr ""
+msgstr "ड्राइवर प्रबंधक खोलें"
