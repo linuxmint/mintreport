@@ -1,3 +1,9 @@
+mintreport (1.1.2) tricia; urgency=medium
+
+  * Drivers: Ignore VMware and Virtualbox recommendations
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 05 Dec 2019 15:59:40 +0000
+
 mintreport (1.1.1) tricia; urgency=medium
 
   * l10n: Update translations
