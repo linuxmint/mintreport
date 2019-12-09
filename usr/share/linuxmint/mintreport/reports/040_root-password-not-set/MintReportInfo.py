@@ -1,6 +1,8 @@
 import gettext
+import gi
 import subprocess
 
+from gi.repository import Gio
 from mintreport import InfoReport, InfoReportAction
 
 class Report(InfoReport):
@@ -11,7 +13,9 @@ class Report(InfoReport):
 
         self.title = _("Set the root password")
         self.icon = "security-high-symbolic"
-        self.has_ignore_button = True
+        self.has_ignore_button = False
+        self.settings = Gio.Settings("com.linuxmint.report")
+        self.report_id = "root-password-not-set"
 
     def is_pertinent(self):
         # Defines whether this report should show up
@@ -39,7 +43,18 @@ class Report(InfoReport):
     def get_actions(self):
         # Return available actions
         actions = []
+        action = InfoReportAction(label=_("I understand"), callback=self.callback)
+        action.set_style(Gtk.STYLE_CLASS_SUGGESTED_ACTION)
+        actions.append(action)
         return actions
+
+    def callback(self, data):
+        ignored_uuids = self.settings.get_strv("ignored-reports")
+        if self.report_id not in ignored_uuids:
+            ignored_uuids.append(self.report_id)
+            self.settings.set_strv("ignored-reports", ignored_uuids)
+        # reload
+        return True
 
 if __name__ == "__main__":
     report = Report()
