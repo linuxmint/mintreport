@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2019-11-13 17:28+0100\n"
-"PO-Revision-Date: 2019-11-13 18:31+0000\n"
-"Last-Translator: Dragone2 <Unknown>\n"
+"POT-Creation-Date: 2019-12-09 17:56+0000\n"
+"PO-Revision-Date: 2019-12-09 18:01+0000\n"
+"Last-Translator: Clement Lefebvre <root@linuxmint.com>\n"
 "Language-Team: Italian <it@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2019-11-26 16:03+0000\n"
+"X-Launchpad-Export-Date: 2019-12-11 11:58+0000\n"
 "X-Generator: Launchpad (build c597c3229eb023b1e626162d5947141bf7befb13)\n"
 "Language: it\n"
 
@@ -32,7 +32,7 @@ msgstr "_File"
 
 #: usr/lib/linuxmint/mintreport/app.py:199
 msgid "Refresh"
-msgstr "Ricarica"
+msgstr "Aggiorna"
 
 #: usr/lib/linuxmint/mintreport/app.py:206
 msgid "Restore ignored reports"
@@ -145,7 +145,7 @@ msgstr ""
 
 #: usr/lib/linuxmint/mintreport/tray.py:49
 msgid "Show System Reports"
-msgstr "Mostra i Report di Sistema"
+msgstr "Mostra i Rapporti di Sistema"
 
 #: usr/lib/linuxmint/mintreport/tray.py:127
 msgid "Some problems were detected which require your attention"
@@ -263,11 +263,11 @@ msgstr ""
 msgid "Crash reports"
 msgstr "Resoconti di crash"
 
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:12
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:14
 msgid "Set the root password"
 msgstr "Imposta la password di root"
 
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:23
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:27
 msgid ""
 "The root account is locked by default in Linux Mint and its password is not "
 "set."
@@ -275,15 +275,15 @@ msgstr ""
 "L'account di root è bloccato per impostazione predefinita in Linux Mint e la "
 "sua password non è impostata."
 
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:27
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:31
 msgid ""
 "Your boot menu's emergency mode does not require a password. Set the root "
 "password to protect it."
 msgstr ""
-"La modalità di emergenza del menù di boot non richiede una password. Imposta "
-"la password di root per proteggerla."
+"La modalità di emergenza del menù di avvio non ha una password configurata. "
+"Imposta la password di root per proteggerla."
 
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:30
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:34
 msgid ""
 "Your boot menu's emergency mode requires a password which isn't set. Set the "
 "root password to fix it."
@@ -291,21 +291,25 @@ msgstr ""
 "La modalità di emergenza del menù di boot richiede una password che non è "
 "stata impostata. Imposta la password di root per risolvere."
 
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:32
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:36
 msgid "To set the root password, open a terminal and type:"
 msgstr "Per impostare la password di root, aprire un terminale e digitare:"
 
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:35
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:39
 msgid ""
 "Disclaimer: Proper security can only be achieved by restricting physical "
 "access to your computer and encrypting your data. BIOS passwords can be "
 "reset and your root account can be accessed without a password by booting "
 "another operating system."
 msgstr ""
-"Disclaimer: la corretta sicurezza può essere raggiunta solo limitando "
+"Avvertenza: una sicurezza appropriata può essere raggiunta solo limitando "
 "l'accesso fisico al computer e crittografando i dati. Le password del BIOS "
-"possono essere ripristinate ed è possibile accedere al proprio account di "
-"root senza password avviando un altro sistema operativo."
+"possono essere rimosse ed è possibile accedere al tuo account di root senza "
+"password avviando un altro sistema operativo."
+
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:46
+msgid "I understand"
+msgstr "Capisco"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
 msgid "Add the XApp Status applet"
@@ -340,7 +344,7 @@ msgid ""
 "render some websites."
 msgstr ""
 "I codec multimediali sono necessari per riprodurre alcuni formati video e "
-"renderizzare correttamente alcuni siti Web."
+"rappresentare correttamente alcuni siti Web."
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:36
 msgid "Install the Multimedia Codecs"
@@ -377,7 +381,7 @@ msgstr "Avvia Timeshift"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:17
 msgid "A new version of Linux Mint is available"
-msgstr "Una nuova versione di Linux Mint è disponibile"
+msgstr "È disponibile una nuova versione di Linux Mint"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:47
 #, python-format
@@ -391,7 +395,9 @@ msgstr "Aggiorna a %s"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:49
 msgid "Your version of Linux Mint will soon reach End-Of-Life (EOL)"
-msgstr "La tua versione di Linux Mint raggiungerà presto End-Of-Life (EOL)"
+msgstr ""
+"La tua versione di Linux Mint raggiungerà presto il termine del supporto "
+"(EOL)"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:50
 #, python-brace-format
@@ -409,8 +415,8 @@ msgstr "La tua versione di Linux Mint non è più supportata"
 #, python-brace-format
 msgid "It reached End-Of-Life (EOL) yesterday."
 msgid_plural "It reached End-Of-Life (EOL) {num_days} days ago."
-msgstr[0] "Ha raggiunto l'End-Of-Life (EOL) ieri."
-msgstr[1] "Ha raggiunto l'End-Of-Life (EOL) {num_days} giorni fa."
+msgstr[0] "Il supporto è terminato ieri."
+msgstr[1] "Il supporto è terminato {num_days} giorni fa."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:66
 #, python-format
@@ -419,7 +425,7 @@ msgstr "Visita %s per trovare informazioni sui nuovi rilasci."
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:26
 msgid "Install language packs"
-msgstr "Installa i pacchetti di lingue"
+msgstr "Installa i pacchetti di traduzione"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:41
 msgid ""
@@ -431,16 +437,16 @@ msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:48
 msgid "Install the Language Packs"
-msgstr "Installa i Language Pack"
+msgstr "Installa i pacchetti di traduzione"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:17
 msgid "Install hardware drivers"
 msgstr "Installa i driver hardware"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:54
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:56
 msgid "Hardware drivers are available for the following devices:"
 msgstr "I driver hardware sono disponibili per i seguenti dispositivi:"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:61
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:63
 msgid "Launch the Driver Manager"
 msgstr "Avvia il Gestore dei Driver"

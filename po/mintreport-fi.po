@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2019-11-13 17:28+0100\n"
-"PO-Revision-Date: 2019-11-23 01:13+0000\n"
-"Last-Translator: Kimmo Kujansuu <Unknown>\n"
+"POT-Creation-Date: 2019-12-09 17:56+0000\n"
+"PO-Revision-Date: 2019-12-09 18:00+0000\n"
+"Last-Translator: Clement Lefebvre <root@linuxmint.com>\n"
 "Language-Team: Finnish <fi@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2019-11-26 16:03+0000\n"
+"X-Launchpad-Export-Date: 2019-12-11 11:58+0000\n"
 "X-Generator: Launchpad (build c597c3229eb023b1e626162d5947141bf7befb13)\n"
 "Language: fi\n"
 
@@ -258,18 +258,18 @@ msgstr ""
 msgid "Crash reports"
 msgstr "Kaatumisilmoitukset"
 
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:12
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:14
 msgid "Set the root password"
 msgstr "Aseta pääkäyttäjän salasana"
 
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:23
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:27
 msgid ""
 "The root account is locked by default in Linux Mint and its password is not "
 "set."
 msgstr ""
 "Linux Mint root -tili on lukittu oletuksena, eikä sen salasanaa ole asetettu."
 
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:27
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:31
 msgid ""
 "Your boot menu's emergency mode does not require a password. Set the root "
 "password to protect it."
@@ -277,7 +277,7 @@ msgstr ""
 "Käynnistysvalikon hätätila ei vaadi salasanaa. Aseta root salasana "
 "suojaamaan sitä."
 
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:30
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:34
 msgid ""
 "Your boot menu's emergency mode requires a password which isn't set. Set the "
 "root password to fix it."
@@ -285,11 +285,11 @@ msgstr ""
 "Käynnistysvalikon hätätila vaatii salasanan, jota ei ole asetettu. Aseta "
 "root salasana korjataksesi sen."
 
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:32
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:36
 msgid "To set the root password, open a terminal and type:"
 msgstr "Aseta root salasana avaamalla pääte ja kirjoittamalla:"
 
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:35
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:39
 msgid ""
 "Disclaimer: Proper security can only be achieved by restricting physical "
 "access to your computer and encrypting your data. BIOS passwords can be "
@@ -301,15 +301,21 @@ msgstr ""
 "voidaan nollata ja root -tiliä voidaan käyttää ilman salasanaa "
 "käynnistämällä toinen käyttöjärjestelmä rinnalle."
 
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:46
+msgid "I understand"
+msgstr "Ymmärrän"
+
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
 msgid "Add the XApp Status applet"
-msgstr ""
+msgstr "Lisää XApp tilasovelma"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:37
 msgid ""
 "The XApp Status applet allows applications to provide a tray icon without "
 "rendering glitches and with support for HiDPI and symbolic icons."
 msgstr ""
+"XApp tilasovelman avulla sovellukset tarjoavat alavalikon kuvakkeet ilman "
+"virheitä, sekä HiDPI ja symboliset kuvakkeet tuetaan."
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:39
 msgid "Right-click the panel and choose 'Add to Panel'."
@@ -317,7 +323,7 @@ msgstr "Napsauta hiiren oikeaa paneelissa ja valitse 'Lisää paneeliin'."
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:46
 msgid "Add the XApp Status applet to the panel"
-msgstr ""
+msgstr "Lisää XApp tilasovelma paneeliin"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:16
 msgid "Install multimedia codecs"
@@ -423,10 +429,10 @@ msgstr "Asenna kielipaketit"
 msgid "Install hardware drivers"
 msgstr "Asenna laiteajurit"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:54
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:56
 msgid "Hardware drivers are available for the following devices:"
 msgstr "Laitteisto-ohjaimet ovat saatavana seuraaville laitteille:"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:61
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:63
 msgid "Launch the Driver Manager"
 msgstr "Käynnistä ajureiden hallinta"

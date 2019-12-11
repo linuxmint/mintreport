@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2019-11-13 17:28+0100\n"
-"PO-Revision-Date: 2019-11-14 20:24+0000\n"
-"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
+"POT-Creation-Date: 2019-12-09 17:56+0000\n"
+"PO-Revision-Date: 2019-12-09 18:01+0000\n"
+"Last-Translator: Clement Lefebvre <root@linuxmint.com>\n"
 "Language-Team: Portuguese <pt@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2019-11-26 16:03+0000\n"
+"X-Launchpad-Export-Date: 2019-12-11 11:58+0000\n"
 "X-Generator: Launchpad (build c597c3229eb023b1e626162d5947141bf7befb13)\n"
 "Language: pt\n"
 
@@ -260,11 +260,11 @@ msgstr ""
 msgid "Crash reports"
 msgstr "Relatórios de erro"
 
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:12
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:14
 msgid "Set the root password"
 msgstr "Defina a palavra-passe do root"
 
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:23
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:27
 msgid ""
 "The root account is locked by default in Linux Mint and its password is not "
 "set."
@@ -272,7 +272,7 @@ msgstr ""
 "A conta root está bloqueada por padrão no Linux Mint e a sua palavra-passe "
 "não está definida."
 
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:27
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:31
 msgid ""
 "Your boot menu's emergency mode does not require a password. Set the root "
 "password to protect it."
@@ -280,7 +280,7 @@ msgstr ""
 "O modo de emergência do seu menu de arranque não requer uma palavra-passe. "
 "Defina a palavra-passe root para protegê-lo."
 
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:30
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:34
 msgid ""
 "Your boot menu's emergency mode requires a password which isn't set. Set the "
 "root password to fix it."
@@ -288,11 +288,11 @@ msgstr ""
 "O modo de emergência do seu menu de arranque requer uma palavra-passe que "
 "não está definida. Defina a palavra-passe do root para corrigi-la."
 
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:32
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:36
 msgid "To set the root password, open a terminal and type:"
 msgstr "Para definir a palavra-passe do root, abra um terminal e escreva:"
 
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:35
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:39
 msgid ""
 "Disclaimer: Proper security can only be achieved by restricting physical "
 "access to your computer and encrypting your data. BIOS passwords can be "
@@ -303,6 +303,10 @@ msgstr ""
 "restringindo o acesso físico ao seu computador e criptografando os seus "
 "dados. As palavras-passe da BIOS podem ser redefinidas e sua conta root pode "
 "ser acessada sem uma palavra-passe ao arrancar outro sistema operativo."
+
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:46
+msgid "I understand"
+msgstr "Eu entendo"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
 msgid "Add the XApp Status applet"
@@ -433,11 +437,11 @@ msgstr "Instalar os Pacotes de Idiomas"
 msgid "Install hardware drivers"
 msgstr "Instalar drivers de hardware"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:54
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:56
 msgid "Hardware drivers are available for the following devices:"
 msgstr ""
 "Os drivers de hardware estão disponíveis para os seguintes dispositivos:"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:61
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:63
 msgid "Launch the Driver Manager"
 msgstr "Iniciar o Driver Manager"

@@ -7,17 +7,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2019-11-13 17:28+0100\n"
-"PO-Revision-Date: 2017-12-27 17:10+0000\n"
-"Last-Translator: Dorian Baciu <Unknown>\n"
+"POT-Creation-Date: 2019-12-09 17:56+0000\n"
+"PO-Revision-Date: 2019-11-27 12:21+0000\n"
+"Last-Translator: Daniel Slavu <Unknown>\n"
 "Language-Team: Romanian <ro@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n == 1 ? 0: (((n % 100 > 19) || ((n % 100 "
 "== 0) && (n != 0))) ? 2: 1));\n"
-"X-Launchpad-Export-Date: 2019-11-26 16:03+0000\n"
+"X-Launchpad-Export-Date: 2019-12-11 11:58+0000\n"
 "X-Generator: Launchpad (build c597c3229eb023b1e626162d5947141bf7befb13)\n"
+"Language: ro\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
 #: usr/lib/linuxmint/mintreport/app.py:236 generate_desktop_files:25
@@ -28,47 +29,49 @@ msgstr "Rapoarte de sistem"
 
 #: usr/lib/linuxmint/mintreport/app.py:194
 msgid "_File"
-msgstr ""
+msgstr "_Fișier"
 
 #: usr/lib/linuxmint/mintreport/app.py:199
 msgid "Refresh"
-msgstr ""
+msgstr "Actualizare"
 
 #: usr/lib/linuxmint/mintreport/app.py:206
 msgid "Restore ignored reports"
-msgstr ""
+msgstr "Restaurează rapoartele ignorate"
 
 #: usr/lib/linuxmint/mintreport/app.py:210
 #: usr/lib/linuxmint/mintreport/tray.py:53
 msgid "Quit"
-msgstr ""
+msgstr "Închide"
 
 #: usr/lib/linuxmint/mintreport/app.py:221
 msgid "_Help"
-msgstr ""
+msgstr "_Ajutor"
 
 #: usr/lib/linuxmint/mintreport/app.py:227
 #: usr/lib/linuxmint/mintreport/app.py:234
 msgid "About"
-msgstr ""
+msgstr "Despre"
 
 #: usr/lib/linuxmint/mintreport/app.py:278
 msgid "An error occurred while gathering the system information."
-msgstr ""
+msgstr "A apărut o eroare la colectarea informațiilor despre sistem."
 
 #: usr/lib/linuxmint/mintreport/app.py:292
 msgid "System information copied"
-msgstr ""
+msgstr "Informațiile despre sistem sunt copiate"
 
 #: usr/lib/linuxmint/mintreport/app.py:292
 msgid ""
 "Your system information was copied into your clipboard so you can paste it "
 "on the forums."
 msgstr ""
+"Informațiile sistemului dvs. au fost copiate în clipboard, astfel încât le "
+"puteți lipi pe forumuri."
 
 #: usr/lib/linuxmint/mintreport/app.py:301
 msgid "System information uploaded"
-msgstr ""
+msgstr "Informații despre sistem încărcate"
 
 #: usr/lib/linuxmint/mintreport/app.py:301
 #, python-format
@@ -76,29 +79,33 @@ msgid ""
 "Your system information was uploaded to %s. This link was placed in your "
 "clipboard so you can paste it on IRC."
 msgstr ""
+"Informațiile despre sistemul dvs. au fost încărcate în %s. Acest link a fost "
+"plasat în clipboard-ul tău, astfel încât să-l poți lipi pe IRC."
 
 #: usr/lib/linuxmint/mintreport/app.py:303
 msgid "An error occurred while uploading the system information"
-msgstr ""
+msgstr "A apărut o eroare la încărcarea informațiilor sistemului"
 
 #: usr/lib/linuxmint/mintreport/app.py:303
 msgid ""
 "Copy and paste the system information manually into a pastebin site like "
 "https://pastebin.com and share the link on IRC."
 msgstr ""
+"Copiați și lipiți informațiile sistemului manual într-un site pastebin, cum "
+"ar fi https://pastebin.com, și partajați linkul pe IRC."
 
 #: usr/lib/linuxmint/mintreport/app.py:382
 msgid "Ignore this problem"
-msgstr ""
+msgstr "Ignorați această problemă"
 
 #: usr/lib/linuxmint/mintreport/app.py:398
 msgid "Are you sure you want to ignore this problem?"
-msgstr ""
+msgstr "Ești sigur că vrei să ignori această problemă?"
 
 #: usr/lib/linuxmint/mintreport/app.py:399
 msgid ""
 "The problem will be permanently ignored and will no longer be visible."
-msgstr ""
+msgstr "Problema va fi permanent ignorată și nu va mai fi vizibilă."
 
 #: usr/lib/linuxmint/mintreport/app.py:491
 #, python-format
@@ -117,8 +124,8 @@ msgid ""
 "reinstall it."
 msgstr ""
 "Pachetul care furnizează %s nu a fost găsit.\n"
-"Dacă doriți să generați un \"stack trace\"  pentru acest raport de crash, "
-"reinstalati-l."
+"Dacă doriți să generați un \"stack trace\" pentru acest raport de crash, va "
+"rugăm reinstalați-l."
 
 #: usr/lib/linuxmint/mintreport/app.py:533
 msgid ""
@@ -128,24 +135,24 @@ msgid ""
 "A stack trace is available in 'Local Files' but its content is probably "
 "inaccurate."
 msgstr ""
-"Headerele sau binary-urile instalate pe sistemul dvs. nu se potrivesc cu "
-"codul care a fost executat în decursul crash-ului.\n"
+"Antetele sau pachetele binare instalate pe sistemul dvs. nu se potrivesc cu "
+"codul care a fost executat în decursul defectării.\n"
 "Probabil au fost actualizate între timp.\n"
-"Un \"stack trace\" este disponibil în 'Local Files' dar conținutul lui este "
-"probabil necorespunzător."
+"Un \"stack trace\" este disponibil în 'Fișiere locale' dar conținutul lui "
+"este probabil necorespunzător."
 
 #: usr/lib/linuxmint/mintreport/tray.py:49
 msgid "Show System Reports"
-msgstr ""
+msgstr "Afișați rapoarte de sistem"
 
 #: usr/lib/linuxmint/mintreport/tray.py:127
 msgid "Some problems were detected which require your attention"
-msgstr ""
+msgstr "Au fost detectate unele probleme care necesită atenția ta"
 
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
 msgid "Troubleshoot problems"
-msgstr "Remediază probleme"
+msgstr "Depanare probleme"
 
 #: generate_desktop_files:53
 msgid "Troubleshooting Tool"
@@ -153,50 +160,55 @@ msgstr "Unelte pentru remediere"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:1
 msgid "Running system checks..."
-msgstr ""
+msgstr "Rulează verificarea sistemului..."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:2
 msgid "No problems were detected"
-msgstr ""
+msgstr "Nu au fost detectate probleme"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:3
 msgid "Detected problems"
-msgstr ""
+msgstr "Probleme detectate"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:4
 msgid "Copy"
-msgstr ""
+msgstr "Copiere"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:5
 msgid ""
 "Copy to clipboard (code tags are added to make it easy to paste the system "
 "information into the forums)"
 msgstr ""
+"Copiere în clipboard (etichetele de cod sunt adăugate pentru a facilita "
+"introducerea informațiilor sistemului în forumuri)"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:6
 msgid "Upload"
-msgstr ""
+msgstr "Încarcă"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:7
 msgid "Upload to a pastebin service (no personal information included)"
 msgstr ""
+"Încărcați la un serviciu pastebin (fără informații personale incluse)"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:8
 msgid "System information"
-msgstr ""
+msgstr "Informații sistem"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:9
 msgid "Crash reports are not available"
-msgstr ""
+msgstr "Rapoartele de avarie nu sunt disponibile"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:10
 msgid ""
 "To enable crash reporting, install systemd-coredump and reboot your computer."
 msgstr ""
+"Pentru a activa raportarea de avarie, instalați sistemd-coredump și "
+"reporniți computerul."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:11
 msgid "Crash reports:"
-msgstr "Rapoarte de crash"
+msgstr "Rapoarte de avarie:"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:12
 msgid "Stack trace:"
@@ -217,7 +229,8 @@ msgstr "Fișiere locale"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:15
 msgid "Open the directory containing crash.tar.gz and its content."
-msgstr "Deschide directorul care conține crash.tar.gz și conținutul acestuia"
+msgstr ""
+"Deschide directorul care conține crash.tar.gz și conținutul acestuia."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:16
 msgid "Bug Tracker"
@@ -225,7 +238,7 @@ msgstr "Monitor de bug-uri"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:17
 msgid "Find the most appropriate bug tracker."
-msgstr "Găsiți cel mai potrivit monitor de bug-uri"
+msgstr "Găsiți cel mai potrivit monitor de bug-uri."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:18
 msgid "Pastebin"
@@ -233,7 +246,7 @@ msgstr "Pastebin"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:19
 msgid "Upload the trace to the Internet."
-msgstr "Încarcă trace-ul pe Internet"
+msgstr "Încarcă copia pe Internet."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:20
 msgid ""
@@ -247,161 +260,196 @@ msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:21
 msgid "Crash reports"
-msgstr "Rapoarte de defecte"
+msgstr "Rapoarte de avarie:"
 
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:12
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:14
 msgid "Set the root password"
-msgstr ""
+msgstr "Setați parola principală"
 
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:23
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:27
 msgid ""
 "The root account is locked by default in Linux Mint and its password is not "
 "set."
 msgstr ""
+"Contul principal este blocat în mod implicit în Linux Mint și parola "
+"acestuia nu este setată."
 
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:27
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:31
 msgid ""
 "Your boot menu's emergency mode does not require a password. Set the root "
 "password to protect it."
 msgstr ""
+"Modul de urgență al meniurilor de pornire nu necesită o parolă. Setați "
+"parola principală pentru a o proteja."
 
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:30
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:34
 msgid ""
 "Your boot menu's emergency mode requires a password which isn't set. Set the "
 "root password to fix it."
 msgstr ""
+"Modul de urgență al meniurilor de pornire cere o parolă care nu este setată. "
+"Setați parola principală pentru a o repara."
 
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:32
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:36
 msgid "To set the root password, open a terminal and type:"
-msgstr ""
+msgstr "Pentru a seta parola principală, deschideți un terminal și tastați:"
 
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:35
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:39
 msgid ""
 "Disclaimer: Proper security can only be achieved by restricting physical "
 "access to your computer and encrypting your data. BIOS passwords can be "
 "reset and your root account can be accessed without a password by booting "
 "another operating system."
 msgstr ""
+"Atenționare: Securitatea corectă poate fi obținută numai prin "
+"restricționarea accesului fizic la computer și criptarea datelor. Parolele "
+"BIOS pot fi rescrise, iar contul dvs. principal poate fi accesat fără parolă "
+"prin pornirea unui alt sistem de operare."
+
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:46
+msgid "I understand"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
 msgid "Add the XApp Status applet"
-msgstr ""
+msgstr "Adăugați applet-ul XApp Status"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:37
 msgid ""
 "The XApp Status applet allows applications to provide a tray icon without "
 "rendering glitches and with support for HiDPI and symbolic icons."
 msgstr ""
+"Applet-ul XApp Status permite aplicațiilor să furnizeze o pictogramă tăvii "
+"fără a afișa o defecțiune bruscă având suport pentru HiDPI și pictograme "
+"simbolice."
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:39
 msgid "Right-click the panel and choose 'Add to Panel'."
-msgstr ""
+msgstr "Clic dreapta pe panou și alegeți „Adăugați panoul”."
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:46
 msgid "Add the XApp Status applet to the panel"
-msgstr ""
+msgstr "Adăugați applet-ul XApp Status pe panou"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:16
 msgid "Install multimedia codecs"
-msgstr ""
+msgstr "Instalați codec-uri multimedia"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:30
 msgid ""
 "Multimedia codecs are required to play some video formats and to properly "
 "render some websites."
 msgstr ""
+"Codec-urile multimedia sunt necesare pentru a reda unele formate video și "
+"pentru a reda corect unele site-uri web."
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:36
 msgid "Install the Multimedia Codecs"
-msgstr ""
+msgstr "Instalați codec-urile multimedia"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:17
 msgid "Set up the system restore utility"
-msgstr ""
+msgstr "Configurați utilitarul de restaurare a sistemului"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:31
 msgid "Linux Mint provides a system restore utility called Timeshift."
 msgstr ""
+"Linux Mint oferă un program de restaurare a sistemului numit Timeshift."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:32
 msgid ""
 "Thanks to Timeshift you can take snapshots of the system, either manually or "
 "automatically."
 msgstr ""
+"Datorită Timeshift puteți face instantanee ale sistemului, manual sau "
+"automat."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:33
 msgid ""
 "If something goes wrong you can then restore your operating system from a "
 "previously saved snapshot."
 msgstr ""
+"Dacă ceva nu merge bine, puteți restaura sistemul de operare dintr-o copie "
+"salvată anterior."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:39
 msgid "Launch Timeshift"
-msgstr ""
+msgstr "Lansați Timeshift"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:17
 msgid "A new version of Linux Mint is available"
-msgstr ""
+msgstr "O nouă versiune a Linux Mint este disponibilă"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:47
 #, python-format
 msgid "Visit %s for the latest announcements."
-msgstr ""
+msgstr "Accesați %s pentru cele mai recente anunțuri."
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:53
 #, python-format
 msgid "Upgrade to %s"
-msgstr ""
+msgstr "Actualizează la %s"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:49
 msgid "Your version of Linux Mint will soon reach End-Of-Life (EOL)"
 msgstr ""
+"Versiunea dvs. de Linux Mint va ajunge în curând la sfârșitul vieții (EOL)"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:50
 #, python-brace-format
 msgid "It will stop receiving support and updates in a day."
 msgid_plural "It will stop receiving support and updates in {num_days} days."
 msgstr[0] ""
+"Acesta va înceta să mai primească asistență și actualizări de azi."
 msgstr[1] ""
+"Acesta va înceta să mai primească asistență și actualizări în {num_days} "
+"zile."
+msgstr[2] ""
+"Acesta va înceta să mai primească asistență și actualizări în {num_days} de "
+"zile."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:54
 msgid "Your version of Linux Mint is no longer supported"
-msgstr ""
+msgstr "Versiunea dvs. de Linux Mint nu mai este acceptată"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:55
 #, python-brace-format
 msgid "It reached End-Of-Life (EOL) yesterday."
 msgid_plural "It reached End-Of-Life (EOL) {num_days} days ago."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "A ajuns la sfârșitul vieții (EOL) ieri."
+msgstr[1] "A ajuns la sfârșitul vieții (EOL) acum {num_days} zile în urmă."
+msgstr[2] ""
+"A ajuns la sfârșitul vieții (EOL) acum {num_days} de zile în urmă."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:66
 #, python-format
 msgid "Visit %s to find information about newer releases."
-msgstr ""
+msgstr "Vizitați %s pentru a găsi informații despre versiunile mai noi."
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:26
 msgid "Install language packs"
-msgstr ""
+msgstr "Instalează pachete de limbă"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:41
 msgid ""
 "The following localization packages are missing to properly support your "
 "language:"
 msgstr ""
+"Lipsește următoarele pachete de localizare pentru a vă sprijini corect limba "
+"dvs.:"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:48
 msgid "Install the Language Packs"
-msgstr ""
+msgstr "Instalați pachetele lingvistice"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:17
 msgid "Install hardware drivers"
-msgstr ""
+msgstr "Instalați drivere hardware"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:54
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:56
 msgid "Hardware drivers are available for the following devices:"
-msgstr ""
+msgstr "Driverele hardware sunt disponibile pentru următoarele dispozitive:"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:61
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:63
 msgid "Launch the Driver Manager"
-msgstr ""
+msgstr "Lansați Driver Manager"

@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2019-11-13 17:28+0100\n"
-"PO-Revision-Date: 2019-10-09 09:42+0000\n"
+"POT-Creation-Date: 2019-12-09 17:56+0000\n"
+"PO-Revision-Date: 2019-12-05 14:06+0000\n"
 "Last-Translator: KAMI <kami911@gmail.com>\n"
 "Language-Team: Hungarian <hu@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2019-11-26 16:03+0000\n"
+"X-Launchpad-Export-Date: 2019-12-11 11:58+0000\n"
 "X-Generator: Launchpad (build c597c3229eb023b1e626162d5947141bf7befb13)\n"
 "Language: hu\n"
 
@@ -84,7 +84,7 @@ msgstr ""
 
 #: usr/lib/linuxmint/mintreport/app.py:303
 msgid "An error occurred while uploading the system information"
-msgstr "Hiba lépett fel a rendszer-információk feltöltése közben."
+msgstr "Hiba lépett fel a rendszer-információk feltöltése közben"
 
 #: usr/lib/linuxmint/mintreport/app.py:303
 msgid ""
@@ -149,7 +149,7 @@ msgstr "Rendszerjelentések megjelenítése"
 
 #: usr/lib/linuxmint/mintreport/tray.py:127
 msgid "Some problems were detected which require your attention"
-msgstr ""
+msgstr "Felismert hibák, amelyek az Ön figyelmét igénylik"
 
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
@@ -200,7 +200,7 @@ msgstr "Rendszer-információk"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:9
 msgid "Crash reports are not available"
-msgstr "Összeomlás jelentések nem érhetőek el."
+msgstr "Összeomlás jelentések nem érhetőek el"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:10
 msgid ""
@@ -265,57 +265,81 @@ msgstr ""
 msgid "Crash reports"
 msgstr "Összeomlás jelentések"
 
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:12
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:14
 msgid "Set the root password"
 msgstr "Root jelszó beállítása"
 
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:23
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:27
 msgid ""
 "The root account is locked by default in Linux Mint and its password is not "
 "set."
 msgstr ""
+"A root felhasználó alapbeállításként le van tiltva, és nincs jelszó megadva "
+"számára a Linux Mint-ben."
 
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:27
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:31
 msgid ""
 "Your boot menu's emergency mode does not require a password. Set the root "
 "password to protect it."
 msgstr ""
+"A rendszerindító menü helyreállítási üzemmódja jelenleg nem fog jelszót "
+"kérni. A helyreállítási üzemmód védelmére állítson be jelszót a root "
+"felhasználó számára."
 
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:30
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:34
 msgid ""
 "Your boot menu's emergency mode requires a password which isn't set. Set the "
 "root password to fix it."
 msgstr ""
+"A rendszerindító menü helyreállítási üzemmódja jelenleg nem fog jelszót "
+"kérni. A helyreállítási üzemmód védelmére állítson be jelszót a root "
+"felhasználó számára."
 
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:32
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:36
 msgid "To set the root password, open a terminal and type:"
 msgstr ""
+"A root felhasználó jelszavának beállításához nyisson meg egy Terminált és "
+"írja be a következőket:"
 
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:35
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:39
 msgid ""
 "Disclaimer: Proper security can only be achieved by restricting physical "
 "access to your computer and encrypting your data. BIOS passwords can be "
 "reset and your root account can be accessed without a password by booting "
 "another operating system."
 msgstr ""
+"Figyelmeztetés: Tökéletes biztonság csak a számítógéphez történő fizikai "
+"hozzáférés korlátozásával, valamint az adatok titkosításával valósítható "
+"meg. A BIOS jelszót vissza lehet állítani, és a root felhasználó fiókja is "
+"elérhető – jelszó nélkül – a rendszer lemezét egy másik számítógéphez "
+"csatlakoztatva."
+
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:46
+msgid "I understand"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
 msgid "Add the XApp Status applet"
-msgstr ""
+msgstr "XApp Állapot kisalkalmazás hozzáadása"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:37
 msgid ""
 "The XApp Status applet allows applications to provide a tray icon without "
 "rendering glitches and with support for HiDPI and symbolic icons."
 msgstr ""
+"Az XApp Állapot kisalkalmazás lehetővé teszi az alkalmazások számára, hogy "
+"rendszer panel ikonokat jelenítsenek meg, bármiféle megjelenítési hiba "
+"nélkül, HiDPI támogatással, valamint szimbolikus ikonokkal megjelenítésével."
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:39
 msgid "Right-click the panel and choose 'Add to Panel'."
 msgstr ""
+"Kattintson jobb gombbal a panelre és válassza a „Hozzáadás a Panelhez” "
+"lehetőséget."
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:46
 msgid "Add the XApp Status applet to the panel"
-msgstr ""
+msgstr "XApp Állapot kisalkalmazás hozzáadása a panelhez"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:16
 msgid "Install multimedia codecs"
@@ -326,6 +350,8 @@ msgid ""
 "Multimedia codecs are required to play some video formats and to properly "
 "render some websites."
 msgstr ""
+"A multimédia kodekek telep néhány további videoformátum lejátszásához, és "
+"egyes weboldalak megfelelő megjelenítéséhez."
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:36
 msgid "Install the Multimedia Codecs"
@@ -333,23 +359,28 @@ msgstr "Multimédia kodekek telepítése"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:17
 msgid "Set up the system restore utility"
-msgstr ""
+msgstr "Rendszer-helyreállító beállítása"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:31
 msgid "Linux Mint provides a system restore utility called Timeshift."
 msgstr ""
+"A Linux Mint egy Timeshift nevű rendszer-visszaállító eszközt biztosít."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:32
 msgid ""
 "Thanks to Timeshift you can take snapshots of the system, either manually or "
 "automatically."
 msgstr ""
+"A Timeshift alkalmazás segítségével kézzel vagy automatikusan "
+"pillanatképeket készíthet a rendszerről."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:33
 msgid ""
 "If something goes wrong you can then restore your operating system from a "
 "previously saved snapshot."
 msgstr ""
+"Ha valami baj történne, akkor vissza tudja állítani majd a rendszerét egy "
+"előzőleg elkészített pillanatképből."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:39
 msgid "Launch Timeshift"
@@ -357,67 +388,79 @@ msgstr "Timeshift elindítása"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:17
 msgid "A new version of Linux Mint is available"
-msgstr ""
+msgstr "Már elérhető a Linux Mint új verziója"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:47
 #, python-format
 msgid "Visit %s for the latest announcements."
-msgstr ""
+msgstr "%s meglátogatása a legújabb bejelentések megtekintéséhez."
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:53
 #, python-format
 msgid "Upgrade to %s"
-msgstr ""
+msgstr "%s kiadásra frissítés"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:49
 msgid "Your version of Linux Mint will soon reach End-Of-Life (EOL)"
 msgstr ""
+"A telepített Linux Mint rendszer hamarosan az életciklusa végéhez (End of "
+"Life – EOL) ér."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:50
 #, python-brace-format
 msgid "It will stop receiving support and updates in a day."
 msgid_plural "It will stop receiving support and updates in {num_days} days."
 msgstr[0] ""
+"A holnapi naptól nem fog támogatást és frissítéseket kapni a rendszer."
 msgstr[1] ""
+"{num_days} nap múlva nem fog támogatást és frissítéseket kapni a rendszer."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:54
 msgid "Your version of Linux Mint is no longer supported"
-msgstr ""
+msgstr "Az Ön által használt Linux Mint verzió már nem támogatott"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:55
 #, python-brace-format
 msgid "It reached End-Of-Life (EOL) yesterday."
 msgid_plural "It reached End-Of-Life (EOL) {num_days} days ago."
 msgstr[0] ""
+"Tegnap óta nem kap támogatást és frissítéseket a rendszer, mert életciklusa "
+"végéhez (End of Life – EOL) ért."
 msgstr[1] ""
+"{num_days} napja nem kap támogatást és frissítéseket a rendszer, mert "
+"életciklusa végéhez (End of Life – EOL) ért."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:66
 #, python-format
 msgid "Visit %s to find information about newer releases."
 msgstr ""
+"Az újabb kiadásokról szóló információkhoz látogassa meg a következő oldalt: "
+"%s."
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:26
 msgid "Install language packs"
-msgstr ""
+msgstr "Nyelvi csomagok telepítése"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:41
 msgid ""
 "The following localization packages are missing to properly support your "
 "language:"
 msgstr ""
+"A következő nyelvi csomagok hiányoznak a kiválasztott nyelv teljes "
+"támogatásához:"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:48
 msgid "Install the Language Packs"
-msgstr ""
+msgstr "Nyelvi csomagok telepítése"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:17
 msgid "Install hardware drivers"
-msgstr ""
+msgstr "Hardver-illesztőprogramok telepítése"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:54
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:56
 msgid "Hardware drivers are available for the following devices:"
-msgstr ""
+msgstr "Hardver-illesztőprogramok érhetőek el a következő eszközökhöz:"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:61
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:63
 msgid "Launch the Driver Manager"
-msgstr ""
+msgstr "Illesztőprogram-kezelő elindítása"

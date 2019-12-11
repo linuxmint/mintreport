@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2019-11-13 17:28+0100\n"
-"PO-Revision-Date: 2017-10-21 11:42+0000\n"
-"Last-Translator: Pi Lotko 1970 <pilotko1970@gmail.com>\n"
+"POT-Creation-Date: 2019-12-09 17:56+0000\n"
+"PO-Revision-Date: 2019-11-30 22:55+0000\n"
+"Last-Translator: Martin Prevuznak <Unknown>\n"
 "Language-Team: Slovak <sk@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
-"X-Launchpad-Export-Date: 2019-11-26 16:03+0000\n"
+"X-Launchpad-Export-Date: 2019-12-11 11:58+0000\n"
 "X-Generator: Launchpad (build c597c3229eb023b1e626162d5947141bf7befb13)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
@@ -27,11 +27,11 @@ msgstr "Systémové hlásenia"
 
 #: usr/lib/linuxmint/mintreport/app.py:194
 msgid "_File"
-msgstr ""
+msgstr "_Súbor"
 
 #: usr/lib/linuxmint/mintreport/app.py:199
 msgid "Refresh"
-msgstr ""
+msgstr "Obnoviť"
 
 #: usr/lib/linuxmint/mintreport/app.py:206
 msgid "Restore ignored reports"
@@ -40,20 +40,20 @@ msgstr ""
 #: usr/lib/linuxmint/mintreport/app.py:210
 #: usr/lib/linuxmint/mintreport/tray.py:53
 msgid "Quit"
-msgstr ""
+msgstr "Ukončiť"
 
 #: usr/lib/linuxmint/mintreport/app.py:221
 msgid "_Help"
-msgstr ""
+msgstr "_Pomoc"
 
 #: usr/lib/linuxmint/mintreport/app.py:227
 #: usr/lib/linuxmint/mintreport/app.py:234
 msgid "About"
-msgstr ""
+msgstr "O aplikácii"
 
 #: usr/lib/linuxmint/mintreport/app.py:278
 msgid "An error occurred while gathering the system information."
-msgstr ""
+msgstr "Chyba behom zbierania informácií o systéme"
 
 #: usr/lib/linuxmint/mintreport/app.py:292
 msgid "System information copied"
@@ -67,7 +67,7 @@ msgstr ""
 
 #: usr/lib/linuxmint/mintreport/app.py:301
 msgid "System information uploaded"
-msgstr ""
+msgstr "Systémové informácie aktualizované"
 
 #: usr/lib/linuxmint/mintreport/app.py:301
 #, python-format
@@ -88,16 +88,16 @@ msgstr ""
 
 #: usr/lib/linuxmint/mintreport/app.py:382
 msgid "Ignore this problem"
-msgstr ""
+msgstr "Ignorovať tento problém"
 
 #: usr/lib/linuxmint/mintreport/app.py:398
 msgid "Are you sure you want to ignore this problem?"
-msgstr ""
+msgstr "Ste si istý, že chcete ignorovať tento problém?"
 
 #: usr/lib/linuxmint/mintreport/app.py:399
 msgid ""
 "The problem will be permanently ignored and will no longer be visible."
-msgstr ""
+msgstr "Problém bude ignorovaný a nebude sa ďalej zobrazovať."
 
 #: usr/lib/linuxmint/mintreport/app.py:491
 #, python-format
@@ -139,7 +139,7 @@ msgstr ""
 
 #: usr/lib/linuxmint/mintreport/tray.py:127
 msgid "Some problems were detected which require your attention"
-msgstr ""
+msgstr "Boli zistené problémy, ktoré si vyžadujú vašu pozornosť"
 
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
@@ -152,11 +152,11 @@ msgstr "Nástroj na vyhľadávanie porúch."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:1
 msgid "Running system checks..."
-msgstr ""
+msgstr "Prebiehajú kontroly systému..."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:2
 msgid "No problems were detected"
-msgstr ""
+msgstr "Neboli zistené žiadne problémy."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:3
 msgid "Detected problems"
@@ -248,38 +248,42 @@ msgstr ""
 msgid "Crash reports"
 msgstr "Správa o poruche"
 
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:12
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:14
 msgid "Set the root password"
 msgstr ""
 
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:23
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:27
 msgid ""
 "The root account is locked by default in Linux Mint and its password is not "
 "set."
 msgstr ""
 
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:27
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:31
 msgid ""
 "Your boot menu's emergency mode does not require a password. Set the root "
 "password to protect it."
 msgstr ""
 
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:30
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:34
 msgid ""
 "Your boot menu's emergency mode requires a password which isn't set. Set the "
 "root password to fix it."
 msgstr ""
 
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:32
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:36
 msgid "To set the root password, open a terminal and type:"
 msgstr ""
 
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:35
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:39
 msgid ""
 "Disclaimer: Proper security can only be achieved by restricting physical "
 "access to your computer and encrypting your data. BIOS passwords can be "
 "reset and your root account can be accessed without a password by booting "
 "another operating system."
+msgstr ""
+
+#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:46
+msgid "I understand"
 msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
@@ -397,10 +401,10 @@ msgstr ""
 msgid "Install hardware drivers"
 msgstr ""
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:54
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:56
 msgid "Hardware drivers are available for the following devices:"
 msgstr ""
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:61
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:63
 msgid "Launch the Driver Manager"
 msgstr ""
