@@ -1,20 +1,21 @@
-# Basque translation for linuxmint
-# Copyright (c) 2017 Rosetta Contributors and Canonical Ltd 2017
+# Belarusian translation for linuxmint
+# Copyright (c) 2019 Rosetta Contributors and Canonical Ltd 2019
 # This file is distributed under the same license as the linuxmint package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2019-12-09 17:56+0000\n"
-"PO-Revision-Date: 2019-12-09 18:00+0000\n"
-"Last-Translator: Clement Lefebvre <root@linuxmint.com>\n"
-"Language-Team: Basque <eu@li.org>\n"
+"PO-Revision-Date: 2019-12-19 12:04+0000\n"
+"Last-Translator: Alexis Borovik <Unknown>\n"
+"Language-Team: Belarusian <be@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Launchpad-Export-Date: 2020-01-06 10:08+0000\n"
 "X-Generator: Launchpad (build bceb5ef013b87ef7aafe0755545ceb689ca7ac60)\n"
 
@@ -23,51 +24,51 @@ msgstr ""
 #: generate_desktop_files:39 generate_desktop_files:53
 #: generate_desktop_files:67
 msgid "System Reports"
-msgstr "Sistemaren txostenak"
+msgstr "Сістэмныя справаздачы"
 
 #: usr/lib/linuxmint/mintreport/app.py:194
 msgid "_File"
-msgstr "_Fitxategia"
+msgstr "_Файл"
 
 #: usr/lib/linuxmint/mintreport/app.py:199
 msgid "Refresh"
-msgstr "Freskatu"
+msgstr "Аднавіць"
 
 #: usr/lib/linuxmint/mintreport/app.py:206
 msgid "Restore ignored reports"
-msgstr "Leheneratu ez ikusia egindako txostenak"
+msgstr "Аднавіць праігнараваныя справаздачы"
 
 #: usr/lib/linuxmint/mintreport/app.py:210
 #: usr/lib/linuxmint/mintreport/tray.py:53
 msgid "Quit"
-msgstr "Irten"
+msgstr "Выйсці"
 
 #: usr/lib/linuxmint/mintreport/app.py:221
 msgid "_Help"
-msgstr "_Laguntza"
+msgstr "_Даведка"
 
 #: usr/lib/linuxmint/mintreport/app.py:227
 #: usr/lib/linuxmint/mintreport/app.py:234
 msgid "About"
-msgstr "Honi buruz"
+msgstr "Аб праграме"
 
 #: usr/lib/linuxmint/mintreport/app.py:278
 msgid "An error occurred while gathering the system information."
-msgstr "Errore bat gertatu da sistemaren informazioa biltzean."
+msgstr ""
 
 #: usr/lib/linuxmint/mintreport/app.py:292
 msgid "System information copied"
-msgstr "Sistemaren informazioa kopiatuta"
+msgstr ""
 
 #: usr/lib/linuxmint/mintreport/app.py:292
 msgid ""
 "Your system information was copied into your clipboard so you can paste it "
 "on the forums."
-msgstr "Sistemaren informazioa arbelera kopiatu da foroetan itsasteko."
+msgstr ""
 
 #: usr/lib/linuxmint/mintreport/app.py:301
 msgid "System information uploaded"
-msgstr "Sistemaren informazioa kargatuta"
+msgstr ""
 
 #: usr/lib/linuxmint/mintreport/app.py:301
 #, python-format
@@ -75,34 +76,29 @@ msgid ""
 "Your system information was uploaded to %s. This link was placed in your "
 "clipboard so you can paste it on IRC."
 msgstr ""
-"Sistemaren informazioa %s(e)ra kargatu da. Esteka arbelera kopiatu da IRCan "
-"itsasteko."
 
 #: usr/lib/linuxmint/mintreport/app.py:303
 msgid "An error occurred while uploading the system information"
-msgstr "Errore bat gertatu da sistemaren informazioa  kargatzean"
+msgstr ""
 
 #: usr/lib/linuxmint/mintreport/app.py:303
 msgid ""
 "Copy and paste the system information manually into a pastebin site like "
 "https://pastebin.com and share the link on IRC."
 msgstr ""
-"Kopiatu eta itsatsi sistemaren informazioa eskuz https://pastebin.com "
-"bezalako webgune batetara eta partekatu estekan IRCn."
 
 #: usr/lib/linuxmint/mintreport/app.py:382
 msgid "Ignore this problem"
-msgstr "Ez ikusia egin arazo honi"
+msgstr ""
 
 #: usr/lib/linuxmint/mintreport/app.py:398
 msgid "Are you sure you want to ignore this problem?"
-msgstr "Ziur zaude arazo honi ez ikusia egin nahi diozula?"
+msgstr ""
 
 #: usr/lib/linuxmint/mintreport/app.py:399
 msgid ""
 "The problem will be permanently ignored and will no longer be visible."
 msgstr ""
-"Arazoari ez ikusia egingo zaio behin betiko eta ez da ikusgai egongo."
 
 #: usr/lib/linuxmint/mintreport/app.py:491
 #, python-format
@@ -110,8 +106,6 @@ msgid ""
 "The debug symbols are missing for %(program)s.\n"
 "Please install %(package)s."
 msgstr ""
-"%(program)s(r)en arazketa sinboloak falta dira.\n"
-"Instalatu %(package)s."
 
 #: usr/lib/linuxmint/mintreport/app.py:505
 #, python-format
@@ -120,9 +114,6 @@ msgid ""
 "If you want to generate a stack trace for this crash report, please "
 "reinstall it."
 msgstr ""
-"Ezin izan da %s hornitzen duen paketea aurkitu.\n"
-"Hutsegite-txosten honentzat pila-aztarna bat sortu nahi baduzu, mesedez "
-"berriz instalatu."
 
 #: usr/lib/linuxmint/mintreport/app.py:533
 msgid ""
@@ -132,117 +123,104 @@ msgid ""
 "A stack trace is available in 'Local Files' but its content is probably "
 "inaccurate."
 msgstr ""
-"Zure sisteman instalatutako bitarren goiburuak ez datoz bat hutsegitean "
-"exekutaturiko kodearekin.\n"
-"Ziur aski geroztik bertsio-berrituko ziren.\n"
-"Pila-aztarna bat eskuragarri dago 'Fitxategi lokalak'en baina ziur aski bere "
-"edukia okerra da."
 
 #: usr/lib/linuxmint/mintreport/tray.py:49
 msgid "Show System Reports"
-msgstr "Erakutsi sistemaren txostenak"
+msgstr ""
 
 #: usr/lib/linuxmint/mintreport/tray.py:127
 msgid "Some problems were detected which require your attention"
-msgstr "Zure arreta eskatzen duten zenbait arazo antzeman dira"
+msgstr ""
 
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
 msgid "Troubleshoot problems"
-msgstr "Konpondu arazoak"
+msgstr ""
 
 #: generate_desktop_files:53
 msgid "Troubleshooting Tool"
-msgstr "Arazo-konpontzailea"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:1
 msgid "Running system checks..."
-msgstr "Sistemaren egiaztapenak exekutatzen..."
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:2
 msgid "No problems were detected"
-msgstr "Ez da arazorik antzeman"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:3
 msgid "Detected problems"
-msgstr "Arazoak antzeman dira"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:4
 msgid "Copy"
-msgstr "Kopiatu"
+msgstr "Капіраваць"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:5
 msgid ""
 "Copy to clipboard (code tags are added to make it easy to paste the system "
 "information into the forums)"
 msgstr ""
-"Kopiatu arbelera (code etiketak gehitzen zaizkio sistemaren informazioa "
-"foroetan itsastea errazteko)"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:6
 msgid "Upload"
-msgstr "Kargatu"
+msgstr "Запампаваць"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:7
 msgid "Upload to a pastebin service (no personal information included)"
 msgstr ""
-"Kargatu pastebin zerbitzu batetara (ez da informazio pertsonalik gehitzen)"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:8
 msgid "System information"
-msgstr "Sistemaren informazioa"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:9
 msgid "Crash reports are not available"
-msgstr "Hutsegite-txostenak ez daude erabilgarri"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:10
 msgid ""
 "To enable crash reporting, install systemd-coredump and reboot your computer."
 msgstr ""
-"Hutsegite-txostenak gaitzeko instalatu systemd-coredump eta berrabiarazi "
-"ordenagailua."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:11
 msgid "Crash reports:"
-msgstr "Hutsegite-txostenak:"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:12
 msgid "Stack trace:"
-msgstr "Pilaren aztarna:"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:13
 msgid ""
 "When seeking help, check for existing bug reports, pastebin the trace, share "
 "crash.tar.gz (from Local Files) and explain how to reproduce the crash."
 msgstr ""
-"Laguntza bilatzean, egiaztatu dagoeneko errore-txostenik baden, pastebin-era "
-"kargatu aztarna, partekatu crash.tar.gz (Fitxategi lokaletatik) eta azaldu "
-"nola errepikatu hutsegitea."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:14
 msgid "Local Files"
-msgstr "Fitxategi lokalak"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:15
 msgid "Open the directory containing crash.tar.gz and its content."
-msgstr "Ireki crash.tar.gz eta bere edukiak dituen direktorioa."
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:16
 msgid "Bug Tracker"
-msgstr "Errore jarraitzailea"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:17
 msgid "Find the most appropriate bug tracker."
-msgstr "Bilatu errore jarraitzaile egokiena."
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:18
 msgid "Pastebin"
-msgstr "Pastebin"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:19
 msgid "Upload the trace to the Internet."
-msgstr "Kargatu aztarna Internetera."
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:20
 msgid ""
@@ -250,45 +228,36 @@ msgid ""
 "Always provide a trace and reliable instructions to trigger/observe the "
 "problem."
 msgstr ""
-"Garatzaileek kodeak non huts egiten duen edo arazoa nola erreproduzitu jakin "
-"behar dute. Gehitu beti aztarna bat eta arazoa eragiteko/behatzeko "
-"jarraibide fidagarriak."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:21
 msgid "Crash reports"
-msgstr "Hutsegite-txostenak"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:14
 msgid "Set the root password"
-msgstr "Ezarri root pasahitza"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:27
 msgid ""
 "The root account is locked by default in Linux Mint and its password is not "
 "set."
 msgstr ""
-"Root kontua blokeatuta dago modu lehenetsian Linux Minten eta bere pasahitza "
-"ezarri gabe."
 
 #: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:31
 msgid ""
 "Your boot menu's emergency mode does not require a password. Set the root "
 "password to protect it."
 msgstr ""
-"Abioko menuaren larrialdiko moduak ez du pasahitzik eskatzen. Ezarri root "
-"pasahitza babesteko."
 
 #: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:34
 msgid ""
 "Your boot menu's emergency mode requires a password which isn't set. Set the "
 "root password to fix it."
 msgstr ""
-"Abioko menuaren larrialdiko moduak pasahitza eskatzen du baina ezarri gabe "
-"dago. Ezarri pasahitza konpontzeko."
 
 #: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:36
 msgid "To set the root password, open a terminal and type:"
-msgstr "Root pasahitza ezartzeko ireki terminal bat eta idatzi:"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:39
 msgid ""
@@ -297,146 +266,130 @@ msgid ""
 "reset and your root account can be accessed without a password by booting "
 "another operating system."
 msgstr ""
-"Abisua: Benetako segurtasuna lortzeko ordenagailurako sarbide fisikoa mugatu "
-"eta datuak enkriptatu behar dira. BIOS pasahitzak berrezarri daitezke eta "
-"root kontuaren pasahitza beste sistema eragile bat abiaraziz atzitu daiteke."
 
 #: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:46
 msgid "I understand"
-msgstr "Ulertzen dut"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
 msgid "Add the XApp Status applet"
-msgstr "Gehitu XApp Egoera applet-a"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:37
 msgid ""
 "The XApp Status applet allows applications to provide a tray icon without "
 "rendering glitches and with support for HiDPI and symbolic icons."
 msgstr ""
-"XApp Egoera appletak erretiluko ikono bat eskaintzeko aukera ematen die "
-"aplikazioei, errendatze-arazorik gabe eta HiDPI eta ikono sinbolikoen "
-"euskarriarekin."
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:39
 msgid "Right-click the panel and choose 'Add to Panel'."
-msgstr "Egin eskuin-klik panelean eta aukeratu 'Gehitu panelera'"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:46
 msgid "Add the XApp Status applet to the panel"
-msgstr "Gehitu XApp Egoera applet-a panelera"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:16
 msgid "Install multimedia codecs"
-msgstr "Instalatu multimedia kodekak"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:30
 msgid ""
 "Multimedia codecs are required to play some video formats and to properly "
 "render some websites."
 msgstr ""
-"Multimedia kodekak beharrezkoak dira zenbait bideo formatu erreproduzitu eta "
-"webgune batzuk zuzen bistaratzeko."
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:36
 msgid "Install the Multimedia Codecs"
-msgstr "Instalatu multimedia kodekak"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:17
 msgid "Set up the system restore utility"
-msgstr "Konfiguratu sistema leheneratzeko tresna"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:31
 msgid "Linux Mint provides a system restore utility called Timeshift."
 msgstr ""
-"Linux Mintek Timeshift izeneko sistema leheneratzeko tresna eskaintzen du."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:32
 msgid ""
 "Thanks to Timeshift you can take snapshots of the system, either manually or "
 "automatically."
 msgstr ""
-"Timeshift-i esker sistemaren argazkiak hartu ditzakezu, eskuz edo "
-"automatikoki."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:33
 msgid ""
 "If something goes wrong you can then restore your operating system from a "
 "previously saved snapshot."
 msgstr ""
-"Zerbait gaizki badoa sistema eragilea aurretik gordetako argazkira "
-"leheneratu dezakezu."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:39
 msgid "Launch Timeshift"
-msgstr "Abiarazi Timeshift"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:17
 msgid "A new version of Linux Mint is available"
-msgstr "Linux Minten bertsio berri bat eskuragarri dago"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:47
 #, python-format
 msgid "Visit %s for the latest announcements."
-msgstr "Ikusi %s azken iragarpenetarako"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:53
 #, python-format
 msgid "Upgrade to %s"
-msgstr "Bertsio-berritu %s(e)ra"
+msgstr "Абнавіцца да %s"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:49
 msgid "Your version of Linux Mint will soon reach End-Of-Life (EOL)"
-msgstr "Linux Minten bertsio honen euskarriaren amaiera eguna laster da"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:50
 #, python-brace-format
 msgid "It will stop receiving support and updates in a day."
 msgid_plural "It will stop receiving support and updates in {num_days} days."
-msgstr[0] "Euskarria eta eguneraketak jasotzeari utziko dio bihar."
+msgstr[0] ""
 msgstr[1] ""
-"Euskarria eta eguneraketak jasotzeari utziko dio {num_days} egun barru."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:54
 msgid "Your version of Linux Mint is no longer supported"
-msgstr "Linux Minten bertsio honek ez dauka euskarririk jada."
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:55
 #, python-brace-format
 msgid "It reached End-Of-Life (EOL) yesterday."
 msgid_plural "It reached End-Of-Life (EOL) {num_days} days ago."
-msgstr[0] "Euskarria atzo amaitu zen."
-msgstr[1] "Euskarria duela {num_days} amaitu zen."
+msgstr[0] ""
+msgstr[1] ""
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:66
 #, python-format
 msgid "Visit %s to find information about newer releases."
-msgstr "Ikusi %s argitalpen berriagoei buruzko informazioa jasotzeko"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:26
 msgid "Install language packs"
-msgstr "Instalatu hizkuntza-paketeak"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:41
 msgid ""
 "The following localization packages are missing to properly support your "
 "language:"
 msgstr ""
-"Ondorengo lokalizazio-paketeak falta dira zure hizkuntzari behar bezalako "
-"euskarria emateko:"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:48
 msgid "Install the Language Packs"
-msgstr "Instalatu hizkuntza-paketeak"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:17
 msgid "Install hardware drivers"
-msgstr "Instalatu hardware kontrolatzaileak"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:56
 msgid "Hardware drivers are available for the following devices:"
-msgstr "Hardware kontrolatzaileak eskuragarri daude ondorengo gailuentzat:"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:63
 msgid "Launch the Driver Manager"
-msgstr "Abiarazi kontrolatzaile-kudeatzailea"
+msgstr ""

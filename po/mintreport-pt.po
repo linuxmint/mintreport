@@ -15,8 +15,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2019-12-11 11:58+0000\n"
-"X-Generator: Launchpad (build c597c3229eb023b1e626162d5947141bf7befb13)\n"
+"X-Launchpad-Export-Date: 2020-01-06 10:08+0000\n"
+"X-Generator: Launchpad (build bceb5ef013b87ef7aafe0755545ceb689ca7ac60)\n"
 "Language: pt\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
@@ -24,7 +24,7 @@ msgstr ""
 #: generate_desktop_files:39 generate_desktop_files:53
 #: generate_desktop_files:67
 msgid "System Reports"
-msgstr "Relatórios do Sistema"
+msgstr "Relatórios do sistema"
 
 #: usr/lib/linuxmint/mintreport/app.py:194
 msgid "_File"
@@ -45,7 +45,7 @@ msgstr "Sair"
 
 #: usr/lib/linuxmint/mintreport/app.py:221
 msgid "_Help"
-msgstr "_Ajuda"
+msgstr "A_juda"
 
 #: usr/lib/linuxmint/mintreport/app.py:227
 #: usr/lib/linuxmint/mintreport/app.py:234
@@ -66,7 +66,7 @@ msgid ""
 "on the forums."
 msgstr ""
 "As informações do sistema foram copiadas para a área de transferência para "
-"que possa colá-las nos fóruns."
+"que as possa colocar nos fóruns."
 
 #: usr/lib/linuxmint/mintreport/app.py:301
 msgid "System information uploaded"
@@ -79,7 +79,7 @@ msgid ""
 "clipboard so you can paste it on IRC."
 msgstr ""
 "As informações do seu sistema foram carregadas para %s. Esta ligação foi "
-"colocada na sua área de transferência para que possa colá-la no IRC."
+"colocada na sua área de transferência para que a possa colocar no IRC."
 
 #: usr/lib/linuxmint/mintreport/app.py:303
 msgid "An error occurred while uploading the system information"
@@ -90,8 +90,8 @@ msgid ""
 "Copy and paste the system information manually into a pastebin site like "
 "https://pastebin.com and share the link on IRC."
 msgstr ""
-"Copie e cole as informações do sistema manualmente num site pastebin como o "
-"https://pastebin.com e compartilhe a ligação no IRC."
+"Copie e cole as informações do sistema manualmente num site de partilhas "
+"como https://pastebin.com e partilhe a ligação no IRC."
 
 #: usr/lib/linuxmint/mintreport/app.py:382
 msgid "Ignore this problem"
@@ -137,8 +137,8 @@ msgstr ""
 "Os cabeçalhos ou binários instalados no seu sistema não correspondem ao "
 "código que foi executado durante a falha.\n"
 "Provavelmente foram atualizados desde então.\n"
-"Um rastreamento de pilha está disponível em 'Arquivos locais', mas o seu "
-"conteúdo é provavelmente é impreciso."
+"Está disponível em 'Ficheiros locais', mas o seu conteúdo não deve ser o "
+"mais correto."
 
 #: usr/lib/linuxmint/mintreport/tray.py:49
 msgid "Show System Reports"
@@ -151,11 +151,11 @@ msgstr "Foram detetados alguns problemas que requerem a sua atenção"
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
 msgid "Troubleshoot problems"
-msgstr "Solução de problemas"
+msgstr "Resolução de problemas"
 
 #: generate_desktop_files:53
 msgid "Troubleshooting Tool"
-msgstr "Ferramenta de Solução de Problemas"
+msgstr "Ferramenta de resolução de problemas"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:1
 msgid "Running system checks..."
@@ -202,7 +202,7 @@ msgstr "Relatórios de falhas não estão disponíveis"
 msgid ""
 "To enable crash reporting, install systemd-coredump and reboot your computer."
 msgstr ""
-"Para ativar o relatório de falhas, instale o systemd-coredump e reinicie o "
+"Para ativar o relatório de falhas, instale 'systemd-coredump' e reinicie o "
 "seu computador."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:11
@@ -240,11 +240,11 @@ msgstr "Encontre o rastreador de erros mais apropriado."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:18
 msgid "Pastebin"
-msgstr "Colar"
+msgstr "Pastebin"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:19
 msgid "Upload the trace to the Internet."
-msgstr "Transfira o rastreamento para a Internet."
+msgstr "Carregue o rastreio para a Internet."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:20
 msgid ""
@@ -252,7 +252,7 @@ msgid ""
 "Always provide a trace and reliable instructions to trigger/observe the "
 "problem."
 msgstr ""
-"Os programadores precisam de saber onde o código falha, ou como reproduzir o "
+"Os programadores precisam de saber onde o código falha ou como reproduzir o "
 "problema. Forneça um rastreamento e instruções confiáveis sobre como "
 "reproduzir o problema."
 
@@ -269,8 +269,8 @@ msgid ""
 "The root account is locked by default in Linux Mint and its password is not "
 "set."
 msgstr ""
-"A conta root está bloqueada por padrão no Linux Mint e a sua palavra-passe "
-"não está definida."
+"Por definição, a conta root está bloqueada no Linux Mint e a sua palavra-"
+"passe não está definida."
 
 #: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:31
 msgid ""
@@ -278,19 +278,19 @@ msgid ""
 "password to protect it."
 msgstr ""
 "O modo de emergência do seu menu de arranque não requer uma palavra-passe. "
-"Defina a palavra-passe root para protegê-lo."
+"Defina a palavra-passe root para o proteger."
 
 #: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:34
 msgid ""
 "Your boot menu's emergency mode requires a password which isn't set. Set the "
 "root password to fix it."
 msgstr ""
-"O modo de emergência do seu menu de arranque requer uma palavra-passe que "
-"não está definida. Defina a palavra-passe do root para corrigi-la."
+"O modo de emergência do seu menu de arranque requer uma palavra-passe. "
+"Defina a palavra-passe root para o proteger."
 
 #: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:36
 msgid "To set the root password, open a terminal and type:"
-msgstr "Para definir a palavra-passe do root, abra um terminal e escreva:"
+msgstr "Para definir a palavra-passe root, abra um terminal e escreva:"
 
 #: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:39
 msgid ""
@@ -299,56 +299,57 @@ msgid ""
 "reset and your root account can be accessed without a password by booting "
 "another operating system."
 msgstr ""
-"Isenção de responsabilidade: A segurança adequada só pode ser alcançada "
-"restringindo o acesso físico ao seu computador e criptografando os seus "
-"dados. As palavras-passe da BIOS podem ser redefinidas e sua conta root pode "
-"ser acessada sem uma palavra-passe ao arrancar outro sistema operativo."
+"Isenção de responsabilidade: a segurança adequada só pode ser alcançada "
+"restringindo o acesso físico ao seu computador e cifrando os seus dados. As "
+"palavras-passe da BIOS podem ser redefinidas e sua conta root pode ser "
+"acedida sem uma palavra-passe bastando, para tal, arrancar outro sistema "
+"operativo, seja por USB ou por LiveCD."
 
 #: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:46
 msgid "I understand"
-msgstr "Eu entendo"
+msgstr "Percebi"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
 msgid "Add the XApp Status applet"
-msgstr "Adicionar a mini-aplicação de estado do XApp"
+msgstr "Adicionar mini-aplicação de estado XApp"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:37
 msgid ""
 "The XApp Status applet allows applications to provide a tray icon without "
 "rendering glitches and with support for HiDPI and symbolic icons."
 msgstr ""
-"A mini-aplicação de estado do XApp permite que as aplicações forneçam um "
-"ícone de área de notificação sem falhas de renderização e com suporte para "
-"HiDPI e ícones simbólicos."
+"A mini-aplicação de estado XApp permite que as aplicações forneçam um ícone "
+"de área de notificação sem falhas de renderização e com suporte para HiDPI e "
+"ícones simbólicos."
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:39
 msgid "Right-click the panel and choose 'Add to Panel'."
 msgstr ""
-"Clique com o botão direito do rato no painel e escolha 'Adicionar ao Painel'."
+"Clique com o botão direito do rato no painel e escolha 'Adicionar ao painel'."
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:46
 msgid "Add the XApp Status applet to the panel"
-msgstr "Adicione a mini-aplicação de estado do XApp ao painel"
+msgstr "Adicionar mini-aplicação de estado do XApp ao painel"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:16
 msgid "Install multimedia codecs"
-msgstr "Instalar codecs multimédia"
+msgstr "Instalar codificadores multimédia"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:30
 msgid ""
 "Multimedia codecs are required to play some video formats and to properly "
 "render some websites."
 msgstr ""
-"Os codecs multimédia são necessários para reproduzir alguns formatos de "
-"vídeo e renderizar corretamente alguns websites."
+"Os codificadores multimédia são necessários para reproduzir alguns formatos "
+"de vídeo e para processar corretamente alguns sites."
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:36
 msgid "Install the Multimedia Codecs"
-msgstr "Instalar os Codecs Multimédia"
+msgstr "Instalar codificadores multimédia"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:17
 msgid "Set up the system restore utility"
-msgstr "Configurar o utilitário de restauro do sistema"
+msgstr "Configurar utilitário de restauro do sistema"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:31
 msgid "Linux Mint provides a system restore utility called Timeshift."

@@ -8,66 +8,69 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2019-12-09 17:56+0000\n"
-"PO-Revision-Date: 2018-08-09 22:21+0000\n"
-"Last-Translator: Yacine Bouklif <yacine_tizi2003@yahoo.fr>\n"
+"PO-Revision-Date: 2019-12-21 15:08+0000\n"
+"Last-Translator: Yacine Bouklif <yacinebouklif@gmail.com>\n"
 "Language-Team: Kabyle <kab@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2019-12-11 11:58+0000\n"
-"X-Generator: Launchpad (build c597c3229eb023b1e626162d5947141bf7befb13)\n"
+"X-Launchpad-Export-Date: 2020-01-06 10:08+0000\n"
+"X-Generator: Launchpad (build bceb5ef013b87ef7aafe0755545ceb689ca7ac60)\n"
+"Language: kab\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
 #: usr/lib/linuxmint/mintreport/app.py:236 generate_desktop_files:25
 #: generate_desktop_files:39 generate_desktop_files:53
 #: generate_desktop_files:67
 msgid "System Reports"
-msgstr "ineqqisen n unagraw"
+msgstr "Ineqqisen n unagraw"
 
 #: usr/lib/linuxmint/mintreport/app.py:194
 msgid "_File"
-msgstr ""
+msgstr "_Afaylu"
 
 #: usr/lib/linuxmint/mintreport/app.py:199
 msgid "Refresh"
-msgstr ""
+msgstr "Sismeḍ"
 
 #: usr/lib/linuxmint/mintreport/app.py:206
 msgid "Restore ignored reports"
-msgstr ""
+msgstr "Err-d ineqqisen yettwattun"
 
 #: usr/lib/linuxmint/mintreport/app.py:210
 #: usr/lib/linuxmint/mintreport/tray.py:53
 msgid "Quit"
-msgstr ""
+msgstr "Ffeγ"
 
 #: usr/lib/linuxmint/mintreport/app.py:221
 msgid "_Help"
-msgstr ""
+msgstr "_Tallalt"
 
 #: usr/lib/linuxmint/mintreport/app.py:227
 #: usr/lib/linuxmint/mintreport/app.py:234
 msgid "About"
-msgstr ""
+msgstr "Ɣef"
 
 #: usr/lib/linuxmint/mintreport/app.py:278
 msgid "An error occurred while gathering the system information."
-msgstr ""
+msgstr "Teḍra-d tucḍa deg ujemmeɛ n isallan n unagraw."
 
 #: usr/lib/linuxmint/mintreport/app.py:292
 msgid "System information copied"
-msgstr ""
+msgstr "Talɣut n unagraw tettwasuken"
 
 #: usr/lib/linuxmint/mintreport/app.py:292
 msgid ""
 "Your system information was copied into your clipboard so you can paste it "
 "on the forums."
 msgstr ""
+"Isallan n unagraw-inek ttusukknen ɣer tecfawit  ihi tzemreḍ ad ten-senteḍeḍ "
+"deg ufurum."
 
 #: usr/lib/linuxmint/mintreport/app.py:301
 msgid "System information uploaded"
-msgstr ""
+msgstr "Talɣut n unagraw tuli"
 
 #: usr/lib/linuxmint/mintreport/app.py:301
 #, python-format
@@ -75,29 +78,33 @@ msgid ""
 "Your system information was uploaded to %s. This link was placed in your "
 "clipboard so you can paste it on IRC."
 msgstr ""
+"Isallan n unagraw-inek ttusukknen ulin s  %s. Asɣen-agi yeqqel ɣer tecfawit "
+"ihi tzemreḍ ad t-tesenṭḍeḍ di IRC."
 
 #: usr/lib/linuxmint/mintreport/app.py:303
 msgid "An error occurred while uploading the system information"
-msgstr ""
+msgstr "Teḍra-d tuccḍa deg usili n isallan n unagraw"
 
 #: usr/lib/linuxmint/mintreport/app.py:303
 msgid ""
 "Copy and paste the system information manually into a pastebin site like "
 "https://pastebin.com and share the link on IRC."
 msgstr ""
+"Suken yerna senteḍ s ufus isallan n unagraw ɣer usmel  pastebin  akka am "
+"https://pastebin.com yerna bḍu-ten di IRC."
 
 #: usr/lib/linuxmint/mintreport/app.py:382
 msgid "Ignore this problem"
-msgstr ""
+msgstr "Ttu ugur-agi"
 
 #: usr/lib/linuxmint/mintreport/app.py:398
 msgid "Are you sure you want to ignore this problem?"
-msgstr ""
+msgstr "D tidet tebɣiḍ ad tettuḍ ugur-agi ?"
 
 #: usr/lib/linuxmint/mintreport/app.py:399
 msgid ""
 "The problem will be permanently ignored and will no longer be visible."
-msgstr ""
+msgstr "Ugur ad yettwattu i lebda yerna dayen ur yettwabeqqaḍ ara."
 
 #: usr/lib/linuxmint/mintreport/app.py:491
 #, python-format
@@ -135,11 +142,11 @@ msgstr ""
 
 #: usr/lib/linuxmint/mintreport/tray.py:49
 msgid "Show System Reports"
-msgstr ""
+msgstr "Sken ineqqisen n unagraw"
 
 #: usr/lib/linuxmint/mintreport/tray.py:127
 msgid "Some problems were detected which require your attention"
-msgstr ""
+msgstr "Nufa-d kra n wuguren i yesran ad sen-tgeḍ tamawt"
 
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
@@ -152,50 +159,54 @@ msgstr "Allalen n useggem"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:1
 msgid "Running system checks..."
-msgstr ""
+msgstr "Selkem iselkinen n unagraw..."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:2
 msgid "No problems were detected"
-msgstr ""
+msgstr "Ulac ugur yettwafen"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:3
 msgid "Detected problems"
-msgstr ""
+msgstr "Uguren yettwafen"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:4
 msgid "Copy"
-msgstr ""
+msgstr "Suken"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:5
 msgid ""
 "Copy to clipboard (code tags are added to make it easy to paste the system "
 "information into the forums)"
 msgstr ""
+"Sukken ɣer tecfawit  (ticraḍ n tengalt ttwarennant iwakken ad yishil usenteḍ-"
+"ines deg yifurumen)"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:6
 msgid "Upload"
-msgstr ""
+msgstr "Sili"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:7
 msgid "Upload to a pastebin service (no personal information included)"
-msgstr ""
+msgstr "Sili ɣer umeẓlu n pastebin  (ur tteddun ara isallan udmawanen)"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:8
 msgid "System information"
-msgstr ""
+msgstr "Talɣut n unagraw"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:9
 msgid "Crash reports are not available"
-msgstr ""
+msgstr "Ineqqisen n uɣelluy ur wjiden ara"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:10
 msgid ""
 "To enable crash reporting, install systemd-coredump and reboot your computer."
 msgstr ""
+"Iwakken ad tesremdeḍ ineqqisen n uɣelluy, sbedd systemd-coredump  sakin "
+"sekker tikkelt-nniḍen aselkim-inek."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:11
 msgid "Crash reports:"
-msgstr "Ineqqisen n tuccḍiwin"
+msgstr "Ineqqisen n tuccḍiwin:"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:12
 msgid "Stack trace:"
@@ -224,7 +235,7 @@ msgstr "Aḍfaṛ ibugen"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:17
 msgid "Find the most appropriate bug tracker."
-msgstr "Afed aḍfaṛ ibugen ilaqen"
+msgstr "Afed aḍfaṛ ibugen ilaqen."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:18
 msgid "Pastebin"
@@ -232,7 +243,7 @@ msgstr "Pastebin"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:19
 msgid "Upload the trace to the Internet."
-msgstr "Azen adriz ɣer internet"
+msgstr "Azen adriz ɣer internet."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:20
 msgid ""
@@ -249,29 +260,35 @@ msgstr "Ineqqisen n tuccḍiwin"
 
 #: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:14
 msgid "Set the root password"
-msgstr ""
+msgstr "Sbadu awal uffir n root"
 
 #: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:27
 msgid ""
 "The root account is locked by default in Linux Mint and its password is not "
 "set."
 msgstr ""
+"Amiḍan root isekkeṛ s lexṣas di Linux Mint yerna awal uffir ines ur "
+"yettwasbadu ara."
 
 #: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:31
 msgid ""
 "Your boot menu's emergency mode does not require a password. Set the root "
 "password to protect it."
 msgstr ""
+"Askar uɛjil n wumuɣ n usekker ur yesri ara awal uffir. Sbadu awal uffir n "
+"root iwakken ad t-tmestneḍ."
 
 #: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:34
 msgid ""
 "Your boot menu's emergency mode requires a password which isn't set. Set the "
 "root password to fix it."
 msgstr ""
+"Askar n wumuɣ uɛjil inek yesra awal uffir ur nettusbadu yara yakan. Sbadu "
+"awal uffir n root iwakken ad yefru wugur."
 
 #: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:36
 msgid "To set the root password, open a terminal and type:"
-msgstr ""
+msgstr "Iwakken ad tesbaduḍ awal uffir n root, ldi ixef sakin aru:"
 
 #: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:39
 msgid ""
@@ -280,130 +297,148 @@ msgid ""
 "reset and your root account can be accessed without a password by booting "
 "another operating system."
 msgstr ""
+"Tafada n tmasit: Taɣellist iwenɛen ma yella tesḥebseḍ adduf afekkan ɣer "
+"uselkim-inek yerna tewglehneḍ isefka-inek. Iwallen ufiren n BIOS yezmer "
+"wabɛaḍ ad sen-yales awennez yerna ad yekcem ɣer umiḍan-inek war awal uffir "
+"ma yesekker anagraw n wamud nniḍen."
 
 #: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:46
 msgid "I understand"
-msgstr ""
+msgstr "Gziɣ"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
 msgid "Add the XApp Status applet"
-msgstr ""
+msgstr "Rnu asnas n waddad XApp"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:37
 msgid ""
 "The XApp Status applet allows applications to provide a tray icon without "
 "rendering glitches and with support for HiDPI and symbolic icons."
 msgstr ""
+"Asnas n waddad XApp ad yeǧǧ isnasen iwakken ad d-fken tignit n tfeggagt n "
+"twura war ugur n tririt, acku yettɛawan tiddin n tignitin HiDPI akked "
+"tignitin tizamulanin."
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:39
 msgid "Right-click the panel and choose 'Add to Panel'."
-msgstr ""
+msgstr "Sit s teqfalt tayefust n tɣerdayt sakin fren 'Rnu ɣer ugalis'."
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:46
 msgid "Add the XApp Status applet to the panel"
-msgstr ""
+msgstr "Rnu addad nXApp ɣer  ugalis"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:16
 msgid "Install multimedia codecs"
-msgstr ""
+msgstr "Sebded ikudiken n ugetmidya"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:30
 msgid ""
 "Multimedia codecs are required to play some video formats and to properly "
 "render some websites."
 msgstr ""
+"Ttwasran ikudaken igetmidyaten iwakken ad ddun kra n imasalen ividyuten "
+"yerna ad ttwabeqqeḍen kra n isemlen akken iwata."
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:36
 msgid "Install the Multimedia Codecs"
-msgstr ""
+msgstr "Sebded ikudiken n ugetmidya"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:17
 msgid "Set up the system restore utility"
-msgstr ""
+msgstr "Seɣwer ahil n tririt n unagraw"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:31
 msgid "Linux Mint provides a system restore utility called Timeshift."
-msgstr ""
+msgstr "Linux Mint yesɛa ahil i tririt n unagraw isem-is Timeshift."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:32
 msgid ""
 "Thanks to Timeshift you can take snapshots of the system, either manually or "
 "automatically."
 msgstr ""
+"S ttawil n Timeshift tzemreḍ ad teṭṭfeḍ tiwaṭṭfiwin n unagraw, ama s ufus "
+"ama s wudem awurman."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:33
 msgid ""
 "If something goes wrong you can then restore your operating system from a "
 "previously saved snapshot."
 msgstr ""
+"Ma yella kra yerẓen tzemreḍ ad d-terreḍ anagraw n wamud inek si tuṭṭfa i "
+"teskelseḍ yakan."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:39
 msgid "Launch Timeshift"
-msgstr ""
+msgstr "SekkerTimeshift"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:17
 msgid "A new version of Linux Mint is available"
-msgstr ""
+msgstr "Lqem amaynut n Linux Mint yewjed"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:47
 #, python-format
 msgid "Visit %s for the latest announcements."
-msgstr ""
+msgstr "Rzu ɣer %s akken ad tafeḍ isallan ineggura."
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:53
 #, python-format
 msgid "Upgrade to %s"
-msgstr ""
+msgstr "Sali lqem ɣer %s"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:49
 msgid "Your version of Linux Mint will soon reach End-Of-Life (EOL)"
-msgstr ""
+msgstr "Lqem n Linux Mint inek qrib ad yaweḍ taggara n tudert-ines"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:50
 #, python-brace-format
 msgid "It will stop receiving support and updates in a day."
 msgid_plural "It will stop receiving support and updates in {num_days} days."
 msgstr[0] ""
+"Yegra-yas-d yiwen n wass, imir ad yeḥbes ur d-yettaṭṭaf ara taneṭṭuft  akked "
+"ileqman."
 msgstr[1] ""
+"Gran-as-d {num_days} n wussan,  imir ad yeḥbes ur d-yettaṭṭaf ara taneṭṭuft  "
+"akked ileqman."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:54
 msgid "Your version of Linux Mint is no longer supported"
-msgstr ""
+msgstr "Lqem n Linux Mint inek dayen ur yesɛi ara taneṭṭuft"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:55
 #, python-brace-format
 msgid "It reached End-Of-Life (EOL) yesterday."
 msgid_plural "It reached End-Of-Life (EOL) {num_days} days ago."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Yewweḍ taggara n tudert-ines iḍelli."
+msgstr[1] "Yewweḍ taggara n tudert-ines  {num_days} n wussan aya."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:66
 #, python-format
 msgid "Visit %s to find information about newer releases."
-msgstr ""
+msgstr "Rzu ɣer %s iwakken ad tafeḍ isallan ɣef ileqman imaynuten."
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:26
 msgid "Install language packs"
-msgstr ""
+msgstr "Sebded ikemussen n tutlayt"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:41
 msgid ""
 "The following localization packages are missing to properly support your "
 "language:"
 msgstr ""
+"Ikemmusen-agi n usideg xuṣṣen iwakken ad teddu tutlayt-inek akken iwata:"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:48
 msgid "Install the Language Packs"
-msgstr ""
+msgstr "Sebded ikemussen n tutlayt"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:17
 msgid "Install hardware drivers"
-msgstr ""
+msgstr "Sbedd inuḍaf n warrum"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:56
 msgid "Hardware drivers are available for the following devices:"
-msgstr ""
+msgstr "Inuḍaf n warum wejden deg yibenkan-agi:"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:63
 msgid "Launch the Driver Manager"
-msgstr ""
+msgstr "Sekker amsefrak n inuḍafen"
