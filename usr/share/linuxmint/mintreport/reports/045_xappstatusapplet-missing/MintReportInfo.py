@@ -29,7 +29,7 @@ class Report(InfoReport):
         else:
             self.de = self.de.lower()
 
-        return not XApp.StatusIcon.any_monitors()
+        return XApp.StatusIcon.any_monitors(5) == XApp.StatusMonitorFound.NO
 
     def get_descriptions(self):
         # Return the descriptions
