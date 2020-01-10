@@ -2,6 +2,7 @@ import gettext
 import gi
 import os
 import subprocess
+import re
 
 gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
@@ -18,6 +19,33 @@ class Report(InfoReport):
         self.icon = "mintreport-hardware-device-symbolic"
         self.has_ignore_button = True
 
+    def get_cpu_name(self):
+        with open("/proc/cpuinfo") as cpuinfo:
+            for line in cpuinfo:
+                if "model name" in line:
+                    return re.sub( ".*model name.*:", "", line, 1).strip()
+        return _("Processor")
+
+    def construct_name(self, device):
+        model_name = device.get('model', None)
+        vendor_name = device.get('vendor', None)
+        device_name = None
+
+        is_cpu = False
+        if "intel-microcode" in device['drivers'] or "amd64-microcode" in device['drivers']:
+            is_cpu = True
+        if is_cpu:
+            device_name = self.get_cpu_name()
+        elif vendor_name is None and model_name is None:
+            device_name = _("Unknown")
+        elif vendor_name is None:
+            device_name = model_name
+        elif model_name is None:
+            device_name = _("%s (unknown)" % vendor_name)
+        else:
+            device_name = "%s: %s" % (vendor_name, model_name)
+        return device_name
+
     def is_pertinent(self):
         # Defines whether this report should show up
         self.drivers = []
@@ -26,7 +54,7 @@ class Report(InfoReport):
             devices = detect.system_device_drivers()
             for device_id in devices:
                 device = devices[device_id]
-                device_name = "%s %s" % (device['vendor'], device['model'])
+                device_name = self.construct_name(device)
                 if "virtualbox" in device_name.lower() or "vmware" in device_name.lower():
                     print("Ignoring %s" % device_name)
                     # Ignore them, they're not recommended
