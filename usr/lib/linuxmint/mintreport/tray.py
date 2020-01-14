@@ -11,7 +11,7 @@ gi.require_version("Gtk", "3.0")
 gi.require_version('XApp', '1.0')
 from gi.repository import Gtk, Gdk, Gio, XApp, GLib
 
-from common import async, idle, InfoReportContainer, INFO_DIR
+from common import idle, InfoReportContainer, INFO_DIR
 
 setproctitle.setproctitle("mintreport-tray")
 

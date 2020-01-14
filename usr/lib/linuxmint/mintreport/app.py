@@ -14,7 +14,7 @@ gi.require_version('GtkSource', '3.0')
 gi.require_version('XApp', '1.0')
 from gi.repository import Gtk, Gdk, GtkSource, Gio, XApp
 
-from common import async, idle, InfoReportContainer, DATA_DIR, INFO_DIR
+from common import _async, idle, InfoReportContainer, DATA_DIR, INFO_DIR
 
 setproctitle.setproctitle("mintreport")
 
@@ -267,7 +267,7 @@ class MintReportWindow():
     def on_menu_quit(self, widget):
         self.application.quit()
 
-    @async
+    @_async
     def load_sysinfo(self):
         try:
             sysinfo = subprocess.check_output("LANG=C inxi -Fxxrzc0 --usb", shell=True).decode("UTF-8")
@@ -330,7 +330,7 @@ class MintReportWindow():
             self.builder.get_object("box_info_stack").set_visible_child_name("done")
         self.builder.get_object("info_spinner").stop()
 
-    @async
+    @_async
     def load_info(self):
         self.loading = True
         self.clear_info_treeview()
@@ -459,7 +459,7 @@ class MintReportWindow():
             report = model.get_value(iter, COL_CRASH_OBJECT)
             self.dump_crash_report(report)
 
-    @async
+    @_async
     def dump_crash_report(self, report):
 
         os.chdir(UNPACK_DIR)

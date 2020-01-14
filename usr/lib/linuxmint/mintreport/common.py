@@ -12,7 +12,7 @@ INFO_DIR = os.path.join(DATA_DIR, "reports")
 TMP_DIR = "/tmp/mintreport"
 
 # Used as a decorator to run things in the background
-def async(func):
+def _async(func):
     def wrapper(*args, **kwargs):
         thread = threading.Thread(target=func, args=args, kwargs=kwargs)
         thread.daemon = True
