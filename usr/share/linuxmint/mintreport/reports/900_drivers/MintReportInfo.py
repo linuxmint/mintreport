@@ -59,10 +59,14 @@ class Report(InfoReport):
                     print("Ignoring %s" % device_name)
                     # Ignore them, they're not recommended
                     continue
+                if 'manual_install' in device.keys() and device['manual_install'] == True:
+                    print("Ignoring device: %s (manual_install)" % device_name)
+                    continue
                 packages = []
                 for driver_name in device['drivers']:
                     driver = device['drivers'][driver_name]
                     if 'builtin' in driver.keys() and driver['builtin'] == True:
+                        print("Ignoring driver: %s (builtin)" % driver)
                         continue
                     packages.append(driver_name)
                 any_installed = False
