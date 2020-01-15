@@ -1,3 +1,15 @@
+mintreport (1.1.6) tricia; urgency=medium
+
+  [ Michael Webster ]
+  * 900_drivers: Handle missing vendor/model info more gracefully.
+  * all: rename async wrapper, in python 3.7+ it is a keyword to define coroutines.
+
+  [ Clement Lefebvre ]
+  * 900_drivers: Ignore devices marked as manual_install
+  * l10n: Update POT
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 15 Jan 2020 16:39:03 +0000
+
 mintreport (1.1.5) tricia; urgency=medium
 
   * l10n: Update translations
