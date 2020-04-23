@@ -74,7 +74,7 @@ class MintReportWindow():
         os.system("mkdir -p %s" % UNPACK_DIR)
         os.system("cp -R %s/* %s/" % (DATA_DIR, TMP_DIR))
 
-        self.cache = apt.Cache()
+        self._cache = None
         # Set the Glade file
         gladefile = "/usr/share/linuxmint/mintreport/mintreport.ui"
         self.builder = Gtk.Builder()
@@ -227,6 +227,16 @@ class MintReportWindow():
         item.set_label(_("About"))
         item.connect("activate", self.open_about)
         submenu.append(item)
+
+    @property
+    def cache(self):
+        """Cache data from apt"""
+        if self._cache is None:
+            # Lazily initialize cache data because it is only used when a crash dump is selected
+            # on the 'Crash reports' page
+            self._cache = apt.Cache()
+
+        return self._cache
 
     def open_about(self, widget):
         dlg = Gtk.AboutDialog()
