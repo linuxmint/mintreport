@@ -135,8 +135,7 @@ class MintReportWindow():
         self.treeview_crashes.append_column(column)
         self.treeview_crashes.show()
         self.model_crashes = Gtk.ListStore(str, str, str, str, str, str, object) # timestamp, pid, exe, object
-        self.model_sort = self.model_crashes.sort_new_with_model()
-        self.model_sort.set_sort_func(COL_CRASH_DATE, sort_by_date)
+        self.model_crashes.set_sort_func(COL_CRASH_DATE, sort_by_date)
         self.treeview_crashes.set_model(self.model_crashes)
 
         self.buffer = GtkSource.Buffer()
