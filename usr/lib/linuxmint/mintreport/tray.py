@@ -42,7 +42,7 @@ class MyApplication(Gtk.Application):
         Gtk.Application.__init__(self, application_id=application_id, flags=flags)
         self.connect("activate", self.activate)
 
-        self.settings = Gio.Settings("com.linuxmint.report")
+        self.settings = Gio.Settings(schema_id="com.linuxmint.report")
 
         # Status icon
         self.menu = Gtk.Menu()

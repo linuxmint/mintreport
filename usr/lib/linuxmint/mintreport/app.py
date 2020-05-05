@@ -67,7 +67,7 @@ class MintReportWindow():
     def __init__(self, application):
 
         self.application = application
-        self.settings = Gio.Settings("com.linuxmint.report")
+        self.settings = Gio.Settings(schema_id="com.linuxmint.report")
 
         os.system("mkdir -p %s" % TMP_DIR)
         os.system("rm -rf %s/*" % TMP_DIR)
@@ -195,18 +195,18 @@ class MintReportWindow():
         submenu = Gtk.Menu()
         menu.set_submenu(submenu)
 
-        item = Gtk.ImageMenuItem.new_with_label(_("Refresh"))
+        item = Gtk.ImageMenuItem(label=_("Refresh"))
         image = Gtk.Image.new_from_icon_name("view-refresh-symbolic", Gtk.IconSize.MENU)
         item.set_image(image)
         item.connect('activate', self.on_menu_refresh)
         key, mod = Gtk.accelerator_parse("<Control>R")
         item.add_accelerator("activate", accel_group, key, mod, Gtk.AccelFlags.VISIBLE)
         submenu.append(item)
-        item = Gtk.ImageMenuItem.new_with_label(_("Restore ignored reports"))
+        item = Gtk.ImageMenuItem(label=_("Restore ignored reports"))
         item.connect('activate', self.on_menu_restore)
         submenu.append(item)
         submenu.append(Gtk.SeparatorMenuItem())
-        item = Gtk.ImageMenuItem.new_with_label(_("Quit"))
+        item = Gtk.ImageMenuItem(label=_("Quit"))
         image = Gtk.Image.new_from_icon_name("application-exit-symbolic", Gtk.IconSize.MENU)
         item.set_image(image)
         item.connect('activate', self.on_menu_quit)
@@ -375,20 +375,20 @@ class MintReportWindow():
             for child in self.info_descriptions_box.get_children():
                 self.info_descriptions_box.remove(child)
             for description in descriptions:
-                label = Gtk.Label(description)
+                label = Gtk.Label(label=description)
                 label.set_use_markup(True)
                 label.set_line_wrap(True)
                 self.info_descriptions_box.add(label)
             for child in self.info_button_box.get_children():
                 self.info_button_box.remove(child)
             for action in actions:
-                button = Gtk.Button(action.label)
+                button = Gtk.Button(label=action.label)
                 button.connect("clicked", self.on_info_action_clicked, action.callback, action.data)
                 if action.style is not None:
                     button.get_style_context().add_class(action.style)
                 self.info_button_box.add(button)
             if report.instance.has_ignore_button:
-                button = Gtk.Button(_("Ignore this problem"))
+                button = Gtk.Button(label=_("Ignore this problem"))
                 button.connect("clicked", self.on_ignore_button_clicked)
                 self.info_button_box.add(button)
             self.builder.get_object("info_box").show_all()
