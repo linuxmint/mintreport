@@ -1,3 +1,18 @@
+mintreport (1.1.7) ulyana; urgency=medium
+
+  [ theshoals ]
+  * Add a missing 'time' import
+  * Lazily initialize cache data from apt
+
+  [ Clement Lefebvre ]
+  * Fix deprecation in Mint 20
+  * Fix GTK warnings
+  * Update README.md
+  * l10n: Update translations
+  * l10n: Generate desktop files
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 12 May 2020 11:50:03 +0100
+
 mintreport (1.1.6) tricia; urgency=medium
 
   [ Michael Webster ]
