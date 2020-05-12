@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2019-12-09 17:56+0000\n"
-"PO-Revision-Date: 2018-07-25 09:35+0000\n"
-"Last-Translator: dan domina <Unknown>\n"
+"POT-Creation-Date: 2020-01-15 16:38+0000\n"
+"PO-Revision-Date: 2020-04-08 05:58+0000\n"
+"Last-Translator: vega m57 <Unknown>\n"
 "Language-Team: Japanese <ja@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2020-01-06 10:08+0000\n"
-"X-Generator: Launchpad (build bceb5ef013b87ef7aafe0755545ceb689ca7ac60)\n"
+"X-Launchpad-Export-Date: 2020-05-11 11:04+0000\n"
+"X-Generator: Launchpad (build fbdff7602bd10fb883bf7e2ddcc7fd5a16f60398)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
 #: usr/lib/linuxmint/mintreport/app.py:236 generate_desktop_files:25
@@ -35,7 +35,7 @@ msgstr ""
 
 #: usr/lib/linuxmint/mintreport/app.py:206
 msgid "Restore ignored reports"
-msgstr ""
+msgstr "無視したレポートを復元する"
 
 #: usr/lib/linuxmint/mintreport/app.py:210
 #: usr/lib/linuxmint/mintreport/tray.py:53
@@ -88,16 +88,16 @@ msgstr ""
 
 #: usr/lib/linuxmint/mintreport/app.py:382
 msgid "Ignore this problem"
-msgstr ""
+msgstr "この問題は無視する"
 
 #: usr/lib/linuxmint/mintreport/app.py:398
 msgid "Are you sure you want to ignore this problem?"
-msgstr ""
+msgstr "本当にこの問題を無視してよろしいですか?"
 
 #: usr/lib/linuxmint/mintreport/app.py:399
 msgid ""
 "The problem will be permanently ignored and will no longer be visible."
-msgstr ""
+msgstr "その問題は永久に無視され、表示されなくなります。"
 
 #: usr/lib/linuxmint/mintreport/app.py:491
 #, python-format
@@ -129,7 +129,7 @@ msgstr ""
 
 #: usr/lib/linuxmint/mintreport/tray.py:127
 msgid "Some problems were detected which require your attention"
-msgstr ""
+msgstr "注意が必要な問題が検出されました"
 
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
@@ -150,7 +150,7 @@ msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:3
 msgid "Detected problems"
-msgstr ""
+msgstr "検出された問題"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:4
 msgid "Copy"
@@ -172,7 +172,7 @@ msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:8
 msgid "System information"
-msgstr ""
+msgstr "システムの情報"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:9
 msgid "Crash reports are not available"
@@ -230,45 +230,7 @@ msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:21
 msgid "Crash reports"
-msgstr ""
-
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:14
-msgid "Set the root password"
-msgstr ""
-
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:27
-msgid ""
-"The root account is locked by default in Linux Mint and its password is not "
-"set."
-msgstr ""
-
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:31
-msgid ""
-"Your boot menu's emergency mode does not require a password. Set the root "
-"password to protect it."
-msgstr ""
-
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:34
-msgid ""
-"Your boot menu's emergency mode requires a password which isn't set. Set the "
-"root password to fix it."
-msgstr ""
-
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:36
-msgid "To set the root password, open a terminal and type:"
-msgstr ""
-
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:39
-msgid ""
-"Disclaimer: Proper security can only be achieved by restricting physical "
-"access to your computer and encrypting your data. BIOS passwords can be "
-"reset and your root account can be accessed without a password by booting "
-"another operating system."
-msgstr ""
-
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:46
-msgid "I understand"
-msgstr ""
+msgstr "クラッシュレポート"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
 msgid "Add the XApp Status applet"
@@ -304,31 +266,31 @@ msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:17
 msgid "Set up the system restore utility"
-msgstr ""
+msgstr "システム復元ユーティリティを設定する"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:31
 msgid "Linux Mint provides a system restore utility called Timeshift."
-msgstr ""
+msgstr "Linux Mint にはTimeshift というシステム復元ユーティリティがあります。"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:32
 msgid ""
 "Thanks to Timeshift you can take snapshots of the system, either manually or "
 "automatically."
-msgstr ""
+msgstr "Timeshift によって、システムのsnapshots を手動でも自動でも保存しておけます。"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:33
 msgid ""
 "If something goes wrong you can then restore your operating system from a "
 "previously saved snapshot."
-msgstr ""
+msgstr "問題が発生した場合は、それまでに保存してあったsnapshot からオペレーティングシステムを復元できます。"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:39
 msgid "Launch Timeshift"
-msgstr ""
+msgstr "Timeshift を開始"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:17
 msgid "A new version of Linux Mint is available"
-msgstr ""
+msgstr "新しいバージョンの Linux Mint が利用できます"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:47
 #, python-format
@@ -381,14 +343,27 @@ msgstr ""
 msgid "Install the Language Packs"
 msgstr ""
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:17
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:18
 msgid "Install hardware drivers"
+msgstr "ハードウェアドライバーをインストールする"
+
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:27
+msgid "Processor"
 msgstr ""
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:56
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:40
+msgid "Unknown"
+msgstr ""
+
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:44
+#, python-format
+msgid "%s (unknown)"
+msgstr ""
+
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:88
 msgid "Hardware drivers are available for the following devices:"
-msgstr ""
+msgstr "次のデバイスについてハードウェアドライバーが利用できます:"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:63
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:95
 msgid "Launch the Driver Manager"
-msgstr ""
+msgstr "ドライバマネージャを起動"

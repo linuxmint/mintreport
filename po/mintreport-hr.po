@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2019-12-09 17:56+0000\n"
-"PO-Revision-Date: 2019-12-09 20:47+0000\n"
+"POT-Creation-Date: 2020-01-15 16:38+0000\n"
+"PO-Revision-Date: 2020-02-27 17:02+0000\n"
 "Last-Translator: gogo <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <hr@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -16,8 +16,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2020-01-06 10:08+0000\n"
-"X-Generator: Launchpad (build bceb5ef013b87ef7aafe0755545ceb689ca7ac60)\n"
+"X-Launchpad-Export-Date: 2020-05-11 11:04+0000\n"
+"X-Generator: Launchpad (build fbdff7602bd10fb883bf7e2ddcc7fd5a16f60398)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
 #: usr/lib/linuxmint/mintreport/app.py:236 generate_desktop_files:25
@@ -259,54 +259,6 @@ msgstr ""
 msgid "Crash reports"
 msgstr "Izvještaji rušenja"
 
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:14
-msgid "Set the root password"
-msgstr "Postavite korijensku lozinku"
-
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:27
-msgid ""
-"The root account is locked by default in Linux Mint and its password is not "
-"set."
-msgstr ""
-"Korijenski račun je zaključan po zadanome u Linux Mintu i njegova lozinka "
-"nije postavljena."
-
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:31
-msgid ""
-"Your boot menu's emergency mode does not require a password. Set the root "
-"password to protect it."
-msgstr ""
-"Vaš način rada oporavka u izborniku pokretanja ne zahtijeva lozinku. "
-"Postavite lozinku kako bi ga zaštitili."
-
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:34
-msgid ""
-"Your boot menu's emergency mode requires a password which isn't set. Set the "
-"root password to fix it."
-msgstr ""
-"Vaš način rada oporavka u izborniku pokretanja zahtijeva lozinku koja nije "
-"postavljena. Postavite lozinku kako bi ga zaštitili."
-
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:36
-msgid "To set the root password, open a terminal and type:"
-msgstr "Kako bi postavili lozinku, otvorite terminal i upišite:"
-
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:39
-msgid ""
-"Disclaimer: Proper security can only be achieved by restricting physical "
-"access to your computer and encrypting your data. BIOS passwords can be "
-"reset and your root account can be accessed without a password by booting "
-"another operating system."
-msgstr ""
-"Odricanje od odgovornosti: Pravilnu sigurnost možete postići samo "
-"ograničavanjem fizičkog pristupa vašem računalu i šifriranjem svojih "
-"podataka. BIOS lozinka se može poništiti što omogućuje pristup vašem "
-"korijenskom računu bez lozinke pokretanjem drugog operativnog sustava."
-
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:46
-msgid "I understand"
-msgstr "Razumijem"
-
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
 msgid "Add the XApp Status applet"
 msgstr "Dodajte XApp aplet stanja"
@@ -330,7 +282,7 @@ msgstr "Dodaj XApp aplet stanja na panel"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:16
 msgid "Install multimedia codecs"
-msgstr "Instaliraj multimedijske kôdeke"
+msgstr "Instalirajte multimedijske kôdeke"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:30
 msgid ""
@@ -346,7 +298,7 @@ msgstr "Instalacija multimedijskih kôdeka"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:17
 msgid "Set up the system restore utility"
-msgstr "Postavi alat obnove sustava"
+msgstr "Postavite alat obnove sustava"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:31
 msgid "Linux Mint provides a system restore utility called Timeshift."
@@ -426,16 +378,29 @@ msgstr "Sljedeći jezični paketi nedostaju za potpunu podršku vašeg jezika:"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:48
 msgid "Install the Language Packs"
-msgstr "Instaliraj jezične pakete"
+msgstr "Instalirajte jezične pakete"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:17
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:18
 msgid "Install hardware drivers"
-msgstr "Instaliraj hardverske upravljačke programe"
+msgstr "Instalirajte hardverske upravljačke programe"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:56
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:27
+msgid "Processor"
+msgstr "Procesor"
+
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:40
+msgid "Unknown"
+msgstr "Nepoznat"
+
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:44
+#, python-format
+msgid "%s (unknown)"
+msgstr "%s (nepoznat)"
+
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:88
 msgid "Hardware drivers are available for the following devices:"
 msgstr "Hardverski upravljački programi su dostupni za sljedeće uređaje:"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:63
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:95
 msgid "Launch the Driver Manager"
 msgstr "Pokreni Upravitelja upravljačkih programa"

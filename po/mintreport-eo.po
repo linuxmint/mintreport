@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2019-12-09 17:56+0000\n"
-"PO-Revision-Date: 2019-12-10 09:06+0000\n"
+"POT-Creation-Date: 2020-01-15 16:38+0000\n"
+"PO-Revision-Date: 2020-02-08 17:48+0000\n"
 "Last-Translator: Piet Coppens <Unknown>\n"
 "Language-Team: Esperanto <eo@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2020-01-06 10:08+0000\n"
-"X-Generator: Launchpad (build bceb5ef013b87ef7aafe0755545ceb689ca7ac60)\n"
+"X-Launchpad-Export-Date: 2020-05-11 11:04+0000\n"
+"X-Generator: Launchpad (build fbdff7602bd10fb883bf7e2ddcc7fd5a16f60398)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
 #: usr/lib/linuxmint/mintreport/app.py:236 generate_desktop_files:25
@@ -258,54 +258,6 @@ msgstr ""
 msgid "Crash reports"
 msgstr "Kraŝraportoj"
 
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:14
-msgid "Set the root password"
-msgstr "Agordi la ĉefuzantan pasvorton"
-
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:27
-msgid ""
-"The root account is locked by default in Linux Mint and its password is not "
-"set."
-msgstr ""
-"La ĉefuzanta konto estas defaŭlte ŝlosita en Linukso Minto kaj ĝia pasvorto "
-"ne estas agordita."
-
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:31
-msgid ""
-"Your boot menu's emergency mode does not require a password. Set the root "
-"password to protect it."
-msgstr ""
-"La kriza reĝimo de via praŝarga menuo ne postulas pasvorton. Agordu la "
-"ĉefuzantan pasvorton por ĝin protekti."
-
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:34
-msgid ""
-"Your boot menu's emergency mode requires a password which isn't set. Set the "
-"root password to fix it."
-msgstr ""
-"La kriza reĝimo de via praŝarga menuo postulas pasvorton, kiu ne estas "
-"agordita. Agordu la ĉefuzantan pasvorton por tion ripari."
-
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:36
-msgid "To set the root password, open a terminal and type:"
-msgstr "Por agordi la ĉefuzantan pasvorton malfermu terminalon kaj tajpu:"
-
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:39
-msgid ""
-"Disclaimer: Proper security can only be achieved by restricting physical "
-"access to your computer and encrypting your data. BIOS passwords can be "
-"reset and your root account can be accessed without a password by booting "
-"another operating system."
-msgstr ""
-"Malgarantio: Efektivigo de deca sekureco nur eblas per limigo de la fizika "
-"aliro al via komputilo kaj per ĉifrado de viaj datumoj. Eblas restarigi BIOS-"
-"pasvortojn kaj ankaŭ eblas aliri vian ĉefuzantan konton sen pasvorto per "
-"praŝargo de alia operaciumo."
-
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:46
-msgid "I understand"
-msgstr "Mi komprenas"
-
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
 msgid "Add the XApp Status applet"
 msgstr "Aldoni la aplikaĵeton pri XApa stato"
@@ -426,14 +378,27 @@ msgstr "La jenaj tradukpakoj mankas por dece subteni vian lingvon:"
 msgid "Install the Language Packs"
 msgstr "Instali la lingvajn pakojn"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:17
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:18
 msgid "Install hardware drivers"
 msgstr "Instali aparatar-pelilojn"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:56
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:27
+msgid "Processor"
+msgstr "Procesoro"
+
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:40
+msgid "Unknown"
+msgstr "Nekonata"
+
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:44
+#, python-format
+msgid "%s (unknown)"
+msgstr "%s (nekonata)"
+
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:88
 msgid "Hardware drivers are available for the following devices:"
 msgstr "Aparatar-peliloj disponeblas por jenaj aparatoj:"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:63
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:95
 msgid "Launch the Driver Manager"
 msgstr "Lanĉi la pelilan mastrumilon"

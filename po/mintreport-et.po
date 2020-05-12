@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2019-12-09 17:56+0000\n"
-"PO-Revision-Date: 2019-04-13 15:24+0000\n"
+"POT-Creation-Date: 2020-01-15 16:38+0000\n"
+"PO-Revision-Date: 2020-04-18 06:41+0000\n"
 "Last-Translator: mahfiaz <mahfiaz@gmail.com>\n"
 "Language-Team: Estonian <et@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2020-01-06 10:08+0000\n"
-"X-Generator: Launchpad (build bceb5ef013b87ef7aafe0755545ceb689ca7ac60)\n"
+"X-Launchpad-Export-Date: 2020-05-11 11:04+0000\n"
+"X-Generator: Launchpad (build fbdff7602bd10fb883bf7e2ddcc7fd5a16f60398)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
 #: usr/lib/linuxmint/mintreport/app.py:236 generate_desktop_files:25
@@ -27,29 +27,29 @@ msgstr "Süsteemi raportid"
 
 #: usr/lib/linuxmint/mintreport/app.py:194
 msgid "_File"
-msgstr ""
+msgstr "_Fail"
 
 #: usr/lib/linuxmint/mintreport/app.py:199
 msgid "Refresh"
-msgstr ""
+msgstr "Värskenda"
 
 #: usr/lib/linuxmint/mintreport/app.py:206
 msgid "Restore ignored reports"
-msgstr ""
+msgstr "Taasta ignoreeritud raportid"
 
 #: usr/lib/linuxmint/mintreport/app.py:210
 #: usr/lib/linuxmint/mintreport/tray.py:53
 msgid "Quit"
-msgstr ""
+msgstr "Välju"
 
 #: usr/lib/linuxmint/mintreport/app.py:221
 msgid "_Help"
-msgstr ""
+msgstr "A_bi"
 
 #: usr/lib/linuxmint/mintreport/app.py:227
 #: usr/lib/linuxmint/mintreport/app.py:234
 msgid "About"
-msgstr ""
+msgstr "Lähemalt"
 
 #: usr/lib/linuxmint/mintreport/app.py:278
 msgid "An error occurred while gathering the system information."
@@ -94,16 +94,16 @@ msgstr ""
 
 #: usr/lib/linuxmint/mintreport/app.py:382
 msgid "Ignore this problem"
-msgstr ""
+msgstr "Eira seda probleemi"
 
 #: usr/lib/linuxmint/mintreport/app.py:398
 msgid "Are you sure you want to ignore this problem?"
-msgstr ""
+msgstr "Kas tahad seda probleemi kindlasti eirata?"
 
 #: usr/lib/linuxmint/mintreport/app.py:399
 msgid ""
 "The problem will be permanently ignored and will no longer be visible."
-msgstr ""
+msgstr "Seda probleemi edaspidi eiratakse ning ei kuvata."
 
 #: usr/lib/linuxmint/mintreport/app.py:491
 #, python-format
@@ -141,11 +141,11 @@ msgstr ""
 
 #: usr/lib/linuxmint/mintreport/tray.py:49
 msgid "Show System Reports"
-msgstr ""
+msgstr "Süstemiraportite näitamine"
 
 #: usr/lib/linuxmint/mintreport/tray.py:127
 msgid "Some problems were detected which require your attention"
-msgstr ""
+msgstr "Tuvastati mõned probleemid, mis vajavad sinu tähelepanu"
 
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
@@ -158,15 +158,15 @@ msgstr "Veaotsingu tööriist"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:1
 msgid "Running system checks..."
-msgstr ""
+msgstr "Süsteemi kontrolli käivitamine..."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:2
 msgid "No problems were detected"
-msgstr ""
+msgstr "Ühtegi probleemi ei leitud"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:3
 msgid "Detected problems"
-msgstr ""
+msgstr "Leitud probleemid"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:4
 msgid "Copy"
@@ -258,163 +258,147 @@ msgstr ""
 msgid "Crash reports"
 msgstr "Krahhiraportid"
 
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:14
-msgid "Set the root password"
-msgstr ""
-
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:27
-msgid ""
-"The root account is locked by default in Linux Mint and its password is not "
-"set."
-msgstr ""
-
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:31
-msgid ""
-"Your boot menu's emergency mode does not require a password. Set the root "
-"password to protect it."
-msgstr ""
-
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:34
-msgid ""
-"Your boot menu's emergency mode requires a password which isn't set. Set the "
-"root password to fix it."
-msgstr ""
-
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:36
-msgid "To set the root password, open a terminal and type:"
-msgstr ""
-
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:39
-msgid ""
-"Disclaimer: Proper security can only be achieved by restricting physical "
-"access to your computer and encrypting your data. BIOS passwords can be "
-"reset and your root account can be accessed without a password by booting "
-"another operating system."
-msgstr ""
-
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:46
-msgid "I understand"
-msgstr ""
-
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
 msgid "Add the XApp Status applet"
-msgstr ""
+msgstr "XApp teavitusikoonide rakendi lisamine"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:37
 msgid ""
 "The XApp Status applet allows applications to provide a tray icon without "
 "rendering glitches and with support for HiDPI and symbolic icons."
 msgstr ""
+"XApp teavitusikoonide rakend lubab rakendustel kuvada kella kõrval ikoone "
+"ilma probleemideta ning toetab HiDPI ja sümbol-ikoone."
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:39
 msgid "Right-click the panel and choose 'Add to Panel'."
-msgstr ""
+msgstr "Tee paneelil paremklõps ja vali \"Lisa paneelile\"."
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:46
 msgid "Add the XApp Status applet to the panel"
-msgstr ""
+msgstr "Lisa XApp Status rakend paneelile"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:16
 msgid "Install multimedia codecs"
-msgstr ""
+msgstr "Multimedia koodeki paigaldamine"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:30
 msgid ""
 "Multimedia codecs are required to play some video formats and to properly "
 "render some websites."
 msgstr ""
+"Multimeedia koodekid on vajalikud mõnede videote ja veebilehtede õigesti "
+"näitamiseks."
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:36
 msgid "Install the Multimedia Codecs"
-msgstr ""
+msgstr "Multimeedia koodekite paigaldamine"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:17
 msgid "Set up the system restore utility"
-msgstr ""
+msgstr "Süsteemitaaste seadistamine"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:31
 msgid "Linux Mint provides a system restore utility called Timeshift."
-msgstr ""
+msgstr "Linux Mint pakub süsteemitaaste tööriista nimega Timeshift."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:32
 msgid ""
 "Thanks to Timeshift you can take snapshots of the system, either manually or "
 "automatically."
 msgstr ""
+"Tänu Timeshiftile saad teha süsteemist tõmmiseid nii käsitsi kui "
+"automaatselt."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:33
 msgid ""
 "If something goes wrong you can then restore your operating system from a "
 "previously saved snapshot."
 msgstr ""
+"Kui miski läheb valesti, saad operatsioonisüsteemi taastada varasemalt "
+"salvestatud tõmmisest."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:39
 msgid "Launch Timeshift"
-msgstr ""
+msgstr "Käivita Timeshift"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:17
 msgid "A new version of Linux Mint is available"
-msgstr ""
+msgstr "Linux Minti uus versioon on saadaval"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:47
 #, python-format
 msgid "Visit %s for the latest announcements."
-msgstr ""
+msgstr "Viimaste teadete nägemiseks külasta %s lehte."
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:53
 #, python-format
 msgid "Upgrade to %s"
-msgstr ""
+msgstr "Uuenda versioonile %s"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:49
 msgid "Your version of Linux Mint will soon reach End-Of-Life (EOL)"
 msgstr ""
+"Sinu kasutatav versioon Linux Mintist jõuab varsti elukaare lõppu (EOL)"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:50
 #, python-brace-format
 msgid "It will stop receiving support and updates in a day."
 msgid_plural "It will stop receiving support and updates in {num_days} days."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Sellele ei pakuta enam uuendusi alates homsest."
+msgstr[1] "Sellele ei pakuta enam uuendusi {num_days} päeva pärast."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:54
 msgid "Your version of Linux Mint is no longer supported"
-msgstr ""
+msgstr "Sinu kasutatav Linux Minti versioon ei ole enam toetatud"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:55
 #, python-brace-format
 msgid "It reached End-Of-Life (EOL) yesterday."
 msgid_plural "It reached End-Of-Life (EOL) {num_days} days ago."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Elukaare lõpp (EOL) oli eile."
+msgstr[1] "Elukaare lõpp (EOL) oli {num_days} päeva tagasi."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:66
 #, python-format
 msgid "Visit %s to find information about newer releases."
-msgstr ""
+msgstr "Külasta %s lehte, et saada infot uuemate väljalasete kohta."
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:26
 msgid "Install language packs"
-msgstr ""
+msgstr "Paigalda keelepakid"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:41
 msgid ""
 "The following localization packages are missing to properly support your "
 "language:"
-msgstr ""
+msgstr "Järgnevad lokaliseerimise pakid puuduvad sinu keele õigest toest:"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:48
 msgid "Install the Language Packs"
-msgstr ""
+msgstr "Paigalda keelepakid"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:17
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:18
 msgid "Install hardware drivers"
-msgstr ""
+msgstr "Paigalda riistvara draiverid"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:56
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:27
+msgid "Processor"
+msgstr "Protsessor"
+
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:40
+msgid "Unknown"
+msgstr "Tundmatu"
+
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:44
+#, python-format
+msgid "%s (unknown)"
+msgstr "%s (tundmatu)"
+
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:88
 msgid "Hardware drivers are available for the following devices:"
-msgstr ""
+msgstr "Riistvara draiverid on saadaval järgmistele seadmetele:"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:63
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:95
 msgid "Launch the Driver Manager"
-msgstr ""
+msgstr "Käivita draiverite haldur"

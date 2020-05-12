@@ -7,16 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2019-12-09 17:56+0000\n"
-"PO-Revision-Date: 2019-04-24 16:12+0000\n"
-"Last-Translator: Will Peix <Unknown>\n"
+"POT-Creation-Date: 2020-01-15 16:38+0000\n"
+"PO-Revision-Date: 2020-04-23 16:07+0000\n"
+"Last-Translator: H.G. <Unknown>\n"
 "Language-Team: Chinese (Traditional) <zh_TW@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2020-01-06 10:08+0000\n"
-"X-Generator: Launchpad (build bceb5ef013b87ef7aafe0755545ceb689ca7ac60)\n"
+"X-Launchpad-Export-Date: 2020-05-11 11:04+0000\n"
+"X-Generator: Launchpad (build fbdff7602bd10fb883bf7e2ddcc7fd5a16f60398)\n"
+"Language: zh_TW\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
 #: usr/lib/linuxmint/mintreport/app.py:236 generate_desktop_files:25
@@ -27,29 +28,29 @@ msgstr "系統報告"
 
 #: usr/lib/linuxmint/mintreport/app.py:194
 msgid "_File"
-msgstr ""
+msgstr "檔案(F)"
 
 #: usr/lib/linuxmint/mintreport/app.py:199
 msgid "Refresh"
-msgstr ""
+msgstr "重新整理"
 
 #: usr/lib/linuxmint/mintreport/app.py:206
 msgid "Restore ignored reports"
-msgstr ""
+msgstr "還原被忽略的報告"
 
 #: usr/lib/linuxmint/mintreport/app.py:210
 #: usr/lib/linuxmint/mintreport/tray.py:53
 msgid "Quit"
-msgstr ""
+msgstr "退出"
 
 #: usr/lib/linuxmint/mintreport/app.py:221
 msgid "_Help"
-msgstr ""
+msgstr "協助(H)"
 
 #: usr/lib/linuxmint/mintreport/app.py:227
 #: usr/lib/linuxmint/mintreport/app.py:234
 msgid "About"
-msgstr ""
+msgstr "關於"
 
 #: usr/lib/linuxmint/mintreport/app.py:278
 msgid "An error occurred while gathering the system information."
@@ -57,47 +58,47 @@ msgstr "收集系統資訊時發生錯誤。"
 
 #: usr/lib/linuxmint/mintreport/app.py:292
 msgid "System information copied"
-msgstr ""
+msgstr "已複製系統資訊"
 
 #: usr/lib/linuxmint/mintreport/app.py:292
 msgid ""
 "Your system information was copied into your clipboard so you can paste it "
 "on the forums."
-msgstr ""
+msgstr "您的系統資訊已經複製到您的剪貼簿，以便於您在論壇分享。"
 
 #: usr/lib/linuxmint/mintreport/app.py:301
 msgid "System information uploaded"
-msgstr ""
+msgstr "已上傳系統資訊"
 
 #: usr/lib/linuxmint/mintreport/app.py:301
 #, python-format
 msgid ""
 "Your system information was uploaded to %s. This link was placed in your "
 "clipboard so you can paste it on IRC."
-msgstr ""
+msgstr "您的系統資訊已上傳至 %s ，此連結已經複製到您的剪貼簿以便於您張貼於 IRC 聊天頻道。"
 
 #: usr/lib/linuxmint/mintreport/app.py:303
 msgid "An error occurred while uploading the system information"
-msgstr ""
+msgstr "上傳系統資訊時發生錯誤"
 
 #: usr/lib/linuxmint/mintreport/app.py:303
 msgid ""
 "Copy and paste the system information manually into a pastebin site like "
 "https://pastebin.com and share the link on IRC."
-msgstr "請手動將系統資訊複製並貼到一個 pastebin 網站，例如： https://pastebin.com，並在 IRC 上共享連結。"
+msgstr "請手動將系統資訊複製並貼到一個線上張貼網站 (如 https://pastebin.com) 並在 IRC 上共享連結。"
 
 #: usr/lib/linuxmint/mintreport/app.py:382
 msgid "Ignore this problem"
-msgstr ""
+msgstr "忽略此問題"
 
 #: usr/lib/linuxmint/mintreport/app.py:398
 msgid "Are you sure you want to ignore this problem?"
-msgstr ""
+msgstr "您確定要忽略此問題嗎？"
 
 #: usr/lib/linuxmint/mintreport/app.py:399
 msgid ""
 "The problem will be permanently ignored and will no longer be visible."
-msgstr ""
+msgstr "此問題將被永久忽略且不再顯示。"
 
 #: usr/lib/linuxmint/mintreport/app.py:491
 #, python-format
@@ -116,7 +117,7 @@ msgid ""
 "reinstall it."
 msgstr ""
 "找不到提供 %s 的軟體包。\n"
-"如果您想要生成此崩潰報告的堆疊追蹤資訊，請重新安裝該軟體。"
+"如果您想要產生此當機報告的堆疊追蹤資訊，請重新安裝該軟體。"
 
 #: usr/lib/linuxmint/mintreport/app.py:533
 msgid ""
@@ -132,16 +133,16 @@ msgstr ""
 
 #: usr/lib/linuxmint/mintreport/tray.py:49
 msgid "Show System Reports"
-msgstr ""
+msgstr "顯示系統報告"
 
 #: usr/lib/linuxmint/mintreport/tray.py:127
 msgid "Some problems were detected which require your attention"
-msgstr ""
+msgstr "偵測到一些需要您注意的問題"
 
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
 msgid "Troubleshoot problems"
-msgstr "排解問題"
+msgstr "疑難排解"
 
 #: generate_desktop_files:53
 msgid "Troubleshooting Tool"
@@ -149,15 +150,15 @@ msgstr "疑難排解工具"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:1
 msgid "Running system checks..."
-msgstr ""
+msgstr "執行系統檢查..."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:2
 msgid "No problems were detected"
-msgstr ""
+msgstr "沒有偵測到任何問題"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:3
 msgid "Detected problems"
-msgstr ""
+msgstr "發現問題"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:4
 msgid "Copy"
@@ -175,7 +176,7 @@ msgstr "上傳"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:7
 msgid "Upload to a pastebin service (no personal information included)"
-msgstr ""
+msgstr "上傳至線上張貼服務 (不含個人資料)"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:8
 msgid "System information"
@@ -188,11 +189,11 @@ msgstr "沒有存在的當機報告"
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:10
 msgid ""
 "To enable crash reporting, install systemd-coredump and reboot your computer."
-msgstr ""
+msgstr "欲啟用當機報告功能，請安裝 systemd-coredump 並重開機您的電腦。"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:11
 msgid "Crash reports:"
-msgstr "崩潰報告："
+msgstr "當機報告："
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:12
 msgid "Stack trace:"
@@ -203,7 +204,7 @@ msgid ""
 "When seeking help, check for existing bug reports, pastebin the trace, share "
 "crash.tar.gz (from Local Files) and explain how to reproduce the crash."
 msgstr ""
-"當查詢幫助時，請檢查是否存在既有的報告、將追蹤資料貼到 pastebin、分享 crash.tar.gz（取自本機檔案）、解釋如何重現崩潰問題的步驟等。"
+"當查詢幫助時，請檢查是否存在既有的報告、將追蹤資料貼到 pastebin、分享 crash.tar.gz（取自本機檔案）、解釋如何重現當機問題的步驟等。"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:14
 msgid "Local Files"
@@ -238,49 +239,11 @@ msgstr "開發者需要知道程式碼的哪裡造成失敗，或是知道該怎
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:21
 msgid "Crash reports"
-msgstr "崩潰報告"
-
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:14
-msgid "Set the root password"
-msgstr ""
-
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:27
-msgid ""
-"The root account is locked by default in Linux Mint and its password is not "
-"set."
-msgstr ""
-
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:31
-msgid ""
-"Your boot menu's emergency mode does not require a password. Set the root "
-"password to protect it."
-msgstr ""
-
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:34
-msgid ""
-"Your boot menu's emergency mode requires a password which isn't set. Set the "
-"root password to fix it."
-msgstr ""
-
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:36
-msgid "To set the root password, open a terminal and type:"
-msgstr ""
-
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:39
-msgid ""
-"Disclaimer: Proper security can only be achieved by restricting physical "
-"access to your computer and encrypting your data. BIOS passwords can be "
-"reset and your root account can be accessed without a password by booting "
-"another operating system."
-msgstr ""
-
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:46
-msgid "I understand"
-msgstr ""
+msgstr "當機報告"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
 msgid "Add the XApp Status applet"
-msgstr ""
+msgstr "新增 XApp狀態小程式"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:37
 msgid ""
@@ -290,67 +253,67 @@ msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:39
 msgid "Right-click the panel and choose 'Add to Panel'."
-msgstr ""
+msgstr "在面板上按下右鍵，並選擇「新增至面板」。"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:46
 msgid "Add the XApp Status applet to the panel"
-msgstr ""
+msgstr "將 XApp狀態小程式 新增至面板"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:16
 msgid "Install multimedia codecs"
-msgstr ""
+msgstr "安裝多媒體編解碼器"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:30
 msgid ""
 "Multimedia codecs are required to play some video formats and to properly "
 "render some websites."
-msgstr ""
+msgstr "有些影片、網站需要多媒體解碼器才能正確播放、顯示。"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:36
 msgid "Install the Multimedia Codecs"
-msgstr ""
+msgstr "安裝多媒體解碼器"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:17
 msgid "Set up the system restore utility"
-msgstr ""
+msgstr "設定系統還原工具"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:31
 msgid "Linux Mint provides a system restore utility called Timeshift."
-msgstr ""
+msgstr "Linux Mint 提供名為 Timeshift 的系統還原工具。"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:32
 msgid ""
 "Thanks to Timeshift you can take snapshots of the system, either manually or "
 "automatically."
-msgstr ""
+msgstr "有了 Timeshift，您將可以手動、自動方式擷取系統備份快照。"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:33
 msgid ""
 "If something goes wrong you can then restore your operating system from a "
 "previously saved snapshot."
-msgstr ""
+msgstr "您可以在出現問題時將作業系統還原至先前擷取的系統備份快照。"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:39
 msgid "Launch Timeshift"
-msgstr ""
+msgstr "啟動 Timeshift"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:17
 msgid "A new version of Linux Mint is available"
-msgstr ""
+msgstr "有 Linux Mint 系統更新"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:47
 #, python-format
 msgid "Visit %s for the latest announcements."
-msgstr ""
+msgstr "請造訪 %s 以閱讀最新宣佈事項。"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:53
 #, python-format
 msgid "Upgrade to %s"
-msgstr ""
+msgstr "升級至 %s"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:49
 msgid "Your version of Linux Mint will soon reach End-Of-Life (EOL)"
-msgstr ""
+msgstr "您目前的 Linux Mint 版本即將結束其生命週期"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:50
 #, python-brace-format
@@ -361,7 +324,7 @@ msgstr[1] ""
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:54
 msgid "Your version of Linux Mint is no longer supported"
-msgstr ""
+msgstr "您目前的 Linux Mint 版本將不再受到支援"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:55
 #, python-brace-format
@@ -373,11 +336,11 @@ msgstr[1] ""
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:66
 #, python-format
 msgid "Visit %s to find information about newer releases."
-msgstr ""
+msgstr "請造訪 %s 以獲取更多有關新版本的資訊。"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:26
 msgid "Install language packs"
-msgstr ""
+msgstr "安裝語言包"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:41
 msgid ""
@@ -387,16 +350,29 @@ msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:48
 msgid "Install the Language Packs"
-msgstr ""
+msgstr "安裝語言包"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:17
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:18
 msgid "Install hardware drivers"
-msgstr ""
+msgstr "安裝硬體驅動程式"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:56
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:27
+msgid "Processor"
+msgstr "處理器"
+
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:40
+msgid "Unknown"
+msgstr "不明"
+
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:44
+#, python-format
+msgid "%s (unknown)"
+msgstr "%s (不明)"
+
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:88
 msgid "Hardware drivers are available for the following devices:"
-msgstr ""
+msgstr "下列的裝置有可用的硬體驅動程式："
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:63
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:95
 msgid "Launch the Driver Manager"
-msgstr ""
+msgstr "啟動驅動程式管理員"

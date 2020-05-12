@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2019-12-09 17:56+0000\n"
-"PO-Revision-Date: 2019-12-09 18:01+0000\n"
-"Last-Translator: Clement Lefebvre <root@linuxmint.com>\n"
+"POT-Creation-Date: 2020-01-15 16:38+0000\n"
+"PO-Revision-Date: 2020-01-16 11:13+0000\n"
+"Last-Translator: Sérgio Marques <Unknown>\n"
 "Language-Team: Portuguese <pt@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2020-01-06 10:08+0000\n"
-"X-Generator: Launchpad (build bceb5ef013b87ef7aafe0755545ceb689ca7ac60)\n"
+"X-Launchpad-Export-Date: 2020-05-11 11:04+0000\n"
+"X-Generator: Launchpad (build fbdff7602bd10fb883bf7e2ddcc7fd5a16f60398)\n"
 "Language: pt\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
@@ -260,55 +260,6 @@ msgstr ""
 msgid "Crash reports"
 msgstr "Relatórios de erro"
 
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:14
-msgid "Set the root password"
-msgstr "Defina a palavra-passe do root"
-
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:27
-msgid ""
-"The root account is locked by default in Linux Mint and its password is not "
-"set."
-msgstr ""
-"Por definição, a conta root está bloqueada no Linux Mint e a sua palavra-"
-"passe não está definida."
-
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:31
-msgid ""
-"Your boot menu's emergency mode does not require a password. Set the root "
-"password to protect it."
-msgstr ""
-"O modo de emergência do seu menu de arranque não requer uma palavra-passe. "
-"Defina a palavra-passe root para o proteger."
-
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:34
-msgid ""
-"Your boot menu's emergency mode requires a password which isn't set. Set the "
-"root password to fix it."
-msgstr ""
-"O modo de emergência do seu menu de arranque requer uma palavra-passe. "
-"Defina a palavra-passe root para o proteger."
-
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:36
-msgid "To set the root password, open a terminal and type:"
-msgstr "Para definir a palavra-passe root, abra um terminal e escreva:"
-
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:39
-msgid ""
-"Disclaimer: Proper security can only be achieved by restricting physical "
-"access to your computer and encrypting your data. BIOS passwords can be "
-"reset and your root account can be accessed without a password by booting "
-"another operating system."
-msgstr ""
-"Isenção de responsabilidade: a segurança adequada só pode ser alcançada "
-"restringindo o acesso físico ao seu computador e cifrando os seus dados. As "
-"palavras-passe da BIOS podem ser redefinidas e sua conta root pode ser "
-"acedida sem uma palavra-passe bastando, para tal, arrancar outro sistema "
-"operativo, seja por USB ou por LiveCD."
-
-#: usr/share/linuxmint/mintreport/reports/040_root-password-not-set/MintReportInfo.py:46
-msgid "I understand"
-msgstr "Percebi"
-
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
 msgid "Add the XApp Status applet"
 msgstr "Adicionar mini-aplicação de estado XApp"
@@ -354,36 +305,36 @@ msgstr "Configurar utilitário de restauro do sistema"
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:31
 msgid "Linux Mint provides a system restore utility called Timeshift."
 msgstr ""
-"O Linux Mint fornece um utilitário de restauro do sistema chamado Timeshift."
+"O Linux Mint disponibiliza um utilitário de restauro com o nome Timeshift."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:32
 msgid ""
 "Thanks to Timeshift you can take snapshots of the system, either manually or "
 "automatically."
 msgstr ""
-"Graças ao Timeshift, pode criar snapshots do sistema, manual ou "
-"automaticamente."
+"Graças ao Timeshift, pode criar imagens do sistema de forma manual ou "
+"automática."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:33
 msgid ""
 "If something goes wrong you can then restore your operating system from a "
 "previously saved snapshot."
 msgstr ""
-"Se algo de errado acontecer você pode então restaurar o seu sistema "
-"operativo a partir de um snapshot guardado anteriormente."
+"Se algo errado acontecer, pode restaurar o seu sistema operativo a partir de "
+"um imagem guardada anteriormente."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:39
 msgid "Launch Timeshift"
-msgstr "Iniciar o Timeshift"
+msgstr "Iniciar Timeshift"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:17
 msgid "A new version of Linux Mint is available"
-msgstr "Uma nova versão do Linux Mint está disponível"
+msgstr "Está disponível uma nova versão do Linux Mint"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:47
 #, python-format
 msgid "Visit %s for the latest announcements."
-msgstr "Visite o %s para os últimos anúncios."
+msgstr "Aceda a %s para ver os últimos anúncios."
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:53
 #, python-format
@@ -392,31 +343,33 @@ msgstr "Atualizar para %s"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:49
 msgid "Your version of Linux Mint will soon reach End-Of-Life (EOL)"
-msgstr "A sua versão do Linux Mint em breve chegará ao Fim de Vida (EOL)"
+msgstr ""
+"Brevemente, a sua versão do Linux Mint  deixará de ser suportada (EOL)"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:50
 #, python-brace-format
 msgid "It will stop receiving support and updates in a day."
 msgid_plural "It will stop receiving support and updates in {num_days} days."
-msgstr[0] "Vai parar de receber suporte e atualizações num dia."
-msgstr[1] "Deixará de receber suporte e atualizações em {num_days} dias."
+msgstr[0] "Deixará de receber suporte e atualizações dentro de um dia."
+msgstr[1] ""
+"Deixará de receber suporte e atualizações dentro de {num_days} dias."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:54
 msgid "Your version of Linux Mint is no longer supported"
-msgstr "A sua versão do Linux Mint não é mais suportada"
+msgstr "A sua versão do Linux Mint já não é suportada"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:55
 #, python-brace-format
 msgid "It reached End-Of-Life (EOL) yesterday."
 msgid_plural "It reached End-Of-Life (EOL) {num_days} days ago."
 msgstr[0] "Chegou ao fim da vida (EOL) ontem."
-msgstr[1] "Chegou ao fim da vida (EOL) há {num_days}  dias atrás."
+msgstr[1] "Chegou ao fim da vida (EOL) há {num_days}  dias."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:66
 #, python-format
 msgid "Visit %s to find information about newer releases."
 msgstr ""
-"Visite o %s para encontrar informações sobre lançamentos mais recentes."
+"Aceda a %s para encontrar informações sobre as versões mais recentes."
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:26
 msgid "Install language packs"
@@ -427,22 +380,35 @@ msgid ""
 "The following localization packages are missing to properly support your "
 "language:"
 msgstr ""
-"Os seguintes pacotes de localização estão em falta para suportar "
-"corretamente o seu idioma:"
+"Os pacotes de idioma abaixo indicados estão em falta para poder mostrar "
+"corretamente o sistema no seu idioma:"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:48
 msgid "Install the Language Packs"
-msgstr "Instalar os Pacotes de Idiomas"
+msgstr "Instalar os pacotes de idioma"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:17
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:18
 msgid "Install hardware drivers"
-msgstr "Instalar drivers de hardware"
+msgstr "Instalar controladores de hardware"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:56
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:27
+msgid "Processor"
+msgstr "Processador"
+
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:40
+msgid "Unknown"
+msgstr "Desconhecido"
+
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:44
+#, python-format
+msgid "%s (unknown)"
+msgstr "%s (desconhecido)"
+
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:88
 msgid "Hardware drivers are available for the following devices:"
 msgstr ""
-"Os drivers de hardware estão disponíveis para os seguintes dispositivos:"
+"Estão disponíveis os seguintes controladores para os seus dispositivos:"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:63
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:95
 msgid "Launch the Driver Manager"
-msgstr "Iniciar o Driver Manager"
+msgstr "Iniciar gestor de controladores"
