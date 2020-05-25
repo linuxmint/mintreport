@@ -95,7 +95,7 @@ class MyApplication(Gtk.Application):
             print("Already running!")
 
     def load_info(self):
-        pertinent_reports = []
+        found_pertinent_report = False
         if os.path.exists(INFO_DIR):
             ignored_paths = self.settings.get_strv("ignored-reports")
             for dir_name in sorted(os.listdir(INFO_DIR)):
@@ -105,26 +105,17 @@ class MyApplication(Gtk.Application):
                     try:
                         report = InfoReportContainer(uuid, path)
                         if report.instance.is_pertinent():
-                            pertinent_reports.append(report)
-                            if len(pertinent_reports) > 1:
-                                # If we detect more than 1 report, we don't need
-                                # to go further, we'll show that multiple
-                                # reports are available..
-                                break
+                            found_pertinent_report = True
+                            break
                     except Exception as e:
                         print("Failed to load report %s: \n%s\n" % (dir_name, e))
 
-        if len(pertinent_reports) == 0:
-            self.status_icon.set_visible(False)
-        elif len(pertinent_reports) == 1:
-            self.status_icon.set_visible(True)
-            report = pertinent_reports[0]
-            self.status_icon.set_icon_name(report.instance.icon)
-            self.status_icon.set_tooltip_text(report.instance.title)
-        else:
+        if found_pertinent_report:
             self.status_icon.set_visible(True)
             self.status_icon.set_icon_name("dialog-warning-symbolic")
             self.status_icon.set_tooltip_text(_("Some problems were detected which require your attention"))
+        else:
+            self.status_icon.set_visible(False)
 
         return True
 
