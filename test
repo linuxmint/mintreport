@@ -1,5 +1,12 @@
 #!/bin/bash
 sudo rm -rf /usr/lib/linuxmint/mintreport
-sudo rm -rf /usr/share/linuxmint/mintreport
+sudo rm -rf /usr/share/linuxmint/mintreport/reports/900_drivers
+sudo rm -rf /usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup
+sudo rm -rf /usr/share/linuxmint/mintreport/reports/070_new-release
+sudo rm -rf /usr/share/linuxmint/mintreport/reports/500_install-language-packs
+sudo rm -rf /usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing
+sudo rm -rf /usr/share/linuxmint/mintreport/reports/050_install-media-codecs
+sudo rm -rf /usr/share/linuxmint/mintreport/reports/080_release-eol
+sudo rm -rf /usr/share/linuxmint/mintreport/mintreport.ui
 sudo cp -R usr /
 mintreport
