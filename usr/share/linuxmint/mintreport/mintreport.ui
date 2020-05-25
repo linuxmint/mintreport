@@ -266,7 +266,7 @@
                   </object>
                   <packing>
                     <property name="name">page1</property>
-                    <property name="title" translatable="yes">Detected problems</property>
+                    <property name="title" translatable="yes">System reports</property>
                     <property name="icon_name">mintreport-symbolic</property>
                   </packing>
                 </child>

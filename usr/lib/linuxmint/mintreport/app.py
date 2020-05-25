@@ -388,7 +388,7 @@ class MintReportWindow():
                     button.get_style_context().add_class(action.style)
                 self.info_button_box.add(button)
             if report.instance.has_ignore_button:
-                button = Gtk.Button(label=_("Ignore this problem"))
+                button = Gtk.Button(label=_("Ignore this report"))
                 button.connect("clicked", self.on_ignore_button_clicked)
                 self.info_button_box.add(button)
             self.builder.get_object("info_box").show_all()
@@ -404,8 +404,8 @@ class MintReportWindow():
             model, iter = self.treeview_info.get_selection().get_selected()
             if iter is not None:
                 report = model.get_value(iter, COL_INFO_REPORT)
-                dialog = Gtk.MessageDialog(self.window, 0, Gtk.MessageType.QUESTION, Gtk.ButtonsType.OK_CANCEL, _("Are you sure you want to ignore this problem?"))
-                dialog.format_secondary_text(_("The problem will be permanently ignored and will no longer be visible."))
+                dialog = Gtk.MessageDialog(self.window, 0, Gtk.MessageType.QUESTION, Gtk.ButtonsType.OK_CANCEL, _("Are you sure you want to ignore this report?"))
+                dialog.format_secondary_text(_("The report will be permanently ignored and will no longer be visible."))
                 response = dialog.run()
                 dialog.destroy()
                 if response == Gtk.ResponseType.OK:

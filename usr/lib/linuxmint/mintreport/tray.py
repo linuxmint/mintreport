@@ -113,7 +113,7 @@ class MyApplication(Gtk.Application):
         if found_pertinent_report:
             self.status_icon.set_visible(True)
             self.status_icon.set_icon_name("mintreport-symbolic")
-            self.status_icon.set_tooltip_text(_("Some problems were detected which require your attention"))
+            self.status_icon.set_tooltip_text(_("Some system reports require your attention"))
         else:
             self.status_icon.set_visible(False)
 
