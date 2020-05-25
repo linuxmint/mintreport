@@ -15,7 +15,7 @@ class Report(InfoReport):
         gettext.install("mintreport", "/usr/share/locale", names="ngettext")
 
         self.title = _("Add the XApp Status applet")
-        self.icon = "dialog-warning-symbolic"
+        self.icon = "mintreport-symbolic"
         self.has_ignore_button = True
         self.de = os.getenv("XDG_CURRENT_DESKTOP")
 

@@ -267,7 +267,7 @@
                   <packing>
                     <property name="name">page1</property>
                     <property name="title" translatable="yes">Detected problems</property>
-                    <property name="icon_name">dialog-warning-symbolic</property>
+                    <property name="icon_name">mintreport-symbolic</property>
                   </packing>
                 </child>
                 <child>
