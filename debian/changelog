@@ -1,3 +1,14 @@
+mintreport (1.1.8) ulyana; urgency=medium
+
+  * Tray: Always show the same icon
+  * test: Don't remove reports from other packages
+  * Add a symbolic icon for mintreport
+  * Remove unused files
+  * Rephrase problem -> report
+  * l10n: Update POT
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 25 May 2020 14:58:11 +0100
+
 mintreport (1.1.7) ulyana; urgency=medium
 
   [ theshoals ]
