@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-25 14:55+0100\n"
+"POT-Creation-Date: 2020-06-19 12:06+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -326,6 +326,22 @@ msgstr[1] ""
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:66
 #, python-format
 msgid "Visit %s to find information about newer releases."
+msgstr ""
+
+#: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:17
+msgid "Remove conflicting indicators"
+msgstr ""
+
+#: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:37
+msgid "The following packages prevent tray icons from working properly:"
+msgstr ""
+
+#: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:39
+msgid "Note: You will need to log out after removing them."
+msgstr ""
+
+#: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:45
+msgid "Remove the conflicting packages."
 msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:26
