@@ -14,44 +14,42 @@ class Report(InfoReport):
 
         gettext.install("mintreport", "/usr/share/locale", names="ngettext")
 
-        self.title = _("Remove conflicting status icon handler")
+        self.title = _("Remove conflicting indicators")
         self.icon = "mintreport-symbolic"
         self.has_ignore_button = True
-        self.de = os.getenv("XDG_CURRENT_DESKTOP")
         self.indicator_path = None
         self.indicator_pkgname = None
+        self.indicators = []
+        self.indicators.append(["indicator-application", "/usr/lib/systemd/user/indicator-application.service"])
+        self.indicators.append(["ayatana-indicator-application", "/usr/lib/systemd/user/ayatana-indicator-application.service"])
+        self.packages = []
 
     def is_pertinent(self):
         # Defines whether this report should show up
-
-        for pkgset in (["indicator-application", "/usr/lib/systemd/user/indicator-application.service"],
-                       ["ayatana-indicator-application", "/usr/lib/systemd/user/ayatana-indicator-application.service"]):
-            self.indicator_pkgname, self.indicator_path = pkgset
-            if os.path.exists(self.indicator_path):
-                return True
-
-        return False
+        for name, path in self.indicators:
+            if os.path.exists(path):
+                self.packages.append(name)
+        return (len(self.packages) > 0)
 
     def get_descriptions(self):
         # Return the descriptions
         descriptions = []
-        descriptions.append(_("There is a service installed that could be preventing the display of some "  \
-                              "status icons. It needs to be removed to restore proper functionality " \
-                              "to the panel's status notification applet."))
-        descriptions.append(_("\nYou should log out and back in after this has completed."))
+        descriptions.append(_("The following packages prevent tray icons from working properly:"))
+        descriptions.append("\n".join(self.packages))
+        descriptions.append(_("Note: You will need to log out after removing them."))
         return descriptions
 
     def get_actions(self):
         # Return available actions
         actions = []
-        action = InfoReportAction(label=_("Uninstall the '%s' package.") % self.indicator_pkgname,
+        action = InfoReportAction(label=_("Remove the conflicting packages."),
                                   callback=self.callback)
         action.set_style(Gtk.STYLE_CLASS_SUGGESTED_ACTION)
         actions.append(action)
         return actions
 
     def callback(self, data):
-        subprocess.run(["mint-remove-application", self.indicator_path])
+        self.remove_packages(self.packages)
         return True
 
 if __name__ == "__main__":
