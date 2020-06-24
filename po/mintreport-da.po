@@ -7,59 +7,59 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2020-01-15 16:38+0000\n"
-"PO-Revision-Date: 2020-01-16 17:50+0000\n"
+"POT-Creation-Date: 2020-06-19 12:06+0100\n"
+"PO-Revision-Date: 2020-06-20 09:16+0000\n"
 "Last-Translator: Alan Mortensen <alanmortensen.am@gmail.com>\n"
 "Language-Team: Danish <da@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2020-05-11 11:04+0000\n"
-"X-Generator: Launchpad (build fbdff7602bd10fb883bf7e2ddcc7fd5a16f60398)\n"
+"X-Launchpad-Export-Date: 2020-06-24 10:12+0000\n"
+"X-Generator: Launchpad (build 1cbd0aa39df153c901321817f9b57cf3f232b507)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
-#: usr/lib/linuxmint/mintreport/app.py:236 generate_desktop_files:25
+#: usr/lib/linuxmint/mintreport/app.py:245 generate_desktop_files:25
 #: generate_desktop_files:39 generate_desktop_files:53
 #: generate_desktop_files:67
 msgid "System Reports"
 msgstr "Systemrapporter"
 
-#: usr/lib/linuxmint/mintreport/app.py:194
+#: usr/lib/linuxmint/mintreport/app.py:193
 msgid "_File"
 msgstr "_Filer"
 
-#: usr/lib/linuxmint/mintreport/app.py:199
+#: usr/lib/linuxmint/mintreport/app.py:198
 msgid "Refresh"
 msgstr "Opdatér"
 
-#: usr/lib/linuxmint/mintreport/app.py:206
+#: usr/lib/linuxmint/mintreport/app.py:205
 msgid "Restore ignored reports"
 msgstr "Gendan ignorerede rapporter"
 
-#: usr/lib/linuxmint/mintreport/app.py:210
+#: usr/lib/linuxmint/mintreport/app.py:209
 #: usr/lib/linuxmint/mintreport/tray.py:53
 msgid "Quit"
 msgstr "Afslut"
 
-#: usr/lib/linuxmint/mintreport/app.py:221
+#: usr/lib/linuxmint/mintreport/app.py:220
 msgid "_Help"
 msgstr "_Hjælp"
 
-#: usr/lib/linuxmint/mintreport/app.py:227
-#: usr/lib/linuxmint/mintreport/app.py:234
+#: usr/lib/linuxmint/mintreport/app.py:226
+#: usr/lib/linuxmint/mintreport/app.py:243
 msgid "About"
 msgstr "Om"
 
-#: usr/lib/linuxmint/mintreport/app.py:278
+#: usr/lib/linuxmint/mintreport/app.py:287
 msgid "An error occurred while gathering the system information."
 msgstr "Der opstod en fejl under indsamlingen af systeminformation."
 
-#: usr/lib/linuxmint/mintreport/app.py:292
+#: usr/lib/linuxmint/mintreport/app.py:301
 msgid "System information copied"
 msgstr "Systeminformationen blev kopieret"
 
-#: usr/lib/linuxmint/mintreport/app.py:292
+#: usr/lib/linuxmint/mintreport/app.py:301
 msgid ""
 "Your system information was copied into your clipboard so you can paste it "
 "on the forums."
@@ -67,11 +67,11 @@ msgstr ""
 "Din systeminformation blev kopieret til udklipsholderen, så du kan indsætte "
 "det i foraene."
 
-#: usr/lib/linuxmint/mintreport/app.py:301
+#: usr/lib/linuxmint/mintreport/app.py:310
 msgid "System information uploaded"
 msgstr "Systeminformationen blev uploadet"
 
-#: usr/lib/linuxmint/mintreport/app.py:301
+#: usr/lib/linuxmint/mintreport/app.py:310
 #, python-format
 msgid ""
 "Your system information was uploaded to %s. This link was placed in your "
@@ -80,11 +80,11 @@ msgstr ""
 "Din systeminformation blev uploadet til %s. Linket blev gemt i "
 "udklipsholderen, så du kan indsætte det på IRC."
 
-#: usr/lib/linuxmint/mintreport/app.py:303
+#: usr/lib/linuxmint/mintreport/app.py:312
 msgid "An error occurred while uploading the system information"
 msgstr "Der opstod en fejl, da systeminformationen skulle uploades."
 
-#: usr/lib/linuxmint/mintreport/app.py:303
+#: usr/lib/linuxmint/mintreport/app.py:312
 msgid ""
 "Copy and paste the system information manually into a pastebin site like "
 "https://pastebin.com and share the link on IRC."
@@ -92,21 +92,20 @@ msgstr ""
 "Kopiér og indsæt manuelt systeminformationen på et pastebinsite som f.eks. "
 "https://pastebin.com og del linket på IRC."
 
-#: usr/lib/linuxmint/mintreport/app.py:382
-msgid "Ignore this problem"
-msgstr "Ignorér dette problem"
+#: usr/lib/linuxmint/mintreport/app.py:391
+msgid "Ignore this report"
+msgstr "Ignorér denne rapport"
 
-#: usr/lib/linuxmint/mintreport/app.py:398
-msgid "Are you sure you want to ignore this problem?"
-msgstr "Er du sikker på, du vil ignorere dette problem?"
+#: usr/lib/linuxmint/mintreport/app.py:407
+msgid "Are you sure you want to ignore this report?"
+msgstr "Er du sikker på, du vil ignorere denne rapport?"
 
-#: usr/lib/linuxmint/mintreport/app.py:399
-msgid ""
-"The problem will be permanently ignored and will no longer be visible."
+#: usr/lib/linuxmint/mintreport/app.py:408
+msgid "The report will be permanently ignored and will no longer be visible."
 msgstr ""
-"Problemet bliver ignoreret permanent og vil ikke længere være synlig."
+"Rapporten vil blive ignoreret permanent og vil ikke længere være synlig."
 
-#: usr/lib/linuxmint/mintreport/app.py:491
+#: usr/lib/linuxmint/mintreport/app.py:500
 #, python-format
 msgid ""
 "The debug symbols are missing for %(program)s.\n"
@@ -115,7 +114,7 @@ msgstr ""
 "Fejlfindingssymbolerne til %(program)s mangler.\n"
 "Installér venligst %(package)s."
 
-#: usr/lib/linuxmint/mintreport/app.py:505
+#: usr/lib/linuxmint/mintreport/app.py:514
 #, python-format
 msgid ""
 "The package providing %s could not be found.\n"
@@ -126,7 +125,7 @@ msgstr ""
 "Hvis du vil danne et stakspor for denne nedbrudsrapport, skal du "
 "geninstallere pakken."
 
-#: usr/lib/linuxmint/mintreport/app.py:533
+#: usr/lib/linuxmint/mintreport/app.py:542
 msgid ""
 "The headers or binaries installed on your system do not match the code which "
 "was executed during the crash.\n"
@@ -144,9 +143,9 @@ msgstr ""
 msgid "Show System Reports"
 msgstr "Vis systemrapporter"
 
-#: usr/lib/linuxmint/mintreport/tray.py:127
-msgid "Some problems were detected which require your attention"
-msgstr "Der blev fundet nogle problemer, som kræver din opmærksomhed"
+#: usr/lib/linuxmint/mintreport/tray.py:116
+msgid "Some system reports require your attention"
+msgstr "Nogle systemrapporter kræver din opmærksomhed"
 
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
@@ -166,8 +165,8 @@ msgid "No problems were detected"
 msgstr "Der blev ikke fundet nogen problemer"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:3
-msgid "Detected problems"
-msgstr "Fundne problemer"
+msgid "System reports"
+msgstr "Systemrapporter"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:4
 msgid "Copy"
@@ -366,6 +365,22 @@ msgstr[1] "Den nåede end-of-life (EOL) for {num_days} siden."
 #, python-format
 msgid "Visit %s to find information about newer releases."
 msgstr "Besøg %s for at få mere at vide om nyere udgaver."
+
+#: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:17
+msgid "Remove conflicting indicators"
+msgstr "Fjern indikatorer, der giver konflikter."
+
+#: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:37
+msgid "The following packages prevent tray icons from working properly:"
+msgstr "Følgende pakker forhindrer statusfeltikoner i at virke korrekt:"
+
+#: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:39
+msgid "Note: You will need to log out after removing them."
+msgstr "Bemærk: Du skal logge af efter at have fjernet dem."
+
+#: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:45
+msgid "Remove the conflicting packages."
+msgstr "Fjern pakker, der giver konflikter."
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:26
 msgid "Install language packs"

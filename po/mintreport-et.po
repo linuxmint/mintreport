@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2020-01-15 16:38+0000\n"
+"POT-Creation-Date: 2020-06-19 12:06+0100\n"
 "PO-Revision-Date: 2020-04-18 06:41+0000\n"
 "Last-Translator: mahfiaz <mahfiaz@gmail.com>\n"
 "Language-Team: Estonian <et@li.org>\n"
@@ -15,51 +15,51 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2020-05-11 11:04+0000\n"
-"X-Generator: Launchpad (build fbdff7602bd10fb883bf7e2ddcc7fd5a16f60398)\n"
+"X-Launchpad-Export-Date: 2020-06-24 10:12+0000\n"
+"X-Generator: Launchpad (build 1cbd0aa39df153c901321817f9b57cf3f232b507)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
-#: usr/lib/linuxmint/mintreport/app.py:236 generate_desktop_files:25
+#: usr/lib/linuxmint/mintreport/app.py:245 generate_desktop_files:25
 #: generate_desktop_files:39 generate_desktop_files:53
 #: generate_desktop_files:67
 msgid "System Reports"
 msgstr "Süsteemi raportid"
 
-#: usr/lib/linuxmint/mintreport/app.py:194
+#: usr/lib/linuxmint/mintreport/app.py:193
 msgid "_File"
 msgstr "_Fail"
 
-#: usr/lib/linuxmint/mintreport/app.py:199
+#: usr/lib/linuxmint/mintreport/app.py:198
 msgid "Refresh"
 msgstr "Värskenda"
 
-#: usr/lib/linuxmint/mintreport/app.py:206
+#: usr/lib/linuxmint/mintreport/app.py:205
 msgid "Restore ignored reports"
 msgstr "Taasta ignoreeritud raportid"
 
-#: usr/lib/linuxmint/mintreport/app.py:210
+#: usr/lib/linuxmint/mintreport/app.py:209
 #: usr/lib/linuxmint/mintreport/tray.py:53
 msgid "Quit"
 msgstr "Välju"
 
-#: usr/lib/linuxmint/mintreport/app.py:221
+#: usr/lib/linuxmint/mintreport/app.py:220
 msgid "_Help"
 msgstr "A_bi"
 
-#: usr/lib/linuxmint/mintreport/app.py:227
-#: usr/lib/linuxmint/mintreport/app.py:234
+#: usr/lib/linuxmint/mintreport/app.py:226
+#: usr/lib/linuxmint/mintreport/app.py:243
 msgid "About"
 msgstr "Lähemalt"
 
-#: usr/lib/linuxmint/mintreport/app.py:278
+#: usr/lib/linuxmint/mintreport/app.py:287
 msgid "An error occurred while gathering the system information."
 msgstr "Süsteemi andmete kogumisel esines viga."
 
-#: usr/lib/linuxmint/mintreport/app.py:292
+#: usr/lib/linuxmint/mintreport/app.py:301
 msgid "System information copied"
 msgstr "Süsteemi andmed kopeeritud"
 
-#: usr/lib/linuxmint/mintreport/app.py:292
+#: usr/lib/linuxmint/mintreport/app.py:301
 msgid ""
 "Your system information was copied into your clipboard so you can paste it "
 "on the forums."
@@ -67,11 +67,11 @@ msgstr ""
 "Sinu süsteemi andmed kopeeriti lõikelauale, et saaksid need asetada "
 "foorumisse."
 
-#: usr/lib/linuxmint/mintreport/app.py:301
+#: usr/lib/linuxmint/mintreport/app.py:310
 msgid "System information uploaded"
 msgstr "Süsteemi andmed laaditi üles"
 
-#: usr/lib/linuxmint/mintreport/app.py:301
+#: usr/lib/linuxmint/mintreport/app.py:310
 #, python-format
 msgid ""
 "Your system information was uploaded to %s. This link was placed in your "
@@ -80,11 +80,11 @@ msgstr ""
 "Sinu süsteemi andmed laaditi üles aadressile %s. See link kopeeriti "
 "lõikelauale, et saaksid selle asetada IRCsse."
 
-#: usr/lib/linuxmint/mintreport/app.py:303
+#: usr/lib/linuxmint/mintreport/app.py:312
 msgid "An error occurred while uploading the system information"
 msgstr "Süsteemi andmete üleslaadimisel esines viga"
 
-#: usr/lib/linuxmint/mintreport/app.py:303
+#: usr/lib/linuxmint/mintreport/app.py:312
 msgid ""
 "Copy and paste the system information manually into a pastebin site like "
 "https://pastebin.com and share the link on IRC."
@@ -92,20 +92,19 @@ msgstr ""
 "Kopeeri ja aseta süsteemi andmed käsitsi mõnele pastebin-i laadsele lehele "
 "nagu https://pastebin.com ja jaga linki IRCs."
 
-#: usr/lib/linuxmint/mintreport/app.py:382
-msgid "Ignore this problem"
-msgstr "Eira seda probleemi"
+#: usr/lib/linuxmint/mintreport/app.py:391
+msgid "Ignore this report"
+msgstr ""
 
-#: usr/lib/linuxmint/mintreport/app.py:398
-msgid "Are you sure you want to ignore this problem?"
-msgstr "Kas tahad seda probleemi kindlasti eirata?"
+#: usr/lib/linuxmint/mintreport/app.py:407
+msgid "Are you sure you want to ignore this report?"
+msgstr ""
 
-#: usr/lib/linuxmint/mintreport/app.py:399
-msgid ""
-"The problem will be permanently ignored and will no longer be visible."
-msgstr "Seda probleemi edaspidi eiratakse ning ei kuvata."
+#: usr/lib/linuxmint/mintreport/app.py:408
+msgid "The report will be permanently ignored and will no longer be visible."
+msgstr ""
 
-#: usr/lib/linuxmint/mintreport/app.py:491
+#: usr/lib/linuxmint/mintreport/app.py:500
 #, python-format
 msgid ""
 "The debug symbols are missing for %(program)s.\n"
@@ -114,7 +113,7 @@ msgstr ""
 "Silumissümbolid puuduvad programmi %(program)s jaoks.\n"
 "Palun paigalda %(package)s."
 
-#: usr/lib/linuxmint/mintreport/app.py:505
+#: usr/lib/linuxmint/mintreport/app.py:514
 #, python-format
 msgid ""
 "The package providing %s could not be found.\n"
@@ -125,7 +124,7 @@ msgstr ""
 "Kui sa tahad selle krahhiraporti kohta koostada pinu jälje (stack trace), "
 "paigalda see uuesti."
 
-#: usr/lib/linuxmint/mintreport/app.py:533
+#: usr/lib/linuxmint/mintreport/app.py:542
 msgid ""
 "The headers or binaries installed on your system do not match the code which "
 "was executed during the crash.\n"
@@ -143,9 +142,9 @@ msgstr ""
 msgid "Show System Reports"
 msgstr "Süstemiraportite näitamine"
 
-#: usr/lib/linuxmint/mintreport/tray.py:127
-msgid "Some problems were detected which require your attention"
-msgstr "Tuvastati mõned probleemid, mis vajavad sinu tähelepanu"
+#: usr/lib/linuxmint/mintreport/tray.py:116
+msgid "Some system reports require your attention"
+msgstr ""
 
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
@@ -165,8 +164,8 @@ msgid "No problems were detected"
 msgstr "Ühtegi probleemi ei leitud"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:3
-msgid "Detected problems"
-msgstr "Leitud probleemid"
+msgid "System reports"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:4
 msgid "Copy"
@@ -363,6 +362,22 @@ msgstr[1] "Elukaare lõpp (EOL) oli {num_days} päeva tagasi."
 #, python-format
 msgid "Visit %s to find information about newer releases."
 msgstr "Külasta %s lehte, et saada infot uuemate väljalasete kohta."
+
+#: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:17
+msgid "Remove conflicting indicators"
+msgstr ""
+
+#: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:37
+msgid "The following packages prevent tray icons from working properly:"
+msgstr ""
+
+#: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:39
+msgid "Note: You will need to log out after removing them."
+msgstr ""
+
+#: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:45
+msgid "Remove the conflicting packages."
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:26
 msgid "Install language packs"

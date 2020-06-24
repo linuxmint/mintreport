@@ -7,106 +7,107 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2020-01-15 16:38+0000\n"
-"PO-Revision-Date: 2020-04-08 05:58+0000\n"
+"POT-Creation-Date: 2020-06-19 12:06+0100\n"
+"PO-Revision-Date: 2020-06-19 11:31+0000\n"
 "Last-Translator: vega m57 <Unknown>\n"
 "Language-Team: Japanese <ja@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2020-05-11 11:04+0000\n"
-"X-Generator: Launchpad (build fbdff7602bd10fb883bf7e2ddcc7fd5a16f60398)\n"
+"X-Launchpad-Export-Date: 2020-06-24 10:12+0000\n"
+"X-Generator: Launchpad (build 1cbd0aa39df153c901321817f9b57cf3f232b507)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
-#: usr/lib/linuxmint/mintreport/app.py:236 generate_desktop_files:25
+#: usr/lib/linuxmint/mintreport/app.py:245 generate_desktop_files:25
 #: generate_desktop_files:39 generate_desktop_files:53
 #: generate_desktop_files:67
 msgid "System Reports"
 msgstr "システムレポート"
 
-#: usr/lib/linuxmint/mintreport/app.py:194
+#: usr/lib/linuxmint/mintreport/app.py:193
 msgid "_File"
-msgstr ""
+msgstr "ファイル (_F)"
 
-#: usr/lib/linuxmint/mintreport/app.py:199
+#: usr/lib/linuxmint/mintreport/app.py:198
 msgid "Refresh"
-msgstr ""
+msgstr "更新"
 
-#: usr/lib/linuxmint/mintreport/app.py:206
+#: usr/lib/linuxmint/mintreport/app.py:205
 msgid "Restore ignored reports"
 msgstr "無視したレポートを復元する"
 
-#: usr/lib/linuxmint/mintreport/app.py:210
+#: usr/lib/linuxmint/mintreport/app.py:209
 #: usr/lib/linuxmint/mintreport/tray.py:53
 msgid "Quit"
-msgstr ""
+msgstr "終了"
 
-#: usr/lib/linuxmint/mintreport/app.py:221
+#: usr/lib/linuxmint/mintreport/app.py:220
 msgid "_Help"
-msgstr ""
+msgstr "ヘルプ (_H)"
 
-#: usr/lib/linuxmint/mintreport/app.py:227
-#: usr/lib/linuxmint/mintreport/app.py:234
+#: usr/lib/linuxmint/mintreport/app.py:226
+#: usr/lib/linuxmint/mintreport/app.py:243
 msgid "About"
-msgstr ""
+msgstr "このアプリケーションについて"
 
-#: usr/lib/linuxmint/mintreport/app.py:278
+#: usr/lib/linuxmint/mintreport/app.py:287
 msgid "An error occurred while gathering the system information."
-msgstr ""
+msgstr "システム情報を収集中にエラーが発生しました"
 
-#: usr/lib/linuxmint/mintreport/app.py:292
+#: usr/lib/linuxmint/mintreport/app.py:301
 msgid "System information copied"
-msgstr ""
+msgstr "システム情報をコピーしました"
 
-#: usr/lib/linuxmint/mintreport/app.py:292
+#: usr/lib/linuxmint/mintreport/app.py:301
 msgid ""
 "Your system information was copied into your clipboard so you can paste it "
 "on the forums."
-msgstr ""
+msgstr "システム情報がクリップボードにコピーされました。フォーラムに貼り付けすることができます。"
 
-#: usr/lib/linuxmint/mintreport/app.py:301
+#: usr/lib/linuxmint/mintreport/app.py:310
 msgid "System information uploaded"
-msgstr ""
+msgstr "システム情報をアップロードしました"
 
-#: usr/lib/linuxmint/mintreport/app.py:301
+#: usr/lib/linuxmint/mintreport/app.py:310
 #, python-format
 msgid ""
 "Your system information was uploaded to %s. This link was placed in your "
 "clipboard so you can paste it on IRC."
-msgstr ""
+msgstr "システム情報を %s にアップロードしました。なお、このリンクはクリップボードにコピーされています。IRCに貼り付けることができます。"
 
-#: usr/lib/linuxmint/mintreport/app.py:303
+#: usr/lib/linuxmint/mintreport/app.py:312
 msgid "An error occurred while uploading the system information"
-msgstr ""
+msgstr "システム情報をアップロード中にエラーが発生しました"
 
-#: usr/lib/linuxmint/mintreport/app.py:303
+#: usr/lib/linuxmint/mintreport/app.py:312
 msgid ""
 "Copy and paste the system information manually into a pastebin site like "
 "https://pastebin.com and share the link on IRC."
 msgstr ""
 
-#: usr/lib/linuxmint/mintreport/app.py:382
-msgid "Ignore this problem"
-msgstr "この問題は無視する"
+#: usr/lib/linuxmint/mintreport/app.py:391
+msgid "Ignore this report"
+msgstr "このレポートを無視する"
 
-#: usr/lib/linuxmint/mintreport/app.py:398
-msgid "Are you sure you want to ignore this problem?"
-msgstr "本当にこの問題を無視してよろしいですか?"
+#: usr/lib/linuxmint/mintreport/app.py:407
+msgid "Are you sure you want to ignore this report?"
+msgstr "このレポートを無視しても本当によろしいですか？"
 
-#: usr/lib/linuxmint/mintreport/app.py:399
-msgid ""
-"The problem will be permanently ignored and will no longer be visible."
-msgstr "その問題は永久に無視され、表示されなくなります。"
+#: usr/lib/linuxmint/mintreport/app.py:408
+msgid "The report will be permanently ignored and will no longer be visible."
+msgstr "レポートは永久に無視され、見ることができなくなります。"
 
-#: usr/lib/linuxmint/mintreport/app.py:491
+#: usr/lib/linuxmint/mintreport/app.py:500
 #, python-format
 msgid ""
 "The debug symbols are missing for %(program)s.\n"
 "Please install %(package)s."
 msgstr ""
+"%(program)s のデバッグシンボルが見つかりませんでした。\n"
+"%(package)s をインストールしてください。"
 
-#: usr/lib/linuxmint/mintreport/app.py:505
+#: usr/lib/linuxmint/mintreport/app.py:514
 #, python-format
 msgid ""
 "The package providing %s could not be found.\n"
@@ -114,7 +115,7 @@ msgid ""
 "reinstall it."
 msgstr ""
 
-#: usr/lib/linuxmint/mintreport/app.py:533
+#: usr/lib/linuxmint/mintreport/app.py:542
 msgid ""
 "The headers or binaries installed on your system do not match the code which "
 "was executed during the crash.\n"
@@ -125,50 +126,50 @@ msgstr ""
 
 #: usr/lib/linuxmint/mintreport/tray.py:49
 msgid "Show System Reports"
-msgstr ""
+msgstr "システムレポートを表示する"
 
-#: usr/lib/linuxmint/mintreport/tray.py:127
-msgid "Some problems were detected which require your attention"
-msgstr "注意が必要な問題が検出されました"
+#: usr/lib/linuxmint/mintreport/tray.py:116
+msgid "Some system reports require your attention"
+msgstr "確認が必要なシステムレポートもあります"
 
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
 msgid "Troubleshoot problems"
-msgstr ""
+msgstr "問題のトラブルシューティング"
 
 #: generate_desktop_files:53
 msgid "Troubleshooting Tool"
-msgstr ""
+msgstr "トラブルシューティングツール"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:1
 msgid "Running system checks..."
-msgstr ""
+msgstr "システムチェック実行中..."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:2
 msgid "No problems were detected"
-msgstr ""
+msgstr "問題が検出されませんでした"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:3
-msgid "Detected problems"
-msgstr "検出された問題"
+msgid "System reports"
+msgstr "システムレポート"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:4
 msgid "Copy"
-msgstr ""
+msgstr "コピー"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:5
 msgid ""
 "Copy to clipboard (code tags are added to make it easy to paste the system "
 "information into the forums)"
-msgstr ""
+msgstr "クリップボードにコピーする(コードタグが追加され、システム情報をフォーラムに投稿しやすくなります)"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:6
 msgid "Upload"
-msgstr ""
+msgstr "アップロード"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:7
 msgid "Upload to a pastebin service (no personal information included)"
-msgstr ""
+msgstr "ペーストビンにアップロードする(個人情報は含まれません)"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:8
 msgid "System information"
@@ -176,42 +177,44 @@ msgstr "システムの情報"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:9
 msgid "Crash reports are not available"
-msgstr ""
+msgstr "クラッシュレポートが利用できません"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:10
 msgid ""
 "To enable crash reporting, install systemd-coredump and reboot your computer."
-msgstr ""
+msgstr "クラッシュレポートを有効にするには systemd-coredump をインストールしてからコンピュータを再起動してください。"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:11
 msgid "Crash reports:"
-msgstr ""
+msgstr "クラッシュレポート:"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:12
 msgid "Stack trace:"
-msgstr ""
+msgstr "スタックトレース:"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:13
 msgid ""
 "When seeking help, check for existing bug reports, pastebin the trace, share "
 "crash.tar.gz (from Local Files) and explain how to reproduce the crash."
 msgstr ""
+"ヘルプを探すときは、既存のバグレポートを確認し、トレースを貼り付け、（ローカルファイルから）crash.tar.gzを共有し、そしてクラッシュの再現方法を"
+"説明します。"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:14
 msgid "Local Files"
-msgstr ""
+msgstr "ローカルファイル"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:15
 msgid "Open the directory containing crash.tar.gz and its content."
-msgstr ""
+msgstr "crash.tar.gzとそのコンテンツを含むディレクトリを開く｡"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:16
 msgid "Bug Tracker"
-msgstr ""
+msgstr "バグトラッカー"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:17
 msgid "Find the most appropriate bug tracker."
-msgstr ""
+msgstr "最も適切なバグトラッカーを見つける。"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:18
 msgid "Pastebin"
@@ -219,7 +222,7 @@ msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:19
 msgid "Upload the trace to the Internet."
-msgstr ""
+msgstr "トレースをインターネットにアップロードします。"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:20
 msgid ""
@@ -227,6 +230,7 @@ msgid ""
 "Always provide a trace and reliable instructions to trigger/observe the "
 "problem."
 msgstr ""
+"開発者はコードがどこで失敗するかや問題を再現する方法を知る必要があります。 問題を起こすトリガーやそれを観察するために痕跡と正確な示唆をご提供ください｡"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:21
 msgid "Crash reports"
@@ -295,7 +299,7 @@ msgstr "新しいバージョンの Linux Mint が利用できます"
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:47
 #, python-format
 msgid "Visit %s for the latest announcements."
-msgstr ""
+msgstr "最新のお知らせについては、%s にアクセスしてください。"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:53
 #, python-format
@@ -327,21 +331,37 @@ msgstr[1] ""
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:66
 #, python-format
 msgid "Visit %s to find information about newer releases."
+msgstr "新しいリリースに関する情報を見つけるには、 %s にアクセスしてください。"
+
+#: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:17
+msgid "Remove conflicting indicators"
+msgstr ""
+
+#: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:37
+msgid "The following packages prevent tray icons from working properly:"
+msgstr ""
+
+#: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:39
+msgid "Note: You will need to log out after removing them."
+msgstr ""
+
+#: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:45
+msgid "Remove the conflicting packages."
 msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:26
 msgid "Install language packs"
-msgstr ""
+msgstr "言語パッケージのインストール"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:41
 msgid ""
 "The following localization packages are missing to properly support your "
 "language:"
-msgstr ""
+msgstr "あなたの言語を適切にサポートするための次のローカリゼーションパッケージが不足しています:"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:48
 msgid "Install the Language Packs"
-msgstr ""
+msgstr "その言語パッケージをインストール"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:18
 msgid "Install hardware drivers"

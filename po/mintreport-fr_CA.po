@@ -1,4 +1,4 @@
-# Hungarian translation for linuxmint
+# French translation for linuxmint
 # Copyright (c) 2017 Rosetta Contributors and Canonical Ltd 2017
 # This file is distributed under the same license as the linuxmint package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
@@ -8,69 +8,70 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2020-06-19 12:06+0100\n"
-"PO-Revision-Date: 2020-06-17 02:49+0000\n"
-"Last-Translator: KAMI <kami911@gmail.com>\n"
-"Language-Team: Hungarian <hu@li.org>\n"
+"PO-Revision-Date: 2020-04-18 22:37+0000\n"
+"Last-Translator: AO <Unknown>\n"
+"Language-Team: French (Canada) <fr_CA@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Launchpad-Export-Date: 2020-06-24 10:12+0000\n"
 "X-Generator: Launchpad (build 1cbd0aa39df153c901321817f9b57cf3f232b507)\n"
-"Language: hu\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
 #: usr/lib/linuxmint/mintreport/app.py:245 generate_desktop_files:25
 #: generate_desktop_files:39 generate_desktop_files:53
 #: generate_desktop_files:67
 msgid "System Reports"
-msgstr "Hibajelentő"
+msgstr "Relevés du système"
 
 #: usr/lib/linuxmint/mintreport/app.py:193
 msgid "_File"
-msgstr "_Fájl"
+msgstr "_Fichier"
 
 #: usr/lib/linuxmint/mintreport/app.py:198
 msgid "Refresh"
-msgstr "Frissítés"
+msgstr "Actualiser"
 
 #: usr/lib/linuxmint/mintreport/app.py:205
 msgid "Restore ignored reports"
-msgstr "Figyelmen kívül hagyott jelentések visszaállítása"
+msgstr "Restaurer les relevés ignorés"
 
 #: usr/lib/linuxmint/mintreport/app.py:209
 #: usr/lib/linuxmint/mintreport/tray.py:53
 msgid "Quit"
-msgstr "Kilépés"
+msgstr "Fermer"
 
 #: usr/lib/linuxmint/mintreport/app.py:220
 msgid "_Help"
-msgstr "_Súgó"
+msgstr "_Aide"
 
 #: usr/lib/linuxmint/mintreport/app.py:226
 #: usr/lib/linuxmint/mintreport/app.py:243
 msgid "About"
-msgstr "Névjegy"
+msgstr "À propos"
 
 #: usr/lib/linuxmint/mintreport/app.py:287
 msgid "An error occurred while gathering the system information."
-msgstr "Hiba lépett fel a rendszer-információk összegyűjtése közben."
+msgstr ""
+"Une erreur s’est produite lors de la collecte des renseignements sur le "
+"système."
 
 #: usr/lib/linuxmint/mintreport/app.py:301
 msgid "System information copied"
-msgstr "Rendszer-információk átmásolva"
+msgstr "Les renseignements sur le système ont été copiés"
 
 #: usr/lib/linuxmint/mintreport/app.py:301
 msgid ""
 "Your system information was copied into your clipboard so you can paste it "
 "on the forums."
 msgstr ""
-"A rendszer-információk a vágólapra lettek másolva. A vágólapról "
-"beillesztheti az információkat egy fórum bejegyzésbe."
+"Les renseignements sur votre système ont été copiés dans le presse-papiers "
+"afin que vous puissiez les partager sur les forums."
 
 #: usr/lib/linuxmint/mintreport/app.py:310
 msgid "System information uploaded"
-msgstr "Rendszer-információk feltöltve"
+msgstr "Les renseignements sur le système ont été téléversés"
 
 #: usr/lib/linuxmint/mintreport/app.py:310
 #, python-format
@@ -78,34 +79,35 @@ msgid ""
 "Your system information was uploaded to %s. This link was placed in your "
 "clipboard so you can paste it on IRC."
 msgstr ""
-"A rendszer-információk fel lett töltve ide: %s. A hivatkozás címe a "
-"vágólapra lett másolva. A vágólapról beillesztheti a hivatkozást egy IRC "
-"beszélgetésbe, vagy egy fórum bejegyzésbe."
+"Les renseignements sur votre système ont été téléversés sur %s. Ce lien a "
+"été copié dans votre presse-papiers afin que vous puissiez le coller sur IRC."
 
 #: usr/lib/linuxmint/mintreport/app.py:312
 msgid "An error occurred while uploading the system information"
-msgstr "Hiba lépett fel a rendszer-információk feltöltése közben"
+msgstr ""
+"Une erreur s’est produite lors du téléversement des renseignements sur le "
+"système"
 
 #: usr/lib/linuxmint/mintreport/app.py:312
 msgid ""
 "Copy and paste the system information manually into a pastebin site like "
 "https://pastebin.com and share the link on IRC."
 msgstr ""
-"Másolja és illessze be a rendszer-információkat kézzel a pastebin (min "
-"amilyen a „https://pastebin.com/”) webhelyre, majd a illessze be a "
-"hivatkozást egy IRC beszélgetésbe, vagy egy fórum bejegyzésbe."
+"Copiez et collez manuellement les renseignements sur le système dans un site "
+"de de partage de texte tel que https://pastebin.com et partagez le lien sur "
+"IRC."
 
 #: usr/lib/linuxmint/mintreport/app.py:391
 msgid "Ignore this report"
-msgstr "Jelentés figyelmen kívül hagyása"
+msgstr ""
 
 #: usr/lib/linuxmint/mintreport/app.py:407
 msgid "Are you sure you want to ignore this report?"
-msgstr "Valóban figyelmen kívül kívája hagyni ezt a jelentést?"
+msgstr ""
 
 #: usr/lib/linuxmint/mintreport/app.py:408
 msgid "The report will be permanently ignored and will no longer be visible."
-msgstr "A jelentés figyelmen kívül lesz hagyva, és nem lesz többet látható."
+msgstr ""
 
 #: usr/lib/linuxmint/mintreport/app.py:500
 #, python-format
@@ -113,8 +115,8 @@ msgid ""
 "The debug symbols are missing for %(program)s.\n"
 "Please install %(package)s."
 msgstr ""
-"A hibakereső szimbólumok hiányoznak a következőhő programhoz: %(program)s\n"
-"Telepítse a(z) %(package)s csomagot."
+"Il manque les symboles de débogage pour %(program)s.\n"
+"Veuillez installer %(package)s."
 
 #: usr/lib/linuxmint/mintreport/app.py:514
 #, python-format
@@ -123,9 +125,9 @@ msgid ""
 "If you want to generate a stack trace for this crash report, please "
 "reinstall it."
 msgstr ""
-"Nem található csomag a következőhöz: %s.\n"
-"Telepítse újra, ha ehhez az összeomlás jelentéshez kíván veremkiíratást "
-"készíteni."
+"Le paquet qui fournit %s est introuvable.\n"
+"Si vous souhaitez générer une trace de pile pour ce relevé de plantage, "
+"veuillez le réinstaller."
 
 #: usr/lib/linuxmint/mintreport/app.py:542
 msgid ""
@@ -135,111 +137,111 @@ msgid ""
 "A stack trace is available in 'Local Files' but its content is probably "
 "inaccurate."
 msgstr ""
-"A rendszerre telepített fejlécek és binárisok nem egyeznek meg az összeomlás "
-"során végrehajtott kóddal.\n"
-"Vélhetően frissítve lettek az összeomlás óta.\n"
-"A veremkiíratás elérhető a „Helyi fájlok” listájánál, de a tartalma lehet, "
-"hogy nem pontos."
+"Les en-têtes ou fichiers binaires installés sur votre système ne "
+"correspondent pas au code exécuté lors du plantage.\n"
+"Il ont probablement été mis à niveau depuis.\n"
+"Une trace de pile se trouve dans 'Fichiers locaux', mais son contenu n’est "
+"probablement pas juste."
 
 #: usr/lib/linuxmint/mintreport/tray.py:49
 msgid "Show System Reports"
-msgstr "Rendszerjelentések megjelenítése"
+msgstr "Afficher les relevés du système"
 
 #: usr/lib/linuxmint/mintreport/tray.py:116
 msgid "Some system reports require your attention"
-msgstr "Néhány rendszerjelentés az Ön közreműködését igényli"
+msgstr ""
 
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
 msgid "Troubleshoot problems"
-msgstr "Hibaelhárítás"
+msgstr "Dépannage des problèmes"
 
 #: generate_desktop_files:53
 msgid "Troubleshooting Tool"
-msgstr "Hibaelhárító eszköz"
+msgstr "Outil de dépannage"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:1
 msgid "Running system checks..."
-msgstr "Rendszerellenőrzés folyamatban…"
+msgstr "Vérification du système…"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:2
 msgid "No problems were detected"
-msgstr "Nincsenek problémák"
+msgstr "Aucun problème n’a été détecté"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:3
 msgid "System reports"
-msgstr "Rendszerjelentések"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:4
 msgid "Copy"
-msgstr "Másolás"
+msgstr "Copier"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:5
 msgid ""
 "Copy to clipboard (code tags are added to make it easy to paste the system "
 "information into the forums)"
 msgstr ""
-"Másolás a vágólapra (kód jelölők lettek a kimenethez adva, hogy a fórum "
-"bejegyzésbe történő beillesztése egyszerűbb legyen)"
+"Copier dans le presse-papiers (des balises de code sont ajoutées afin de "
+"faciliter le collage des renseignements sur le système dans les forums)"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:6
 msgid "Upload"
-msgstr "Feltöltés"
+msgstr "Téléverser"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:7
 msgid "Upload to a pastebin service (no personal information included)"
 msgstr ""
-"Feltöltés egy pastebin szolgáltatásra (személyes adatok nem lesznek "
-"közreadva)"
+"Téléverser dans un site de partage de texte (ne comprend aucun renseignement "
+"personnel)"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:8
 msgid "System information"
-msgstr "Rendszer-információk"
+msgstr "Renseignements sur le système"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:9
 msgid "Crash reports are not available"
-msgstr "Összeomlás jelentések nem érhetőek el"
+msgstr "Les relevés de plantage ne sont pas disponibles"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:10
 msgid ""
 "To enable crash reporting, install systemd-coredump and reboot your computer."
 msgstr ""
-"Az összeomlás jelentések bekapcsolásához telepítse a „systemd-coredump” "
-"szoftvercsomagot, majd indítsa újra a számítógépet."
+"Pour activer les relevés de plantage, installez systemd-coredump et "
+"redémarrez votre ordinateur."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:11
 msgid "Crash reports:"
-msgstr "Összeomlás jelentések:"
+msgstr "Relevés de plantage :"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:12
 msgid "Stack trace:"
-msgstr "Veremkiíratás:"
+msgstr "Trace de la pile :"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:13
 msgid ""
 "When seeking help, check for existing bug reports, pastebin the trace, share "
 "crash.tar.gz (from Local Files) and explain how to reproduce the crash."
 msgstr ""
-"Amikor segítséget keres egy hibához, akkor nézze át a már bejelentett "
-"hibákat, ossza meg a veremkiíratást Pastebin segítségével, a „Helyi fájlok” "
-"közül ossza meg a vonatkozó crash.tar.gz fájlt,  illetve írja le, hogy "
-"milyen módon lehet előidézni a hibát."
+"Quand vous cherchez de l’aide, vérifier la présence de relevés de bogues "
+"existants, téléversez la trace sur un site de partage de texte, partagez le "
+"fichier crash.tar.gz (des fichiers locaux) et expliquez comment reproduire "
+"le plantage."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:14
 msgid "Local Files"
-msgstr "Helyi fájlok"
+msgstr "Fichiers locaux"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:15
 msgid "Open the directory containing crash.tar.gz and its content."
-msgstr "Nyissa meg a a crash.tar.gz fájlt tartalmazó mappát."
+msgstr "Ouvrir le dossier parent de crash.tar.gz et son contenu."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:16
 msgid "Bug Tracker"
-msgstr "Hibajegykezelő"
+msgstr "Système de suivi ds bogues"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:17
 msgid "Find the most appropriate bug tracker."
-msgstr "Keresse meg az illetékes projekt hibajegykezelő rendszerét."
+msgstr "Trouver le système de suivi de bogues le plus approprié."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:18
 msgid "Pastebin"
@@ -247,7 +249,7 @@ msgstr "Pastebin"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:19
 msgid "Upload the trace to the Internet."
-msgstr "Töltse fel a veremkiíratást az internetre."
+msgstr "Téléverser la trace sur Internet."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:20
 msgid ""
@@ -255,132 +257,126 @@ msgid ""
 "Always provide a trace and reliable instructions to trigger/observe the "
 "problem."
 msgstr ""
-"A fejlesztőknek ismerniük kell, hogy hol omlik össze a kód, illetve hogyan "
-"reprodukálhatják a hibát. Mindig adja meg a veremkiíratást és megbízható "
-"utasításokat a hiba előidézésére és megfigyeléséhez."
+"Les développeurs doivent savoir où le code échoue ou comment reproduire le "
+"problème. Fournissez toujours une trace ainsi que des instructions fiables "
+"afin de déclencher ou observer le problème."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:21
 msgid "Crash reports"
-msgstr "Összeomlás jelentések"
+msgstr "Relevés de plantage"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
 msgid "Add the XApp Status applet"
-msgstr "XApp Állapot kisalkalmazás hozzáadása"
+msgstr "Ajouter l’applet État XApp"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:37
 msgid ""
 "The XApp Status applet allows applications to provide a tray icon without "
 "rendering glitches and with support for HiDPI and symbolic icons."
 msgstr ""
-"Az XApp Állapot kisalkalmazás lehetővé teszi az alkalmazások számára, hogy "
-"rendszer panel ikonokat jelenítsenek meg, bármiféle megjelenítési hiba "
-"nélkül, HiDPI támogatással, valamint szimbolikus ikonokkal megjelenítésével."
+"L’applet État XApp permet aux applications de fournir une icône de zone de "
+"notification sans pépins de rendu tout en prenant en charge les icônes HiDPI "
+"et symboliques."
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:39
 msgid "Right-click the panel and choose 'Add to Panel'."
 msgstr ""
-"Kattintson jobb gombbal a panelre és válassza a „Hozzáadás a Panelhez” "
-"lehetőséget."
+"Cliquez à droite sur le panneau et choisissez « Ajouter au "
+"panneau »."
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:46
 msgid "Add the XApp Status applet to the panel"
-msgstr "XApp Állapot kisalkalmazás hozzáadása a panelhez"
+msgstr "Ajouter l’applet État XApp au panneau"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:16
 msgid "Install multimedia codecs"
-msgstr "Multimédia kodekek telepítése"
+msgstr "Installer des codecs multimédia"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:30
 msgid ""
 "Multimedia codecs are required to play some video formats and to properly "
 "render some websites."
 msgstr ""
-"A multimédia kodekek telepítése szükséges néhány további videoformátum "
-"lejátszásához, és egyes weboldalak megfelelő megjelenítéséhez."
+"Des codecs multimédia sont requis afin de lire certains formats vidéo et "
+"afficher adéquatement certains sites Web."
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:36
 msgid "Install the Multimedia Codecs"
-msgstr "Multimédia kodekek telepítése"
+msgstr "Installer les codecs multimédias"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:17
 msgid "Set up the system restore utility"
-msgstr "Rendszer-helyreállító beállítása"
+msgstr "Configurer l’utilitaire de restauration du système"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:31
 msgid "Linux Mint provides a system restore utility called Timeshift."
 msgstr ""
-"A Linux Mint egy Timeshift nevű rendszer-visszaállító eszközt biztosít."
+"Linux Mint offre un utilitaire de restauration du système appelé Timeshift."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:32
 msgid ""
 "Thanks to Timeshift you can take snapshots of the system, either manually or "
 "automatically."
 msgstr ""
-"A Timeshift alkalmazás segítségével kézzel vagy automatikusan "
-"pillanatképeket készíthet a rendszerről."
+"Grâce à Timeshift, vous pouvez prendre des instantanés du système, soit "
+"manuellement soit automatiquement."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:33
 msgid ""
 "If something goes wrong you can then restore your operating system from a "
 "previously saved snapshot."
 msgstr ""
-"Ha valami baj történne, akkor vissza tudja állítani majd a rendszerét egy "
-"előzőleg elkészített pillanatképből."
+"Si un problème survenait, vous pourriez alors restaurer votre système "
+"d’exploitation à partir d’un instantané enregistré antérieurement."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:39
 msgid "Launch Timeshift"
-msgstr "Timeshift elindítása"
+msgstr "Lancer Timeshift"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:17
 msgid "A new version of Linux Mint is available"
-msgstr "Már elérhető a Linux Mint új verziója"
+msgstr "Une nouvelle version de Linux Mint est proposée"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:47
 #, python-format
 msgid "Visit %s for the latest announcements."
-msgstr "%s meglátogatása a legújabb bejelentések megtekintéséhez."
+msgstr "Visitez %s pour consulter les dernières annonces."
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:53
 #, python-format
 msgid "Upgrade to %s"
-msgstr "%s kiadásra frissítés"
+msgstr "Mettre à niveau vers %s"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:49
 msgid "Your version of Linux Mint will soon reach End-Of-Life (EOL)"
-msgstr ""
-"A telepített Linux Mint rendszer hamarosan az életciklusa végéhez (End of "
-"Life – EOL) ér."
+msgstr "Votre version de Linux Mint atteindra bientôt sa date de fin de vie"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:50
 #, python-brace-format
 msgid "It will stop receiving support and updates in a day."
 msgid_plural "It will stop receiving support and updates in {num_days} days."
 msgstr[0] ""
-"A holnapi naptól nem fog támogatást és frissítéseket kapni a rendszer."
+"Dès demain, elle cessera de recevoir soutien technique et mises à jour."
 msgstr[1] ""
-"{num_days} nap múlva nem fog támogatást és frissítéseket kapni a rendszer."
+"Dans {num_days} jours, elle cessera de recevoir soutien technique et mises à "
+"jour."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:54
 msgid "Your version of Linux Mint is no longer supported"
-msgstr "Az Ön által használt Linux Mint verzió már nem támogatott"
+msgstr "Votre version de Linux Mint n’est plus prise en charge"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:55
 #, python-brace-format
 msgid "It reached End-Of-Life (EOL) yesterday."
 msgid_plural "It reached End-Of-Life (EOL) {num_days} days ago."
-msgstr[0] ""
-"Tegnap óta nem kap támogatást és frissítéseket a rendszer, mert életciklusa "
-"végéhez (End of Life – EOL) ért."
-msgstr[1] ""
-"{num_days} napja nem kap támogatást és frissítéseket a rendszer, mert "
-"életciklusa végéhez (End of Life – EOL) ért."
+msgstr[0] "Elle a atteint sa date de fin de vie hier."
+msgstr[1] "Elle a atteint sa date de fin de vie il y a {num_days} jours."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:66
 #, python-format
 msgid "Visit %s to find information about newer releases."
 msgstr ""
-"Az újabb kiadásokról szóló információkhoz látogassa meg a következő oldalt: "
-"%s."
+"Visitez %s afin d’obtenir des renseignements sur les versions plus récentes."
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:17
 msgid "Remove conflicting indicators"
@@ -400,41 +396,41 @@ msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:26
 msgid "Install language packs"
-msgstr "Nyelvi csomagok telepítése"
+msgstr "Installer des paquets de langue"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:41
 msgid ""
 "The following localization packages are missing to properly support your "
 "language:"
 msgstr ""
-"A következő nyelvi csomagok hiányoznak a kiválasztott nyelv teljes "
-"támogatásához:"
+"Il manque les paquets de localisation suivants pour prendre adéquatement en "
+"charge votre langue :"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:48
 msgid "Install the Language Packs"
-msgstr "Nyelvi csomagok telepítése"
+msgstr "Installer les paquets de langue"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:18
 msgid "Install hardware drivers"
-msgstr "Hardver-illesztőprogramok telepítése"
+msgstr "Installer des pilotes de périphérique"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:27
 msgid "Processor"
-msgstr "Processzor"
+msgstr "Processeur"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:40
 msgid "Unknown"
-msgstr "Ismeretlen"
+msgstr "Inconnu"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:44
 #, python-format
 msgid "%s (unknown)"
-msgstr "%s (ismeretlen)"
+msgstr "%s (inconnu)"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:88
 msgid "Hardware drivers are available for the following devices:"
-msgstr "Hardver-illesztőprogramok érhetőek el a következő eszközökhöz:"
+msgstr "Des pilotes sont proposés pour les périphériques suivants :"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:95
 msgid "Launch the Driver Manager"
-msgstr "Illesztőprogram-kezelő elindítása"
+msgstr "Lancer le Gestionnaire de pilotes"

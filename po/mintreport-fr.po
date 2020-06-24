@@ -7,61 +7,61 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2020-01-15 16:38+0000\n"
-"PO-Revision-Date: 2020-04-19 11:38+0000\n"
-"Last-Translator: Claudiux <Unknown>\n"
+"POT-Creation-Date: 2020-06-19 12:06+0100\n"
+"PO-Revision-Date: 2020-06-19 11:14+0000\n"
+"Last-Translator: Clement Lefebvre <root@linuxmint.com>\n"
 "Language-Team: French <fr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Launchpad-Export-Date: 2020-05-11 11:04+0000\n"
-"X-Generator: Launchpad (build fbdff7602bd10fb883bf7e2ddcc7fd5a16f60398)\n"
+"X-Launchpad-Export-Date: 2020-06-24 10:12+0000\n"
+"X-Generator: Launchpad (build 1cbd0aa39df153c901321817f9b57cf3f232b507)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
-#: usr/lib/linuxmint/mintreport/app.py:236 generate_desktop_files:25
+#: usr/lib/linuxmint/mintreport/app.py:245 generate_desktop_files:25
 #: generate_desktop_files:39 generate_desktop_files:53
 #: generate_desktop_files:67
 msgid "System Reports"
 msgstr "Relevés du système"
 
-#: usr/lib/linuxmint/mintreport/app.py:194
+#: usr/lib/linuxmint/mintreport/app.py:193
 msgid "_File"
 msgstr "_Fichier"
 
-#: usr/lib/linuxmint/mintreport/app.py:199
+#: usr/lib/linuxmint/mintreport/app.py:198
 msgid "Refresh"
 msgstr "Actualiser"
 
-#: usr/lib/linuxmint/mintreport/app.py:206
+#: usr/lib/linuxmint/mintreport/app.py:205
 msgid "Restore ignored reports"
 msgstr "Restaurer les relevés ignorés"
 
-#: usr/lib/linuxmint/mintreport/app.py:210
+#: usr/lib/linuxmint/mintreport/app.py:209
 #: usr/lib/linuxmint/mintreport/tray.py:53
 msgid "Quit"
 msgstr "Fermer"
 
-#: usr/lib/linuxmint/mintreport/app.py:221
+#: usr/lib/linuxmint/mintreport/app.py:220
 msgid "_Help"
 msgstr "_Aide"
 
-#: usr/lib/linuxmint/mintreport/app.py:227
-#: usr/lib/linuxmint/mintreport/app.py:234
+#: usr/lib/linuxmint/mintreport/app.py:226
+#: usr/lib/linuxmint/mintreport/app.py:243
 msgid "About"
 msgstr "À propos"
 
-#: usr/lib/linuxmint/mintreport/app.py:278
+#: usr/lib/linuxmint/mintreport/app.py:287
 msgid "An error occurred while gathering the system information."
 msgstr ""
 "Une erreur s’est produite lors de la collecte des renseignements sur le "
 "système."
 
-#: usr/lib/linuxmint/mintreport/app.py:292
+#: usr/lib/linuxmint/mintreport/app.py:301
 msgid "System information copied"
 msgstr "Les renseignements sur le système ont été copiés"
 
-#: usr/lib/linuxmint/mintreport/app.py:292
+#: usr/lib/linuxmint/mintreport/app.py:301
 msgid ""
 "Your system information was copied into your clipboard so you can paste it "
 "on the forums."
@@ -69,11 +69,11 @@ msgstr ""
 "Les renseignements sur votre système ont été copiés dans le presse-papiers "
 "afin que vous puissiez les partager sur les forums."
 
-#: usr/lib/linuxmint/mintreport/app.py:301
+#: usr/lib/linuxmint/mintreport/app.py:310
 msgid "System information uploaded"
 msgstr "Les renseignements sur le système ont été téléversés"
 
-#: usr/lib/linuxmint/mintreport/app.py:301
+#: usr/lib/linuxmint/mintreport/app.py:310
 #, python-format
 msgid ""
 "Your system information was uploaded to %s. This link was placed in your "
@@ -82,13 +82,13 @@ msgstr ""
 "Les renseignements sur votre système ont été téléversés sur %s. Ce lien a "
 "été copié dans votre presse-papiers afin que vous puissiez le coller sur IRC."
 
-#: usr/lib/linuxmint/mintreport/app.py:303
+#: usr/lib/linuxmint/mintreport/app.py:312
 msgid "An error occurred while uploading the system information"
 msgstr ""
 "Une erreur s’est produite lors du téléversement des renseignements sur le "
 "système"
 
-#: usr/lib/linuxmint/mintreport/app.py:303
+#: usr/lib/linuxmint/mintreport/app.py:312
 msgid ""
 "Copy and paste the system information manually into a pastebin site like "
 "https://pastebin.com and share the link on IRC."
@@ -97,20 +97,19 @@ msgstr ""
 "de de partage de texte tel que https://pastebin.com et partagez le lien sur "
 "IRC."
 
-#: usr/lib/linuxmint/mintreport/app.py:382
-msgid "Ignore this problem"
-msgstr "Ignorer ce problème"
+#: usr/lib/linuxmint/mintreport/app.py:391
+msgid "Ignore this report"
+msgstr "Ignorer ce relevé"
 
-#: usr/lib/linuxmint/mintreport/app.py:398
-msgid "Are you sure you want to ignore this problem?"
-msgstr "Voulez-vous vraiment ignorer ce problème[nnbsp]?"
+#: usr/lib/linuxmint/mintreport/app.py:407
+msgid "Are you sure you want to ignore this report?"
+msgstr "Voulez-vous vraiment ignorer ce relevé ?"
 
-#: usr/lib/linuxmint/mintreport/app.py:399
-msgid ""
-"The problem will be permanently ignored and will no longer be visible."
-msgstr "Ce problème sera irrémédiablement ignoré et ne sera plus visible."
+#: usr/lib/linuxmint/mintreport/app.py:408
+msgid "The report will be permanently ignored and will no longer be visible."
+msgstr "Le relevé sera ignoré en permanence et ne sera plus visible."
 
-#: usr/lib/linuxmint/mintreport/app.py:491
+#: usr/lib/linuxmint/mintreport/app.py:500
 #, python-format
 msgid ""
 "The debug symbols are missing for %(program)s.\n"
@@ -119,7 +118,7 @@ msgstr ""
 "Il manque les symboles de débogage pour %(program)s.\n"
 "Veuillez installer %(package)s."
 
-#: usr/lib/linuxmint/mintreport/app.py:505
+#: usr/lib/linuxmint/mintreport/app.py:514
 #, python-format
 msgid ""
 "The package providing %s could not be found.\n"
@@ -130,7 +129,7 @@ msgstr ""
 "Si vous souhaitez générer une trace de pile pour ce relevé de plantage, "
 "veuillez le réinstaller."
 
-#: usr/lib/linuxmint/mintreport/app.py:533
+#: usr/lib/linuxmint/mintreport/app.py:542
 msgid ""
 "The headers or binaries installed on your system do not match the code which "
 "was executed during the crash.\n"
@@ -148,9 +147,9 @@ msgstr ""
 msgid "Show System Reports"
 msgstr "Afficher les relevés du système"
 
-#: usr/lib/linuxmint/mintreport/tray.py:127
-msgid "Some problems were detected which require your attention"
-msgstr "Des problèmes qui demandent votre attention ont été détectés"
+#: usr/lib/linuxmint/mintreport/tray.py:116
+msgid "Some system reports require your attention"
+msgstr "Certains relevés du système nécessitent votre attention"
 
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
@@ -170,8 +169,8 @@ msgid "No problems were detected"
 msgstr "Aucun problème n’a été détecté"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:3
-msgid "Detected problems"
-msgstr "Des problèmes ont été détectés"
+msgid "System reports"
+msgstr "Relevés du système"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:4
 msgid "Copy"
@@ -212,11 +211,11 @@ msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:11
 msgid "Crash reports:"
-msgstr "Relevés de plantage[nbsp]:"
+msgstr "Relevés de plantage :"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:12
 msgid "Stack trace:"
-msgstr "Trace de la pile[nbsp]:"
+msgstr "Trace de la pile :"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:13
 msgid ""
@@ -282,8 +281,8 @@ msgstr ""
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:39
 msgid "Right-click the panel and choose 'Add to Panel'."
 msgstr ""
-"Cliquez à droite sur le panneau et choisissez «[nbsp]Ajouter au "
-"panneau[nbsp]»."
+"Cliquez à droite sur le panneau et choisissez « Ajouter au "
+"panneau »."
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:46
 msgid "Add the XApp Status applet to the panel"
@@ -379,6 +378,25 @@ msgid "Visit %s to find information about newer releases."
 msgstr ""
 "Visitez %s afin d’obtenir des renseignements sur les versions plus récentes."
 
+#: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:17
+msgid "Remove conflicting indicators"
+msgstr "Retirer les indicateurs conflicteux"
+
+#: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:37
+msgid "The following packages prevent tray icons from working properly:"
+msgstr ""
+"Les paquets suivants empêchent la zone de notification de fonctionner "
+"correctement :"
+
+#: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:39
+msgid "Note: You will need to log out after removing them."
+msgstr ""
+"Note: Il sera nécessaire de quitter la session après les avoir retirer."
+
+#: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:45
+msgid "Remove the conflicting packages."
+msgstr "Retirer les paquets en conflicteux."
+
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:26
 msgid "Install language packs"
 msgstr "Installer des paquets de langue"
@@ -389,7 +407,7 @@ msgid ""
 "language:"
 msgstr ""
 "Il manque les paquets de localisation suivants pour prendre adéquatement en "
-"charge votre langue[nbsp]:"
+"charge votre langue :"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:48
 msgid "Install the Language Packs"
@@ -414,7 +432,7 @@ msgstr "%s (inconnu)"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:88
 msgid "Hardware drivers are available for the following devices:"
-msgstr "Des pilotes sont proposés pour les périphériques suivants[nbsp]:"
+msgstr "Des pilotes sont proposés pour les périphériques suivants :"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:95
 msgid "Launch the Driver Manager"

@@ -7,59 +7,59 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2020-01-15 16:38+0000\n"
-"PO-Revision-Date: 2020-02-08 17:48+0000\n"
+"POT-Creation-Date: 2020-06-19 12:06+0100\n"
+"PO-Revision-Date: 2020-05-12 14:47+0000\n"
 "Last-Translator: Piet Coppens <Unknown>\n"
 "Language-Team: Esperanto <eo@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2020-05-11 11:04+0000\n"
-"X-Generator: Launchpad (build fbdff7602bd10fb883bf7e2ddcc7fd5a16f60398)\n"
+"X-Launchpad-Export-Date: 2020-06-24 10:12+0000\n"
+"X-Generator: Launchpad (build 1cbd0aa39df153c901321817f9b57cf3f232b507)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
-#: usr/lib/linuxmint/mintreport/app.py:236 generate_desktop_files:25
+#: usr/lib/linuxmint/mintreport/app.py:245 generate_desktop_files:25
 #: generate_desktop_files:39 generate_desktop_files:53
 #: generate_desktop_files:67
 msgid "System Reports"
 msgstr "Sistemraportoj"
 
-#: usr/lib/linuxmint/mintreport/app.py:194
+#: usr/lib/linuxmint/mintreport/app.py:193
 msgid "_File"
 msgstr "_Dosiero"
 
-#: usr/lib/linuxmint/mintreport/app.py:199
+#: usr/lib/linuxmint/mintreport/app.py:198
 msgid "Refresh"
 msgstr "Aktualigi"
 
-#: usr/lib/linuxmint/mintreport/app.py:206
+#: usr/lib/linuxmint/mintreport/app.py:205
 msgid "Restore ignored reports"
 msgstr "Restaŭri malatentitajn raportojn"
 
-#: usr/lib/linuxmint/mintreport/app.py:210
+#: usr/lib/linuxmint/mintreport/app.py:209
 #: usr/lib/linuxmint/mintreport/tray.py:53
 msgid "Quit"
 msgstr "Forlasi"
 
-#: usr/lib/linuxmint/mintreport/app.py:221
+#: usr/lib/linuxmint/mintreport/app.py:220
 msgid "_Help"
 msgstr "_Helpo"
 
-#: usr/lib/linuxmint/mintreport/app.py:227
-#: usr/lib/linuxmint/mintreport/app.py:234
+#: usr/lib/linuxmint/mintreport/app.py:226
+#: usr/lib/linuxmint/mintreport/app.py:243
 msgid "About"
 msgstr "Pri"
 
-#: usr/lib/linuxmint/mintreport/app.py:278
+#: usr/lib/linuxmint/mintreport/app.py:287
 msgid "An error occurred while gathering the system information."
 msgstr "Okazis eraro dum grupigado de la sisteminformoj."
 
-#: usr/lib/linuxmint/mintreport/app.py:292
+#: usr/lib/linuxmint/mintreport/app.py:301
 msgid "System information copied"
 msgstr "Sisteminformoj kopiitaj"
 
-#: usr/lib/linuxmint/mintreport/app.py:292
+#: usr/lib/linuxmint/mintreport/app.py:301
 msgid ""
 "Your system information was copied into your clipboard so you can paste it "
 "on the forums."
@@ -67,11 +67,11 @@ msgstr ""
 "Viaj sisteminformoj estis kopiitaj al via tondujo tiel, ke vi povas ilin "
 "alglui al la forumoj."
 
-#: usr/lib/linuxmint/mintreport/app.py:301
+#: usr/lib/linuxmint/mintreport/app.py:310
 msgid "System information uploaded"
 msgstr "Sisteminformoj alŝutitaj"
 
-#: usr/lib/linuxmint/mintreport/app.py:301
+#: usr/lib/linuxmint/mintreport/app.py:310
 #, python-format
 msgid ""
 "Your system information was uploaded to %s. This link was placed in your "
@@ -80,32 +80,31 @@ msgstr ""
 "Viaj sisteminformoj estis alŝutitaj al %s. Ĉi tiu ligilo estis metita en "
 "vian tondujon tiel, ke vi povas ĝin alglui al interreta babilo."
 
-#: usr/lib/linuxmint/mintreport/app.py:303
+#: usr/lib/linuxmint/mintreport/app.py:312
 msgid "An error occurred while uploading the system information"
-msgstr "Okazis eraro dum alŝutado de la sisteminformoj"
+msgstr "Okazis eraro dum alŝuto de la sisteminformoj"
 
-#: usr/lib/linuxmint/mintreport/app.py:303
+#: usr/lib/linuxmint/mintreport/app.py:312
 msgid ""
 "Copy and paste the system information manually into a pastebin site like "
 "https://pastebin.com and share the link on IRC."
 msgstr ""
-"Kopiu kaj algluu la sisteminformojn permane al pastebineca retejo kiel "
-"https://pastebin.com kaj diskonigu la ligilon sur interreta babilo."
+"Kopiu kaj algluu la sisteminformojn permane al pastebin-retejo kiel "
+"https://pastebin.com, kaj diskonigu la ligilon sur interreta babilo."
 
-#: usr/lib/linuxmint/mintreport/app.py:382
-msgid "Ignore this problem"
-msgstr "Malatenti ĉi tiun problemon"
+#: usr/lib/linuxmint/mintreport/app.py:391
+msgid "Ignore this report"
+msgstr ""
 
-#: usr/lib/linuxmint/mintreport/app.py:398
-msgid "Are you sure you want to ignore this problem?"
-msgstr "Ĉu vi certas, ke vi volas malatenti ĉi tiun problemon?"
+#: usr/lib/linuxmint/mintreport/app.py:407
+msgid "Are you sure you want to ignore this report?"
+msgstr ""
 
-#: usr/lib/linuxmint/mintreport/app.py:399
-msgid ""
-"The problem will be permanently ignored and will no longer be visible."
-msgstr "La problemo estos porĉiame malatentita kaj estos ne plu videbla."
+#: usr/lib/linuxmint/mintreport/app.py:408
+msgid "The report will be permanently ignored and will no longer be visible."
+msgstr ""
 
-#: usr/lib/linuxmint/mintreport/app.py:491
+#: usr/lib/linuxmint/mintreport/app.py:500
 #, python-format
 msgid ""
 "The debug symbols are missing for %(program)s.\n"
@@ -114,18 +113,18 @@ msgstr ""
 "La sencimigaj simboloj mankas por %(program)s.\n"
 "Bonvolu instali %(package)s."
 
-#: usr/lib/linuxmint/mintreport/app.py:505
+#: usr/lib/linuxmint/mintreport/app.py:514
 #, python-format
 msgid ""
 "The package providing %s could not be found.\n"
 "If you want to generate a stack trace for this crash report, please "
 "reinstall it."
 msgstr ""
-"Ne eblis trovi la pakaĵon, kiu provizas %s.\n"
-"Se vi volas generi stakan spurodosieron por ĉi tiu kraŝraporto, tiam bonvolu "
-"reinstali ĝin."
+"Ne eblas trovi la pakon, kiu provizas %s.\n"
+"Se vi volas generi stakan spurodosieron por ĉi tiu kraŝraporto, bonvolu ĝin "
+"reinstali."
 
-#: usr/lib/linuxmint/mintreport/app.py:533
+#: usr/lib/linuxmint/mintreport/app.py:542
 msgid ""
 "The headers or binaries installed on your system do not match the code which "
 "was executed during the crash.\n"
@@ -143,9 +142,9 @@ msgstr ""
 msgid "Show System Reports"
 msgstr "Montri sistemraportojn"
 
-#: usr/lib/linuxmint/mintreport/tray.py:127
-msgid "Some problems were detected which require your attention"
-msgstr "Kelkaj problemoj estis detektitaj, kiuj postulas vian atenton"
+#: usr/lib/linuxmint/mintreport/tray.py:116
+msgid "Some system reports require your attention"
+msgstr ""
 
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
@@ -158,15 +157,15 @@ msgstr "Ilo por problemsolvado"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:1
 msgid "Running system checks..."
-msgstr "Plenumado de sistemkontroloj..."
+msgstr "Rulado sistemkontrolojn..."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:2
 msgid "No problems were detected"
 msgstr "Neniuj problemoj estis detektitaj"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:3
-msgid "Detected problems"
-msgstr "Detektitaj problemoj"
+msgid "System reports"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:4
 msgid "Copy"
@@ -177,7 +176,7 @@ msgid ""
 "Copy to clipboard (code tags are added to make it easy to paste the system "
 "information into the forums)"
 msgstr ""
-"Kopii al tondujo (kodoetikedoj estas aldonitaj por faciligi algluadon de la "
+"Kopii al tondujo (kodo-etikedoj estas aldonitaj por faciligi algluon de la "
 "sisteminformoj al la forumoj)"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:6
@@ -216,9 +215,9 @@ msgid ""
 "When seeking help, check for existing bug reports, pastebin the trace, share "
 "crash.tar.gz (from Local Files) and explain how to reproduce the crash."
 msgstr ""
-"Kiam vi deziras helpon, tiam serĉu ekzistantajn cimraportojn, alŝutu al "
-"pastebin la stakan spurodosieron, konigu crash.tar.gz (el lokaj dosieroj) "
-"kaj klarigu kiel reaperigi la kraŝon."
+"Kiam vi volas helpon, serĉu jamajn cimraportojn, alŝutu al pastebin la "
+"spurodosieron, konigu crash.tar.gz (el lokaj dosieroj) kaj klarigu, kiel "
+"reaperigi la kraŝon."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:14
 msgid "Local Files"
@@ -234,7 +233,7 @@ msgstr "Cimspuradilo"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:17
 msgid "Find the most appropriate bug tracker."
-msgstr "Eltrovu la plej taŭgan cimspuradilon."
+msgstr "Serĉi la plej taŭgan cimspuradilon."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:18
 msgid "Pastebin"
@@ -242,7 +241,7 @@ msgstr "Pastebin"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:19
 msgid "Upload the trace to the Internet."
-msgstr "Alŝutu la stakan spurodosieron al interreto."
+msgstr "Alŝutu la spurodosieron al interreto."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:20
 msgid ""
@@ -251,8 +250,8 @@ msgid ""
 "problem."
 msgstr ""
 "Programistoj bezonas ekscii, kie la programkodo eraras, aŭ kiel reaperigi la "
-"malfacilaĵon. Nepre provizu stakan spurodosieron kaj fidindajn instrukciojn "
-"por ekestigi/observi la problemon."
+"malfacilaĵon. Nepre provizu spurodosieron kaj fidindajn instrukciojn por "
+"ekestigi/observi la problemon."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:21
 msgid "Crash reports"
@@ -260,14 +259,14 @@ msgstr "Kraŝraportoj"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
 msgid "Add the XApp Status applet"
-msgstr "Aldoni la aplikaĵeton pri XApa stato"
+msgstr "Aldoni la aplikaĵeton pri xapa stato"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:37
 msgid ""
 "The XApp Status applet allows applications to provide a tray icon without "
 "rendering glitches and with support for HiDPI and symbolic icons."
 msgstr ""
-"La aplikaĵeto pri XApa stato permesas al aplikaĵoj provizi taskopletan "
+"La aplikaĵeto pri xapa stato permesas al aplikaĵoj provizi taskopletan "
 "piktogramon sen bildigi missignalojn kaj kun subteno por alta bildera "
 "denseco kaj simbolaj piktogramoj."
 
@@ -277,7 +276,7 @@ msgstr "Dekstre alklaku la panelon kaj elektu 'Aldoni al panelo'"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:46
 msgid "Add the XApp Status applet to the panel"
-msgstr "Aldoni la aplikaĵeton pri XApa stato al la panelo"
+msgstr "Aldoni la aplikaĵeton pri xapa stato al la panelo"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:16
 msgid "Install multimedia codecs"
@@ -316,8 +315,8 @@ msgid ""
 "If something goes wrong you can then restore your operating system from a "
 "previously saved snapshot."
 msgstr ""
-"Se io fiaskas, tiam vi povas restaŭri vian operaciumon ekde antaŭe "
-"konservita momentfoto."
+"Se io fiaskas, vi povas restaŭri vian operaciumon ekde antaŭe konservita "
+"momentfoto."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:39
 msgid "Launch Timeshift"
@@ -345,8 +344,8 @@ msgstr "Via versio de Linukso Minto baldaŭ atingos vivofinon"
 #, python-brace-format
 msgid "It will stop receiving support and updates in a day."
 msgid_plural "It will stop receiving support and updates in {num_days} days."
-msgstr[0] "Ĝi ne plu ricevos subtenon kaj ĝisdatigojn post tago."
-msgstr[1] "Ĝi ne plu ricevos subtenon kaj ĝisdatigojn post {num_days} tagoj."
+msgstr[0] "Ĝi ne plu ricevos subtenon kaj ĝisdatigojn en tago."
+msgstr[1] "Ĝi ne plu ricevos subtenon kaj ĝisdatigojn en {num_days} tagoj."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:54
 msgid "Your version of Linux Mint is no longer supported"
@@ -363,6 +362,22 @@ msgstr[1] "Ĝi atingis vivofinon antaŭ {num_days} tagoj."
 #, python-format
 msgid "Visit %s to find information about newer releases."
 msgstr "Vizitu %s por trovi informojn pri pli novaj eldonoj."
+
+#: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:17
+msgid "Remove conflicting indicators"
+msgstr ""
+
+#: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:37
+msgid "The following packages prevent tray icons from working properly:"
+msgstr ""
+
+#: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:39
+msgid "Note: You will need to log out after removing them."
+msgstr ""
+
+#: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:45
+msgid "Remove the conflicting packages."
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:26
 msgid "Install language packs"

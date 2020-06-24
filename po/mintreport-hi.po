@@ -7,59 +7,59 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2020-01-15 16:38+0000\n"
-"PO-Revision-Date: 2019-11-19 06:56+0000\n"
+"POT-Creation-Date: 2020-06-19 12:06+0100\n"
+"PO-Revision-Date: 2020-06-22 04:03+0000\n"
 "Last-Translator: Panwar <Unknown>\n"
 "Language-Team: Hindi <hi@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2020-05-11 11:04+0000\n"
-"X-Generator: Launchpad (build fbdff7602bd10fb883bf7e2ddcc7fd5a16f60398)\n"
+"X-Launchpad-Export-Date: 2020-06-24 10:12+0000\n"
+"X-Generator: Launchpad (build 1cbd0aa39df153c901321817f9b57cf3f232b507)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
-#: usr/lib/linuxmint/mintreport/app.py:236 generate_desktop_files:25
+#: usr/lib/linuxmint/mintreport/app.py:245 generate_desktop_files:25
 #: generate_desktop_files:39 generate_desktop_files:53
 #: generate_desktop_files:67
 msgid "System Reports"
 msgstr "सिस्टम रिपोर्ट"
 
-#: usr/lib/linuxmint/mintreport/app.py:194
+#: usr/lib/linuxmint/mintreport/app.py:193
 msgid "_File"
 msgstr "फ़ाइल (_F)"
 
-#: usr/lib/linuxmint/mintreport/app.py:199
+#: usr/lib/linuxmint/mintreport/app.py:198
 msgid "Refresh"
 msgstr "रिफ्रेश करें"
 
-#: usr/lib/linuxmint/mintreport/app.py:206
+#: usr/lib/linuxmint/mintreport/app.py:205
 msgid "Restore ignored reports"
 msgstr "अनदेखी की गयी रिपोर्ट पुनः स्थापित करें"
 
-#: usr/lib/linuxmint/mintreport/app.py:210
+#: usr/lib/linuxmint/mintreport/app.py:209
 #: usr/lib/linuxmint/mintreport/tray.py:53
 msgid "Quit"
 msgstr "छोड़ें"
 
-#: usr/lib/linuxmint/mintreport/app.py:221
+#: usr/lib/linuxmint/mintreport/app.py:220
 msgid "_Help"
 msgstr "मदद (_H)"
 
-#: usr/lib/linuxmint/mintreport/app.py:227
-#: usr/lib/linuxmint/mintreport/app.py:234
+#: usr/lib/linuxmint/mintreport/app.py:226
+#: usr/lib/linuxmint/mintreport/app.py:243
 msgid "About"
 msgstr "के बारे में"
 
-#: usr/lib/linuxmint/mintreport/app.py:278
+#: usr/lib/linuxmint/mintreport/app.py:287
 msgid "An error occurred while gathering the system information."
 msgstr "सिस्टम की जानकारी एकत्र करते समय त्रुटि हुई"
 
-#: usr/lib/linuxmint/mintreport/app.py:292
+#: usr/lib/linuxmint/mintreport/app.py:301
 msgid "System information copied"
 msgstr "सिस्टम की जानकारी कॉपी कर दी गई है"
 
-#: usr/lib/linuxmint/mintreport/app.py:292
+#: usr/lib/linuxmint/mintreport/app.py:301
 msgid ""
 "Your system information was copied into your clipboard so you can paste it "
 "on the forums."
@@ -67,11 +67,11 @@ msgstr ""
 "आपके सिस्टम की जानकारी आपके क्लिपबोर्ड पर कॉपी कर दी गई ताकि आप इसे इंटरनेट "
 "फोरम पर पेस्ट कर सकें।"
 
-#: usr/lib/linuxmint/mintreport/app.py:301
+#: usr/lib/linuxmint/mintreport/app.py:310
 msgid "System information uploaded"
 msgstr "सिस्टम की जानकारी अपलोड कर दी गई है"
 
-#: usr/lib/linuxmint/mintreport/app.py:301
+#: usr/lib/linuxmint/mintreport/app.py:310
 #, python-format
 msgid ""
 "Your system information was uploaded to %s. This link was placed in your "
@@ -80,11 +80,11 @@ msgstr ""
 "आपकी सिस्टम की जानकारी %s पर अपलोड कर दी गई। यह लिंक आपके क्लिपबोर्ड पर है "
 "ताकि आप इसे IRC पर पेस्ट कर सकें।"
 
-#: usr/lib/linuxmint/mintreport/app.py:303
+#: usr/lib/linuxmint/mintreport/app.py:312
 msgid "An error occurred while uploading the system information"
 msgstr "सिस्टम की जानकारी अपलोड करते समय त्रुटि हुई"
 
-#: usr/lib/linuxmint/mintreport/app.py:303
+#: usr/lib/linuxmint/mintreport/app.py:312
 msgid ""
 "Copy and paste the system information manually into a pastebin site like "
 "https://pastebin.com and share the link on IRC."
@@ -92,21 +92,19 @@ msgstr ""
 "सिस्टम की जानकारी मैन्युअल रूप से https://pastebin.com जैसी टेक्स्ट संचयन "
 "साइट पर कॉपी-पेस्ट करें व IRC पर लिंक साझा करें।"
 
-#: usr/lib/linuxmint/mintreport/app.py:382
-msgid "Ignore this problem"
-msgstr "इस समस्या को अनदेखा करें"
+#: usr/lib/linuxmint/mintreport/app.py:391
+msgid "Ignore this report"
+msgstr "इस रिपोर्ट को अनदेखा करें"
 
-#: usr/lib/linuxmint/mintreport/app.py:398
-msgid "Are you sure you want to ignore this problem?"
-msgstr "क्या आप वाकई इस समस्या को अनदेखा करना चाहते हैं ?"
+#: usr/lib/linuxmint/mintreport/app.py:407
+msgid "Are you sure you want to ignore this report?"
+msgstr "क्या आप निश्चित ही इस रिपोर्ट को अनदेखा करना चाहते हैं?"
 
-#: usr/lib/linuxmint/mintreport/app.py:399
-msgid ""
-"The problem will be permanently ignored and will no longer be visible."
-msgstr ""
-"समस्या को स्थायी रूप से अनदेखा कर दिया जाएगा व यह दृश्यमान भी नहीं रहेगी।"
+#: usr/lib/linuxmint/mintreport/app.py:408
+msgid "The report will be permanently ignored and will no longer be visible."
+msgstr "इस रिपोर्ट को स्थायी रुप से अनदेखा कर अदृश्य किया जाएगा।"
 
-#: usr/lib/linuxmint/mintreport/app.py:491
+#: usr/lib/linuxmint/mintreport/app.py:500
 #, python-format
 msgid ""
 "The debug symbols are missing for %(program)s.\n"
@@ -115,7 +113,7 @@ msgstr ""
 "%(program)s के लिए दोषमार्जन(डिबग) प्रतीक अनुपस्थित हैं।\n"
 "कृपया %(package)s इंस्टॉल करें।"
 
-#: usr/lib/linuxmint/mintreport/app.py:505
+#: usr/lib/linuxmint/mintreport/app.py:514
 #, python-format
 msgid ""
 "The package providing %s could not be found.\n"
@@ -126,7 +124,7 @@ msgstr ""
 "यदि इस क्रैश रिपोर्ट के लिए स्टैक ट्रेस उत्पन्न करना चाहते हैं, तो इसे पुन: "
 "इंस्टॉल करें।"
 
-#: usr/lib/linuxmint/mintreport/app.py:533
+#: usr/lib/linuxmint/mintreport/app.py:542
 msgid ""
 "The headers or binaries installed on your system do not match the code which "
 "was executed during the crash.\n"
@@ -144,9 +142,9 @@ msgstr ""
 msgid "Show System Reports"
 msgstr "सिस्टम रिपोर्ट दिखाएँ"
 
-#: usr/lib/linuxmint/mintreport/tray.py:127
-msgid "Some problems were detected which require your attention"
-msgstr "कुछ समस्याएँ पाई गई जिन पर आपको ध्यान देने की आवश्यकता है"
+#: usr/lib/linuxmint/mintreport/tray.py:116
+msgid "Some system reports require your attention"
+msgstr "कुछ सिस्टम रिपोर्ट हेतु आपको ध्यान देने की आवश्यकता है"
 
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
@@ -166,8 +164,8 @@ msgid "No problems were detected"
 msgstr "कोई समस्या नहीं पाई गई"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:3
-msgid "Detected problems"
-msgstr "पाई गई समस्याएँ"
+msgid "System reports"
+msgstr "सिस्टम रिपोर्ट"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:4
 msgid "Copy"
@@ -270,14 +268,17 @@ msgid ""
 "The XApp Status applet allows applications to provide a tray icon without "
 "rendering glitches and with support for HiDPI and symbolic icons."
 msgstr ""
+"एक्स-ऐप स्थिति एप्लेट द्वारा अनुप्रयोग अपना ट्रे-आइकन बिना प्रस्तुतिकरण "
+"समस्या के प्रदर्शित कर सकते हैं, इसमें उच्च रिजोल्यूशन समर्थन व प्रतीकात्मक "
+"आइकन भी है।"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:39
 msgid "Right-click the panel and choose 'Add to Panel'."
-msgstr ""
+msgstr "दायाँ क्लिक कर 'पैनल पर जोड़ें' चुनें।"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:46
 msgid "Add the XApp Status applet to the panel"
-msgstr ""
+msgstr "एक्स-ऐप स्थिति एप्लेट पैनल पर जोड़ें"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:16
 msgid "Install multimedia codecs"
@@ -288,6 +289,8 @@ msgid ""
 "Multimedia codecs are required to play some video formats and to properly "
 "render some websites."
 msgstr ""
+"कई वीडियो प्रारूपों एवं कुछ वेबसाइट के प्रस्तुतिकरण हेतु मल्टीमीडिया कोडेक्स "
+"आवश्यक होते हैं।"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:36
 msgid "Install the Multimedia Codecs"
@@ -295,23 +298,29 @@ msgstr "मल्टीमीडिया कोडेक्स इंस्ट�
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:17
 msgid "Set up the system restore utility"
-msgstr ""
+msgstr "सिस्टम पुनर्स्थापना सेवा सेट करें"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:31
 msgid "Linux Mint provides a system restore utility called Timeshift."
 msgstr ""
+"लिनक्स मिंट एक सिस्टम पुनर्स्थापना सेवा प्रदान करता है, जिसका नाम टाइमशिफ्ट "
+"है।"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:32
 msgid ""
 "Thanks to Timeshift you can take snapshots of the system, either manually or "
 "automatically."
 msgstr ""
+"टाइमशिफ्ट द्वारा आप स्वतः या मैन्युअल रूप से, सिस्टम की स्नैपशॉट बना सकते "
+"हैं।"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:33
 msgid ""
 "If something goes wrong you can then restore your operating system from a "
 "previously saved snapshot."
 msgstr ""
+"भविष्य में किसी प्रकार की समस्या होने पर आप अपने ऑपरेटिंग सिस्टम को पूर्व "
+"संचित स्नैपशॉट द्वारा पुनःस्थापित कर सकेंगे।"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:39
 msgid "Launch Timeshift"
@@ -361,6 +370,22 @@ msgstr[1] ""
 msgid "Visit %s to find information about newer releases."
 msgstr "नए संस्करणों से संबंधी सूचना %s पर जाकर देखें।"
 
+#: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:17
+msgid "Remove conflicting indicators"
+msgstr "विरुद्ध सूचक हटाएँ"
+
+#: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:37
+msgid "The following packages prevent tray icons from working properly:"
+msgstr "निम्नलिखित पैकेज ट्रे आइकन को बाधित कर रहे हैं :"
+
+#: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:39
+msgid "Note: You will need to log out after removing them."
+msgstr "ध्यान दें : इन्हें हटाने के उपरांत आपको लॉगआउट करना होगा।"
+
+#: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:45
+msgid "Remove the conflicting packages."
+msgstr "विरुद्ध पैकेज हटाएँ जा रहे हैं।"
+
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:26
 msgid "Install language packs"
 msgstr "भाषीय पैक इंस्टॉल करें"
@@ -382,16 +407,16 @@ msgstr "हार्डवेयर ड्राइवर इंस्टॉल 
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:27
 msgid "Processor"
-msgstr ""
+msgstr "प्रोसेसर"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:40
 msgid "Unknown"
-msgstr ""
+msgstr "अज्ञात"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:44
 #, python-format
 msgid "%s (unknown)"
-msgstr ""
+msgstr "%s (अज्ञात)"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:88
 msgid "Hardware drivers are available for the following devices:"
