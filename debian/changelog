@@ -1,3 +1,9 @@
+mintreport (1.2.0) ulyana; urgency=medium
+
+  * codecs: Fix installing mint-meta-codecs in Mint 20
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 24 Jun 2020 18:48:55 +0100
+
 mintreport (1.1.9) ulyana; urgency=medium
 
   [ Michael Webster ]
