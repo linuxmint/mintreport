@@ -1,3 +1,16 @@
+mintreport (1.1.9) ulyana; urgency=medium
+
+  [ Michael Webster ]
+  * Add report for blocked status notifier. (#53)
+
+  [ Clement Lefebvre ]
+  * app-indicator: Rephrase report, uninstall all at once
+  * l10n: Update POT
+  * l10n: Update translations
+  * l10n: Generate files
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 24 Jun 2020 11:47:35 +0100
+
 mintreport (1.1.8) ulyana; urgency=medium
 
   * Tray: Always show the same icon
