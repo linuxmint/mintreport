@@ -1,3 +1,9 @@
+mintreport (1.2.1) ulyana; urgency=medium
+
+  * Add a test to detect new major releases
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 09 Jul 2020 16:00:28 +0100
+
 mintreport (1.2.0) ulyana; urgency=medium
 
   * codecs: Fix installing mint-meta-codecs in Mint 20
