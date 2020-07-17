@@ -23,24 +23,16 @@ class Report(InfoReport):
     def is_pertinent(self):
         # Defines whether this report should show up
         result = subprocess.run(["/usr/bin/find", os.path.expanduser("~"),
-                                 "-maxdepth", "1",
-                                 "-name", ".*",
-                                 "-type", "f",
+                                 "-path", os.path.join(os.path.expanduser("~"), ".*"),
                                  "-user", "root"
                                 ], capture_output=True, text=True)
-        self.files += result.stdout
-        result = subprocess.run(["/usr/bin/find", os.path.join(os.path.expanduser("~"), ".config"), 
-                                                  os.path.join(os.path.expanduser("~"), ".local"),
-                                 "-user", "root",
-                                 "(", "-name", "Steam", "-prune", "-o", "-print", ")",
-                                ], capture_output=True, text=True)
-        self.files += result.stdout
+        self.files = result.stdout
         return (len(self.files) > 0)
 
     def get_descriptions(self):
         # Return the descriptions
         descriptions = []
-        descriptions.append(_("These files or directories are owned by root but should be owned by you:"))
+        descriptions.append(_("These hidden files and/or directories are owned by root instead of by you:"))
         descriptions.append(self.files)
         return descriptions
 
@@ -54,7 +46,11 @@ class Report(InfoReport):
         return actions
 
     def callback(self, data):
-        subprocess.run(["/usr/bin/pkexec", "/bin/chown", "-R", "--from=root", "{}:".format(pwd.getpwuid(os.getuid()).pw_name), os.path.expanduser("~")])
+        subprocess.run(["/usr/bin/find", os.path.expanduser("~"),
+                        "-path", os.path.join(os.path.expanduser("~"), ".*"),
+                        "-user", "root",
+                        "-exec", "/usr/bin/pkexec", "/bin/chown", "{}:".format(pwd.getpwuid(os.getuid()).pw_name), "{}", "+",
+                       ])
         # Reload
         return True
 
