@@ -22,14 +22,25 @@ class Report(InfoReport):
 
     def is_pertinent(self):
         # Defines whether this report should show up
-        result = subprocess.run(["/usr/bin/find", os.path.expanduser("~"), "-user", "root"], capture_output=True, text=True)
-        self.files = result.stdout
+        result = subprocess.run(["/usr/bin/find", os.path.expanduser("~"),
+                                 "-maxdepth", "1",
+                                 "-name", ".*",
+                                 "-type", "f",
+                                 "-user", "root"
+                                ], capture_output=True, text=True)
+        self.files += result.stdout
+        result = subprocess.run(["/usr/bin/find", os.path.join(os.path.expanduser("~"), ".config"), 
+                                                  os.path.join(os.path.expanduser("~"), ".local"),
+                                 "-user", "root",
+                                 "(", "-name", "Steam", "-prune", "-o", "-print", ")",
+                                ], capture_output=True, text=True)
+        self.files += result.stdout
         return (len(self.files) > 0)
 
     def get_descriptions(self):
         # Return the descriptions
         descriptions = []
-        descriptions.append(_("The following files or directories in your home directory are owned by root instead of by you:"))
+        descriptions.append(_("These files or directories are owned by root but should be owned by you:"))
         descriptions.append(self.files)
         return descriptions
 
