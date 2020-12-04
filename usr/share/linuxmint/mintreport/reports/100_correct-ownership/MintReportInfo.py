@@ -16,7 +16,7 @@ class Report(InfoReport):
         gettext.install("mintreport", "/usr/share/locale", names="ngettext")
 
         self.title = _("Correct file ownership problem")
-        self.icon = "mintreport-symbolic"
+        self.icon = "dialog-password-symbolic"
         self.has_ignore_button = True
         self.files = ""
 
