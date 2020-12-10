@@ -8,22 +8,22 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2020-06-19 12:06+0100\n"
-"PO-Revision-Date: 2020-04-18 06:41+0000\n"
-"Last-Translator: mahfiaz <mahfiaz@gmail.com>\n"
+"PO-Revision-Date: 2020-09-09 03:14+0000\n"
+"Last-Translator: Ivar Smolin <okul@linux.ee>\n"
 "Language-Team: Estonian <et@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2020-06-24 10:12+0000\n"
-"X-Generator: Launchpad (build 1cbd0aa39df153c901321817f9b57cf3f232b507)\n"
+"X-Launchpad-Export-Date: 2020-12-10 10:32+0000\n"
+"X-Generator: Launchpad (build 4853cb86c14c5a9e513816c8a61121c639b30835)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
 #: usr/lib/linuxmint/mintreport/app.py:245 generate_desktop_files:25
 #: generate_desktop_files:39 generate_desktop_files:53
 #: generate_desktop_files:67
 msgid "System Reports"
-msgstr "Süsteemi raportid"
+msgstr "Süsteemi aruanded"
 
 #: usr/lib/linuxmint/mintreport/app.py:193
 msgid "_File"
@@ -35,7 +35,7 @@ msgstr "Värskenda"
 
 #: usr/lib/linuxmint/mintreport/app.py:205
 msgid "Restore ignored reports"
-msgstr "Taasta ignoreeritud raportid"
+msgstr "Taasta eiratud aruanded"
 
 #: usr/lib/linuxmint/mintreport/app.py:209
 #: usr/lib/linuxmint/mintreport/tray.py:53
@@ -53,7 +53,7 @@ msgstr "Lähemalt"
 
 #: usr/lib/linuxmint/mintreport/app.py:287
 msgid "An error occurred while gathering the system information."
-msgstr "Süsteemi andmete kogumisel esines viga."
+msgstr "Süsteemi kohta andmete kogumisel esines viga."
 
 #: usr/lib/linuxmint/mintreport/app.py:301
 msgid "System information copied"
@@ -89,20 +89,20 @@ msgid ""
 "Copy and paste the system information manually into a pastebin site like "
 "https://pastebin.com and share the link on IRC."
 msgstr ""
-"Kopeeri ja aseta süsteemi andmed käsitsi mõnele pastebin-i laadsele lehele "
-"nagu https://pastebin.com ja jaga linki IRCs."
+"Kopeeri ja aseta süsteemi andmed käsitsi näiteks https://pastebin.com lehele "
+"ja jaga linki IRCs."
 
 #: usr/lib/linuxmint/mintreport/app.py:391
 msgid "Ignore this report"
-msgstr ""
+msgstr "Eira aruannet"
 
 #: usr/lib/linuxmint/mintreport/app.py:407
 msgid "Are you sure you want to ignore this report?"
-msgstr ""
+msgstr "Kas soovid seda aruannet eirata?"
 
 #: usr/lib/linuxmint/mintreport/app.py:408
 msgid "The report will be permanently ignored and will no longer be visible."
-msgstr ""
+msgstr "Seda raportit eiratakse püsivalt ning see pole enam nähtaval."
 
 #: usr/lib/linuxmint/mintreport/app.py:500
 #, python-format
@@ -121,7 +121,7 @@ msgid ""
 "reinstall it."
 msgstr ""
 "Paketti, mis pakuks %s, ei leitud.\n"
-"Kui sa tahad selle krahhiraporti kohta koostada pinu jälje (stack trace), "
+"Kui sa tahad selle krahhiaruande kohta koostada pinu jälje (stack trace), "
 "paigalda see uuesti."
 
 #: usr/lib/linuxmint/mintreport/app.py:542
@@ -140,11 +140,11 @@ msgstr ""
 
 #: usr/lib/linuxmint/mintreport/tray.py:49
 msgid "Show System Reports"
-msgstr "Süstemiraportite näitamine"
+msgstr "Süsteemi aruannete näitamine"
 
 #: usr/lib/linuxmint/mintreport/tray.py:116
 msgid "Some system reports require your attention"
-msgstr ""
+msgstr "Mõned süsteemi aruanded vajavad sinu tähelepanu"
 
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
@@ -165,7 +165,7 @@ msgstr "Ühtegi probleemi ei leitud"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:3
 msgid "System reports"
-msgstr ""
+msgstr "Süsteemi aruanded"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:4
 msgid "Copy"
@@ -193,18 +193,18 @@ msgstr "Süsteemiinfo"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:9
 msgid "Crash reports are not available"
-msgstr "Krahhiraporteid ei ole"
+msgstr "Krahhiaruandeid ei ole"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:10
 msgid ""
 "To enable crash reporting, install systemd-coredump and reboot your computer."
 msgstr ""
-"Krahhiraportite kogumiseks paigalda systemd-coredump ja tee arvutile "
+"Krahhiaruannete kogumiseks paigalda systemd-coredump ja tee arvutile "
 "taaskäivitus."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:11
 msgid "Crash reports:"
-msgstr "Krahhiraportid:"
+msgstr "Krahhiaruanded:"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:12
 msgid "Stack trace:"
@@ -215,8 +215,8 @@ msgid ""
 "When seeking help, check for existing bug reports, pastebin the trace, share "
 "crash.tar.gz (from Local Files) and explain how to reproduce the crash."
 msgstr ""
-"Abi otsimisel vaata olesolevaid vearaporteid, saada pinu (trace) pastebin-i, "
-"jaga crash.tar.gz faili (kohalikest failidest) ja selgita, kuidas krahhi "
+"Abi otsimisel vaata olemasolevaid veaaruandeid, saada pinu (trace) pastebin-"
+"i, jaga crash.tar.gz faili (kohalikest failidest) ja selgita, kuidas krahhi "
 "korrata."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:14
@@ -233,7 +233,7 @@ msgstr "Vigade loetelu"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:17
 msgid "Find the most appropriate bug tracker."
-msgstr "Leia kõige kohasem kohta veast raporteerimiseks."
+msgstr "Leia kõige sobivam koht veast raporteerimiseks."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:18
 msgid "Pastebin"
@@ -249,13 +249,13 @@ msgid ""
 "Always provide a trace and reliable instructions to trigger/observe the "
 "problem."
 msgstr ""
-"Arendajad peavad teada saama, millises koodilõigus viga tekkis ning kuidas "
-"seda uuesti esile kutsuda. Lisa alati raportile andmed pinu kohta (trace) ja "
-"piisavad juhised probleemi kordamiseks või jälgimiseks."
+"Arendajatel on vaja teada, millises koodilõigus viga tekkis ning kuidas seda "
+"uuesti esile kutsuda. Lisa alati raportile andmed pinu kohta (trace) ja "
+"piisavad juhised probleemi kordamiseks või vaatlemiseks."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:21
 msgid "Crash reports"
-msgstr "Krahhiraportid"
+msgstr "Krahhiaruanded"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
 msgid "Add the XApp Status applet"
@@ -279,7 +279,7 @@ msgstr "Lisa XApp Status rakend paneelile"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:16
 msgid "Install multimedia codecs"
-msgstr "Multimedia koodeki paigaldamine"
+msgstr "Multimeedia koodekite paigaldamine"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:30
 msgid ""
@@ -365,19 +365,20 @@ msgstr "Külasta %s lehte, et saada infot uuemate väljalasete kohta."
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:17
 msgid "Remove conflicting indicators"
-msgstr ""
+msgstr "Vastuoluliste indikaatorite eemaldamine"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:37
 msgid "The following packages prevent tray icons from working properly:"
 msgstr ""
+"Järgnevad paketid takistavad süsteemi salve ikoonide korrektset toimimist:"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:39
 msgid "Note: You will need to log out after removing them."
-msgstr ""
+msgstr "Märkus: pärast nende eemaldamist pead välja logima."
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:45
 msgid "Remove the conflicting packages."
-msgstr ""
+msgstr "Eemalda vastuolulised paketid."
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:26
 msgid "Install language packs"

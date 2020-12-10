@@ -1,0 +1,423 @@
+# Bengali translation for linuxmint
+# Copyright (c) 2020 Rosetta Contributors and Canonical Ltd 2020
+# This file is distributed under the same license as the linuxmint package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: linuxmint\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2020-06-19 12:06+0100\n"
+"PO-Revision-Date: 2020-08-02 14:16+0000\n"
+"Last-Translator: Pratyay Mondal <Unknown>\n"
+"Language-Team: Bengali <bn@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Launchpad-Export-Date: 2020-12-10 10:32+0000\n"
+"X-Generator: Launchpad (build 4853cb86c14c5a9e513816c8a61121c639b30835)\n"
+
+#: usr/lib/linuxmint/mintreport/app.py:84
+#: usr/lib/linuxmint/mintreport/app.py:245 generate_desktop_files:25
+#: generate_desktop_files:39 generate_desktop_files:53
+#: generate_desktop_files:67
+msgid "System Reports"
+msgstr "সিস্টেম রিপোর্টস"
+
+#: usr/lib/linuxmint/mintreport/app.py:193
+msgid "_File"
+msgstr "_ফাইল"
+
+#: usr/lib/linuxmint/mintreport/app.py:198
+msgid "Refresh"
+msgstr "রিফ্রেশ করুন"
+
+#: usr/lib/linuxmint/mintreport/app.py:205
+msgid "Restore ignored reports"
+msgstr "উপেক্ষা করা প্রতিবেদনগুলি(Reports) পুনরুদ্ধার করুন"
+
+#: usr/lib/linuxmint/mintreport/app.py:209
+#: usr/lib/linuxmint/mintreport/tray.py:53
+msgid "Quit"
+msgstr "প্রস্থান করুন"
+
+#: usr/lib/linuxmint/mintreport/app.py:220
+msgid "_Help"
+msgstr "_সহায়তা"
+
+#: usr/lib/linuxmint/mintreport/app.py:226
+#: usr/lib/linuxmint/mintreport/app.py:243
+msgid "About"
+msgstr "পরিচিতি"
+
+#: usr/lib/linuxmint/mintreport/app.py:287
+msgid "An error occurred while gathering the system information."
+msgstr "সিস্টেমের তথ্য সংগ্রহ করার সময় একটি সমস্যা দেখা দিয়েছে।"
+
+#: usr/lib/linuxmint/mintreport/app.py:301
+msgid "System information copied"
+msgstr "সিস্টেম তথ্য অনুলিপি করা হয়েছে"
+
+#: usr/lib/linuxmint/mintreport/app.py:301
+msgid ""
+"Your system information was copied into your clipboard so you can paste it "
+"on the forums."
+msgstr ""
+"আপনার সিস্টেমের তথ্য আপনার ক্লিপবোর্ডে অনুলিপি করা হয়েছে যাতে আপনি এটি "
+"ফোরামে পেস্ট করতে পারেন।"
+
+#: usr/lib/linuxmint/mintreport/app.py:310
+msgid "System information uploaded"
+msgstr "সিস্টেম তথ্য আপলোড করা হয়েছে"
+
+#: usr/lib/linuxmint/mintreport/app.py:310
+#, python-format
+msgid ""
+"Your system information was uploaded to %s. This link was placed in your "
+"clipboard so you can paste it on IRC."
+msgstr ""
+"আপনার সিস্টেমের তথ্য %s এ আপলোড করা হয়েছে। এই লিঙ্কটি আপনার ক্লিপবোর্ডে "
+"রাখা হয়েছে যাতে আপনি এটি IRC-তে পেস্ট করতে পারেন।"
+
+#: usr/lib/linuxmint/mintreport/app.py:312
+msgid "An error occurred while uploading the system information"
+msgstr "সিস্টেমের তথ্য আপলোড করার সময় একটি ত্রুটি ঘটেছে"
+
+#: usr/lib/linuxmint/mintreport/app.py:312
+msgid ""
+"Copy and paste the system information manually into a pastebin site like "
+"https://pastebin.com and share the link on IRC."
+msgstr ""
+"https://pastebin.com এর মতো একটি পেস্টবিন সাইটে ম্যানুয়ালি সিস্টেমের তথ্য "
+"অনুলিপি করুন এবং লিঙ্কটি IRC-তে শেয়ার করুন।"
+
+#: usr/lib/linuxmint/mintreport/app.py:391
+msgid "Ignore this report"
+msgstr "এই প্রতিবেদনটি উপেক্ষা করুন"
+
+#: usr/lib/linuxmint/mintreport/app.py:407
+msgid "Are you sure you want to ignore this report?"
+msgstr "আপনি কি নিশ্চিত যে আপনি এই প্রতিবেদনটি উপেক্ষা করতে চান?"
+
+#: usr/lib/linuxmint/mintreport/app.py:408
+msgid "The report will be permanently ignored and will no longer be visible."
+msgstr "প্রতিবেদনটি স্থায়ীভাবে উপেক্ষা করা হবে এবং এটি আর দৃশ্যমান হবে না।"
+
+#: usr/lib/linuxmint/mintreport/app.py:500
+#, python-format
+msgid ""
+"The debug symbols are missing for %(program)s.\n"
+"Please install %(package)s."
+msgstr ""
+"ডিবাগ প্রতীকগুলি %(program)s জন্য অনুপস্থিত।\n"
+"অনুগ্রহ করে %(package)s ইনস্টল করুন।"
+
+#: usr/lib/linuxmint/mintreport/app.py:514
+#, python-format
+msgid ""
+"The package providing %s could not be found.\n"
+"If you want to generate a stack trace for this crash report, please "
+"reinstall it."
+msgstr ""
+"%s সরবরাহকারী প্যাকেজটি পাওয়া যায়নি।\n"
+"আপনি যদি এই ক্র্যাশ প্রতিবেদনের জন্য স্ট্যাক ট্রেস তৈরি করতে চান তবে দয়া "
+"করে এটি পুনরায় ইনস্টল করুন।"
+
+#: usr/lib/linuxmint/mintreport/app.py:542
+msgid ""
+"The headers or binaries installed on your system do not match the code which "
+"was executed during the crash.\n"
+"They probably got upgraded since.\n"
+"A stack trace is available in 'Local Files' but its content is probably "
+"inaccurate."
+msgstr ""
+"আপনার সিস্টেমে ইনস্টল হওয়া হেডারস(headers) বা বাইনারিগুলি ক্র্যাশের সময় "
+"কার্যকর করা কোডটির সাথে মেলে নি।\n"
+"তারা সম্ভবত ক্র্যাশের পরে আপগ্রেড হয়েছে।\n"
+"'লোকাল ফাইলস' এ একটি স্ট্যাক ট্রেস উপলব্ধ তবে এটির সামগ্রী সম্ভবত "
+"ত্রুটিযুক্ত।"
+
+#: usr/lib/linuxmint/mintreport/tray.py:49
+msgid "Show System Reports"
+msgstr "সিস্টেম প্রতিবেদনগুলি দেখান"
+
+#: usr/lib/linuxmint/mintreport/tray.py:116
+msgid "Some system reports require your attention"
+msgstr "কিছু সিস্টেম প্রতিবেদনে আপনার খতিয়ে দেখা দরকার"
+
+#: generate_desktop_files:25 generate_desktop_files:39
+#: generate_desktop_files:53 generate_desktop_files:67
+msgid "Troubleshoot problems"
+msgstr "সমস্যার সমাধান বের করুন"
+
+#: generate_desktop_files:53
+msgid "Troubleshooting Tool"
+msgstr "সমস্যা সমাধানের সরঞ্জাম"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:1
+msgid "Running system checks..."
+msgstr "সিস্টেম পরীক্ষা চলছে..."
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:2
+msgid "No problems were detected"
+msgstr "কোনও সমস্যা সনাক্ত করা যায়নি"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:3
+msgid "System reports"
+msgstr "সিস্টেম প্রতিবেদন"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:4
+msgid "Copy"
+msgstr "অনুলিপি করুন"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:5
+msgid ""
+"Copy to clipboard (code tags are added to make it easy to paste the system "
+"information into the forums)"
+msgstr ""
+"ক্লিপবোর্ডে অনুলিপি করুন (ফোরামগুলিতে সিস্টেমের তথ্য আটকানো সহজ করার জন্য "
+"কোড ট্যাগ যুক্ত করা হয়েছে)"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:6
+msgid "Upload"
+msgstr "আপলোড করুন"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:7
+msgid "Upload to a pastebin service (no personal information included)"
+msgstr ""
+"একটি পেস্টবিন পরিষেবায় আপলোড করুন (কোনও ব্যক্তিগত তথ্য অন্তর্ভুক্ত নেই)"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:8
+msgid "System information"
+msgstr "সিস্টেম সম্পর্কিত তথ্য"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:9
+msgid "Crash reports are not available"
+msgstr "ক্র্যাশ রিপোর্ট পাওয়া যায় নি"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:10
+msgid ""
+"To enable crash reporting, install systemd-coredump and reboot your computer."
+msgstr ""
+"ক্র্যাশ প্রতিবেদন সক্ষম করতে, systemd-coredump ইনস্টল করুন এবং আপনার "
+"কম্পিউটারটি রিবুট করুন।"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:11
+msgid "Crash reports:"
+msgstr "ক্র্যাশ রিপোর্ট:"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:12
+msgid "Stack trace:"
+msgstr "স্ট্যাক ট্রেস:"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:13
+msgid ""
+"When seeking help, check for existing bug reports, pastebin the trace, share "
+"crash.tar.gz (from Local Files) and explain how to reproduce the crash."
+msgstr ""
+"সহায়তা চাইবার সময়, বিদ্যমান বাগের প্রতিবেদনগুলি পরীক্ষা করুন, ট্রেসটি "
+"পেস্টবিন করুন, crash.tar.gz (স্থানীয় ফাইলগুলি থেকে) শেয়ার করুন এবং কীভাবে "
+"ক্রাশটি পুনরুত্পাদন করা যায় তা ব্যাখ্যা করুন।"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:14
+msgid "Local Files"
+msgstr "স্থানীয় ফাইলস"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:15
+msgid "Open the directory containing crash.tar.gz and its content."
+msgstr "crash.tar.gz এবং এর সামগ্রীযুক্ত ডিরেক্টরি খুলুন।"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:16
+msgid "Bug Tracker"
+msgstr "বাগ তালাশকারী(Tracker)"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:17
+msgid "Find the most appropriate bug tracker."
+msgstr "সর্বাধিক উপযুক্ত বাগ ট্র্যাকার সন্ধান করুন।"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:18
+msgid "Pastebin"
+msgstr "পেস্টবিন"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:19
+msgid "Upload the trace to the Internet."
+msgstr "ইন্টারনেটে ট্রেসটি আপলোড করুন।"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:20
+msgid ""
+"Developers need to know where the code fails or how to reproduce the issue. "
+"Always provide a trace and reliable instructions to trigger/observe the "
+"problem."
+msgstr ""
+"ডেভেলপারসদের কোডটি কোথায় ব্যর্থ হয়েছে বা কীভাবে সমস্যাটি পুনরুত্পাদন করতে "
+"হবে তা জানতে হবে। সমস্যাটি পুনরুত্পাদন/পর্যবেক্ষণ করার জন্য সর্বদা একটি "
+"ট্রেস এবং নির্ভরযোগ্য নির্দেশাবলী সরবরাহ করুন।"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:21
+msgid "Crash reports"
+msgstr "ক্র্যাশ রিপোর্ট"
+
+#: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
+msgid "Add the XApp Status applet"
+msgstr "এক্স-অ্যাপ স্ট্যাটাস অ্যাপলেট যুক্ত করুন"
+
+#: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:37
+msgid ""
+"The XApp Status applet allows applications to provide a tray icon without "
+"rendering glitches and with support for HiDPI and symbolic icons."
+msgstr ""
+"এক্স-অ্যাপ স্ট্যাটাস অ্যাপলেট অ্যাপ্লিকেশনগুলিকে গ্লিচগুলি অঙ্কিত না করে এবং "
+"HiDPI ও সিম্বলিক আইকনগুলির সমর্থন সহ ট্রে আইকন সরবরাহ করার অনুমতি দেয়।"
+
+#: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:39
+msgid "Right-click the panel and choose 'Add to Panel'."
+msgstr "প্যানেলে রাইট ক্লিক করুন এবং 'প্যানেলে যুক্ত করুন' নির্বাচন করুন।"
+
+#: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:46
+msgid "Add the XApp Status applet to the panel"
+msgstr "প্যানেলে এক্স-অ্যাপ স্টেটাস অ্যাপলেট যুক্ত করুন"
+
+#: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:16
+msgid "Install multimedia codecs"
+msgstr "মাল্টিমিডিয়া কোডেক ইনস্টল করুন"
+
+#: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:30
+msgid ""
+"Multimedia codecs are required to play some video formats and to properly "
+"render some websites."
+msgstr ""
+"মাল্টিমিডিয়া কোডেকগুলি কয়েকটি ভিডিও ফর্ম্যাট চালাতে এবং কিছু ওয়েবসাইটকে "
+"যথাযথভাবে রেন্ডার বা অঙ্কিত করার জন্য প্রয়োজনীয়।"
+
+#: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:36
+msgid "Install the Multimedia Codecs"
+msgstr "মাল্টিমিডিয়া কোডেক ইনস্টল করুন"
+
+#: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:17
+msgid "Set up the system restore utility"
+msgstr "সিস্টেম পুনরুদ্ধার(System restore) ইউটিলিটি সেট আপ করুন"
+
+#: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:31
+msgid "Linux Mint provides a system restore utility called Timeshift."
+msgstr ""
+"লিনাক্স মিন্ট Timeshift নামে একটি সিস্টেম রিস্টোর ইউটিলিটি সরবরাহ করে।"
+
+#: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:32
+msgid ""
+"Thanks to Timeshift you can take snapshots of the system, either manually or "
+"automatically."
+msgstr ""
+"Timeshift-এর সাহায্যে আপনি ম্যানুয়ালি বা স্বয়ংক্রিয়ভাবে সিস্টেমের "
+"স্ন্যাপশট নিতে পারেন।"
+
+#: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:33
+msgid ""
+"If something goes wrong you can then restore your operating system from a "
+"previously saved snapshot."
+msgstr ""
+"যদি কিছু ভুল হয়ে যায় তবে আপনি পূর্বের সংরক্ষিত স্ন্যাপশট থেকে আপনার "
+"অপারেটিং সিস্টেমটি পুনরুদ্ধার করতে পারেন।"
+
+#: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:39
+msgid "Launch Timeshift"
+msgstr "Timeshift চালু করুন"
+
+#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:17
+msgid "A new version of Linux Mint is available"
+msgstr "লিনাক্স মিন্টের একটি নতুন সংস্করণ উপলব্ধ"
+
+#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:47
+#, python-format
+msgid "Visit %s for the latest announcements."
+msgstr "চলতি ঘোষণার জন্য %s দেখুন।"
+
+#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:53
+#, python-format
+msgid "Upgrade to %s"
+msgstr "%s এ আপগ্রেড করুন"
+
+#: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:49
+msgid "Your version of Linux Mint will soon reach End-Of-Life (EOL)"
+msgstr "আপনার লিনাক্স মিন্টের সংস্করণ শীঘ্রই End-Of-Life (EOL)-এ পৌঁছে যাবে"
+
+#: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:50
+#, python-brace-format
+msgid "It will stop receiving support and updates in a day."
+msgid_plural "It will stop receiving support and updates in {num_days} days."
+msgstr[0] "এটি একদিনে সমর্থন এবং আপডেটগুলি পাওয়া বন্ধ করবে।"
+msgstr[1] "এটি {num_days}দিনে সমর্থন এবং আপডেটগুলি পাওয়া বন্ধ করবে।"
+
+#: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:54
+msgid "Your version of Linux Mint is no longer supported"
+msgstr "আপনার লিনাক্স মিন্টের সংস্করণটি আর সমর্থিত নয়"
+
+#: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:55
+#, python-brace-format
+msgid "It reached End-Of-Life (EOL) yesterday."
+msgid_plural "It reached End-Of-Life (EOL) {num_days} days ago."
+msgstr[0] "এটি গতকাল End-Of-Life (EOL) পৌঁছেছে।"
+msgstr[1] "এটি {num_days} দিন আগে End-Of-Life (EOL) পৌঁছেছে।"
+
+#: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:66
+#, python-format
+msgid "Visit %s to find information about newer releases."
+msgstr "নতুন রিলিজ সম্পর্কে আরও তথ্য পেতে %s দেখুন।"
+
+#: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:17
+msgid "Remove conflicting indicators"
+msgstr "বিরোধী সূচকগুলি সরান"
+
+#: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:37
+msgid "The following packages prevent tray icons from working properly:"
+msgstr ""
+"নিম্নলিখিত প্যাকেজগুলি ট্রে আইকনগুলিকে সঠিকভাবে কাজ করতে বাধা দিচ্ছে:"
+
+#: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:39
+msgid "Note: You will need to log out after removing them."
+msgstr "দ্রষ্টব্য: এগুলি সরানোর পরে আপনাকে লগ আউট করতে হবে।"
+
+#: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:45
+msgid "Remove the conflicting packages."
+msgstr "বিরোধী প্যাকেজগুলি সরান।"
+
+#: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:26
+msgid "Install language packs"
+msgstr "ভাষার প্যাকগুলি ইনস্টল করুন"
+
+#: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:41
+msgid ""
+"The following localization packages are missing to properly support your "
+"language:"
+msgstr ""
+"নিম্নলিখিত স্থানীয়করণ প্যাকেজগুলি আপনার ভাষাকে সঠিকভাবে সমর্থন করতে "
+"অনুপস্থিত:"
+
+#: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:48
+msgid "Install the Language Packs"
+msgstr "ভাষা প্যাকগুলি ইনস্টল করুন"
+
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:18
+msgid "Install hardware drivers"
+msgstr "হার্ডওয়্যার ড্রাইভার ইনস্টল করুন"
+
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:27
+msgid "Processor"
+msgstr "প্রসেসর"
+
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:40
+msgid "Unknown"
+msgstr "অপরিচিত"
+
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:44
+#, python-format
+msgid "%s (unknown)"
+msgstr "%s (অপরিচিত)"
+
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:88
+msgid "Hardware drivers are available for the following devices:"
+msgstr "নিম্নলিখিত ডিভাইসগুলির জন্য হার্ডওয়্যার ড্রাইভারগুলি উপলব্ধ:"
+
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:95
+msgid "Launch the Driver Manager"
+msgstr "ড্রাইভার ম্যানেজার চালু করুন"
