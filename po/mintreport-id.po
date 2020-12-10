@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2020-06-19 12:06+0100\n"
-"PO-Revision-Date: 2018-05-07 04:35+0000\n"
-"Last-Translator: Ady Suwarjono <amdersz5g7@gmail.com>\n"
+"PO-Revision-Date: 2020-11-08 08:10+0000\n"
+"Last-Translator: Bayu Satiyo <Unknown>\n"
 "Language-Team: Indonesian <id@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2020-06-24 10:12+0000\n"
-"X-Generator: Launchpad (build 1cbd0aa39df153c901321817f9b57cf3f232b507)\n"
+"X-Launchpad-Export-Date: 2020-12-10 10:32+0000\n"
+"X-Generator: Launchpad (build 4853cb86c14c5a9e513816c8a61121c639b30835)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
 #: usr/lib/linuxmint/mintreport/app.py:245 generate_desktop_files:25
@@ -27,47 +27,49 @@ msgstr "Laporan Sistem"
 
 #: usr/lib/linuxmint/mintreport/app.py:193
 msgid "_File"
-msgstr ""
+msgstr "_Berkas"
 
 #: usr/lib/linuxmint/mintreport/app.py:198
 msgid "Refresh"
-msgstr ""
+msgstr "Segarkan"
 
 #: usr/lib/linuxmint/mintreport/app.py:205
 msgid "Restore ignored reports"
-msgstr ""
+msgstr "Kembalikan laporan yang diabaikan"
 
 #: usr/lib/linuxmint/mintreport/app.py:209
 #: usr/lib/linuxmint/mintreport/tray.py:53
 msgid "Quit"
-msgstr ""
+msgstr "Keluar"
 
 #: usr/lib/linuxmint/mintreport/app.py:220
 msgid "_Help"
-msgstr ""
+msgstr "_Bantuan"
 
 #: usr/lib/linuxmint/mintreport/app.py:226
 #: usr/lib/linuxmint/mintreport/app.py:243
 msgid "About"
-msgstr ""
+msgstr "Perihal"
 
 #: usr/lib/linuxmint/mintreport/app.py:287
 msgid "An error occurred while gathering the system information."
-msgstr ""
+msgstr "Terjadi kesalahan saat mendapatkan informasi sistem."
 
 #: usr/lib/linuxmint/mintreport/app.py:301
 msgid "System information copied"
-msgstr ""
+msgstr "Informasi sistem disalin"
 
 #: usr/lib/linuxmint/mintreport/app.py:301
 msgid ""
 "Your system information was copied into your clipboard so you can paste it "
 "on the forums."
 msgstr ""
+"Informasi sistem anda telah disalin pada papan klip sehingga anda dapat "
+"menempelkannya pada forum."
 
 #: usr/lib/linuxmint/mintreport/app.py:310
 msgid "System information uploaded"
-msgstr ""
+msgstr "Informasi sistem diunggah"
 
 #: usr/lib/linuxmint/mintreport/app.py:310
 #, python-format
@@ -75,28 +77,32 @@ msgid ""
 "Your system information was uploaded to %s. This link was placed in your "
 "clipboard so you can paste it on IRC."
 msgstr ""
+"Informasi sistem Anda telah diunggah ke %s. Tautan ini ditempatkan di papan "
+"klip Anda sehingga Anda dapat menempelkannya di IRC."
 
 #: usr/lib/linuxmint/mintreport/app.py:312
 msgid "An error occurred while uploading the system information"
-msgstr ""
+msgstr "Terjadi kesalahan saat mengunggah informasi sistem"
 
 #: usr/lib/linuxmint/mintreport/app.py:312
 msgid ""
 "Copy and paste the system information manually into a pastebin site like "
 "https://pastebin.com and share the link on IRC."
 msgstr ""
+"Salin dan tempel informasi sistem secara manual ke situs pastebin seperti "
+"https://pastebin.com dan sebarkan tautannya pada IRC."
 
 #: usr/lib/linuxmint/mintreport/app.py:391
 msgid "Ignore this report"
-msgstr ""
+msgstr "abaikan laporan ini"
 
 #: usr/lib/linuxmint/mintreport/app.py:407
 msgid "Are you sure you want to ignore this report?"
-msgstr ""
+msgstr "Apakah anda yakin ingin mengabaikan laporan ini?"
 
 #: usr/lib/linuxmint/mintreport/app.py:408
 msgid "The report will be permanently ignored and will no longer be visible."
-msgstr ""
+msgstr "Laporan akan diabaikan secara permanen dan tidak akan terlihat lagi."
 
 #: usr/lib/linuxmint/mintreport/app.py:500
 #, python-format
@@ -133,11 +139,11 @@ msgstr ""
 
 #: usr/lib/linuxmint/mintreport/tray.py:49
 msgid "Show System Reports"
-msgstr ""
+msgstr "Tampilkan Laporan Sistem"
 
 #: usr/lib/linuxmint/mintreport/tray.py:116
 msgid "Some system reports require your attention"
-msgstr ""
+msgstr "Beberapa laporan sistem membutuhkan perhatian anda"
 
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
@@ -150,46 +156,51 @@ msgstr "Alat pemecah masalah"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:1
 msgid "Running system checks..."
-msgstr ""
+msgstr "Menjalankan pemeriksaan sistem..."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:2
 msgid "No problems were detected"
-msgstr ""
+msgstr "Tidak ada masalah yang terdeteksi"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:3
 msgid "System reports"
-msgstr ""
+msgstr "Laporan sistem"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:4
 msgid "Copy"
-msgstr ""
+msgstr "Salin"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:5
 msgid ""
 "Copy to clipboard (code tags are added to make it easy to paste the system "
 "information into the forums)"
 msgstr ""
+"Salin ke papan klip (tag kode ditambahkan untuk mempermudah menempelka "
+"informasi sitem pada forum)"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:6
 msgid "Upload"
-msgstr ""
+msgstr "Unggah"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:7
 msgid "Upload to a pastebin service (no personal information included)"
 msgstr ""
+"Unggah ke layanan pastebin (tidak ada informasi pribadi yang disertakan)"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:8
 msgid "System information"
-msgstr ""
+msgstr "Informasi sistem"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:9
 msgid "Crash reports are not available"
-msgstr ""
+msgstr "Laporan kerusakan tidak tersedia"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:10
 msgid ""
 "To enable crash reporting, install systemd-coredump and reboot your computer."
 msgstr ""
+"Untuk mengaktifkan pelaporan kerusakan, instal systemd-coredump dan boot "
+"ulang komputer Anda."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:11
 msgid "Crash reports:"
@@ -248,152 +259,161 @@ msgstr "Laporan kerusakan"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
 msgid "Add the XApp Status applet"
-msgstr ""
+msgstr "Tambahkan applet Status XApp"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:37
 msgid ""
 "The XApp Status applet allows applications to provide a tray icon without "
 "rendering glitches and with support for HiDPI and symbolic icons."
 msgstr ""
+"Applet Status XApp memungkinkan aplikasi menyediakan ikon baki tanpa "
+"gangguan rendering dan dengan dukungan untuk HiDPI dan ikon simbolik."
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:39
 msgid "Right-click the panel and choose 'Add to Panel'."
-msgstr ""
+msgstr "Klik-kanan pada panel dan pilih 'Tambahkan ke Panel'"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:46
 msgid "Add the XApp Status applet to the panel"
-msgstr ""
+msgstr "Tambahkan applet Status XApp ke panel"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:16
 msgid "Install multimedia codecs"
-msgstr ""
+msgstr "Pasang codec-codec multimedia"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:30
 msgid ""
 "Multimedia codecs are required to play some video formats and to properly "
 "render some websites."
 msgstr ""
+"Codec multimedia diperlukan untuk memutar beberapa format video dan membuat "
+"beberapa situs web dengan benar."
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:36
 msgid "Install the Multimedia Codecs"
-msgstr ""
+msgstr "Pasang Codec Multimedia"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:17
 msgid "Set up the system restore utility"
-msgstr ""
+msgstr "Siapkan utilitas pemulihan sistem"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:31
 msgid "Linux Mint provides a system restore utility called Timeshift."
 msgstr ""
+"Linux Mint menyediakan utilitas pemulihan sistem yang disebut Timeshift."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:32
 msgid ""
 "Thanks to Timeshift you can take snapshots of the system, either manually or "
 "automatically."
 msgstr ""
+"Berkat Timeshift Anda dapat mengambil snapshot dari sistem, baik secara "
+"manual atau otomatis."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:33
 msgid ""
 "If something goes wrong you can then restore your operating system from a "
 "previously saved snapshot."
 msgstr ""
+"Jika terjadi kesalahan, Anda dapat memulihkan sistem operasi Anda dari "
+"snapshot yang disimpan sebelumnya."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:39
 msgid "Launch Timeshift"
-msgstr ""
+msgstr "Luncurkan Timeshift"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:17
 msgid "A new version of Linux Mint is available"
-msgstr ""
+msgstr "Versi baru dari Linux Mint telah tersedia"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:47
 #, python-format
 msgid "Visit %s for the latest announcements."
-msgstr ""
+msgstr "Kunjungi %s untuk pengumuman terbaru."
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:53
 #, python-format
 msgid "Upgrade to %s"
-msgstr ""
+msgstr "Tingkatkan ke %s"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:49
 msgid "Your version of Linux Mint will soon reach End-Of-Life (EOL)"
-msgstr ""
+msgstr "Versi Linux Mint Anda akan segera mencapai End-Of-Life (EOL)"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:50
 #, python-brace-format
 msgid "It will stop receiving support and updates in a day."
 msgid_plural "It will stop receiving support and updates in {num_days} days."
 msgstr[0] ""
-msgstr[1] ""
+"Ini akan berhenti menerima dukungan dan pembaruan dalam {num_days} hari."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:54
 msgid "Your version of Linux Mint is no longer supported"
-msgstr ""
+msgstr "Versi Linux Mint anda sudah tidak lagi didukung"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:55
 #, python-brace-format
 msgid "It reached End-Of-Life (EOL) yesterday."
 msgid_plural "It reached End-Of-Life (EOL) {num_days} days ago."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Ini mencapai End-Of-Life (EOL) {num_days} hari lalu."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:66
 #, python-format
 msgid "Visit %s to find information about newer releases."
-msgstr ""
+msgstr "Kunjungi %s untuk menemukan informasi tentang rilis terbaru."
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:17
 msgid "Remove conflicting indicators"
-msgstr ""
+msgstr "Hapus indikator yang bertentangan"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:37
 msgid "The following packages prevent tray icons from working properly:"
-msgstr ""
+msgstr "Paket berikut mencegah ikon baki berfungsi dengan benar:"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:39
 msgid "Note: You will need to log out after removing them."
-msgstr ""
+msgstr "Catatan: Anda harus logout setelah menghapusnya."
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:45
 msgid "Remove the conflicting packages."
-msgstr ""
+msgstr "Hapus paket yang bertentangan."
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:26
 msgid "Install language packs"
-msgstr ""
+msgstr "Pasang paket bahasa"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:41
 msgid ""
 "The following localization packages are missing to properly support your "
 "language:"
 msgstr ""
+"Paket lokalisasi berikut tidak ada untuk mendukung bahasa Anda dengan benar:"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:48
 msgid "Install the Language Packs"
-msgstr ""
+msgstr "Pasang Paket Bahasa"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:18
 msgid "Install hardware drivers"
-msgstr ""
+msgstr "Pasang driver perangkat keras"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:27
 msgid "Processor"
-msgstr ""
+msgstr "Prosesor"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:40
 msgid "Unknown"
-msgstr ""
+msgstr "Tak diketahui"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:44
 #, python-format
 msgid "%s (unknown)"
-msgstr ""
+msgstr "%s (tidak diketahui)"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:88
 msgid "Hardware drivers are available for the following devices:"
-msgstr ""
+msgstr "Driver perangkat keras tersedia untuk perangkat berikut:"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:95
 msgid "Launch the Driver Manager"
-msgstr ""
+msgstr "Luncurkan Pengelola Driver"

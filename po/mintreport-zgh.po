@@ -1,16 +1,16 @@
-# English (Australia) translation for linuxmint
-# Copyright (c) 2017 Rosetta Contributors and Canonical Ltd 2017
+# Standard Moroccan Tamazight translation for linuxmint
+# Copyright (c) 2020 Rosetta Contributors and Canonical Ltd 2020
 # This file is distributed under the same license as the linuxmint package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2020-06-19 12:06+0100\n"
-"PO-Revision-Date: 2018-02-08 10:51+0000\n"
-"Last-Translator: Brian B <Unknown>\n"
-"Language-Team: English (Australia) <en_AU@li.org>\n"
+"PO-Revision-Date: 2020-11-03 02:18+0000\n"
+"Last-Translator: Hakim Oubouali <Unknown>\n"
+"Language-Team: Standard Moroccan Tamazight <zgh@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -23,15 +23,15 @@ msgstr ""
 #: generate_desktop_files:39 generate_desktop_files:53
 #: generate_desktop_files:67
 msgid "System Reports"
-msgstr "System Reports"
+msgstr ""
 
 #: usr/lib/linuxmint/mintreport/app.py:193
 msgid "_File"
-msgstr ""
+msgstr "_ⴰⴼⴰⵢⵍⵓ"
 
 #: usr/lib/linuxmint/mintreport/app.py:198
 msgid "Refresh"
-msgstr ""
+msgstr "ⵣⵣⵓⵣⵡⵓ"
 
 #: usr/lib/linuxmint/mintreport/app.py:205
 msgid "Restore ignored reports"
@@ -40,16 +40,16 @@ msgstr ""
 #: usr/lib/linuxmint/mintreport/app.py:209
 #: usr/lib/linuxmint/mintreport/tray.py:53
 msgid "Quit"
-msgstr ""
+msgstr "ⴼⴼⵖ"
 
 #: usr/lib/linuxmint/mintreport/app.py:220
 msgid "_Help"
-msgstr ""
+msgstr "_ⵜⵉⵡⵉⵙⵉ"
 
 #: usr/lib/linuxmint/mintreport/app.py:226
 #: usr/lib/linuxmint/mintreport/app.py:243
 msgid "About"
-msgstr ""
+msgstr "ⵖⴼ"
 
 #: usr/lib/linuxmint/mintreport/app.py:287
 msgid "An error occurred while gathering the system information."
@@ -104,8 +104,6 @@ msgid ""
 "The debug symbols are missing for %(program)s.\n"
 "Please install %(package)s."
 msgstr ""
-"The debug symbols are missing for %(program)s.\n"
-"Please install %(package)s."
 
 #: usr/lib/linuxmint/mintreport/app.py:514
 #, python-format
@@ -114,9 +112,6 @@ msgid ""
 "If you want to generate a stack trace for this crash report, please "
 "reinstall it."
 msgstr ""
-"The package providing %s could not be found.\n"
-"If you want to generate a stack trace for this crash report, please "
-"reinstall it."
 
 #: usr/lib/linuxmint/mintreport/app.py:542
 msgid ""
@@ -126,11 +121,6 @@ msgid ""
 "A stack trace is available in 'Local Files' but its content is probably "
 "inaccurate."
 msgstr ""
-"The headers or binaries installed on your system do not match the code which "
-"was executed during the crash.\n"
-"They probably got upgraded since.\n"
-"A stack trace is available in 'Local Files' but its content is probably "
-"inaccurate."
 
 #: usr/lib/linuxmint/mintreport/tray.py:49
 msgid "Show System Reports"
@@ -143,11 +133,11 @@ msgstr ""
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
 msgid "Troubleshoot problems"
-msgstr "Troubleshoot problems"
+msgstr ""
 
 #: generate_desktop_files:53
 msgid "Troubleshooting Tool"
-msgstr "Troubleshooting Tool"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:1
 msgid "Running system checks..."
@@ -163,7 +153,7 @@ msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:4
 msgid "Copy"
-msgstr ""
+msgstr "ⵙⵏⵖⵍ"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:5
 msgid ""
@@ -194,43 +184,41 @@ msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:11
 msgid "Crash reports:"
-msgstr "Crash reports:"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:12
 msgid "Stack trace:"
-msgstr "Stack trace:"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:13
 msgid ""
 "When seeking help, check for existing bug reports, pastebin the trace, share "
 "crash.tar.gz (from Local Files) and explain how to reproduce the crash."
 msgstr ""
-"When seeking help, check for existing bug reports, pastebin the trace, share "
-"crash.tar.gz (from Local Files) and explain how to reproduce the crash."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:14
 msgid "Local Files"
-msgstr "Local Files"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:15
 msgid "Open the directory containing crash.tar.gz and its content."
-msgstr "Open the directory containing crash.tar.gz and its content."
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:16
 msgid "Bug Tracker"
-msgstr "Bug Tracker"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:17
 msgid "Find the most appropriate bug tracker."
-msgstr "Find the most appropriate bug tracker."
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:18
 msgid "Pastebin"
-msgstr "Pastebin"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:19
 msgid "Upload the trace to the Internet."
-msgstr "Upload the trace to the Internet."
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:20
 msgid ""
@@ -238,13 +226,10 @@ msgid ""
 "Always provide a trace and reliable instructions to trigger/observe the "
 "problem."
 msgstr ""
-"Developers need to know where the code fails or how to reproduce the issue. "
-"Always provide a trace and reliable instructions to trigger/observe the "
-"problem."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:21
 msgid "Crash reports"
-msgstr "Crash reports"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
 msgid "Add the XApp Status applet"
