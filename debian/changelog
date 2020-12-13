@@ -1,3 +1,11 @@
+mintreport (1.2.2) ulyssa; urgency=medium
+
+  * l10n: Update translations
+  * l10n: Generate files
+  * timeshift: Test new /etc/timeshift/timeshift.json path
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sun, 13 Dec 2020 11:07:51 +0000
+
 mintreport (1.2.1) ulyana; urgency=medium
 
   * Add a test to detect new major releases
