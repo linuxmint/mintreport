@@ -20,7 +20,7 @@ class Report(InfoReport):
 
     def is_pertinent(self):
         # Defines whether this report should show up
-        if os.path.exists("/usr/bin/timeshift") and not os.path.exists("/etc/timeshift.json"):
+        if os.path.exists("/usr/bin/timeshift") and not os.path.exists("/etc/timeshift.json") and not os.path.exists("/etc/timeshift/timeshift.json"):
             return True
         else:
             return False
