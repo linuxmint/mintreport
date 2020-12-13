@@ -211,11 +211,11 @@ msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:11
 msgid "Crash reports:"
-msgstr "Relevés de plantage[nbsp]:"
+msgstr "Relevés de plantage :"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:12
 msgid "Stack trace:"
-msgstr "Trace de la pile[nbsp]:"
+msgstr "Trace de la pile :"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:13
 msgid ""
@@ -281,8 +281,8 @@ msgstr ""
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:39
 msgid "Right-click the panel and choose 'Add to Panel'."
 msgstr ""
-"Cliquez à droite sur le panneau et choisissez «[nbsp]Ajouter au "
-"panneau[nbsp]»."
+"Cliquez à droite sur le panneau et choisissez « Ajouter au "
+"panneau »."
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:46
 msgid "Add the XApp Status applet to the panel"
@@ -407,7 +407,7 @@ msgid ""
 "language:"
 msgstr ""
 "Il manque les paquets de localisation suivants pour prendre adéquatement en "
-"charge votre langue[nbsp]:"
+"charge votre langue :"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:48
 msgid "Install the Language Packs"
@@ -432,7 +432,7 @@ msgstr "%s (inconnu)"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:88
 msgid "Hardware drivers are available for the following devices:"
-msgstr "Des pilotes sont proposés pour les périphériques suivants[nbsp]:"
+msgstr "Des pilotes sont proposés pour les périphériques suivants :"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:95
 msgid "Launch the Driver Manager"
