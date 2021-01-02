@@ -1,3 +1,9 @@
+mintreport (1.2.3) ulyssa; urgency=medium
+
+  * l10n: Update translations
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 02 Jan 2021 16:51:50 +0000
+
 mintreport (1.2.2) ulyssa; urgency=medium
 
   * l10n: Update translations
