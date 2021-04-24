@@ -47,12 +47,12 @@ class Report(InfoReport):
         if self.days_before_eol < 90:
             if self.days_before_eol > 0:
                 self.title = _("Your version of Linux Mint will soon reach End-Of-Life (EOL)")
-                self.description = ngettext('It will stop receiving support and updates in a day.', \
+                self.description = gettext.ngettext('It will stop receiving support and updates in a day.', \
                                             'It will stop receiving support and updates in {num_days} days.', self.days_before_eol) \
                                             .format(num_days=self.days_before_eol)
             else:
                 self.title = _("Your version of Linux Mint is no longer supported")
-                self.description = ngettext('It reached End-Of-Life (EOL) yesterday.', \
+                self.description = gettext.ngettext('It reached End-Of-Life (EOL) yesterday.', \
                                             'It reached End-Of-Life (EOL) {num_days} days ago.', self.days_before_eol) \
                                             .format(num_days=(self.days_before_eol * -1))
             return True
