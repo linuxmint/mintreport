@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2020-06-19 12:06+0100\n"
-"PO-Revision-Date: 2020-10-07 10:26+0000\n"
-"Last-Translator: Vendelín Slezák <Unknown>\n"
+"PO-Revision-Date: 2021-06-08 10:46+0000\n"
+"Last-Translator: Jozef Lukacovic <Unknown>\n"
 "Language-Team: Slovak <sk@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
-"X-Launchpad-Export-Date: 2021-01-02 14:18+0000\n"
-"X-Generator: Launchpad (build 34b3ffd45c9543b7f7aa5aa313925241e9e7ca3f)\n"
+"X-Launchpad-Export-Date: 2021-06-09 14:21+0000\n"
+"X-Generator: Launchpad (build b45bdbe3a00b6b668fa7f2069bd545c35c41f7f4)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
 #: usr/lib/linuxmint/mintreport/app.py:245 generate_desktop_files:25
@@ -96,7 +96,7 @@ msgstr "Naozaj chcete ignorovať toto hlásenie?"
 
 #: usr/lib/linuxmint/mintreport/app.py:408
 msgid "The report will be permanently ignored and will no longer be visible."
-msgstr ""
+msgstr "Tento report bude navždy ignorovaný a nebude dlhšie viditeľný."
 
 #: usr/lib/linuxmint/mintreport/app.py:500
 #, python-format
@@ -177,7 +177,7 @@ msgstr "Načítať"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:7
 msgid "Upload to a pastebin service (no personal information included)"
-msgstr ""
+msgstr "Nahrať do složby pastebin (nezahŕňa žiadne osobné informácie)"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:8
 msgid "System information"
@@ -249,7 +249,7 @@ msgstr "Správa o poruche"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
 msgid "Add the XApp Status applet"
-msgstr ""
+msgstr "Pridať applet XApp Status"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:37
 msgid ""
@@ -260,6 +260,7 @@ msgstr ""
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:39
 msgid "Right-click the panel and choose 'Add to Panel'."
 msgstr ""
+"Kliknite na panel pravým tlačidlom myši a zvoľte možnosť ‘Pridať na panel’"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:46
 msgid "Add the XApp Status applet to the panel"
@@ -281,11 +282,11 @@ msgstr "Inštalovať Multimediálne Kodeky"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:17
 msgid "Set up the system restore utility"
-msgstr ""
+msgstr "Nastaviť nástroj na obnovenie systému"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:31
 msgid "Linux Mint provides a system restore utility called Timeshift."
-msgstr ""
+msgstr "Linux Mint poskytuje nástroj na obnovovanie systému Timeshift."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:32
 msgid ""
@@ -321,7 +322,7 @@ msgstr "Aktualizovať na %s"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:49
 msgid "Your version of Linux Mint will soon reach End-Of-Life (EOL)"
-msgstr ""
+msgstr "Vaša verzia Linuxu Mint za chvíľu dosiahne stav EOL (koniec podpory)"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:50
 #, python-brace-format

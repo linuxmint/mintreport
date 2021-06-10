@@ -1,20 +1,20 @@
-# Czech translation for linuxmint
-# Copyright (c) 2017 Rosetta Contributors and Canonical Ltd 2017
+# Thai translation for linuxmint
+# Copyright (c) 2021 Rosetta Contributors and Canonical Ltd 2021
 # This file is distributed under the same license as the linuxmint package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2020-06-19 12:06+0100\n"
-"PO-Revision-Date: 2020-06-20 19:59+0000\n"
-"Last-Translator: Pavel Borecki <Unknown>\n"
-"Language-Team: Czech <cs@li.org>\n"
+"PO-Revision-Date: 2021-04-02 07:20+0000\n"
+"Last-Translator: Rockworld <sumoisrock@gmail.com>\n"
+"Language-Team: Thai <th@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Launchpad-Export-Date: 2021-06-09 14:21+0000\n"
 "X-Generator: Launchpad (build b45bdbe3a00b6b668fa7f2069bd545c35c41f7f4)\n"
 
@@ -23,53 +23,53 @@ msgstr ""
 #: generate_desktop_files:39 generate_desktop_files:53
 #: generate_desktop_files:67
 msgid "System Reports"
-msgstr "Systémová hlášení"
+msgstr "รายงานของระบบ"
 
 #: usr/lib/linuxmint/mintreport/app.py:193
 msgid "_File"
-msgstr "_Soubor"
+msgstr "แ_ฟ้ม"
 
 #: usr/lib/linuxmint/mintreport/app.py:198
 msgid "Refresh"
-msgstr "Načíst znovu"
+msgstr "รีเฟรช"
 
 #: usr/lib/linuxmint/mintreport/app.py:205
 msgid "Restore ignored reports"
-msgstr "Obnovit ignorovaná hlášení"
+msgstr "เรียกคืนรายงานที่ถูกเพิกเฉย"
 
 #: usr/lib/linuxmint/mintreport/app.py:209
 #: usr/lib/linuxmint/mintreport/tray.py:53
 msgid "Quit"
-msgstr "Ukončit"
+msgstr "ออก"
 
 #: usr/lib/linuxmint/mintreport/app.py:220
 msgid "_Help"
-msgstr "_Nápověda"
+msgstr "_วิธีใช้"
 
 #: usr/lib/linuxmint/mintreport/app.py:226
 #: usr/lib/linuxmint/mintreport/app.py:243
 msgid "About"
-msgstr "O aplikaci"
+msgstr "เกี่ยวกับ"
 
 #: usr/lib/linuxmint/mintreport/app.py:287
 msgid "An error occurred while gathering the system information."
-msgstr "Došlo k chybě při shromažďování informací o systému."
+msgstr "เกิดข้อผิดพลาดขณะรับข้อมูลระบบ"
 
 #: usr/lib/linuxmint/mintreport/app.py:301
 msgid "System information copied"
-msgstr "Informace o systému zkopírovány"
+msgstr "คัดลอกข้อมูลระบบแล้ว"
 
 #: usr/lib/linuxmint/mintreport/app.py:301
 msgid ""
 "Your system information was copied into your clipboard so you can paste it "
 "on the forums."
 msgstr ""
-"Informace o vašem systému byly zkopírovány do vaší schránky, takže ho můžete "
-"vložit do diskuzních fór."
+"ข้อมูลระบบของคุณได้ถูกคัดลอกลงคลิปบอร์ดของคุณแล้ว "
+"เพื่อให้คุณสามารถวางบนกระดานสนทนาได้"
 
 #: usr/lib/linuxmint/mintreport/app.py:310
 msgid "System information uploaded"
-msgstr "Informace o systému odeslány"
+msgstr "อัปโหลดข้อมูลระบบแล้ว"
 
 #: usr/lib/linuxmint/mintreport/app.py:310
 #, python-format
@@ -77,33 +77,32 @@ msgid ""
 "Your system information was uploaded to %s. This link was placed in your "
 "clipboard so you can paste it on IRC."
 msgstr ""
-"Informace o vašem systému byly nahrány na %s. Tento odkaz byl vložen do vaší "
-"schránky, takže ho můžete vložit do IRC chatu."
+"อัปโหลดข้อมูลระบบของคุณไปที่ %s แล้ว ลิงก์นี้ถูกวางในคลิปบอร์ดของคุณ "
+"เพื่อให้คุณสามารถวางบน IRC ได้"
 
 #: usr/lib/linuxmint/mintreport/app.py:312
 msgid "An error occurred while uploading the system information"
-msgstr "Došlo k chybě při odesílání informací o systému"
+msgstr "เกิดข้อผิดพลาดขณะอัปโหลดข้อมูลระบบ"
 
 #: usr/lib/linuxmint/mintreport/app.py:312
 msgid ""
 "Copy and paste the system information manually into a pastebin site like "
 "https://pastebin.com and share the link on IRC."
 msgstr ""
-"Ručně zkopírujte a vložte informace o systému do pastebin stránky jako "
-"https://pastebin.com a sdílejte odkaz IRC chatu.\r\n"
-"Current Czech:"
+"คัดลอกและวางข้อมูลระบบลงในไซต์ pastebin เช่น https://pastebin.com เอง "
+"และแบ่งปันลิงก์บน IRC"
 
 #: usr/lib/linuxmint/mintreport/app.py:391
 msgid "Ignore this report"
-msgstr "Ignorovat toto hlášení"
+msgstr ""
 
 #: usr/lib/linuxmint/mintreport/app.py:407
 msgid "Are you sure you want to ignore this report?"
-msgstr "Opravdu chcete toto hlášení ignorovat?"
+msgstr ""
 
 #: usr/lib/linuxmint/mintreport/app.py:408
 msgid "The report will be permanently ignored and will no longer be visible."
-msgstr "Toto hlášení bude nadobro ignorováno a už nebude viditelné."
+msgstr ""
 
 #: usr/lib/linuxmint/mintreport/app.py:500
 #, python-format
@@ -111,8 +110,6 @@ msgid ""
 "The debug symbols are missing for %(program)s.\n"
 "Please install %(package)s."
 msgstr ""
-"Chybí ladící symboly pro %(program)s.\n"
-"Nainstalujte balíček %(package)s."
 
 #: usr/lib/linuxmint/mintreport/app.py:514
 #, python-format
@@ -121,9 +118,6 @@ msgid ""
 "If you want to generate a stack trace for this crash report, please "
 "reinstall it."
 msgstr ""
-"Balíček který poskytuje %s se nepodařilo najít.\n"
-"Pokud pro toto hlášení o pádu chcete vytvořit výpis zásobníku (stack trace), "
-"balíček opět nainstalujte."
 
 #: usr/lib/linuxmint/mintreport/app.py:542
 msgid ""
@@ -133,116 +127,104 @@ msgid ""
 "A stack trace is available in 'Local Files' but its content is probably "
 "inaccurate."
 msgstr ""
-"Nainstalované hlavičkové nebo spustitelné soubory neodpovídají kódu který "
-"byl spuštěný v okamžiku pádu.\n"
-"Nejspíš byly od té doby nahrazeny novější verzí.\n"
-"Výpis zásobníku je sice v „Místních souborech“ k dispozici ale jeho obsah je "
-"nejspíš nepřesný."
 
 #: usr/lib/linuxmint/mintreport/tray.py:49
 msgid "Show System Reports"
-msgstr "Zobrazit systémová hlášení"
+msgstr "แสดงรายงานของระบบ"
 
 #: usr/lib/linuxmint/mintreport/tray.py:116
 msgid "Some system reports require your attention"
-msgstr "Některá systémová hlášení vyžadují vaši pozornost"
+msgstr ""
 
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
 msgid "Troubleshoot problems"
-msgstr "Řešení problémů"
+msgstr ""
 
 #: generate_desktop_files:53
 msgid "Troubleshooting Tool"
-msgstr "Nástroj pro řešení problémů"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:1
 msgid "Running system checks..."
-msgstr "Spouštění kontrol systému…"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:2
 msgid "No problems were detected"
-msgstr "Nebyly zjištěny žádné problémy"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:3
 msgid "System reports"
-msgstr "Systémová hlášení"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:4
 msgid "Copy"
-msgstr "Zkopírovat"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:5
 msgid ""
 "Copy to clipboard (code tags are added to make it easy to paste the system "
 "information into the forums)"
 msgstr ""
-"Zkopírovat do schránky (jsou přidány formátovací značky pro snazší vkládání "
-"informací o systému do diskuzních fór)"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:6
 msgid "Upload"
-msgstr "Odeslat"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:7
 msgid "Upload to a pastebin service (no personal information included)"
-msgstr "Nahrát na službu pastebin (nejsou zahrnuty žádné osobní údaje)"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:8
 msgid "System information"
-msgstr "Informace o systému"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:9
 msgid "Crash reports are not available"
-msgstr "Jsou k dispozici hlášení o pádu"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:10
 msgid ""
 "To enable crash reporting, install systemd-coredump and reboot your computer."
 msgstr ""
-"Pro zapnutí hlášení o pádech, nainstalujte balíček systemd-coredump a "
-"restartujte počítač."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:11
 msgid "Crash reports:"
-msgstr "Hlášení pádů:"
+msgstr "รายงานข้อขัดข้อง:"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:12
 msgid "Stack trace:"
-msgstr "Výpis zásobníku (stack trace):"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:13
 msgid ""
 "When seeking help, check for existing bug reports, pastebin the trace, share "
 "crash.tar.gz (from Local Files) and explain how to reproduce the crash."
 msgstr ""
-"Při hledání pomoci se podívejte do existujících hlášení chyb, nasdílejte "
-"přes pastebin výpis zásobníku (stack trace), nasdílejte crash.tar.gz (z "
-"Místní soubory) a popište postup, jakým pád přivodit."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:14
 msgid "Local Files"
-msgstr "Místní soubory"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:15
 msgid "Open the directory containing crash.tar.gz and its content."
-msgstr "Otevřít složku obsahující crash.tar.gz a jeho obsah."
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:16
 msgid "Bug Tracker"
-msgstr "Systém správy hlášení chyb"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:17
 msgid "Find the most appropriate bug tracker."
-msgstr "Najít nejpříhodnější sekci systému správy hlášení chyb."
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:18
 msgid "Pastebin"
-msgstr "Pastebin"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:19
 msgid "Upload the trace to the Internet."
-msgstr "Nahrát výpis (trace) na Internet."
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:20
 msgid ""
@@ -250,178 +232,159 @@ msgid ""
 "Always provide a trace and reliable instructions to trigger/observe the "
 "problem."
 msgstr ""
-"Vývojáři potřebují vědět ve kterém místě kódu došlo k pádu nebo jak projev "
-"problému zopakovat. Vždy poskytněte výpis zásobníku (trace) a spolehlivé "
-"pokyny jak vyvolat/zpozorovat problém."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:21
 msgid "Crash reports"
-msgstr "Hlášení o pádu"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
 msgid "Add the XApp Status applet"
-msgstr "Přidat XApp Status applet"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:37
 msgid ""
 "The XApp Status applet allows applications to provide a tray icon without "
 "rendering glitches and with support for HiDPI and symbolic icons."
 msgstr ""
-"XApp Status applet umožňuje aplikacím poskytovat ikonu v oznamovací oblasti "
-"panelu bez potíží s vykreslováním a podporou pro HiDPI rozlišení a "
-"symbolické ikony."
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:39
 msgid "Right-click the panel and choose 'Add to Panel'."
-msgstr "Klikněte na panel pravým tlačítkem a zvolte „Přidat na panel“."
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:46
 msgid "Add the XApp Status applet to the panel"
-msgstr "Přidat na panel XApp Status applet"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:16
 msgid "Install multimedia codecs"
-msgstr "Nainstalovat kodeky multimédií"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:30
 msgid ""
 "Multimedia codecs are required to play some video formats and to properly "
 "render some websites."
 msgstr ""
-"Kodeky multimédií jsou potřebné pro přehrávání některých videoformátů a pro "
-"správné vykreslování některých webových stránek."
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:36
 msgid "Install the Multimedia Codecs"
-msgstr "Nainstalovat kodeky multimédií"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:17
 msgid "Set up the system restore utility"
-msgstr "Nastavit nástroj pro obnovení systému"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:31
 msgid "Linux Mint provides a system restore utility called Timeshift."
-msgstr "Linux Mint poskytuje nástroj pro obnovení systému nazvanou Timeshift"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:32
 msgid ""
 "Thanks to Timeshift you can take snapshots of the system, either manually or "
 "automatically."
 msgstr ""
-"Díky Timeshift je možné pořizovat zachycené stavy systému, ať už ručně nebo "
-"automaticky."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:33
 msgid ""
 "If something goes wrong you can then restore your operating system from a "
 "previously saved snapshot."
 msgstr ""
-"Pokud se něco pokazí, je možné operační systém obnovit z předtím uloženého "
-"zachyceného stavu."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:39
 msgid "Launch Timeshift"
-msgstr "Spustit Timeshift"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:17
 msgid "A new version of Linux Mint is available"
-msgstr "Je k dispozici nová verze Linux Mint"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:47
 #, python-format
 msgid "Visit %s for the latest announcements."
-msgstr "Pro nejnovější oznámení navštivte %s"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:53
 #, python-format
 msgid "Upgrade to %s"
-msgstr "Přejít na verzi %s"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:49
 msgid "Your version of Linux Mint will soon reach End-Of-Life (EOL)"
-msgstr "Vámi používaná verze Linux Mint brzy zcela přestane být podporována"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:50
 #, python-brace-format
 msgid "It will stop receiving support and updates in a day."
 msgid_plural "It will stop receiving support and updates in {num_days} days."
-msgstr[0] "Podpora a aktualizace přestanou být poskytovány zítra."
+msgstr[0] ""
 msgstr[1] ""
-"Podpora a aktualizace přestanou být poskytovány za {num_days} dny."
-msgstr[2] ""
-"Podpora a aktualizace přestanou být poskytovány za {num_days} dní."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:54
 msgid "Your version of Linux Mint is no longer supported"
-msgstr "Vámi používaná verze Linux Mint už není podporována"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:55
 #, python-brace-format
 msgid "It reached End-Of-Life (EOL) yesterday."
 msgid_plural "It reached End-Of-Life (EOL) {num_days} days ago."
-msgstr[0] "Veškerá podpora skončila včera."
-msgstr[1] "Veškerá podpora skončila před {num_days} dny."
-msgstr[2] "Veškerá podpora skončila před {num_days} dny."
+msgstr[0] ""
+msgstr[1] ""
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:66
 #, python-format
 msgid "Visit %s to find information about newer releases."
-msgstr "Pro informace o novějších vydáních navštivte %s"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:17
 msgid "Remove conflicting indicators"
-msgstr "Odebrat kolidující indikátory"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:37
 msgid "The following packages prevent tray icons from working properly:"
 msgstr ""
-"Následující balíčky brání ve správné funkci ikon v oznamovací oblasti:"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:39
 msgid "Note: You will need to log out after removing them."
-msgstr "Pozn.: po jejich odebrání se bude třeba odhlásit a přihlásit nazpět."
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:45
 msgid "Remove the conflicting packages."
-msgstr "Odebrat balíčky, se kterými je v konfliktu."
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:26
 msgid "Install language packs"
-msgstr "Nainstalovat jazykové balíčky"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:41
 msgid ""
 "The following localization packages are missing to properly support your "
 "language:"
 msgstr ""
-"Pro správnou podporu vámi používaného jazyka zbývá doinstalovat následující "
-"jazykové balíčky:"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:48
 msgid "Install the Language Packs"
-msgstr "Nainstalovat jazykové balíčky"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:18
 msgid "Install hardware drivers"
-msgstr "Nainstalovat ovladače pro zařízení"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:27
 msgid "Processor"
-msgstr "Procesor"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:40
 msgid "Unknown"
-msgstr "Neznámé"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:44
 #, python-format
 msgid "%s (unknown)"
-msgstr "%s (neznámé)"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:88
 msgid "Hardware drivers are available for the following devices:"
-msgstr "Jsou k dispozici ovladače pro následující zařízení:"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:95
 msgid "Launch the Driver Manager"
-msgstr "Spustit správu dodatečných ovladačů zařízení"
+msgstr ""

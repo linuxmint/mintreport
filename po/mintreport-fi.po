@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2020-06-19 12:06+0100\n"
-"PO-Revision-Date: 2020-06-25 20:07+0000\n"
-"Last-Translator: Kimmo Kujansuu <Unknown>\n"
+"PO-Revision-Date: 2021-03-28 12:14+0000\n"
+"Last-Translator: Tommi Nieminen <Unknown>\n"
 "Language-Team: Finnish <fi@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2021-01-02 14:18+0000\n"
-"X-Generator: Launchpad (build 34b3ffd45c9543b7f7aa5aa313925241e9e7ca3f)\n"
+"X-Launchpad-Export-Date: 2021-06-09 14:21+0000\n"
+"X-Generator: Launchpad (build b45bdbe3a00b6b668fa7f2069bd545c35c41f7f4)\n"
 "Language: fi\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
@@ -78,8 +78,8 @@ msgid ""
 "Your system information was uploaded to %s. This link was placed in your "
 "clipboard so you can paste it on IRC."
 msgstr ""
-"Järjestelmätiedot lähetettiin osoitteeseen %s. Tämä linkki sijoitettiin "
-"leikepöydälle, jotta voit liittää sen IRC:hen."
+"Järjestelmätiedot lähetettiin osoitteeseen %s. Linkki kopioitiin "
+"leikepöydälle, jotta voit liittää sen IRCiin."
 
 #: usr/lib/linuxmint/mintreport/app.py:312
 msgid "An error occurred while uploading the system information"
@@ -111,7 +111,7 @@ msgid ""
 "The debug symbols are missing for %(program)s.\n"
 "Please install %(package)s."
 msgstr ""
-"Virheenjäljityssymbolit puuttuvat seuraavilta %(program)s.\n"
+"Ohjelmalta %(program)s puuttuvat virheenjäljityssymbolit.\n"
 "Asenna %(package)s."
 
 #: usr/lib/linuxmint/mintreport/app.py:514
@@ -132,15 +132,15 @@ msgid ""
 "A stack trace is available in 'Local Files' but its content is probably "
 "inaccurate."
 msgstr ""
-"Järjestelmään asennetut otsikot tai binäärit eivät täsmää koodiin jota "
-"suoritettiin kaatumisen aikana.\n"
-"Ne on luultavasti päivitetty tämän jälkeen.\n"
-"Pinolistaus on saatavilla 'Paikallisista tiedostot', mutta on luultavasti "
+"Järjestelmään asennetut otsakkeet tai ohjelmatiedostot eivät vastaa "
+"suorituksenaikaista koodia.\n"
+"Ne on luultavasti sen jälkeen päivitetty.\n"
+"Pinolistaus löytyy ”Paikallisista tiedostoista”, mutta on luultavasti "
 "epätarkka."
 
 #: usr/lib/linuxmint/mintreport/tray.py:49
 msgid "Show System Reports"
-msgstr "Näytä Järjestelmän Raportit"
+msgstr "Näytä järjestelmäraportit"
 
 #: usr/lib/linuxmint/mintreport/tray.py:116
 msgid "Some system reports require your attention"
@@ -157,11 +157,11 @@ msgstr "Vianmääritystyökalu"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:1
 msgid "Running system checks..."
-msgstr "Suoritetaan järjestelmän tarkastuksia..."
+msgstr "Tehdään järjestelmätarkistuksia…"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:2
 msgid "No problems were detected"
-msgstr "Ei havaittu ongelmia"
+msgstr "Ongelmia ei havaittu"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:3
 msgid "System reports"
@@ -176,8 +176,8 @@ msgid ""
 "Copy to clipboard (code tags are added to make it easy to paste the system "
 "information into the forums)"
 msgstr ""
-"Kopioi leikepöydälle (kooditunnisteet lisätään, jotta järjestelmän tiedot "
-"voidaan liittää foorumeihin helposti)"
+"Kopioi leikepöydälle (kooditunnisteet lisätään, jotta tiedot on helppo "
+"liittää keskustelualueille)"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:6
 msgid "Upload"
@@ -199,12 +199,12 @@ msgstr "Kaatumisraportit eivät ole käytettävissä"
 msgid ""
 "To enable crash reporting, install systemd-coredump and reboot your computer."
 msgstr ""
-"Voit ottaa kaatumisilmoituksen käyttöön asentamalla systemd-coredump ja "
-"käynnistämällä tietokoneen uudelleen."
+"Kaatumisraportoinnin voi ottaa käyttää asentamalla paketin systemd-coredump "
+"ja käynnistämällä koneen uudelleen."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:11
 msgid "Crash reports:"
-msgstr "Kaatumisilmoitukset:"
+msgstr "Kaatumisraportit:"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:12
 msgid "Stack trace:"
@@ -215,9 +215,9 @@ msgid ""
 "When seeking help, check for existing bug reports, pastebin the trace, share "
 "crash.tar.gz (from Local Files) and explain how to reproduce the crash."
 msgstr ""
-"Kun etsit apua, tarkasta olemassa olevat virheraportit, lähetä pinolistaus "
-"pastebin -palveluun, jaa crash.tar.gz (Paikalliset tiedostot) ja selitä "
-"kuinka luoda uudelleen kaatuminen."
+"Etsiessäsi apua tarkista olemassa olevat vikaraportit, liitä pinolistaus "
+"pastebin-palveluun, jaa (Paikallisista tiedostoista) crash.tar.gz ja selitä, "
+"miten kaatumisen voi toistaa."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:14
 msgid "Local Files"
@@ -266,16 +266,17 @@ msgid ""
 "The XApp Status applet allows applications to provide a tray icon without "
 "rendering glitches and with support for HiDPI and symbolic icons."
 msgstr ""
-"XApp tilasovelman avulla sovellukset tarjoavat alavalikon kuvakkeet ilman "
-"virheitä, sekä HiDPI ja symboliset kuvakkeet tuetaan."
+"XApp-tilasovelmalla sovellukset tarjoavat ilmoitusaluekuvakkeen, jossa ei "
+"ole hahmonnusongelmia ja joka tukee HiDPI:tä ja symbolisia kuvakkeita."
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:39
 msgid "Right-click the panel and choose 'Add to Panel'."
-msgstr "Napsauta hiiren oikeaa paneelissa ja valitse 'Lisää paneeliin'."
+msgstr ""
+"Napsauta paneelia hiiren oikealla painikkeella ja valitse ”Lisää paneeliin”."
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:46
 msgid "Add the XApp Status applet to the panel"
-msgstr "Lisää XApp tilasovelma paneeliin"
+msgstr "Lisää paneeliin XApp-tilasovelma"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:16
 msgid "Install multimedia codecs"
@@ -286,8 +287,8 @@ msgid ""
 "Multimedia codecs are required to play some video formats and to properly "
 "render some websites."
 msgstr ""
-"Multimediakoodekit tarvitaan joidenkin videoformaattien toistamiseen ja "
-"joidenkin verkkosivujen kunnolliseen hahmontamiseen."
+"Joiden videomuotojen toistamiseen ja joidenkin verkkosivujen hahmontamiseen "
+"vaaditaan multimediakoodekkeja."
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:36
 msgid "Install the Multimedia Codecs"
@@ -299,24 +300,23 @@ msgstr "Aseta järjestelmänpalautustyökalu"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:31
 msgid "Linux Mint provides a system restore utility called Timeshift."
-msgstr ""
-"Linux Mint tarjoaa järjestelmänpalautustyökalun, joka on nimeltään Timeshift."
+msgstr "Linux Mint tarjoaa Timeshift-nimisen järjestelmänpalautustyökalun."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:32
 msgid ""
 "Thanks to Timeshift you can take snapshots of the system, either manually or "
 "automatically."
 msgstr ""
-"Timeshiftin ansiosta voit ottaa vedoksia järjestelmästä, joko manuaalisesti "
-"tai automaattisesti."
+"Timeshiftillä järjestelmään voi luoda palautuspisteitä joko käsin tai "
+"automaattisesti."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:33
 msgid ""
 "If something goes wrong you can then restore your operating system from a "
 "previously saved snapshot."
 msgstr ""
-"Jos jokin menee sinulla pieleen, voit tällöin palauttaa käyttöjärjestelmäsi "
-"aiemmin tallennetusta vedoksesta."
+"Jos jokin menee vikaan, käyttöjärjestelmän voi palauttaa aiemmin "
+"tallennetusta palautuspisteestä."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:39
 msgid "Launch Timeshift"
@@ -324,12 +324,12 @@ msgstr "Käynnistä Timeshift"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:17
 msgid "A new version of Linux Mint is available"
-msgstr "Linux Mint uusi versio on saatavilla"
+msgstr "Uusi Linux Mintin versio on saatavilla"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:47
 #, python-format
 msgid "Visit %s for the latest announcements."
-msgstr "Vieraile %s viimeisimmät ilmoitukset."
+msgstr "Lue viimeisimmät ilmoitukset sivulta %s"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:53
 #, python-format
@@ -338,7 +338,7 @@ msgstr "Päivitä versioon %s"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:49
 msgid "Your version of Linux Mint will soon reach End-Of-Life (EOL)"
-msgstr "Linux Mint -versiosi saavuttaa pian käyttöiän päättymisen (EOL)"
+msgstr "Linux Mintin versiosi käyttöikä on päättymässä"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:50
 #, python-brace-format
@@ -349,19 +349,19 @@ msgstr[1] "Se ei enää saa tukea ja päivityksiä {num_days} päivän kuluttua.
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:54
 msgid "Your version of Linux Mint is no longer supported"
-msgstr "Linux Mint -versiota ei tueta enää"
+msgstr "Versiotasi Linux Mintistä ei enää tueta"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:55
 #, python-brace-format
 msgid "It reached End-Of-Life (EOL) yesterday."
 msgid_plural "It reached End-Of-Life (EOL) {num_days} days ago."
-msgstr[0] "Se saavutti eilen käyttöiän päättymisen (EOL)."
-msgstr[1] "Se saavutti käyttöiän lopun (EOL) {num_days} päivää sitten."
+msgstr[0] "Sen käyttöikä päättyi eilen."
+msgstr[1] "Sen käyttöikä päättyi {num_days} päivää sitten."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:66
 #, python-format
 msgid "Visit %s to find information about newer releases."
-msgstr "Vieraile sivustossa %s löytääksesi tietoja uusimmista julkaisuista."
+msgstr "Etsi sivulta %s tietoa uudemmista julkaisuista."
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:17
 msgid "Remove conflicting indicators"
@@ -369,11 +369,11 @@ msgstr "Poista ristiriitaiset osoittimet"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:37
 msgid "The following packages prevent tray icons from working properly:"
-msgstr "Seuraavat paketit estävät alavalikon kuvakkeita toimimasta oikein:"
+msgstr "Seuraavat paketit estävät ilmoitusaluekuvakkeita toimimasta oikein:"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:39
 msgid "Note: You will need to log out after removing them."
-msgstr "Huomautus: Sinun on kirjauduttava ulos niiden poistamisen jälkeen."
+msgstr "Huom! Kun ne on poistettu, sinun on kirjauduttava ulos."
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:45
 msgid "Remove the conflicting packages."
@@ -387,7 +387,7 @@ msgstr "Asenna kielipaketit"
 msgid ""
 "The following localization packages are missing to properly support your "
 "language:"
-msgstr "Seuraavat lokalisointipaketit puuttuvat tukemaan kieltäsi oikein:"
+msgstr "Kielesi täysi tuki vaatii seuraavat puuttuvat kotoistuspaketit:"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:48
 msgid "Install the Language Packs"
@@ -399,7 +399,7 @@ msgstr "Asenna laiteajurit"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:27
 msgid "Processor"
-msgstr "Prosessori"
+msgstr "Suoritin"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:40
 msgid "Unknown"
@@ -412,8 +412,8 @@ msgstr "%s (tuntematon)"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:88
 msgid "Hardware drivers are available for the following devices:"
-msgstr "Laitteisto-ohjaimet ovat saatavana seuraaville laitteille:"
+msgstr "Seuraaviin laitteisiin on saatavilla laiteajureita:"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:95
 msgid "Launch the Driver Manager"
-msgstr "Käynnistä ajureiden hallinta"
+msgstr "Käynnistä ajurihallinta"

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2020-06-19 12:06+0100\n"
-"PO-Revision-Date: 2020-07-16 06:35+0000\n"
+"PO-Revision-Date: 2021-05-13 13:37+0000\n"
 "Last-Translator: Mykola Tkach <chistomov@gmail.com>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -16,8 +16,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2021-01-02 14:18+0000\n"
-"X-Generator: Launchpad (build 34b3ffd45c9543b7f7aa5aa313925241e9e7ca3f)\n"
+"X-Launchpad-Export-Date: 2021-06-09 14:21+0000\n"
+"X-Generator: Launchpad (build b45bdbe3a00b6b668fa7f2069bd545c35c41f7f4)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
 #: usr/lib/linuxmint/mintreport/app.py:245 generate_desktop_files:25
@@ -65,7 +65,7 @@ msgid ""
 "Your system information was copied into your clipboard so you can paste it "
 "on the forums."
 msgstr ""
-"Відомості про систему було скопійовано до буферу обміну, так що ви можете "
+"Відомості про систему було скопійовано до буфера обміну так, щоб ви могли "
 "вставити це на форумах."
 
 #: usr/lib/linuxmint/mintreport/app.py:310
@@ -79,7 +79,7 @@ msgid ""
 "clipboard so you can paste it on IRC."
 msgstr ""
 "Вашу системну інформацію було завантажено до %s. Це посилання розміщено у "
-"вашому буфері обміну, тому ви можете вставити його на  IRC."
+"вашому буфері обміну, тому ви можете вставити її на IRC."
 
 #: usr/lib/linuxmint/mintreport/app.py:312
 msgid "An error occurred while uploading the system information"
@@ -91,7 +91,7 @@ msgid ""
 "https://pastebin.com and share the link on IRC."
 msgstr ""
 "Скопіюйте та вставте системну інформацію на сайт на кшталт pastebin, "
-"наприклад  https://pastebin.com та розповсюдьте посилання в IRC"
+"наприклад  https://pastebin.com і розповсюдьте посилання в IRC"
 
 #: usr/lib/linuxmint/mintreport/app.py:391
 msgid "Ignore this report"
@@ -103,7 +103,7 @@ msgstr "Ви впевнені, що волієте знехтувати цей �
 
 #: usr/lib/linuxmint/mintreport/app.py:408
 msgid "The report will be permanently ignored and will no longer be visible."
-msgstr "Звіт буде назавжди знехтувано й більше не буде видимим."
+msgstr "Звіт буде назавжди знехтувано, він більше не буде видимим."
 
 #: usr/lib/linuxmint/mintreport/app.py:500
 #, python-format
@@ -133,8 +133,8 @@ msgid ""
 "A stack trace is available in 'Local Files' but its content is probably "
 "inaccurate."
 msgstr ""
-"Заголовки або бінарники, встановлені у вашу систему, не збігаються з кодом, "
-"який був виконаний під час аварії.\n"
+"Заголовки чи бінарники, встановлені у вашу систему, не збігаються з кодом, "
+"який було виконано під час аварії.\n"
 "Відтоді вони, ймовірно, оновлені.\n"
 "Трасування стеку доступно у \"Локальних Файлах\", але його вміст, ймовірно, "
 "неточний."
@@ -150,7 +150,7 @@ msgstr "Деякі системні звіти потребують вашої �
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
 msgid "Troubleshoot problems"
-msgstr "Виправлення неполадок"
+msgstr "Виправлення проблем"
 
 #: generate_desktop_files:53
 msgid "Troubleshooting Tool"
@@ -177,7 +177,7 @@ msgid ""
 "Copy to clipboard (code tags are added to make it easy to paste the system "
 "information into the forums)"
 msgstr ""
-"Копіювати до буферу обміну (додаються теґи коду, щоб полегшити вставлення "
+"Копіювати до буфера обміну (додаються теґи коду, щоб полегшити вставлення "
 "системної інформації на форуми)"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:6
@@ -186,7 +186,7 @@ msgstr "Вивантажити"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:7
 msgid "Upload to a pastebin service (no personal information included)"
-msgstr "Вивантажити на службу pastebin (особиста інформація не включена)"
+msgstr "Вивантажити на службу pastebin (особисту інформацію не включено)"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:8
 msgid "System information"
@@ -201,7 +201,7 @@ msgid ""
 "To enable crash reporting, install systemd-coredump and reboot your computer."
 msgstr ""
 "Щоб увімкнути звіт про аварійне завершення роботи, встановіть systemd-"
-"coredump та перезавантажте комп'ютер."
+"coredump і перезавантажте комп'ютер."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:11
 msgid "Crash reports:"
@@ -217,7 +217,7 @@ msgid ""
 "crash.tar.gz (from Local Files) and explain how to reproduce the crash."
 msgstr ""
 "Коли ви шукаєте допомогу, перевірте наявні звіти про помилки, помістіть "
-"трасування, поділіться crash.tar.gz (з локальних файлів) і поясніть, як "
+"трасування, поділіться crash.tar.gz (із локальних файлів) і поясніть, як "
 "відтворити аварійне завершення роботи."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:14
@@ -226,7 +226,7 @@ msgstr "Локальні файли"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:15
 msgid "Open the directory containing crash.tar.gz and its content."
-msgstr "Відкрийте каталог, що містить crash.tar.gz та його вміст."
+msgstr "Відкрийте каталог, що містить crash.tar.gz і його вміст."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:16
 msgid "Bug Tracker"
@@ -267,7 +267,7 @@ msgid ""
 "The XApp Status applet allows applications to provide a tray icon without "
 "rendering glitches and with support for HiDPI and symbolic icons."
 msgstr ""
-"Аплет статусу XApp дозволяє додаткам показувати піктограму у таці без збоїв "
+"Аплет статусу XApp дозволяє додаткам показувати піктограму в таці без збоїв "
 "рендерингу з підтримкою HiDPI та символічних піктограм."
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:39
@@ -288,7 +288,7 @@ msgid ""
 "Multimedia codecs are required to play some video formats and to properly "
 "render some websites."
 msgstr ""
-"Мультимедія кодеки потрібні для перегляду відео в деяких форматах й "
+"Кодеки мультимедія потрібні для перегляду відео в деяких форматах і "
 "перегляду вмісту на деяких сайтах."
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:36
@@ -301,22 +301,22 @@ msgstr "Встановлення знадобу відновлення сист�
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:31
 msgid "Linux Mint provides a system restore utility called Timeshift."
-msgstr "В Linux Mint є засіб відновлення системи Timeshift"
+msgstr "У Linux Mint є засіб відновлення системи Timeshift"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:32
 msgid ""
 "Thanks to Timeshift you can take snapshots of the system, either manually or "
 "automatically."
 msgstr ""
-"Завдяки Timeshift можна робити знятки системи в ручному або автоматичному "
-"режимі."
+"Завдяки Timeshift можна робити знятки системи в ручному та автоматичному "
+"режимах."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:33
 msgid ""
 "If something goes wrong you can then restore your operating system from a "
 "previously saved snapshot."
 msgstr ""
-"Якщо щось піде не так, ви зможете відновити ОС з раніше збереженого знятку."
+"Якщо щось піде не так, ви зможете відновити ОС із раніше збереженого знятку."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:39
 msgid "Launch Timeshift"
@@ -344,11 +344,11 @@ msgstr "Ваша версія Linux Mint незабаром досягне кі�
 #, python-brace-format
 msgid "It will stop receiving support and updates in a day."
 msgid_plural "It will stop receiving support and updates in {num_days} days."
-msgstr[0] "Вона перестане отримувати підтримку та оновлення через день."
+msgstr[0] "Вона перестане отримувати підтримку й оновлення через день."
 msgstr[1] ""
-"Вона перестане отримувати підтримку та оновлення через {num_days} дні."
+"Вона перестане отримувати підтримку й оновлення через {num_days} дні."
 msgstr[2] ""
-"Вона перестане отримувати підтримку та оновлення через {num_days} днів."
+"Вона перестане отримувати підтримку й оновлення через {num_days} днів."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:54
 msgid "Your version of Linux Mint is no longer supported"
@@ -379,7 +379,7 @@ msgstr ""
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:39
 msgid "Note: You will need to log out after removing them."
 msgstr ""
-"Увага: після їх вилучення потрібно завершити сеанс й вдруге увійти у систему."
+"Увага: після їх вилучення потрібно завершити сеанс і вдруге увійти у систему."
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:45
 msgid "Remove the conflicting packages."
@@ -424,4 +424,4 @@ msgstr "Наявні драйвери для таких пристроїв:"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:95
 msgid "Launch the Driver Manager"
-msgstr "Запустити Керівник драйверів"
+msgstr "Запустити Керування драйверами"
