@@ -1,3 +1,14 @@
+mintreport (1.2.5) uma; urgency=medium
+
+  [ Musa Unal ]
+  * Update Readme (#76)
+
+  [ Clement Lefebvre ]
+  * l10n: Update translations
+  * l10n: Generate files
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 25 Jun 2021 14:23:32 +0100
+
 mintreport (1.2.4) uma; urgency=medium
 
   * l10n: Update translations
