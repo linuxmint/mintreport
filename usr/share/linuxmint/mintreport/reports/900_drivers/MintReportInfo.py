@@ -3,6 +3,7 @@ import gi
 import os
 import subprocess
 import re
+import json
 
 gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
@@ -50,8 +51,13 @@ class Report(InfoReport):
         # Defines whether this report should show up
         self.drivers = []
         try:
-            from UbuntuDrivers import detect
-            devices = detect.system_device_drivers()
+            output = subprocess.check_output(
+                ["python3",
+                 "-c",
+                 "import json; from UbuntuDrivers import detect; d = json.dumps(detect.system_device_drivers()); print(d)"],
+                stderr=subprocess.DEVNULL).decode("UTF-8")
+
+            devices = json.loads(output)
             for device_id in devices:
                 device = devices[device_id]
                 device_name = self.construct_name(device)
