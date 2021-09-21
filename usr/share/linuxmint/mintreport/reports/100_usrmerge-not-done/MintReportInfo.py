@@ -48,7 +48,6 @@ class Report(InfoReport):
         descriptions = []
         descriptions.append(_("We recommend you convert your system with usrmerge."))
         descriptions.append(_("This is done already for new installations of Linux Mint, starting with 20.1."))
-        descriptions.append(_("For more information on usrmerge, click the link below.\n"))
         descriptions.append(_("To convert your system, open a terminal and type:\n"))
         descriptions.append("<span font_family='monospace'>apt install usrmerge</span>\n")
         descriptions.append(_("You should reboot the computer once this completes."))
