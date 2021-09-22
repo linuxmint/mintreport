@@ -1,3 +1,9 @@
+mintreport (1.2.1.1) ulyana; urgency=medium
+
+  * Revert "codecs: Fix installing mint-meta-codecs in Mint 20"
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 22 Sep 2021 13:33:43 +0100
+
 mintreport (1.2.1) ulyana; urgency=medium
 
   * Add a test to detect new major releases
