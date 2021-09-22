@@ -50,6 +50,12 @@ class Report(InfoReport):
     def is_pertinent(self):
         # Defines whether this report should show up
         self.drivers = []
+
+        # ubuntu-drivers and UbuntuDrivers module share the same package; if it's
+        # missing, we're on lmde.
+        if not os.path.exists("/usr/bin/ubuntu-drivers"):
+            return False
+
         try:
             output = subprocess.check_output(
                 ["python3",
