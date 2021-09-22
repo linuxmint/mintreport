@@ -39,7 +39,7 @@ class Report(InfoReport):
         return actions
 
     def callback(self, data):
-        self.install_packages(["mint-meta-codecs", "libavcodec-extra", "libavcodec-extra58"])
+        self.install_packages(["mint-meta-codecs"])
         # reload
         return True
 
