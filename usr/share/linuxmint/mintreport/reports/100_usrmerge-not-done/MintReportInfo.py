@@ -20,8 +20,9 @@ class Report(InfoReport):
     def is_pertinent(self):
         try:
             info = lsb_release.get_os_release()
+
             major_version = info["RELEASE"].split(".")[0]
-            if int(major_version) < 20:
+            if int(major_version) < 20 and info["CODENAME"] != "debbie":
                 return False
         except:
             return False
