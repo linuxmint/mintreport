@@ -6,8 +6,13 @@
       <summary></summary>
       <description></description>
     </key>
+    <key type="b" name="autorefresh">
+      <default>true</default>
+      <summary></summary>
+      <description></description>
+    </key>
     <key type="i" name="autorefresh-seconds">
-      <default>3600</default>
+      <default>86400</default>
       <summary></summary>
       <description></description>
     </key>

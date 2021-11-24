@@ -89,8 +89,9 @@ class MyApplication(Gtk.Application):
             self.hold()
             self.primary_instance = "Primary instance"
             self.load_info()
-            # Load info every hour
-            GLib.timeout_add_seconds(self.settings.get_int("autorefresh-seconds"), self.load_info)
+            # Auto-refresh
+            if self.settings.get_boolean("autorefresh"):
+                GLib.timeout_add_seconds(self.settings.get_int("autorefresh-seconds"), self.load_info)
         else:
             print("Already running!")
 
