@@ -1,3 +1,20 @@
+mintreport (1.2.6) una; urgency=medium
+
+  [ Michael Webster ]
+  * drivers report: Run driver detection in a child process to reduce memory bloat.
+  * tray.py: Change how mint-report is launched.
+  * Add a report for usrmerge.
+  * usrmerge: It's not necessary to tell the user to click more info, they see the button.
+  * usrmerge: Don't skip lmde4 because of its low RELEASE value.
+  * drivers: Don't complain when the driver check fails and we're on lmde.
+  * Don't ignore any LMDE versions instead of just debbie.
+
+  [ Clement Lefebvre ]
+  * tray: Only refresh once a day
+  * l10n: Update POT
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 24 Nov 2021 14:08:16 +0000
+
 mintreport (1.2.5) uma; urgency=medium
 
   [ Musa Unal ]
