@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2020-06-19 12:06+0100\n"
+"POT-Creation-Date: 2021-11-24 14:07+0000\n"
 "PO-Revision-Date: 2020-11-29 15:36+0000\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <(nothing)>\n"
@@ -16,8 +16,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2021-06-25 10:42+0000\n"
-"X-Generator: Launchpad (build 40cc6dba4163ba9ca785b26ad91f43c87d70ba4d)\n"
+"X-Launchpad-Export-Date: 2021-12-06 15:06+0000\n"
+"X-Generator: Launchpad (build f92b6e0bb2624f8a9125e3f45b7621c6e230c5ff)\n"
 "Language: sr\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
@@ -144,7 +144,7 @@ msgstr ""
 msgid "Show System Reports"
 msgstr "Прикажи системске извештаје"
 
-#: usr/lib/linuxmint/mintreport/tray.py:116
+#: usr/lib/linuxmint/mintreport/tray.py:117
 msgid "Some system reports require your attention"
 msgstr "Неки системски извештаји захтевају вашу пажњу"
 
@@ -325,15 +325,18 @@ msgid "Launch Timeshift"
 msgstr "Покрени Timeshift"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:17
+#: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:17
 msgid "A new version of Linux Mint is available"
 msgstr "Доступно је ново издање Линукс Минт-а"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:47
+#: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:50
 #, python-format
 msgid "Visit %s for the latest announcements."
 msgstr "Посетите %s за најновије објаве."
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:53
+#: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:56
 #, python-format
 msgid "Upgrade to %s"
 msgstr "Надогради на %s"
@@ -367,6 +370,31 @@ msgstr[2] "Подршка је престала пре {num_days} дана."
 msgid "Visit %s to find information about newer releases."
 msgstr "Посетите %s како би пронашли информације о новом издању."
 
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:16
+msgid "Perform usrmerge conversion"
+msgstr ""
+
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:50
+msgid "We recommend you convert your system with usrmerge."
+msgstr ""
+
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:51
+msgid ""
+"This is done already for new installations of Linux Mint, starting with 20.1."
+msgstr ""
+
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:52
+msgid "To convert your system, open a terminal and type:"
+msgstr ""
+
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:54
+msgid "You should reboot the computer once this completes."
+msgstr ""
+
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:60
+msgid "More information"
+msgstr ""
+
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:17
 msgid "Remove conflicting indicators"
 msgstr "Уклони сукобљавајуће показиваче"
@@ -397,27 +425,27 @@ msgstr "Следећи језични пакети недостају за по�
 msgid "Install the Language Packs"
 msgstr "Инсталирајте језичке пакете"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:18
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:19
 msgid "Install hardware drivers"
 msgstr "Инсталирај управљачке програме"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:27
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:28
 msgid "Processor"
 msgstr "Процесор"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:40
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:41
 msgid "Unknown"
 msgstr "Непознато"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:44
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:45
 #, python-format
 msgid "%s (unknown)"
 msgstr "%s (непознато)"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:88
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:100
 msgid "Hardware drivers are available for the following devices:"
 msgstr "Управљачки програми доступни су за следеће уређаје:"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:95
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:107
 msgid "Launch the Driver Manager"
 msgstr "Покрени Управник управљачких програма"

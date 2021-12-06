@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2020-06-19 12:06+0100\n"
-"PO-Revision-Date: 2018-02-15 09:38+0000\n"
-"Last-Translator: Matic Gradišer <Unknown>\n"
+"POT-Creation-Date: 2021-11-24 14:07+0000\n"
+"PO-Revision-Date: 2021-11-26 11:34+0000\n"
+"Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: Slovenian <sl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || "
 "n%100==4 ? 3 : 0);\n"
-"X-Launchpad-Export-Date: 2021-06-25 10:42+0000\n"
-"X-Generator: Launchpad (build 40cc6dba4163ba9ca785b26ad91f43c87d70ba4d)\n"
+"X-Launchpad-Export-Date: 2021-12-06 15:06+0000\n"
+"X-Generator: Launchpad (build f92b6e0bb2624f8a9125e3f45b7621c6e230c5ff)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
 #: usr/lib/linuxmint/mintreport/app.py:245 generate_desktop_files:25
@@ -28,47 +28,49 @@ msgstr "Sistemska poročila"
 
 #: usr/lib/linuxmint/mintreport/app.py:193
 msgid "_File"
-msgstr ""
+msgstr "_Datoteka"
 
 #: usr/lib/linuxmint/mintreport/app.py:198
 msgid "Refresh"
-msgstr ""
+msgstr "Osveži"
 
 #: usr/lib/linuxmint/mintreport/app.py:205
 msgid "Restore ignored reports"
-msgstr ""
+msgstr "Obnovi prezrta poročila"
 
 #: usr/lib/linuxmint/mintreport/app.py:209
 #: usr/lib/linuxmint/mintreport/tray.py:53
 msgid "Quit"
-msgstr ""
+msgstr "Izhod"
 
 #: usr/lib/linuxmint/mintreport/app.py:220
 msgid "_Help"
-msgstr ""
+msgstr "Po_moč"
 
 #: usr/lib/linuxmint/mintreport/app.py:226
 #: usr/lib/linuxmint/mintreport/app.py:243
 msgid "About"
-msgstr ""
+msgstr "O programu"
 
 #: usr/lib/linuxmint/mintreport/app.py:287
 msgid "An error occurred while gathering the system information."
-msgstr ""
+msgstr "Pri zbiranju podatkov o sistemu je prišlo do napake."
 
 #: usr/lib/linuxmint/mintreport/app.py:301
 msgid "System information copied"
-msgstr ""
+msgstr "Podatki o sistemu kopirani"
 
 #: usr/lib/linuxmint/mintreport/app.py:301
 msgid ""
 "Your system information was copied into your clipboard so you can paste it "
 "on the forums."
 msgstr ""
+"Podatki o vašem sistemu so kopirani na odložišče, tako da jih lahko "
+"prilepite na forumih."
 
 #: usr/lib/linuxmint/mintreport/app.py:310
 msgid "System information uploaded"
-msgstr ""
+msgstr "Podatki o sistemu naloženi"
 
 #: usr/lib/linuxmint/mintreport/app.py:310
 #, python-format
@@ -76,28 +78,32 @@ msgid ""
 "Your system information was uploaded to %s. This link was placed in your "
 "clipboard so you can paste it on IRC."
 msgstr ""
+"Podatki o vašem sistemu so naloženi na %s. Povezava je kopirana na "
+"odložišče, tako da jo lahko prilepite na IRC."
 
 #: usr/lib/linuxmint/mintreport/app.py:312
 msgid "An error occurred while uploading the system information"
-msgstr ""
+msgstr "Pri nalaganju podatkov o sistemu je prišlo do napake"
 
 #: usr/lib/linuxmint/mintreport/app.py:312
 msgid ""
 "Copy and paste the system information manually into a pastebin site like "
 "https://pastebin.com and share the link on IRC."
 msgstr ""
+"Kopirajte in prilepite podatke o sistemu ročno na spletišče, kakršno je "
+"https://pastebin.com, in delite povezavo na IRC."
 
 #: usr/lib/linuxmint/mintreport/app.py:391
 msgid "Ignore this report"
-msgstr ""
+msgstr "Prezri to poročilo"
 
 #: usr/lib/linuxmint/mintreport/app.py:407
 msgid "Are you sure you want to ignore this report?"
-msgstr ""
+msgstr "Ali ste prepričani, da želite prezreti to poročilo?"
 
 #: usr/lib/linuxmint/mintreport/app.py:408
 msgid "The report will be permanently ignored and will no longer be visible."
-msgstr ""
+msgstr "Poročilo bo trajno prezrto in ne bo več vidno."
 
 #: usr/lib/linuxmint/mintreport/app.py:500
 #, python-format
@@ -105,6 +111,8 @@ msgid ""
 "The debug symbols are missing for %(program)s.\n"
 "Please install %(package)s."
 msgstr ""
+"Simboli razhroščevanja manjkajo za %(program)s.\n"
+"Namestite %(package)s."
 
 #: usr/lib/linuxmint/mintreport/app.py:514
 #, python-format
@@ -113,6 +121,9 @@ msgid ""
 "If you want to generate a stack trace for this crash report, please "
 "reinstall it."
 msgstr ""
+"Paketa, ki zagotavlja %s, ni mogoče najti.\n"
+"Če želite tvoriti sledenje sklada za to poročilo o sesutju, ga ponovno "
+"namestite."
 
 #: usr/lib/linuxmint/mintreport/app.py:542
 msgid ""
@@ -122,80 +133,92 @@ msgid ""
 "A stack trace is available in 'Local Files' but its content is probably "
 "inaccurate."
 msgstr ""
+"Glave ali izvršne datoteke, nameščene na sistemu, se ne ujemajo s kodo, ki "
+"je bila izvršena ob sesutju.\n"
+"Najbrž so bile v tem času nadgrajene oz. posodobljene.\n"
+"Sledenje skladu je na voljo pod »Krajevne datoteke«, vendar je njegova "
+"vsebina najbrž nenatančna."
 
 #: usr/lib/linuxmint/mintreport/tray.py:49
 msgid "Show System Reports"
-msgstr ""
+msgstr "Pokaži sistemska poročila"
 
-#: usr/lib/linuxmint/mintreport/tray.py:116
+#: usr/lib/linuxmint/mintreport/tray.py:117
 msgid "Some system reports require your attention"
-msgstr ""
+msgstr "Nekatera sistemska poročila zahtevajo vašo pozornost"
 
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
 msgid "Troubleshoot problems"
-msgstr ""
+msgstr "Reševanje težav"
 
 #: generate_desktop_files:53
 msgid "Troubleshooting Tool"
-msgstr ""
+msgstr "Orodje za reševanje težav"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:1
 msgid "Running system checks..."
-msgstr ""
+msgstr "Izvajanje sistemskih preverjanj ..."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:2
 msgid "No problems were detected"
-msgstr ""
+msgstr "Nobena težava ni bila zaznana"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:3
 msgid "System reports"
-msgstr ""
+msgstr "Sistemska poročila"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:4
 msgid "Copy"
-msgstr ""
+msgstr "Kopiraj"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:5
 msgid ""
 "Copy to clipboard (code tags are added to make it easy to paste the system "
 "information into the forums)"
 msgstr ""
+"Kopiraj na odložišče (dodane so značke kode, kar poenostavlja lepljenje "
+"podatkov o sistemu na forume)"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:6
 msgid "Upload"
-msgstr ""
+msgstr "Naloži"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:7
 msgid "Upload to a pastebin service (no personal information included)"
-msgstr ""
+msgstr "Naloži na storitev pastebin (osebni podatki ne bodo vključeni)"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:8
 msgid "System information"
-msgstr ""
+msgstr "Podatki o sistemu"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:9
 msgid "Crash reports are not available"
-msgstr ""
+msgstr "Poročila o sesutju niso na voljo"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:10
 msgid ""
 "To enable crash reporting, install systemd-coredump and reboot your computer."
 msgstr ""
+"Da bi omogočili poročanje o sesutju, namestite systemd-coredump in ponovno "
+"zaženite računalnik."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:11
 msgid "Crash reports:"
-msgstr ""
+msgstr "Poročila o sesutju:"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:12
 msgid "Stack trace:"
-msgstr ""
+msgstr "Sledenja sklada:"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:13
 msgid ""
 "When seeking help, check for existing bug reports, pastebin the trace, share "
 "crash.tar.gz (from Local Files) and explain how to reproduce the crash."
 msgstr ""
+"Ko iščete pomo, preverite obstoj poročil o hrošču, sled napake vključite v "
+"pastebin, delite datoteko crash.tar.gz (nahaja se med krajevnimi datotekami) "
+"in razložite, kako ponoviti sesutje."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:14
 msgid "Local Files"
@@ -203,15 +226,15 @@ msgstr "Krajevne datoteke"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:15
 msgid "Open the directory containing crash.tar.gz and its content."
-msgstr ""
+msgstr "Odprite mapo, ki vsebuje crash.tar.gz in njegovo vsebino."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:16
 msgid "Bug Tracker"
-msgstr ""
+msgstr "Sledilnik hroščev"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:17
 msgid "Find the most appropriate bug tracker."
-msgstr ""
+msgstr "Poiščite najprimernejši sledilnik hroščev."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:18
 msgid "Pastebin"
@@ -219,7 +242,7 @@ msgstr "Pastebin"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:19
 msgid "Upload the trace to the Internet."
-msgstr ""
+msgstr "Naloži sledenje na internet."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:20
 msgid ""
@@ -227,6 +250,9 @@ msgid ""
 "Always provide a trace and reliable instructions to trigger/observe the "
 "problem."
 msgstr ""
+"Razvijalci morajo ugotoviti, kje koda odpove oz. kako ponovijo težavo. Vedno "
+"dodajte sledenje napaki in zanesljive napotke, kako sprožiti/opazovati "
+"težavo."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:21
 msgid "Crash reports"
@@ -234,152 +260,200 @@ msgstr "Poročila o sesutjih"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
 msgid "Add the XApp Status applet"
-msgstr ""
+msgstr "Dodaj programček stanja XApp"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:37
 msgid ""
 "The XApp Status applet allows applications to provide a tray icon without "
 "rendering glitches and with support for HiDPI and symbolic icons."
 msgstr ""
+"Programček Stanje XApp dovoli programom, da ponudijo pladenjsko ikono brez "
+"napak v upodabljanju in s podporo za HiDPI in simbolne ikone."
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:39
 msgid "Right-click the panel and choose 'Add to Panel'."
-msgstr ""
+msgstr "Desno kliknite podokno in izberite Dodaj v podokno."
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:46
 msgid "Add the XApp Status applet to the panel"
-msgstr ""
+msgstr "Dodaj programček XApp Status v podokno"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:16
 msgid "Install multimedia codecs"
-msgstr ""
+msgstr "Namesti večpredstavnostne kodeke"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:30
 msgid ""
 "Multimedia codecs are required to play some video formats and to properly "
 "render some websites."
 msgstr ""
+"Za predvajanje nekaterih video formatov in pravilno upodabljanje nekaterih "
+"spletišč so potrebni večpredstavnostni kodeki."
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:36
 msgid "Install the Multimedia Codecs"
-msgstr ""
+msgstr "Namesti večpredstavnostne kodeke"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:17
 msgid "Set up the system restore utility"
-msgstr ""
+msgstr "Nastavite orodje za obnovitev sistema"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:31
 msgid "Linux Mint provides a system restore utility called Timeshift."
-msgstr ""
+msgstr "Linux Mint ponuja orodje za obnovitev sistema Timeshift."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:32
 msgid ""
 "Thanks to Timeshift you can take snapshots of the system, either manually or "
 "automatically."
 msgstr ""
+"Zahvaljujoč Timeshiftu lahko opravite posnetek sistema, ročno ali samodejno."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:33
 msgid ""
 "If something goes wrong you can then restore your operating system from a "
 "previously saved snapshot."
 msgstr ""
+"Če gre kaj narobe, lahko svoj operacijski sistem obnovite na predhodno "
+"shranjen posnetek sistema."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:39
 msgid "Launch Timeshift"
-msgstr ""
+msgstr "Zaženi Timeshift"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:17
+#: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:17
 msgid "A new version of Linux Mint is available"
-msgstr ""
+msgstr "Na voljo je nova različica Linux Mint"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:47
+#: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:50
 #, python-format
 msgid "Visit %s for the latest announcements."
-msgstr ""
+msgstr "Obiščite %s za najnovejša obvestila."
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:53
+#: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:56
 #, python-format
 msgid "Upgrade to %s"
-msgstr ""
+msgstr "Nadgradi na %s"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:49
 msgid "Your version of Linux Mint will soon reach End-Of-Life (EOL)"
 msgstr ""
+"Vaša različica Linux Mint bo kmalu dosegla konec življenskega cikla (EOL)."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:50
 #, python-brace-format
 msgid "It will stop receiving support and updates in a day."
 msgid_plural "It will stop receiving support and updates in {num_days} days."
 msgstr[0] ""
+"Podporo in posodobitve boste prenehali prejemati čez {num_days} dni."
 msgstr[1] ""
+"Podporo in posodobitve boste prenehali prejemati čez {num_days} dan."
+msgstr[2] ""
+"Podporo in posodobitve boste prenehali prejemati čez {num_days} dneva."
+msgstr[3] ""
+"Podporo in posodobitve boste prenehali prejemati čez {num_days} dni."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:54
 msgid "Your version of Linux Mint is no longer supported"
-msgstr ""
+msgstr "Ta različica Linux Mint ni več podprta"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:55
 #, python-brace-format
 msgid "It reached End-Of-Life (EOL) yesterday."
 msgid_plural "It reached End-Of-Life (EOL) {num_days} days ago."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Konec življenskega cikla (EOL) je dosegla pred {num_days} dnevi."
+msgstr[1] "Konec življenskega cikla (EOL) je dosegla pred {num_days} dnevom."
+msgstr[2] ""
+"Konec življenskega cikla (EOL) je dosegla pred {num_days} dnevoma."
+msgstr[3] "Konec življenskega cikla (EOL) je dosegla pred {num_days} dnevi."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:66
 #, python-format
 msgid "Visit %s to find information about newer releases."
+msgstr "Obiščite %s, da izveste več o novejših izdajah."
+
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:16
+msgid "Perform usrmerge conversion"
+msgstr "Izvedi pretvorbo usrmerge"
+
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:50
+msgid "We recommend you convert your system with usrmerge."
+msgstr "Priporočamo, da pretvorite svoj sistem z usrmerge."
+
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:51
+msgid ""
+"This is done already for new installations of Linux Mint, starting with 20.1."
 msgstr ""
+"To je opravljeno na novih namestitvah Linux Minta od izdaje 20.1 naprej."
+
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:52
+msgid "To convert your system, open a terminal and type:"
+msgstr "Če želite pretvoriti svoj sistem, odprite terminal in vnesite:"
+
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:54
+msgid "You should reboot the computer once this completes."
+msgstr "Ko se ta postopek zaključi, morate ponovno zagnati računalnik."
+
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:60
+msgid "More information"
+msgstr "Več podrobnosti"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:17
 msgid "Remove conflicting indicators"
-msgstr ""
+msgstr "Odstrani nasprotujoče si kazalce"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:37
 msgid "The following packages prevent tray icons from working properly:"
-msgstr ""
+msgstr "Naslednji paketi preprečujejo ikonam pladnja pravilno delovanje:"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:39
 msgid "Note: You will need to log out after removing them."
-msgstr ""
+msgstr "Opomba: po njihovi odstranitvi se boste morali odjaviti."
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:45
 msgid "Remove the conflicting packages."
-msgstr ""
+msgstr "Odstranite nasprotujoče si pakete."
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:26
 msgid "Install language packs"
-msgstr ""
+msgstr "Namesti jezikovne pakete"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:41
 msgid ""
 "The following localization packages are missing to properly support your "
 "language:"
 msgstr ""
+"Naslednji paketi lokalizacije manjkajo, da bi lahko ustrezno podpirali vaš "
+"jezik:"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:48
 msgid "Install the Language Packs"
-msgstr ""
+msgstr "Namesti jezikovne pakete"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:18
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:19
 msgid "Install hardware drivers"
-msgstr ""
+msgstr "Namesti gonilnike za strojno opremo"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:27
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:28
 msgid "Processor"
-msgstr ""
+msgstr "Procesor"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:40
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:41
 msgid "Unknown"
-msgstr ""
+msgstr "Neznano"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:44
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:45
 #, python-format
 msgid "%s (unknown)"
-msgstr ""
+msgstr "%s (neznano)"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:88
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:100
 msgid "Hardware drivers are available for the following devices:"
-msgstr ""
+msgstr "Strojni gonilniki so na voljo za naslednje naprave:"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:95
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:107
 msgid "Launch the Driver Manager"
-msgstr ""
+msgstr "Zaženi upravitelja gonilnikov"

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2020-06-19 12:06+0100\n"
-"PO-Revision-Date: 2020-06-28 12:24+0000\n"
+"POT-Creation-Date: 2021-11-24 14:07+0000\n"
+"PO-Revision-Date: 2021-10-28 14:54+0000\n"
 "Last-Translator: Rhoslyn Prys <Unknown>\n"
 "Language-Team: Welsh <cy@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -16,8 +16,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n==1 ? 0 : n==2 ? 1 : (n != 8 && n != 11) ? "
 "2 : 3;\n"
-"X-Launchpad-Export-Date: 2021-06-25 10:42+0000\n"
-"X-Generator: Launchpad (build 40cc6dba4163ba9ca785b26ad91f43c87d70ba4d)\n"
+"X-Launchpad-Export-Date: 2021-12-06 15:06+0000\n"
+"X-Generator: Launchpad (build f92b6e0bb2624f8a9125e3f45b7621c6e230c5ff)\n"
 "Language: cy\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
@@ -80,7 +80,7 @@ msgid ""
 "clipboard so you can paste it on IRC."
 msgstr ""
 "Cafodd manylion eich system ei lwytho i %s. Cafodd y ddolen ei gosod ar eich "
-"clipfwrdd fel bod modd i chi ei ludo ar IRC."
+"clipfwrdd fel bod modd i chi ei gludo ar IRC."
 
 #: usr/lib/linuxmint/mintreport/app.py:312
 msgid "An error occurred while uploading the system information"
@@ -136,7 +136,7 @@ msgid ""
 "A stack trace is available in 'Local Files' but its content is probably "
 "inaccurate."
 msgstr ""
-"Nid yw'r penynnau na'r pecynnau didau ar eich system yn cydweddu á'r cod "
+"Nid yw'r penynnau na'r pecynnau didau ar eich system yn cydweddu â'r cod "
 "gafodd ei weithredu yn ystod y chwalfa.\n"
 "Mae nhw, o bosib, wedi eu diweddaru ers hynny.\n"
 "Mae adroddiad stac ar gael yn y 'Ffeiliau Lleol' ond mae ei gynnwys  siŵr o "
@@ -146,7 +146,7 @@ msgstr ""
 msgid "Show System Reports"
 msgstr "Dangos Adroddiadau System"
 
-#: usr/lib/linuxmint/mintreport/tray.py:116
+#: usr/lib/linuxmint/mintreport/tray.py:117
 msgid "Some system reports require your attention"
 msgstr "Mae angen eich sylw ar rai adroddiadau'r system"
 
@@ -180,7 +180,7 @@ msgid ""
 "Copy to clipboard (code tags are added to make it easy to paste the system "
 "information into the forums)"
 msgstr ""
-"Copïo i'r clipfwrdd (bydd tagiau co yn cael eu hychwanegu i'w wneud yn haws "
+"Copïo i'r clipfwrdd (bydd tagiau cod yn cael eu hychwanegu i'w wneud yn haws "
 "i ludo manylion y system i'r fforymau)."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:6
@@ -193,7 +193,7 @@ msgstr "Llwytho i wasanaeth pastebin (heb gynnwys manylion personol)"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:8
 msgid "System information"
-msgstr "Manylion system"
+msgstr "Manylion y system"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:9
 msgid "Crash reports are not available"
@@ -326,15 +326,18 @@ msgid "Launch Timeshift"
 msgstr "Cychwyn Timeshift"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:17
+#: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:17
 msgid "A new version of Linux Mint is available"
 msgstr "Mae fersiwn newydd o Linux Mint ar gael"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:47
+#: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:50
 #, python-format
 msgid "Visit %s for the latest announcements."
 msgstr "Ewch i %s i weld y cyhoeddiadau diweddaraf."
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:53
+#: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:56
 #, python-format
 msgid "Upgrade to %s"
 msgstr "Diweddaru i %s"
@@ -351,7 +354,7 @@ msgid_plural "It will stop receiving support and updates in {num_days} days."
 msgstr[0] ""
 "Bydd yn peidio â derbyn cefnogaeth a diweddariadau ymhen {num_days} diwrnod."
 msgstr[1] ""
-"Bydd yn peidio â derbyn cefnogaeth a diweddariadau ymhen {num_days} diwrnod."
+"Bydd yn peidio â derbyn cefnogaeth a diweddariadau ymhen {num_days} ddiwrnod."
 msgstr[2] ""
 "Bydd yn peidio â derbyn cefnogaeth a diweddariadau ymhen {num_days} diwrnod."
 msgstr[3] ""
@@ -366,14 +369,39 @@ msgstr "Nid yw eich fersiwn chi o Linux Mint yn cael ei gefnogi mwyach"
 msgid "It reached End-Of-Life (EOL) yesterday."
 msgid_plural "It reached End-Of-Life (EOL) {num_days} days ago."
 msgstr[0] "Daeth i Ddiwedd ei Oes (EOL) ddoe."
-msgstr[1] "Daeth i Ddiwedd ei Oes (EOL) {num_days}  diwrnod yn ôl."
-msgstr[2] "Daeth i Ddiwedd ei Oes (EOL) {num_days}  diwrnod yn ôl."
-msgstr[3] "Daeth i Ddiwedd ei Oes (EOL) {num_days}  diwrnod yn ôl."
+msgstr[1] "Daeth i Ddiwedd ei Oes (EOL) {num_days} ddiwrnod yn ôl."
+msgstr[2] "Daeth i Ddiwedd ei Oes (EOL) {num_days} diwrnod yn ôl."
+msgstr[3] "Daeth i Ddiwedd ei Oes (EOL) {num_days} diwrnod yn ôl."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:66
 #, python-format
 msgid "Visit %s to find information about newer releases."
 msgstr "Ewch i %s i ddod o hyd i wybodaeth am fersiynau mwy newydd."
+
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:16
+msgid "Perform usrmerge conversion"
+msgstr ""
+
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:50
+msgid "We recommend you convert your system with usrmerge."
+msgstr ""
+
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:51
+msgid ""
+"This is done already for new installations of Linux Mint, starting with 20.1."
+msgstr ""
+
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:52
+msgid "To convert your system, open a terminal and type:"
+msgstr ""
+
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:54
+msgid "You should reboot the computer once this completes."
+msgstr ""
+
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:60
+msgid "More information"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:17
 msgid "Remove conflicting indicators"
@@ -406,27 +434,27 @@ msgstr ""
 msgid "Install the Language Packs"
 msgstr "Gosod y Pecynnau Iaith"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:18
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:19
 msgid "Install hardware drivers"
 msgstr "Gosod gyrwyr caledwedd"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:27
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:28
 msgid "Processor"
 msgstr "Prosesydd"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:40
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:41
 msgid "Unknown"
 msgstr "Anhysbys"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:44
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:45
 #, python-format
 msgid "%s (unknown)"
 msgstr "%s (anhysbys)"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:88
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:100
 msgid "Hardware drivers are available for the following devices:"
 msgstr "Mae gyrwyr caledwedd ar gael ar gyfer y dyfeisiau canlynol:"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:95
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:107
 msgid "Launch the Driver Manager"
 msgstr "Cychwyn y Rheolwr Gyrwyr"

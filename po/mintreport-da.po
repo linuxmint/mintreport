@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2020-06-19 12:06+0100\n"
-"PO-Revision-Date: 2020-06-20 09:16+0000\n"
+"POT-Creation-Date: 2021-11-24 14:07+0000\n"
+"PO-Revision-Date: 2021-11-24 16:18+0000\n"
 "Last-Translator: Alan Mortensen <alanmortensen.am@gmail.com>\n"
 "Language-Team: Danish <da@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2021-06-25 10:42+0000\n"
-"X-Generator: Launchpad (build 40cc6dba4163ba9ca785b26ad91f43c87d70ba4d)\n"
+"X-Launchpad-Export-Date: 2021-12-06 15:06+0000\n"
+"X-Generator: Launchpad (build f92b6e0bb2624f8a9125e3f45b7621c6e230c5ff)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
 #: usr/lib/linuxmint/mintreport/app.py:245 generate_desktop_files:25
@@ -82,7 +82,7 @@ msgstr ""
 
 #: usr/lib/linuxmint/mintreport/app.py:312
 msgid "An error occurred while uploading the system information"
-msgstr "Der opstod en fejl, da systeminformationen skulle uploades."
+msgstr "Der opstod en fejl, da systeminformationen skulle uploades"
 
 #: usr/lib/linuxmint/mintreport/app.py:312
 msgid ""
@@ -143,7 +143,7 @@ msgstr ""
 msgid "Show System Reports"
 msgstr "Vis systemrapporter"
 
-#: usr/lib/linuxmint/mintreport/tray.py:116
+#: usr/lib/linuxmint/mintreport/tray.py:117
 msgid "Some system reports require your attention"
 msgstr "Nogle systemrapporter kræver din opmærksomhed"
 
@@ -326,15 +326,18 @@ msgid "Launch Timeshift"
 msgstr "Start Timeshift"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:17
+#: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:17
 msgid "A new version of Linux Mint is available"
 msgstr "En ny version af Linux Mint er tilgængelig"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:47
+#: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:50
 #, python-format
 msgid "Visit %s for the latest announcements."
 msgstr "Besøg %s for at se de seneste meddelelser."
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:53
+#: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:56
 #, python-format
 msgid "Upgrade to %s"
 msgstr "Opgradér til %s"
@@ -365,6 +368,32 @@ msgstr[1] "Den nåede end-of-life (EOL) for {num_days} siden."
 #, python-format
 msgid "Visit %s to find information about newer releases."
 msgstr "Besøg %s for at få mere at vide om nyere udgaver."
+
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:16
+msgid "Perform usrmerge conversion"
+msgstr "Udfør usrmerge-konvertering"
+
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:50
+msgid "We recommend you convert your system with usrmerge."
+msgstr "Vi anbefaler, at du konverterer dit system med usrmerge."
+
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:51
+msgid ""
+"This is done already for new installations of Linux Mint, starting with 20.1."
+msgstr ""
+"Det er allerede sket for nye installationer af Linux Mint fra og med 20.1."
+
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:52
+msgid "To convert your system, open a terminal and type:"
+msgstr "Konvertér dit system ved at åbne en terminal og skrive:"
+
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:54
+msgid "You should reboot the computer once this completes."
+msgstr "Du bør genstarte din computer, når konverteringen er færdig."
+
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:60
+msgid "More information"
+msgstr "Flere oplysninger"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:17
 msgid "Remove conflicting indicators"
@@ -397,27 +426,27 @@ msgstr ""
 msgid "Install the Language Packs"
 msgstr "Installér sprogpakkerne"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:18
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:19
 msgid "Install hardware drivers"
 msgstr "Installér hardwaredrivere"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:27
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:28
 msgid "Processor"
 msgstr "Processor"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:40
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:41
 msgid "Unknown"
 msgstr "Ukendt"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:44
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:45
 #, python-format
 msgid "%s (unknown)"
 msgstr "%s (ukendt)"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:88
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:100
 msgid "Hardware drivers are available for the following devices:"
 msgstr "Hardwaredrivere er tilgængelige til følgende enheder:"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:95
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:107
 msgid "Launch the Driver Manager"
 msgstr "Start Driverhåndtering"

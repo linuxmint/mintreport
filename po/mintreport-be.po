@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2020-06-19 12:06+0100\n"
-"PO-Revision-Date: 2021-05-23 13:11+0000\n"
+"POT-Creation-Date: 2021-11-24 14:07+0000\n"
+"PO-Revision-Date: 2021-11-28 13:45+0000\n"
 "Last-Translator: Anton Hryb <Unknown>\n"
 "Language-Team: Belarusian <be@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -16,8 +16,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Launchpad-Export-Date: 2021-06-25 10:42+0000\n"
-"X-Generator: Launchpad (build 40cc6dba4163ba9ca785b26ad91f43c87d70ba4d)\n"
+"X-Launchpad-Export-Date: 2021-12-06 15:06+0000\n"
+"X-Generator: Launchpad (build f92b6e0bb2624f8a9125e3f45b7621c6e230c5ff)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
 #: usr/lib/linuxmint/mintreport/app.py:245 generate_desktop_files:25
@@ -90,7 +90,7 @@ msgid ""
 "Copy and paste the system information manually into a pastebin site like "
 "https://pastebin.com and share the link on IRC."
 msgstr ""
-"Скапіруйце і ўстаўце сістэмную інфармацыю ўручную на сайт кшталту "
+"Скапіюйце і ўстаўце сістэмную інфармацыю ўручную на сайт кшталту "
 "https://pastebin.com і падзяліцеся спасылкай ў чаце IRC."
 
 #: usr/lib/linuxmint/mintreport/app.py:391
@@ -99,7 +99,7 @@ msgstr "Праігнараваць гэту справаздачу"
 
 #: usr/lib/linuxmint/mintreport/app.py:407
 msgid "Are you sure you want to ignore this report?"
-msgstr "Вы ўпэўнены, што жадаеце праігнараваць гэту справаздачу?"
+msgstr "Сапраўды жадаеце праігнараваць гэту справаздачу?"
 
 #: usr/lib/linuxmint/mintreport/app.py:408
 msgid "The report will be permanently ignored and will no longer be visible."
@@ -122,7 +122,7 @@ msgid ""
 "reinstall it."
 msgstr ""
 "Немагчыма знайсці пакет, які пастаўляе %s.\n"
-"Калі вы жадаеце згенераваць след стэка для гэтай справаздачы, пераўсталюйце "
+"Калі жадаеце згенераваць след стэка для гэтай справаздачы, пераўсталюйце "
 "пакет."
 
 #: usr/lib/linuxmint/mintreport/app.py:542
@@ -133,7 +133,7 @@ msgid ""
 "A stack trace is available in 'Local Files' but its content is probably "
 "inaccurate."
 msgstr ""
-"Загалоўкі або бінарныя файлы, усталяваныя ў вашай сістэме, не адпавядаюць з "
+"Загалоўкі або бінарныя файлы, усталяваныя ў вашай сістэме, не супадаюць з "
 "кодам, які выконваецца падчас збою.\n"
 "Яны магчыма яшчэ не абноўлены.\n"
 "След трэка даступны ў 'Local Files', але магчыма мае недакладнае змесціва."
@@ -142,7 +142,7 @@ msgstr ""
 msgid "Show System Reports"
 msgstr "Паказаць сістэмныя справаздачы"
 
-#: usr/lib/linuxmint/mintreport/tray.py:116
+#: usr/lib/linuxmint/mintreport/tray.py:117
 msgid "Some system reports require your attention"
 msgstr "Некаторыя сістэмныя справаздачы патрабуюць вашай увагі"
 
@@ -176,7 +176,7 @@ msgid ""
 "Copy to clipboard (code tags are added to make it easy to paste the system "
 "information into the forums)"
 msgstr ""
-"Капіяваць ў буфер абмену (тэгі кода дададзены каб спрасціць устаўку "
+"Капіяваць у буфер абмену (тэгі кода дададзены каб спрасціць устаўку "
 "сістэмнай інфармацыі на форумы)"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:6
@@ -185,8 +185,7 @@ msgstr "Запампаваць"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:7
 msgid "Upload to a pastebin service (no personal information included)"
-msgstr ""
-"Запампаваць на сервіс запамповак (персанальная інфармацыя не будзе ўключана)"
+msgstr "Запампаваць на сервіс запамповак (без персанальнай інфармацыі)"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:8
 msgid "System information"
@@ -234,7 +233,7 @@ msgstr "Bug Tracker"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:17
 msgid "Find the most appropriate bug tracker."
-msgstr "Знайсці найбольш адпаведны bug tracker."
+msgstr "Знайсці найбольш адпаведную сістэму паведамленняў аб памылках."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:18
 msgid "Pastebin"
@@ -271,7 +270,7 @@ msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:39
 msgid "Right-click the panel and choose 'Add to Panel'."
-msgstr "Націсканне правай кнопкі на панэлі і выбар 'Дадаць на панэль'."
+msgstr "Націсніце правай кнопкай на панэлі і выберыце 'Дадаць на панэль'."
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:46
 msgid "Add the XApp Status applet to the panel"
@@ -321,15 +320,18 @@ msgid "Launch Timeshift"
 msgstr "Запусціць Timeshift"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:17
+#: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:17
 msgid "A new version of Linux Mint is available"
 msgstr "Даступна новая версія Linux Mint"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:47
+#: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:50
 #, python-format
 msgid "Visit %s for the latest announcements."
 msgstr "Наведайце %s для азнаямлення з апошнімі аб'явамі."
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:53
+#: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:56
 #, python-format
 msgid "Upgrade to %s"
 msgstr "Абнавіцца да %s"
@@ -363,6 +365,32 @@ msgstr[2] "Тэрмін падтрымкі скончыўся {num_days} дзё�
 msgid "Visit %s to find information about newer releases."
 msgstr "Наведайце %s каб знайсці больш інфармацыі аб навейшых рэлізах."
 
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:16
+msgid "Perform usrmerge conversion"
+msgstr "Выканайце пераўтварэнне usrmerge"
+
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:50
+msgid "We recommend you convert your system with usrmerge."
+msgstr "Мы рэкамендуем вам пераўтварыць вашу сістэму з дапамогай usrmerge."
+
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:51
+msgid ""
+"This is done already for new installations of Linux Mint, starting with 20.1."
+msgstr ""
+"Гэта ўжо зроблена для новых усталёвак Linux Mint, пачынаючы з версіі 20.1."
+
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:52
+msgid "To convert your system, open a terminal and type:"
+msgstr "Каб пераўтварыць сістэму, адкрыйце тэрмінал і набярыце:"
+
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:54
+msgid "You should reboot the computer once this completes."
+msgstr "Трэба будзе перазагрузіць камп'ютар пасля заканчэння."
+
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:60
+msgid "More information"
+msgstr "Падрабязней"
+
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:17
 msgid "Remove conflicting indicators"
 msgstr "Выдаліць канфліктуючыя індыкатары"
@@ -394,27 +422,27 @@ msgstr ""
 msgid "Install the Language Packs"
 msgstr "Усталяваць моўны пакет"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:18
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:19
 msgid "Install hardware drivers"
 msgstr "Усталяваць драйверы абсталявання"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:27
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:28
 msgid "Processor"
 msgstr "Працэсар"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:40
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:41
 msgid "Unknown"
 msgstr "Невядома"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:44
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:45
 #, python-format
 msgid "%s (unknown)"
 msgstr "%s (невядома)"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:88
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:100
 msgid "Hardware drivers are available for the following devices:"
 msgstr "Драйверы абсталявання даступны для наступных прылад:"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:95
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:107
 msgid "Launch the Driver Manager"
 msgstr "Запусціць кіраўнік драйвераў"

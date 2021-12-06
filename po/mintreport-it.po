@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2020-06-19 12:06+0100\n"
-"PO-Revision-Date: 2020-06-19 12:31+0000\n"
+"POT-Creation-Date: 2021-11-24 14:07+0000\n"
+"PO-Revision-Date: 2021-11-24 18:19+0000\n"
 "Last-Translator: Dragone2 <Unknown>\n"
 "Language-Team: Italian <it@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2021-06-25 10:42+0000\n"
-"X-Generator: Launchpad (build 40cc6dba4163ba9ca785b26ad91f43c87d70ba4d)\n"
+"X-Launchpad-Export-Date: 2021-12-06 15:06+0000\n"
+"X-Generator: Launchpad (build f92b6e0bb2624f8a9125e3f45b7621c6e230c5ff)\n"
 "Language: it\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
@@ -24,7 +24,7 @@ msgstr ""
 #: generate_desktop_files:39 generate_desktop_files:53
 #: generate_desktop_files:67
 msgid "System Reports"
-msgstr "Rapporti di Sistema"
+msgstr "Rapporti di sistema"
 
 #: usr/lib/linuxmint/mintreport/app.py:193
 msgid "_File"
@@ -66,7 +66,7 @@ msgid ""
 "Your system information was copied into your clipboard so you can paste it "
 "on the forums."
 msgstr ""
-"Le informazioni di sistema sono state copiate negli Appunti in modo da "
+"Le informazioni di sistema sono state copiate negli appunti in modo da "
 "poterle incollare nei forum."
 
 #: usr/lib/linuxmint/mintreport/app.py:310
@@ -93,8 +93,8 @@ msgid ""
 "Copy and paste the system information manually into a pastebin site like "
 "https://pastebin.com and share the link on IRC."
 msgstr ""
-"Copia e incolla manualmente le informazioni di sistema in un sito pastebin "
-"come https://pastebin.com e condividi il link su IRC."
+"Copia e incolla manualmente le informazioni di sistema in un sito come "
+"https://pastebin.com e condividi il link su IRC."
 
 #: usr/lib/linuxmint/mintreport/app.py:391
 msgid "Ignore this report"
@@ -125,8 +125,8 @@ msgid ""
 "reinstall it."
 msgstr ""
 "Non è stato possibile trovare il pacchetto che fornisce %s.\n"
-"Se si desidera generare una traccia di stack per questo rapporto di arresto "
-"anomalo, si prega di reinstallarlo."
+"Si prega di reinstallarlo se si desidera generare una traccia delle chiamate "
+"per questo rapporto di arresto anomalo."
 
 #: usr/lib/linuxmint/mintreport/app.py:542
 msgid ""
@@ -137,16 +137,16 @@ msgid ""
 "inaccurate."
 msgstr ""
 "I file header o i file binari installati sul tuo sistema non corrispondono "
-"al codice che è stato eseguito durante il crash.\n"
+"al codice eseguito durante l'arresto anomalo.\n"
 "Probabilmente sono stati aggiornati nel frattempo.\n"
-"È disponibile una stack trace in 'File Locali', ma il suo contenuto non è "
-"probabilmente accurato."
+"È disponibile una traccia delle chiamate in 'File locali', ma il suo "
+"contenuto è probabilmente impreciso."
 
 #: usr/lib/linuxmint/mintreport/tray.py:49
 msgid "Show System Reports"
-msgstr "Mostra i Rapporti di Sistema"
+msgstr "Mostra i rapporti di sistema"
 
-#: usr/lib/linuxmint/mintreport/tray.py:116
+#: usr/lib/linuxmint/mintreport/tray.py:117
 msgid "Some system reports require your attention"
 msgstr "Alcuni rapporti di sistema richiedono la tua attenzione"
 
@@ -185,7 +185,7 @@ msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:6
 msgid "Upload"
-msgstr "Invio"
+msgstr "Invia"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:7
 msgid "Upload to a pastebin service (no personal information included)"
@@ -209,7 +209,7 @@ msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:11
 msgid "Crash reports:"
-msgstr "Rapporti di crash:"
+msgstr "Rapporti di arresti anomali:"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:12
 msgid "Stack trace:"
@@ -221,20 +221,20 @@ msgid ""
 "crash.tar.gz (from Local Files) and explain how to reproduce the crash."
 msgstr ""
 "Quando cerchi aiuto, controlla le segnalazioni di bug esistenti, incolla la "
-"traccia, condividi crash.tar.gz (dai File Locali) e spiega come riprodurre "
-"l'arresto anomalo."
+"traccia, condividi il file crash.tar.gz (da 'File locali') e spiega come "
+"riprodurre l'arresto anomalo."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:14
 msgid "Local Files"
-msgstr "File Locali"
+msgstr "File locali"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:15
 msgid "Open the directory containing crash.tar.gz and its content."
-msgstr "Apre la cartella contenente crash.tar.gz e il suo contenuto."
+msgstr "Apre la cartella contenente il file crash.tar.gz e il suo contenuto."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:16
 msgid "Bug Tracker"
-msgstr "Bug Tracker"
+msgstr "Bug tracker"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:17
 msgid "Find the most appropriate bug tracker."
@@ -260,7 +260,7 @@ msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:21
 msgid "Crash reports"
-msgstr "Resoconti di crash"
+msgstr "Rapporti di arresti anomali"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
 msgid "Add the XApp Status applet"
@@ -295,15 +295,15 @@ msgid ""
 "render some websites."
 msgstr ""
 "I codec multimediali sono necessari per riprodurre alcuni formati video e "
-"rappresentare correttamente alcuni siti Web."
+"mostrare correttamente alcuni siti Web."
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:36
 msgid "Install the Multimedia Codecs"
-msgstr "Installa i Codec Multimediali"
+msgstr "Installa i codec multimediali"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:17
 msgid "Set up the system restore utility"
-msgstr "Configurare l'utilità di ripristino del sistema"
+msgstr "Configura l'utilità di ripristino del sistema"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:31
 msgid "Linux Mint provides a system restore utility called Timeshift."
@@ -315,7 +315,7 @@ msgid ""
 "Thanks to Timeshift you can take snapshots of the system, either manually or "
 "automatically."
 msgstr ""
-"Grazie a Timeshift puoi scattare istantanee del sistema, manualmente o "
+"Grazie a Timeshift puoi salvare istantanee del sistema, manualmente o "
 "automaticamente."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:33
@@ -331,15 +331,18 @@ msgid "Launch Timeshift"
 msgstr "Avvia Timeshift"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:17
+#: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:17
 msgid "A new version of Linux Mint is available"
 msgstr "È disponibile una nuova versione di Linux Mint"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:47
+#: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:50
 #, python-format
 msgid "Visit %s for the latest announcements."
 msgstr "Visita %s per gli ultimi annunci."
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:53
+#: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:56
 #, python-format
 msgid "Upgrade to %s"
 msgstr "Aggiorna a %s"
@@ -373,6 +376,33 @@ msgstr[1] "Il supporto è terminato {num_days} giorni fa."
 #, python-format
 msgid "Visit %s to find information about newer releases."
 msgstr "Visita %s per trovare informazioni sui nuovi rilasci."
+
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:16
+msgid "Perform usrmerge conversion"
+msgstr "Esegue la conversione usrmerge"
+
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:50
+msgid "We recommend you convert your system with usrmerge."
+msgstr "Ti consigliamo di convertire il tuo sistema con usrmerge."
+
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:51
+msgid ""
+"This is done already for new installations of Linux Mint, starting with 20.1."
+msgstr ""
+"Questo avviene già durante le nuove installazioni di Linux Mint, a partire "
+"dalla 20.1."
+
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:52
+msgid "To convert your system, open a terminal and type:"
+msgstr "Per convertire il sistema, apri un terminale e digita:"
+
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:54
+msgid "You should reboot the computer once this completes."
+msgstr "Dovresti riavviare il computer una volta completato."
+
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:60
+msgid "More information"
+msgstr "Maggiori informazioni"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:17
 msgid "Remove conflicting indicators"
@@ -408,27 +438,27 @@ msgstr ""
 msgid "Install the Language Packs"
 msgstr "Installa i pacchetti di traduzione"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:18
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:19
 msgid "Install hardware drivers"
 msgstr "Installa i driver hardware"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:27
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:28
 msgid "Processor"
 msgstr "Processore"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:40
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:41
 msgid "Unknown"
-msgstr "Sconosiuto"
+msgstr "Sconosciuto"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:44
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:45
 #, python-format
 msgid "%s (unknown)"
 msgstr "%s (sconosciuto)"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:88
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:100
 msgid "Hardware drivers are available for the following devices:"
 msgstr "I driver hardware sono disponibili per i seguenti dispositivi:"
 
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:95
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:107
 msgid "Launch the Driver Manager"
-msgstr "Avvia il Gestore dei Driver"
+msgstr "Avvia il Gestore dei driver"
