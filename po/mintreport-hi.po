@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2021-11-24 14:07+0000\n"
-"PO-Revision-Date: 2020-06-22 04:03+0000\n"
+"PO-Revision-Date: 2021-12-14 18:24+0000\n"
 "Last-Translator: Panwar <Unknown>\n"
 "Language-Team: Hindi <hi@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2021-12-06 15:06+0000\n"
-"X-Generator: Launchpad (build f92b6e0bb2624f8a9125e3f45b7621c6e230c5ff)\n"
+"X-Launchpad-Export-Date: 2021-12-31 12:26+0000\n"
+"X-Generator: Launchpad (build adb364d6a74a28e7b95d51cd30446ec16160de6c)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
 #: usr/lib/linuxmint/mintreport/app.py:245 generate_desktop_files:25
@@ -375,28 +375,30 @@ msgstr "नए संस्करणों से संबंधी सूच�
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:16
 msgid "Perform usrmerge conversion"
-msgstr ""
+msgstr "usrmerge रूपांतरण करें"
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:50
 msgid "We recommend you convert your system with usrmerge."
-msgstr ""
+msgstr "हम अनुशंसित करते हैं कि आप अपने सिस्टम हेतु usrmerge रूपांतरण करें।"
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:51
 msgid ""
 "This is done already for new installations of Linux Mint, starting with 20.1."
 msgstr ""
+"संस्करण 20.1 सहित एवं इसके बाद के सभी लिनक्स मिंट के नवीन इंस्टॉल इस "
+"रूपांतरण से युक्त हैं।"
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:52
 msgid "To convert your system, open a terminal and type:"
-msgstr ""
+msgstr "सिस्टम रूपांतरण हेतु टर्मिनल खोलें व टाइप करें :"
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:54
 msgid "You should reboot the computer once this completes."
-msgstr ""
+msgstr "यह प्रक्रिया पूर्ण होने के उपरांत कंप्यूटर पुनः आरंभ अवश्य करें।"
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:60
 msgid "More information"
-msgstr ""
+msgstr "अधिक सूचना"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:17
 msgid "Remove conflicting indicators"
