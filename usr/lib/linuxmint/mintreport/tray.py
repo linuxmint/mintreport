@@ -145,7 +145,7 @@ class MyApplication(Gtk.Application):
         if self.monitoring_process != None:
             return
         processes = []
-        processes.append(MonitoredProcess(_("System Snapshots"), "timeshift --", _("Timeshift is running.")))
+        processes.append(MonitoredProcess(_("System Snapshots"), "timeshift --", _("A Timeshift system snapshot is being created.")))
         processes.append(MonitoredProcess(_("Automatic Updates"), "/usr/lib/linuxmint/mintUpdate/automatic_upgrades.py", _("Automatic updates are being installed.")))
         self.monitor_icon.set_visible(False)
         for process in processes:

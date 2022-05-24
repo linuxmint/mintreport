@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-24 14:07+0000\n"
+"POT-Creation-Date: 2022-05-24 17:21+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,7 +38,7 @@ msgid "Restore ignored reports"
 msgstr ""
 
 #: usr/lib/linuxmint/mintreport/app.py:209
-#: usr/lib/linuxmint/mintreport/tray.py:53
+#: usr/lib/linuxmint/mintreport/tray.py:58
 msgid "Quit"
 msgstr ""
 
@@ -122,12 +122,28 @@ msgid ""
 "inaccurate."
 msgstr ""
 
-#: usr/lib/linuxmint/mintreport/tray.py:49
+#: usr/lib/linuxmint/mintreport/tray.py:54
 msgid "Show System Reports"
 msgstr ""
 
-#: usr/lib/linuxmint/mintreport/tray.py:117
+#: usr/lib/linuxmint/mintreport/tray.py:132
 msgid "Some system reports require your attention"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/tray.py:148
+msgid "System Snapshots"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/tray.py:148
+msgid "A Timeshift system snapshot is being created."
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/tray.py:149
+msgid "Automatic Updates"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/tray.py:149
+msgid "Automatic updates are being installed."
 msgstr ""
 
 #: generate_desktop_files:25 generate_desktop_files:39
