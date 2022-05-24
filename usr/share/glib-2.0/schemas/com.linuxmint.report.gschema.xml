@@ -16,5 +16,15 @@
       <summary></summary>
       <description></description>
     </key>
+    <key type="b" name="automonitor">
+      <default>true</default>
+      <summary></summary>
+      <description></description>
+    </key>
+    <key type="i" name="automonitor-seconds">
+      <default>10</default>
+      <summary></summary>
+      <description></description>
+    </key>
   </schema>
 </schemalist>
