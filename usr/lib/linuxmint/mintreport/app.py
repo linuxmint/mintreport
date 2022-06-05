@@ -435,9 +435,9 @@ class MintReportWindow():
                 continue
             line = " ".join(line.split()) # remove blank spaces between fields in the coredumpctl output
             try:
-                (day, date, time, timezone, pid, uid, gid, sig, corefile, exe) = line.split(" ", 10)
-            except:
-                print("coredumpctl output: '%s' could not be split" % line)
+                (day, date, time, timezone, pid, uid, gid, sig, corefile, exe, *extra) = line.split(" ", 10)
+            except Exception as e:
+                print("coredumpctl output: '%s' could not be split: %s" % (line, e))
                 continue
             # Ignore python crashes, we don't handle tracebacks with systemd-coredump yet
             if "python" in exe:
