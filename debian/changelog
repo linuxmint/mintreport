@@ -1,3 +1,15 @@
+mintreport (1.2.9) vanessa; urgency=medium
+
+  [ Clement Lefebvre ]
+  * tray: Add a process monitor
+  * l10n: Update POT
+
+  [ Michael Webster ]
+  * load_crashes: Accept a variable number of columns from 'journalctl list'.
+  * crashes: Use json for coredumpctl, to avoid any further breaks due to human-readable output changing.
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 10 Jun 2022 10:51:57 +0200
+
 mintreport (1.2.8) una; urgency=medium
 
   * l10n: Update translations
