@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2021-11-24 14:07+0000\n"
-"PO-Revision-Date: 2021-06-08 10:46+0000\n"
-"Last-Translator: Jozef Lukacovic <Unknown>\n"
+"POT-Creation-Date: 2022-05-24 17:21+0100\n"
+"PO-Revision-Date: 2022-06-13 13:46+0000\n"
+"Last-Translator: Adrián Bíro <biroadrian@protonmail.com>\n"
 "Language-Team: Slovak <sk@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
-"X-Launchpad-Export-Date: 2021-12-31 12:26+0000\n"
-"X-Generator: Launchpad (build adb364d6a74a28e7b95d51cd30446ec16160de6c)\n"
+"X-Launchpad-Export-Date: 2022-06-26 11:29+0000\n"
+"X-Generator: Launchpad (build 51a2e4fa2e9b8e45f00904ad7f53546f45ac48a5)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
 #: usr/lib/linuxmint/mintreport/app.py:245 generate_desktop_files:25
@@ -38,7 +38,7 @@ msgid "Restore ignored reports"
 msgstr "Obnoviť ignorované hlásenia"
 
 #: usr/lib/linuxmint/mintreport/app.py:209
-#: usr/lib/linuxmint/mintreport/tray.py:53
+#: usr/lib/linuxmint/mintreport/tray.py:58
 msgid "Quit"
 msgstr "Ukončiť"
 
@@ -57,13 +57,15 @@ msgstr "Chyba behom zbierania informácií o systéme"
 
 #: usr/lib/linuxmint/mintreport/app.py:301
 msgid "System information copied"
-msgstr ""
+msgstr "Systémové informácie boli skopírované ."
 
 #: usr/lib/linuxmint/mintreport/app.py:301
 msgid ""
 "Your system information was copied into your clipboard so you can paste it "
 "on the forums."
 msgstr ""
+"Vaše systémové informácie boli skopírované do clipboardu, môžete ich teda "
+"vložiť na  fórum."
 
 #: usr/lib/linuxmint/mintreport/app.py:310
 msgid "System information uploaded"
@@ -75,6 +77,8 @@ msgid ""
 "Your system information was uploaded to %s. This link was placed in your "
 "clipboard so you can paste it on IRC."
 msgstr ""
+"Vaše systémové informácie boli nahrané do %s. Tento odkaz bol pridaní do "
+"schránky, môžete ho teda vložiť do IRC"
 
 #: usr/lib/linuxmint/mintreport/app.py:312
 msgid "An error occurred while uploading the system information"
@@ -85,6 +89,8 @@ msgid ""
 "Copy and paste the system information manually into a pastebin site like "
 "https://pastebin.com and share the link on IRC."
 msgstr ""
+"Okopírujte a vložte systémové informácie ručne do pastebin stránky ako "
+"https://pastebin.com a zdieľajte odkaz na IRC."
 
 #: usr/lib/linuxmint/mintreport/app.py:391
 msgid "Ignore this report"
@@ -132,13 +138,29 @@ msgstr ""
 "\"Stack trace\" je dostupný v  'Local Files'  ale jeho obsah je "
 "pravdepodobne nepresný."
 
-#: usr/lib/linuxmint/mintreport/tray.py:49
+#: usr/lib/linuxmint/mintreport/tray.py:54
 msgid "Show System Reports"
 msgstr "Ukázať Systémové hlásenia"
 
-#: usr/lib/linuxmint/mintreport/tray.py:117
+#: usr/lib/linuxmint/mintreport/tray.py:132
 msgid "Some system reports require your attention"
 msgstr "Niektoré systémové hlásenia vyžadujú vašu pozornosť"
+
+#: usr/lib/linuxmint/mintreport/tray.py:148
+msgid "System Snapshots"
+msgstr "Snapshoty systému"
+
+#: usr/lib/linuxmint/mintreport/tray.py:148
+msgid "A Timeshift system snapshot is being created."
+msgstr "Snapshot systému pre Timeshift bol vytvorený."
+
+#: usr/lib/linuxmint/mintreport/tray.py:149
+msgid "Automatic Updates"
+msgstr "Automatické aktualizácie"
+
+#: usr/lib/linuxmint/mintreport/tray.py:149
+msgid "Automatic updates are being installed."
+msgstr "Automatické aktualizácie boli inštalované."
 
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
@@ -170,6 +192,8 @@ msgid ""
 "Copy to clipboard (code tags are added to make it easy to paste the system "
 "information into the forums)"
 msgstr ""
+"Skopírujte odkaz (tagy sú pridané preto, aby bolo jednoduchšie vložiť "
+"systémové informácie na fórum)"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:6
 msgid "Upload"
@@ -185,12 +209,14 @@ msgstr "Systémové informácie"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:9
 msgid "Crash reports are not available"
-msgstr ""
+msgstr "Niesu k dispozícii spravy o zlyhaní."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:10
 msgid ""
 "To enable crash reporting, install systemd-coredump and reboot your computer."
 msgstr ""
+"Pre yapnutie hlásení o zlyhaniach si najnštalujte balíček systemd-coredump a "
+"reštartujte počítač."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:11
 msgid "Crash reports:"
@@ -256,6 +282,9 @@ msgid ""
 "The XApp Status applet allows applications to provide a tray icon without "
 "rendering glitches and with support for HiDPI and symbolic icons."
 msgstr ""
+"XApp Status applet umožňuje aplikáciám správne zobrazovať oznamovaciu ikonu "
+"v panely bez použitia HiDPI a \r\n"
+"a symbolických ikon."
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:39
 msgid "Right-click the panel and choose 'Add to Panel'."
@@ -275,6 +304,8 @@ msgid ""
 "Multimedia codecs are required to play some video formats and to properly "
 "render some websites."
 msgstr ""
+"Multimediálne kodeky sú nutné pre prehranie niektorých video formátov a pre "
+"správne zobrazenie niektorých internetových stránok."
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:36
 msgid "Install the Multimedia Codecs"
@@ -315,7 +346,7 @@ msgstr "Je dostupná nová verzia Linuxu Mint"
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:50
 #, python-format
 msgid "Visit %s for the latest announcements."
-msgstr ""
+msgstr "Pre najnovšie oznámenia navštívte %s"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:53
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:56
@@ -331,8 +362,8 @@ msgstr "Vaša verzia Linuxu Mint za chvíľu dosiahne stav EOL (koniec podpory)"
 #, python-brace-format
 msgid "It will stop receiving support and updates in a day."
 msgid_plural "It will stop receiving support and updates in {num_days} days."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Aktualizácie prestane dostávať od zajtra."
+msgstr[1] "Aktualizácie prestane dostávať od {num_days} dní."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:54
 msgid "Your version of Linux Mint is no longer supported"
@@ -342,50 +373,51 @@ msgstr "Vaša verzia Linuxu Mint už nie je podprovaná."
 #, python-brace-format
 msgid "It reached End-Of-Life (EOL) yesterday."
 msgid_plural "It reached End-Of-Life (EOL) {num_days} days ago."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Všetka podpora skončila včera."
+msgstr[1] "Všetka podpora skončila {num_days} dní dozadu."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:66
 #, python-format
 msgid "Visit %s to find information about newer releases."
-msgstr ""
+msgstr "Pre informácie o najnovšej verzii navštívte %s."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:16
 msgid "Perform usrmerge conversion"
-msgstr ""
+msgstr "Urob zmenu usrmerge."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:50
 msgid "We recommend you convert your system with usrmerge."
-msgstr ""
+msgstr "Doporučujeme Vám previesť systémové informácie pomocou usrmerge."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:51
 msgid ""
 "This is done already for new installations of Linux Mint, starting with 20.1."
 msgstr ""
+"Toto je už urobené od novej inštalácie Linuxu Mint, verzia 20.1. a vyššie."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:52
 msgid "To convert your system, open a terminal and type:"
-msgstr ""
+msgstr "Pokiaľ chcete previesť svoj systém, otvorte terminál a zadajte:"
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:54
 msgid "You should reboot the computer once this completes."
-msgstr ""
+msgstr "Keď sa tento proces ukončí, mali by ste reštartovať Váš počítač."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:60
 msgid "More information"
-msgstr ""
+msgstr "Viac informácií"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:17
 msgid "Remove conflicting indicators"
-msgstr ""
+msgstr "Odstrániť konfliktné indikátory"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:37
 msgid "The following packages prevent tray icons from working properly:"
-msgstr ""
+msgstr "Nasledujúce balíčky bránia oznamovacej ikone fungovať správne."
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:39
 msgid "Note: You will need to log out after removing them."
-msgstr ""
+msgstr "Pozor: Po ich odstránení sa budete musieť odhlásiť."
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:45
 msgid "Remove the conflicting packages."
@@ -400,6 +432,8 @@ msgid ""
 "The following localization packages are missing to properly support your "
 "language:"
 msgstr ""
+"Chýbajú nasledujúce balíčky nutné pre lokalizáciu tj. správnu podporu Vašeho "
+"jazyka."
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:48
 msgid "Install the Language Packs"
@@ -420,12 +454,12 @@ msgstr "Neznámy"
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:45
 #, python-format
 msgid "%s (unknown)"
-msgstr ""
+msgstr "%s (neznáme)"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:100
 msgid "Hardware drivers are available for the following devices:"
-msgstr ""
+msgstr "Pre nasledujúce zariadenia sú dostupné tieto ovládače:"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:107
 msgid "Launch the Driver Manager"
-msgstr ""
+msgstr "Spustiť správu ovládačov zariadení."

@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2021-11-24 14:07+0000\n"
-"PO-Revision-Date: 2020-08-02 14:16+0000\n"
-"Last-Translator: Pratyay Mondal <Unknown>\n"
+"POT-Creation-Date: 2022-05-24 17:21+0100\n"
+"PO-Revision-Date: 2022-01-05 13:42+0000\n"
+"Last-Translator: Mahdi Hasan <Unknown>\n"
 "Language-Team: Bengali <bn@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2021-12-31 12:26+0000\n"
-"X-Generator: Launchpad (build adb364d6a74a28e7b95d51cd30446ec16160de6c)\n"
+"X-Launchpad-Export-Date: 2022-06-26 11:29+0000\n"
+"X-Generator: Launchpad (build 51a2e4fa2e9b8e45f00904ad7f53546f45ac48a5)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
 #: usr/lib/linuxmint/mintreport/app.py:245 generate_desktop_files:25
@@ -38,7 +38,7 @@ msgid "Restore ignored reports"
 msgstr "উপেক্ষা করা প্রতিবেদনগুলি(Reports) পুনরুদ্ধার করুন"
 
 #: usr/lib/linuxmint/mintreport/app.py:209
-#: usr/lib/linuxmint/mintreport/tray.py:53
+#: usr/lib/linuxmint/mintreport/tray.py:58
 msgid "Quit"
 msgstr "প্রস্থান করুন"
 
@@ -138,13 +138,29 @@ msgstr ""
 "'লোকাল ফাইলস' এ একটি স্ট্যাক ট্রেস উপলব্ধ তবে এটির সামগ্রী সম্ভবত "
 "ত্রুটিযুক্ত।"
 
-#: usr/lib/linuxmint/mintreport/tray.py:49
+#: usr/lib/linuxmint/mintreport/tray.py:54
 msgid "Show System Reports"
 msgstr "সিস্টেম প্রতিবেদনগুলি দেখান"
 
-#: usr/lib/linuxmint/mintreport/tray.py:117
+#: usr/lib/linuxmint/mintreport/tray.py:132
 msgid "Some system reports require your attention"
 msgstr "কিছু সিস্টেম প্রতিবেদনে আপনার খতিয়ে দেখা দরকার"
+
+#: usr/lib/linuxmint/mintreport/tray.py:148
+msgid "System Snapshots"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/tray.py:148
+msgid "A Timeshift system snapshot is being created."
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/tray.py:149
+msgid "Automatic Updates"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/tray.py:149
+msgid "Automatic updates are being installed."
+msgstr ""
 
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
@@ -369,28 +385,31 @@ msgstr "নতুন রিলিজ সম্পর্কে আরও তথ�
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:16
 msgid "Perform usrmerge conversion"
-msgstr ""
+msgstr "ইউএসআরমার্জে রূপান্তর সম্পাদন করা"
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:50
 msgid "We recommend you convert your system with usrmerge."
 msgstr ""
+"আমরা আপনাকে ইউএসআরমার্জের মাধ্যমে আপনার সিস্টেমকে রূপান্তর করার পরামর্শ দিই।"
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:51
 msgid ""
 "This is done already for new installations of Linux Mint, starting with 20.1."
 msgstr ""
+"এটি ইতিমধ্যেই লিনাক্স মিন্টের নতুন ইনস্টলেশনের জন্য করা হয়েছে, 20.1 দিয়ে "
+"শুরু হচ্ছে।"
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:52
 msgid "To convert your system, open a terminal and type:"
-msgstr ""
+msgstr "আপনার সিস্টেম রূপান্তর করতে, একটি টার্মিনাল খুলুন এবং লিখুন:"
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:54
 msgid "You should reboot the computer once this completes."
-msgstr ""
+msgstr "এটি সম্পূর্ণ হলে আপনার কম্পিউটার পুনরায় বুট করা উচিত।"
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:60
 msgid "More information"
-msgstr ""
+msgstr "আরো তথ্য"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:17
 msgid "Remove conflicting indicators"
