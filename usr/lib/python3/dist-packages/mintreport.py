@@ -32,10 +32,7 @@ class InfoReport(ABC):
         self.package_names = package_names
         self.apt.set_finished_callback(self.on_update_before_install_finished)
         self.apt.update_cache()
-        self.busy = True
-        while self.busy:
-            while Gtk.events_pending():
-                Gtk.main_iteration()
+        Gtk.main()
 
     def on_update_before_install_finished(self, transaction=None, exit_state=None):
         self.apt.set_finished_callback(self.on_install_finished)
@@ -45,18 +42,14 @@ class InfoReport(ABC):
     def on_install_finished(self, transaction=None, exit_state=None):
         del self.package_names
         del self.apt
-        self.busy = False
+        Gtk.main_quit()
 
     def remove_packages(self, package_names):
         self.apt = mintcommon.aptdaemon.APT(None)
         self.package_names = package_names
         self.apt.set_finished_callback(self.on_update_before_remove_finished)
         self.apt.update_cache()
-        self.busy = True
-        while self.busy:
-            time.sleep(0.2)
-            while Gtk.events_pending():
-                Gtk.main_iteration()
+        Gtk.main()
 
     def on_update_before_remove_finished(self, transaction=None, exit_state=None):
         self.apt.set_finished_callback(self.on_remove_finished)
@@ -66,8 +59,7 @@ class InfoReport(ABC):
     def on_remove_finished(self, transaction=None, exit_state=None):
         del self.package_names
         del self.apt
-        self.busy = False
-
+        Gtk.main_quit()
 
 class InfoReportAction():
 
