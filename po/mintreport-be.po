@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2022-05-24 17:21+0100\n"
-"PO-Revision-Date: 2022-06-11 17:27+0000\n"
+"PO-Revision-Date: 2022-07-21 17:31+0000\n"
 "Last-Translator: Anton Hryb <Unknown>\n"
 "Language-Team: Belarusian <be@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -16,8 +16,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Launchpad-Export-Date: 2022-06-26 11:29+0000\n"
-"X-Generator: Launchpad (build 51a2e4fa2e9b8e45f00904ad7f53546f45ac48a5)\n"
+"X-Launchpad-Export-Date: 2022-07-24 09:43+0000\n"
+"X-Generator: Launchpad (build 025a39fd866a641b6ae33074cda0d02a2c712d38)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
 #: usr/lib/linuxmint/mintreport/app.py:245 generate_desktop_files:25
@@ -165,7 +165,7 @@ msgstr "Аўтаматычныя абнаўленні ўсталяваны."
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
 msgid "Troubleshoot problems"
-msgstr "Выправіць непаладкі"
+msgstr "Выпраўленне непаладак"
 
 #: generate_desktop_files:53
 msgid "Troubleshooting Tool"
@@ -401,7 +401,7 @@ msgstr "Каб пераўтварыць сістэму, адкрыйце тэр�
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:54
 msgid "You should reboot the computer once this completes."
-msgstr "Трэба будзе перазагрузіць камп'ютар пасля заканчэння."
+msgstr "Трэба будзе перазагрузіць камп'ютар па завяршэнні."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:60
 msgid "More information"
@@ -432,7 +432,7 @@ msgid ""
 "The following localization packages are missing to properly support your "
 "language:"
 msgstr ""
-"Наступныя пакеты лакалізацыі страчаны для правільнай падтрымкі вашай мовы:"
+"Наступныя пакеты лакалізацыі неабходны для правільнай падтрымкі вашай мовы:"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:48
 msgid "Install the Language Packs"

@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2022-05-24 17:21+0100\n"
-"PO-Revision-Date: 2022-05-26 22:27+0000\n"
+"PO-Revision-Date: 2022-07-12 10:31+0000\n"
 "Last-Translator: Pjotr12345 <Unknown>\n"
 "Language-Team: Dutch <nl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2022-06-26 11:29+0000\n"
-"X-Generator: Launchpad (build 51a2e4fa2e9b8e45f00904ad7f53546f45ac48a5)\n"
+"X-Launchpad-Export-Date: 2022-07-24 09:43+0000\n"
+"X-Generator: Launchpad (build 025a39fd866a641b6ae33074cda0d02a2c712d38)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
 #: usr/lib/linuxmint/mintreport/app.py:245 generate_desktop_files:25
@@ -248,7 +248,7 @@ msgstr "Open de map die crash.tar.gz en diens inhoud bevat."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:16
 msgid "Bug Tracker"
-msgstr "Foutregistratie"
+msgstr "Foutmeldingsdienst"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:17
 msgid "Find the most appropriate bug tracker."
@@ -299,7 +299,7 @@ msgstr "Voeg het status-werkbalkhulpje van XApp toe aan de werkbalk"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:16
 msgid "Install multimedia codecs"
-msgstr "Mulitmedia-codecs installeren"
+msgstr "Multimedia-codecs installeren"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:30
 msgid ""
@@ -389,7 +389,7 @@ msgstr[1] ""
 #, python-format
 msgid "Visit %s to find information about newer releases."
 msgstr ""
-"Bezoek %s om informatie te vinden inzake nieuwere vrijgegeven versies."
+"Bezoek %s om informatie te vinden inzake nieuwere vrijgegeven Mintversies."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:16
 msgid "Perform usrmerge conversion"

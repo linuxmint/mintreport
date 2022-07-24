@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2022-05-24 17:21+0100\n"
-"PO-Revision-Date: 2022-06-24 20:21+0000\n"
-"Last-Translator: Miha Markovič <Unknown>\n"
+"PO-Revision-Date: 2022-07-14 06:44+0000\n"
+"Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: Slovenian <sl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || "
 "n%100==4 ? 3 : 0);\n"
-"X-Launchpad-Export-Date: 2022-06-26 11:29+0000\n"
-"X-Generator: Launchpad (build 51a2e4fa2e9b8e45f00904ad7f53546f45ac48a5)\n"
+"X-Launchpad-Export-Date: 2022-07-24 09:43+0000\n"
+"X-Generator: Launchpad (build 025a39fd866a641b6ae33074cda0d02a2c712d38)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
 #: usr/lib/linuxmint/mintreport/app.py:245 generate_desktop_files:25
@@ -157,11 +157,11 @@ msgstr "Posnetek sistema Timeshift se ustvarja."
 
 #: usr/lib/linuxmint/mintreport/tray.py:149
 msgid "Automatic Updates"
-msgstr "Samodejne Posodobitve"
+msgstr "Samodejne posodobitve"
 
 #: usr/lib/linuxmint/mintreport/tray.py:149
 msgid "Automatic updates are being installed."
-msgstr "Samodejne posodobitve se nalagajo."
+msgstr "Samodejne posodobitve se nameščajo."
 
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67

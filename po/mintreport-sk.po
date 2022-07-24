@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2022-05-24 17:21+0100\n"
-"PO-Revision-Date: 2022-06-13 13:46+0000\n"
-"Last-Translator: Adrián Bíro <biroadrian@protonmail.com>\n"
+"PO-Revision-Date: 2022-06-28 16:39+0000\n"
+"Last-Translator: menom <Unknown>\n"
 "Language-Team: Slovak <sk@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
-"X-Launchpad-Export-Date: 2022-06-26 11:29+0000\n"
-"X-Generator: Launchpad (build 51a2e4fa2e9b8e45f00904ad7f53546f45ac48a5)\n"
+"X-Launchpad-Export-Date: 2022-07-24 09:43+0000\n"
+"X-Generator: Launchpad (build 025a39fd866a641b6ae33074cda0d02a2c712d38)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
 #: usr/lib/linuxmint/mintreport/app.py:245 generate_desktop_files:25
@@ -362,8 +362,9 @@ msgstr "Vaša verzia Linuxu Mint za chvíľu dosiahne stav EOL (koniec podpory)"
 #, python-brace-format
 msgid "It will stop receiving support and updates in a day."
 msgid_plural "It will stop receiving support and updates in {num_days} days."
-msgstr[0] "Aktualizácie prestane dostávať od zajtra."
-msgstr[1] "Aktualizácie prestane dostávať od {num_days} dní."
+msgstr[0] "Aktualizácie a podpora bude zastavená od zajtra."
+msgstr[1] "Aktualizácie a podpora bude zastavená za {num_days} dni."
+msgstr[2] "Aktualizácie a podpora bude zastavená za {num_days} dní."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:54
 msgid "Your version of Linux Mint is no longer supported"
@@ -373,8 +374,9 @@ msgstr "Vaša verzia Linuxu Mint už nie je podprovaná."
 #, python-brace-format
 msgid "It reached End-Of-Life (EOL) yesterday."
 msgid_plural "It reached End-Of-Life (EOL) {num_days} days ago."
-msgstr[0] "Všetka podpora skončila včera."
-msgstr[1] "Všetka podpora skončila {num_days} dní dozadu."
+msgstr[0] "Včera bol dosiahnutý End-Of-Life (EOL)."
+msgstr[1] "Bol dosiahnutý End-Of-Life (EOL) {num_days} dni dozadu."
+msgstr[2] "Bol dosiahnutý End-Of-Life (EOL) {num_days} dní dozadu."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:66
 #, python-format
