@@ -60,7 +60,7 @@ class Report(InfoReport):
             output = subprocess.check_output(
                 ["python3",
                  "-c",
-                 "import json; from UbuntuDrivers import detect; d = json.dumps(detect.system_device_drivers()); print(d)"],
+                 "import json; from UbuntuDrivers import detect; detect.apt_pkg.init(); d = json.dumps(detect.system_device_drivers()); print(d)"],
                 stderr=subprocess.DEVNULL).decode("UTF-8")
 
             devices = json.loads(output)
