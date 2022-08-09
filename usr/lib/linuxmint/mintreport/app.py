@@ -7,13 +7,12 @@ import locale
 import os
 import setproctitle
 import shutil
-import json
 import subprocess
 
 gi.require_version("Gtk", "3.0")
 gi.require_version('GtkSource', '3.0')
 gi.require_version('XApp', '1.0')
-from gi.repository import Gtk, Gdk, GtkSource, Gio, XApp, GLib
+from gi.repository import Gtk, Gdk, GtkSource, Gio, XApp
 
 from common import _async, idle, InfoReportContainer, DATA_DIR, INFO_DIR
 
@@ -34,14 +33,14 @@ TMP_INXI_FILE = os.path.join(TMP_DIR, "inxi")
 UNPACK_DIR = os.path.join(TMP_DIR, "crash")
 CRASH_ARCHIVE = os.path.join(TMP_DIR, "crash.tar.gz")
 
-COL_CRASH_GDATETIME, COL_CRASH_PID, COL_CRASH_EXE, COL_CRASH_OBJECT = range(4)
+COL_CRASH_DAY, COL_CRASH_DATE, COL_CRASH_TIME, COL_CRASH_TIMEZONE, COL_CRASH_PID, COL_CRASH_EXE, COL_CRASH_OBJECT = range(7)
 
 COL_INFO_ICON, COL_INFO_TITLE, COL_INFO_REPORT = range(3)
 
 class CrashReport():
 
-    def __init__(self, datetime, pid, sig, executable):
-        self.datetime = datetime
+    def __init__(self, timestamp, pid, sig, executable):
+        self.timestamp = timestamp
         self.pid = pid
         self.sig = sig
         self.executable = executable
@@ -97,7 +96,29 @@ class MintReportWindow():
         self.treeview_crashes = self.builder.get_object("treeview_crashes")
 
         def render_date(column, cell, model, i, *args):
-            cell.props.text = model[i][COL_CRASH_GDATETIME].format("%a %F %T %Z")
+            cell.props.text = " ".join([model[i][COL_CRASH_DAY],
+                                        model[i][COL_CRASH_DATE],
+                                        model[i][COL_CRASH_TIME],
+                                        model[i][COL_CRASH_TIMEZONE]])
+
+        def sort_by_date(model, a, b, *args):
+            date_a = datetime.date.from_iso_format(model[a][COL_CRASH_DATE])
+            date_b = datetime.date.from_iso_format(model[b][COL_CRASH_DATE])
+
+            if date_a < date_b:
+                return -1
+            elif date_a > date_b:
+                return 1
+
+            time_a = datetime.time.fromisoformat(model[a][COL_CRASH_TIME])
+            time_b = datetime.time.fromisoformat(model[b][COL_CRASH_TIME])
+
+            if time_a < time_b:
+                return -1
+            elif time_a > time_b:
+                return 1
+
+            return 0
 
         cell_renderer = Gtk.CellRendererText()
         column = Gtk.TreeViewColumn('', cell_renderer)
@@ -113,8 +134,8 @@ class MintReportWindow():
         column.set_resizable(True)
         self.treeview_crashes.append_column(column)
         self.treeview_crashes.show()
-        self.model_crashes = Gtk.ListStore(object, str, str, object) # timestamp, pid, exe, object
-        self.model_crashes.set_sort_func(COL_CRASH_GDATETIME, GLib.DateTime.compare)
+        self.model_crashes = Gtk.ListStore(str, str, str, str, str, str, object) # timestamp, pid, exe, object
+        self.model_crashes.set_sort_func(COL_CRASH_DATE, sort_by_date)
         self.treeview_crashes.set_model(self.model_crashes)
 
         self.buffer = GtkSource.Buffer()
@@ -402,34 +423,31 @@ class MintReportWindow():
         self.loading = True
         self.model_crashes.clear()
 
-        process = subprocess.run(['coredumpctl', 'list', '--json=short', '-r', '-q'], stdout=subprocess.PIPE)
-
-        try:
-            coredumps = process.stdout.decode('utf-8')
-            j = json.loads(coredumps)
-        except Exception as e:
-            print("coredumpctl output could not be read: %s" % e)
-            self.loading = False
-            return
-
-        for dump in j:
-            try:
-                pid = str(dump['pid'])
-                exe = str(dump['exe'])
-
-                if "python" in exe:
-                    continue
-                # Ignore crashes for which the info isn't available
-                if dump['corefile'] != "present":
-                    continue
-
-                gdtime = GLib.DateTime.new_from_unix_local(dump['time'] / 1000 / 1000) # μs to s
-
-                report = CrashReport(gdtime, pid, str(dump['sig']), exe)
-                self.model_crashes.append([gdtime, pid, exe, report])
-            except Exception as e:
-                print("coredumpctl output: '%s' could not be parsed: %s" % (str(dump), e))
+        process = subprocess.run(['coredumpctl', 'list', '--no-legend', '-r', '-q'], stdout=subprocess.PIPE)
+        if process.returncode != 0:
+        	# in LMDE 3, coredumpctl doesn't have -r and -q options
+        	process = subprocess.run(['coredumpctl', 'list', '--no-legend'], stdout=subprocess.PIPE)
+        coredumps = process.stdout
+        lines = coredumps.decode('utf-8').split('\n')
+        for line in lines:
+            # Ignore empty lines
+            if not line.strip():
                 continue
+            line = " ".join(line.split()) # remove blank spaces between fields in the coredumpctl output
+            try:
+                (day, date, time, timezone, pid, uid, gid, sig, corefile, exe, *extra) = line.split(" ", 10)
+            except Exception as e:
+                print("coredumpctl output: '%s' could not be split: %s" % (line, e))
+                continue
+            # Ignore python crashes, we don't handle tracebacks with systemd-coredump yet
+            if "python" in exe:
+                continue
+            # Ignore crashes for which the info isn't available
+            if corefile != "present":
+                continue
+            timestamp = " ".join([day, date, time, timezone])
+            report = CrashReport(timestamp, pid, sig, exe)
+            self.model_crashes.append([day, date, time, timezone, pid, exe, report])
         self.loading = False
 
     def on_crash_selected(self, selection):
