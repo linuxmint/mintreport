@@ -34,7 +34,7 @@ class Report(InfoReport):
                     if "CODENAME=" in line:
                         rel_codename = line.split('=')[1].replace('"', '').split()[0]
         if rel_edition is not None and rel_codename is not None and rel_arch is not None:
-            rel_path = "/usr/share/mint-upgrade-info/%s-major/info" % rel_codename
+            rel_path = f"/usr/share/mint-upgrade-info/{rel_codename}-major/info"
             if os.path.exists(rel_path):
                 config = configparser.ConfigParser()
                 config.read(rel_path)
@@ -46,17 +46,13 @@ class Report(InfoReport):
 
     def get_descriptions(self):
         # Return the descriptions
-        descriptions = []
-        descriptions.append(_("Visit %s for the latest announcements.") % "<a href='https://blog.linuxmint.com'>https://blog.linuxmint.com</a>")
-        return descriptions
+        return [_("Visit <a href='https://blog.linuxmint.com'>https://blog.linuxmint.com</a> for the latest announcements.")]
 
     def get_actions(self):
         # Return available actions
-        actions = []
         action = InfoReportAction(label=_("Upgrade to %s") % self.rel_target, callback=self.callback)
         action.set_style(Gtk.STYLE_CLASS_SUGGESTED_ACTION)
-        actions.append(action)
-        return actions
+        return [action]
 
     def callback(self, data):
         subprocess.run(["xdg-open", self.rel_link])
