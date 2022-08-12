@@ -5,7 +5,6 @@ import locale
 import os
 import psutil
 import setproctitle
-import subprocess
 import xapp.os
 
 gi.require_version("Gtk", "3.0")
@@ -66,7 +65,7 @@ class MyApplication(Gtk.Application):
             self.status_icon.connect("activate", self.on_statusicon_activated)
             self.status_icon.set_secondary_menu(self.menu)
         except Exception as e:
-            print("Couldn't instantiate XApp.StatusIcon: %s" % e)
+            print(f"Couldn't instantiate XApp.StatusIcon: {e}")
             self.status_icon = GtkStatusIcon()
             self.status_icon.connect("activate", self.on_gtk_statusicon_activated)
             self.status_icon.connect("popup-menu", self.on_gtk_statusicon_popup)
@@ -124,7 +123,7 @@ class MyApplication(Gtk.Application):
                             found_pertinent_report = True
                             break
                     except Exception as e:
-                        print("Failed to load report %s: \n%s\n" % (dir_name, e))
+                        print(f"Failed to load report {dir_name}: \n{e}\n")
 
         if found_pertinent_report:
             self.status_icon.set_visible(True)
@@ -136,16 +135,12 @@ class MyApplication(Gtk.Application):
         return True
 
     def is_process_running(self, process):
-        for p in psutil.process_iter():
-            if process.cmdline in ' '.join(p.cmdline()):
-                return True
-        return False
+        return any(process.cmdline in ' '.join(p.cmdline()) for p in psutil.process_iter())
 
     def monitor(self):
         if self.monitoring_process != None:
             return
-        processes = []
-        processes.append(MonitoredProcess(_("System Snapshots"), "timeshift --", _("A Timeshift system snapshot is being created.")))
+        processes = [MonitoredProcess(_("System Snapshots"), "timeshift --", _("A Timeshift system snapshot is being created."))]
         processes.append(MonitoredProcess(_("Automatic Updates"), "/usr/lib/linuxmint/mintUpdate/automatic_upgrades.py", _("Automatic updates are being installed.")))
         self.monitor_icon.set_visible(False)
         for process in processes:
@@ -155,14 +150,14 @@ class MyApplication(Gtk.Application):
                 self.monitoring_process = process
                 self.monitor_icon.set_visible(True)
                 self.monitor_icon.set_icon_name("system-run-symbolic")
-                tooltip = "<b>%s</b>\n%s" % (process.name, process.description)
+                tooltip = f"<b>{process.name}</b>\n{process.description}"
                 self.monitor_icon.set_tooltip_text(tooltip)
                 # Start a clean up thread to hide the tray when it finishes
                 self.monitor_source_id = GLib.timeout_add_seconds(2, self.clean_up)
         return True
 
     def clean_up(self):
-        if self.monitoring_process == None:
+        if self.monitoring_process is None:
             return
         if not self.is_process_running(self.monitoring_process):
             # The process is finished, hide the tray
