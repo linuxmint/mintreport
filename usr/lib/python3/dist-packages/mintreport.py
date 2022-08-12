@@ -5,7 +5,6 @@ gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
 
 from abc import ABC, abstractmethod
-import time
 
 
 class InfoReport(ABC):
