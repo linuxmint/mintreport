@@ -33,8 +33,7 @@ class Report(InfoReport):
 
     def get_descriptions(self):
         # Return the descriptions
-        descriptions = []
-        descriptions.append(_("The XApp Status applet allows applications to provide a tray icon without rendering glitches and with support for HiDPI and symbolic icons."))
+        descriptions = [_("The XApp Status applet allows applications to provide a tray icon without rendering glitches and with support for HiDPI and symbolic icons.")]
         if self.de == "mate":
             descriptions.append(_("Right-click the panel and choose 'Add to Panel'."))
         return descriptions
