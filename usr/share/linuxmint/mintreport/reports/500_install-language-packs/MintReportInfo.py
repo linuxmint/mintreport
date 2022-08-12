@@ -30,25 +30,19 @@ class Report(InfoReport):
     def is_pertinent(self):
         # Defines whether this report should show up
         language = os.getenv('LANG')
-        if language is None:
-            return False
-        else:
-            return self.check_missing_packages(language)
+        return False if language is None else self.check_missing_packages(language)
 
     def get_descriptions(self):
         # Return the descriptions
-        descriptions = []
-        descriptions.append(_("The following localization packages are missing to properly support your language:"))
+        descriptions = [_("The following localization packages are missing to properly support your language:")]
         descriptions.append("\n".join(self.missing_pack_names))
         return descriptions
 
     def get_actions(self):
         # Return available actions
-        actions = []
         action = InfoReportAction(label=_("Install the Language Packs"), callback=self.callback)
         action.set_style(Gtk.STYLE_CLASS_SUGGESTED_ACTION)
-        actions.append(action)
-        return actions
+        return [action]
 
     def callback(self, data):
         self.install_packages(self.missing_pack_names)
@@ -60,7 +54,7 @@ class Report(InfoReport):
         apt_pkg.init()
         self.cache = apt_pkg.Cache(None)
 
-        (language_code, country_code) = self.split_locale(locale)
+        language_code, country_code = self.split_locale(locale)
 
         self.language_packs = []
         with codecs.open("/usr/share/linuxmint/mintlocale/language_packs", 'r', encoding='utf-8') as f:
@@ -68,33 +62,28 @@ class Report(InfoReport):
                 line = line.strip()
                 columns = line.split(":")
                 if len(columns) == 4:
-                    (category, language, dependency, package) = columns
+                    category, language, dependency, package = columns
                     if package.endswith("-"):
-                        self.language_packs.append(LanguagePack(category, language, dependency, "%sLANG" % package))
-                        self.language_packs.append(LanguagePack(category, language, dependency, "%sLANG-COUNTRY" % package))
+                        self.language_packs.append(LanguagePack(category, language, dependency, f"{package}LANG"))
+                        self.language_packs.append(LanguagePack(category, language, dependency, f"{package}LANG-COUNTRY"))
                     else:
                         self.language_packs.append(LanguagePack(category, language, dependency, package))
 
         # Check if the language packs are installed
         for language_pack in self.language_packs:
-            if language_pack.language == "" or language_pack.language == language_code:
+            if language_pack.language in ["", language_code]:
                 pkgname = language_pack.package.replace("LANG", language_code).replace("COUNTRY", country_code)
                 depname = language_pack.dependency
                 if pkgname in self.cache:
                     pkg = self.cache[pkgname]
                     if (pkg.has_versions and pkg.current_state != apt_pkg.CURSTATE_INSTALLED):
-                        if depname != "":
-                            if depname in self.cache and self.cache[depname].current_state == apt_pkg.CURSTATE_INSTALLED:
-                                if pkgname not in self.missing_pack_names:
-                                    self.missing_pack_names.append(pkgname)
-                        else:
+                        if depname == "":
                             if pkgname not in self.missing_pack_names:
                                 self.missing_pack_names.append(pkgname)
 
-        if len(self.missing_pack_names) == 0:
-            return False
-        else:
-            return True
+                        elif depname in self.cache and self.cache[depname].current_state == apt_pkg.CURSTATE_INSTALLED and pkgname not in self.missing_pack_names:
+                            self.missing_pack_names.append(pkgname)
+        return len(self.missing_pack_names) != 0
 
     def split_locale(self, locale_code):
         if "_" in locale_code:
