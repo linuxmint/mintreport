@@ -24,7 +24,7 @@ class Report(InfoReport):
             major_version = info["RELEASE"].split(".")[0]
             if int(major_version) < 20 and "LMDE" not in info["DESCRIPTION"]:
                 return False
-        except:
+        except Exception:
             return False
 
         # from convert-usrmerge script
@@ -35,10 +35,10 @@ class Report(InfoReport):
             target_path = Path(os.path.join("/", "usr", dirname))
 
             if (not link_path.exists()) and (not target_path.exists()):
-                # print("skipping: %s (doesn't exist)" % link_path)
+                # print(f"skipping: {link_path} (doesn't exist)")
                 continue
 
-            # print("checking: %s --> %s" % (link_path, target_path))
+            # print(f"checking: {link_path} --> {target_path}")
 
             if not (link_path.is_symlink() and link_path.samefile(target_path)):
                 return True
@@ -46,8 +46,7 @@ class Report(InfoReport):
 
     def get_descriptions(self):
         # Return the descriptions
-        descriptions = []
-        descriptions.append(_("We recommend you convert your system with usrmerge."))
+        descriptions = [_("We recommend you convert your system with usrmerge.")]
         descriptions.append(_("This is done already for new installations of Linux Mint, starting with 20.1."))
         descriptions.append(_("To convert your system, open a terminal and type:"))
         descriptions.append("\n<span font_family='monospace'>apt install usrmerge</span>\n")
@@ -56,10 +55,8 @@ class Report(InfoReport):
 
     def get_actions(self):
         # Return available actions
-        actions = []
         action = InfoReportAction(label=_("More information"), callback=self.more_info)
-        actions.append(action)
-        return actions
+        return [action]
 
     def more_info(self, data=None):
         webbrowser.open("https://www.freedesktop.org/wiki/Software/systemd/TheCaseForTheUsrMerge")
