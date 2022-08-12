@@ -12,7 +12,7 @@ import subprocess
 gi.require_version("Gtk", "3.0")
 gi.require_version('GtkSource', '3.0')
 gi.require_version('XApp', '1.0')
-from gi.repository import Gtk, Gdk, GtkSource, Gio, XApp
+from gi.repository import Gtk, Gdk, GtkSource, Gio
 
 from common import _async, idle, InfoReportContainer, DATA_DIR, INFO_DIR
 
@@ -69,10 +69,10 @@ class MintReportWindow():
         self.application = application
         self.settings = Gio.Settings(schema_id="com.linuxmint.report")
 
-        os.system("mkdir -p %s" % TMP_DIR)
-        os.system("rm -rf %s/*" % TMP_DIR)
-        os.system("mkdir -p %s" % UNPACK_DIR)
-        os.system("cp -R %s/* %s/" % (DATA_DIR, TMP_DIR))
+        os.system(f"mkdir -p {TMP_DIR}")
+        os.system(f"rm -rf {TMP_DIR}/*")
+        os.system(f"mkdir -p {UNPACK_DIR}")
+        os.system(f"cp -R {DATA_DIR}/* {TMP_DIR}/")
 
         self._cache = None
         # Set the Glade file
@@ -244,12 +244,11 @@ class MintReportWindow():
         dlg.set_program_name("mintReport")
         dlg.set_comments(_("System Reports"))
         try:
-            h = open('/usr/share/common-licenses/GPL', encoding="utf-8")
-            s = h.readlines()
-            gpl = ""
-            for line in s:
-                gpl += line
-            h.close()
+            with open('/usr/share/common-licenses/GPL', encoding="utf-8") as h:
+                s = h.readlines()
+                gpl = ""
+                for line in s:
+                    gpl += line
             dlg.set_license(gpl)
         except Exception as e:
             print (e)
@@ -259,7 +258,7 @@ class MintReportWindow():
         dlg.set_logo_icon_name("mintreport")
         dlg.set_website("https://www.github.com/linuxmint/mintreport")
         def close(w, res):
-            if res == Gtk.ResponseType.CANCEL or res == Gtk.ResponseType.DELETE_EVENT:
+            if res in [Gtk.ResponseType.CANCEL, Gtk.ResponseType.DELETE_EVENT]:
                 w.destroy()
         dlg.connect("response", close)
         dlg.show()
@@ -297,17 +296,17 @@ class MintReportWindow():
         clipboard = Gtk.Clipboard.get(Gdk.SELECTION_CLIPBOARD)
         buff = self.builder.get_object("textview_sysinfo").get_buffer()
         text = buff.get_text(buff.get_start_iter(), buff.get_end_iter(), False)
-        clipboard.set_text("[code]\n%s[/code]\n" % text, -1)
+        clipboard.set_text(f"[code]\n{text}[/code]\n-1")
         subprocess.Popen(['notify-send', '-i', 'dialog-information-symbolic', _("System information copied"), _("Your system information was copied into your clipboard so you can paste it on the forums.")])
 
     def upload_sysinfo(self, button):
         try:
-            output = subprocess.check_output("pastebin %s" % TMP_INXI_FILE, shell=True).decode("UTF-8")
+            output = subprocess.check_output(f"pastebin {TMP_INXI_FILE}", shell=True).decode("UTF-8")
             link = output.rstrip('\x00').strip() # Remove ASCII null termination with \x00
             clipboard = Gtk.Clipboard.get(Gdk.SELECTION_CLIPBOARD)
             buff = self.builder.get_object("textview_sysinfo").get_buffer()
             clipboard.set_text(link, -1)
-            subprocess.Popen(['notify-send', '-i', 'dialog-information-symbolic', _("System information uploaded"), _("Your system information was uploaded to %s. This link was placed in your clipboard so you can paste it on IRC.") % link])
+            subprocess.Popen(['notify-send', '-i', 'dialog-information-symbolic', _("System information uploaded"), _(f"Your system information was uploaded to {link}. This link was placed in your clipboard so you can paste it on IRC.")])
         except Exception as e:
             subprocess.Popen(['notify-send', '-i', 'dialog-error-symbolic', _("An error occurred while uploading the system information"), _("Copy and paste the system information manually into a pastebin site like https://pastebin.com and share the link on IRC."), str(e)])
 
@@ -350,7 +349,7 @@ class MintReportWindow():
             for dir_name in sorted(os.listdir(INFO_DIR)):
                 path = os.path.join(INFO_DIR, dir_name)
                 uuid = dir_name.split("_")[-1]
-                print ("Checking %s" % dir_name)
+                print(f"Checking {dir_name}")
                 if uuid not in ignored_paths:
                     try:
                         report = InfoReportContainer(uuid, path)
@@ -358,7 +357,7 @@ class MintReportWindow():
                             self.add_report_to_treeview(report)
                             self.num_info_found += 1
                     except Exception as e:
-                        print("Failed to load report %s: \n%s\n" % (dir_name, e))
+                        print(f"Failed to load report {dir_name}: \n{e}\n")
         self.loading = False
         self.show_info_reports()
 
@@ -395,8 +394,7 @@ class MintReportWindow():
 
     def on_info_action_clicked(self, button, callback, data):
         self.window.set_sensitive(False)
-        reload_requested = callback(data)
-        if reload_requested:
+        if reload_requested := callback(data):
             self.load_info()
         self.window.set_sensitive(True)
 
@@ -437,7 +435,7 @@ class MintReportWindow():
             try:
                 (day, date, time, timezone, pid, uid, gid, sig, corefile, exe, *extra) = line.split(" ", 10)
             except Exception as e:
-                print("coredumpctl output: '%s' could not be split: %s" % (line, e))
+                print(f"coredumpctl output: '{line}' could not be split: {e}")
                 continue
             # Ignore python crashes, we don't handle tracebacks with systemd-coredump yet
             if "python" in exe:
@@ -462,7 +460,7 @@ class MintReportWindow():
         self.pastebin_button.set_sensitive(False)
         self.buffer.set_language(self.language_manager.get_language(""))
         self.buffer.set_text("")
-        os.system("rm -rf %s/*" % UNPACK_DIR)
+        os.system(f"rm -rf {UNPACK_DIR}/*")
         model, iter = selection.get_selected()
         if iter is not None:
             report = model.get_value(iter, COL_CRASH_OBJECT)
@@ -484,7 +482,7 @@ class MintReportWindow():
 
         # Produce an Inxi report
         if os.path.exists(TMP_INXI_FILE):
-            os.system("cp %s Inxi" % TMP_INXI_FILE)
+            os.system(f"cp {TMP_INXI_FILE} Inxi")
 
         executable_path = report.executable
 
@@ -495,23 +493,23 @@ class MintReportWindow():
             if ":" in output:
                 output = output.split(":")[0]
                 # Check if -dbg package is missing
-                dbg_name = "%s-dbg" % output
+                dbg_name = f"{output}-dbg"
                 if dbg_name in self.cache and not self.cache[dbg_name].is_installed:
-                    self.buffer.set_text(_("The debug symbols are missing for %(program)s.\nPlease install %(package)s.") % {'program':output, 'package':dbg_name})
+                    self.buffer.set_text(_(f"The debug symbols are missing for {output}.\nPlease install {dbg_name}."))
                     self.on_unpack_crash_report_finished()
                     return
 
                 if "mate" in output or output in ["caja", "atril", "pluma", "engrampa", "eom"]:
-                    self.bugtracker = "https://github.com/mate-desktop/%s/issues" % output
+                    self.bugtracker = f"https://github.com/mate-desktop/{output}/issues"
                 elif output in self.cache:
                     pkg = self.cache[output]
-                    self.bugtracker = "https://bugs.launchpad.net/%s" % output
+                    self.bugtracker = f"https://bugs.launchpad.net/{output}"
                     for origin in pkg.installed.origins:
                         if origin.origin == "linuxmint":
-                            self.bugtracker = "https://github.com/linuxmint/%s/issues" % output
+                            self.bugtracker = f"https://github.com/linuxmint/{output}/issues"
                             break
-        except:
-            self.buffer.set_text(_("The package providing %s could not be found.\nIf you want to generate a stack trace for this crash report, please reinstall it.") % executable_path)
+        except Exception:
+            self.buffer.set_text(_(f"The package providing {executable_path} could not be found.\nIf you want to generate a stack trace for this crash report, please reinstall it."))
             self.on_unpack_crash_report_finished()
             return
 
@@ -519,22 +517,22 @@ class MintReportWindow():
         os.system("echo '===================================================================' > StackTrace")
         os.system("echo ' Info                                                              ' >> StackTrace")
         os.system("echo '===================================================================' >> StackTrace")
-        os.system("coredumpctl info %s >> StackTrace" % report.pid)
+        os.system(f"coredumpctl info {report.pid} >> StackTrace")
 
         # Produce a stack trace
         if os.path.exists("CoreDump"):
             os.system("echo '===================================================================' >> StackTrace")
             os.system("echo ' GDB Log                                                           ' >> StackTrace")
             os.system("echo '===================================================================' >> StackTrace")
-            os.system("LANG=C gdb %s CoreDump --batch >> StackTrace 2>&1" % executable_path)
+            os.system(f"LANG=C gdb {executable_path} CoreDump --batch >> StackTrace 2>&1")
             os.system("echo '\n===================================================================' >> StackTrace")
             os.system("echo ' GDB Backtrace                                                     ' >> StackTrace")
             os.system("echo '===================================================================' >> StackTrace")
-            os.system("LANG=C gdb %s CoreDump --batch --ex bt >> StackTrace 2>&1" % executable_path)
+            os.system(f"LANG=C gdb {executable_path} CoreDump --batch --ex bt >> StackTrace 2>&1")
             os.system("echo '\n===================================================================' >> StackTrace")
             os.system("echo ' GDB Backtrace (all threads)                                       ' >> StackTrace")
             os.system("echo '===================================================================' >> StackTrace")
-            os.system("LANG=C gdb %s CoreDump --batch --ex 'thread apply all bt full' --ex bt >> StackTrace 2>&1" % executable_path)
+            os.system(f"LANG=C gdb {executable_path} CoreDump --batch --ex 'thread apply all bt full' --ex bt >> StackTrace 2>&1")
 
         with open("StackTrace") as f:
             text = f.read()
@@ -564,10 +562,10 @@ class MintReportWindow():
         self.pastebin_button.set_sensitive(True)
 
     def on_button_browse_crash_report_clicked(self, button):
-        os.system("xdg-open %s" % TMP_DIR)
+        os.system(f"xdg-open {TMP_DIR}")
 
     def on_button_open_bugtracker_clicked(self, button):
-        os.system("xdg-open %s" % self.bugtracker)
+        os.system(f"xdg-open {self.bugtracker}")
 
     def on_button_pastebin_clicked(self, button):
         pastebin = subprocess.Popen(['/usr/bin/pastebin', os.path.join(UNPACK_DIR, "StackTrace")], stdout=subprocess.PIPE)
