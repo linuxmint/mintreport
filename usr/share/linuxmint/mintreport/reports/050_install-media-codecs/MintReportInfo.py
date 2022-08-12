@@ -19,24 +19,17 @@ class Report(InfoReport):
 
     def is_pertinent(self):
         # Defines whether this report should show up
-        if os.path.exists("/usr/share/applications/mint-meta-codecs.desktop"):
-            return True
-        else:
-            return False
+        return bool(os.path.exists("/usr/share/applications/mint-meta-codecs.desktop"))
 
     def get_descriptions(self):
         # Return the descriptions
-        descriptions = []
-        descriptions.append(_("Multimedia codecs are required to play some video formats and to properly render some websites."))
-        return descriptions
+        return [_("Multimedia codecs are required to play some video formats and to properly render some websites.")]
 
     def get_actions(self):
-        # Return available actions
-        actions = []
         action = InfoReportAction(label=_("Install the Multimedia Codecs"), callback=self.callback)
+
         action.set_style(Gtk.STYLE_CLASS_SUGGESTED_ACTION)
-        actions.append(action)
-        return actions
+        return [action]
 
     def callback(self, data):
         self.install_packages(["mint-meta-codecs", "libavcodec-extra", "libavcodec-extra58"])
