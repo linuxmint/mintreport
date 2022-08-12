@@ -1,10 +1,9 @@
 import os
-import subprocess
 import gettext
 import gi
 gi.require_version('Gtk', '3.0')
 gi.require_version('XApp', '1.0')
-from gi.repository import Gtk, XApp, GLib
+from gi.repository import Gtk
 
 from mintreport import InfoReport, InfoReportAction
 
