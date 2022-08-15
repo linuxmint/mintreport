@@ -56,14 +56,13 @@ def is_pertinent(self):
             self.description = gettext.ngettext('It reached End-Of-Life (EOL) yesterday.', 'It reached End-Of-Life (EOL) {num_days} days ago.', self.days_before_eol).format(num_days=self.days_before_eol * -1)
 
         return True
+def get_descriptions(self):
+    # Return the descriptions
+    return [self.description, _("Visit <a href='https://www.linuxmint.com'>https://www.linuxmint.com</a> to find information about newer releases.")]
 
-    def get_descriptions(self):
-        # Return the descriptions
-        return [self.description, _("Visit <a href='https://www.linuxmint.com'>https://www.linuxmint.com</a> to find information about newer releases.")]
-
-    def get_actions(self):
-        # Return available actions
-        return []
+def get_actions(self):
+    # Return available actions
+    return []
 
 if __name__ == "__main__":
     report = Report()
