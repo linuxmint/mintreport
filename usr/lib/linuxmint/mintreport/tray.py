@@ -36,10 +36,22 @@ class GtkStatusIcon(Gtk.StatusIcon):
         self.set_from_icon_name(icon_name)
 
 class MonitoredProcess():
-    def __init__(self, name, cmdline, description):
+    def __init__(self, name, cmdline, description, is_binary=False):
         self.name = name
         self.cmdline = cmdline
         self.description = description
+
+        self.is_binary = is_binary
+
+    def is_running(self):
+        for p in psutil.process_iter():
+            if self.is_binary:
+                if p.name() == self.cmdline:
+                    return True
+            elif self.cmdline in ' '.join(p.cmdline()):
+                return True
+
+        return False
 
 class MyApplication(Gtk.Application):
     # Main initialization routine
@@ -135,21 +147,15 @@ class MyApplication(Gtk.Application):
 
         return True
 
-    def is_process_running(self, process):
-        for p in psutil.process_iter():
-            if process.cmdline in ' '.join(p.cmdline()):
-                return True
-        return False
-
     def monitor(self):
         if self.monitoring_process != None:
             return
         processes = []
-        processes.append(MonitoredProcess(_("System Snapshots"), "timeshift --", _("A Timeshift system snapshot is being created.")))
+        processes.append(MonitoredProcess(_("System Snapshots"), "timeshift", _("A Timeshift system snapshot is being created."), is_binary=True))
         processes.append(MonitoredProcess(_("Automatic Updates"), "/usr/lib/linuxmint/mintUpdate/automatic_upgrades.py", _("Automatic updates are being installed.")))
         self.monitor_icon.set_visible(False)
         for process in processes:
-            if self.is_process_running(process):
+            if process.is_running():
                 # A process is found running!
                 # Show a tray icon
                 self.monitoring_process = process
@@ -164,7 +170,7 @@ class MyApplication(Gtk.Application):
     def clean_up(self):
         if self.monitoring_process == None:
             return
-        if not self.is_process_running(self.monitoring_process):
+        if not self.monitoring_process.is_running():
             # The process is finished, hide the tray
             self.monitoring_process = None
             self.monitor_icon.set_visible(False)
