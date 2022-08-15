@@ -41,7 +41,7 @@ class Report(InfoReport):
         elif model_name is None:
             return _(f"{vendor_name} (unknown)")
         else:
-            return = f"{vendor_name}: {model_name}"
+            return f"{vendor_name}: {model_name}"
 
     def is_pertinent(self):
         # Defines whether this report should show up
