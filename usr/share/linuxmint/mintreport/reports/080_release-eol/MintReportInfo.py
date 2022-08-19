@@ -24,7 +24,7 @@ class Report(InfoReport):
             major_version = info["RELEASE"].split(".")[0]
             if int(major_version) < 20 and "LMDE" not in info["DESCRIPTION"]:
                 return False
-        except Exception:
+        except:
             return False
 
         # from convert-usrmerge script
