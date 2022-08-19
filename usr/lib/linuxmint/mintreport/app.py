@@ -508,7 +508,7 @@ class MintReportWindow():
                         if origin.origin == "linuxmint":
                             self.bugtracker = f"https://github.com/linuxmint/{output}/issues"
                             break
-        except Exception:
+        except:
             self.buffer.set_text(_(f"The package providing {executable_path} could not be found.\nIf you want to generate a stack trace for this crash report, please reinstall it."))
             self.on_unpack_crash_report_finished()
             return
