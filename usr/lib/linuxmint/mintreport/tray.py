@@ -149,7 +149,7 @@ class MyApplication(Gtk.Application):
 
     def monitor(self):
         if self.monitoring_process != None:
-            return
+            return GLib.SOURCE_CONTINUE
         processes = []
         processes.append(MonitoredProcess(_("System Snapshots"), "timeshift", _("A Timeshift system snapshot is being created."), is_binary=True))
         processes.append(MonitoredProcess(_("Automatic Updates"), "/usr/lib/linuxmint/mintUpdate/automatic_upgrades.py", _("Automatic updates are being installed.")))
@@ -165,17 +165,17 @@ class MyApplication(Gtk.Application):
                 self.monitor_icon.set_tooltip_text(tooltip)
                 # Start a clean up thread to hide the tray when it finishes
                 self.monitor_source_id = GLib.timeout_add_seconds(2, self.clean_up)
-        return True
+        return GLib.SOURCE_CONTINUE
 
     def clean_up(self):
         if self.monitoring_process == None:
-            return
+            return GLib.SOURCE_REMOVE
         if not self.monitoring_process.is_running():
             # The process is finished, hide the tray
             self.monitoring_process = None
             self.monitor_icon.set_visible(False)
             GLib.source_remove(self.monitor_source_id)
-        return True
+        return GLib.SOURCE_CONTINUE
 
 if __name__ == "__main__":
     if ((not xapp.os.is_live_session()) and (not xapp.os.is_guest_session())):
