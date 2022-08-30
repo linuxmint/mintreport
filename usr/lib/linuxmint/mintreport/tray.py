@@ -45,12 +45,14 @@ class MonitoredProcess():
 
     def is_running(self):
         for p in psutil.process_iter():
-            if self.is_binary:
-                if p.name() == self.cmdline:
+            try:
+                if self.is_binary:
+                    if p.name() == self.cmdline:
+                        return True
+                elif self.cmdline in ' '.join(p.cmdline()):
                     return True
-            elif self.cmdline in ' '.join(p.cmdline()):
-                return True
-
+            except:
+                continue
         return False
 
 class MyApplication(Gtk.Application):
