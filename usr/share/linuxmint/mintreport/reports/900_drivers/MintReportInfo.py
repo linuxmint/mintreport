@@ -110,7 +110,7 @@ class Report(InfoReport):
         return actions
 
     def callback(self, data):
-        subprocess.run(["pkexec", "driver-manager"])
+        subprocess.run(["driver-manager"])
         # don't reload
         return False
 
