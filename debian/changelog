@@ -1,3 +1,9 @@
+mintreport (1.3.6) vanessa; urgency=medium
+
+  * Run mintdrivers without admin rights
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 19 Sep 2022 09:36:29 +0100
+
 mintreport (1.3.5) vanessa; urgency=medium
 
   [ Michael Webster ]
