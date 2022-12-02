@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2022-05-24 17:21+0100\n"
-"PO-Revision-Date: 2021-02-20 20:32+0000\n"
-"Last-Translator: Evgueni Tzvetanov <Unknown>\n"
+"PO-Revision-Date: 2022-09-21 18:39+0000\n"
+"Last-Translator: Nikolay Trifonov <trifonov88@gmail.com>\n"
 "Language-Team: Bulgarian <bg@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2022-07-24 09:43+0000\n"
-"X-Generator: Launchpad (build 025a39fd866a641b6ae33074cda0d02a2c712d38)\n"
+"X-Launchpad-Export-Date: 2022-12-02 13:29+0000\n"
+"X-Generator: Launchpad (build 51cef3d08dff1e227b5ada709bd67280c567d4be)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
 #: usr/lib/linuxmint/mintreport/app.py:245 generate_desktop_files:25
@@ -147,19 +147,19 @@ msgstr "Системните отчети се нуждаят от вашето 
 
 #: usr/lib/linuxmint/mintreport/tray.py:148
 msgid "System Snapshots"
-msgstr ""
+msgstr "Системни снимки"
 
 #: usr/lib/linuxmint/mintreport/tray.py:148
 msgid "A Timeshift system snapshot is being created."
-msgstr ""
+msgstr "Създава се Timeshift системна снимка."
 
 #: usr/lib/linuxmint/mintreport/tray.py:149
 msgid "Automatic Updates"
-msgstr ""
+msgstr "Автоматични актуализации"
 
 #: usr/lib/linuxmint/mintreport/tray.py:149
 msgid "Automatic updates are being installed."
-msgstr ""
+msgstr "Автоматичните обновления се инсталират."
 
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
@@ -387,28 +387,30 @@ msgstr "Посетете %s, за да намерите информация о�
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:16
 msgid "Perform usrmerge conversion"
-msgstr ""
+msgstr "Извърши usrmerge преобразуване"
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:50
 msgid "We recommend you convert your system with usrmerge."
-msgstr ""
+msgstr "Препоръчваме ви да преобразувате вашата система с usrmerge"
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:51
 msgid ""
 "This is done already for new installations of Linux Mint, starting with 20.1."
 msgstr ""
+"Това вече е направено за нови инсталации на Linux Mint, започвайки от версия "
+"20.1."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:52
 msgid "To convert your system, open a terminal and type:"
-msgstr ""
+msgstr "За да преобразувате вашата система отворете терминал и напишете:"
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:54
 msgid "You should reboot the computer once this completes."
-msgstr ""
+msgstr "Рестартирайте компютъра си когато това завърши."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:60
 msgid "More information"
-msgstr ""
+msgstr "Повече информация"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:17
 msgid "Remove conflicting indicators"

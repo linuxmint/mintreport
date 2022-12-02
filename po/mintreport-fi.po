@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2022-05-24 17:21+0100\n"
-"PO-Revision-Date: 2022-06-12 17:32+0000\n"
+"PO-Revision-Date: 2022-11-22 11:47+0000\n"
 "Last-Translator: Kimmo Kujansuu <Unknown>\n"
 "Language-Team: Finnish <fi@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2022-07-24 09:43+0000\n"
-"X-Generator: Launchpad (build 025a39fd866a641b6ae33074cda0d02a2c712d38)\n"
+"X-Launchpad-Export-Date: 2022-12-02 13:29+0000\n"
+"X-Generator: Launchpad (build 51cef3d08dff1e227b5ada709bd67280c567d4be)\n"
 "Language: fi\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
@@ -173,7 +173,7 @@ msgstr "Vianmääritystyökalu"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:1
 msgid "Running system checks..."
-msgstr "Tehdään järjestelmätarkistuksia…"
+msgstr "Järjestelmän tarkastukset käynnissä..."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:2
 msgid "No problems were detected"
@@ -215,8 +215,8 @@ msgstr "Kaatumisraportit eivät ole käytettävissä"
 msgid ""
 "To enable crash reporting, install systemd-coredump and reboot your computer."
 msgstr ""
-"Kaatumisraportoinnin voi ottaa käyttää asentamalla paketin systemd-coredump "
-"ja käynnistämällä koneen uudelleen."
+"Ota kaatumisraportointi käyttöön asentamalla systemd-coredump ja "
+"käynnistämällä tietokoneesi uudelleen."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:11
 msgid "Crash reports:"
@@ -231,9 +231,8 @@ msgid ""
 "When seeking help, check for existing bug reports, pastebin the trace, share "
 "crash.tar.gz (from Local Files) and explain how to reproduce the crash."
 msgstr ""
-"Etsiessäsi apua tarkista olemassa olevat vikaraportit, liitä pinolistaus "
-"pastebin-palveluun, jaa (Paikallisista tiedostoista) crash.tar.gz ja selitä, "
-"miten kaatumisen voi toistaa."
+"Kun etsit apua, tarkista olemassa olevat virheraportit, jaa crash.tar.gz "
+"(paikallisista tiedostoista) ja selitä kuinka kaatuminen toistetaan."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:14
 msgid "Local Files"
@@ -265,9 +264,9 @@ msgid ""
 "Always provide a trace and reliable instructions to trigger/observe the "
 "problem."
 msgstr ""
-"Kehittäjien täytyy tietää missä koodi pettää ja kuinka luoda ongelma "
-"uudelleen. Tarjoa aina pinolistaus ja luotettavat ohjeet kuinka "
-"laukaista/tarkkailla ongelmaa."
+"Kehittäjien on tiedettävä, missä koodi epäonnistuu tai kuinka ongelma "
+"voidaan toistaa. Anna aina pinolistaus ja luotettavat ohjeet ongelman "
+"havaitsemiseen."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:21
 msgid "Crash reports"
@@ -275,24 +274,23 @@ msgstr "Kaatumisilmoitukset"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
 msgid "Add the XApp Status applet"
-msgstr "Lisää XApp tilasovelma"
+msgstr "Lisää xapp tilasovelma"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:37
 msgid ""
 "The XApp Status applet allows applications to provide a tray icon without "
 "rendering glitches and with support for HiDPI and symbolic icons."
 msgstr ""
-"XApp-tilasovelmalla sovellukset tarjoavat ilmoitusaluekuvakkeen, jossa ei "
-"ole hahmonnusongelmia ja joka tukee HiDPI:tä ja symbolisia kuvakkeita."
+"XApp Status tilasovelman avulla sovellukset voivat tarjota paneelikuvakkeen "
+"ilman renderöintihäiriöitä, sekä tukee HiDPI:tä ja symbolisia kuvakkeita."
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:39
 msgid "Right-click the panel and choose 'Add to Panel'."
-msgstr ""
-"Napsauta paneelia hiiren oikealla painikkeella ja valitse ”Lisää paneeliin”."
+msgstr "Napsauta paneelia hiiren oikea ja valitse \"Lisää paneeliin\"."
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:46
 msgid "Add the XApp Status applet to the panel"
-msgstr "Lisää paneeliin XApp-tilasovelma"
+msgstr "Lisää XApp Status tilasovelma paneeliin"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:16
 msgid "Install multimedia codecs"
@@ -312,19 +310,19 @@ msgstr "Asennna multimediakoodekit"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:17
 msgid "Set up the system restore utility"
-msgstr "Aseta järjestelmänpalautustyökalu"
+msgstr "Määritä järjestelmän palautusohjelma"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:31
 msgid "Linux Mint provides a system restore utility called Timeshift."
-msgstr "Linux Mint tarjoaa Timeshift-nimisen järjestelmänpalautustyökalun."
+msgstr "Linux Mint tarjoaa järjestelmän palautusohjelman nimeltä Timeshift."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:32
 msgid ""
 "Thanks to Timeshift you can take snapshots of the system, either manually or "
 "automatically."
 msgstr ""
-"Timeshiftillä järjestelmään voi luoda palautuspisteitä joko käsin tai "
-"automaattisesti."
+"Timeshiftin ansiosta voit ottaa palautuspisteen järjestelmästä joko "
+"manuaalisesti tai automaattisesti."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:33
 msgid ""
@@ -414,7 +412,8 @@ msgstr "Poista ristiriitaiset osoittimet"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:37
 msgid "The following packages prevent tray icons from working properly:"
-msgstr "Seuraavat paketit estävät ilmoitusaluekuvakkeita toimimasta oikein:"
+msgstr ""
+"Seuraavat paketit estävät ilmoitusalueen kuvakkeita toimimasta oikein:"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:39
 msgid "Note: You will need to log out after removing them."
@@ -432,7 +431,7 @@ msgstr "Asenna kielipaketit"
 msgid ""
 "The following localization packages are missing to properly support your "
 "language:"
-msgstr "Kielesi täysi tuki vaatii seuraavat puuttuvat kotoistuspaketit:"
+msgstr "Seuraavat lokalisointipaketit puuttuvat tukeakseen kieltäsi oikein:"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:48
 msgid "Install the Language Packs"

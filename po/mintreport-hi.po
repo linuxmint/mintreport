@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2022-05-24 17:21+0100\n"
-"PO-Revision-Date: 2021-12-14 18:24+0000\n"
+"PO-Revision-Date: 2022-08-18 16:09+0000\n"
 "Last-Translator: Panwar <Unknown>\n"
 "Language-Team: Hindi <hi@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2022-07-24 09:43+0000\n"
-"X-Generator: Launchpad (build 025a39fd866a641b6ae33074cda0d02a2c712d38)\n"
+"X-Launchpad-Export-Date: 2022-12-02 13:29+0000\n"
+"X-Generator: Launchpad (build 51cef3d08dff1e227b5ada709bd67280c567d4be)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
 #: usr/lib/linuxmint/mintreport/app.py:245 generate_desktop_files:25
@@ -148,19 +148,19 @@ msgstr "कुछ सिस्टम रिपोर्ट हेतु आप�
 
 #: usr/lib/linuxmint/mintreport/tray.py:148
 msgid "System Snapshots"
-msgstr ""
+msgstr "सिस्टम स्नैपशॉट"
 
 #: usr/lib/linuxmint/mintreport/tray.py:148
 msgid "A Timeshift system snapshot is being created."
-msgstr ""
+msgstr "टाइमशिफ्ट सिस्टम स्नैपशॉट का सृजन कार्यरत है।"
 
 #: usr/lib/linuxmint/mintreport/tray.py:149
 msgid "Automatic Updates"
-msgstr ""
+msgstr "स्वतः अपडेट"
 
 #: usr/lib/linuxmint/mintreport/tray.py:149
 msgid "Automatic updates are being installed."
-msgstr ""
+msgstr "स्वतः अपडेट इंस्टॉल हो रही हैं।"
 
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67

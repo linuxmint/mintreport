@@ -1,20 +1,20 @@
-# Brazilian Portuguese translation for linuxmint
-# Copyright (c) 2017 Rosetta Contributors and Canonical Ltd 2017
+# English (Canada) translation for linuxmint
+# Copyright (c) 2022 Rosetta Contributors and Canonical Ltd 2022
 # This file is distributed under the same license as the linuxmint package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2022-05-24 17:21+0100\n"
-"PO-Revision-Date: 2022-05-29 18:18+0000\n"
-"Last-Translator: Gilberto vagner <vagner.unix@gmail.com>\n"
-"Language-Team: Brazilian Portuguese <pt_BR@li.org>\n"
+"PO-Revision-Date: 2022-08-05 22:22+0000\n"
+"Last-Translator: John Doe <Unknown>\n"
+"Language-Team: English (Canada) <en_CA@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Launchpad-Export-Date: 2022-12-02 13:29+0000\n"
 "X-Generator: Launchpad (build 51cef3d08dff1e227b5ada709bd67280c567d4be)\n"
 
@@ -23,53 +23,53 @@ msgstr ""
 #: generate_desktop_files:39 generate_desktop_files:53
 #: generate_desktop_files:67
 msgid "System Reports"
-msgstr "Relatórios do Sistema"
+msgstr "System Reports"
 
 #: usr/lib/linuxmint/mintreport/app.py:193
 msgid "_File"
-msgstr "_Arquivo"
+msgstr "_File"
 
 #: usr/lib/linuxmint/mintreport/app.py:198
 msgid "Refresh"
-msgstr "Atualizar"
+msgstr "Refresh"
 
 #: usr/lib/linuxmint/mintreport/app.py:205
 msgid "Restore ignored reports"
-msgstr "Restaurar relatórios ignorados"
+msgstr "Restore ignored reports"
 
 #: usr/lib/linuxmint/mintreport/app.py:209
 #: usr/lib/linuxmint/mintreport/tray.py:58
 msgid "Quit"
-msgstr "Sair"
+msgstr "Quit"
 
 #: usr/lib/linuxmint/mintreport/app.py:220
 msgid "_Help"
-msgstr "_Ajuda"
+msgstr "_Help"
 
 #: usr/lib/linuxmint/mintreport/app.py:226
 #: usr/lib/linuxmint/mintreport/app.py:243
 msgid "About"
-msgstr "Sobre"
+msgstr "About"
 
 #: usr/lib/linuxmint/mintreport/app.py:287
 msgid "An error occurred while gathering the system information."
-msgstr "Ocorreu um erro ao coletar as informações do sistema."
+msgstr "An error occurred while gathering the system information."
 
 #: usr/lib/linuxmint/mintreport/app.py:301
 msgid "System information copied"
-msgstr "Informação do sistema copiada"
+msgstr "System information copied"
 
 #: usr/lib/linuxmint/mintreport/app.py:301
 msgid ""
 "Your system information was copied into your clipboard so you can paste it "
 "on the forums."
 msgstr ""
-"As informações do sistema foram copiadas para a área de transferência para "
-"que você possa colá-las nos fóruns."
+"Your system information was copied into your clipboard so you can paste it "
+"on the forums."
 
 #: usr/lib/linuxmint/mintreport/app.py:310
 msgid "System information uploaded"
-msgstr "Informações do sistema carregadas"
+msgstr "System information uploaded"
 
 #: usr/lib/linuxmint/mintreport/app.py:310
 #, python-format
@@ -77,32 +77,33 @@ msgid ""
 "Your system information was uploaded to %s. This link was placed in your "
 "clipboard so you can paste it on IRC."
 msgstr ""
-"As informações do seu sistema foram carregadas para %s. Este link foi "
-"colocado em sua área de transferência para que você possa colá-lo no IRC."
+"Your system information was uploaded to %s. This link was placed in your "
+"clipboard so you can paste it on IRC."
 
 #: usr/lib/linuxmint/mintreport/app.py:312
 msgid "An error occurred while uploading the system information"
-msgstr "Ocorreu um erro ao carregar as informações do sistema"
+msgstr "An error occurred while uploading the system information"
 
 #: usr/lib/linuxmint/mintreport/app.py:312
 msgid ""
 "Copy and paste the system information manually into a pastebin site like "
 "https://pastebin.com and share the link on IRC."
 msgstr ""
-"Copie e cole as informações do sistema manualmente em um site pastebin como "
-"https://pastebin.com e compartilhe o link no IRC."
+"Copy and paste the system information manually into a pastebin site like "
+"https://pastebin.com and share the link on IRC."
 
 #: usr/lib/linuxmint/mintreport/app.py:391
 msgid "Ignore this report"
-msgstr "Ignorar este relatório"
+msgstr "Ignore this report"
 
 #: usr/lib/linuxmint/mintreport/app.py:407
 msgid "Are you sure you want to ignore this report?"
-msgstr "Tem certeza de que deseja ignorar este relatório?"
+msgstr "Are you sure you want to ignore this report?"
 
 #: usr/lib/linuxmint/mintreport/app.py:408
 msgid "The report will be permanently ignored and will no longer be visible."
-msgstr "O relatório será permanentemente ignorado e não será mais visível."
+msgstr ""
+"The report will be permanently ignored and will no longer be visible."
 
 #: usr/lib/linuxmint/mintreport/app.py:500
 #, python-format
@@ -110,8 +111,8 @@ msgid ""
 "The debug symbols are missing for %(program)s.\n"
 "Please install %(package)s."
 msgstr ""
-"Os símbolos de depuração estão faltando para %(program)s.\n"
-"Por favor instale %(package)s."
+"The debug symbols are missing for %(program)s.\n"
+"Please install %(package)s."
 
 #: usr/lib/linuxmint/mintreport/app.py:514
 #, python-format
@@ -120,9 +121,9 @@ msgid ""
 "If you want to generate a stack trace for this crash report, please "
 "reinstall it."
 msgstr ""
-"O pacote que fornece %s não foi encontrado.\n"
-"Se você quiser gerar um rastreamento da pilha (Stack Trace) para este "
-"relatório de erros, por favor, reinstale-o."
+"The package providing %s could not be found.\n"
+"If you want to generate a stack trace for this crash report, please "
+"reinstall it."
 
 #: usr/lib/linuxmint/mintreport/app.py:542
 msgid ""
@@ -132,126 +133,122 @@ msgid ""
 "A stack trace is available in 'Local Files' but its content is probably "
 "inaccurate."
 msgstr ""
-"Os cabeçalhos ou binários instalados em seu sistema não correspondem ao "
-"código que foi executado durante o erro.\n"
-"Eles provavelmente foram atualizados desde então.\n"
-"Um rastreamento da pilha (Stack Trace) está disponível nos 'Arquivos "
-"Locais', mas seu conteúdo provavelmente é impreciso."
+"The headers or binaries installed on your system do not match the code which "
+"was executed during the crash.\n"
+"They probably got upgraded since.\n"
+"A stack trace is available in 'Local Files' but its content is probably "
+"inaccurate."
 
 #: usr/lib/linuxmint/mintreport/tray.py:54
 msgid "Show System Reports"
-msgstr "Mostrar relatórios do sistema"
+msgstr "Show System Reports"
 
 #: usr/lib/linuxmint/mintreport/tray.py:132
 msgid "Some system reports require your attention"
-msgstr "Alguns relatórios do sistema requerem sua atenção"
+msgstr "Some system reports require your attention"
 
 #: usr/lib/linuxmint/mintreport/tray.py:148
 msgid "System Snapshots"
-msgstr "Backups do sistema"
+msgstr "System Snapshots"
 
 #: usr/lib/linuxmint/mintreport/tray.py:148
 msgid "A Timeshift system snapshot is being created."
-msgstr "Um backup do sistema Timeshift está sendo criado."
+msgstr "A Timeshift system snapshot is being created."
 
 #: usr/lib/linuxmint/mintreport/tray.py:149
 msgid "Automatic Updates"
-msgstr "Atualizações automáticas"
+msgstr "Automatic Updates"
 
 #: usr/lib/linuxmint/mintreport/tray.py:149
 msgid "Automatic updates are being installed."
-msgstr "Atualizações automáticas estão sendo instaladas."
+msgstr "Automatic updates are being installed."
 
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
 msgid "Troubleshoot problems"
-msgstr "Solução de problemas"
+msgstr "Troubleshoot problems"
 
 #: generate_desktop_files:53
 msgid "Troubleshooting Tool"
-msgstr "Ferramenta de Solução de Problemas"
+msgstr "Troubleshooting Tool"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:1
 msgid "Running system checks..."
-msgstr "Executando verificações do sistema..."
+msgstr "Running system checks..."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:2
 msgid "No problems were detected"
-msgstr "Nenhum problema foi detectado"
+msgstr "No problems were detected"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:3
 msgid "System reports"
-msgstr "Relatórios do sistema"
+msgstr "System reports"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:4
 msgid "Copy"
-msgstr "Copiar"
+msgstr "Copy"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:5
 msgid ""
 "Copy to clipboard (code tags are added to make it easy to paste the system "
 "information into the forums)"
 msgstr ""
-"Copiar para área de transferência (tags de código são adicionados para "
-"facilitar a colagem das informações do sistema nos fóruns)"
+"Copy to clipboard (code tags are added to make it easy to paste the system "
+"information into the forums)"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:6
 msgid "Upload"
-msgstr "Enviar"
+msgstr "Upload"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:7
 msgid "Upload to a pastebin service (no personal information included)"
-msgstr ""
-"Enviar para um serviço de armazenamento de texto (nenhuma informação pessoal "
-"incluída)"
+msgstr "Upload to a pastebin service (no personal information included)"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:8
 msgid "System information"
-msgstr "Informações do sistema"
+msgstr "System information"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:9
 msgid "Crash reports are not available"
-msgstr "Relatórios de falhas não estão disponíveis"
+msgstr "Crash reports are not available"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:10
 msgid ""
 "To enable crash reporting, install systemd-coredump and reboot your computer."
 msgstr ""
-"Para ativar o relatório de falhas, instale o systemd-coredump e reinicie o "
-"seu computador."
+"To enable crash reporting, install systemd-coredump and reboot your computer."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:11
 msgid "Crash reports:"
-msgstr "Relatório de erros:"
+msgstr "Crash reports:"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:12
 msgid "Stack trace:"
-msgstr "Rastreamento da pilha (Stack Trace):"
+msgstr "Stack trace:"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:13
 msgid ""
 "When seeking help, check for existing bug reports, pastebin the trace, share "
 "crash.tar.gz (from Local Files) and explain how to reproduce the crash."
 msgstr ""
-"Ao procurar ajuda, verifique por relatórios de erros existentes, informe o "
-"rastreamento, compartilhe o arquivo crash.tar.gz (dos Arquivos Locais) e "
-"explique como reproduzir o erro."
+"When seeking help, check for existing bug reports, pastebin the trace, share "
+"crash.tar.gz (from Local Files) and explain how to reproduce the crash."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:14
 msgid "Local Files"
-msgstr "Arquivos Locais"
+msgstr "Local Files"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:15
 msgid "Open the directory containing crash.tar.gz and its content."
-msgstr "Abra o diretório contendo crash.tar.gz e seu conteúdo."
+msgstr "Open the directory containing crash.tar.gz and its content."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:16
 msgid "Bug Tracker"
-msgstr "Rastreamento de Bug"
+msgstr "Bug Tracker"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:17
 msgid "Find the most appropriate bug tracker."
-msgstr "Encontre o rastreador de Bugs mais apropriado."
+msgstr "Find the most appropriate bug tracker."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:18
 msgid "Pastebin"
@@ -259,7 +256,7 @@ msgstr "Pastebin"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:19
 msgid "Upload the trace to the Internet."
-msgstr "Envie o rastreamento para a Internet."
+msgstr "Upload the trace to the Internet."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:20
 msgid ""
@@ -267,210 +264,202 @@ msgid ""
 "Always provide a trace and reliable instructions to trigger/observe the "
 "problem."
 msgstr ""
-"Os desenvolvedores precisam saber onde o código falha ou como reproduzir o "
-"problema. Sempre forneça um rastreamento e instruções confiáveis para "
-"desencadear/observar o problema."
+"Developers need to know where the code fails or how to reproduce the issue. "
+"Always provide a trace and reliable instructions to trigger/observe the "
+"problem."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:21
 msgid "Crash reports"
-msgstr "Relatórios de Erros"
+msgstr "Crash reports"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
 msgid "Add the XApp Status applet"
-msgstr "Adicionar o applet do XApp Status"
+msgstr "Add the XApp Status applet"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:37
 msgid ""
 "The XApp Status applet allows applications to provide a tray icon without "
 "rendering glitches and with support for HiDPI and symbolic icons."
 msgstr ""
-"O applet XApp Status permite que os aplicativos forneçam um ícone na bandeja "
-"sem apresentar falhas e com suporte para HiDPI e ícones simbólicos."
+"The XApp Status applet allows applications to provide a tray icon without "
+"rendering glitches and with support for HiDPI and symbolic icons."
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:39
 msgid "Right-click the panel and choose 'Add to Panel'."
-msgstr ""
-"Clique com o botão direito do mouse no painel e escolha 'Adicionar ao "
-"Painel'."
+msgstr "Right-click the panel and choose 'Add to Panel'."
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:46
 msgid "Add the XApp Status applet to the panel"
-msgstr "Adicione o applet XApp Status ao painel"
+msgstr "Add the XApp Status applet to the panel"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:16
 msgid "Install multimedia codecs"
-msgstr "Instalar codecs multimídia"
+msgstr "Install multimedia codecs"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:30
 msgid ""
 "Multimedia codecs are required to play some video formats and to properly "
 "render some websites."
 msgstr ""
-"Codecs multimídia são necessários para exibir alguns formatos de vídeo e "
-"para renderizar alguns sites da web."
+"Multimedia codecs are required to play some video formats and to properly "
+"render some websites."
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:36
 msgid "Install the Multimedia Codecs"
-msgstr "Instalar os Codecs Multimídia"
+msgstr "Install the Multimedia Codecs"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:17
 msgid "Set up the system restore utility"
-msgstr "Configurar o utilitário de recuperação do sistema"
+msgstr "Set up the system restore utility"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:31
 msgid "Linux Mint provides a system restore utility called Timeshift."
-msgstr ""
-"Linux Mint fornece um utilitários de recuperação do sistema chamado "
-"Timeshift."
+msgstr "Linux Mint provides a system restore utility called Timeshift."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:32
 msgid ""
 "Thanks to Timeshift you can take snapshots of the system, either manually or "
 "automatically."
 msgstr ""
-"Graças ao Timeshift você pode fazer snapshots do sistema, manualmente ou "
-"automaticamente."
+"Thanks to Timeshift you can take snapshots of the system, either manually or "
+"automatically."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:33
 msgid ""
 "If something goes wrong you can then restore your operating system from a "
 "previously saved snapshot."
 msgstr ""
-"Se alguma coisa sair errado você pode restaurar o seu sistema operacional de "
-"um snapshot salvo anteriormente."
+"If something goes wrong you can then restore your operating system from a "
+"previously saved snapshot."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:39
 msgid "Launch Timeshift"
-msgstr "Iniciar Timeshift"
+msgstr "Launch Timeshift"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:17
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:17
 msgid "A new version of Linux Mint is available"
-msgstr "Uma nova versão do Linux Mint está disponível"
+msgstr "A new version of Linux Mint is available"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:47
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:50
 #, python-format
 msgid "Visit %s for the latest announcements."
-msgstr "Visite %s para os últimos anúncios."
+msgstr "Visit %s for the latest announcements."
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:53
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:56
 #, python-format
 msgid "Upgrade to %s"
-msgstr "Atualizar para %s"
+msgstr "Upgrade to %s"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:49
 msgid "Your version of Linux Mint will soon reach End-Of-Life (EOL)"
-msgstr ""
-"Sua versão do Linux Mint chegará em breve End-Of-Life (EOL) (Fim de vida)"
+msgstr "Your version of Linux Mint will soon reach End-Of-Life (EOL)"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:50
 #, python-brace-format
 msgid "It will stop receiving support and updates in a day."
 msgid_plural "It will stop receiving support and updates in {num_days} days."
-msgstr[0] "Ele deixará de receber suporte e atualizações em um dia."
-msgstr[1] "Ele deixará de receber suporte e atualizações em {num_days} dias."
+msgstr[0] "It will stop receiving support and updates in a day."
+msgstr[1] "It will stop receiving support and updates in {num_days} days."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:54
 msgid "Your version of Linux Mint is no longer supported"
-msgstr "Sua versão do Linux Mint não é mais suportada"
+msgstr "Your version of Linux Mint is no longer supported"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:55
 #, python-brace-format
 msgid "It reached End-Of-Life (EOL) yesterday."
 msgid_plural "It reached End-Of-Life (EOL) {num_days} days ago."
-msgstr[0] "Atingiu o Fin de Vida ontem."
-msgstr[1] "Atingiu o Fin de Vida {num_days} dias atrás."
+msgstr[0] "It reached End-Of-Life (EOL) yesterday."
+msgstr[1] "It reached End-Of-Life (EOL) {num_days} days ago."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:66
 #, python-format
 msgid "Visit %s to find information about newer releases."
-msgstr ""
-"Visite %s para encontrar informações sobre lançamentos mais recentes."
+msgstr "Visit %s to find information about newer releases."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:16
 msgid "Perform usrmerge conversion"
-msgstr "Executar conversão de usrmerge"
+msgstr "Perform usrmerge conversion"
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:50
 msgid "We recommend you convert your system with usrmerge."
-msgstr "Recomendamos que você converta seu sistema com usrmerge."
+msgstr "We recommend you convert your system with usrmerge."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:51
 msgid ""
 "This is done already for new installations of Linux Mint, starting with 20.1."
 msgstr ""
-"Isso já é feito para novas instalações do Linux Mint, começando com 20.1."
+"This is already been done for new installations of Linux Mint, starting with "
+"20.1."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:52
 msgid "To convert your system, open a terminal and type:"
-msgstr "Para converter seu sistema, abra um terminal e digite:"
+msgstr "To convert your system, open a terminal and type:"
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:54
 msgid "You should reboot the computer once this completes."
-msgstr "Você deve reiniciar o computador assim que terminar."
+msgstr "You should reboot the computer once this completes."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:60
 msgid "More information"
-msgstr "Mais informações"
+msgstr "More information"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:17
 msgid "Remove conflicting indicators"
-msgstr "Remover os indicadores conflitantes"
+msgstr "Remove conflicting indicators"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:37
 msgid "The following packages prevent tray icons from working properly:"
-msgstr ""
-"Os seguintes pacotes impedem que os ícones da área de notificação funcione "
-"normalmente"
+msgstr "The following packages prevent tray icons from working properly:"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:39
 msgid "Note: You will need to log out after removing them."
-msgstr "Obs.: Vocẽ precisará encerrar a sessão após removê-lo"
+msgstr "Note: You will need to log out after removing them."
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:45
 msgid "Remove the conflicting packages."
-msgstr "Remover os pacotes conflitantes"
+msgstr "Remove the conflicting packages."
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:26
 msgid "Install language packs"
-msgstr "Instalar pacotes de idiomas"
+msgstr "Install language packs"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:41
 msgid ""
 "The following localization packages are missing to properly support your "
 "language:"
 msgstr ""
-"Os seguintes pacotes de localização estão ausentes para oferecer suporte "
-"adequado ao seu idioma:"
+"The following localization packages are missing to properly support your "
+"language:"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:48
 msgid "Install the Language Packs"
-msgstr "Instale os pacotes de idiomas"
+msgstr "Install the Language Packs"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:19
 msgid "Install hardware drivers"
-msgstr "Instalar drivers de hardware"
+msgstr "Install hardware drivers"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:28
 msgid "Processor"
-msgstr "Processador"
+msgstr "Processor"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:41
 msgid "Unknown"
-msgstr "Desconhecido"
+msgstr "Unknown"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:45
 #, python-format
 msgid "%s (unknown)"
-msgstr "%s (desconhecido)"
+msgstr "%s (unknown)"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:100
 msgid "Hardware drivers are available for the following devices:"
-msgstr ""
-"Os drivers de hardware estão disponíveis para os seguintes dispositivos:"
+msgstr "Hardware drivers are available for the following devices:"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:107
 msgid "Launch the Driver Manager"
-msgstr "Inicie o Gerenciador de drivers"
+msgstr "Launch the Driver Manager"

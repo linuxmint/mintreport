@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2022-05-24 17:21+0100\n"
-"PO-Revision-Date: 2022-06-05 16:49+0000\n"
+"PO-Revision-Date: 2022-07-24 13:09+0000\n"
 "Last-Translator: Piet Coppens <Unknown>\n"
 "Language-Team: Esperanto <eo@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2022-07-24 09:43+0000\n"
-"X-Generator: Launchpad (build 025a39fd866a641b6ae33074cda0d02a2c712d38)\n"
+"X-Launchpad-Export-Date: 2022-12-02 13:29+0000\n"
+"X-Generator: Launchpad (build 51cef3d08dff1e227b5ada709bd67280c567d4be)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
 #: usr/lib/linuxmint/mintreport/app.py:245 generate_desktop_files:25
@@ -231,9 +231,9 @@ msgid ""
 "When seeking help, check for existing bug reports, pastebin the trace, share "
 "crash.tar.gz (from Local Files) and explain how to reproduce the crash."
 msgstr ""
-"Kiam vi volas helpon, serĉu jamajn cimraportojn, alŝutu al pastebin la "
+"Kiam vi deziras helpon, serĉu ekzistajn cimraportojn, alŝutu al pastebin la "
 "spurodosieron, konigu crash.tar.gz (el lokaj dosieroj) kaj klarigu, kiel "
-"reaperigi la kraŝon."
+"reprodukti la kraŝon."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:14
 msgid "Local Files"
@@ -265,7 +265,7 @@ msgid ""
 "Always provide a trace and reliable instructions to trigger/observe the "
 "problem."
 msgstr ""
-"Programistoj bezonas ekscii, kie la programkodo eraras, aŭ kiel reaperigi la "
+"Programistoj bezonas scii, kie la programkodo eraras, aŭ kiel reprodukti la "
 "malfacilaĵon. Nepre provizu spurodosieron kaj fidindajn instrukciojn por "
 "ekestigi/observi la problemon."
 
@@ -283,8 +283,8 @@ msgid ""
 "rendering glitches and with support for HiDPI and symbolic icons."
 msgstr ""
 "La aplikaĵeto pri xapa stato permesas al aplikaĵoj provizi taskopletan "
-"piktogramon sen bildigi missignalojn kaj kun subteno por alta bildera "
-"denseco kaj simbolaj piktogramoj."
+"bildsimbolon sen bildigi missignalojn kaj kun subteno por alta bildera "
+"denseco kaj bildsimboloj."
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:39
 msgid "Right-click the panel and choose 'Add to Panel'."
@@ -363,8 +363,8 @@ msgstr "Via versio de Linukso Minto baldaŭ atingos vivofinon"
 #, python-brace-format
 msgid "It will stop receiving support and updates in a day."
 msgid_plural "It will stop receiving support and updates in {num_days} days."
-msgstr[0] "Ĝi ne plu ricevos subtenon kaj ĝisdatigojn en tago."
-msgstr[1] "Ĝi ne plu ricevos subtenon kaj ĝisdatigojn en {num_days} tagoj."
+msgstr[0] "Ĝi ĉesos ricevi subtenon kaj ĝisdatigojn en tago."
+msgstr[1] "Ĝi ĉesos ricevi subtenon kaj ĝisdatigojn en {num_days} tagoj."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:54
 msgid "Your version of Linux Mint is no longer supported"
@@ -401,7 +401,7 @@ msgstr "Por konverti vian sistemon, malfermu terminalon kaj tajpu:"
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:54
 msgid "You should reboot the computer once this completes."
-msgstr "Restartigu la komputilon post konverto."
+msgstr "Restartigu la komputilon post konvertado."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:60
 msgid "More information"
@@ -413,7 +413,8 @@ msgstr "Forigi konfliktajn indikilojn"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:37
 msgid "The following packages prevent tray icons from working properly:"
-msgstr "La sekvaj paketoj malebligas decan funkciadon de taskopletoj:"
+msgstr ""
+"La sekvaj pakoj malebligas decan funkciadon de taskopletaj bildsimboloj:"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:39
 msgid "Note: You will need to log out after removing them."
@@ -421,7 +422,7 @@ msgstr "Komento: Vi bezonos elsaluti post la forigo."
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:45
 msgid "Remove the conflicting packages."
-msgstr "Forigi la konfliktajn paketojn."
+msgstr "Forigi la konfliktajn pakojn."
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:26
 msgid "Install language packs"
@@ -431,7 +432,7 @@ msgstr "Instali lingvajn pakojn"
 msgid ""
 "The following localization packages are missing to properly support your "
 "language:"
-msgstr "La jenaj tradukpakoj mankas por dece subteni vian lingvon:"
+msgstr "La sekvaj tradukpakoj mankas por dece subteni vian lingvon:"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:48
 msgid "Install the Language Packs"
@@ -447,7 +448,7 @@ msgstr "Procesoro"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:41
 msgid "Unknown"
-msgstr "Nekonata"
+msgstr "Nekonate"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:45
 #, python-format
@@ -456,7 +457,7 @@ msgstr "%s (nekonata)"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:100
 msgid "Hardware drivers are available for the following devices:"
-msgstr "Aparatar-peliloj disponeblas por jenaj aparatoj:"
+msgstr "Aparatar-peliloj disponeblas por la sekvaj aparatoj:"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:107
 msgid "Launch the Driver Manager"
