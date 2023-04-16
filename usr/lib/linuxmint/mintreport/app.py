@@ -189,23 +189,18 @@ class MintReportWindow():
         self.window.add_accel_group(accel_group)
 
         # Menubar
-        menubar = self.builder.get_object("menubar")
-        menu = Gtk.MenuItem.new_with_mnemonic(_("_File"))
-        menubar.append(menu)
-        submenu = Gtk.Menu()
-        menu.set_submenu(submenu)
+        menu = self.builder.get_object("main_menu")
 
-        item = Gtk.ImageMenuItem(label=_("Refresh"))
-        image = Gtk.Image.new_from_icon_name("view-refresh-symbolic", Gtk.IconSize.MENU)
-        item.set_image(image)
-        item.connect('activate', self.on_menu_refresh)
+        refresh_button = self.builder.get_object("refresh_button")
+        refresh_button.connect('clicked', self.on_menu_refresh)
         key, mod = Gtk.accelerator_parse("<Control>R")
-        item.add_accelerator("activate", accel_group, key, mod, Gtk.AccelFlags.VISIBLE)
-        submenu.append(item)
+        refresh_button.add_accelerator("activate", accel_group, key, mod, Gtk.AccelFlags.VISIBLE)
+
         item = Gtk.ImageMenuItem(label=_("Restore ignored reports"))
         item.connect('activate', self.on_menu_restore)
-        submenu.append(item)
-        submenu.append(Gtk.SeparatorMenuItem())
+        menu.append(item)
+        menu.append(Gtk.SeparatorMenuItem())
+
         item = Gtk.ImageMenuItem(label=_("Quit"))
         image = Gtk.Image.new_from_icon_name("application-exit-symbolic", Gtk.IconSize.MENU)
         item.set_image(image)
@@ -214,18 +209,15 @@ class MintReportWindow():
         item.add_accelerator("activate", accel_group, key, mod, Gtk.AccelFlags.VISIBLE)
         key, mod = Gtk.accelerator_parse("<Control>W")
         item.add_accelerator("activate", accel_group, key, mod, Gtk.AccelFlags.VISIBLE)
-        submenu.append(item)
-        menubar.show_all()
+        menu.append(item)
 
-        menu = Gtk.MenuItem.new_with_mnemonic(_("_Help"))
-        menubar.append(menu)
-        submenu = Gtk.Menu()
-        menu.set_submenu(submenu)
         item = Gtk.ImageMenuItem()
         item.set_image(Gtk.Image.new_from_icon_name("help-about-symbolic", Gtk.IconSize.MENU))
         item.set_label(_("About"))
         item.connect("activate", self.open_about)
-        submenu.append(item)
+        menu.append(item)
+
+        menu.show_all()
 
     @property
     def cache(self):
