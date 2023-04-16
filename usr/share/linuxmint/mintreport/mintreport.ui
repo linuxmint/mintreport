@@ -660,7 +660,7 @@
               <object class="GtkImage">
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
-                <property name="icon-name">gtk-refresh-symbolic</property>
+                <property name="icon-name">view-refresh-symbolic</property>
               </object>
             </child>
           </object>
