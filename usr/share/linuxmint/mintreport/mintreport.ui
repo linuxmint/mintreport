@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Generated with glade 3.22.1 -->
+<!-- Generated with glade 3.38.2 -->
 <interface>
-  <requires lib="gtk+" version="3.12"/>
+  <requires lib="gtk+" version="3.20"/>
   <requires lib="xapp" version="0.0"/>
+  <object class="GtkMenu" id="main_menu">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+  </object>
   <object class="GtkWindow" id="main_window">
-    <property name="can_focus">False</property>
-    <property name="default_width">1024</property>
-    <property name="default_height">600</property>
-    <child>
-      <placeholder/>
-    </child>
+    <property name="can-focus">False</property>
+    <property name="default-width">1024</property>
+    <property name="default-height">600</property>
     <child>
       <object class="GtkBox">
         <property name="visible">True</property>
-        <property name="can_focus">False</property>
+        <property name="can-focus">False</property>
         <property name="orientation">vertical</property>
         <child>
           <object class="GtkMenuBar" id="menubar">
             <property name="visible">True</property>
-            <property name="can_focus">False</property>
+            <property name="can-focus">False</property>
           </object>
           <packing>
             <property name="expand">False</property>
@@ -29,12 +30,12 @@
         <child>
           <object class="GtkBox">
             <property name="visible">True</property>
-            <property name="can_focus">False</property>
+            <property name="can-focus">False</property>
             <property name="spacing">12</property>
             <child>
               <object class="XAppStackSidebar">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
+                <property name="can-focus">False</property>
                 <property name="stack">main_stack</property>
               </object>
               <packing>
@@ -46,32 +47,31 @@
             <child>
               <object class="GtkStack" id="main_stack">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="margin_right">12</property>
-                <property name="margin_top">12</property>
-                <property name="margin_bottom">12</property>
+                <property name="can-focus">False</property>
+                <property name="margin-top">12</property>
+                <property name="margin-bottom">12</property>
                 <child>
                   <object class="GtkStack" id="box_info_stack">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
                       <object class="GtkBox" id="box_info_reports">
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="orientation">vertical</property>
                         <property name="spacing">12</property>
                         <child>
                           <object class="GtkScrolledWindow" id="scrolledwindow_info_list">
                             <property name="visible">True</property>
-                            <property name="can_focus">True</property>
-                            <property name="shadow_type">in</property>
-                            <property name="min_content_height">120</property>
+                            <property name="can-focus">True</property>
+                            <property name="shadow-type">in</property>
+                            <property name="min-content-height">120</property>
                             <child>
                               <object class="GtkTreeView" id="treeview_info">
                                 <property name="visible">True</property>
-                                <property name="can_focus">True</property>
-                                <property name="headers_visible">False</property>
-                                <property name="rules_hint">True</property>
+                                <property name="can-focus">True</property>
+                                <property name="headers-visible">False</property>
+                                <property name="rules-hint">True</property>
                                 <child internal-child="selection">
                                   <object class="GtkTreeSelection"/>
                                 </child>
@@ -87,23 +87,23 @@
                         <child>
                           <object class="GtkScrolledWindow" id="scrolledwindow_info">
                             <property name="visible">True</property>
-                            <property name="can_focus">True</property>
-                            <property name="shadow_type">in</property>
+                            <property name="can-focus">True</property>
+                            <property name="shadow-type">in</property>
                             <child>
                               <object class="GtkViewport">
                                 <property name="visible">True</property>
-                                <property name="can_focus">False</property>
+                                <property name="can-focus">False</property>
                                 <child>
                                   <object class="GtkBox" id="info_box">
                                     <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
-                                    <property name="border_width">20</property>
+                                    <property name="can-focus">False</property>
+                                    <property name="border-width">20</property>
                                     <property name="orientation">vertical</property>
                                     <property name="spacing">20</property>
                                     <child>
                                       <object class="GtkImage" id="info_icon_image">
                                         <property name="visible">True</property>
-                                        <property name="can_focus">False</property>
+                                        <property name="can-focus">False</property>
                                       </object>
                                       <packing>
                                         <property name="expand">False</property>
@@ -114,7 +114,7 @@
                                     <child>
                                       <object class="GtkLabel" id="info_title_label">
                                         <property name="visible">True</property>
-                                        <property name="can_focus">False</property>
+                                        <property name="can-focus">False</property>
                                         <attributes>
                                           <attribute name="weight" value="bold"/>
                                           <attribute name="scale" value="1.2"/>
@@ -129,7 +129,7 @@
                                     <child>
                                       <object class="GtkBox" id="info_descriptions_box">
                                         <property name="visible">True</property>
-                                        <property name="can_focus">False</property>
+                                        <property name="can-focus">False</property>
                                         <property name="orientation">vertical</property>
                                         <property name="spacing">6</property>
                                         <child>
@@ -145,10 +145,10 @@
                                     <child>
                                       <object class="GtkButtonBox" id="info_button_box">
                                         <property name="visible">True</property>
-                                        <property name="can_focus">False</property>
+                                        <property name="can-focus">False</property>
                                         <property name="orientation">vertical</property>
                                         <property name="spacing">6</property>
-                                        <property name="layout_style">center</property>
+                                        <property name="layout-style">center</property>
                                         <child>
                                           <placeholder/>
                                         </child>
@@ -181,7 +181,7 @@
                     <child>
                       <object class="GtkBox" id="box_info_spinner">
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="valign">center</property>
                         <property name="hexpand">True</property>
                         <property name="vexpand">True</property>
@@ -189,9 +189,9 @@
                         <property name="spacing">12</property>
                         <child>
                           <object class="GtkSpinner" id="info_spinner">
-                            <property name="height_request">32</property>
+                            <property name="height-request">32</property>
                             <property name="visible">True</property>
-                            <property name="can_focus">False</property>
+                            <property name="can-focus">False</property>
                           </object>
                           <packing>
                             <property name="expand">True</property>
@@ -202,7 +202,7 @@
                         <child>
                           <object class="GtkLabel">
                             <property name="visible">True</property>
-                            <property name="can_focus">False</property>
+                            <property name="can-focus">False</property>
                             <property name="label" translatable="yes">Running system checks...</property>
                             <attributes>
                               <attribute name="weight" value="bold"/>
@@ -223,7 +223,7 @@
                     <child>
                       <object class="GtkBox" id="box_info_done">
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="valign">center</property>
                         <property name="hexpand">True</property>
                         <property name="vexpand">True</property>
@@ -231,9 +231,9 @@
                         <child>
                           <object class="GtkImage">
                             <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="pixel_size">96</property>
-                            <property name="icon_name">object-select-symbolic</property>
+                            <property name="can-focus">False</property>
+                            <property name="pixel-size">96</property>
+                            <property name="icon-name">object-select-symbolic</property>
                             <property name="icon_size">6</property>
                           </object>
                           <packing>
@@ -245,7 +245,7 @@
                         <child>
                           <object class="GtkLabel">
                             <property name="visible">True</property>
-                            <property name="can_focus">False</property>
+                            <property name="can-focus">False</property>
                             <property name="label" translatable="yes">No problems were detected</property>
                             <attributes>
                               <attribute name="weight" value="bold"/>
@@ -267,35 +267,35 @@
                   <packing>
                     <property name="name">page1</property>
                     <property name="title" translatable="yes">System reports</property>
-                    <property name="icon_name">mintreport-symbolic</property>
+                    <property name="icon-name">mintreport-symbolic</property>
                   </packing>
                 </child>
                 <child>
                   <object class="GtkBox" id="box_sysinfo">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <property name="orientation">vertical</property>
                     <property name="spacing">12</property>
                     <child>
                       <object class="GtkBox">
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="orientation">vertical</property>
                         <property name="spacing">6</property>
                         <child>
                           <object class="GtkScrolledWindow" id="scrolledwindow_sysinfo">
                             <property name="visible">True</property>
-                            <property name="can_focus">True</property>
-                            <property name="shadow_type">in</property>
+                            <property name="can-focus">True</property>
+                            <property name="shadow-type">in</property>
                             <child>
                               <object class="GtkTextView" id="textview_sysinfo">
                                 <property name="visible">True</property>
-                                <property name="can_focus">True</property>
-                                <property name="pixels_above_lines">3</property>
-                                <property name="pixels_below_lines">3</property>
-                                <property name="pixels_inside_wrap">1</property>
-                                <property name="left_margin">3</property>
-                                <property name="right_margin">3</property>
+                                <property name="can-focus">True</property>
+                                <property name="pixels-above-lines">3</property>
+                                <property name="pixels-below-lines">3</property>
+                                <property name="pixels-inside-wrap">1</property>
+                                <property name="left-margin">3</property>
+                                <property name="right-margin">3</property>
                                 <property name="monospace">True</property>
                               </object>
                             </child>
@@ -309,16 +309,16 @@
                         <child>
                           <object class="GtkButtonBox" id="buttonbox3">
                             <property name="visible">True</property>
-                            <property name="can_focus">False</property>
+                            <property name="can-focus">False</property>
                             <property name="spacing">6</property>
-                            <property name="layout_style">end</property>
+                            <property name="layout-style">end</property>
                             <child>
                               <object class="GtkButton" id="button_sysinfo_copy">
                                 <property name="label" translatable="yes">Copy</property>
                                 <property name="visible">True</property>
-                                <property name="can_focus">True</property>
-                                <property name="receives_default">True</property>
-                                <property name="tooltip_text" translatable="yes">Copy to clipboard (code tags are added to make it easy to paste the system information into the forums)</property>
+                                <property name="can-focus">True</property>
+                                <property name="receives-default">True</property>
+                                <property name="tooltip-text" translatable="yes">Copy to clipboard (code tags are added to make it easy to paste the system information into the forums)</property>
                               </object>
                               <packing>
                                 <property name="expand">True</property>
@@ -330,9 +330,9 @@
                               <object class="GtkButton" id="button_sysinfo_upload">
                                 <property name="label" translatable="yes">Upload</property>
                                 <property name="visible">True</property>
-                                <property name="can_focus">True</property>
-                                <property name="receives_default">True</property>
-                                <property name="tooltip_text" translatable="yes">Upload to a pastebin service (no personal information included)</property>
+                                <property name="can-focus">True</property>
+                                <property name="receives-default">True</property>
+                                <property name="tooltip-text" translatable="yes">Upload to a pastebin service (no personal information included)</property>
                               </object>
                               <packing>
                                 <property name="expand">True</property>
@@ -358,18 +358,18 @@
                   <packing>
                     <property name="name">page2</property>
                     <property name="title" translatable="yes">System information</property>
-                    <property name="icon_name">dialog-information-symbolic</property>
+                    <property name="icon-name">dialog-information-symbolic</property>
                     <property name="position">1</property>
                   </packing>
                 </child>
                 <child>
                   <object class="GtkStack" id="crash_internal_stack">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
                       <object class="GtkBox">
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                         <property name="orientation">vertical</property>
@@ -377,7 +377,7 @@
                         <child>
                           <object class="GtkLabel">
                             <property name="visible">True</property>
-                            <property name="can_focus">False</property>
+                            <property name="can-focus">False</property>
                             <property name="label" translatable="yes">Crash reports are not available</property>
                             <property name="wrap">True</property>
                             <attributes>
@@ -393,7 +393,7 @@
                         <child>
                           <object class="GtkLabel">
                             <property name="visible">True</property>
-                            <property name="can_focus">False</property>
+                            <property name="can-focus">False</property>
                             <property name="label" translatable="yes">To enable crash reporting, install systemd-coredump and reboot your computer.</property>
                             <property name="wrap">True</property>
                           </object>
@@ -411,13 +411,13 @@
                     <child>
                       <object class="GtkBox" id="box_crash_reports">
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="orientation">vertical</property>
                         <property name="spacing">12</property>
                         <child>
                           <object class="GtkLabel" id="label1">
                             <property name="visible">True</property>
-                            <property name="can_focus">False</property>
+                            <property name="can-focus">False</property>
                             <property name="label" translatable="yes">Crash reports:</property>
                             <property name="xalign">0</property>
                             <attributes>
@@ -433,15 +433,15 @@
                         <child>
                           <object class="GtkScrolledWindow" id="scrolledwindow_crash_list">
                             <property name="visible">True</property>
-                            <property name="can_focus">True</property>
-                            <property name="shadow_type">in</property>
-                            <property name="min_content_height">100</property>
+                            <property name="can-focus">True</property>
+                            <property name="shadow-type">in</property>
+                            <property name="min-content-height">100</property>
                             <child>
                               <object class="GtkTreeView" id="treeview_crashes">
                                 <property name="visible">True</property>
-                                <property name="can_focus">True</property>
-                                <property name="headers_visible">False</property>
-                                <property name="rules_hint">True</property>
+                                <property name="can-focus">True</property>
+                                <property name="headers-visible">False</property>
+                                <property name="rules-hint">True</property>
                                 <child internal-child="selection">
                                   <object class="GtkTreeSelection"/>
                                 </child>
@@ -457,11 +457,11 @@
                         <child>
                           <object class="GtkStack" id="crash_stack">
                             <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="transition_type">over-up-down</property>
+                            <property name="can-focus">False</property>
+                            <property name="transition-type">over-up-down</property>
                             <child>
                               <object class="GtkSpinner" id="crash_spinner">
-                                <property name="can_focus">False</property>
+                                <property name="can-focus">False</property>
                               </object>
                               <packing>
                                 <property name="name">page0</property>
@@ -470,13 +470,13 @@
                             <child>
                               <object class="GtkBox" id="box3">
                                 <property name="visible">True</property>
-                                <property name="can_focus">False</property>
+                                <property name="can-focus">False</property>
                                 <property name="orientation">vertical</property>
                                 <property name="spacing">12</property>
                                 <child>
                                   <object class="GtkLabel" id="label2">
                                     <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
+                                    <property name="can-focus">False</property>
                                     <property name="label" translatable="yes">Stack trace:</property>
                                     <property name="xalign">0</property>
                                     <attributes>
@@ -492,7 +492,7 @@
                                 <child>
                                   <object class="GtkLabel">
                                     <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
+                                    <property name="can-focus">False</property>
                                     <property name="label" translatable="yes">When seeking help, check for existing bug reports, pastebin the trace, share crash.tar.gz (from Local Files) and explain how to reproduce the crash.</property>
                                     <property name="wrap">True</property>
                                     <property name="xalign">0</property>
@@ -506,13 +506,13 @@
                                 <child>
                                   <object class="GtkBox" id="box2">
                                     <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
+                                    <property name="can-focus">False</property>
                                     <property name="spacing">6</property>
                                     <child>
                                       <object class="GtkScrolledWindow" id="scrolledwindow_crash">
                                         <property name="visible">True</property>
-                                        <property name="can_focus">True</property>
-                                        <property name="shadow_type">in</property>
+                                        <property name="can-focus">True</property>
+                                        <property name="shadow-type">in</property>
                                         <child>
                                           <placeholder/>
                                         </child>
@@ -526,18 +526,18 @@
                                     <child>
                                       <object class="GtkButtonBox" id="buttonbox1">
                                         <property name="visible">True</property>
-                                        <property name="can_focus">False</property>
+                                        <property name="can-focus">False</property>
                                         <property name="orientation">vertical</property>
                                         <property name="spacing">6</property>
-                                        <property name="layout_style">start</property>
+                                        <property name="layout-style">start</property>
                                         <child>
                                           <object class="GtkButton" id="button_browse_crash_report">
                                             <property name="label" translatable="yes">Local Files</property>
                                             <property name="visible">True</property>
                                             <property name="sensitive">False</property>
-                                            <property name="can_focus">True</property>
-                                            <property name="receives_default">True</property>
-                                            <property name="tooltip_text" translatable="yes">Open the directory containing crash.tar.gz and its content.</property>
+                                            <property name="can-focus">True</property>
+                                            <property name="receives-default">True</property>
+                                            <property name="tooltip-text" translatable="yes">Open the directory containing crash.tar.gz and its content.</property>
                                           </object>
                                           <packing>
                                             <property name="expand">True</property>
@@ -550,9 +550,9 @@
                                             <property name="label" translatable="yes">Bug Tracker</property>
                                             <property name="visible">True</property>
                                             <property name="sensitive">False</property>
-                                            <property name="can_focus">True</property>
-                                            <property name="receives_default">True</property>
-                                            <property name="tooltip_text" translatable="yes">Find the most appropriate bug tracker.</property>
+                                            <property name="can-focus">True</property>
+                                            <property name="receives-default">True</property>
+                                            <property name="tooltip-text" translatable="yes">Find the most appropriate bug tracker.</property>
                                           </object>
                                           <packing>
                                             <property name="expand">True</property>
@@ -564,9 +564,9 @@
                                           <object class="GtkButton" id="button_pastebin">
                                             <property name="label" translatable="yes">Pastebin</property>
                                             <property name="visible">True</property>
-                                            <property name="can_focus">True</property>
-                                            <property name="receives_default">True</property>
-                                            <property name="tooltip_text" translatable="yes">Upload the trace to the Internet.</property>
+                                            <property name="can-focus">True</property>
+                                            <property name="receives-default">True</property>
+                                            <property name="tooltip-text" translatable="yes">Upload the trace to the Internet.</property>
                                           </object>
                                           <packing>
                                             <property name="expand">True</property>
@@ -591,7 +591,7 @@
                                 <child>
                                   <object class="GtkLabel">
                                     <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
+                                    <property name="can-focus">False</property>
                                     <property name="label" translatable="yes">Developers need to know where the code fails or how to reproduce the issue. Always provide a trace and reliable instructions to trigger/observe the problem.</property>
                                     <property name="wrap">True</property>
                                     <property name="xalign">0</property>
@@ -625,7 +625,7 @@
                   <packing>
                     <property name="name">page0</property>
                     <property name="title" translatable="yes">Crash reports</property>
-                    <property name="icon_name">computer-fail-symbolic</property>
+                    <property name="icon-name">computer-fail-symbolic</property>
                     <property name="position">2</property>
                   </packing>
                 </child>
@@ -640,6 +640,50 @@
           <packing>
             <property name="expand">True</property>
             <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+    <child type="titlebar">
+      <object class="GtkHeaderBar">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <property name="title" translatable="yes">System Reports</property>
+        <property name="subtitle" translatable="yes">Troubleshoot problems</property>
+        <property name="show-close-button">True</property>
+        <child>
+          <object class="GtkButton" id="refresh_button">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="tooltip-text" translatable="yes">Refresh</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="icon-name">view-refresh-symbolic</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkMenuButton">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="focus-on-click">False</property>
+            <property name="receives-default">True</property>
+            <property name="popup">main_menu</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="icon-name">open-menu-symbolic</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="pack-type">end</property>
             <property name="position">1</property>
           </packing>
         </child>
