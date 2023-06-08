@@ -1,3 +1,10 @@
+mintreport (1.3.9) victoria; urgency=medium
+
+  * l10n: Update translations
+  * l10n: Update files
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 08 Jun 2023 11:47:04 +0100
+
 mintreport (1.3.8) victoria; urgency=medium
 
   [ Axel ]
