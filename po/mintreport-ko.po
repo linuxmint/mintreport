@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2022-05-24 17:21+0100\n"
+"POT-Creation-Date: 2023-06-05 15:09+0100\n"
 "PO-Revision-Date: 2022-07-09 16:15+0000\n"
 "Last-Translator: Jung-Kyu Park <Unknown>\n"
 "Language-Team: Korean <ko@li.org>\n"
@@ -15,91 +15,79 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2022-12-02 13:29+0000\n"
-"X-Generator: Launchpad (build 51cef3d08dff1e227b5ada709bd67280c567d4be)\n"
+"X-Launchpad-Export-Date: 2023-06-08 10:22+0000\n"
+"X-Generator: Launchpad (build 620cd5280e3a973662e263ebf9346837ed657a46)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
-#: usr/lib/linuxmint/mintreport/app.py:245 generate_desktop_files:25
+#: usr/lib/linuxmint/mintreport/app.py:237 generate_desktop_files:25
 #: generate_desktop_files:39 generate_desktop_files:53
-#: generate_desktop_files:67
+#: generate_desktop_files:67 usr/share/linuxmint/mintreport/mintreport.ui.h:22
 msgid "System Reports"
 msgstr "민트 리포트"
 
-#: usr/lib/linuxmint/mintreport/app.py:193
-msgid "_File"
-msgstr "파일(_F)"
-
-#: usr/lib/linuxmint/mintreport/app.py:198
-msgid "Refresh"
-msgstr "새로고침"
-
-#: usr/lib/linuxmint/mintreport/app.py:205
+#: usr/lib/linuxmint/mintreport/app.py:199
 msgid "Restore ignored reports"
 msgstr "버린 리포트 복구하기"
 
-#: usr/lib/linuxmint/mintreport/app.py:209
-#: usr/lib/linuxmint/mintreport/tray.py:58
+#: usr/lib/linuxmint/mintreport/app.py:204
+#: usr/lib/linuxmint/mintreport/tray.py:72
 msgid "Quit"
 msgstr "끝내기"
 
-#: usr/lib/linuxmint/mintreport/app.py:220
-msgid "_Help"
-msgstr "도움말(_H)"
-
-#: usr/lib/linuxmint/mintreport/app.py:226
-#: usr/lib/linuxmint/mintreport/app.py:243
+#: usr/lib/linuxmint/mintreport/app.py:216
+#: usr/lib/linuxmint/mintreport/app.py:235
 msgid "About"
 msgstr "정보"
 
-#: usr/lib/linuxmint/mintreport/app.py:287
+#: usr/lib/linuxmint/mintreport/app.py:279
 msgid "An error occurred while gathering the system information."
 msgstr "시스템 정보를 모으는 동안 오류가 생겼습니다."
 
-#: usr/lib/linuxmint/mintreport/app.py:301
+#: usr/lib/linuxmint/mintreport/app.py:293
 msgid "System information copied"
 msgstr "시스템 정보를 복사했습니다"
 
-#: usr/lib/linuxmint/mintreport/app.py:301
+#: usr/lib/linuxmint/mintreport/app.py:293
 msgid ""
 "Your system information was copied into your clipboard so you can paste it "
 "on the forums."
 msgstr "시스템 정보를 클립보드에 복사했습니다. 이제 포럼에 붙여넣을 수 있습니다."
 
-#: usr/lib/linuxmint/mintreport/app.py:310
+#: usr/lib/linuxmint/mintreport/app.py:302
 msgid "System information uploaded"
 msgstr "시스템 정보를 업로드했습니다"
 
-#: usr/lib/linuxmint/mintreport/app.py:310
+#: usr/lib/linuxmint/mintreport/app.py:302
 #, python-format
 msgid ""
 "Your system information was uploaded to %s. This link was placed in your "
 "clipboard so you can paste it on IRC."
 msgstr "시스템 정보를 %s에 업로드했습니다. 링크는 클립보드에 저장되어있습니다 IRC에 붙여 넣으실 수 있습니다."
 
-#: usr/lib/linuxmint/mintreport/app.py:312
+#: usr/lib/linuxmint/mintreport/app.py:304
 msgid "An error occurred while uploading the system information"
 msgstr "시스템 정보를 업로드하는 동안 오류가 생겼습니다"
 
-#: usr/lib/linuxmint/mintreport/app.py:312
+#: usr/lib/linuxmint/mintreport/app.py:304
 msgid ""
 "Copy and paste the system information manually into a pastebin site like "
 "https://pastebin.com and share the link on IRC."
 msgstr ""
 "시스템 정보를 복사해서 pastbebin 같은 사이트 https://pastebin.com에 붙여 넣고 IRC에 링크를 공유하세요."
 
-#: usr/lib/linuxmint/mintreport/app.py:391
+#: usr/lib/linuxmint/mintreport/app.py:383
 msgid "Ignore this report"
 msgstr "이 보고 무시하기"
 
-#: usr/lib/linuxmint/mintreport/app.py:407
+#: usr/lib/linuxmint/mintreport/app.py:399
 msgid "Are you sure you want to ignore this report?"
 msgstr "정말로 이 보고를 무시하시겠습니까?"
 
-#: usr/lib/linuxmint/mintreport/app.py:408
+#: usr/lib/linuxmint/mintreport/app.py:400
 msgid "The report will be permanently ignored and will no longer be visible."
 msgstr "보고서는 영구적으로 무시되며 더 이상 표시되지 않습니다."
 
-#: usr/lib/linuxmint/mintreport/app.py:500
+#: usr/lib/linuxmint/mintreport/app.py:492
 #, python-format
 msgid ""
 "The debug symbols are missing for %(program)s.\n"
@@ -108,7 +96,7 @@ msgstr ""
 "%(program)s의 디버그 심벌이 없습니다.\n"
 "%(package)s 패키지를 설치해주세요."
 
-#: usr/lib/linuxmint/mintreport/app.py:514
+#: usr/lib/linuxmint/mintreport/app.py:506
 #, python-format
 msgid ""
 "The package providing %s could not be found.\n"
@@ -118,7 +106,7 @@ msgstr ""
 "%s를 제공하는 패키지를 찾을 수 없습니다.\n"
 "이 충돌 보고서에 대한 스택 트레이스를 만들려면, 다시 설치해주세요."
 
-#: usr/lib/linuxmint/mintreport/app.py:542
+#: usr/lib/linuxmint/mintreport/app.py:534
 msgid ""
 "The headers or binaries installed on your system do not match the code which "
 "was executed during the crash.\n"
@@ -130,32 +118,33 @@ msgstr ""
 "그 후로 업그레이드되지 않았나 합니다.\n"
 "스택 트레이스는 '로컬 파일'에서 가능하지만 그 내용은 정확하지 않을 수 있습니다."
 
-#: usr/lib/linuxmint/mintreport/tray.py:54
+#: usr/lib/linuxmint/mintreport/tray.py:68
 msgid "Show System Reports"
 msgstr "민트 리포트 보이기"
 
-#: usr/lib/linuxmint/mintreport/tray.py:132
+#: usr/lib/linuxmint/mintreport/tray.py:146
 msgid "Some system reports require your attention"
 msgstr "일부 시스템 보고서에 주의 필요"
 
-#: usr/lib/linuxmint/mintreport/tray.py:148
+#: usr/lib/linuxmint/mintreport/tray.py:156
 msgid "System Snapshots"
 msgstr "시스템 스냅샷"
 
-#: usr/lib/linuxmint/mintreport/tray.py:148
+#: usr/lib/linuxmint/mintreport/tray.py:156
 msgid "A Timeshift system snapshot is being created."
 msgstr "Timeshift 시스템 스냅샷이 생성되었습니다."
 
-#: usr/lib/linuxmint/mintreport/tray.py:149
+#: usr/lib/linuxmint/mintreport/tray.py:157
 msgid "Automatic Updates"
 msgstr "자동 업데이트"
 
-#: usr/lib/linuxmint/mintreport/tray.py:149
+#: usr/lib/linuxmint/mintreport/tray.py:157
 msgid "Automatic updates are being installed."
 msgstr "자동으로 업데이트가 설치됩니다."
 
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:23
 msgid "Troubleshoot problems"
 msgstr "문제 해결"
 
@@ -258,6 +247,10 @@ msgstr ""
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:21
 msgid "Crash reports"
 msgstr "충돌 보고서"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:24
+msgid "Refresh"
+msgstr "새로고침"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
 msgid "Add the XApp Status applet"

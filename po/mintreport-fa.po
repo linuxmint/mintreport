@@ -1,20 +1,20 @@
-# English (Canada) translation for linuxmint
-# Copyright (c) 2022 Rosetta Contributors and Canonical Ltd 2022
+# Persian translation for linuxmint
+# Copyright (c) 2023 Rosetta Contributors and Canonical Ltd 2023
 # This file is distributed under the same license as the linuxmint package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2023-06-05 15:09+0100\n"
-"PO-Revision-Date: 2022-08-05 22:22+0000\n"
-"Last-Translator: John Doe <Unknown>\n"
-"Language-Team: English (Canada) <en_CA@li.org>\n"
+"PO-Revision-Date: 2023-05-31 18:15+0000\n"
+"Last-Translator: Mr.Ravi <Unknown>\n"
+"Language-Team: Persian <fa@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Launchpad-Export-Date: 2023-06-08 10:22+0000\n"
 "X-Generator: Launchpad (build 620cd5280e3a973662e263ebf9346837ed657a46)\n"
 
@@ -23,41 +23,41 @@ msgstr ""
 #: generate_desktop_files:39 generate_desktop_files:53
 #: generate_desktop_files:67 usr/share/linuxmint/mintreport/mintreport.ui.h:22
 msgid "System Reports"
-msgstr "System Reports"
+msgstr "گزارشات سیستم"
 
 #: usr/lib/linuxmint/mintreport/app.py:199
 msgid "Restore ignored reports"
-msgstr "Restore ignored reports"
+msgstr "بازگردانی گزارشات نادیده گرفته شده"
 
 #: usr/lib/linuxmint/mintreport/app.py:204
 #: usr/lib/linuxmint/mintreport/tray.py:72
 msgid "Quit"
-msgstr "Quit"
+msgstr "خروج"
 
 #: usr/lib/linuxmint/mintreport/app.py:216
 #: usr/lib/linuxmint/mintreport/app.py:235
 msgid "About"
-msgstr "About"
+msgstr "درباره"
 
 #: usr/lib/linuxmint/mintreport/app.py:279
 msgid "An error occurred while gathering the system information."
-msgstr "An error occurred while gathering the system information."
+msgstr "خطایی هنگام جمع آوری اطلاعات سیستم رخ داد."
 
 #: usr/lib/linuxmint/mintreport/app.py:293
 msgid "System information copied"
-msgstr "System information copied"
+msgstr "اطلاعات سیستم کپی شد"
 
 #: usr/lib/linuxmint/mintreport/app.py:293
 msgid ""
 "Your system information was copied into your clipboard so you can paste it "
 "on the forums."
 msgstr ""
-"Your system information was copied into your clipboard so you can paste it "
-"on the forums."
+"اطلاعات سیستم شما در کلیپبورد رونویسی شد و میتوانید آنرا در فرم ها جایگذاری "
+"کنید."
 
 #: usr/lib/linuxmint/mintreport/app.py:302
 msgid "System information uploaded"
-msgstr "System information uploaded"
+msgstr "اطلاعات سیستم بارگذاری شد"
 
 #: usr/lib/linuxmint/mintreport/app.py:302
 #, python-format
@@ -65,33 +65,32 @@ msgid ""
 "Your system information was uploaded to %s. This link was placed in your "
 "clipboard so you can paste it on IRC."
 msgstr ""
-"Your system information was uploaded to %s. This link was placed in your "
-"clipboard so you can paste it on IRC."
+"اطلاعات سیستم شما به %s بارگذاری شد. لینک در کلیپبورد شما قرار گرفت تا "
+"بتوانید آنرا در IRC جایگذاری کنید."
 
 #: usr/lib/linuxmint/mintreport/app.py:304
 msgid "An error occurred while uploading the system information"
-msgstr "An error occurred while uploading the system information"
+msgstr "خطایی هنگام بارگذاری اطلاعات سیستم رخ داد"
 
 #: usr/lib/linuxmint/mintreport/app.py:304
 msgid ""
 "Copy and paste the system information manually into a pastebin site like "
 "https://pastebin.com and share the link on IRC."
 msgstr ""
-"Copy and paste the system information manually into a pastebin site like "
-"https://pastebin.com and share the link on IRC."
+"اطلاعات سیستم را رونوشت و به طور دستی در یک نوع سایت pastebin مانند "
+"https://pastebin.com جایگذاری کنید و لینک را در IRC به اشتراک بگذارید."
 
 #: usr/lib/linuxmint/mintreport/app.py:383
 msgid "Ignore this report"
-msgstr "Ignore this report"
+msgstr "چشم‌پوشی از این گزارش"
 
 #: usr/lib/linuxmint/mintreport/app.py:399
 msgid "Are you sure you want to ignore this report?"
-msgstr "Are you sure you want to ignore this report?"
+msgstr "مطمئنید میخواهید از این گزارش چشم‌پوشی کنید؟"
 
 #: usr/lib/linuxmint/mintreport/app.py:400
 msgid "The report will be permanently ignored and will no longer be visible."
-msgstr ""
-"The report will be permanently ignored and will no longer be visible."
+msgstr "از این گزارش برای همیشه چشم‌پوشی خواهد شد و دیگر نمایان نخواهد بود."
 
 #: usr/lib/linuxmint/mintreport/app.py:492
 #, python-format
@@ -99,8 +98,8 @@ msgid ""
 "The debug symbols are missing for %(program)s.\n"
 "Please install %(package)s."
 msgstr ""
-"The debug symbols are missing for %(program)s.\n"
-"Please install %(package)s."
+"سمبُل های debug برای %(program)s مفقود اند.\n"
+"لطفا %(package)s را نصب کنید."
 
 #: usr/lib/linuxmint/mintreport/app.py:506
 #, python-format
@@ -109,9 +108,9 @@ msgid ""
 "If you want to generate a stack trace for this crash report, please "
 "reinstall it."
 msgstr ""
-"The package providing %s could not be found.\n"
-"If you want to generate a stack trace for this crash report, please "
-"reinstall it."
+"بسته فراهم آورنده %s را نمیتوان یافت.\n"
+"اگر میخواهید یک ردِ دسته برای این گزارش خرابی ایجاد کنید، لطفا مجددا نصبش "
+"کنید."
 
 #: usr/lib/linuxmint/mintreport/app.py:534
 msgid ""
@@ -121,123 +120,122 @@ msgid ""
 "A stack trace is available in 'Local Files' but its content is probably "
 "inaccurate."
 msgstr ""
-"The headers or binaries installed on your system do not match the code which "
-"was executed during the crash.\n"
-"They probably got upgraded since.\n"
-"A stack trace is available in 'Local Files' but its content is probably "
-"inaccurate."
+"سربرگ‌ها و binary های نصب شده روی سیستم شما و کد اجرا شده هنگام خطا مطابقت "
+"ندارد."
 
 #: usr/lib/linuxmint/mintreport/tray.py:68
 msgid "Show System Reports"
-msgstr "Show System Reports"
+msgstr "نمایش گزارشات سیستم"
 
 #: usr/lib/linuxmint/mintreport/tray.py:146
 msgid "Some system reports require your attention"
-msgstr "Some system reports require your attention"
+msgstr "برخی گزارشات سیستم نیازمند توجه شما هستند"
 
 #: usr/lib/linuxmint/mintreport/tray.py:156
 msgid "System Snapshots"
-msgstr "System Snapshots"
+msgstr "اسنپ‌شات های سیستم"
 
 #: usr/lib/linuxmint/mintreport/tray.py:156
 msgid "A Timeshift system snapshot is being created."
-msgstr "A Timeshift system snapshot is being created."
+msgstr "یک اسنپ‌شات سیستم Timeshift درحال ایجاد است."
 
 #: usr/lib/linuxmint/mintreport/tray.py:157
 msgid "Automatic Updates"
-msgstr "Automatic Updates"
+msgstr "بروزرسانی‌های خودکار"
 
 #: usr/lib/linuxmint/mintreport/tray.py:157
 msgid "Automatic updates are being installed."
-msgstr "Automatic updates are being installed."
+msgstr "بروزرسانی های خودکار درحال نصب هستند."
 
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:23
 msgid "Troubleshoot problems"
-msgstr "Troubleshoot problems"
+msgstr "عیب‌یابی مشکلات"
 
 #: generate_desktop_files:53
 msgid "Troubleshooting Tool"
-msgstr "Troubleshooting Tool"
+msgstr "ابزار عیب‌یابی"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:1
 msgid "Running system checks..."
-msgstr "Running system checks..."
+msgstr "درحال اجرای بررسی‌های سیستم..."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:2
 msgid "No problems were detected"
-msgstr "No problems were detected"
+msgstr "مشکلی شناسایی نشد"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:3
 msgid "System reports"
-msgstr "System reports"
+msgstr "گزارشات سیستم"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:4
 msgid "Copy"
-msgstr "Copy"
+msgstr "رونوشت"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:5
 msgid ""
 "Copy to clipboard (code tags are added to make it easy to paste the system "
 "information into the forums)"
 msgstr ""
-"Copy to clipboard (code tags are added to make it easy to paste the system "
-"information into the forums)"
+"رونوشت به بریده‌دان (برچسب های کد اضافه میشوند تا جایگذاری اطلاعات سیستم را "
+"در فرم ها آسان کنند)"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:6
 msgid "Upload"
-msgstr "Upload"
+msgstr "بارگذاری"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:7
 msgid "Upload to a pastebin service (no personal information included)"
-msgstr "Upload to a pastebin service (no personal information included)"
+msgstr "برگذاری به سرویس pastebin  (شامل هیچ داده شخصی‌ای نیست)"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:8
 msgid "System information"
-msgstr "System information"
+msgstr "اطلاعات سیستم"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:9
 msgid "Crash reports are not available"
-msgstr "Crash reports are not available"
+msgstr "گزارشات خرابی دردسترس نیستند"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:10
 msgid ""
 "To enable crash reporting, install systemd-coredump and reboot your computer."
 msgstr ""
-"To enable crash reporting, install systemd-coredump and reboot your computer."
+"برای فعالسازی گزارش خرابی، systemd-coredump را نصب کنید و رایانه خود را "
+"راه‌اندازی مجدد کنید."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:11
 msgid "Crash reports:"
-msgstr "Crash reports:"
+msgstr "گزارشات خرابی:"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:12
 msgid "Stack trace:"
-msgstr "Stack trace:"
+msgstr "ردیابی پشته:"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:13
 msgid ""
 "When seeking help, check for existing bug reports, pastebin the trace, share "
 "crash.tar.gz (from Local Files) and explain how to reproduce the crash."
 msgstr ""
-"When seeking help, check for existing bug reports, pastebin the trace, share "
-"crash.tar.gz (from Local Files) and explain how to reproduce the crash."
+"برای یافتن کمک، برای گزارشات اشکال موجود جست‌وجو کنید، رَد را pastebin کنید، "
+"crash.tar.gz را (از فایل های محلی) به اشتراک بگذارید و توضیح دهید چگونه "
+"میشود خطا را بازتولید کرد."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:14
 msgid "Local Files"
-msgstr "Local Files"
+msgstr "فایل‌های محلی"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:15
 msgid "Open the directory containing crash.tar.gz and its content."
-msgstr "Open the directory containing crash.tar.gz and its content."
+msgstr "بازکردن مسیر حاوی crash.tar.gz و محتوای آن."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:16
 msgid "Bug Tracker"
-msgstr "Bug Tracker"
+msgstr "ردیاب اشکال"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:17
 msgid "Find the most appropriate bug tracker."
-msgstr "Find the most appropriate bug tracker."
+msgstr "یافتن مناسب ترین ردیاب اشکال."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:18
 msgid "Pastebin"
@@ -245,7 +243,7 @@ msgstr "Pastebin"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:19
 msgid "Upload the trace to the Internet."
-msgstr "Upload the trace to the Internet."
+msgstr "بارگذاری رد بر اینترنت."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:20
 msgid ""
@@ -253,206 +251,202 @@ msgid ""
 "Always provide a trace and reliable instructions to trigger/observe the "
 "problem."
 msgstr ""
-"Developers need to know where the code fails or how to reproduce the issue. "
-"Always provide a trace and reliable instructions to trigger/observe the "
-"problem."
+"توسعه‌دهندگان نیازدارند بدانند که کد در کجا شکست میخورد یا اینکه چگونه مشکل "
+"را بازتولید کنند. همیشه یک رد  و دستورالعمل قابل اطمینان برای تحریک/مشاهده "
+"مشکل فراهم کنید."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:21
 msgid "Crash reports"
-msgstr "Crash reports"
+msgstr "گزارشات خرابی"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:24
 msgid "Refresh"
-msgstr "Refresh"
+msgstr "تازه‌سازی"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
 msgid "Add the XApp Status applet"
-msgstr "Add the XApp Status applet"
+msgstr "افزودن برنامک وضعیت XApp"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:37
 msgid ""
 "The XApp Status applet allows applications to provide a tray icon without "
 "rendering glitches and with support for HiDPI and symbolic icons."
 msgstr ""
-"The XApp Status applet allows applications to provide a tray icon without "
-"rendering glitches and with support for HiDPI and symbolic icons."
+"برنامک وضعیت XApp به برنامه ها اجازه فراهم کردن نمادهای سینی(tray icons) "
+"بدون ارایه اشکال و با پشتیبانی برای HiDPI و نماد های symbolic را میدهد."
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:39
 msgid "Right-click the panel and choose 'Add to Panel'."
-msgstr "Right-click the panel and choose 'Add to Panel'."
+msgstr "پنل را راست کلیک کرده و «افزودن به پنل» را انتخاب کنید"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:46
 msgid "Add the XApp Status applet to the panel"
-msgstr "Add the XApp Status applet to the panel"
+msgstr "افزودن برنامک وضعیت XApp به پنل"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:16
 msgid "Install multimedia codecs"
-msgstr "Install multimedia codecs"
+msgstr "نصب کدک های چند رسانه ای"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:30
 msgid ""
 "Multimedia codecs are required to play some video formats and to properly "
 "render some websites."
 msgstr ""
-"Multimedia codecs are required to play some video formats and to properly "
-"render some websites."
+"کدک‌های چندرسانه ای برای پخش بعضی قالب‌بندی های ویدیویی و برای ارائه درست "
+"برخی وبسایت ها لازم است."
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:36
 msgid "Install the Multimedia Codecs"
-msgstr "Install the Multimedia Codecs"
+msgstr "نصب کدک های چندرسانه‌ای"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:17
 msgid "Set up the system restore utility"
-msgstr "Set up the system restore utility"
+msgstr "راه‌اندازی ابزار بازگردانی سیستم"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:31
 msgid "Linux Mint provides a system restore utility called Timeshift."
-msgstr "Linux Mint provides a system restore utility called Timeshift."
+msgstr "Linux Mint ابزار بازگردانی سیستمی به اسم Timeshift را فراهم میکند."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:32
 msgid ""
 "Thanks to Timeshift you can take snapshots of the system, either manually or "
 "automatically."
 msgstr ""
-"Thanks to Timeshift you can take snapshots of the system, either manually or "
-"automatically."
+"به لطف Timeshift شما میتوانید از سیستم اسنپ‌شات‌هایی تهیه کنید، یا به طور "
+"دستی یا خودکار."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:33
 msgid ""
 "If something goes wrong you can then restore your operating system from a "
 "previously saved snapshot."
 msgstr ""
-"If something goes wrong you can then restore your operating system from a "
-"previously saved snapshot."
+"اگر مشکلی پیش بیاید میتوانید سیستم عامل خود را از یک اسنپ‌شات ازپیش ذخیره "
+"شده بازگردانید کنید."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:39
 msgid "Launch Timeshift"
-msgstr "Launch Timeshift"
+msgstr "اجرا Timeshift"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:17
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:17
 msgid "A new version of Linux Mint is available"
-msgstr "A new version of Linux Mint is available"
+msgstr "یک نسخه جدید از Linux Mint در دسترس است"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:47
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:50
 #, python-format
 msgid "Visit %s for the latest announcements."
-msgstr "Visit %s for the latest announcements."
+msgstr "برای آخرین اعلامیه ها از %s بازدید کنید."
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:53
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:56
 #, python-format
 msgid "Upgrade to %s"
-msgstr "Upgrade to %s"
+msgstr "ارتقا به %s"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:49
 msgid "Your version of Linux Mint will soon reach End-Of-Life (EOL)"
-msgstr "Your version of Linux Mint will soon reach End-Of-Life (EOL)"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:50
 #, python-brace-format
 msgid "It will stop receiving support and updates in a day."
 msgid_plural "It will stop receiving support and updates in {num_days} days."
-msgstr[0] "It will stop receiving support and updates in a day."
-msgstr[1] "It will stop receiving support and updates in {num_days} days."
+msgstr[0] ""
+msgstr[1] ""
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:54
 msgid "Your version of Linux Mint is no longer supported"
-msgstr "Your version of Linux Mint is no longer supported"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:55
 #, python-brace-format
 msgid "It reached End-Of-Life (EOL) yesterday."
 msgid_plural "It reached End-Of-Life (EOL) {num_days} days ago."
-msgstr[0] "It reached End-Of-Life (EOL) yesterday."
-msgstr[1] "It reached End-Of-Life (EOL) {num_days} days ago."
+msgstr[0] ""
+msgstr[1] ""
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:66
 #, python-format
 msgid "Visit %s to find information about newer releases."
-msgstr "Visit %s to find information about newer releases."
+msgstr "برای یافتن اطلاعات درباره نسخه های جدیدتر از %s بازدید کنید."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:16
 msgid "Perform usrmerge conversion"
-msgstr "Perform usrmerge conversion"
+msgstr "اجرا تبدیل usrmerge"
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:50
 msgid "We recommend you convert your system with usrmerge."
-msgstr "We recommend you convert your system with usrmerge."
+msgstr "ما پیشنهاد میکنیم سیستم خود را با استفاده usrmerge تبدیل کنید."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:51
 msgid ""
 "This is done already for new installations of Linux Mint, starting with 20.1."
 msgstr ""
-"This is already been done for new installations of Linux Mint, starting with "
-"20.1."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:52
 msgid "To convert your system, open a terminal and type:"
-msgstr "To convert your system, open a terminal and type:"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:54
 msgid "You should reboot the computer once this completes."
-msgstr "You should reboot the computer once this completes."
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:60
 msgid "More information"
-msgstr "More information"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:17
 msgid "Remove conflicting indicators"
-msgstr "Remove conflicting indicators"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:37
 msgid "The following packages prevent tray icons from working properly:"
-msgstr "The following packages prevent tray icons from working properly:"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:39
 msgid "Note: You will need to log out after removing them."
-msgstr "Note: You will need to log out after removing them."
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:45
 msgid "Remove the conflicting packages."
-msgstr "Remove the conflicting packages."
+msgstr "حذف بسته های متضاد."
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:26
 msgid "Install language packs"
-msgstr "Install language packs"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:41
 msgid ""
 "The following localization packages are missing to properly support your "
 "language:"
 msgstr ""
-"The following localization packages are missing to properly support your "
-"language:"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:48
 msgid "Install the Language Packs"
-msgstr "Install the Language Packs"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:19
 msgid "Install hardware drivers"
-msgstr "Install hardware drivers"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:28
 msgid "Processor"
-msgstr "Processor"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:41
 msgid "Unknown"
-msgstr "Unknown"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:45
 #, python-format
 msgid "%s (unknown)"
-msgstr "%s (unknown)"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:100
 msgid "Hardware drivers are available for the following devices:"
-msgstr "Hardware drivers are available for the following devices:"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:107
 msgid "Launch the Driver Manager"
-msgstr "Launch the Driver Manager"
+msgstr ""

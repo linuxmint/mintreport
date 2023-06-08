@@ -7,60 +7,48 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2022-05-24 17:21+0100\n"
-"PO-Revision-Date: 2022-05-25 05:45+0000\n"
-"Last-Translator: Aleksey Kabanov <Unknown>\n"
+"POT-Creation-Date: 2023-06-05 15:09+0100\n"
+"PO-Revision-Date: 2022-12-31 09:26+0000\n"
+"Last-Translator: Темак <artemkotlubai@yandex.ru>\n"
 "Language-Team: Russian <ru@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2022-12-02 13:29+0000\n"
-"X-Generator: Launchpad (build 51cef3d08dff1e227b5ada709bd67280c567d4be)\n"
+"X-Launchpad-Export-Date: 2023-06-08 10:22+0000\n"
+"X-Generator: Launchpad (build 620cd5280e3a973662e263ebf9346837ed657a46)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
-#: usr/lib/linuxmint/mintreport/app.py:245 generate_desktop_files:25
+#: usr/lib/linuxmint/mintreport/app.py:237 generate_desktop_files:25
 #: generate_desktop_files:39 generate_desktop_files:53
-#: generate_desktop_files:67
+#: generate_desktop_files:67 usr/share/linuxmint/mintreport/mintreport.ui.h:22
 msgid "System Reports"
-msgstr "Отчеты о системе"
+msgstr "Отчёты о системе"
 
-#: usr/lib/linuxmint/mintreport/app.py:193
-msgid "_File"
-msgstr "_Файл"
-
-#: usr/lib/linuxmint/mintreport/app.py:198
-msgid "Refresh"
-msgstr "Обновить"
-
-#: usr/lib/linuxmint/mintreport/app.py:205
+#: usr/lib/linuxmint/mintreport/app.py:199
 msgid "Restore ignored reports"
 msgstr "Восстановить игнорируемые отчеты"
 
-#: usr/lib/linuxmint/mintreport/app.py:209
-#: usr/lib/linuxmint/mintreport/tray.py:58
+#: usr/lib/linuxmint/mintreport/app.py:204
+#: usr/lib/linuxmint/mintreport/tray.py:72
 msgid "Quit"
 msgstr "Выход"
 
-#: usr/lib/linuxmint/mintreport/app.py:220
-msgid "_Help"
-msgstr "_Справка"
-
-#: usr/lib/linuxmint/mintreport/app.py:226
-#: usr/lib/linuxmint/mintreport/app.py:243
+#: usr/lib/linuxmint/mintreport/app.py:216
+#: usr/lib/linuxmint/mintreport/app.py:235
 msgid "About"
-msgstr "О программе"
+msgstr "О приложении"
 
-#: usr/lib/linuxmint/mintreport/app.py:287
+#: usr/lib/linuxmint/mintreport/app.py:279
 msgid "An error occurred while gathering the system information."
 msgstr "При сборе информации о системе произошла ошибка."
 
-#: usr/lib/linuxmint/mintreport/app.py:301
+#: usr/lib/linuxmint/mintreport/app.py:293
 msgid "System information copied"
 msgstr "Информация о системе скопирована"
 
-#: usr/lib/linuxmint/mintreport/app.py:301
+#: usr/lib/linuxmint/mintreport/app.py:293
 msgid ""
 "Your system information was copied into your clipboard so you can paste it "
 "on the forums."
@@ -68,11 +56,11 @@ msgstr ""
 "Информация о вашей системе была скопирована в буфер обмена, теперь вы можете "
 "вставлять ее на страницах форумов."
 
-#: usr/lib/linuxmint/mintreport/app.py:310
+#: usr/lib/linuxmint/mintreport/app.py:302
 msgid "System information uploaded"
 msgstr "Информация о системе загружена"
 
-#: usr/lib/linuxmint/mintreport/app.py:310
+#: usr/lib/linuxmint/mintreport/app.py:302
 #, python-format
 msgid ""
 "Your system information was uploaded to %s. This link was placed in your "
@@ -81,11 +69,11 @@ msgstr ""
 "Информация о вашей системе была загружена на %s. Данная ссылка была "
 "скопирована в буфер обмена, вы можете использовать ее в IRC."
 
-#: usr/lib/linuxmint/mintreport/app.py:312
+#: usr/lib/linuxmint/mintreport/app.py:304
 msgid "An error occurred while uploading the system information"
 msgstr "Во время загрузки информации о системе произошла ошибка"
 
-#: usr/lib/linuxmint/mintreport/app.py:312
+#: usr/lib/linuxmint/mintreport/app.py:304
 msgid ""
 "Copy and paste the system information manually into a pastebin site like "
 "https://pastebin.com and share the link on IRC."
@@ -93,19 +81,19 @@ msgstr ""
 "Скопируйте и вставьте информацию о системе вручную на сайт для размещения "
 "текста, например https://pastebin.com, и поделитесь ссылкой на IRC."
 
-#: usr/lib/linuxmint/mintreport/app.py:391
+#: usr/lib/linuxmint/mintreport/app.py:383
 msgid "Ignore this report"
 msgstr "Игнорировать этот отчёт"
 
-#: usr/lib/linuxmint/mintreport/app.py:407
+#: usr/lib/linuxmint/mintreport/app.py:399
 msgid "Are you sure you want to ignore this report?"
 msgstr "Вы действительно хотите проигнорировать этот отчёт?"
 
-#: usr/lib/linuxmint/mintreport/app.py:408
+#: usr/lib/linuxmint/mintreport/app.py:400
 msgid "The report will be permanently ignored and will no longer be visible."
 msgstr "Этот отчёт будет отклонён навсегда и больше не будет отображаться."
 
-#: usr/lib/linuxmint/mintreport/app.py:500
+#: usr/lib/linuxmint/mintreport/app.py:492
 #, python-format
 msgid ""
 "The debug symbols are missing for %(program)s.\n"
@@ -114,7 +102,7 @@ msgstr ""
 "Символы отладки отсутствуют для %(program)s.\n"
 "Установите %(package)s."
 
-#: usr/lib/linuxmint/mintreport/app.py:514
+#: usr/lib/linuxmint/mintreport/app.py:506
 #, python-format
 msgid ""
 "The package providing %s could not be found.\n"
@@ -125,7 +113,7 @@ msgstr ""
 "Если вы хотите сгенерировать трассировку стека для этого отчёта о сбое, "
 "переустановите пакет."
 
-#: usr/lib/linuxmint/mintreport/app.py:542
+#: usr/lib/linuxmint/mintreport/app.py:534
 msgid ""
 "The headers or binaries installed on your system do not match the code which "
 "was executed during the crash.\n"
@@ -139,32 +127,33 @@ msgstr ""
 "Трассировка стека доступна в «Локальных файлах», но её содержимое, вероятно, "
 "не соответствует моменту сбоя."
 
-#: usr/lib/linuxmint/mintreport/tray.py:54
+#: usr/lib/linuxmint/mintreport/tray.py:68
 msgid "Show System Reports"
-msgstr "Показать Отчеты о системе"
+msgstr "Показать отчёты о системе"
 
-#: usr/lib/linuxmint/mintreport/tray.py:132
+#: usr/lib/linuxmint/mintreport/tray.py:146
 msgid "Some system reports require your attention"
 msgstr "Некоторые системные отчёты требуют вашего внимания"
 
-#: usr/lib/linuxmint/mintreport/tray.py:148
+#: usr/lib/linuxmint/mintreport/tray.py:156
 msgid "System Snapshots"
 msgstr "Снимки системы"
 
-#: usr/lib/linuxmint/mintreport/tray.py:148
+#: usr/lib/linuxmint/mintreport/tray.py:156
 msgid "A Timeshift system snapshot is being created."
 msgstr "Создаётся снимок системы Timeshift."
 
-#: usr/lib/linuxmint/mintreport/tray.py:149
+#: usr/lib/linuxmint/mintreport/tray.py:157
 msgid "Automatic Updates"
 msgstr "Автоматические обновления"
 
-#: usr/lib/linuxmint/mintreport/tray.py:149
+#: usr/lib/linuxmint/mintreport/tray.py:157
 msgid "Automatic updates are being installed."
 msgstr "Устанавливаются автоматические обновления."
 
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:23
 msgid "Troubleshoot problems"
 msgstr "Решение проблем"
 
@@ -186,15 +175,15 @@ msgstr "Системные отчёты"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:4
 msgid "Copy"
-msgstr "Копировать"
+msgstr "Скопировать"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:5
 msgid ""
 "Copy to clipboard (code tags are added to make it easy to paste the system "
 "information into the forums)"
 msgstr ""
-"Копировать в буфер обмена (добавлены теги для кода, чтобы упростить вставку "
-"информации о системе в форумы)"
+"Скопировать в буфер обмена (добавлены метки для кода, чтобы упростить "
+"вставку информации о системе в форумы)"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:6
 msgid "Upload"
@@ -208,18 +197,18 @@ msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:8
 msgid "System information"
-msgstr "Информация о системе"
+msgstr "Сведения о системе"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:9
 msgid "Crash reports are not available"
-msgstr "Отчеты о сбоях не доступны"
+msgstr "Отчёты о сбоях не доступны"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:10
 msgid ""
 "To enable crash reporting, install systemd-coredump and reboot your computer."
 msgstr ""
-"Для включения возможности формирования отчетов о сбоях установите systemd-"
-"coredump и перезагрузите компьютер."
+"Для включения возможности создания отчётов о сбоях установите «systemd-"
+"coredump» и перезагрузите компьютер."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:11
 msgid "Crash reports:"
@@ -234,7 +223,7 @@ msgid ""
 "When seeking help, check for existing bug reports, pastebin the trace, share "
 "crash.tar.gz (from Local Files) and explain how to reproduce the crash."
 msgstr ""
-"При поиске справки, проверьте существующие отчеты об ошибках, скопируйте "
+"При поиске справки, проверьте существующие отчёты об ошибках, скопируйте "
 "трассировку, найдите crash.tar.gz (в локальных файлах) и объясните, как "
 "воспроизвести сбой."
 
@@ -244,7 +233,7 @@ msgstr "Локальные файлы"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:15
 msgid "Open the directory containing crash.tar.gz and its content."
-msgstr "Откройте каталог, содержащий crash.tar.gz и его содержимое."
+msgstr "Откройте папку, содержащую crash.tar.gz и его содержимое."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:16
 msgid "Bug Tracker"
@@ -276,6 +265,10 @@ msgstr ""
 msgid "Crash reports"
 msgstr "Отчёты об ошибках"
 
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:24
+msgid "Refresh"
+msgstr "Обновить"
+
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
 msgid "Add the XApp Status applet"
 msgstr "Добавить апплет статуса xApp"
@@ -291,7 +284,7 @@ msgstr ""
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:39
 msgid "Right-click the panel and choose 'Add to Panel'."
 msgstr ""
-"Щелкните правой кнопкой мыши на панели и выберите \"Добавить на панель\"."
+"Щёлкните правой кнопкой мыши на панели и выберите «Добавить на панель»."
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:46
 msgid "Add the XApp Status applet to the panel"
@@ -334,8 +327,8 @@ msgid ""
 "If something goes wrong you can then restore your operating system from a "
 "previously saved snapshot."
 msgstr ""
-"Если что-то пойдет не так, вы сможете восстановить операционную систему из "
-"ранее сохраненного снимка."
+"Если что-то пойдёт не так, вы сможете восстановить операционную систему из "
+"ранее сохранённого снимка."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:39
 msgid "Launch Timeshift"
@@ -380,9 +373,9 @@ msgstr "Ваша версия Linux Mint больше не поддержива�
 #, python-brace-format
 msgid "It reached End-Of-Life (EOL) yesterday."
 msgid_plural "It reached End-Of-Life (EOL) {num_days} days ago."
-msgstr[0] "Ее жизненный цикл (EOL) закончился вчера."
-msgstr[1] "Ее жизненный цикл (EOL) закончился {num_days} дня назад."
-msgstr[2] "Ее жизненный цикл (EOL) закончился {num_days} дней назад."
+msgstr[0] "Её жизненный цикл (EOL) закончился вчера."
+msgstr[1] "Её жизненный цикл (EOL) закончился {num_days} дня назад."
+msgstr[2] "Её жизненный цикл (EOL) закончился {num_days} дней назад."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:66
 #, python-format
@@ -395,7 +388,7 @@ msgstr "Выполнить преобразование usrmerge"
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:50
 msgid "We recommend you convert your system with usrmerge."
-msgstr "Рекомендуем преобразовать вашу систему с помощью команды usrmerge."
+msgstr "Желательно преобразовать вашу систему с помощью команды «usrmerge»."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:51
 msgid ""
@@ -444,7 +437,7 @@ msgid ""
 "language:"
 msgstr ""
 "Для правильной поддержки вашего языка необходимо установить следующие пакеты "
-"локализации:"
+"с переводом:"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:48
 msgid "Install the Language Packs"

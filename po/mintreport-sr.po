@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2022-05-24 17:21+0100\n"
+"POT-Creation-Date: 2023-06-05 15:09+0100\n"
 "PO-Revision-Date: 2022-08-08 04:00+0000\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <(nothing)>\n"
@@ -16,52 +16,40 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2022-12-02 13:29+0000\n"
-"X-Generator: Launchpad (build 51cef3d08dff1e227b5ada709bd67280c567d4be)\n"
+"X-Launchpad-Export-Date: 2023-06-08 10:22+0000\n"
+"X-Generator: Launchpad (build 620cd5280e3a973662e263ebf9346837ed657a46)\n"
 "Language: sr\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
-#: usr/lib/linuxmint/mintreport/app.py:245 generate_desktop_files:25
+#: usr/lib/linuxmint/mintreport/app.py:237 generate_desktop_files:25
 #: generate_desktop_files:39 generate_desktop_files:53
-#: generate_desktop_files:67
+#: generate_desktop_files:67 usr/share/linuxmint/mintreport/mintreport.ui.h:22
 msgid "System Reports"
 msgstr "Системски извештаји"
 
-#: usr/lib/linuxmint/mintreport/app.py:193
-msgid "_File"
-msgstr "_Датотека"
-
-#: usr/lib/linuxmint/mintreport/app.py:198
-msgid "Refresh"
-msgstr "Освежи"
-
-#: usr/lib/linuxmint/mintreport/app.py:205
+#: usr/lib/linuxmint/mintreport/app.py:199
 msgid "Restore ignored reports"
 msgstr "Вратите занемарене извештаје"
 
-#: usr/lib/linuxmint/mintreport/app.py:209
-#: usr/lib/linuxmint/mintreport/tray.py:58
+#: usr/lib/linuxmint/mintreport/app.py:204
+#: usr/lib/linuxmint/mintreport/tray.py:72
 msgid "Quit"
 msgstr "Изађи"
 
-#: usr/lib/linuxmint/mintreport/app.py:220
-msgid "_Help"
-msgstr "_Помоћ"
-
-#: usr/lib/linuxmint/mintreport/app.py:226
-#: usr/lib/linuxmint/mintreport/app.py:243
+#: usr/lib/linuxmint/mintreport/app.py:216
+#: usr/lib/linuxmint/mintreport/app.py:235
 msgid "About"
 msgstr "О програму"
 
-#: usr/lib/linuxmint/mintreport/app.py:287
+#: usr/lib/linuxmint/mintreport/app.py:279
 msgid "An error occurred while gathering the system information."
 msgstr "Грешке се догодила при прикупљању информација система."
 
-#: usr/lib/linuxmint/mintreport/app.py:301
+#: usr/lib/linuxmint/mintreport/app.py:293
 msgid "System information copied"
 msgstr "Информације система су копиране"
 
-#: usr/lib/linuxmint/mintreport/app.py:301
+#: usr/lib/linuxmint/mintreport/app.py:293
 msgid ""
 "Your system information was copied into your clipboard so you can paste it "
 "on the forums."
@@ -69,11 +57,11 @@ msgstr ""
 "Информације вашег система су копиране у списку исечака тако да се може "
 "убацити на форуму."
 
-#: usr/lib/linuxmint/mintreport/app.py:310
+#: usr/lib/linuxmint/mintreport/app.py:302
 msgid "System information uploaded"
 msgstr "Информације система су послате"
 
-#: usr/lib/linuxmint/mintreport/app.py:310
+#: usr/lib/linuxmint/mintreport/app.py:302
 #, python-format
 msgid ""
 "Your system information was uploaded to %s. This link was placed in your "
@@ -82,11 +70,11 @@ msgstr ""
 "Информације вашег система су послате на %s. Ова веза је смештена у вашем "
 "списку исечака тако да је можете убацити на ИРЦ канал."
 
-#: usr/lib/linuxmint/mintreport/app.py:312
+#: usr/lib/linuxmint/mintreport/app.py:304
 msgid "An error occurred while uploading the system information"
 msgstr "Грешка се догодила при слању информација система."
 
-#: usr/lib/linuxmint/mintreport/app.py:312
+#: usr/lib/linuxmint/mintreport/app.py:304
 msgid ""
 "Copy and paste the system information manually into a pastebin site like "
 "https://pastebin.com and share the link on IRC."
@@ -94,19 +82,19 @@ msgstr ""
 "Копирајте и убаците системске информације ручно на пастебин страницу као што "
 "је „https://pastebin.com“ и делите линк на ИРЦ каналу."
 
-#: usr/lib/linuxmint/mintreport/app.py:391
+#: usr/lib/linuxmint/mintreport/app.py:383
 msgid "Ignore this report"
 msgstr "Занемари овај извештај"
 
-#: usr/lib/linuxmint/mintreport/app.py:407
+#: usr/lib/linuxmint/mintreport/app.py:399
 msgid "Are you sure you want to ignore this report?"
 msgstr "Да ли сигурно желите да занемарите овај извештај?"
 
-#: usr/lib/linuxmint/mintreport/app.py:408
+#: usr/lib/linuxmint/mintreport/app.py:400
 msgid "The report will be permanently ignored and will no longer be visible."
 msgstr "Извештај ће бити трајно занемарен и више неће бити видљив."
 
-#: usr/lib/linuxmint/mintreport/app.py:500
+#: usr/lib/linuxmint/mintreport/app.py:492
 #, python-format
 msgid ""
 "The debug symbols are missing for %(program)s.\n"
@@ -115,7 +103,7 @@ msgstr ""
 "Симболи за отклањање грешака недостају за „%(program)s“.\n"
 "Инсталирајте „%(package)s“."
 
-#: usr/lib/linuxmint/mintreport/app.py:514
+#: usr/lib/linuxmint/mintreport/app.py:506
 #, python-format
 msgid ""
 "The package providing %s could not be found.\n"
@@ -126,7 +114,7 @@ msgstr ""
 "Ако желите да генеришете траг склада за овај извештај о рушењу, поново га "
 "инсталирајте."
 
-#: usr/lib/linuxmint/mintreport/app.py:542
+#: usr/lib/linuxmint/mintreport/app.py:534
 msgid ""
 "The headers or binaries installed on your system do not match the code which "
 "was executed during the crash.\n"
@@ -140,32 +128,33 @@ msgstr ""
 "Праћење спремника је доступно у „Локалним датотекама“ али његов садржај је "
 "вероватно нетачан."
 
-#: usr/lib/linuxmint/mintreport/tray.py:54
+#: usr/lib/linuxmint/mintreport/tray.py:68
 msgid "Show System Reports"
 msgstr "Прикажи системске извештаје"
 
-#: usr/lib/linuxmint/mintreport/tray.py:132
+#: usr/lib/linuxmint/mintreport/tray.py:146
 msgid "Some system reports require your attention"
 msgstr "Неки системски извештаји захтевају вашу пажњу"
 
-#: usr/lib/linuxmint/mintreport/tray.py:148
+#: usr/lib/linuxmint/mintreport/tray.py:156
 msgid "System Snapshots"
 msgstr "Системски снимци"
 
-#: usr/lib/linuxmint/mintreport/tray.py:148
+#: usr/lib/linuxmint/mintreport/tray.py:156
 msgid "A Timeshift system snapshot is being created."
 msgstr "Системски снимак Тајмшифта је направљен."
 
-#: usr/lib/linuxmint/mintreport/tray.py:149
+#: usr/lib/linuxmint/mintreport/tray.py:157
 msgid "Automatic Updates"
 msgstr "Аутоматска ажурирања"
 
-#: usr/lib/linuxmint/mintreport/tray.py:149
+#: usr/lib/linuxmint/mintreport/tray.py:157
 msgid "Automatic updates are being installed."
 msgstr "Аутоматска ажурирања су инсталирана."
 
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:23
 msgid "Troubleshoot problems"
 msgstr "Отклањање проблема"
 
@@ -273,6 +262,10 @@ msgstr ""
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:21
 msgid "Crash reports"
 msgstr "Известаји о рушењу"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:24
+msgid "Refresh"
+msgstr "Освежи"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
 msgid "Add the XApp Status applet"

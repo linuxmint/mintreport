@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2022-05-24 17:21+0100\n"
+"POT-Creation-Date: 2023-06-05 15:09+0100\n"
 "PO-Revision-Date: 2022-11-29 13:53+0000\n"
 "Last-Translator: Sabri Ünal <Unknown>\n"
 "Language-Team: Turkish <tr@li.org>\n"
@@ -15,8 +15,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2022-12-02 13:29+0000\n"
-"X-Generator: Launchpad (build 51cef3d08dff1e227b5ada709bd67280c567d4be)\n"
+"X-Launchpad-Export-Date: 2023-06-08 10:22+0000\n"
+"X-Generator: Launchpad (build 620cd5280e3a973662e263ebf9346837ed657a46)\n"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:13
 msgid ""
@@ -28,58 +28,46 @@ msgstr ""
 "hatanın nasıl yeniden üretilebileceğini açıklayın."
 
 #: usr/lib/linuxmint/mintreport/app.py:84
-#: usr/lib/linuxmint/mintreport/app.py:245 generate_desktop_files:25
+#: usr/lib/linuxmint/mintreport/app.py:237 generate_desktop_files:25
 #: generate_desktop_files:39 generate_desktop_files:53
-#: generate_desktop_files:67
+#: generate_desktop_files:67 usr/share/linuxmint/mintreport/mintreport.ui.h:22
 msgid "System Reports"
 msgstr "Sistem Raporları"
 
-#: usr/lib/linuxmint/mintreport/app.py:193
-msgid "_File"
-msgstr "_Dosya"
-
-#: usr/lib/linuxmint/mintreport/app.py:198
-msgid "Refresh"
-msgstr "Yenile"
-
-#: usr/lib/linuxmint/mintreport/app.py:205
+#: usr/lib/linuxmint/mintreport/app.py:199
 msgid "Restore ignored reports"
 msgstr "Gözardı edilen raporları geri al"
 
-#: usr/lib/linuxmint/mintreport/app.py:209
-#: usr/lib/linuxmint/mintreport/tray.py:58
+#: usr/lib/linuxmint/mintreport/app.py:204
+#: usr/lib/linuxmint/mintreport/tray.py:72
 msgid "Quit"
 msgstr "Çıkış"
 
-#: usr/lib/linuxmint/mintreport/app.py:220
-msgid "_Help"
-msgstr "_Yardım"
-
-#: usr/lib/linuxmint/mintreport/app.py:226
-#: usr/lib/linuxmint/mintreport/app.py:243
+#: usr/lib/linuxmint/mintreport/app.py:216
+#: usr/lib/linuxmint/mintreport/app.py:235
 msgid "About"
 msgstr "Hakkında"
 
-#: usr/lib/linuxmint/mintreport/app.py:287
+#: usr/lib/linuxmint/mintreport/app.py:279
 msgid "An error occurred while gathering the system information."
 msgstr "Sistem bilgisi toplanırken bir hata oluştu."
 
-#: usr/lib/linuxmint/mintreport/app.py:301
+#: usr/lib/linuxmint/mintreport/app.py:293
 msgid "System information copied"
 msgstr "Sistem bilgisi kopyalandı"
 
-#: usr/lib/linuxmint/mintreport/app.py:301
+#: usr/lib/linuxmint/mintreport/app.py:293
 msgid ""
 "Your system information was copied into your clipboard so you can paste it "
 "on the forums."
 msgstr ""
 "Sistem bilgileriniz panoya kopyalandı, böylece forumlara yapıştırabilirsiniz."
 
-#: usr/lib/linuxmint/mintreport/app.py:310
+#: usr/lib/linuxmint/mintreport/app.py:302
 msgid "System information uploaded"
 msgstr "Sistem bilgisi karşıya yüklendi"
 
-#: usr/lib/linuxmint/mintreport/app.py:310
+#: usr/lib/linuxmint/mintreport/app.py:302
 #, python-format
 msgid ""
 "Your system information was uploaded to %s. This link was placed in your "
@@ -88,11 +76,11 @@ msgstr ""
 "Sistem bilgileriniz %s adresine yüklendi. Bu bağlantı panonuza "
 "yerleştirildi, böylece IRC'ye yapıştırabilirsiniz."
 
-#: usr/lib/linuxmint/mintreport/app.py:312
+#: usr/lib/linuxmint/mintreport/app.py:304
 msgid "An error occurred while uploading the system information"
 msgstr "Sistem bilgisi karşıya yüklenirken bir hata oluştu"
 
-#: usr/lib/linuxmint/mintreport/app.py:312
+#: usr/lib/linuxmint/mintreport/app.py:304
 msgid ""
 "Copy and paste the system information manually into a pastebin site like "
 "https://pastebin.com and share the link on IRC."
@@ -100,19 +88,19 @@ msgstr ""
 "Sistem bilgilerini elle kopyalayıp https://pastebin.com gibi bir siteye "
 "yapıştırın ve bağlantıyı IRC'de paylaşın."
 
-#: usr/lib/linuxmint/mintreport/app.py:391
+#: usr/lib/linuxmint/mintreport/app.py:383
 msgid "Ignore this report"
 msgstr "Bu raporu yoksay"
 
-#: usr/lib/linuxmint/mintreport/app.py:407
+#: usr/lib/linuxmint/mintreport/app.py:399
 msgid "Are you sure you want to ignore this report?"
 msgstr "Bu raporu yok saymak istediğinize emin misiniz?"
 
-#: usr/lib/linuxmint/mintreport/app.py:408
+#: usr/lib/linuxmint/mintreport/app.py:400
 msgid "The report will be permanently ignored and will no longer be visible."
 msgstr "Rapor kalıcı olarak yok sayılacak ve artık gösterilmeyecek."
 
-#: usr/lib/linuxmint/mintreport/app.py:500
+#: usr/lib/linuxmint/mintreport/app.py:492
 #, python-format
 msgid ""
 "The debug symbols are missing for %(program)s.\n"
@@ -121,7 +109,7 @@ msgstr ""
 "%(program)s için hata ayıklama sembolleri eksik.\n"
 "Lütfen %(package)s yükleyin."
 
-#: usr/lib/linuxmint/mintreport/app.py:514
+#: usr/lib/linuxmint/mintreport/app.py:506
 #, python-format
 msgid ""
 "The package providing %s could not be found.\n"
@@ -132,7 +120,7 @@ msgstr ""
 "Bu çökme raporu için bir ipucu yığını oluşturmak isterseniz, lütfen bunu "
 "yeniden yükleyin."
 
-#: usr/lib/linuxmint/mintreport/app.py:542
+#: usr/lib/linuxmint/mintreport/app.py:534
 msgid ""
 "The headers or binaries installed on your system do not match the code which "
 "was executed during the crash.\n"
@@ -145,32 +133,33 @@ msgstr ""
 "Bunlar sonradan bir yükseltme almış olabilir.\n"
 "Bir ipucu yığını 'Yerel Dosyalar'da mevcut, ama muhtemelen içeriği hatalıdır."
 
-#: usr/lib/linuxmint/mintreport/tray.py:54
+#: usr/lib/linuxmint/mintreport/tray.py:68
 msgid "Show System Reports"
 msgstr "Sistem Raporlarını Göster"
 
-#: usr/lib/linuxmint/mintreport/tray.py:132
+#: usr/lib/linuxmint/mintreport/tray.py:146
 msgid "Some system reports require your attention"
 msgstr "Göz atmanız gereken bazı sistem raporları mevcut"
 
-#: usr/lib/linuxmint/mintreport/tray.py:148
+#: usr/lib/linuxmint/mintreport/tray.py:156
 msgid "System Snapshots"
 msgstr "Sistem Anlık Görüntüleri"
 
-#: usr/lib/linuxmint/mintreport/tray.py:148
+#: usr/lib/linuxmint/mintreport/tray.py:156
 msgid "A Timeshift system snapshot is being created."
 msgstr "Timeshift sistem anlık görüntüsü oluşturuluyor."
 
-#: usr/lib/linuxmint/mintreport/tray.py:149
+#: usr/lib/linuxmint/mintreport/tray.py:157
 msgid "Automatic Updates"
 msgstr "Otomatik Güncellemeler"
 
-#: usr/lib/linuxmint/mintreport/tray.py:149
+#: usr/lib/linuxmint/mintreport/tray.py:157
 msgid "Automatic updates are being installed."
 msgstr "Otomatik güncellemeler kuruluyor."
 
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:23
 msgid "Troubleshoot problems"
 msgstr "Sorunları giderme"
 
@@ -270,6 +259,10 @@ msgstr ""
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:21
 msgid "Crash reports"
 msgstr "Çökme raporları"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:24
+msgid "Refresh"
+msgstr "Yenile"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
 msgid "Add the XApp Status applet"
