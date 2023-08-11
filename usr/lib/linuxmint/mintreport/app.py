@@ -271,7 +271,7 @@ class MintReportWindow():
     @_async
     def load_sysinfo(self):
         try:
-            sysinfo = subprocess.check_output("LANG=C inxi -Fxxrzc0 --usb", shell=True).decode("UTF-8")
+            sysinfo = subprocess.check_output("LANG=C inxi -Fxxrzc0 --usb", shell=True).decode("utf-8", errors='replace')
             self.add_sysinfo_to_textview(sysinfo)
             with open(TMP_INXI_FILE, "w") as f:
                 f.write(sysinfo)
