@@ -3,7 +3,7 @@ import os
 from pathlib import Path
 import webbrowser
 
-import lsb_release
+import xapp.os
 
 from mintreport import InfoReport, InfoReportAction
 
@@ -19,10 +19,9 @@ class Report(InfoReport):
 
     def is_pertinent(self):
         try:
-            info = lsb_release.get_os_release()
-
-            major_version = info["RELEASE"].split(".")[0]
-            if int(major_version) < 20 and "LMDE" not in info["DESCRIPTION"]:
+            info = xapp.os.get_os_release_info()
+            major_version = info["VERSION_ID"].split(".")[0]
+            if int(major_version) < 20 and "LMDE" not in info["NAME"]:
                 return False
         except:
             return False
