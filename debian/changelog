@@ -1,3 +1,15 @@
+mintreport (1.4.1) victoria; urgency=medium
+
+  [ Michael Webster ]
+  * Fix error handling of inxi output.
+  * usrmerge: Use xapp.os instead of the lsb_release module.
+
+  [ Clement Lefebvre ]
+  * Simplify usrmerge report
+  * l10n: UPDATE POT
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 19 Aug 2023 13:01:33 +0200
+
 mintreport (1.4.0) victoria; urgency=medium
 
   * l10n: Update translations
