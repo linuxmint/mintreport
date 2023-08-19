@@ -3,8 +3,6 @@ import os
 from pathlib import Path
 import webbrowser
 
-import xapp.os
-
 from mintreport import InfoReport, InfoReportAction
 
 class Report(InfoReport):
@@ -18,14 +16,6 @@ class Report(InfoReport):
         self.has_ignore_button = True
 
     def is_pertinent(self):
-        try:
-            info = xapp.os.get_os_release_info()
-            major_version = info["VERSION_ID"].split(".")[0]
-            if int(major_version) < 20 and "LMDE" not in info["NAME"]:
-                return False
-        except:
-            return False
-
         # from convert-usrmerge script
         directories = ["bin", "sbin", "lib", "libx32", "lib64", "lib32"]
 
@@ -47,7 +37,7 @@ class Report(InfoReport):
         # Return the descriptions
         descriptions = []
         descriptions.append(_("We recommend you convert your system with usrmerge."))
-        descriptions.append(_("This is done already for new installations of Linux Mint, starting with 20.1."))
+        descriptions.append(_("This is done already for new installations of Linux Mint."))
         descriptions.append(_("To convert your system, open a terminal and type:"))
         descriptions.append("\n<span font_family='monospace'>apt install usrmerge</span>\n")
         descriptions.append(_("You should reboot the computer once this completes."))
