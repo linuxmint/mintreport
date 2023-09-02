@@ -47,7 +47,8 @@ class Report(InfoReport):
     def get_descriptions(self):
         # Return the descriptions
         descriptions = []
-        descriptions.append(_("Visit %s for the latest announcements.") % "<a href='https://blog.linuxmint.com'>https://blog.linuxmint.com</a>")
+	rel_link_html = "<a href='%s'>%s</a>" % (self.rel_link, self.rel_link)
+        descriptions.append(_("Visit %s for more information about this upgrade.") % rel_link_html)
         return descriptions
 
     def get_actions(self):
@@ -59,7 +60,7 @@ class Report(InfoReport):
         return actions
 
     def callback(self, data):
-        subprocess.run(["xdg-open", self.rel_link])
+        subprocess.run(["/usr/bin/mint-release-upgrade"])
         # reload
         return True
 
