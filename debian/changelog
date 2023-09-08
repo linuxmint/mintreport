@@ -1,3 +1,13 @@
+mintreport (1.4.2) faye; urgency=medium
+
+  [ Axel ]
+  * fix(main_stack): Missing end margin (#93)
+
+  [ Clement Lefebvre ]
+  * lmde6: Fix libavcodec-extra59 pkg name
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 08 Sep 2023 11:03:31 +0100
+
 mintreport (1.4.1) victoria; urgency=medium
 
   [ Michael Webster ]
