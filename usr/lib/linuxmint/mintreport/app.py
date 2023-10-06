@@ -431,9 +431,6 @@ class MintReportWindow():
             except Exception as e:
                 print("coredumpctl output: '%s' could not be split: %s" % (line, e))
                 continue
-            # Ignore python crashes, we don't handle tracebacks with systemd-coredump yet
-            if "python" in exe:
-                continue
             # Ignore crashes for which the info isn't available
             if corefile != "present":
                 continue
