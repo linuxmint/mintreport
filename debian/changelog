@@ -1,3 +1,9 @@
+mintreport (1.4.3) virginia; urgency=medium
+
+  * l10n: Update translations
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sun, 03 Dec 2023 15:03:48 +0000
+
 mintreport (1.4.2) faye; urgency=medium
 
   [ Axel ]
