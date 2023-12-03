@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2023-06-05 15:09+0100\n"
-"PO-Revision-Date: 2023-06-11 17:37+0000\n"
-"Last-Translator: parham <Unknown>\n"
+"POT-Creation-Date: 2023-08-19 13:00+0200\n"
+"PO-Revision-Date: 2023-09-03 08:11+0000\n"
+"Last-Translator: Mr.Ravi <Unknown>\n"
 "Language-Team: Persian <fa@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2023-07-07 12:58+0000\n"
-"X-Generator: Launchpad (build 2ac9e3bf4ab511504f8fc651371e24a6a047ba12)\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Launchpad-Export-Date: 2023-12-03 13:34+0000\n"
+"X-Generator: Launchpad (build 886068b1e1d10de444fbd53b0c7d3f6d4fb3e658)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
 #: usr/lib/linuxmint/mintreport/app.py:237 generate_desktop_files:25
@@ -352,9 +352,8 @@ msgstr "نسخه لینوکس مینت شما به پایان عمر (EOL) نز�
 #, python-brace-format
 msgid "It will stop receiving support and updates in a day."
 msgid_plural "It will stop receiving support and updates in {num_days} days."
-msgstr[0] ""
-"دریافت پشتیبانی و به روز رسانی در یک روز متوقف می شود.\r\n"
-"دریافت پشتیبانی و به روز رسانی در {num_days} روز متوقف می شود."
+msgstr[0] "دریافت پشتیبانی و بروزرسانی در یک روز متوقف خواهد شد."
+msgstr[1] "دریافت پشتیبانی و بروزرسانی در {num_days} روز متوقف خواهد شد."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:54
 msgid "Your version of Linux Mint is no longer supported"
@@ -364,37 +363,35 @@ msgstr "نسخه لینوکس مینت شما دیگر پشتیبانی نمی �
 #, python-brace-format
 msgid "It reached End-Of-Life (EOL) yesterday."
 msgid_plural "It reached End-Of-Life (EOL) {num_days} days ago."
-msgstr[0] ""
-"دیروز به پایان عمر (EOL) رسید. \r\n"
-"{num_days} قبل به پایان عمر (EOL) رسید."
+msgstr[0] "دیروز به پایان عمر (EOL) رسید."
+msgstr[1] "{num_days} روز قبل به پایان عمر (EOL) رسید."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:66
 #, python-format
 msgid "Visit %s to find information about newer releases."
 msgstr "برای یافتن اطلاعات درباره نسخه های جدیدتر از %s بازدید کنید."
 
-#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:16
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:14
 msgid "Perform usrmerge conversion"
 msgstr "اجرا تبدیل usrmerge"
 
-#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:50
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:39
 msgid "We recommend you convert your system with usrmerge."
 msgstr "ما پیشنهاد میکنیم سیستم خود را با استفاده usrmerge تبدیل کنید."
 
-#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:51
-msgid ""
-"This is done already for new installations of Linux Mint, starting with 20.1."
-msgstr "این کار از نسخه 20.1 به طور پیش فرض  انجام می شود."
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:40
+msgid "This is done already for new installations of Linux Mint."
+msgstr "این از قبل برای نصب های جدید Linux Mint انجام شده است."
 
-#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:52
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:41
 msgid "To convert your system, open a terminal and type:"
 msgstr "برای تبدیل سیستم خود، ترمینال را باز کنید و تایپ کنید:"
 
-#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:54
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:43
 msgid "You should reboot the computer once this completes."
 msgstr "پس از اتمام این کار باید رایانه را مجدداً راه اندازی کنید."
 
-#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:60
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:49
 msgid "More information"
 msgstr "اطلاعات بیشتر"
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2023-06-05 15:09+0100\n"
+"POT-Creation-Date: 2023-08-19 13:00+0200\n"
 "PO-Revision-Date: 2022-01-05 13:42+0000\n"
 "Last-Translator: Mahdi Hasan <Unknown>\n"
 "Language-Team: Bengali <bn@li.org>\n"
@@ -15,8 +15,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2023-07-07 12:58+0000\n"
-"X-Generator: Launchpad (build 2ac9e3bf4ab511504f8fc651371e24a6a047ba12)\n"
+"X-Launchpad-Export-Date: 2023-12-03 13:34+0000\n"
+"X-Generator: Launchpad (build 886068b1e1d10de444fbd53b0c7d3f6d4fb3e658)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
 #: usr/lib/linuxmint/mintreport/app.py:237 generate_desktop_files:25
@@ -376,31 +376,28 @@ msgstr[1] "এটি {num_days} দিন আগে End-Of-Life (EOL) পৌঁ�
 msgid "Visit %s to find information about newer releases."
 msgstr "নতুন রিলিজ সম্পর্কে আরও তথ্য পেতে %s দেখুন।"
 
-#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:16
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:14
 msgid "Perform usrmerge conversion"
 msgstr "ইউএসআরমার্জে রূপান্তর সম্পাদন করা"
 
-#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:50
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:39
 msgid "We recommend you convert your system with usrmerge."
 msgstr ""
 "আমরা আপনাকে ইউএসআরমার্জের মাধ্যমে আপনার সিস্টেমকে রূপান্তর করার পরামর্শ দিই।"
 
-#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:51
-msgid ""
-"This is done already for new installations of Linux Mint, starting with 20.1."
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:40
+msgid "This is done already for new installations of Linux Mint."
 msgstr ""
-"এটি ইতিমধ্যেই লিনাক্স মিন্টের নতুন ইনস্টলেশনের জন্য করা হয়েছে, 20.1 দিয়ে "
-"শুরু হচ্ছে।"
 
-#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:52
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:41
 msgid "To convert your system, open a terminal and type:"
 msgstr "আপনার সিস্টেম রূপান্তর করতে, একটি টার্মিনাল খুলুন এবং লিখুন:"
 
-#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:54
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:43
 msgid "You should reboot the computer once this completes."
 msgstr "এটি সম্পূর্ণ হলে আপনার কম্পিউটার পুনরায় বুট করা উচিত।"
 
-#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:60
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:49
 msgid "More information"
 msgstr "আরো তথ্য"
 

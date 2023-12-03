@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2023-06-05 15:09+0100\n"
-"PO-Revision-Date: 2022-01-13 07:21+0000\n"
-"Last-Translator: Arief Setiadi Wibowo <q_thrynx@yahoo.com>\n"
+"POT-Creation-Date: 2023-08-19 13:00+0200\n"
+"PO-Revision-Date: 2023-10-25 10:33+0000\n"
+"Last-Translator: Dirga Afissabilla <Unknown>\n"
 "Language-Team: Indonesian <id@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2023-07-07 12:58+0000\n"
-"X-Generator: Launchpad (build 2ac9e3bf4ab511504f8fc651371e24a6a047ba12)\n"
+"X-Launchpad-Export-Date: 2023-12-03 13:34+0000\n"
+"X-Generator: Launchpad (build 886068b1e1d10de444fbd53b0c7d3f6d4fb3e658)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
 #: usr/lib/linuxmint/mintreport/app.py:237 generate_desktop_files:25
@@ -135,19 +135,19 @@ msgstr "Beberapa laporan sistem membutuhkan perhatian anda"
 
 #: usr/lib/linuxmint/mintreport/tray.py:156
 msgid "System Snapshots"
-msgstr ""
+msgstr "Snapshot Sistem"
 
 #: usr/lib/linuxmint/mintreport/tray.py:156
 msgid "A Timeshift system snapshot is being created."
-msgstr ""
+msgstr "Timeshift sistem snapshot sedang dibuat."
 
 #: usr/lib/linuxmint/mintreport/tray.py:157
 msgid "Automatic Updates"
-msgstr ""
+msgstr "Pembaruan Otomatis"
 
 #: usr/lib/linuxmint/mintreport/tray.py:157
 msgid "Automatic updates are being installed."
-msgstr ""
+msgstr "Pembaruan otomatis sedang diinstal."
 
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
@@ -374,29 +374,27 @@ msgstr[0] "Ini mencapai End-Of-Life (EOL) {num_days} hari lalu."
 msgid "Visit %s to find information about newer releases."
 msgstr "Kunjungi %s untuk menemukan informasi tentang rilis terbaru."
 
-#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:16
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:14
 msgid "Perform usrmerge conversion"
 msgstr "Lakukan konversi usrmerge"
 
-#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:50
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:39
 msgid "We recommend you convert your system with usrmerge."
 msgstr "Kami menyarankan Anda mengonversi sistem Anda dengan usrmerge."
 
-#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:51
-msgid ""
-"This is done already for new installations of Linux Mint, starting with 20.1."
-msgstr ""
-"Ini sudah dilakukan untuk instalasi baru Linux Mint, dimulai dengan 20.1."
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:40
+msgid "This is done already for new installations of Linux Mint."
+msgstr "Ini sudah dilakukan untuk instalasi baru Linux Mint."
 
-#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:52
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:41
 msgid "To convert your system, open a terminal and type:"
 msgstr "Untuk mengonversi sistem Anda, buka terminal dan ketik:"
 
-#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:54
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:43
 msgid "You should reboot the computer once this completes."
 msgstr "Anda harus me-reboot komputer setelah ini selesai."
 
-#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:60
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:49
 msgid "More information"
 msgstr "Informasi lebih lanjut"
 

@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2023-06-05 15:09+0100\n"
-"PO-Revision-Date: 2022-07-03 12:08+0000\n"
+"POT-Creation-Date: 2023-08-19 13:00+0200\n"
+"PO-Revision-Date: 2023-08-20 11:54+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <pt@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2023-07-07 12:58+0000\n"
-"X-Generator: Launchpad (build 2ac9e3bf4ab511504f8fc651371e24a6a047ba12)\n"
+"X-Launchpad-Export-Date: 2023-12-03 13:34+0000\n"
+"X-Generator: Launchpad (build 886068b1e1d10de444fbd53b0c7d3f6d4fb3e658)\n"
 "Language: pt\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
@@ -382,29 +382,27 @@ msgid "Visit %s to find information about newer releases."
 msgstr ""
 "Aceda a %s para encontrar informações sobre as versões mais recentes."
 
-#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:16
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:14
 msgid "Perform usrmerge conversion"
 msgstr "Executar conversão usrmerge"
 
-#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:50
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:39
 msgid "We recommend you convert your system with usrmerge."
 msgstr "Recomendamos-lhe que converta o sistema com usrmerge."
 
-#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:51
-msgid ""
-"This is done already for new installations of Linux Mint, starting with 20.1."
-msgstr ""
-"Isto já é feito para novas instalações do Linux Mint, a partir do 20.1."
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:40
+msgid "This is done already for new installations of Linux Mint."
+msgstr "Isto já é feito para as novas instalações do Linux Mint."
 
-#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:52
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:41
 msgid "To convert your system, open a terminal and type:"
 msgstr "Para converter o sistema, abra um terminal e escreva:"
 
-#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:54
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:43
 msgid "You should reboot the computer once this completes."
 msgstr "Deverá reiniciar o computador quando isto estiver concluído."
 
-#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:60
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:49
 msgid "More information"
 msgstr "Mais informação"
 

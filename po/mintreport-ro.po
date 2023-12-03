@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2023-06-05 15:09+0100\n"
-"PO-Revision-Date: 2023-05-08 18:11+0000\n"
-"Last-Translator: Vladm <Unknown>\n"
+"POT-Creation-Date: 2023-08-19 13:00+0200\n"
+"PO-Revision-Date: 2023-09-09 09:57+0000\n"
+"Last-Translator: Daniel Slavu <detectivdan@gmail.com>\n"
 "Language-Team: Romanian <ro@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n == 1 ? 0: (((n % 100 > 19) || ((n % 100 "
 "== 0) && (n != 0))) ? 2: 1));\n"
-"X-Launchpad-Export-Date: 2023-07-07 12:58+0000\n"
-"X-Generator: Launchpad (build 2ac9e3bf4ab511504f8fc651371e24a6a047ba12)\n"
+"X-Launchpad-Export-Date: 2023-12-03 13:34+0000\n"
+"X-Generator: Launchpad (build 886068b1e1d10de444fbd53b0c7d3f6d4fb3e658)\n"
 "Language: ro\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
@@ -389,29 +389,27 @@ msgstr[2] ""
 msgid "Visit %s to find information about newer releases."
 msgstr "Vizitați %s pentru a găsi informații despre versiunile mai noi."
 
-#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:16
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:14
 msgid "Perform usrmerge conversion"
 msgstr "Fă conversia la usrmerge"
 
-#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:50
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:39
 msgid "We recommend you convert your system with usrmerge."
 msgstr "Recomandăm convertirea sistemului cu usrmerge."
 
-#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:51
-msgid ""
-"This is done already for new installations of Linux Mint, starting with 20.1."
-msgstr ""
-"Aceasta este făcută deja cu instalări noi de Linux Mint, începând cu 20.1."
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:40
+msgid "This is done already for new installations of Linux Mint."
+msgstr "Acest lucru se face deja pentru noile instalări de Linux Mint."
 
-#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:52
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:41
 msgid "To convert your system, open a terminal and type:"
 msgstr "Pentru a converti sistemul, deschide un terminal și introdu:"
 
-#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:54
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:43
 msgid "You should reboot the computer once this completes."
 msgstr "Ar trebui să repornești calculatorul după ce e gata."
 
-#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:60
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:49
 msgid "More information"
 msgstr "Mai multe informații"
 

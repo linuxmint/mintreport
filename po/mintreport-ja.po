@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2023-06-05 15:09+0100\n"
-"PO-Revision-Date: 2022-05-25 05:01+0000\n"
-"Last-Translator: vega m57 <Unknown>\n"
+"POT-Creation-Date: 2023-08-19 13:00+0200\n"
+"PO-Revision-Date: 2023-12-02 11:01+0000\n"
+"Last-Translator: kmyyfz8q <Unknown>\n"
 "Language-Team: Japanese <ja@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2023-07-07 12:58+0000\n"
-"X-Generator: Launchpad (build 2ac9e3bf4ab511504f8fc651371e24a6a047ba12)\n"
+"X-Launchpad-Export-Date: 2023-12-03 13:34+0000\n"
+"X-Generator: Launchpad (build 886068b1e1d10de444fbd53b0c7d3f6d4fb3e658)\n"
 "Language: ja\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
@@ -83,11 +83,11 @@ msgstr "このレポートを無視"
 
 #: usr/lib/linuxmint/mintreport/app.py:399
 msgid "Are you sure you want to ignore this report?"
-msgstr "このレポートを無視してもよろしいですか？"
+msgstr "このレポートを無視しますか？"
 
 #: usr/lib/linuxmint/mintreport/app.py:400
 msgid "The report will be permanently ignored and will no longer be visible."
-msgstr "無視するように選択されたレポートは、今後一切表示されなくなります。"
+msgstr "無視するように選択したレポートは、今後一切表示されなくなります。"
 
 #: usr/lib/linuxmint/mintreport/app.py:492
 #, python-format
@@ -95,7 +95,7 @@ msgid ""
 "The debug symbols are missing for %(program)s.\n"
 "Please install %(package)s."
 msgstr ""
-"%(program)s のデバッグシンボルが見つかりませんでした。\n"
+"%(program)s のデバッグシンボルがありません。\n"
 "%(package)s をインストールしてください。"
 
 #: usr/lib/linuxmint/mintreport/app.py:506
@@ -156,7 +156,7 @@ msgstr "トラブルシューティングツール"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:1
 msgid "Running system checks..."
-msgstr "システムチェックを実行中..."
+msgstr "システムチェックを実行しています..."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:2
 msgid "No problems were detected"
@@ -256,7 +256,7 @@ msgstr "更新"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
 msgid "Add the XApp Status applet"
-msgstr "XApp 状態アプレットの追加"
+msgstr "XApp 状態アプレットを追加"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:37
 msgid ""
@@ -272,11 +272,11 @@ msgstr "パネルを右クリックし、'パネルに追加' を選択してく
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:46
 msgid "Add the XApp Status applet to the panel"
-msgstr "XApp 状態アプレットをパネルに追加"
+msgstr "パネルに XApp 状態アプレットを追加"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:16
 msgid "Install multimedia codecs"
-msgstr "マルチメディアコーデックのインストール"
+msgstr "マルチメディアコーデックをインストール"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:30
 msgid ""
@@ -290,7 +290,7 @@ msgstr "マルチメディアコーデックをインストール"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:17
 msgid "Set up the system restore utility"
-msgstr "システム復元ユーティリティの設定"
+msgstr "システム復元ユーティリティを設定"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:31
 msgid "Linux Mint provides a system restore utility called Timeshift."
@@ -300,13 +300,14 @@ msgstr "Linux Mint には Timeshift というシステム復元ユーティリ�
 msgid ""
 "Thanks to Timeshift you can take snapshots of the system, either manually or "
 "automatically."
-msgstr "Timeshift を使うと、システムのスナップショットを自動的に保存することも、自分の任意のタイミングで手動保存することもできます。"
+msgstr ""
+"Timeshift を使用すると、システムのスナップショットを自動的に保存することも、自分の任意のタイミングで手動保存することもできます。"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:33
 msgid ""
 "If something goes wrong you can then restore your operating system from a "
 "previously saved snapshot."
-msgstr "何か問題が発生した場合は、それまでに保存しておいたスナップショットから、オペレーティングシステムを復元できます。"
+msgstr "何か問題が発生したときには、それまでに保存しておいたスナップショットから、オペレーティングシステムを復元できます。"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:39
 msgid "Launch Timeshift"
@@ -331,7 +332,7 @@ msgstr "%s にアップグレード"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:49
 msgid "Your version of Linux Mint will soon reach End-Of-Life (EOL)"
-msgstr "お使いのバージョンの Linux Mint は間もなくサポートが終了します"
+msgstr "お使いのバージョンの Linux Mint はまもなくサポートが終了します"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:50
 #, python-brace-format
@@ -341,7 +342,7 @@ msgstr[0] "あと {num_days} 日でサポートとアップデートが受けら
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:54
 msgid "Your version of Linux Mint is no longer supported"
-msgstr "お使いのバージョンの Linux Mint は既にサポートが終了しています"
+msgstr "お使いのバージョンの Linux Mint はすでにサポートが終了しています"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:55
 #, python-brace-format
@@ -354,34 +355,33 @@ msgstr[0] "{num_days} 日前にサポートが終了しました。"
 msgid "Visit %s to find information about newer releases."
 msgstr "新しいリリースの情報については %s にアクセスしてください。"
 
-#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:16
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:14
 msgid "Perform usrmerge conversion"
-msgstr "usrmerge変換を実行"
+msgstr "usrmerge 変換を実行"
 
-#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:50
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:39
 msgid "We recommend you convert your system with usrmerge."
-msgstr "usrmergeを使用してシステムを変換することをお勧めします。"
+msgstr "usrmerge でシステムを変換することをおすすめします。"
 
-#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:51
-msgid ""
-"This is done already for new installations of Linux Mint, starting with 20.1."
-msgstr "これは Linux Mint 20.1以降の新規インストールに対しては既に実行されています。"
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:40
+msgid "This is done already for new installations of Linux Mint."
+msgstr "新規にインストールした Linux Mint であれば、すでに usrmerge は完了しています。"
 
-#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:52
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:41
 msgid "To convert your system, open a terminal and type:"
-msgstr "システムを変換するには、端末を開いて次のように入力します :"
+msgstr "システムを変換するには、端末を開いて次のように入力します:"
 
-#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:54
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:43
 msgid "You should reboot the computer once this completes."
-msgstr "これが完了したら、コンピュータを再起動する必要があります。"
+msgstr "これが完了したら、コンピューターを再起動する必要があります。"
 
-#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:60
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:49
 msgid "More information"
 msgstr "詳細情報"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:17
 msgid "Remove conflicting indicators"
-msgstr "競合するインジケーターの削除"
+msgstr "競合するインジケーターを削除"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:37
 msgid "The following packages prevent tray icons from working properly:"
@@ -389,7 +389,7 @@ msgstr "これらのパッケージが、トレイアイコンの動作の妨げ
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:39
 msgid "Note: You will need to log out after removing them."
-msgstr "注: パッケージを削除した後、いったんログアウトする必要があります。"
+msgstr "注: パッケージを削除したら、いったんログアウトする必要があります。"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:45
 msgid "Remove the conflicting packages."
@@ -397,7 +397,7 @@ msgstr "競合するパッケージを削除"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:26
 msgid "Install language packs"
-msgstr "言語パッケージのインストール"
+msgstr "言語パッケージをインストール"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:41
 msgid ""
@@ -411,7 +411,7 @@ msgstr "言語パッケージをインストール"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:19
 msgid "Install hardware drivers"
-msgstr "ハードウェアドライバーのインストール"
+msgstr "ハードウェアドライバーをインストール"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:28
 msgid "Processor"

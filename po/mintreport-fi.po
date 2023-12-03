@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2023-06-05 15:09+0100\n"
-"PO-Revision-Date: 2022-11-22 11:47+0000\n"
+"POT-Creation-Date: 2023-08-19 13:00+0200\n"
+"PO-Revision-Date: 2023-09-15 13:41+0000\n"
 "Last-Translator: Kimmo Kujansuu <Unknown>\n"
 "Language-Team: Finnish <fi@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2023-07-07 12:58+0000\n"
-"X-Generator: Launchpad (build 2ac9e3bf4ab511504f8fc651371e24a6a047ba12)\n"
+"X-Launchpad-Export-Date: 2023-12-03 13:34+0000\n"
+"X-Generator: Launchpad (build 886068b1e1d10de444fbd53b0c7d3f6d4fb3e658)\n"
 "Language: fi\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
@@ -294,8 +294,8 @@ msgid ""
 "Multimedia codecs are required to play some video formats and to properly "
 "render some websites."
 msgstr ""
-"Joiden videomuotojen toistamiseen ja joidenkin verkkosivujen hahmontamiseen "
-"vaaditaan multimediakoodekkeja."
+"Multimediakoodekkeja tarvitaan joidenkin videoiden ja verkkosivujen "
+"näyttämiseen."
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:36
 msgid "Install the Multimedia Codecs"
@@ -303,7 +303,7 @@ msgstr "Asennna multimediakoodekit"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:17
 msgid "Set up the system restore utility"
-msgstr "Määritä järjestelmän palautusohjelma"
+msgstr "Määritä järjestelmän palautus"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:31
 msgid "Linux Mint provides a system restore utility called Timeshift."
@@ -314,7 +314,7 @@ msgid ""
 "Thanks to Timeshift you can take snapshots of the system, either manually or "
 "automatically."
 msgstr ""
-"Timeshiftin ansiosta voit ottaa palautuspisteen järjestelmästä joko "
+"Timeshift ohjelmalla voit tehdä palautuspisteen järjestelmästä joko "
 "manuaalisesti tai automaattisesti."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:33
@@ -359,7 +359,7 @@ msgstr[1] "Se ei enää saa tukea ja päivityksiä {num_days} päivän kuluttua.
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:54
 msgid "Your version of Linux Mint is no longer supported"
-msgstr "Versiotasi Linux Mintistä ei enää tueta"
+msgstr "Linux Mint versiotasi ei enää tueta"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:55
 #, python-brace-format
@@ -373,29 +373,27 @@ msgstr[1] "Sen käyttöikä päättyi {num_days} päivää sitten."
 msgid "Visit %s to find information about newer releases."
 msgstr "Etsi sivulta %s tietoa uudemmista julkaisuista."
 
-#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:16
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:14
 msgid "Perform usrmerge conversion"
 msgstr "Suorita usrmerge muuntaminen"
 
-#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:50
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:39
 msgid "We recommend you convert your system with usrmerge."
-msgstr "Suosittelemme, että muunnat järjestelmäsi usrmerge:llä."
+msgstr "Suosittelemme, että muunnat järjestelmän usrmerge ohjelmalla."
 
-#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:51
-msgid ""
-"This is done already for new installations of Linux Mint, starting with 20.1."
-msgstr ""
-"Tämä on tehty jo uusille Linux Mintin asennuksille, alkaen versiosta 20.1."
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:40
+msgid "This is done already for new installations of Linux Mint."
+msgstr "Tämä on tehty jo uudemmille Linux Mint versioille."
 
-#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:52
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:41
 msgid "To convert your system, open a terminal and type:"
 msgstr "Voit muuntaa järjestelmän avaamalla päätteen ja kirjoittamalla:"
 
-#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:54
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:43
 msgid "You should reboot the computer once this completes."
 msgstr "Käynnistä tietokone uudelleen, kun tämä on valmistunut."
 
-#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:60
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:49
 msgid "More information"
 msgstr "Lisätietoja"
 
