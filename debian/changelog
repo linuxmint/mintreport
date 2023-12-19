@@ -1,3 +1,13 @@
+mintreport (1.4.5) virginia; urgency=medium
+
+  [ xenopeek ]
+  * Update app.py - increase inxi verbosity (#96)
+
+  [ Clement Lefebvre ]
+  * media-codecs: Fix report so it works both in LMDE and Mint
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 19 Dec 2023 16:38:09 +0000
+
 mintreport (1.4.4) virginia; urgency=medium
 
   * Revert "lmde6: Fix libavcodec-extra59 pkg name"
