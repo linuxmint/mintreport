@@ -1,3 +1,10 @@
+mintreport (1.4.6) virginia; urgency=medium
+
+  * l10n: Update translations
+  * l10n: Update files
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 04 Jan 2024 16:42:07 +0000
+
 mintreport (1.4.5) virginia; urgency=medium
 
   [ xenopeek ]
