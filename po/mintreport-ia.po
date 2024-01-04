@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2023-08-19 13:00+0200\n"
-"PO-Revision-Date: 2022-09-07 17:33+0000\n"
-"Last-Translator: karm <melo@carmu.com>\n"
+"PO-Revision-Date: 2023-12-30 01:30+0000\n"
+"Last-Translator: famese <Unknown>\n"
 "Language-Team: Interlingua <ia@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2023-12-03 13:34+0000\n"
-"X-Generator: Launchpad (build 886068b1e1d10de444fbd53b0c7d3f6d4fb3e658)\n"
+"X-Launchpad-Export-Date: 2024-01-04 14:59+0000\n"
+"X-Generator: Launchpad (build e1eeab5b20e19239bd7d5f36676f7a52988db88b)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
 #: usr/lib/linuxmint/mintreport/app.py:237 generate_desktop_files:25
@@ -53,7 +53,7 @@ msgid ""
 "Your system information was copied into your clipboard so you can paste it "
 "on the forums."
 msgstr ""
-"Tu informationes de systema ha essite copiate in tu area de transferentia si "
+"Tu informationes de systema esseva copiate in tu area de transferentia si "
 "que tu pote collar los sur le foros."
 
 #: usr/lib/linuxmint/mintreport/app.py:302
@@ -66,20 +66,21 @@ msgid ""
 "Your system information was uploaded to %s. This link was placed in your "
 "clipboard so you can paste it on IRC."
 msgstr ""
-"Tu informationes de systema ha essite cargate a %s. Iste ligamine era ponite "
+"Tu informationes de systema esseva cargate a %s. Iste ligamine esseva ponite "
 "in tu area de transferentia si que tu pote collar lo sur IRC."
 
 #: usr/lib/linuxmint/mintreport/app.py:304
 msgid "An error occurred while uploading the system information"
-msgstr "Un error occurreva al cargamento del  informationes de systema."
+msgstr ""
+"Un error occurreva durante le incargamento del informationes de systema."
 
 #: usr/lib/linuxmint/mintreport/app.py:304
 msgid ""
 "Copy and paste the system information manually into a pastebin site like "
 "https://pastebin.com and share the link on IRC."
 msgstr ""
-"Copia e colla manualmente le information de systema in un sito pastebin site "
-"como https://pastebin.com e comparti le ligamine sur IRC."
+"Copia e colla manualmente le information de systema in un sito pastebin como "
+"https://pastebin.com e comparti le ligamine sur IRC."
 
 #: usr/lib/linuxmint/mintreport/app.py:383
 msgid "Ignore this report"
@@ -109,9 +110,9 @@ msgid ""
 "If you want to generate a stack trace for this crash report, please "
 "reinstall it."
 msgstr ""
-"Le pacchetto que forni %s non pote ser trovate.\n"
-"Si tu desira generar un tracia del pila de iste reporto de collapso, per "
-"favor, reinstalla lo."
+"Le pacchetto que forni %s non pote esser trovate.\n"
+"Si tu desira generar un traciamento del pila de iste reporto de collapso, "
+"per favor, reinstalla lo."
 
 #: usr/lib/linuxmint/mintreport/app.py:534
 msgid ""
@@ -122,9 +123,9 @@ msgid ""
 "inaccurate."
 msgstr ""
 "Le titulos o binarios installate sur tu systema non concorda con le codice "
-"que era exequite durante le collapso.\n"
-"Illos probabilemente esseva actualisate.\n"
-"Un tracia de pila es disponibile in 'Local Files', ma su contento es "
+"que esseva exequite durante le collapso.\n"
+"Illos probabilemente esseva modernisate.\n"
+"Un traciamento del pila es disponibile in 'Local Files', ma su contento es "
 "probabilemente inaccurate."
 
 #: usr/lib/linuxmint/mintreport/tray.py:68
@@ -141,7 +142,7 @@ msgstr "Instantaneos de systema"
 
 #: usr/lib/linuxmint/mintreport/tray.py:156
 msgid "A Timeshift system snapshot is being created."
-msgstr "Un dilation instantanee de systema ha essite create."
+msgstr "Un instantaneo de systema Timeshift essera create."
 
 #: usr/lib/linuxmint/mintreport/tray.py:157
 msgid "Automatic Updates"
@@ -149,21 +150,21 @@ msgstr "Actualisationes automatic"
 
 #: usr/lib/linuxmint/mintreport/tray.py:157
 msgid "Automatic updates are being installed."
-msgstr "Actualisationes automatic va esser installate."
+msgstr "Actualisationes automatic essera installate."
 
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:23
 msgid "Troubleshoot problems"
-msgstr "Problemas de chassa al errores"
+msgstr "Resolution de problemas"
 
 #: generate_desktop_files:53
 msgid "Troubleshooting Tool"
-msgstr "Application de chassa al errores"
+msgstr "Instrumento de resolution de problemas"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:1
 msgid "Running system checks..."
-msgstr "Controlos de systema..."
+msgstr "Executante verificationes de systema..."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:2
 msgid "No problems were detected"
@@ -182,16 +183,16 @@ msgid ""
 "Copy to clipboard (code tags are added to make it easy to paste the system "
 "information into the forums)"
 msgstr ""
-"Copia al area de transferentia (tags de codice es addite pro render facile "
-"collar le information de systema in le foros)"
+"Copia al area de transferentia (etiquettas de codice es addite pro render "
+"facile collar le information de systema in le foros)"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:6
 msgid "Upload"
-msgstr "Cargar"
+msgstr "Incargar"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:7
 msgid "Upload to a pastebin service (no personal information included)"
-msgstr "Cargar a servicio pastebin (nulle personal information includite)"
+msgstr "Incargar a servicio pastebin (nulle information personal includite)"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:8
 msgid "System information"
@@ -199,29 +200,29 @@ msgstr "Informationes de systema"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:9
 msgid "Crash reports are not available"
-msgstr "Reportos de crash non disponibile"
+msgstr "Reportos de collapso non disponibile"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:10
 msgid ""
 "To enable crash reporting, install systemd-coredump and reboot your computer."
 msgstr ""
-"Pro activar le reporto de crash, installa systemd-coredump e reinitia tu "
+"Pro activar le reporto de collapso, installa systemd-coredump e reinitia tu "
 "computator."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:11
 msgid "Crash reports:"
-msgstr "Reportos de collapso"
+msgstr "Reportos de collapso:"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:12
 msgid "Stack trace:"
-msgstr "Tracia del pila:"
+msgstr "Traciamento del pila:"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:13
 msgid ""
 "When seeking help, check for existing bug reports, pastebin the trace, share "
 "crash.tar.gz (from Local Files) and explain how to reproduce the crash."
 msgstr ""
-"Durante que tu cerca auxilio, verifica le reportos de defectos existente, le "
+"Quando tu cerca adjuta, verifica le reportos de defectos existente, le "
 "tracia de pastebin, comparti crash.tar.gz (de Local Files) e explica como "
 "reproducer le collapso."
 
@@ -235,7 +236,7 @@ msgstr "Aperir le directorio continente crash.tar.gz e su contento."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:16
 msgid "Bug Tracker"
-msgstr "Traciator de errores"
+msgstr "Traciator de defectos"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:17
 msgid "Find the most appropriate bug tracker."
@@ -247,7 +248,7 @@ msgstr "Pastebin"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:19
 msgid "Upload the trace to the Internet."
-msgstr "Carga le tracia a Internet"
+msgstr "Incarga le tracia al Internet"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:20
 msgid ""
@@ -269,19 +270,19 @@ msgstr "Refrescar"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
 msgid "Add the XApp Status applet"
-msgstr "Adder le applet de stato de XApp"
+msgstr "Adder le applet de stato XApp"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:37
 msgid ""
 "The XApp Status applet allows applications to provide a tray icon without "
 "rendering glitches and with support for HiDPI and symbolic icons."
 msgstr ""
-"Le applet XApp Status permitte al applicationes de fornir un icone de stato "
-"sin imperfectiones e con supporto pro  HiDPI e icones symbolic."
+"Le applet de stato XApp permitte al applicationes de fornir un icone de "
+"stato sin imperfectiones e con supporto pro  HiDPI e icones symbolic."
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:39
 msgid "Right-click the panel and choose 'Add to Panel'."
-msgstr "Clicca dextere sur le pannello e elige \"Adder al pannello\""
+msgstr "Clic dextre sur le pannello e elige «Adder al pannello»"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:46
 msgid "Add the XApp Status applet to the panel"
@@ -305,7 +306,7 @@ msgstr "Installar le codecs multimedial"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:17
 msgid "Set up the system restore utility"
-msgstr "Defini le functionalitate de pro remontar le systema"
+msgstr "Defini le utilitate de restauration del systema"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:31
 msgid "Linux Mint provides a system restore utility called Timeshift."
@@ -347,7 +348,7 @@ msgstr "Visita %s pro le ultime annuncios."
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:56
 #, python-format
 msgid "Upgrade to %s"
-msgstr "Promover a %s"
+msgstr "Modernisar a %s"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:49
 msgid "Your version of Linux Mint will soon reach End-Of-Life (EOL)"
@@ -368,13 +369,13 @@ msgstr "Tu version de Linux Mint non es plus supportate"
 #, python-brace-format
 msgid "It reached End-Of-Life (EOL) yesterday."
 msgid_plural "It reached End-Of-Life (EOL) {num_days} days ago."
-msgstr[0] "Illo attingeva le fin-de-vita (EOL) heri."
-msgstr[1] "Illo attingeva le fin-de-vita (EOL) {num_days} dies retro."
+msgstr[0] "Illo attingeva le fin de vita (EOL) heri."
+msgstr[1] "Illo attingeva le fin de vita (EOL) {num_days} dies retro."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:66
 #, python-format
 msgid "Visit %s to find information about newer releases."
-msgstr "Visita %s pro informationes re versiones plus recente."
+msgstr "Visita %s pro informationes super versiones plus recente."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:14
 msgid "Perform usrmerge conversion"
@@ -382,11 +383,11 @@ msgstr "Exequer conversion usrmerge"
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:39
 msgid "We recommend you convert your system with usrmerge."
-msgstr "Nos consilia que tu converte tu systema con usrmerge."
+msgstr "Nos recommenda que tu converte tu systema con usrmerge."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:40
 msgid "This is done already for new installations of Linux Mint."
-msgstr ""
+msgstr "Isto jam es facite pro nove installationes de Linux Mint."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:41
 msgid "To convert your system, open a terminal and type:"
@@ -394,11 +395,11 @@ msgstr "Pro converter tu systema, aperi un terminal e scribe:"
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:43
 msgid "You should reboot the computer once this completes."
-msgstr "Tu deberea re-initiar le computator un vice que isto se completa."
+msgstr "Tu deberea reinitiar le computator un vice que isto se completa."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:49
 msgid "More information"
-msgstr "Alter informationes"
+msgstr "Plus information"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:17
 msgid "Remove conflicting indicators"
@@ -407,12 +408,12 @@ msgstr "Remover indicatores de conflicto"
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:37
 msgid "The following packages prevent tray icons from working properly:"
 msgstr ""
-"Le sequente pacchettos impedi al icones del placa de functionar "
-"correctemente:"
+"Le sequente pacchettos impedi al icones del area de notification de "
+"functionar correctemente:"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:39
 msgid "Note: You will need to log out after removing them."
-msgstr "Tu debera disconnecter te post los remover."
+msgstr "Nota: Tu debera disconnecter te post remover los."
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:45
 msgid "Remove the conflicting packages."
@@ -436,7 +437,7 @@ msgstr "Installar le pacchettos de lingua"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:19
 msgid "Install hardware drivers"
-msgstr "Installar drivers hardware"
+msgstr "Installar controlatores de hardware"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:28
 msgid "Processor"
@@ -453,8 +454,8 @@ msgstr "%s iIncognite)"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:100
 msgid "Hardware drivers are available for the following devices:"
-msgstr "Drivers hardware es disponibile pro le apparatos sequente:"
+msgstr "Controlatores de hardware es disponibile pro le apparatos sequente:"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:107
 msgid "Launch the Driver Manager"
-msgstr "Lancear le gestor de drivers"
+msgstr "Lancear le gestor de controlator"
