@@ -1,3 +1,13 @@
+mintreport (1.4.7) virginia; urgency=medium
+
+  [ Michael Webster ]
+  * app.py:  Stop filtering out python coredumps.
+
+  [ Clement Lefebvre ]
+  * new-release: Close mintreport after launching mint-release-upgrade
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 17 Jan 2024 14:56:54 +0000
+
 mintreport (1.4.6) virginia; urgency=medium
 
   * l10n: Update translations
