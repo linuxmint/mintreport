@@ -1,6 +1,7 @@
 import configparser
 import os
 import subprocess
+import sys
 import gettext
 import gi
 gi.require_version('Gtk', '3.0')
@@ -56,9 +57,11 @@ class Report(InfoReport):
         return actions
 
     def callback(self, data):
-        subprocess.run(["/usr/bin/mint-release-upgrade"])
-        # reload
-        return True
+        subprocess.Popen(["/usr/bin/mint-release-upgrade"])
+        # close mintreport altogether
+        # we're starting an upgrade which will then suggest a reboot.
+        # let mint-release-upgrade take over.
+        sys.exit(0)
 
 if __name__ == "__main__":
     report = Report()
