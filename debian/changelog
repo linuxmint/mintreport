@@ -1,3 +1,10 @@
+mintreport (1.4.8) wilma; urgency=medium
+
+  [ Michael Webster ]
+  * common.py: Fix python 3.12 regression.
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 28 Feb 2024 18:11:44 +0000
+
 mintreport (1.4.7) virginia; urgency=medium
 
   [ Michael Webster ]
