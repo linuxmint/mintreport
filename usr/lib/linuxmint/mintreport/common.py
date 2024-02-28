@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 import gi
-import imp
+import importlib
 import os
 import sys
 import threading
@@ -32,7 +32,7 @@ class InfoReportContainer():
         self.path = path
         sys.path.insert(0, path)
         import MintReportInfo
-        imp.reload(MintReportInfo)
+        importlib.reload(MintReportInfo)
         self.instance = MintReportInfo.Report()
         sys.path.remove(path)
 
