@@ -1,3 +1,9 @@
+mintreport (1.4.9) wilma; urgency=medium
+
+  * l10n: Update translations
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 18 Jun 2024 20:48:02 +0100
+
 mintreport (1.4.8) wilma; urgency=medium
 
   [ Michael Webster ]
