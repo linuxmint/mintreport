@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2023-08-19 13:00+0200\n"
-"PO-Revision-Date: 2021-09-20 01:28+0000\n"
-"Last-Translator: MinhTran <Unknown>\n"
+"PO-Revision-Date: 2024-03-31 14:34+0000\n"
+"Last-Translator: thieninox <Unknown>\n"
 "Language-Team: Vietnamese <vi@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2024-01-04 14:59+0000\n"
-"X-Generator: Launchpad (build e1eeab5b20e19239bd7d5f36676f7a52988db88b)\n"
+"X-Launchpad-Export-Date: 2024-06-18 17:56+0000\n"
+"X-Generator: Launchpad (build bbfa2351d9d6a9ddfe262109428f7bf5516e65d1)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
 #: usr/lib/linuxmint/mintreport/app.py:237 generate_desktop_files:25
@@ -32,12 +32,12 @@ msgstr "Khôi phục các báo cáo bị bỏ qua"
 #: usr/lib/linuxmint/mintreport/app.py:204
 #: usr/lib/linuxmint/mintreport/tray.py:72
 msgid "Quit"
-msgstr ""
+msgstr "Thoát"
 
 #: usr/lib/linuxmint/mintreport/app.py:216
 #: usr/lib/linuxmint/mintreport/app.py:235
 msgid "About"
-msgstr ""
+msgstr "Thông Tin"
 
 #: usr/lib/linuxmint/mintreport/app.py:279
 msgid "An error occurred while gathering the system information."
@@ -134,19 +134,19 @@ msgstr "Một số báo cáo hệ thống yêu cầu bạn chú ý"
 
 #: usr/lib/linuxmint/mintreport/tray.py:156
 msgid "System Snapshots"
-msgstr ""
+msgstr "Bản sao lưu hệ thống"
 
 #: usr/lib/linuxmint/mintreport/tray.py:156
 msgid "A Timeshift system snapshot is being created."
-msgstr ""
+msgstr "Bản sao lưu hệ thống Timeshift đang được tạo."
 
 #: usr/lib/linuxmint/mintreport/tray.py:157
 msgid "Automatic Updates"
-msgstr ""
+msgstr "Cập nhật tự động"
 
 #: usr/lib/linuxmint/mintreport/tray.py:157
 msgid "Automatic updates are being installed."
-msgstr ""
+msgstr "Cập nhật tự động đang được cài đặt."
 
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
@@ -184,7 +184,7 @@ msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:6
 msgid "Upload"
-msgstr ""
+msgstr "Tải lên"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:7
 msgid "Upload to a pastebin service (no personal information included)"
@@ -192,7 +192,7 @@ msgstr "Tải lên dịch vụ pastebin (không bao gồm thông tin cá nhân)"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:8
 msgid "System information"
-msgstr ""
+msgstr "Thông tin hệ thống"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:9
 msgid "Crash reports are not available"
@@ -260,7 +260,7 @@ msgstr "Báo hỏng"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:24
 msgid "Refresh"
-msgstr ""
+msgstr "Làm mới"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
 msgid "Add the XApp Status applet"
@@ -271,17 +271,17 @@ msgid ""
 "The XApp Status applet allows applications to provide a tray icon without "
 "rendering glitches and with support for HiDPI and symbolic icons."
 msgstr ""
-"Trạng thái XApp applet cho phép các ứng dụng cung cấp biểu tượng khay mà "
-"không hiển thị trục trặc và hỗ trợ HiDPI và các biểu tượng tượng trưng."
+"Applet Trạng thái XApp cho phép các ứng dụng cung cấp biểu tượng khay mà "
+"không gặp trục trặc khi hiển thị và hỗ trợ HiDPI cũng như các biểu tượng "
+"tượng trưng."
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:39
 msgid "Right-click the panel and choose 'Add to Panel'."
-msgstr ""
-"Nhấp chuột phải vào bảng điều khiển và chọn 'Thêm vào bảng điều khiển'."
+msgstr "Nhấp chuột phải vào bảng panel và chọn 'Thêm vào bảng panel'."
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:46
 msgid "Add the XApp Status applet to the panel"
-msgstr "Thêm Trạng thái XApp applet vào bảng điều khiển"
+msgstr "Thêm applet Trạng thái XApp vào bảng panel"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:16
 msgid "Install multimedia codecs"
@@ -343,110 +343,113 @@ msgstr "Truy cập %s để biết thông báo mới nhất."
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:56
 #, python-format
 msgid "Upgrade to %s"
-msgstr ""
+msgstr "Nâng cấp lên %s"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:49
 msgid "Your version of Linux Mint will soon reach End-Of-Life (EOL)"
 msgstr ""
+"Phiên bản Linux Mint của bạn sẽ sớm đạt đến trạng thái Kết thúc vòng đời "
+"(EOL)"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:50
 #, python-brace-format
 msgid "It will stop receiving support and updates in a day."
 msgid_plural "It will stop receiving support and updates in {num_days} days."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Nó sẽ ngừng nhận hỗ trợ và cập nhật sau {num_days} ngày."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:54
 msgid "Your version of Linux Mint is no longer supported"
-msgstr ""
+msgstr "Phiên bản Linux Mint của bạn không còn được hỗ trợ"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:55
 #, python-brace-format
 msgid "It reached End-Of-Life (EOL) yesterday."
 msgid_plural "It reached End-Of-Life (EOL) {num_days} days ago."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Nó đã đạt đến Kết thúc vòng đời (EOL) {num_days} ngày trước."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:66
 #, python-format
 msgid "Visit %s to find information about newer releases."
-msgstr ""
+msgstr "Truy cập %s để tìm thông tin về các bản phát hành mới hơn."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:14
 msgid "Perform usrmerge conversion"
-msgstr ""
+msgstr "Thực hiện chuyển đổi hợp nhất"
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:39
 msgid "We recommend you convert your system with usrmerge."
-msgstr ""
+msgstr "Chúng tôi khuyên bạn nên chuyển đổi hệ thống của mình bằng usrmerge."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:40
 msgid "This is done already for new installations of Linux Mint."
 msgstr ""
+"Việc này đã được thực hiện đối với các bản cài đặt mới của Linux Mint."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:41
 msgid "To convert your system, open a terminal and type:"
-msgstr ""
+msgstr "Để chuyển đổi hệ thống của bạn, hãy mở một Trình dòng lệnh và gõ:"
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:43
 msgid "You should reboot the computer once this completes."
-msgstr ""
+msgstr "Bạn nên khởi động lại máy tính sau khi quá trình này hoàn tất."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:49
 msgid "More information"
-msgstr ""
+msgstr "Thông tin thêm"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:17
 msgid "Remove conflicting indicators"
-msgstr ""
+msgstr "Loại bỏ các chỉ số xung đột"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:37
 msgid "The following packages prevent tray icons from working properly:"
-msgstr ""
+msgstr "Các gói sau ngăn các biểu tượng trên khay hoạt động bình thường:"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:39
 msgid "Note: You will need to log out after removing them."
-msgstr ""
+msgstr "Lưu ý: Bạn sẽ cần phải đăng xuất sau khi gỡ bỏ chúng."
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:45
 msgid "Remove the conflicting packages."
-msgstr ""
+msgstr "Loại bỏ các gói xung đột."
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:26
 msgid "Install language packs"
-msgstr ""
+msgstr "Cài đặt gói ngôn ngữ"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:41
 msgid ""
 "The following localization packages are missing to properly support your "
 "language:"
 msgstr ""
+"Các gói bản địa hóa sau đây bị thiếu để hỗ trợ đúng cách cho ngôn ngữ của "
+"bạn:"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:48
 msgid "Install the Language Packs"
-msgstr ""
+msgstr "Cài đặt gói ngôn ngữ"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:19
 msgid "Install hardware drivers"
-msgstr ""
+msgstr "Cài đặt trình điều khiển phần cứng"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:28
 msgid "Processor"
-msgstr ""
+msgstr "Bộ xử lý"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:41
 msgid "Unknown"
-msgstr ""
+msgstr "Không xác định"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:45
 #, python-format
 msgid "%s (unknown)"
-msgstr ""
+msgstr "%s (không xác định)"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:100
 msgid "Hardware drivers are available for the following devices:"
-msgstr ""
+msgstr "Trình điều khiển phần cứng có sẵn cho các thiết bị sau:"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:107
 msgid "Launch the Driver Manager"
-msgstr ""
+msgstr "Khởi chạy Trình quản lý điều khiển"

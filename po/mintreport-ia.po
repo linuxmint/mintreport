@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2023-08-19 13:00+0200\n"
-"PO-Revision-Date: 2023-12-30 01:30+0000\n"
+"PO-Revision-Date: 2024-02-17 00:32+0000\n"
 "Last-Translator: famese <Unknown>\n"
 "Language-Team: Interlingua <ia@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2024-01-04 14:59+0000\n"
-"X-Generator: Launchpad (build e1eeab5b20e19239bd7d5f36676f7a52988db88b)\n"
+"X-Launchpad-Export-Date: 2024-06-18 17:56+0000\n"
+"X-Generator: Launchpad (build bbfa2351d9d6a9ddfe262109428f7bf5516e65d1)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
 #: usr/lib/linuxmint/mintreport/app.py:237 generate_desktop_files:25
@@ -88,7 +88,7 @@ msgstr "Ignorar iste reporto"
 
 #: usr/lib/linuxmint/mintreport/app.py:399
 msgid "Are you sure you want to ignore this report?"
-msgstr "Desira tu vermente ignorar iste reporto?"
+msgstr "Es tu secur que tu vole ignorar iste reporto?"
 
 #: usr/lib/linuxmint/mintreport/app.py:400
 msgid "The report will be permanently ignored and will no longer be visible."

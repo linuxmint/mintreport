@@ -15,17 +15,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2024-01-04 14:59+0000\n"
-"X-Generator: Launchpad (build e1eeab5b20e19239bd7d5f36676f7a52988db88b)\n"
-
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:13
-msgid ""
-"When seeking help, check for existing bug reports, pastebin the trace, share "
-"crash.tar.gz (from Local Files) and explain how to reproduce the crash."
-msgstr ""
-"Yardım aradığınızda, mevcut hata raporlarını kontrol edin, ipuçlarını "
-"pastebin'e yükleyin, (yerel dosyalardan) crash.tar.gz dosyasını paylaşın ve "
-"hatanın nasıl yeniden üretilebileceğini açıklayın."
+"X-Launchpad-Export-Date: 2024-06-18 17:56+0000\n"
+"X-Generator: Launchpad (build bbfa2351d9d6a9ddfe262109428f7bf5516e65d1)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
 #: usr/lib/linuxmint/mintreport/app.py:237 generate_desktop_files:25
@@ -221,6 +212,15 @@ msgstr "Çökme raporları:"
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:12
 msgid "Stack trace:"
 msgstr "İpucu izleme:"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:13
+msgid ""
+"When seeking help, check for existing bug reports, pastebin the trace, share "
+"crash.tar.gz (from Local Files) and explain how to reproduce the crash."
+msgstr ""
+"Yardım aradığınızda, mevcut hata raporlarını kontrol edin, ipuçlarını "
+"pastebin'e yükleyin, (yerel dosyalardan) crash.tar.gz dosyasını paylaşın ve "
+"hatanın nasıl ortaya çıktığını açıklayın."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:14
 msgid "Local Files"
