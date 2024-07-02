@@ -299,9 +299,9 @@ class MintReportWindow():
             clipboard = Gtk.Clipboard.get(Gdk.SELECTION_CLIPBOARD)
             buff = self.builder.get_object("textview_sysinfo").get_buffer()
             clipboard.set_text(link, -1)
-            subprocess.Popen(['notify-send', '-i', 'dialog-information-symbolic', _("System information uploaded"), _("Your system information was uploaded to %s. This link was placed in your clipboard so you can paste it on IRC.") % link])
+            subprocess.Popen(['notify-send', '-i', 'dialog-information-symbolic', _("System information uploaded"), _("Your system information was uploaded to %s. This link was placed in your clipboard.") % link])
         except Exception as e:
-            subprocess.Popen(['notify-send', '-i', 'dialog-error-symbolic', _("An error occurred while uploading the system information"), _("Copy and paste the system information manually into a pastebin site like https://pastebin.com and share the link on IRC."), str(e)])
+            subprocess.Popen(['notify-send', '-i', 'dialog-error-symbolic', _("An error occurred while uploading the system information"), _("Copy and paste the system information manually into a pastebin site like https://pastebin.com."), str(e)])
 
     @idle
     def add_report_to_treeview(self, report):
