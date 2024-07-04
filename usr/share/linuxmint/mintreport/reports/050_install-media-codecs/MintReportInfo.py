@@ -43,8 +43,8 @@ class Report(InfoReport):
             # LMDE 6
             self.install_packages(["mint-meta-codecs", "libavcodec-extra", "libavcodec-extra59"])
         else:
-            # Mint 21.x
-            self.install_packages(["mint-meta-codecs", "libavcodec-extra", "libavcodec-extra58"])
+            # Mint 22.x
+            self.install_packages(["mint-meta-codecs", "libavcodec-extra", "libavcodec-extra60"])
         # reload
         return True
 
