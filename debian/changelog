@@ -1,3 +1,9 @@
+mintreport (1.5.1) wilma; urgency=medium
+
+  * l10n: Update translations
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sun, 21 Jul 2024 10:34:54 +0100
+
 mintreport (1.5.0) wilma; urgency=medium
 
   * l10n: Remove mentions of IRC and update POT
