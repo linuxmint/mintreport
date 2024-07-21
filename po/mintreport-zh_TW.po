@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2023-08-19 13:00+0200\n"
-"PO-Revision-Date: 2024-02-16 16:05+0000\n"
+"POT-Creation-Date: 2024-07-02 17:04+0100\n"
+"PO-Revision-Date: 2024-07-10 20:49+0000\n"
 "Last-Translator: 爽自由 <coby2023t@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <zh_TW@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2024-06-18 17:56+0000\n"
+"X-Launchpad-Export-Date: 2024-07-21 09:02+0000\n"
 "X-Generator: Launchpad (build bbfa2351d9d6a9ddfe262109428f7bf5516e65d1)\n"
 "Language: zh_TW\n"
 
@@ -62,8 +62,8 @@ msgstr "已上傳系統資訊"
 #, python-format
 msgid ""
 "Your system information was uploaded to %s. This link was placed in your "
-"clipboard so you can paste it on IRC."
-msgstr "您的系統資訊已上傳至 %s ，此連結已經複製到您的剪貼簿以便於您張貼於 IRC 聊天頻道。"
+"clipboard."
+msgstr "您的系統資訊已上傳到 %s。本連結已存在剪貼簿上。"
 
 #: usr/lib/linuxmint/mintreport/app.py:304
 msgid "An error occurred while uploading the system information"
@@ -72,8 +72,8 @@ msgstr "上傳系統資訊時發生錯誤"
 #: usr/lib/linuxmint/mintreport/app.py:304
 msgid ""
 "Copy and paste the system information manually into a pastebin site like "
-"https://pastebin.com and share the link on IRC."
-msgstr "請手動將系統資訊複製並貼到一個線上張貼網站 (如 https://pastebin.com) 並在 IRC 上共享連結。"
+"https://pastebin.com."
+msgstr "手動拷貝系統資訊並貼上分享到像 https://pastebin.com 的分享網站。"
 
 #: usr/lib/linuxmint/mintreport/app.py:383
 msgid "Ignore this report"
@@ -87,7 +87,7 @@ msgstr "確定要忽略這份報告 ?"
 msgid "The report will be permanently ignored and will no longer be visible."
 msgstr "錯誤報告將永久忽略，不會出現。"
 
-#: usr/lib/linuxmint/mintreport/app.py:492
+#: usr/lib/linuxmint/mintreport/app.py:489
 #, python-format
 msgid ""
 "The debug symbols are missing for %(program)s.\n"
@@ -96,7 +96,7 @@ msgstr ""
 "%(program)s 遺失除錯符號。\n"
 "請安裝 %(package)s。"
 
-#: usr/lib/linuxmint/mintreport/app.py:506
+#: usr/lib/linuxmint/mintreport/app.py:503
 #, python-format
 msgid ""
 "The package providing %s could not be found.\n"
@@ -106,7 +106,7 @@ msgstr ""
 "找不到提供 %s 的軟體包。\n"
 "如果您想要產生此當機報告的堆疊追蹤資訊，請重新安裝該軟體。"
 
-#: usr/lib/linuxmint/mintreport/app.py:534
+#: usr/lib/linuxmint/mintreport/app.py:531
 msgid ""
 "The headers or binaries installed on your system do not match the code which "
 "was executed during the crash.\n"
@@ -305,18 +305,18 @@ msgstr "您可以在出現問題時將作業系統還原至先前擷取的系統
 msgid "Launch Timeshift"
 msgstr "啟動 Timeshift"
 
-#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:17
+#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:18
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:17
 msgid "A new version of Linux Mint is available"
 msgstr "有 Linux Mint 系統更新"
 
-#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:47
+#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:48
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:50
 #, python-format
 msgid "Visit %s for the latest announcements."
 msgstr "請造訪 %s 以閱讀最新宣佈事項。"
 
-#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:53
+#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:54
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:56
 #, python-format
 msgid "Upgrade to %s"

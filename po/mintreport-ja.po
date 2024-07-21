@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2023-08-19 13:00+0200\n"
-"PO-Revision-Date: 2023-12-02 11:01+0000\n"
+"POT-Creation-Date: 2024-07-02 17:04+0100\n"
+"PO-Revision-Date: 2024-07-03 15:27+0000\n"
 "Last-Translator: kmyyfz8q <Unknown>\n"
 "Language-Team: Japanese <ja@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2024-06-18 17:56+0000\n"
+"X-Launchpad-Export-Date: 2024-07-21 09:02+0000\n"
 "X-Generator: Launchpad (build bbfa2351d9d6a9ddfe262109428f7bf5516e65d1)\n"
 "Language: ja\n"
 
@@ -52,7 +52,7 @@ msgstr "システム情報をコピーしました"
 msgid ""
 "Your system information was copied into your clipboard so you can paste it "
 "on the forums."
-msgstr "システム情報がクリップボードにコピーされました。フォーラムに貼り付けることができます。"
+msgstr "システム情報がクリップボードにコピーされました。このままフォーラムに貼り付けることができます。"
 
 #: usr/lib/linuxmint/mintreport/app.py:302
 msgid "System information uploaded"
@@ -62,8 +62,8 @@ msgstr "システム情報をアップロードしました"
 #, python-format
 msgid ""
 "Your system information was uploaded to %s. This link was placed in your "
-"clipboard so you can paste it on IRC."
-msgstr "システム情報を %s にアップロードしました。なお、このリンクはクリップボードにコピーされています。IRC に貼り付けることができます。"
+"clipboard."
+msgstr "システム情報が %s にアップロードされました。このリンクはクリップボードにもコピーされています。"
 
 #: usr/lib/linuxmint/mintreport/app.py:304
 msgid "An error occurred while uploading the system information"
@@ -72,10 +72,8 @@ msgstr "システム情報のアップロード中にエラーが発生しまし
 #: usr/lib/linuxmint/mintreport/app.py:304
 msgid ""
 "Copy and paste the system information manually into a pastebin site like "
-"https://pastebin.com and share the link on IRC."
-msgstr ""
-"システム情報を https://pastebin.com のようなペーストビンサービスに手動でコピー & 貼り付けし、そのリンクを IRC "
-"に共有してください。"
+"https://pastebin.com."
+msgstr "システム情報をご自身でペーストビンサービス (https://pastebin.com など) にコピー・貼り付けてください。"
 
 #: usr/lib/linuxmint/mintreport/app.py:383
 msgid "Ignore this report"
@@ -89,7 +87,7 @@ msgstr "このレポートを無視しますか？"
 msgid "The report will be permanently ignored and will no longer be visible."
 msgstr "無視するように選択したレポートは、今後一切表示されなくなります。"
 
-#: usr/lib/linuxmint/mintreport/app.py:492
+#: usr/lib/linuxmint/mintreport/app.py:489
 #, python-format
 msgid ""
 "The debug symbols are missing for %(program)s.\n"
@@ -98,7 +96,7 @@ msgstr ""
 "%(program)s のデバッグシンボルがありません。\n"
 "%(package)s をインストールしてください。"
 
-#: usr/lib/linuxmint/mintreport/app.py:506
+#: usr/lib/linuxmint/mintreport/app.py:503
 #, python-format
 msgid ""
 "The package providing %s could not be found.\n"
@@ -108,7 +106,7 @@ msgstr ""
 "%s を提供するパッケージが見つかりませんでした。\n"
 "このクラッシュレポートのスタックトレースを生成したい場合は、対応するパッケージを再インストールしてください。"
 
-#: usr/lib/linuxmint/mintreport/app.py:534
+#: usr/lib/linuxmint/mintreport/app.py:531
 msgid ""
 "The headers or binaries installed on your system do not match the code which "
 "was executed during the crash.\n"
@@ -313,18 +311,18 @@ msgstr "何か問題が発生したときには、それまでに保存してお
 msgid "Launch Timeshift"
 msgstr "Timeshift を起動"
 
-#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:17
+#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:18
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:17
 msgid "A new version of Linux Mint is available"
 msgstr "新しいバージョンの Linux Mint が利用できます"
 
-#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:47
+#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:48
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:50
 #, python-format
 msgid "Visit %s for the latest announcements."
 msgstr "最新のお知らせについては %s にアクセスしてください。"
 
-#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:53
+#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:54
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:56
 #, python-format
 msgid "Upgrade to %s"

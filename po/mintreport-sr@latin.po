@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2023-08-19 13:00+0200\n"
+"POT-Creation-Date: 2024-07-02 17:04+0100\n"
 "PO-Revision-Date: 2021-11-24 19:13+0000\n"
 "Last-Translator: Saša Marjanović <Unknown>\n"
 "Language-Team: Serbian Latin <sr@latin@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2024-06-18 17:56+0000\n"
+"X-Launchpad-Export-Date: 2024-07-21 09:02+0000\n"
 "X-Generator: Launchpad (build bbfa2351d9d6a9ddfe262109428f7bf5516e65d1)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
@@ -64,10 +64,8 @@ msgstr "Informacije o sistemu su otpremljene"
 #, python-format
 msgid ""
 "Your system information was uploaded to %s. This link was placed in your "
-"clipboard so you can paste it on IRC."
+"clipboard."
 msgstr ""
-"Informacije o Vašem sistemu su otpremljene na %s. Ovaj link je smešten u Vaš "
-"klipbord nako da ga možete umetnuti na IRC kanal."
 
 #: usr/lib/linuxmint/mintreport/app.py:304
 msgid "An error occurred while uploading the system information"
@@ -76,10 +74,8 @@ msgstr "Došlo je do greške prilikom otpremanja informacija o sistemu."
 #: usr/lib/linuxmint/mintreport/app.py:304
 msgid ""
 "Copy and paste the system information manually into a pastebin site like "
-"https://pastebin.com and share the link on IRC."
+"https://pastebin.com."
 msgstr ""
-"Kopirajte i ubacite informacije o sistemu ručno na pastebin stranicu kao što "
-"je https://pastebin.com i delite link na IRC kanalu."
 
 #: usr/lib/linuxmint/mintreport/app.py:383
 msgid "Ignore this report"
@@ -93,7 +89,7 @@ msgstr "Da li ste sigurni da želite da zanemarite ovaj izveštaj?"
 msgid "The report will be permanently ignored and will no longer be visible."
 msgstr "Ovaj izveštaj će biti trajno zanemaren i više neće biti vidljiv."
 
-#: usr/lib/linuxmint/mintreport/app.py:492
+#: usr/lib/linuxmint/mintreport/app.py:489
 #, python-format
 msgid ""
 "The debug symbols are missing for %(program)s.\n"
@@ -102,7 +98,7 @@ msgstr ""
 "Simboli za otklanjanje grešaka nedostaju za %(program)s.\n"
 "Molim vas instalirajte %(package)s."
 
-#: usr/lib/linuxmint/mintreport/app.py:506
+#: usr/lib/linuxmint/mintreport/app.py:503
 #, python-format
 msgid ""
 "The package providing %s could not be found.\n"
@@ -113,7 +109,7 @@ msgstr ""
 "Ako želite da generišete praćenje toka izvršenja programa (``stack trace``)  "
 "za ovaj izveštaj o rušenju, ponovo ga instalirajte."
 
-#: usr/lib/linuxmint/mintreport/app.py:534
+#: usr/lib/linuxmint/mintreport/app.py:531
 msgid ""
 "The headers or binaries installed on your system do not match the code which "
 "was executed during the crash.\n"
@@ -333,18 +329,18 @@ msgstr ""
 msgid "Launch Timeshift"
 msgstr "Pokreni Timeshift"
 
-#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:17
+#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:18
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:17
 msgid "A new version of Linux Mint is available"
 msgstr "Nova verzija Linuks Minta je dostupna"
 
-#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:47
+#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:48
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:50
 #, python-format
 msgid "Visit %s for the latest announcements."
 msgstr "Posetite %s da biste saznali više o najnovijim najavama."
 
-#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:53
+#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:54
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:56
 #, python-format
 msgid "Upgrade to %s"

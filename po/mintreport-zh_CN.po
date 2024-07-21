@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2023-08-19 13:00+0200\n"
-"PO-Revision-Date: 2019-12-09 18:03+0000\n"
-"Last-Translator: Clement Lefebvre <root@linuxmint.com>\n"
+"POT-Creation-Date: 2024-07-02 17:04+0100\n"
+"PO-Revision-Date: 2024-07-19 04:03+0000\n"
+"Last-Translator: 张鹏 <Unknown>\n"
 "Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2024-06-18 17:56+0000\n"
+"X-Launchpad-Export-Date: 2024-07-21 09:02+0000\n"
 "X-Generator: Launchpad (build bbfa2351d9d6a9ddfe262109428f7bf5516e65d1)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
@@ -61,8 +61,8 @@ msgstr "已上传系统信息"
 #, python-format
 msgid ""
 "Your system information was uploaded to %s. This link was placed in your "
-"clipboard so you can paste it on IRC."
-msgstr "您的系统信息已上传到 %s。这个链接已复制到您的剪贴板，您可以粘贴到 IRC。"
+"clipboard."
+msgstr "您的系统信息已上传到 %s。链接已放置在剪贴板中。"
 
 #: usr/lib/linuxmint/mintreport/app.py:304
 msgid "An error occurred while uploading the system information"
@@ -71,22 +71,22 @@ msgstr "上传系统信息时出错。"
 #: usr/lib/linuxmint/mintreport/app.py:304
 msgid ""
 "Copy and paste the system information manually into a pastebin site like "
-"https://pastebin.com and share the link on IRC."
-msgstr "请将系统信息手动复制粘贴到 https://pastebin.com 之类的网站上，并将链接分享到 IRC。"
+"https://pastebin.com."
+msgstr "手动将系统信息复制并粘贴到 pastebin 站点（如 https://pastebin.com）中。"
 
 #: usr/lib/linuxmint/mintreport/app.py:383
 msgid "Ignore this report"
-msgstr ""
+msgstr "忽略此报告"
 
 #: usr/lib/linuxmint/mintreport/app.py:399
 msgid "Are you sure you want to ignore this report?"
-msgstr ""
+msgstr "您确定忽略此报告吗？"
 
 #: usr/lib/linuxmint/mintreport/app.py:400
 msgid "The report will be permanently ignored and will no longer be visible."
-msgstr ""
+msgstr "该报告将被永久忽略并不再显示。"
 
-#: usr/lib/linuxmint/mintreport/app.py:492
+#: usr/lib/linuxmint/mintreport/app.py:489
 #, python-format
 msgid ""
 "The debug symbols are missing for %(program)s.\n"
@@ -95,7 +95,7 @@ msgstr ""
 "找不到 %(program)s 的调试符号。\n"
 "请安装 %(package)s。"
 
-#: usr/lib/linuxmint/mintreport/app.py:506
+#: usr/lib/linuxmint/mintreport/app.py:503
 #, python-format
 msgid ""
 "The package providing %s could not be found.\n"
@@ -105,7 +105,7 @@ msgstr ""
 "找不到提供 %s 的包。\n"
 "如果您要为此崩溃报告生成堆栈跟踪，请从新安装此包。"
 
-#: usr/lib/linuxmint/mintreport/app.py:534
+#: usr/lib/linuxmint/mintreport/app.py:531
 msgid ""
 "The headers or binaries installed on your system do not match the code which "
 "was executed during the crash.\n"
@@ -123,23 +123,23 @@ msgstr "显示系统报告"
 
 #: usr/lib/linuxmint/mintreport/tray.py:146
 msgid "Some system reports require your attention"
-msgstr ""
+msgstr "一些系统报告需要您关注"
 
 #: usr/lib/linuxmint/mintreport/tray.py:156
 msgid "System Snapshots"
-msgstr ""
+msgstr "系统快照"
 
 #: usr/lib/linuxmint/mintreport/tray.py:156
 msgid "A Timeshift system snapshot is being created."
-msgstr ""
+msgstr "正在创建 Timeshift 系统快照。"
 
 #: usr/lib/linuxmint/mintreport/tray.py:157
 msgid "Automatic Updates"
-msgstr ""
+msgstr "自动更新"
 
 #: usr/lib/linuxmint/mintreport/tray.py:157
 msgid "Automatic updates are being installed."
-msgstr ""
+msgstr "正在安装自动更新。"
 
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
@@ -161,7 +161,7 @@ msgstr "未检测到问题"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:3
 msgid "System reports"
-msgstr ""
+msgstr "系统报告"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:4
 msgid "Copy"
@@ -303,18 +303,18 @@ msgstr "如果出了问题，您可以从以前保存的快照中恢复操作系
 msgid "Launch Timeshift"
 msgstr "启动 Timeshift"
 
-#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:17
+#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:18
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:17
 msgid "A new version of Linux Mint is available"
 msgstr "新版本的 Linux Mint 可用"
 
-#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:47
+#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:48
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:50
 #, python-format
 msgid "Visit %s for the latest announcements."
 msgstr "访问 %s 以获取最新公告。"
 
-#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:53
+#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:54
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:56
 #, python-format
 msgid "Upgrade to %s"
@@ -347,43 +347,43 @@ msgstr "访问 %s 以查看有关较新版本的信息。"
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:14
 msgid "Perform usrmerge conversion"
-msgstr ""
+msgstr "执行 usrmerge 转换"
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:39
 msgid "We recommend you convert your system with usrmerge."
-msgstr ""
+msgstr "我们建议您使用 usrmerge 转换您的系统。"
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:40
 msgid "This is done already for new installations of Linux Mint."
-msgstr ""
+msgstr "已经完成Linux Mint全新安装。"
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:41
 msgid "To convert your system, open a terminal and type:"
-msgstr ""
+msgstr "要转换您的系统，请打开终端并输入："
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:43
 msgid "You should reboot the computer once this completes."
-msgstr ""
+msgstr "操作完成后，您应该重新启动计算机。"
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:49
 msgid "More information"
-msgstr ""
+msgstr "更多信息"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:17
 msgid "Remove conflicting indicators"
-msgstr ""
+msgstr "删除冲突的指示器"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:37
 msgid "The following packages prevent tray icons from working properly:"
-msgstr ""
+msgstr "以下软件包导致托盘图标无法正常工作："
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:39
 msgid "Note: You will need to log out after removing them."
-msgstr ""
+msgstr "注意：您需要在删除它们后进行注销。"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:45
 msgid "Remove the conflicting packages."
-msgstr ""
+msgstr "删除冲突软件包。"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:26
 msgid "Install language packs"
@@ -405,16 +405,16 @@ msgstr "安装硬件驱动"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:28
 msgid "Processor"
-msgstr ""
+msgstr "处理器"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:41
 msgid "Unknown"
-msgstr ""
+msgstr "未知的"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:45
 #, python-format
 msgid "%s (unknown)"
-msgstr ""
+msgstr "%s（未知）"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:100
 msgid "Hardware drivers are available for the following devices:"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-19 13:00+0200\n"
+"POT-Creation-Date: 2024-07-02 17:04+0100\n"
 "PO-Revision-Date: 2022-08-28 06:48+0000\n"
 "Last-Translator: أنس <Unknown>\n"
 "Language-Team: anwar AL_iskandrany <anwareleskndrany13@gmail.com >\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n % 100 >= "
 "3 && n % 100 <= 10 ? 3 : n % 100 >= 11 && n % 100 <= 99 ? 4 : 5;\n"
-"X-Launchpad-Export-Date: 2024-06-18 17:56+0000\n"
+"X-Launchpad-Export-Date: 2024-07-21 09:02+0000\n"
 "X-Generator: Launchpad (build bbfa2351d9d6a9ddfe262109428f7bf5516e65d1)\n"
 "Language: ar_EG\n"
 
@@ -58,10 +58,8 @@ msgstr "تم رفع معلومات النظام"
 #, python-format
 msgid ""
 "Your system information was uploaded to %s. This link was placed in your "
-"clipboard so you can paste it on IRC."
+"clipboard."
 msgstr ""
-"تم رفع معلومات نظامك إلى %s. وهذا الرابط تم وضعه في حافظتك حيث يمكنك لصقه "
-"على دردشة IRC."
 
 #: usr/lib/linuxmint/mintreport/app.py:304
 msgid "An error occurred while uploading the system information"
@@ -70,7 +68,7 @@ msgstr "حدث خطأ أثناء رفع معلومات النظام"
 #: usr/lib/linuxmint/mintreport/app.py:304
 msgid ""
 "Copy and paste the system information manually into a pastebin site like "
-"https://pastebin.com and share the link on IRC."
+"https://pastebin.com."
 msgstr ""
 
 #: usr/lib/linuxmint/mintreport/app.py:383
@@ -85,7 +83,7 @@ msgstr "هل أنت متأكد من أنك تريد تجاهل هذا التقر
 msgid "The report will be permanently ignored and will no longer be visible."
 msgstr "سيتم تجاهل التقرير إلى الأبد، ولن يكون مرئياّ بعد الأن."
 
-#: usr/lib/linuxmint/mintreport/app.py:492
+#: usr/lib/linuxmint/mintreport/app.py:489
 #, python-format
 msgid ""
 "The debug symbols are missing for %(program)s.\n"
@@ -94,7 +92,7 @@ msgstr ""
 "رموز تصحيح  %(program)s مفقودة.\n"
 "الرجاء تثبيت %(package)s."
 
-#: usr/lib/linuxmint/mintreport/app.py:506
+#: usr/lib/linuxmint/mintreport/app.py:503
 #, python-format
 msgid ""
 "The package providing %s could not be found.\n"
@@ -104,7 +102,7 @@ msgstr ""
 "الحزمة التي توفر %s لا يمكن العثور عليها.\n"
 "إذا كنت تريد إنشاء تتبع مكدس لتقرير الأعطال هذا، فالرجاء إعادة تثبيته."
 
-#: usr/lib/linuxmint/mintreport/app.py:534
+#: usr/lib/linuxmint/mintreport/app.py:531
 msgid ""
 "The headers or binaries installed on your system do not match the code which "
 "was executed during the crash.\n"
@@ -310,18 +308,18 @@ msgstr ""
 msgid "Launch Timeshift"
 msgstr "شغّل Timeshift"
 
-#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:17
+#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:18
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:17
 msgid "A new version of Linux Mint is available"
 msgstr "إصدار جديد من Linux Mint أصبح متاح."
 
-#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:47
+#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:48
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:50
 #, python-format
 msgid "Visit %s for the latest announcements."
 msgstr "قم بزيارة %s من أجل أخر الإعلانات."
 
-#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:53
+#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:54
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:56
 #, python-format
 msgid "Upgrade to %s"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2023-08-19 13:00+0200\n"
+"POT-Creation-Date: 2024-07-02 17:04+0100\n"
 "PO-Revision-Date: 2022-08-18 16:09+0000\n"
 "Last-Translator: Panwar <Unknown>\n"
 "Language-Team: Hindi <hi@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2024-06-18 17:56+0000\n"
+"X-Launchpad-Export-Date: 2024-07-21 09:02+0000\n"
 "X-Generator: Launchpad (build bbfa2351d9d6a9ddfe262109428f7bf5516e65d1)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
@@ -63,10 +63,8 @@ msgstr "सिस्टम की जानकारी अपलोड कर �
 #, python-format
 msgid ""
 "Your system information was uploaded to %s. This link was placed in your "
-"clipboard so you can paste it on IRC."
+"clipboard."
 msgstr ""
-"आपकी सिस्टम की जानकारी %s पर अपलोड कर दी गई। यह लिंक आपके क्लिपबोर्ड पर है "
-"ताकि आप इसे IRC पर पेस्ट कर सकें।"
 
 #: usr/lib/linuxmint/mintreport/app.py:304
 msgid "An error occurred while uploading the system information"
@@ -75,10 +73,8 @@ msgstr "सिस्टम की जानकारी अपलोड कर�
 #: usr/lib/linuxmint/mintreport/app.py:304
 msgid ""
 "Copy and paste the system information manually into a pastebin site like "
-"https://pastebin.com and share the link on IRC."
+"https://pastebin.com."
 msgstr ""
-"सिस्टम की जानकारी मैन्युअल रूप से https://pastebin.com जैसी टेक्स्ट संचयन "
-"साइट पर कॉपी-पेस्ट करें व IRC पर लिंक साझा करें।"
 
 #: usr/lib/linuxmint/mintreport/app.py:383
 msgid "Ignore this report"
@@ -92,7 +88,7 @@ msgstr "क्या आप निश्चित ही इस रिपोर�
 msgid "The report will be permanently ignored and will no longer be visible."
 msgstr "इस रिपोर्ट को स्थायी रुप से अनदेखा कर अदृश्य किया जाएगा।"
 
-#: usr/lib/linuxmint/mintreport/app.py:492
+#: usr/lib/linuxmint/mintreport/app.py:489
 #, python-format
 msgid ""
 "The debug symbols are missing for %(program)s.\n"
@@ -101,7 +97,7 @@ msgstr ""
 "%(program)s के लिए दोषमार्जन(डिबग) प्रतीक अनुपस्थित हैं।\n"
 "कृपया %(package)s इंस्टॉल करें।"
 
-#: usr/lib/linuxmint/mintreport/app.py:506
+#: usr/lib/linuxmint/mintreport/app.py:503
 #, python-format
 msgid ""
 "The package providing %s could not be found.\n"
@@ -112,7 +108,7 @@ msgstr ""
 "यदि इस क्रैश रिपोर्ट के लिए स्टैक ट्रेस उत्पन्न करना चाहते हैं, तो इसे पुन: "
 "इंस्टॉल करें।"
 
-#: usr/lib/linuxmint/mintreport/app.py:534
+#: usr/lib/linuxmint/mintreport/app.py:531
 msgid ""
 "The headers or binaries installed on your system do not match the code which "
 "was executed during the crash.\n"
@@ -335,18 +331,18 @@ msgstr ""
 msgid "Launch Timeshift"
 msgstr "टाइम-शिफ्ट खोलें"
 
-#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:17
+#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:18
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:17
 msgid "A new version of Linux Mint is available"
 msgstr "लिनक्स मिंट का नया संस्करण उपलब्ध है"
 
-#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:47
+#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:48
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:50
 #, python-format
 msgid "Visit %s for the latest announcements."
 msgstr "नवीनतम घोषणाओं को %s पर जाकर देखें।"
 
-#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:53
+#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:54
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:56
 #, python-format
 msgid "Upgrade to %s"

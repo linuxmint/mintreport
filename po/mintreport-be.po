@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2023-08-19 13:00+0200\n"
-"PO-Revision-Date: 2023-11-22 16:48+0000\n"
+"POT-Creation-Date: 2024-07-02 17:04+0100\n"
+"PO-Revision-Date: 2024-07-07 16:17+0000\n"
 "Last-Translator: Anton Hryb <Unknown>\n"
 "Language-Team: Belarusian <be@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Launchpad-Export-Date: 2024-06-18 17:56+0000\n"
+"X-Launchpad-Export-Date: 2024-07-21 09:02+0000\n"
 "X-Generator: Launchpad (build bbfa2351d9d6a9ddfe262109428f7bf5516e65d1)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
@@ -64,10 +64,10 @@ msgstr "Сістэмная інфармацыя запампавана"
 #, python-format
 msgid ""
 "Your system information was uploaded to %s. This link was placed in your "
-"clipboard so you can paste it on IRC."
+"clipboard."
 msgstr ""
-"Ваша сістэмная інфармацыя была запампавана ў %s. Гэта спасылка размешчана ў "
-"вашым буферы абмену, таму вы можаце ўставіць яе ў чат IRC."
+"Сістэмная інфармацыя загружана на %s. Гэта спасылка змешчана ў ваш буфер "
+"абмену."
 
 #: usr/lib/linuxmint/mintreport/app.py:304
 msgid "An error occurred while uploading the system information"
@@ -76,10 +76,10 @@ msgstr "Здарылася памылка падчас запампоўкі сі
 #: usr/lib/linuxmint/mintreport/app.py:304
 msgid ""
 "Copy and paste the system information manually into a pastebin site like "
-"https://pastebin.com and share the link on IRC."
+"https://pastebin.com."
 msgstr ""
-"Скапіюйце і ўстаўце сістэмную інфармацыю ўручную на сайт кшталту "
-"https://pastebin.com і падзяліцеся спасылкай ў чаце IRC."
+"Уручную скапіюйце і ўстаўце сістэмную інфармацыю на сайт кшталту "
+"https://pastebin.com."
 
 #: usr/lib/linuxmint/mintreport/app.py:383
 msgid "Ignore this report"
@@ -93,7 +93,7 @@ msgstr "Сапраўды жадаеце праігнараваць гэту сп
 msgid "The report will be permanently ignored and will no longer be visible."
 msgstr "Гэта справаздача будзе заўсёды ігнаравацца і не будзе больш бачна."
 
-#: usr/lib/linuxmint/mintreport/app.py:492
+#: usr/lib/linuxmint/mintreport/app.py:489
 #, python-format
 msgid ""
 "The debug symbols are missing for %(program)s.\n"
@@ -102,7 +102,7 @@ msgstr ""
 "Адладачныя сімвалы страчаны для %(program)s.\n"
 "Усталюйце %(package)s."
 
-#: usr/lib/linuxmint/mintreport/app.py:506
+#: usr/lib/linuxmint/mintreport/app.py:503
 #, python-format
 msgid ""
 "The package providing %s could not be found.\n"
@@ -113,7 +113,7 @@ msgstr ""
 "Калі жадаеце згенераваць след стэка для гэтай справаздачы, пераўсталюйце "
 "пакет."
 
-#: usr/lib/linuxmint/mintreport/app.py:534
+#: usr/lib/linuxmint/mintreport/app.py:531
 msgid ""
 "The headers or binaries installed on your system do not match the code which "
 "was executed during the crash.\n"
@@ -328,18 +328,18 @@ msgstr ""
 msgid "Launch Timeshift"
 msgstr "Запусціць Timeshift"
 
-#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:17
+#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:18
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:17
 msgid "A new version of Linux Mint is available"
 msgstr "Даступна новая версія Linux Mint"
 
-#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:47
+#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:48
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:50
 #, python-format
 msgid "Visit %s for the latest announcements."
 msgstr "Наведайце %s для азнаямлення з апошнімі аб'явамі."
 
-#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:53
+#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:54
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:56
 #, python-format
 msgid "Upgrade to %s"
