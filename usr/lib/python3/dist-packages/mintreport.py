@@ -1,5 +1,5 @@
 import gi
-import mintcommon.aptdaemon
+import aptkit.simpleclient
 
 gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
@@ -28,7 +28,7 @@ class InfoReport(ABC):
         pass
 
     def install_packages(self, package_names):
-        self.apt = mintcommon.aptdaemon.APT(None)
+        self.apt = aptkit.simpleclient.SimpleAPTClient(None)
         self.package_names = package_names
         self.apt.set_finished_callback(self.on_update_before_install_finished)
         self.apt.update_cache()
@@ -45,7 +45,7 @@ class InfoReport(ABC):
         Gtk.main_quit()
 
     def remove_packages(self, package_names):
-        self.apt = mintcommon.aptdaemon.APT(None)
+        self.apt = aptkit.simpleclient.SimpleAPTClient(None)
         self.package_names = package_names
         self.apt.set_finished_callback(self.on_update_before_remove_finished)
         self.apt.update_cache()

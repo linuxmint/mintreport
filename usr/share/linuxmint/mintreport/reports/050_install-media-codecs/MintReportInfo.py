@@ -39,12 +39,7 @@ class Report(InfoReport):
         return actions
 
     def callback(self, data):
-        if os.path.exists("/usr/share/doc/debian-system-adjustments/copyright"):
-            # LMDE 6
-            self.install_packages(["mint-meta-codecs", "libavcodec-extra", "libavcodec-extra59"])
-        else:
-            # Mint 22.x
-            self.install_packages(["mint-meta-codecs", "libavcodec-extra", "libavcodec-extra60"])
+        self.install_packages(["mint-meta-codecs"])
         # reload
         return True
 
