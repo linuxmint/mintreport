@@ -1,16 +1,16 @@
-# Swedish translation for linuxmint
-# Copyright (c) 2017 Rosetta Contributors and Canonical Ltd 2017
+# Asturian translation for linuxmint
+# Copyright (c) 2024 Rosetta Contributors and Canonical Ltd 2024
 # This file is distributed under the same license as the linuxmint package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2024-07-02 17:04+0100\n"
-"PO-Revision-Date: 2024-07-03 14:49+0000\n"
-"Last-Translator: Jan-Olof Svensson <jan-olof.svensson@abc.se>\n"
-"Language-Team: Swedish <sv@li.org>\n"
+"PO-Revision-Date: 2024-07-24 13:51+0000\n"
+"Last-Translator: Havi <Unknown>\n"
+"Language-Team: Asturian <ast@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -23,41 +23,41 @@ msgstr ""
 #: generate_desktop_files:39 generate_desktop_files:53
 #: generate_desktop_files:67 usr/share/linuxmint/mintreport/mintreport.ui.h:22
 msgid "System Reports"
-msgstr "Systemrapporter"
+msgstr "Reportes del sistema"
 
 #: usr/lib/linuxmint/mintreport/app.py:199
 msgid "Restore ignored reports"
-msgstr "Återställ ignorerade rapporter"
+msgstr "Restaurar reportes inoraos"
 
 #: usr/lib/linuxmint/mintreport/app.py:204
 #: usr/lib/linuxmint/mintreport/tray.py:72
 msgid "Quit"
-msgstr "Avsluta"
+msgstr "Colar"
 
 #: usr/lib/linuxmint/mintreport/app.py:216
 #: usr/lib/linuxmint/mintreport/app.py:235
 msgid "About"
-msgstr "Om"
+msgstr "Tocante a"
 
 #: usr/lib/linuxmint/mintreport/app.py:279
 msgid "An error occurred while gathering the system information."
-msgstr "Ett fel uppstod medan systeminformationen samlades ihop."
+msgstr "Hebu un fallu de mientres s'atopaba la información del sistema"
 
 #: usr/lib/linuxmint/mintreport/app.py:293
 msgid "System information copied"
-msgstr "Systeminformation kopierad"
+msgstr "Copiose la información del sistema"
 
 #: usr/lib/linuxmint/mintreport/app.py:293
 msgid ""
 "Your system information was copied into your clipboard so you can paste it "
 "on the forums."
 msgstr ""
-"Din systeminformation har kopierats till ditt urklipp så att du kan klistra "
-"in den på forumet."
+"Los axustes del to sistema copiaronse nel to cartafueyu, pa poder apegalo "
+"nos foros"
 
 #: usr/lib/linuxmint/mintreport/app.py:302
 msgid "System information uploaded"
-msgstr "Systeminformation uppladdad"
+msgstr "Anovose la información del sistema"
 
 #: usr/lib/linuxmint/mintreport/app.py:302
 #, python-format
@@ -65,31 +65,32 @@ msgid ""
 "Your system information was uploaded to %s. This link was placed in your "
 "clipboard."
 msgstr ""
-"Systeminformationen skickades till %s. Den här länken placerades i Urklipp."
+"La información del to sistema xubiose a %s. Esti enllaz allugose nel to "
+"cartafueyu"
 
 #: usr/lib/linuxmint/mintreport/app.py:304
 msgid "An error occurred while uploading the system information"
-msgstr "Ett fel uppstod medan systeminformationen laddades upp"
+msgstr "Hebu un erru al xubir la información del sistema"
 
 #: usr/lib/linuxmint/mintreport/app.py:304
 msgid ""
 "Copy and paste the system information manually into a pastebin site like "
 "https://pastebin.com."
 msgstr ""
-"Du kan kopiera och klistra in informationen manuellt på en pastebin-"
-"webbplats som https://pastebin.com."
+"Copiar ya apegar la información del sistema a manu nun sitiu pastebin, comu "
+"https://pastebin.com."
 
 #: usr/lib/linuxmint/mintreport/app.py:383
 msgid "Ignore this report"
-msgstr "Ignorera denna rapport"
+msgstr "Inorar esti reporte"
 
 #: usr/lib/linuxmint/mintreport/app.py:399
 msgid "Are you sure you want to ignore this report?"
-msgstr "Är du säker på att du vill ignorera denna rapport?"
+msgstr "¿Tas xuru de que quies inorar esti reporte?"
 
 #: usr/lib/linuxmint/mintreport/app.py:400
 msgid "The report will be permanently ignored and will no longer be visible."
-msgstr "Rapporten ignoreras permanent och kommer inte längre att visas."
+msgstr "El reporte inorarase dafechu ya nun podrá vese más."
 
 #: usr/lib/linuxmint/mintreport/app.py:489
 #, python-format
@@ -97,8 +98,8 @@ msgid ""
 "The debug symbols are missing for %(program)s.\n"
 "Please install %(package)s."
 msgstr ""
-"Felsökningssymboler saknas för %(program)s.\n"
-"Installera %(package)s."
+"Nun s'atoparon los símbolos de depuración pa  %(program)s.\n"
+"Por favor, istala %(package)s."
 
 #: usr/lib/linuxmint/mintreport/app.py:503
 #, python-format
@@ -107,9 +108,9 @@ msgid ""
 "If you want to generate a stack trace for this crash report, please "
 "reinstall it."
 msgstr ""
-"Paketet som innehåller %s kunde inte hittas.\n"
-"Installera om paketet, om du vill generera en stackspårning för denna "
-"kraschrapport."
+"El paquete qu'ufre %s nun s'atopó.\n"
+"Si quies xenerar un rastru de pila pa esti reporte de rompedura has de "
+"reistalalu."
 
 #: usr/lib/linuxmint/mintreport/app.py:531
 msgid ""
@@ -119,126 +120,125 @@ msgid ""
 "A stack trace is available in 'Local Files' but its content is probably "
 "inaccurate."
 msgstr ""
-"De sidhuvuden eller binärer som är installerade på ditt system, stämmer inte "
-"överens med koden som kördes under kraschen.\n"
-"De har troligen uppgraderats sedan dess.\n"
-"En stackspårning finns tillgänglig i \"Lokala filer\", men innehållet är "
-"troligen felaktigt."
+"Los cabezaleros o binarios istalaos nel to sistema nun casen col códigu que "
+"s'executó de mientres la rompedura.\n"
+"Ye probable que s'anvoran dende entós.\n"
+"Hai un rastru de pila disponible en \"Archivos llocales\", pero el so "
+"conteníu pué nun ser fiable."
 
 #: usr/lib/linuxmint/mintreport/tray.py:68
 msgid "Show System Reports"
-msgstr "Visa systemrapporter"
+msgstr "Amosar reportes del sistema"
 
 #: usr/lib/linuxmint/mintreport/tray.py:146
 msgid "Some system reports require your attention"
-msgstr "Det finns systemrapporter som kräver din uppmärksamhet"
+msgstr "Hai dellos reportes del sistema qu'habríes d'atender"
 
 #: usr/lib/linuxmint/mintreport/tray.py:156
 msgid "System Snapshots"
-msgstr "Ögonblicksbilder av systemet"
+msgstr "Semeyes del sistema"
 
 #: usr/lib/linuxmint/mintreport/tray.py:156
 msgid "A Timeshift system snapshot is being created."
-msgstr "Timeshift skapar en ögonblicksbild av systemet."
+msgstr "Ta faciéndose una semeya del sistema con Timeshift"
 
 #: usr/lib/linuxmint/mintreport/tray.py:157
 msgid "Automatic Updates"
-msgstr "Automatiska uppdateringar"
+msgstr "Anovamientos automáticos"
 
 #: usr/lib/linuxmint/mintreport/tray.py:157
 msgid "Automatic updates are being installed."
-msgstr "De automatiska uppdateringarna installeras."
+msgstr "Los anovamientos automáticos tan istalandose."
 
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:23
 msgid "Troubleshoot problems"
-msgstr "Felsök problem"
+msgstr "Iguar problemes"
 
 #: generate_desktop_files:53
 msgid "Troubleshooting Tool"
-msgstr "Felsökningsverktyg"
+msgstr "Ferramienta d'igua de problemes"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:1
 msgid "Running system checks..."
-msgstr "Kör systemkontroller..."
+msgstr "Faciendo prebes nel sistema..."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:2
 msgid "No problems were detected"
-msgstr "Inga problem hittades"
+msgstr "Nun s'alcontró dengún problema"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:3
 msgid "System reports"
-msgstr "Systemrapporter"
+msgstr "Reportes del sistema"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:4
 msgid "Copy"
-msgstr "Kopiera"
+msgstr "Copiar"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:5
 msgid ""
 "Copy to clipboard (code tags are added to make it easy to paste the system "
 "information into the forums)"
 msgstr ""
-"Kopiera till urklipp (forumkoder läggs till för att enkelt klistra in "
-"systeminformationen i forumet)"
+"Copiar al cartafueyu (añédense etiquetes de codigu pa facer más cenciellu "
+"l'apegar la información del sistema nos foros)"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:6
 msgid "Upload"
-msgstr "Ladda upp"
+msgstr "Xubir"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:7
 msgid "Upload to a pastebin service (no personal information included)"
-msgstr ""
-"Ladda upp till en pastebin-tjänst (ingen personlig information ingår)"
+msgstr "Xubir a un serviciu pastebin (Nun se inclui información personal)"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:8
 msgid "System information"
-msgstr "Systeminformation"
+msgstr "Información del sistema"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:9
 msgid "Crash reports are not available"
-msgstr "Kraschrapporterna är inte tillgängliga"
+msgstr "Los reportes de rompedura nun tan disponibles"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:10
 msgid ""
 "To enable crash reporting, install systemd-coredump and reboot your computer."
 msgstr ""
-"För att aktivera kraschrapportering, installera systemd-coredump och starta "
-"om din dator."
+"P'autivar el reporte de rompedures, istala systemd-coredump ya reanicia'l to "
+"ordenador."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:11
 msgid "Crash reports:"
-msgstr "Kraschrapporter:"
+msgstr "Reportes de rompedura:"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:12
 msgid "Stack trace:"
-msgstr "Stackspårning:"
+msgstr "Rastru de pila:"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:13
 msgid ""
 "When seeking help, check for existing bug reports, pastebin the trace, share "
 "crash.tar.gz (from Local Files) and explain how to reproduce the crash."
 msgstr ""
-"När du söker hjälp, leta först efter befintliga felrapporter, klistra in "
-"spårningen, dela crash.tar.gz (från Lokala filer) och förklara hur man kan "
-"reproducera kraschen."
+"Al guetar aida, compreba los reportes d'erros ya esistentes, xubi el rastru "
+"a pastebin, comparti el  crash.tar.gz de los tos Ficheros llocales ya "
+"esplica comu acontez la rompedura."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:14
 msgid "Local Files"
-msgstr "Lokala filer"
+msgstr "Ficheros llocales"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:15
 msgid "Open the directory containing crash.tar.gz and its content."
-msgstr "Öppna mappen med crash.tar.gz och dess innehåll."
+msgstr "Abrir direutoriu que contien crash.tar.gz ya'l so conteníu."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:16
 msgid "Bug Tracker"
-msgstr "Ärendehanterare"
+msgstr "Llocalizador d'erros"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:17
 msgid "Find the most appropriate bug tracker."
-msgstr "Hitta den bäst lämpade ärendehanteraren"
+msgstr "Atopa el llocalizador d'erros más afayadizu."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:18
 msgid "Pastebin"
@@ -246,7 +246,7 @@ msgstr "Pastebin"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:19
 msgid "Upload the trace to the Internet."
-msgstr "Ladda upp spårningen på internet"
+msgstr "Xubi el rastru a internet."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:20
 msgid ""
@@ -254,204 +254,207 @@ msgid ""
 "Always provide a trace and reliable instructions to trigger/observe the "
 "problem."
 msgstr ""
-"Utvecklare behöver veta var koden fallerar och hur man reproducerar "
-"problemet. Ange alltid en spårning och tillförlitliga instruktioner om hur "
-"man utlöser/observerar problemet."
+"Los desencolcadores precisen saber aú falla'l códigu, o comu reproducir "
+"l'erru. Da-yos siempres un rastru ya istrucciones fiables pa atopar ya facer "
+"un analís del problema."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:21
 msgid "Crash reports"
-msgstr "Kraschrapporter"
+msgstr "Reportes de rompedura"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:24
 msgid "Refresh"
-msgstr "Hämta om"
+msgstr "Refrescar"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
 msgid "Add the XApp Status applet"
-msgstr "Lägg till appen XApp Status"
+msgstr "Añedir el applet d'estáu XApp"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:37
 msgid ""
 "The XApp Status applet allows applications to provide a tray icon without "
 "rendering glitches and with support for HiDPI and symbolic icons."
 msgstr ""
-"Appen XApp Status ger program möjlighet att lägga till en panel-ikon med hög "
-"kvalitet. Den har stöd för HiDPI och symboliska ikoner."
+"El applet d'estáu XApp permite que les aplicaciones amuesen un iconu na "
+"barra d'estáu ensin erros d'amosamientu ya con soporte pa iconos simbólicos "
+"HiDPI"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:39
 msgid "Right-click the panel and choose 'Add to Panel'."
-msgstr "Högerklicka på panelen och välj 'Lägg till i panelen'."
+msgstr "Clic drechu nel panel ya escueyi \"Añedir al panel\""
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:46
 msgid "Add the XApp Status applet to the panel"
-msgstr "Lägg till appen XApp Status i panelen"
+msgstr "Añedir el applet d'estáu XApp al panel"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:16
 msgid "Install multimedia codecs"
-msgstr "Installera multimedia-tillägg"
+msgstr "Istalar codecs multimedia"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:30
 msgid ""
 "Multimedia codecs are required to play some video formats and to properly "
 "render some websites."
 msgstr ""
-"Multimedia-tillägg behövs för att vissa videofilmer och webbsidor skall "
-"kunna visas på rätt sätt."
+"Los codecs multimedia ríquense pa reproducir dellos formatos de video ya pa "
+"amosar correchamente dellos sitios web."
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:36
 msgid "Install the Multimedia Codecs"
-msgstr "Installera Multimedia-tillägg"
+msgstr "Istalar codecs multimedia"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:17
 msgid "Set up the system restore utility"
-msgstr "Aktivera systemets återställningsfunktion"
+msgstr "Afita la utilidá de restauración del sistema"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:31
 msgid "Linux Mint provides a system restore utility called Timeshift."
-msgstr "Linux Mint har en återställningsfunktion som kallas Timeshift."
+msgstr ""
+"Linux Mint ufre una ferramienta de restauración de sistema nomada Timeshift."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:32
 msgid ""
 "Thanks to Timeshift you can take snapshots of the system, either manually or "
 "automatically."
 msgstr ""
-"Med Timeshift kan du ta ögonblicksbilder av systemet, antingen manuellt "
-"eller automatiskt."
+"Con Timeshift, puedes facer semeyes del to sistema, a manu o automatizáu."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:33
 msgid ""
 "If something goes wrong you can then restore your operating system from a "
 "previously saved snapshot."
 msgstr ""
-"Om ett fel inträffar kan du sedan återställa operativsystemet från en sådan "
-"ögonblicksbild."
+"Si daqué va mal puedes restaurar el to sistema operativu cola semeya que "
+"guardaste enantes."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:39
 msgid "Launch Timeshift"
-msgstr "Starta Timeshift"
+msgstr "Llanzar Timeshift"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:18
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:17
 msgid "A new version of Linux Mint is available"
-msgstr "En ny version av Linux Mint finns tillgänglig"
+msgstr "Hai una nueva versión de Linux Mint."
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:48
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:50
 #, python-format
 msgid "Visit %s for the latest announcements."
-msgstr "Besök %s för senaste tillkännagivanden."
+msgstr "Visita %s pa ver los caberos anuncios."
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:54
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:56
 #, python-format
 msgid "Upgrade to %s"
-msgstr "Uppgradera till %s"
+msgstr "Anovar a %s"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:49
 msgid "Your version of Linux Mint will soon reach End-Of-Life (EOL)"
-msgstr "Stödet för din version av Linux Mint kommer snart att upphöra."
+msgstr "La to versión de Linux Mint ta a piques de finar la so vida (EOL)"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:50
 #, python-brace-format
 msgid "It will stop receiving support and updates in a day."
 msgid_plural "It will stop receiving support and updates in {num_days} days."
-msgstr[0] "Stöd och uppdateringar kommer att upphöra om en dag."
-msgstr[1] "Stöd och uppdateringar kommer att upphöra om {num_days} dagar."
+msgstr[0] "En un día, va dexar de recibir sofitu nin anovamientos"
+msgstr[1] "En {num_days}  díes, va dexar de recibir sofitu nin anovamientos"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:54
 msgid "Your version of Linux Mint is no longer supported"
-msgstr "Stödet för din version av Linux Mint har upphört"
+msgstr "La to versión de Linux Mint ya nun tien sofitu."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:55
 #, python-brace-format
 msgid "It reached End-Of-Life (EOL) yesterday."
 msgid_plural "It reached End-Of-Life (EOL) {num_days} days ago."
-msgstr[0] "Stödet för den upphörde igår."
-msgstr[1] "Stödet för den upphörde för {num_days} dagar sedan."
+msgstr[0] "Algamó el fin de la so vida (EOL) ayeri."
+msgstr[1] "Algamó el fin de la so vida (EOL) va {num_days} díes."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:66
 #, python-format
 msgid "Visit %s to find information about newer releases."
-msgstr "Besök %s för information om nyare versioner."
+msgstr "Visita %s p'atopar información tocante a llanzamientos más nuevos."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:14
 msgid "Perform usrmerge conversion"
-msgstr "Flytta systemmappar med usrmerge"
+msgstr "Conversión usrmerge"
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:39
 msgid "We recommend you convert your system with usrmerge."
-msgstr ""
-"Vi rekommenderar dig att använda usrmerge för denna ändring i systemet."
+msgstr "Encamentamoste a convertir el to sistema con usrmerge."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:40
 msgid "This is done already for new installations of Linux Mint."
-msgstr "Detta är redan gjort i nya installationer av Linux Mint."
+msgstr "Esto faese dafechu nes nueves istalaciones de Linux Mint."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:41
 msgid "To convert your system, open a terminal and type:"
-msgstr "För att göra ändringen, öppna ett terminalfönster och skriv:"
+msgstr "Pa convertir el to sistema, abri una terminal ya introduz:"
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:43
 msgid "You should reboot the computer once this completes."
-msgstr "Starta om datorn efter detta är klart."
+msgstr "Vas tener que reaniciar el to sistema dempués de que fine."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:49
 msgid "More information"
-msgstr "Mer information"
+msgstr "Más información"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:17
 msgid "Remove conflicting indicators"
-msgstr "Ta bort motstridiga indikatorer"
+msgstr "Desaniciar indicadores en conflictu."
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:37
 msgid "The following packages prevent tray icons from working properly:"
 msgstr ""
-"Följande paket förhindrar systembrickans ikonerna att fungera korrekt:"
+"Los siguientes paquetes faen que los iconos de la barra de tareas nun "
+"furrulen bien."
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:39
 msgid "Note: You will need to log out after removing them."
-msgstr "OBS: Du måste logga ut efter att ha tagit bort dem."
+msgstr "Nota: Vas tener que zarrar sesión dempués de desanicialos."
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:45
 msgid "Remove the conflicting packages."
-msgstr "Ta bort motstridiga paket."
+msgstr "Desaniciar los paquetes conflictivos."
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:26
 msgid "Install language packs"
-msgstr "Installera språkpaket"
+msgstr "Istalar paquetes d'idioma"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:41
 msgid ""
 "The following localization packages are missing to properly support your "
 "language:"
 msgstr ""
-"Stödet för ditt språk är inte fullständigt eftersom följande paket saknas:"
+"Los postreros paquetes de llocalización nun tan istalaos. Ensin ellos la to "
+"llingua nun se va sofitar correchamente."
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:48
 msgid "Install the Language Packs"
-msgstr "Installera språkpaketen"
+msgstr "Istalar paquetes d'idioma"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:19
 msgid "Install hardware drivers"
-msgstr "Installera drivrutiner"
+msgstr "Istalar controladores de hardware"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:28
 msgid "Processor"
-msgstr "Processor"
+msgstr "Procesador"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:41
 msgid "Unknown"
-msgstr "Okänd"
+msgstr "Desconocíu"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:45
 #, python-format
 msgid "%s (unknown)"
-msgstr "%s (okänd)"
+msgstr "%s (desconocíu)"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:100
 msgid "Hardware drivers are available for the following devices:"
-msgstr "Drivrutiner finns tillgängliga för följande enheter:"
+msgstr ""
+"Los controladores de hardware tan disponibles pa los postreros preseos"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:107
 msgid "Launch the Driver Manager"
-msgstr "Starta Drivrutinshanteraren"
+msgstr "Llanzar el xestor de controladores"
