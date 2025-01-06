@@ -8,26 +8,26 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2024-07-02 17:04+0100\n"
-"PO-Revision-Date: 2021-04-02 07:20+0000\n"
+"PO-Revision-Date: 2024-12-23 08:41+0000\n"
 "Last-Translator: Rockworld <sumoisrock@gmail.com>\n"
 "Language-Team: Thai <th@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2024-12-05 10:19+0000\n"
-"X-Generator: Launchpad (build 1519c6efe8e9bd78e6c5ebf2eb5bcb040b95ad32)\n"
+"X-Launchpad-Export-Date: 2025-01-06 12:00+0000\n"
+"X-Generator: Launchpad (build 6394e03793719e8d73f5a60b5439440e693c92f1)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
 #: usr/lib/linuxmint/mintreport/app.py:237 generate_desktop_files:25
 #: generate_desktop_files:39 generate_desktop_files:53
 #: generate_desktop_files:67 usr/share/linuxmint/mintreport/mintreport.ui.h:22
 msgid "System Reports"
-msgstr "รายงานของระบบ"
+msgstr "รายงานระบบ"
 
 #: usr/lib/linuxmint/mintreport/app.py:199
 msgid "Restore ignored reports"
-msgstr "เรียกคืนรายงานที่ถูกเพิกเฉย"
+msgstr "เรียกคืนรายงานที่ละเลย"
 
 #: usr/lib/linuxmint/mintreport/app.py:204
 #: usr/lib/linuxmint/mintreport/tray.py:72
@@ -41,7 +41,7 @@ msgstr "เกี่ยวกับ"
 
 #: usr/lib/linuxmint/mintreport/app.py:279
 msgid "An error occurred while gathering the system information."
-msgstr "เกิดข้อผิดพลาดขณะรับข้อมูลระบบ"
+msgstr "เกิดข้อผิดพลาดขณะรวบรวมข้อมูลระบบ"
 
 #: usr/lib/linuxmint/mintreport/app.py:293
 msgid "System information copied"
@@ -52,8 +52,7 @@ msgid ""
 "Your system information was copied into your clipboard so you can paste it "
 "on the forums."
 msgstr ""
-"ข้อมูลระบบของคุณได้ถูกคัดลอกลงคลิปบอร์ดของคุณแล้ว "
-"เพื่อให้คุณสามารถวางบนกระดานสนทนาได้"
+"ข้อมูลระบบของคุณได้ถูกคัดลอกไปที่คลิปบอร์ดแล้ว คุณสามารถนำไปแปะในฟอรั่มได้"
 
 #: usr/lib/linuxmint/mintreport/app.py:302
 msgid "System information uploaded"
@@ -65,6 +64,8 @@ msgid ""
 "Your system information was uploaded to %s. This link was placed in your "
 "clipboard."
 msgstr ""
+"ข้อมูลระบบของคุณได้ถูกอัปโหลดไปที่ %s แล้ว "
+"และลิงก์นี้ก็ได้ถูกคัดลอกไปที่คลิปบอร์ดแล้วเช่นเดียวกัน"
 
 #: usr/lib/linuxmint/mintreport/app.py:304
 msgid "An error occurred while uploading the system information"
@@ -75,18 +76,20 @@ msgid ""
 "Copy and paste the system information manually into a pastebin site like "
 "https://pastebin.com."
 msgstr ""
+"โปรดคัดลอกและแปะข้อมูลระบบในไซต์ฝากข้อความ เช่น https://pastebin.com "
+"ด้วยตนเอง"
 
 #: usr/lib/linuxmint/mintreport/app.py:383
 msgid "Ignore this report"
-msgstr ""
+msgstr "ละเลยรายงานนี้"
 
 #: usr/lib/linuxmint/mintreport/app.py:399
 msgid "Are you sure you want to ignore this report?"
-msgstr ""
+msgstr "คุณต้องการละเลยรายงานนี้ใช่หรือไม่?"
 
 #: usr/lib/linuxmint/mintreport/app.py:400
 msgid "The report will be permanently ignored and will no longer be visible."
-msgstr ""
+msgstr "รายงานนี้จะถูกละเลยถาวร และไม่ปรากฏให้เห็นอีก"
 
 #: usr/lib/linuxmint/mintreport/app.py:489
 #, python-format
@@ -94,6 +97,8 @@ msgid ""
 "The debug symbols are missing for %(program)s.\n"
 "Please install %(package)s."
 msgstr ""
+"สัญลักษณ์แก้จุดบกพร่องขาดไปสำหรับ %(program)s\n"
+"โปรดติดตั้ง %(package)s"
 
 #: usr/lib/linuxmint/mintreport/app.py:503
 #, python-format
@@ -102,6 +107,9 @@ msgid ""
 "If you want to generate a stack trace for this crash report, please "
 "reinstall it."
 msgstr ""
+"ไม่พบแพคเกจที่มี %s ให้\n"
+"ถ้าคุณต้องการสร้างร่องรอยสแต็กสำหรับรายงานข้อขัดข้องฉบับนี้ "
+"โปรดทำการติดตั้งแพคเกจใหม่"
 
 #: usr/lib/linuxmint/mintreport/app.py:531
 msgid ""
@@ -111,83 +119,91 @@ msgid ""
 "A stack trace is available in 'Local Files' but its content is probably "
 "inaccurate."
 msgstr ""
+"ส่วนหัวหรือไบนารีที่ติดตั้งอยู่บนระบบของคุณไม่ตรงกับโค้ดที่ทำงานระหว่างเกิดข้"
+"อขัดข้อง\n"
+"และอาจจะถูกอัปเกรดไปแล้ว\n"
+"ร่องรอยสแต็กสามารถดูได้ใน 'ไฟล์ในเครื่อง' แต่เนื้อหาอาจจะไม่แม่นยำ"
 
 #: usr/lib/linuxmint/mintreport/tray.py:68
 msgid "Show System Reports"
-msgstr "แสดงรายงานของระบบ"
+msgstr "แสดงรายงานระบบ"
 
 #: usr/lib/linuxmint/mintreport/tray.py:146
 msgid "Some system reports require your attention"
-msgstr ""
+msgstr "มีรายงานระบบบางฉบับที่ต้องการความสนใจจากคุณ"
 
 #: usr/lib/linuxmint/mintreport/tray.py:156
 msgid "System Snapshots"
-msgstr ""
+msgstr "สแนปช็อตระบบ"
 
 #: usr/lib/linuxmint/mintreport/tray.py:156
 msgid "A Timeshift system snapshot is being created."
-msgstr ""
+msgstr "สแนปช็อตระบบของ Timeshift กำลังถูกสร้าง"
 
 #: usr/lib/linuxmint/mintreport/tray.py:157
 msgid "Automatic Updates"
-msgstr ""
+msgstr "รายการปรับปรุงอัตโนมัติ"
 
 #: usr/lib/linuxmint/mintreport/tray.py:157
 msgid "Automatic updates are being installed."
-msgstr ""
+msgstr "รายการปรับปรุงอัตโนมัติกำลังถูกติดตั้ง"
 
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:23
 msgid "Troubleshoot problems"
-msgstr ""
+msgstr "แก้ไขปัญหา"
 
 #: generate_desktop_files:53
 msgid "Troubleshooting Tool"
-msgstr ""
+msgstr "เครื่องมือแก้ไขปัญหา"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:1
 msgid "Running system checks..."
-msgstr ""
+msgstr "กำลังเรียกใช้การตรวจสอบระบบ..."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:2
 msgid "No problems were detected"
-msgstr ""
+msgstr "ไม่พบปัญหาใดๆ"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:3
 msgid "System reports"
-msgstr ""
+msgstr "รายงานระบบ"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:4
 msgid "Copy"
-msgstr ""
+msgstr "คัดลอก"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:5
 msgid ""
 "Copy to clipboard (code tags are added to make it easy to paste the system "
 "information into the forums)"
 msgstr ""
+"คัดลอกไปที่คลิปบอร์ด "
+"(แท็กโค้ดจะถูกเพิ่มเพื่อให้นำข้อมูลระบบไปแปะในฟอรั่มได้ง่าย)"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:6
 msgid "Upload"
-msgstr ""
+msgstr "อัปโหลด"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:7
 msgid "Upload to a pastebin service (no personal information included)"
-msgstr ""
+msgstr "อัปโหลดไปยังบริการฝากข้อความ (ไม่มีข้อมูลส่วนตัวรวมอยู่ด้วย)"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:8
 msgid "System information"
-msgstr ""
+msgstr "ข้อมูลระบบ"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:9
 msgid "Crash reports are not available"
-msgstr ""
+msgstr "รายงานข้อขัดข้องไม่สามารถใช้ได้"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:10
 msgid ""
 "To enable crash reporting, install systemd-coredump and reboot your computer."
 msgstr ""
+"ถ้าต้องการเปิดใช้งานการรายงานข้อขัดข้อง ให้ติดตั้ง systemd-coredump "
+"แล้วบูตเครื่องคอมพิวเตอร์ของคุณใหม่"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:11
 msgid "Crash reports:"
@@ -195,37 +211,40 @@ msgstr "รายงานข้อขัดข้อง:"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:12
 msgid "Stack trace:"
-msgstr ""
+msgstr "ร่องรอยสแต็ก:"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:13
 msgid ""
 "When seeking help, check for existing bug reports, pastebin the trace, share "
 "crash.tar.gz (from Local Files) and explain how to reproduce the crash."
 msgstr ""
+"เมื่อจะขอความช่วยเหลือ ให้ตรวจสอบรายงานจุดบกพร่องที่มีอยู่แล้ว "
+"แปะร่องรอยไว้ในไซต์ฝากข้อความ แบ่งปันไฟล์ crash.tar.gz (จากไฟล์ในเครื่อง) "
+"และอธิบายวิธีการจำลองข้อขัดข้อง"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:14
 msgid "Local Files"
-msgstr ""
+msgstr "ไฟล์ในเครื่อง"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:15
 msgid "Open the directory containing crash.tar.gz and its content."
-msgstr ""
+msgstr "เปิดไดเรกทอรีที่มีไฟล์ crash.tar.gz และเนื้อหาภายในไฟล์"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:16
 msgid "Bug Tracker"
-msgstr ""
+msgstr "เครื่องมือติดตามจุดบกพร่อง"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:17
 msgid "Find the most appropriate bug tracker."
-msgstr ""
+msgstr "มองหาเครื่องมือติดตามจุดบกพร่องที่เหมาะสมที่สุด"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:18
 msgid "Pastebin"
-msgstr ""
+msgstr "Pastebin"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:19
 msgid "Upload the trace to the Internet."
-msgstr ""
+msgstr "อัปโหลดร่องรอยไปยังอินเทอร์เน็ต"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:20
 msgid ""
@@ -233,14 +252,17 @@ msgid ""
 "Always provide a trace and reliable instructions to trigger/observe the "
 "problem."
 msgstr ""
+"นักพัฒนาจะต้องทราบจุดที่โค้ดเกิดความล้มเหลว "
+"หรือวิธีในการจำลองปัญหาขึ้นมาใหม่ โปรดแนบร่องรอยมาด้วย "
+"พร้อมคำแนะนำที่น่าเชื่อถือ เพื่อให้สามารถกระตุ้น/สังเกตปัญหาได้"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:21
 msgid "Crash reports"
-msgstr ""
+msgstr "รายงานข้อขัดข้อง"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:24
 msgid "Refresh"
-msgstr "รีเฟรช"
+msgstr "เรียกข้อมูลใหม่"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
 msgid "Add the XApp Status applet"
