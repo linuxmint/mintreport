@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2024-07-02 17:04+0100\n"
-"PO-Revision-Date: 2024-12-14 09:46+0000\n"
+"PO-Revision-Date: 2025-04-02 01:33+0000\n"
 "Last-Translator: Quentin PAGÈS <Unknown>\n"
 "Language-Team: Occitan (post 1500) <oc@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Launchpad-Export-Date: 2025-01-06 12:00+0000\n"
-"X-Generator: Launchpad (build 6394e03793719e8d73f5a60b5439440e693c92f1)\n"
+"X-Launchpad-Export-Date: 2025-07-31 09:24+0000\n"
+"X-Generator: Launchpad (build 647c49fc7f614412c17a151d8ba4fadd90c06a00)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
 #: usr/lib/linuxmint/mintreport/app.py:237 generate_desktop_files:25
@@ -41,7 +41,7 @@ msgstr "A prepaus"
 
 #: usr/lib/linuxmint/mintreport/app.py:279
 msgid "An error occurred while gathering the system information."
-msgstr ""
+msgstr "Una error s'es producha en collectant las informacions sistèma"
 
 #: usr/lib/linuxmint/mintreport/app.py:293
 msgid "System information copied"
@@ -52,6 +52,8 @@ msgid ""
 "Your system information was copied into your clipboard so you can paste it "
 "on the forums."
 msgstr ""
+"Las informacions sistèma son estadas copiadas al quichapapièrs per que las "
+"poscatz pegar suls formums."
 
 #: usr/lib/linuxmint/mintreport/app.py:302
 msgid "System information uploaded"
@@ -63,6 +65,8 @@ msgid ""
 "Your system information was uploaded to %s. This link was placed in your "
 "clipboard."
 msgstr ""
+"Las informacions sistèma son estadas enviadas a %s. Lo ligam es plaçat dins "
+"lo quichapapièrs."
 
 #: usr/lib/linuxmint/mintreport/app.py:304
 msgid "An error occurred while uploading the system information"
@@ -73,6 +77,8 @@ msgid ""
 "Copy and paste the system information manually into a pastebin site like "
 "https://pastebin.com."
 msgstr ""
+"Copiatz e pegatz las informacions sistèma manualament dins un site de "
+"partatge de tèxt coma https://pastebin.com."
 
 #: usr/lib/linuxmint/mintreport/app.py:383
 msgid "Ignore this report"
@@ -85,6 +91,7 @@ msgstr "Volètz vertadièrament ignorar aqueste senhalament ?"
 #: usr/lib/linuxmint/mintreport/app.py:400
 msgid "The report will be permanently ignored and will no longer be visible."
 msgstr ""
+"Lo senhalament serà ignorat d'un biais permanent e serà pas mai visible."
 
 #: usr/lib/linuxmint/mintreport/app.py:489
 #, python-format
@@ -120,19 +127,19 @@ msgstr "D’unes senhalament sistèma demanda vòstra atencion"
 
 #: usr/lib/linuxmint/mintreport/tray.py:156
 msgid "System Snapshots"
-msgstr ""
+msgstr "Instantanèus sistèma"
 
 #: usr/lib/linuxmint/mintreport/tray.py:156
 msgid "A Timeshift system snapshot is being created."
-msgstr ""
+msgstr "Un instantanèu sistèma Timeshift es a se crear."
 
 #: usr/lib/linuxmint/mintreport/tray.py:157
 msgid "Automatic Updates"
-msgstr ""
+msgstr "Mesas a jorn automaticas"
 
 #: usr/lib/linuxmint/mintreport/tray.py:157
 msgid "Automatic updates are being installed."
-msgstr ""
+msgstr "Las mesas a jorn automaticas son a s’installar."
 
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
@@ -154,7 +161,7 @@ msgstr "Cap de problèma pas detectat"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:3
 msgid "System reports"
-msgstr ""
+msgstr "Senhalaments sistèma"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:4
 msgid "Copy"
@@ -165,6 +172,8 @@ msgid ""
 "Copy to clipboard (code tags are added to make it easy to paste the system "
 "information into the forums)"
 msgstr ""
+"Copiar al quichapapièrs (las balisas de còdi seràn apondudas per far venir "
+"mai facil l'empegament de las informacions sistèma suls forums)."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:6
 msgid "Upload"
@@ -173,6 +182,8 @@ msgstr "Mandar"
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:7
 msgid "Upload to a pastebin service (no personal information included)"
 msgstr ""
+"Enviar a un servici de partatge de tèxt (cap d'informacions personalas pas "
+"inclusas)"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:8
 msgid "System information"
@@ -186,6 +197,8 @@ msgstr "Los rapòrt de plantatge son pas disponibles"
 msgid ""
 "To enable crash reporting, install systemd-coredump and reboot your computer."
 msgstr ""
+"Per activar lo senhalament de plantatge, installatz systemd-coredump e "
+"reaviatz l'ordenador."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:11
 msgid "Crash reports:"
@@ -207,15 +220,15 @@ msgstr "Fichièrs locals"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:15
 msgid "Open the directory containing crash.tar.gz and its content."
-msgstr ""
+msgstr "Dobrir lo repertòri que conten crash.tar.gz e son contengut."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:16
 msgid "Bug Tracker"
-msgstr ""
+msgstr "Traçador d’avarias"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:17
 msgid "Find the most appropriate bug tracker."
-msgstr ""
+msgstr "Trobar lo traçador d’avarias mai apropriat."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:18
 msgid "Pastebin"
@@ -223,7 +236,7 @@ msgstr "Pastebin"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:19
 msgid "Upload the trace to the Internet."
-msgstr ""
+msgstr "Enviar la traça a l'Internet."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:20
 msgid ""
@@ -323,13 +336,15 @@ msgstr "Metre a nivèl a %s"
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:49
 msgid "Your version of Linux Mint will soon reach End-Of-Life (EOL)"
 msgstr ""
+"Vòstra version de Linux Mint atendrà lèu la data de fin de vida (EOL)"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:50
 #, python-brace-format
 msgid "It will stop receiving support and updates in a day."
 msgid_plural "It will stop receiving support and updates in {num_days} days."
-msgstr[0] ""
+msgstr[0] "Recebrà pas mai d’assisténcia e de mesas a jorn d’aquí un jorn."
 msgstr[1] ""
+"Recebrà pas mai d’assisténcia e de mesas a jorn d’aquí un {num_days} jorns."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:54
 msgid "Your version of Linux Mint is no longer supported"
@@ -339,33 +354,33 @@ msgstr "Aquesta version de Linux Mint es pas mai mantenguda"
 #, python-brace-format
 msgid "It reached End-Of-Life (EOL) yesterday."
 msgid_plural "It reached End-Of-Life (EOL) {num_days} days ago."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Atenguèt la fin de vida (EOL) ièr."
+msgstr[1] "Atenguèt la fin de vida (EOL) fa {num_days} jorns."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:66
 #, python-format
 msgid "Visit %s to find information about newer releases."
-msgstr ""
+msgstr "Consultatz %s per trobar d‘informacions sus las novèlas versions."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:14
 msgid "Perform usrmerge conversion"
-msgstr ""
+msgstr "Realizar la conversion usrmerge"
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:39
 msgid "We recommend you convert your system with usrmerge."
-msgstr ""
+msgstr "Vos recomandam de convertir vòstre sistèma amb usrmerge."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:40
 msgid "This is done already for new installations of Linux Mint."
-msgstr ""
+msgstr "Aquò se fa ja amb las novèlas installacions de Linux Mint."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:41
 msgid "To convert your system, open a terminal and type:"
-msgstr ""
+msgstr "Per convertir lo sistèma, dobrissètz un terminal e picatz :"
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:43
 msgid "You should reboot the computer once this completes."
-msgstr ""
+msgstr "Devètz reaviar l’ordenador un còp acabat."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:49
 msgid "More information"
@@ -373,7 +388,7 @@ msgstr "Mai d'informacions"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:17
 msgid "Remove conflicting indicators"
-msgstr ""
+msgstr "Suprimir los indicadors en conflicte"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:37
 msgid "The following packages prevent tray icons from working properly:"
@@ -418,7 +433,7 @@ msgstr "Desconegut"
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:45
 #, python-format
 msgid "%s (unknown)"
-msgstr ""
+msgstr "%s (desconegut)"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:100
 msgid "Hardware drivers are available for the following devices:"

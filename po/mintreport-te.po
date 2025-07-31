@@ -8,54 +8,56 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2024-07-02 17:04+0100\n"
-"PO-Revision-Date: 2024-12-24 05:22+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2025-07-23 05:31+0000\n"
+"Last-Translator: vankudoth nandini <Unknown>\n"
 "Language-Team: Telugu <te@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2025-01-06 12:00+0000\n"
-"X-Generator: Launchpad (build 6394e03793719e8d73f5a60b5439440e693c92f1)\n"
+"X-Launchpad-Export-Date: 2025-07-31 09:24+0000\n"
+"X-Generator: Launchpad (build 647c49fc7f614412c17a151d8ba4fadd90c06a00)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
 #: usr/lib/linuxmint/mintreport/app.py:237 generate_desktop_files:25
 #: generate_desktop_files:39 generate_desktop_files:53
 #: generate_desktop_files:67 usr/share/linuxmint/mintreport/mintreport.ui.h:22
 msgid "System Reports"
-msgstr ""
+msgstr "వ్యవస్థ నివేదికలు"
 
 #: usr/lib/linuxmint/mintreport/app.py:199
 msgid "Restore ignored reports"
-msgstr ""
+msgstr "పొరపాటుగా పట్టించుకోనివిన నివేదికలను తిరిగి పునరుద్ధరించు"
 
 #: usr/lib/linuxmint/mintreport/app.py:204
 #: usr/lib/linuxmint/mintreport/tray.py:72
 msgid "Quit"
-msgstr ""
+msgstr "శాశ్వతంగా మానేయడం"
 
 #: usr/lib/linuxmint/mintreport/app.py:216
 #: usr/lib/linuxmint/mintreport/app.py:235
 msgid "About"
-msgstr ""
+msgstr "సంబంధించి"
 
 #: usr/lib/linuxmint/mintreport/app.py:279
 msgid "An error occurred while gathering the system information."
-msgstr ""
+msgstr "వ్యవస్థ సమాచారం సేకరిస్తున్న సమయంలో ఒక లోపం ఏర్పడింది."
 
 #: usr/lib/linuxmint/mintreport/app.py:293
 msgid "System information copied"
-msgstr ""
+msgstr "వ్యవస్థ సమాచారం కాపీ చేయబడింది"
 
 #: usr/lib/linuxmint/mintreport/app.py:293
 msgid ""
 "Your system information was copied into your clipboard so you can paste it "
 "on the forums."
 msgstr ""
+"మీ వ్యవస్థ సమాచారం మీ క్లిప్‌బోర్డులోకి కాపీ చేయబడింది, తద్వారా మీరు దాన్ని "
+"ఫోరమ్‌లలో పేస్ట్ చేయవచ్చు."
 
 #: usr/lib/linuxmint/mintreport/app.py:302
 msgid "System information uploaded"
-msgstr ""
+msgstr "వ్యవస్థ సమాచారం అప్‌లోడ్ చేయబడింది"
 
 #: usr/lib/linuxmint/mintreport/app.py:302
 #, python-format
@@ -63,28 +65,32 @@ msgid ""
 "Your system information was uploaded to %s. This link was placed in your "
 "clipboard."
 msgstr ""
+"మీ సిస్టమ్ సమాచారం %sకి అప్‌లోడ్ చేయబడింది. ఈ లింక్ మీ క్లిప్‌బోర్డ్‌లో "
+"ఉంచబడింది"
 
 #: usr/lib/linuxmint/mintreport/app.py:304
 msgid "An error occurred while uploading the system information"
-msgstr ""
+msgstr "వ్యవస్థ సమాచారాన్ని అప్‌లోడ్ చేస్తున్న సమయంలో ఒక లోపం ఏర్పడింది"
 
 #: usr/lib/linuxmint/mintreport/app.py:304
 msgid ""
 "Copy and paste the system information manually into a pastebin site like "
 "https://pastebin.com."
 msgstr ""
+"వ్యవస్థ సమాచారాన్ని చేతితో కాపీ చేసి, https://pastebin.com వంటి పేస్ట్‌బిన్ "
+"వెబ్‌సైట్‌లో పేస్ట్ చేయండి."
 
 #: usr/lib/linuxmint/mintreport/app.py:383
 msgid "Ignore this report"
-msgstr ""
+msgstr "ఈ నివేదికను పరిగణనలోకి తీసుకోకండి"
 
 #: usr/lib/linuxmint/mintreport/app.py:399
 msgid "Are you sure you want to ignore this report?"
-msgstr ""
+msgstr "మీకు ఈ నివేదికను నిర్లక్ష్యం చేయాలనే నిశ్చయమా?"
 
 #: usr/lib/linuxmint/mintreport/app.py:400
 msgid "The report will be permanently ignored and will no longer be visible."
-msgstr ""
+msgstr "ఈ నివేదికను శాశ్వతంగా నిర్లక్ష్యం చేయబడుతుంది మరియు ఇకపై కనిపించదు."
 
 #: usr/lib/linuxmint/mintreport/app.py:489
 #, python-format
@@ -92,6 +98,8 @@ msgid ""
 "The debug symbols are missing for %(program)s.\n"
 "Please install %(package)s."
 msgstr ""
+"%(program)s అనే కార్యక్రమానికి లోప నిర్ధారణ గుర్తులు లభించలేదు.\n"
+"దయచేసి %(package)s అనే ప్యాకేజీని స్థాపించండి."
 
 #: usr/lib/linuxmint/mintreport/app.py:503
 #, python-format
@@ -100,6 +108,9 @@ msgid ""
 "If you want to generate a stack trace for this crash report, please "
 "reinstall it."
 msgstr ""
+"%s ను అందించే ప్యాకేజీ కనబడలేదు.\n"
+"ఈ క్రాష్ నివేదికకు స్టాక్ ట్రేస్ రూపొందించాలనుకుంటే, దయచేసి దానిని మళ్లీ "
+"స్థాపించండి."
 
 #: usr/lib/linuxmint/mintreport/app.py:531
 msgid ""
@@ -109,121 +120,135 @@ msgid ""
 "A stack trace is available in 'Local Files' but its content is probably "
 "inaccurate."
 msgstr ""
+"మీ వ్యవస్థలో స్థాపించబడిన హెడ్డర్లు లేదా బైనరీలు, క్రాష్ సమయంలో అమలైన "
+"కోడ్‌కు సరిపోలడం లేదు.\n"
+"అవి అంతకుముందు నుండి నవీకరించబడినట్లుగా అనిపిస్తోంది.\n"
+"'లోకల్ ఫైళ్ళలో' స్టాక్ ట్రేస్ అందుబాటులో ఉంది, కానీ దాని విషయాలు ఖచ్చితంగా "
+"ఉండకపోవచ్చు."
 
 #: usr/lib/linuxmint/mintreport/tray.py:68
 msgid "Show System Reports"
-msgstr ""
+msgstr "వ్యవస్థ నివేదికలను చూపించు"
 
 #: usr/lib/linuxmint/mintreport/tray.py:146
 msgid "Some system reports require your attention"
-msgstr ""
+msgstr "కొన్ని వ్యవస్థ నివేదికలు మీ దృష్టిని అవసరం చేస్తున్నాయి"
 
 #: usr/lib/linuxmint/mintreport/tray.py:156
 msgid "System Snapshots"
-msgstr ""
+msgstr "వ్యవస్థ స్నాప్‌షాట్లు"
 
 #: usr/lib/linuxmint/mintreport/tray.py:156
 msgid "A Timeshift system snapshot is being created."
-msgstr ""
+msgstr "ఒక టైమ్‌షిఫ్ట్ వ్యవస్థ స్నాప్‌షాట్ రూపొందించబడుతోంది."
 
 #: usr/lib/linuxmint/mintreport/tray.py:157
 msgid "Automatic Updates"
-msgstr ""
+msgstr "ఆటోమేటిక్‌గా జరిగే నవీకరణలు"
 
 #: usr/lib/linuxmint/mintreport/tray.py:157
 msgid "Automatic updates are being installed."
-msgstr ""
+msgstr "స్వయంచాలిత నవీకరణలు స్థాపించబడుతున్నాయి"
 
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:23
 msgid "Troubleshoot problems"
-msgstr ""
+msgstr "సమస్యలను పరిష్కరించు"
 
 #: generate_desktop_files:53
 msgid "Troubleshooting Tool"
-msgstr ""
+msgstr "సమస్యలు పరిష్కరించే సాధనం"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:1
 msgid "Running system checks..."
-msgstr ""
+msgstr "వ్యవస్థను పరీక్షిస్తున్నాము..."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:2
 msgid "No problems were detected"
-msgstr ""
+msgstr "ఏ సమస్యలు గుర్తించబడలేదు"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:3
 msgid "System reports"
-msgstr ""
+msgstr "వ్యవస్థ నివేదికలు"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:4
 msgid "Copy"
-msgstr ""
+msgstr "కాపీ చేయి"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:5
 msgid ""
 "Copy to clipboard (code tags are added to make it easy to paste the system "
 "information into the forums)"
 msgstr ""
+"క్లిప్‌బోర్డుకు కాపీ చేయండి (వ్యవస్థ సమాచారం‌ను ఫోరమ్‌లలో సులభంగా పేస్ట్ "
+"చేయడానికి కోడ్ ట్యాగ్లు జోడించబడ్డాయి)"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:6
 msgid "Upload"
-msgstr ""
+msgstr "ఫైలు లేదా సమాచారం‌ను ఇంటర్నెట్‌కి పంపడం"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:7
 msgid "Upload to a pastebin service (no personal information included)"
 msgstr ""
+"ఒక పేస్ట్‌బిన్ సేవకు అప్‌లోడ్ చేయండి (వ్యక్తిగత సమాచారం ఏదీ చేర్చలేదు)"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:8
 msgid "System information"
-msgstr ""
+msgstr "వ్యవస్థ సమాచారం"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:9
 msgid "Crash reports are not available"
-msgstr ""
+msgstr "క్రాష్ నివేదికలు అందుబాటులో లేవు"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:10
 msgid ""
 "To enable crash reporting, install systemd-coredump and reboot your computer."
 msgstr ""
+"క్రాష్ నివేదికలను ప్రారంభించడానికి, systemd-coredump ను స్థాపించండి మరియు మీ "
+"కంప్యూటర్‌ను పునఃప్రారంభించండి."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:11
 msgid "Crash reports:"
-msgstr ""
+msgstr "క్రాష్ నివేదికలు"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:12
 msgid "Stack trace:"
-msgstr ""
+msgstr "స్టాక్ ట్రేస్"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:13
 msgid ""
 "When seeking help, check for existing bug reports, pastebin the trace, share "
 "crash.tar.gz (from Local Files) and explain how to reproduce the crash."
 msgstr ""
+"సహాయం కోరేటప్పుడు, ఇప్పటికే ఉన్న లోప నివేదికలు ఉన్నాయేమో తనిఖీ చేయండి, "
+"ట్రేస్‌ను పేస్ట్‌బిన్‌లో ఉంచండి, (లోకల్ ఫైళ్లలోని) crash.tar.gz ఫైల్‌ను "
+"పంచుకోండి మరియు క్రాష్‌ను ఎలా పునరావృతం చేయాలో వివరించండి."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:14
 msgid "Local Files"
-msgstr ""
+msgstr "స్థానిక ఫైలు‌లు"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:15
 msgid "Open the directory containing crash.tar.gz and its content."
 msgstr ""
+"crash.tar.gz మరియు దాని అంతర్లీన ఫైలు‌లను కలిగి ఉన్న డైరెక్టరీని తెరవండి."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:16
 msgid "Bug Tracker"
-msgstr ""
+msgstr "లోపాలను అనుసరించే వ్యవస్థ"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:17
 msgid "Find the most appropriate bug tracker."
-msgstr ""
+msgstr "అత్యంత సరైన లోప ట్రాకర్‌ను కనుగొనండి."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:18
 msgid "Pastebin"
-msgstr ""
+msgstr "పేస్ట్‌బిన్"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:19
 msgid "Upload the trace to the Internet."
-msgstr ""
+msgstr "ట్రేస్‌ను ఇంటర్నెట్‌కి అప్‌లోడ్ చేయండి."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:20
 msgid ""
@@ -231,190 +256,207 @@ msgid ""
 "Always provide a trace and reliable instructions to trigger/observe the "
 "problem."
 msgstr ""
+"కోడ్ ఎక్కడ విఫలమవుతుందో లేదా సమస్యను ఎలా పునరావృతం చేయాలో డెవలపర్లకు "
+"తెలుసుకోవాలి. ఎప్పుడూ ట్రేస్‌ను మరియు సమస్యను ఎలా ప్రారంభించాలో/గమనించాలో "
+"విశ్వసనీయమైన సూచనలను ఇవ్వండి."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:21
 msgid "Crash reports"
-msgstr ""
+msgstr "క్రాష్ నివేదికలు"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:24
 msgid "Refresh"
-msgstr ""
+msgstr "తాజాపరచు"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
 msgid "Add the XApp Status applet"
-msgstr ""
+msgstr "XApp స్థితి యాప్లెట్‌ను జోడించండి"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:37
 msgid ""
 "The XApp Status applet allows applications to provide a tray icon without "
 "rendering glitches and with support for HiDPI and symbolic icons."
 msgstr ""
+"XApp స్థితి యాప్లెట్ ద్వారా యాప్లికేషన్లు గందరగోళాలు లేకుండా ట్రే ఐకాన్‌ను "
+"చూపించవచ్చు, అంతేకాకుండా ఇది HiDPI మరియు ప్రతీకాత్మక చిహ్నాలకు మద్దతు "
+"ఇస్తుంది."
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:39
 msgid "Right-click the panel and choose 'Add to Panel'."
 msgstr ""
+"ప్యానెల్‌పై కుడి క్లిక్ చేయండి మరియు 'ప్యానెల్‌కు జోడించు' అనే ఎంపికను "
+"ఎంచుకోండి."
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:46
 msgid "Add the XApp Status applet to the panel"
-msgstr ""
+msgstr "XApp స్థితి యాప్లెట్‌ను ప్యానెల్‌కి జోడించండి"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:16
 msgid "Install multimedia codecs"
-msgstr ""
+msgstr "బహుళమాధ్యమ కోడెక్‌లను స్థాపించండి"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:30
 msgid ""
 "Multimedia codecs are required to play some video formats and to properly "
 "render some websites."
 msgstr ""
+"కొన్ని వీడియో ఫార్మాట్‌లను ప్లే చేయడానికి మరియు కొన్ని వెబ్‌సైట్లను సరిగ్గా "
+"ప్రదర్శించడానికి బహుళమాధ్యమ కోడెక్‌లు అవసరం."
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:36
 msgid "Install the Multimedia Codecs"
-msgstr ""
+msgstr "బహుళమాధ్యమ కోడెక్‌లను స్థాపించండి"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:17
 msgid "Set up the system restore utility"
-msgstr ""
+msgstr "వ్యవస్థ పునరుద్ధరణ సాధనాన్ని సెట్ చేయండి"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:31
 msgid "Linux Mint provides a system restore utility called Timeshift."
 msgstr ""
+"లినక్స్ మింట్, టైమ్‌షిఫ్ట్ అనే వ్యవస్థ పునరుద్ధరణ సాధనాన్ని అందిస్తుంది."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:32
 msgid ""
 "Thanks to Timeshift you can take snapshots of the system, either manually or "
 "automatically."
 msgstr ""
+"టైమ్‌షిఫ్ట్ వలన, మీరు వ్యవస్థ స్నాప్‌షాట్లను చేతితో గానీ లేదా స్వయంచాలితంగా "
+"గానీ తీసుకోవచ్చు."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:33
 msgid ""
 "If something goes wrong you can then restore your operating system from a "
 "previously saved snapshot."
 msgstr ""
+"ఏదైనా తేడా జరిగినా, మీరు మునుపు భద్రపరిచిన స్నాప్‌షాట్ ద్వారా మీ ఆపరేటింగ్ "
+"సిస్టమ్‌ను పునఃస్థాపించవచ్చు."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:39
 msgid "Launch Timeshift"
-msgstr ""
+msgstr "టైమ్‌షిఫ్ట్‌ను ప్రారంభించండి"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:18
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:17
 msgid "A new version of Linux Mint is available"
-msgstr ""
+msgstr "లినక్స్ మింట్ యొక్క కొత్త సంచిక అందుబాటులో ఉంది"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:48
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:50
 #, python-format
 msgid "Visit %s for the latest announcements."
-msgstr ""
+msgstr "తాజా ప్రకటనల కోసం %s‌ను సందర్శించండి"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:54
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:56
 #, python-format
 msgid "Upgrade to %s"
-msgstr ""
+msgstr "%s కు అప్గ్రేడ్ చేయండి"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:49
 msgid "Your version of Linux Mint will soon reach End-Of-Life (EOL)"
-msgstr ""
+msgstr "మీ లినక్స్ మింట్ సంచిక త్వరలో జీవితాంతానికి (EOL) చేరుకుంటుంది"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:50
 #, python-brace-format
 msgid "It will stop receiving support and updates in a day."
 msgid_plural "It will stop receiving support and updates in {num_days} days."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "ఇది ఒక రోజులో మద్దతు మరియు నవీకరణలను పొందడం ఆగిపోతుంది."
+msgstr[1] "ఇది {num_days} రోజులలో మద్దతు మరియు నవీకరణలను పొందడం ఆగిపోతుంది."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:54
 msgid "Your version of Linux Mint is no longer supported"
-msgstr ""
+msgstr "మీ లినక్స్ మింట్ సంచికకు ఇకపై మద్దతు లేదు"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:55
 #, python-brace-format
 msgid "It reached End-Of-Life (EOL) yesterday."
 msgid_plural "It reached End-Of-Life (EOL) {num_days} days ago."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "ఇది నిన్న జీవితం ముగిసిన స్థితికి (EOL) చేరింది."
+msgstr[1] "ఇది {num_days} రోజుల క్రితమే జీవనాంతానికి (EOL) చేరుకుంది."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:66
 #, python-format
 msgid "Visit %s to find information about newer releases."
-msgstr ""
+msgstr "కొత్త విడుదలల గురించి సమాచారం తెలుసుకోవడానికి %s‌ను సందర్శించండి"
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:14
 msgid "Perform usrmerge conversion"
-msgstr ""
+msgstr "usrmerge మార్పిడి (conversion)ను నిర్వహించండి"
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:39
 msgid "We recommend you convert your system with usrmerge."
-msgstr ""
+msgstr "మీ వ్యవస్థను usrmerge‌తో మార్చడం మేము సిఫారసు చేస్తున్నాము."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:40
 msgid "This is done already for new installations of Linux Mint."
-msgstr ""
+msgstr "ఇది ఇప్పటికే లినక్స్ మింట్ యొక్క కొత్త ఇన్‌స్టాలేషన్‌లకు చేసబడింది."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:41
 msgid "To convert your system, open a terminal and type:"
-msgstr ""
+msgstr "మీ వ్యవస్థను మార్చడానికి, టెర్మినల్‌ను ఓపెన్ చేసి టైప్ చేయండి:"
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:43
 msgid "You should reboot the computer once this completes."
-msgstr ""
+msgstr "ఇది పూర్తయ్యిన తర్వాత, మీరు కంప్యూటర్‌ను రీస్టార్ట్ చేయాలి."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:49
 msgid "More information"
-msgstr ""
+msgstr "ఇంకా సమాచారం"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:17
 msgid "Remove conflicting indicators"
-msgstr ""
+msgstr "మొసిరిపోయిన సూచికలను తొలగించండి"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:37
 msgid "The following packages prevent tray icons from working properly:"
-msgstr ""
+msgstr "కింది ప్యాకేజీలు ట్రే ఐకాన్లు సరిగ్గా పని చేయకుండా అడ్డుకుంటున్నాయి:"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:39
 msgid "Note: You will need to log out after removing them."
-msgstr ""
+msgstr "గమనిక: అవి తీసివేసిన తర్వాత మీరు లాగ్ అవుట్ కావాల్సి ఉంటుంది."
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:45
 msgid "Remove the conflicting packages."
-msgstr ""
+msgstr "ఘర్షణ కలిగించే ప్యాకేజీలను తొలగించండి"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:26
 msgid "Install language packs"
-msgstr ""
+msgstr "భాషా ప్యాకేజీలను స్థాపించండి"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:41
 msgid ""
 "The following localization packages are missing to properly support your "
 "language:"
 msgstr ""
+"మీ భాషను సరిగ్గా మద్దతు ఇవ్వడానికి అవసరమైన కింది స్థానికీకరణ (localization) "
+"ప్యాకేజీలు లేవు:"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:48
 msgid "Install the Language Packs"
-msgstr ""
+msgstr "భాషా ప్యాకేజీలను ఇన్‌స్టాల్ చేయండి"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:19
 msgid "Install hardware drivers"
-msgstr ""
+msgstr "హార్డ్వేర్ డ్రైవర్లను ఇన్‌స్టాల్ చేయండి"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:28
 msgid "Processor"
-msgstr ""
+msgstr "ప్రాసెసర్"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:41
 msgid "Unknown"
-msgstr ""
+msgstr "తెలియని"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:45
 #, python-format
 msgid "%s (unknown)"
-msgstr ""
+msgstr "%s (తెలియని)"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:100
 msgid "Hardware drivers are available for the following devices:"
-msgstr ""
+msgstr "కింద పేర్కొన్న పరికరాల కోసం హార్డ్వేర్ డ్రైవర్లు అందుబాటులో ఉన్నాయి:"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:107
 msgid "Launch the Driver Manager"
-msgstr ""
+msgstr "డ్రైవర్ మేనేజర్‌ను ప్రారంభించండి"

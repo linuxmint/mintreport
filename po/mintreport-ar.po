@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-02 17:04+0100\n"
-"PO-Revision-Date: 2022-08-28 06:48+0000\n"
-"Last-Translator: أنس <Unknown>\n"
+"PO-Revision-Date: 2025-05-24 08:05+0000\n"
+"Last-Translator: Abdualrahman Hasan <Unknown>\n"
 "Language-Team: anwar AL_iskandrany <anwareleskndrany13@gmail.com >\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n % 100 >= "
 "3 && n % 100 <= 10 ? 3 : n % 100 >= 11 && n % 100 <= 99 ? 4 : 5;\n"
-"X-Launchpad-Export-Date: 2025-01-06 12:00+0000\n"
-"X-Generator: Launchpad (build 6394e03793719e8d73f5a60b5439440e693c92f1)\n"
+"X-Launchpad-Export-Date: 2025-07-31 09:24+0000\n"
+"X-Generator: Launchpad (build 647c49fc7f614412c17a151d8ba4fadd90c06a00)\n"
 "Language: ar_EG\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:84
@@ -59,7 +59,7 @@ msgstr "تم رفع معلومات النظام"
 msgid ""
 "Your system information was uploaded to %s. This link was placed in your "
 "clipboard."
-msgstr ""
+msgstr "تم تحميل معلومات نظامك إلى %s. هذا الرابط قد وضع في حافظتك."
 
 #: usr/lib/linuxmint/mintreport/app.py:304
 msgid "An error occurred while uploading the system information"
@@ -70,6 +70,8 @@ msgid ""
 "Copy and paste the system information manually into a pastebin site like "
 "https://pastebin.com."
 msgstr ""
+"نسخ ولصق معلومات النظام يدويا إلى موقع استضافة محتوى مثل "
+"https://pastebin.com."
 
 #: usr/lib/linuxmint/mintreport/app.py:383
 msgid "Ignore this report"
@@ -125,11 +127,11 @@ msgstr "بعض تقارير النظام تتطلب انتباهك"
 
 #: usr/lib/linuxmint/mintreport/tray.py:156
 msgid "System Snapshots"
-msgstr ""
+msgstr "لقطات النظام"
 
 #: usr/lib/linuxmint/mintreport/tray.py:156
 msgid "A Timeshift system snapshot is being created."
-msgstr ""
+msgstr "لقطة النظام ب Timeshift قيد الصنع."
 
 #: usr/lib/linuxmint/mintreport/tray.py:157
 msgid "Automatic Updates"
@@ -254,21 +256,23 @@ msgstr "نحديث"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
 msgid "Add the XApp Status applet"
-msgstr ""
+msgstr "أضف ال XApp بريمج الحالة"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:37
 msgid ""
 "The XApp Status applet allows applications to provide a tray icon without "
 "rendering glitches and with support for HiDPI and symbolic icons."
 msgstr ""
+"بريمج الحالة XApp يسمح للتطبيقات بتوفير أيقونة حاوية بلا مشاكل عرض وتدعم "
+"HiDPI والأيقونات الرمزية."
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:39
 msgid "Right-click the panel and choose 'Add to Panel'."
-msgstr ""
+msgstr "اضغط بالزر الأيمن على اللوحة واختر 'أضف إلى اللوحة'."
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:46
 msgid "Add the XApp Status applet to the panel"
-msgstr ""
+msgstr "أضف بريمج الحالة XApp إلى اللوحة"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:16
 msgid "Install multimedia codecs"
@@ -279,6 +283,8 @@ msgid ""
 "Multimedia codecs are required to play some video formats and to properly "
 "render some websites."
 msgstr ""
+"ترميزات الوسائط مطلوبة للعب بعض تنسيقات الفيديو و لعرض بعض المواضع بشكل "
+"مثالي."
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:36
 msgid "Install the Multimedia Codecs"
@@ -286,7 +292,7 @@ msgstr "ثبّت ترميزات الوسائط المتعددة"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:17
 msgid "Set up the system restore utility"
-msgstr ""
+msgstr "إعداد أداة إستعادة النظام"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:31
 msgid "Linux Mint provides a system restore utility called Timeshift."
@@ -296,13 +302,14 @@ msgstr "يوفر Linux Mint وسيلة لاسترجاع النظام تسمى Ti
 msgid ""
 "Thanks to Timeshift you can take snapshots of the system, either manually or "
 "automatically."
-msgstr ""
+msgstr "شكرا إلى Timeshift يمكنك أن تأخذ لقطة من النظام، يدويا أو تلقائيا."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:33
 msgid ""
 "If something goes wrong you can then restore your operating system from a "
 "previously saved snapshot."
 msgstr ""
+"إذا حدث خطأ ما يمكنك إستعادة نظام التشغيل الخاص بك من لقطة محفوظة سابقا."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:39
 msgid "Launch Timeshift"
@@ -327,14 +334,18 @@ msgstr "الترقية إلى %s"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:49
 msgid "Your version of Linux Mint will soon reach End-Of-Life (EOL)"
-msgstr ""
+msgstr "قريبا سيصل إصدارك من Linux Mint إلى نهاية الدعم (EOL)"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:50
 #, python-brace-format
 msgid "It will stop receiving support and updates in a day."
 msgid_plural "It will stop receiving support and updates in {num_days} days."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "سيتوقف عن استقبال الدعم والتحديثات في يوم واحد."
+msgstr[1] "سيتوقف عن استقبال الدعم والتحديثات في {num_days} أيام."
+msgstr[2] "سيتوقف عن استقبال الدعم والتحديثات في {num_days} أيام."
+msgstr[3] "سيتوقف عن استقبال الدعم والتحديثات في {num_days} أيام."
+msgstr[4] "سيتوقف عن استقبال الدعم والتحديثات في {num_days} أيام."
+msgstr[5] "سيتوقف عن استقبال الدعم والتحديثات في {num_days} أيام."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:54
 msgid "Your version of Linux Mint is no longer supported"
@@ -344,25 +355,29 @@ msgstr "إصدار Linux Mint الخاص بك ليس مدعوماً بعد ال�
 #, python-brace-format
 msgid "It reached End-Of-Life (EOL) yesterday."
 msgid_plural "It reached End-Of-Life (EOL) {num_days} days ago."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "انتهى الدعم (EOL) بالأمس."
+msgstr[1] "انتهى الدعم (EOL) منذ {num_days} يوم مضى."
+msgstr[2] "انتهى الدعم (EOL) منذ {num_days} يوم مضى."
+msgstr[3] "انتهى الدعم (EOL) منذ {num_days} يوم مضى."
+msgstr[4] "انتهى الدعم (EOL) منذ {num_days} يوم مضى."
+msgstr[5] "انتهى الدعم (EOL) منذ {num_days} يوم مضى."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:66
 #, python-format
 msgid "Visit %s to find information about newer releases."
-msgstr ""
+msgstr "قم بزيارة %s لإيجاد معلومات حول إصدارات جديدة."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:14
 msgid "Perform usrmerge conversion"
-msgstr ""
+msgstr "قم بتحويل usrmerge"
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:39
 msgid "We recommend you convert your system with usrmerge."
-msgstr ""
+msgstr "نحن نوصي أن تقوم بتحويل نظامك بواسطة usrmerge."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:40
 msgid "This is done already for new installations of Linux Mint."
-msgstr ""
+msgstr "تم القيام بهذا لتثبيتات Linux Mint الجديدة."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:41
 msgid "To convert your system, open a terminal and type:"
@@ -382,7 +397,7 @@ msgstr "أزل المؤشرات المتعارضة"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:37
 msgid "The following packages prevent tray icons from working properly:"
-msgstr ""
+msgstr "الحزم التالية تمنع أيقونات الحاوية من العمل بشكل مثالي:"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:39
 msgid "Note: You will need to log out after removing them."
@@ -400,7 +415,7 @@ msgstr "ثبّت حزم اللغة"
 msgid ""
 "The following localization packages are missing to properly support your "
 "language:"
-msgstr ""
+msgstr "الحزم التالية مطلوبة لدعم لغتك بشكل مثالي:"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:48
 msgid "Install the Language Packs"
