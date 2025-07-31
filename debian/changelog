@@ -1,3 +1,10 @@
+mintreport (1.5.5) zara; urgency=medium
+
+  * l10n: Update translations
+  * l10n: Update files
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 31 Jul 2025 11:51:55 +0200
+
 mintreport (1.5.4) xia; urgency=medium
 
   * l10n: Update translations
