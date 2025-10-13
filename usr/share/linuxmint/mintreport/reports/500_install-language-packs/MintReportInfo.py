@@ -24,7 +24,7 @@ class Report(InfoReport):
         gettext.install("mintreport", "/usr/share/locale", names="ngettext")
 
         self.title = _("Install language packs")
-        self.icon = "preferences-desktop-locale-symbolic"
+        self.icon = "xapp-flag-symbolic"
         self.has_ignore_button = True
 
     def is_pertinent(self):

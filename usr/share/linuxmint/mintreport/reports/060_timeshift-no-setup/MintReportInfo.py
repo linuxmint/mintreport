@@ -15,7 +15,7 @@ class Report(InfoReport):
         gettext.install("mintreport", "/usr/share/locale", names="ngettext")
 
         self.title = _("Set up the system restore utility")
-        self.icon = "document-open-recent-symbolic"
+        self.icon = "xapp-document-open-recent-symbolic"
         self.has_ignore_button = True
 
     def is_pertinent(self):

@@ -202,7 +202,7 @@ class MintReportWindow():
         menu.append(Gtk.SeparatorMenuItem())
 
         item = Gtk.ImageMenuItem(label=_("Quit"))
-        image = Gtk.Image.new_from_icon_name("application-exit-symbolic", Gtk.IconSize.MENU)
+        image = Gtk.Image.new_from_icon_name("xapp-exit-symbolic", Gtk.IconSize.MENU)
         item.set_image(image)
         item.connect('activate', self.on_menu_quit)
         key, mod = Gtk.accelerator_parse("<Control>Q")
@@ -212,7 +212,7 @@ class MintReportWindow():
         menu.append(item)
 
         item = Gtk.ImageMenuItem()
-        item.set_image(Gtk.Image.new_from_icon_name("help-about-symbolic", Gtk.IconSize.MENU))
+        item.set_image(Gtk.Image.new_from_icon_name("xapp-help-about-symbolic", Gtk.IconSize.MENU))
         item.set_label(_("About"))
         item.connect("activate", self.open_about)
         menu.append(item)
@@ -276,7 +276,7 @@ class MintReportWindow():
             with open(TMP_INXI_FILE, "w") as f:
                 f.write(sysinfo)
         except Exception as e:
-            subprocess.Popen(['notify-send', '-i', 'dialog-error-symbolic', _("An error occurred while gathering the system information."), str(e)])
+            subprocess.Popen(['notify-send', '-i', 'xapp-dialog-error-symbolic', _("An error occurred while gathering the system information."), str(e)])
             print (e)
 
     @idle
@@ -290,7 +290,7 @@ class MintReportWindow():
         buff = self.builder.get_object("textview_sysinfo").get_buffer()
         text = buff.get_text(buff.get_start_iter(), buff.get_end_iter(), False)
         clipboard.set_text("[code]\n%s[/code]\n" % text, -1)
-        subprocess.Popen(['notify-send', '-i', 'dialog-information-symbolic', _("System information copied"), _("Your system information was copied into your clipboard so you can paste it on the forums.")])
+        subprocess.Popen(['notify-send', '-i', 'xapp-dialog-information-symbolic', _("System information copied"), _("Your system information was copied into your clipboard so you can paste it on the forums.")])
 
     def upload_sysinfo(self, button):
         try:
@@ -299,9 +299,9 @@ class MintReportWindow():
             clipboard = Gtk.Clipboard.get(Gdk.SELECTION_CLIPBOARD)
             buff = self.builder.get_object("textview_sysinfo").get_buffer()
             clipboard.set_text(link, -1)
-            subprocess.Popen(['notify-send', '-i', 'dialog-information-symbolic', _("System information uploaded"), _("Your system information was uploaded to %s. This link was placed in your clipboard.") % link])
+            subprocess.Popen(['notify-send', '-i', 'xapp-dialog-information-symbolic', _("System information uploaded"), _("Your system information was uploaded to %s. This link was placed in your clipboard.") % link])
         except Exception as e:
-            subprocess.Popen(['notify-send', '-i', 'dialog-error-symbolic', _("An error occurred while uploading the system information"), _("Copy and paste the system information manually into a pastebin site like https://pastebin.com."), str(e)])
+            subprocess.Popen(['notify-send', '-i', 'xapp-dialog-error-symbolic', _("An error occurred while uploading the system information"), _("Copy and paste the system information manually into a pastebin site like https://pastebin.com."), str(e)])
 
     @idle
     def add_report_to_treeview(self, report):
