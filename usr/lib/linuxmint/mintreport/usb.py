@@ -168,14 +168,12 @@ class USBListWidget(Gtk.ScrolledWindow):
         column.set_resizable(True)
 
         renderer = Gtk.CellRendererText()
-        renderer.set_property("ypad", 6)
         column = Gtk.TreeViewColumn(_("ID"), renderer, text=COL_ID)
         column.set_sizing(Gtk.TreeViewColumnSizing.FIXED)
         self.treeview.append_column(column)
         column.set_expand(False)
 
         renderer = Gtk.CellRendererText()
-        renderer.set_property("ypad", 6)
         column = Gtk.TreeViewColumn(_("Speed"), renderer, text=COL_SPEED)
         column.set_sizing(Gtk.TreeViewColumnSizing.FIXED)
         self.treeview.append_column(column)
@@ -184,7 +182,6 @@ class USBListWidget(Gtk.ScrolledWindow):
         # Power column: symbolic icon + text
         icon_renderer = Gtk.CellRendererPixbuf()
         text_renderer = Gtk.CellRendererText()
-        text_renderer.set_property("ypad", 6)
         column = Gtk.TreeViewColumn(_("Power"))
         column.pack_start(icon_renderer, False)
         column.pack_start(text_renderer, True)

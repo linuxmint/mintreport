@@ -197,6 +197,7 @@ class MintReportWindow():
         column = Gtk.TreeViewColumn('', cell_renderer)
         column.set_cell_data_func(cell_renderer, render_date)
         column.set_resizable(True)
+        cell_renderer.set_property("ypad", 6)
         self.treeview_crashes.append_column(column)
         column = Gtk.TreeViewColumn("", Gtk.CellRendererText(), text=COL_CRASH_PID)
         column.set_sort_column_id(COL_CRASH_PID)
@@ -239,7 +240,9 @@ class MintReportWindow():
         column = Gtk.TreeViewColumn("", renderer, icon_name=COL_INFO_ICON)
         self.treeview_info.append_column(column)
 
-        column = Gtk.TreeViewColumn("", Gtk.CellRendererText(), text=COL_INFO_TITLE)
+        renderer = Gtk.CellRendererText()
+        renderer.set_property("ypad", 6)
+        column = Gtk.TreeViewColumn("", renderer, text=COL_INFO_TITLE)
         column.set_sort_column_id(COL_INFO_TITLE)
         column.set_resizable(True)
         self.treeview_info.append_column(column)
