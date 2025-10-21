@@ -1,0 +1,7 @@
+__pycache__
+*.ui~
+debian/mintreport
+*substvars*
+debian/files
+usr/share/locale
+debian/*debhelper*
