@@ -22,6 +22,7 @@ from gi.repository import Gtk, Gdk, GtkSource, Gio, XApp
 
 from common import _async, idle, InfoReportContainer, DATA_DIR, INFO_DIR
 from usb import USBListWidget
+from pci import PCIListWidget
 
 setproctitle.setproctitle("mintreport")
 
@@ -282,7 +283,7 @@ class MintReportWindow():
         page.set_spacing(24)
         page.set_margin_left(0)
         page.set_margin_right(0)
-        self.builder.get_object("box_info").add(page)
+        self.builder.get_object("box_info_widget").add(page)
 
         self.sysinfo_section = page.add_section()
 
@@ -388,9 +389,14 @@ class MintReportWindow():
         self.usb_widget = USBListWidget()
         self.builder.get_object("box_usb_widget").pack_start(self.usb_widget, True, True, 0)
 
+        # PCI page
+        self.pci_widget = PCIListWidget()
+        self.builder.get_object("box_pci_widget").pack_start(self.pci_widget, True, True, 0)
+
         self.load_inxi_info()
         self.load_reports()
         self.load_usb()
+        self.load_pci()
 
     def show_page(self, page_name):
         page_name = f"page_{page_name}"
@@ -542,6 +548,10 @@ class MintReportWindow():
     @_async
     def load_usb(self):
         self.usb_widget.load()
+
+    @_async
+    def load_pci(self):
+        self.pci_widget.load()
 
     def on_info_selected(self, selection):
         if self.loading:

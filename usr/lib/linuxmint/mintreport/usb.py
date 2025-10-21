@@ -201,7 +201,7 @@ class USBListWidget(Gtk.ScrolledWindow):
 
     def monitor_usb_events(self):
         for _ in self.monitor:
-            self.refresh_view
+            self.refresh_view()
 
     def refresh_view(self):
         self.load_usb_hierarchy()
