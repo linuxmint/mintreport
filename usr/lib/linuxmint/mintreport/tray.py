@@ -95,7 +95,7 @@ class MyApplication(Gtk.Application):
 
     def on_statusicon_activated(self, icon, button, time):
         if button == Gdk.BUTTON_PRIMARY:
-            GLib.spawn_async(["/usr/bin/mintreport"])
+            GLib.spawn_async(["/usr/bin/mintreport", "--reports"])
             self.status_icon.set_visible(False)
 
     def on_gtk_statusicon_activated(self, status_icon):
@@ -105,7 +105,7 @@ class MyApplication(Gtk.Application):
         self.menu.popup(None, None, None, None, button, time)
 
     def on_menu_show(self, widget):
-        GLib.spawn_async(["/usr/bin/mintreport"])
+        GLib.spawn_async(["/usr/bin/mintreport", "--reports"])
 
     def on_menu_quit(self, widget):
         self.quit()

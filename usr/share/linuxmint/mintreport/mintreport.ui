@@ -146,6 +146,7 @@
                     </child>
                   </object>
                   <packing>
+                    <property name="name">page_info</property>
                     <property name="title" translatable="yes">System information</property>
                     <property name="icon-name">xapp-dialog-information-symbolic</property>
                   </packing>
@@ -188,6 +189,7 @@
                     </child>
                   </object>
                   <packing>
+                    <property name="name">page_usb</property>
                     <property name="title" translatable="yes">USB</property>
                     <property name="icon-name">xapp-drive-harddisk-usb-symbolic</property>
                     <property name="position">1</property>
@@ -411,6 +413,7 @@
                     </child>
                   </object>
                   <packing>
+                    <property name="name">page_reports</property>
                     <property name="title" translatable="yes">System reports</property>
                     <property name="icon-name">mintreport-symbolic</property>
                     <property name="position">3</property>
@@ -677,6 +680,7 @@
                     </child>
                   </object>
                   <packing>
+                    <property name="name">page_crashes</property>
                     <property name="title" translatable="yes">Crash reports</property>
                     <property name="icon-name">xapp-computer-fail-symbolic</property>
                     <property name="position">4</property>

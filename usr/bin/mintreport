@@ -1,2 +1,2 @@
 #!/bin/sh
-/usr/lib/linuxmint/mintreport/app.py &
+exec /usr/bin/python3 /usr/lib/linuxmint/mintreport/app.py "$@"

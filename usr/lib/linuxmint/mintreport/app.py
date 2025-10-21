@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 import apt
+import argparse
 import datetime
 import gettext
 import gi
@@ -10,6 +11,7 @@ import platform
 import setproctitle
 import shutil
 import subprocess
+import sys
 import threading
 import xapp.SettingsWidgets
 
@@ -55,21 +57,38 @@ class MyApplication(Gtk.Application):
     def __init__(self, application_id, flags):
         Gtk.Application.__init__(self, application_id=application_id, flags=flags)
         self.connect("activate", self.activate)
+        self.connect("command-line", self.on_command_line)
+        self.report_window = None
+        self.page = None
+
+    def on_command_line(self, app, command_line):
+        # Parse fresh args each time
+        parser = argparse.ArgumentParser(add_help=False)
+        group = parser.add_mutually_exclusive_group()
+        group.add_argument("--reports", action="store_const", dest="page", const="reports")
+        group.add_argument("--crashes", action="store_const", dest="page", const="crashes")
+        group.add_argument("--usb", action="store_const", dest="page", const="usb")
+        group.add_argument("--info", action="store_const", dest="page", const="info")
+        argv = command_line.get_arguments()[1:]
+        args, _ = parser.parse_known_args(argv)
+        if args.page is None:
+            args.page = "info"
+        self.page = args.page
+        self.activate(app)
+        return 0
 
     def activate(self, application):
-        windows = self.get_windows()
-        if (len(windows) > 0):
-            window = windows[0]
-            window.present()
-            window.show_all()
-        else:
-            window = MintReportWindow(self)
-            self.add_window(window.window)
-            window.window.show_all()
+        if self.report_window is None:
+            self.report_window = MintReportWindow(self)
+            self.add_window(self.report_window.window)
+        window = self.report_window.window
+        window = self.get_windows()[0]
+        window.present()
+        window.show_all()
+        self.report_window.show_page(self.page)
 
 def kill_process(process):
     process.kill()
-
 
 def get_process_output(command):
     timeout = 2.0  # Timeout for any subprocess before aborting it
@@ -162,7 +181,7 @@ class MintReportWindow():
         self.window.set_title(_("System Information"))
         self.window.set_icon_name("mintreport")
 
-        self.stack = self.builder.get_object("crash_stack")
+        self.stack = self.builder.get_object("main_stack")
         self.spinner = self.builder.get_object("crash_spinner")
 
         # the crashes treeview
@@ -372,6 +391,10 @@ class MintReportWindow():
         self.load_inxi_info()
         self.load_reports()
         self.load_usb()
+
+    def show_page(self, page_name):
+        page_name = f"page_{page_name}"
+        self.stack.set_visible_child_name(page_name)
 
     def create_info_row(self, key, value):
         widget = xapp.SettingsWidgets.SettingsWidget()
@@ -608,7 +631,7 @@ class MintReportWindow():
     def on_crash_selected(self, selection):
         if self.loading:
             return
-        self.stack.set_visible_child_name("page0")
+        self.builder.get_object("crash_stack").set_visible_child_name("page0")
         self.spinner.start()
         self.spinner.show()
         self.treeview_crashes.set_sensitive(False)
@@ -709,7 +732,7 @@ class MintReportWindow():
         self.treeview_crashes.set_sensitive(True)
         self.localfiles_button.set_sensitive(True)
         self.spinner.stop()
-        self.stack.set_visible_child_name("page1")
+        self.builder.get_object("crash_stack").set_visible_child_name("page1")
 
     @idle
     def show_stack_info(self, text):
@@ -732,5 +755,5 @@ class MintReportWindow():
         subprocess.call(['xdg-open', output])
 
 if __name__ == "__main__":
-    application = MyApplication("com.linuxmint.reports", Gio.ApplicationFlags.FLAGS_NONE)
-    application.run()
+    application = MyApplication("com.linuxmint.reports", Gio.ApplicationFlags.HANDLES_COMMAND_LINE)
+    application.run(sys.argv)
