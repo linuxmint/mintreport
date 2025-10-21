@@ -3,11 +3,15 @@ import apt
 import datetime
 import gettext
 import gi
+import json
 import locale
 import os
+import platform
 import setproctitle
 import shutil
 import subprocess
+import threading
+import xapp.SettingsWidgets
 
 gi.require_version("Gtk", "3.0")
 gi.require_version('GtkSource', '3.0')
@@ -62,6 +66,79 @@ class MyApplication(Gtk.Application):
             self.add_window(window.window)
             window.window.show_all()
 
+def kill_process(process):
+    process.kill()
+
+
+def get_process_output(command):
+    timeout = 2.0  # Timeout for any subprocess before aborting it
+
+    lines = []
+    p = subprocess.Popen(command, stdout=subprocess.PIPE)
+    timer = threading.Timer(timeout, kill_process, [p])
+    timer.start()
+    while True:
+        line = p.stdout.readline()
+        if not line:
+            break
+        if line != '':
+            lines.append(line.decode('utf-8'))
+    timer.cancel()
+    return lines
+
+
+def get_graphic_cards():
+    cards = {}
+    count = 0
+    envpath = os.environ["PATH"]
+    os.environ["PATH"] = envpath + ":/usr/local/sbin:/usr/sbin:/sbin"
+    for card in get_process_output("lspci"):
+        for prefix in ["VGA compatible controller:", "3D controller:", "Display controller:"]:
+            if prefix in card:
+                cardName = card.split(prefix)[1].split("(rev")[0].strip()
+                cards[count] = cardName
+                count += 1
+    os.environ["PATH"] = envpath
+    return cards
+
+
+def get_disk_size():
+    disksize = 0
+    try:
+        out = get_process_output(("lsblk", "--json", "--output", "size", "--bytes", "--nodeps"))
+        jsonobj = json.loads(''.join(out))
+    except Exception:
+        return _("Unknown size"), False
+
+    for blk in jsonobj['blockdevices']:
+        disksize += int(blk['size'])
+
+    return disksize, (len(jsonobj['blockdevices']) > 1)
+
+
+def get_proc_infos():
+    # For some platforms, 'model name' will no longer take effect.
+    # We can try our best to detect it, but if all attempts failed just leave it to be "Unknown".
+    # Source: https://github.com/dylanaraps/neofetch/blob/6dd85d67fc0d4ede9248f2df31b2cd554cca6c2f/neofetch#L2163
+    cpudetect = ("model name", "Hardware", "Processor", "cpu model", "chip type", "cpu type")
+    infos = [
+        ("/proc/cpuinfo", [("cpu_name", cpudetect), ("cpu_siblings", ("siblings",)), ("cpu_cores", ("cpu cores",))]),
+        ("/proc/meminfo", [("mem_total", ("MemTotal",))])
+    ]
+    result = {}
+    for (proc, pairs) in infos:
+        for line in get_process_output(("cat", proc)):
+            for (key, start) in pairs:
+                for item in start:
+                    if line.startswith(item):
+                        result[key] = line.split(':', 1)[1].strip()
+                        break
+    if "cpu_name" not in result:
+        result["cpu_name"] = _("Unknown CPU")
+    if "mem_total" not in result:
+        result["mem_total"] = _("Unknown size")
+    return result
+
 class MintReportWindow():
 
     def __init__(self, application):
@@ -81,16 +158,11 @@ class MintReportWindow():
         self.builder.set_translation_domain(APP)
         self.builder.add_from_file(gladefile)
         self.window = self.builder.get_object("main_window")
-        self.window.set_title(_("System Reports"))
+        self.window.set_title(_("System Information"))
         self.window.set_icon_name("mintreport")
 
         self.stack = self.builder.get_object("crash_stack")
         self.spinner = self.builder.get_object("crash_spinner")
-
-        # Fill in the sysinfo pane
-        self.load_sysinfo()
-        self.builder.get_object("button_sysinfo_copy").connect("clicked", self.copy_sysinfo)
-        self.builder.get_object("button_sysinfo_upload").connect("clicked", self.upload_sysinfo)
 
         # the crashes treeview
         self.treeview_crashes = self.builder.get_object("treeview_crashes")
@@ -183,7 +255,13 @@ class MintReportWindow():
         else:
             self.builder.get_object("crash_internal_stack").set_visible_child_name("page_error")
 
-        self.load_info()
+        page = xapp.SettingsWidgets.SettingsPage()
+        page.set_spacing(24)
+        page.set_margin_left(0)
+        page.set_margin_right(0)
+        self.builder.get_object("box_info").add(page)
+
+        self.sysinfo_section = page.add_section()
 
         accel_group = Gtk.AccelGroup()
         self.window.add_accel_group(accel_group)
@@ -219,6 +297,90 @@ class MintReportWindow():
 
         menu.show_all()
 
+        # Info page
+        procInfos = get_proc_infos()
+        infos = []
+        try:
+            (memsize, memunit) = procInfos['mem_total'].split(" ")
+            memsize = float(memsize)
+        except ValueError:
+            memsize = procInfos['mem_total']
+            memunit = ""
+        processorName = procInfos['cpu_name'].replace("(R)", "\u00A9").replace("(TM)", "\u2122")
+        if 'cpu_cores' in procInfos:
+            processorName = processorName + " \u00D7 " + procInfos['cpu_cores']
+
+        with open("/etc/linuxmint/info") as f:
+            config = dict([line.strip().split("=") for line in f])
+        distribution = "Linux Mint"
+        if os.path.exists("/usr/share/doc/debian-system-adjustments/copyright"):
+            distribution = "LMDE"
+        release = config['RELEASE']
+        edition = config['EDITION'].replace('"', '')
+        architecture = "64-bit"
+        if platform.machine() not in ["x86_64", "aarch64"]:
+            architecture = "32-bit"
+        infos.append((_("Operating system"), f"{distribution} {release} - {edition} {architecture}"))
+        infos.append((_("Linux Kernel"), platform.release()))
+        infos.append((_("Processor"), processorName))
+        cards = get_graphic_cards()
+        for card in cards:
+            infos.append((_("Graphics Card"), cards[card]))
+        if memunit == "kB":
+            infos.append((_("Memory"), '%.1f %s' % ((float(memsize)/(1000**2)), _("GB"))))
+        else:
+            infos.append((_("Memory"), procInfos['mem_total']))
+
+        diskSize, multipleDisks = get_disk_size()
+        if multipleDisks:
+            diskText = _("Hard Drives")
+        else:
+            diskText = _("Hard Drive")
+        try:
+            infos.append((diskText, '%.1f %s' % ((diskSize / (1000**3)), _("GB"))))
+        except:
+            infos.append((diskText, diskSize))
+
+        desktop = os.getenv("XDG_CURRENT_DESKTOP")
+        if "cinnamon" in desktop.lower():
+            desktop = f"Cinnamon {os.getenv("CINNAMON_VERSION")}"
+        infos.append((_("Desktop Environment"), desktop))
+
+        display_server_name = _("X11")
+
+        if os.getenv("XDG_SESSION_TYPE") == "wayland":
+            display_server_name = _("Wayland")
+
+        infos.append((_("Display Server"), display_server_name))
+
+        for (key, value) in infos:
+            self.sysinfo_section.add_row(self.create_info_row(key, value))
+
+        self.inxi_info = ""
+        self.builder.get_object("button_sysinfo_copy").connect("clicked", self.copy_inxi_info)
+        self.builder.get_object("button_sysinfo_upload").connect("clicked", self.upload_inxi_info)
+
+
+        # USB page
+        self.usb_widget = USBListWidget()
+        self.builder.get_object("box_usb_widget").pack_start(self.usb_widget, True, True, 0)
+
+        self.load_inxi_info()
+        self.load_reports()
+        self.load_usb()
+
+    def create_info_row(self, key, value):
+        widget = xapp.SettingsWidgets.SettingsWidget()
+        widget.set_spacing(40)
+        labelKey = Gtk.Label.new(key)
+        widget.pack_start(labelKey, False, False, 0)
+        labelKey.get_style_context().add_class("dim-label")
+        labelValue = Gtk.Label.new(value)
+        labelValue.set_selectable(True)
+        labelValue.set_line_wrap(True)
+        widget.pack_end(labelValue, False, False, 0)
+        return widget
+
     @property
     def cache(self):
         """Cache data from apt"""
@@ -233,8 +395,8 @@ class MintReportWindow():
         dlg = Gtk.AboutDialog()
         dlg.set_transient_for(self.window)
         dlg.set_title(_("About"))
-        dlg.set_program_name("mintReport")
-        dlg.set_comments(_("System Reports"))
+        dlg.set_program_name("mintreport")
+        dlg.set_comments(_("System Information"))
         try:
             h = open('/usr/share/common-licenses/GPL', encoding="utf-8")
             s = h.readlines()
@@ -258,21 +420,21 @@ class MintReportWindow():
 
     def on_menu_restore(self, widget):
         self.settings.reset("ignored-reports")
-        self.load_info()
+        self.load_reports()
 
     def on_menu_refresh(self, widget):
-        self.load_info()
-        self.load_sysinfo()
+        self.load_reports()
         self.load_crashes()
 
     def on_menu_quit(self, widget):
         self.application.quit()
 
     @_async
-    def load_sysinfo(self):
+    def load_inxi_info(self):
         try:
             sysinfo = subprocess.check_output("LANG=C inxi -Fxxxrzc0 --usb", shell=True).decode("utf-8", errors='replace')
-            self.add_sysinfo_to_textview(sysinfo)
+            self.inxi_info = sysinfo
+            self.enable_inxi_buttons()
             with open(TMP_INXI_FILE, "w") as f:
                 f.write(sysinfo)
         except Exception as e:
@@ -280,24 +442,20 @@ class MintReportWindow():
             print (e)
 
     @idle
-    def add_sysinfo_to_textview(self, text):
-        buff = Gtk.TextBuffer()
-        buff.set_text(text)
-        self.builder.get_object("textview_sysinfo").set_buffer(buff)
+    def enable_inxi_buttons(self):
+        self.builder.get_object("button_sysinfo_copy").set_sensitive(True)
+        self.builder.get_object("button_sysinfo_upload").set_sensitive(True)
 
-    def copy_sysinfo(self, button):
+    def copy_inxi_info(self, button):
         clipboard = Gtk.Clipboard.get(Gdk.SELECTION_CLIPBOARD)
-        buff = self.builder.get_object("textview_sysinfo").get_buffer()
-        text = buff.get_text(buff.get_start_iter(), buff.get_end_iter(), False)
-        clipboard.set_text("[code]\n%s[/code]\n" % text, -1)
+        clipboard.set_text("[code]\n%s[/code]\n" % self.inxi_info, -1)
         subprocess.Popen(['notify-send', '-i', 'xapp-dialog-information-symbolic', _("System information copied"), _("Your system information was copied into your clipboard so you can paste it on the forums.")])
 
-    def upload_sysinfo(self, button):
+    def upload_inxi_info(self, button):
         try:
             output = subprocess.check_output("pastebin %s" % TMP_INXI_FILE, shell=True).decode("UTF-8")
             link = output.rstrip('\x00').strip() # Remove ASCII null termination with \x00
             clipboard = Gtk.Clipboard.get(Gdk.SELECTION_CLIPBOARD)
-            buff = self.builder.get_object("textview_sysinfo").get_buffer()
             clipboard.set_text(link, -1)
             subprocess.Popen(['notify-send', '-i', 'xapp-dialog-information-symbolic', _("System information uploaded"), _("Your system information was uploaded to %s. This link was placed in your clipboard.") % link])
         except Exception as e:
@@ -332,7 +490,7 @@ class MintReportWindow():
         self.builder.get_object("info_spinner").stop()
 
     @_async
-    def load_info(self):
+    def load_reports(self):
         self.loading = True
         self.clear_info_treeview()
         self.show_info_spinner()
@@ -389,7 +547,7 @@ class MintReportWindow():
         self.window.set_sensitive(False)
         reload_requested = callback(data)
         if reload_requested:
-            self.load_info()
+            self.load_reports()
         self.window.set_sensitive(True)
 
     def on_ignore_button_clicked(self, button):
