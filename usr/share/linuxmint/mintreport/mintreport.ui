@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Generated with glade 3.38.2 -->
+<!-- Generated with glade 3.40.0 -->
 <interface>
   <requires lib="gtk+" version="3.20"/>
   <requires lib="xapp" version="0.0"/>
@@ -9,6 +9,7 @@
   </object>
   <object class="GtkWindow" id="main_window">
     <property name="can-focus">False</property>
+    <property name="window-position">center</property>
     <property name="default-width">1024</property>
     <property name="default-height">600</property>
     <child>
@@ -51,6 +52,150 @@
                 <property name="margin-end">12</property>
                 <property name="margin-top">12</property>
                 <property name="margin-bottom">12</property>
+                <child>
+                  <object class="GtkBox" id="box_sysinfo">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="orientation">vertical</property>
+                    <property name="spacing">12</property>
+                    <child>
+                      <object class="GtkBox">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="orientation">vertical</property>
+                        <property name="spacing">6</property>
+                        <child>
+                          <object class="GtkImage">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="margin-top">12</property>
+                            <property name="pixel-size">100</property>
+                            <property name="icon-name">linuxmint-logo-ring-symbolic</property>
+                            <property name="icon_size">6</property>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkBox" id="box_info">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="orientation">vertical</property>
+                            <child>
+                              <placeholder/>
+                            </child>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkButtonBox" id="buttonbox3">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="spacing">6</property>
+                            <property name="layout-style">end</property>
+                            <child>
+                              <object class="GtkButton" id="button_sysinfo_copy">
+                                <property name="label" translatable="yes">Copy</property>
+                                <property name="visible">True</property>
+                                <property name="sensitive">False</property>
+                                <property name="can-focus">True</property>
+                                <property name="receives-default">True</property>
+                                <property name="tooltip-text" translatable="yes">Copy to clipboard (code tags are added to make it easy to paste the system information into the forums)</property>
+                              </object>
+                              <packing>
+                                <property name="expand">True</property>
+                                <property name="fill">True</property>
+                                <property name="position">0</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <object class="GtkButton" id="button_sysinfo_upload">
+                                <property name="label" translatable="yes">Upload</property>
+                                <property name="visible">True</property>
+                                <property name="sensitive">False</property>
+                                <property name="can-focus">True</property>
+                                <property name="receives-default">True</property>
+                                <property name="tooltip-text" translatable="yes">Upload to a pastebin service (no personal information included)</property>
+                              </object>
+                              <packing>
+                                <property name="expand">True</property>
+                                <property name="fill">True</property>
+                                <property name="position">1</property>
+                              </packing>
+                            </child>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">2</property>
+                          </packing>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">2</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="title" translatable="yes">System information</property>
+                    <property name="icon-name">xapp-dialog-information-symbolic</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkBox" id="box_usb">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="hexpand">True</property>
+                    <property name="vexpand">True</property>
+                    <property name="orientation">vertical</property>
+                    <property name="spacing">12</property>
+                    <child>
+                      <object class="GtkBox" id="box_usb_widget">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="orientation">vertical</property>
+                        <property name="spacing">6</property>
+                        <child>
+                          <placeholder/>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">Note: Double-click a device to copy its ID</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="title" translatable="yes">USB</property>
+                    <property name="icon-name">xapp-drive-harddisk-usb-symbolic</property>
+                    <property name="position">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <placeholder/>
+                </child>
                 <child>
                   <object class="GtkStack" id="box_info_stack">
                     <property name="visible">True</property>
@@ -266,101 +411,9 @@
                     </child>
                   </object>
                   <packing>
-                    <property name="name">page1</property>
                     <property name="title" translatable="yes">System reports</property>
                     <property name="icon-name">mintreport-symbolic</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkBox" id="box_sysinfo">
-                    <property name="visible">True</property>
-                    <property name="can-focus">False</property>
-                    <property name="orientation">vertical</property>
-                    <property name="spacing">12</property>
-                    <child>
-                      <object class="GtkBox">
-                        <property name="visible">True</property>
-                        <property name="can-focus">False</property>
-                        <property name="orientation">vertical</property>
-                        <property name="spacing">6</property>
-                        <child>
-                          <object class="GtkScrolledWindow" id="scrolledwindow_sysinfo">
-                            <property name="visible">True</property>
-                            <property name="can-focus">True</property>
-                            <property name="shadow-type">in</property>
-                            <child>
-                              <object class="GtkTextView" id="textview_sysinfo">
-                                <property name="visible">True</property>
-                                <property name="can-focus">True</property>
-                                <property name="pixels-above-lines">3</property>
-                                <property name="pixels-below-lines">3</property>
-                                <property name="pixels-inside-wrap">1</property>
-                                <property name="left-margin">3</property>
-                                <property name="right-margin">3</property>
-                                <property name="monospace">True</property>
-                              </object>
-                            </child>
-                          </object>
-                          <packing>
-                            <property name="expand">True</property>
-                            <property name="fill">True</property>
-                            <property name="position">0</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkButtonBox" id="buttonbox3">
-                            <property name="visible">True</property>
-                            <property name="can-focus">False</property>
-                            <property name="spacing">6</property>
-                            <property name="layout-style">end</property>
-                            <child>
-                              <object class="GtkButton" id="button_sysinfo_copy">
-                                <property name="label" translatable="yes">Copy</property>
-                                <property name="visible">True</property>
-                                <property name="can-focus">True</property>
-                                <property name="receives-default">True</property>
-                                <property name="tooltip-text" translatable="yes">Copy to clipboard (code tags are added to make it easy to paste the system information into the forums)</property>
-                              </object>
-                              <packing>
-                                <property name="expand">True</property>
-                                <property name="fill">True</property>
-                                <property name="position">0</property>
-                              </packing>
-                            </child>
-                            <child>
-                              <object class="GtkButton" id="button_sysinfo_upload">
-                                <property name="label" translatable="yes">Upload</property>
-                                <property name="visible">True</property>
-                                <property name="can-focus">True</property>
-                                <property name="receives-default">True</property>
-                                <property name="tooltip-text" translatable="yes">Upload to a pastebin service (no personal information included)</property>
-                              </object>
-                              <packing>
-                                <property name="expand">True</property>
-                                <property name="fill">True</property>
-                                <property name="position">1</property>
-                              </packing>
-                            </child>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="position">1</property>
-                          </packing>
-                        </child>
-                      </object>
-                      <packing>
-                        <property name="expand">True</property>
-                        <property name="fill">True</property>
-                        <property name="position">2</property>
-                      </packing>
-                    </child>
-                  </object>
-                  <packing>
-                    <property name="name">page2</property>
-                    <property name="title" translatable="yes">System information</property>
-                    <property name="icon-name">xapp-dialog-information-symbolic</property>
-                    <property name="position">1</property>
+                    <property name="position">3</property>
                   </packing>
                 </child>
                 <child>
@@ -624,17 +677,16 @@
                     </child>
                   </object>
                   <packing>
-                    <property name="name">page0</property>
                     <property name="title" translatable="yes">Crash reports</property>
                     <property name="icon-name">xapp-computer-fail-symbolic</property>
-                    <property name="position">2</property>
+                    <property name="position">4</property>
                   </packing>
                 </child>
               </object>
               <packing>
                 <property name="expand">True</property>
                 <property name="fill">True</property>
-                <property name="position">2</property>
+                <property name="position">1</property>
               </packing>
             </child>
           </object>
@@ -650,7 +702,7 @@
       <object class="GtkHeaderBar">
         <property name="visible">True</property>
         <property name="can-focus">False</property>
-        <property name="title" translatable="yes">System Reports</property>
+        <property name="title" translatable="yes">System Information</property>
         <property name="subtitle" translatable="yes">Troubleshoot problems</property>
         <property name="show-close-button">True</property>
         <child>

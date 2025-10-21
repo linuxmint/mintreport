@@ -19,6 +19,7 @@ gi.require_version('XApp', '1.0')
 from gi.repository import Gtk, Gdk, GtkSource, Gio, XApp
 
 from common import _async, idle, InfoReportContainer, DATA_DIR, INFO_DIR
+from usb import USBListWidget
 
 setproctitle.setproctitle("mintreport")
 
@@ -511,6 +512,10 @@ class MintReportWindow():
                         print("Failed to load report %s: \n%s\n" % (dir_name, e))
         self.loading = False
         self.show_info_reports()
+
+    @_async
+    def load_usb(self):
+        self.usb_widget.load()
 
     def on_info_selected(self, selection):
         if self.loading:
