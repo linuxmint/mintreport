@@ -15,14 +15,18 @@ import sys
 import threading
 import xapp.SettingsWidgets
 
+import socket
+import psutil
+
 gi.require_version("Gtk", "3.0")
 gi.require_version('GtkSource', '3.0')
 gi.require_version('XApp', '1.0')
 from gi.repository import Gtk, Gdk, GtkSource, Gio, XApp
 
-from common import _async, idle, InfoReportContainer, DATA_DIR, INFO_DIR
+from common import _async, idle, InfoReportContainer, DATA_DIR, INFO_DIR, prefix_version, read_dmi, clean_brand
 from usb import USBListWidget
 from pci import PCIListWidget
+from bios import BIOSListWidget
 
 setproctitle.setproctitle("mintreport")
 
@@ -324,6 +328,15 @@ class MintReportWindow():
         # Info page
         procInfos = get_proc_infos()
         infos = []
+
+         # Product
+        version = prefix_version(read_dmi('product_version'))
+        vendor = clean_brand(read_dmi('sys_vendor'))
+        sku = read_dmi('product_sku')
+        product = f"{vendor} {read_dmi('product_name')} {version} {sku}"
+        product = " ".join(product.split()) # remove unecessary spaces
+        infos.append((_("Computer"), product))
+
         try:
             (memsize, memunit) = procInfos['mem_total'].split(" ")
             memsize = float(memsize)
@@ -393,10 +406,15 @@ class MintReportWindow():
         self.pci_widget = PCIListWidget()
         self.builder.get_object("box_pci_widget").pack_start(self.pci_widget, True, True, 0)
 
+        # BIOS page
+        self.bios_widget = BIOSListWidget()
+        self.builder.get_object("box_bios_widget").add(self.bios_widget)
+
         self.load_inxi_info()
         self.load_reports()
         self.load_usb()
         self.load_pci()
+        self.load_bios()
 
     def show_page(self, page_name):
         page_name = f"page_{page_name}"
@@ -552,6 +570,10 @@ class MintReportWindow():
     @_async
     def load_pci(self):
         self.pci_widget.load()
+
+    @_async
+    def load_bios(self):
+        self.bios_widget.load()
 
     def on_info_selected(self, selection):
         if self.loading:

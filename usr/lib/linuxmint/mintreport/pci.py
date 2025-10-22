@@ -8,7 +8,7 @@ import math
 import pyudev
 import subprocess
 from gi.repository import Gtk, Gdk, GLib, Pango
-from usb import _async, idle
+from common import _async, idle, clean_brand
 
 # i18n
 APP = 'mintreport'
@@ -163,65 +163,6 @@ PCI_CLASS_MAP = {
     (0x11, 0x10): "Communication synchronizer",
     (0x11, 0x20): "Signal processing management",
     (0x11, 0x80): "Data acquisition controller",
-}
-
-VENDOR_MAP = {
-    # CPU / Chipset vendors
-    "Intel Corporation": "Intel",
-    "Advanced Micro Devices, Inc. [AMD/ATI]": "AMD",
-    "Advanced Micro Devices, Inc.": "AMD",
-    "NVIDIA Corporation": "NVIDIA",
-
-    # Networking
-    "Realtek Semiconductor Co., Ltd.": "Realtek",
-    "Broadcom Inc. and subsidiaries": "Broadcom",
-    "Broadcom Limited": "Broadcom",
-    "Qualcomm Atheros": "Atheros",
-    "Qualcomm Technologies, Inc": "Qualcomm",
-    "MediaTek Inc.": "MediaTek",
-    "Mellanox Technologies": "Mellanox",
-    "Intel Corporation (Network)": "Intel",
-
-    # Storage / NVMe / RAID
-    "Samsung Electronics Co Ltd": "Samsung",
-    "Western Digital": "WD",
-    "Western Digital Corporation": "WD",
-    "SanDisk Corp.": "SanDisk",
-    "Micron Technology": "Micron",
-    "Crucial Technology": "Crucial",
-    "Kingston Technology Company": "Kingston",
-    "Phison Electronics Corporation": "Phison",
-    "Marvell Technology Group Ltd.": "Marvell",
-    "Adaptec": "Adaptec",
-    "Broadcom / LSI": "LSI",
-    "Microchip Technology Inc.": "Microchip",
-    "ASMedia Technology Inc.": "ASMedia",
-    "Renesas Technology Corp.": "Renesas",
-    "VIA Technologies, Inc.": "VIA",
-    "NEC Corporation": "NEC",
-
-    # Audio / Multimedia
-    "Creative Labs": "Creative",
-    "Creative Technology Ltd.": "Creative",
-    "C-Media Electronics Inc": "C-Media",
-    "Realtek Semiconductor Corp.": "Realtek",
-
-    # Controllers / Bridges / I/O
-    "Texas Instruments": "TI",
-    "NXP Semiconductors": "NXP",
-    "Freescale Semiconductor Inc": "Freescale",
-    "Apple Inc.": "Apple",
-    "Huawei Technologies Co., Ltd.": "Huawei",
-    "Xilinx Corporation": "Xilinx",
-    "Lattice Semiconductor Corp.": "Lattice",
-    "Altera Corporation": "Altera",
-    "Broadcom / Avago": "Broadcom",
-
-    # Capture / Specialty Devices
-    "Blackmagic Design": "Blackmagic",
-    "Elgato Systems": "Elgato",
-    "AverMedia Technologies, Inc.": "AverMedia",
-    "GoPro, Inc.": "GoPro",
 }
 
 def format_link_info(speed_str, width_str):
@@ -482,8 +423,7 @@ class PCIListWidget(Gtk.Box):
         for d in devices:
             name = f"{d['device']} {d['revision']}"
 
-            vendor = d['vendor']
-            vendor = VENDOR_MAP.get(vendor, vendor)
+            vendor = clean_brand(d['vendor'])
             type = d['class'].replace(" controller", "")
             type = type.replace("Generic system peripheral", "Generic")
             full_info = f"{d['address']} {d['class']} {d['vendor']} {d['device']} {d['revision']} {d['driver']}"
