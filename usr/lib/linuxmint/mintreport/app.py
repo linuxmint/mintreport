@@ -2,10 +2,8 @@
 import apt
 import argparse
 import datetime
-import gettext
 import gi
 import json
-import locale
 import os
 import platform
 import setproctitle
@@ -13,30 +11,22 @@ import shutil
 import subprocess
 import sys
 import threading
-import xapp.SettingsWidgets
-
-import socket
-import psutil
+import xapp.SettingsWidgets as Xs
+import xapp.threading as xt
+import xapp.util
 
 gi.require_version("Gtk", "3.0")
 gi.require_version('GtkSource', '3.0')
 gi.require_version('XApp', '1.0')
-from gi.repository import Gtk, Gdk, GtkSource, Gio, XApp
+from gi.repository import Gtk, Gdk, GtkSource, Gio
 
-from common import _async, idle, InfoReportContainer, DATA_DIR, INFO_DIR, prefix_version, read_dmi, clean_brand
-from usb import USBListWidget
-from pci import PCIListWidget
+from common import InfoReportContainer, DATA_DIR, INFO_DIR, prefix_version, read_dmi, clean_brand
 from bios import BIOSListWidget
+from pci import PCIListWidget
+from usb import USBListWidget
 
 setproctitle.setproctitle("mintreport")
-
-# i18n
-APP = 'mintreport'
-LOCALE_DIR = "/usr/share/locale"
-locale.bindtextdomain(APP, LOCALE_DIR)
-gettext.bindtextdomain(APP, LOCALE_DIR)
-gettext.textdomain(APP)
-_ = gettext.gettext
+_ = xapp.util.gettext("mintreport")
 
 TMP_DIR = "/tmp/mintreport"
 TMP_INFO_DIR = os.path.join(TMP_DIR, "reports")
@@ -180,7 +170,7 @@ class MintReportWindow():
         # Set the Glade file
         gladefile = "/usr/share/linuxmint/mintreport/mintreport.ui"
         self.builder = Gtk.Builder()
-        self.builder.set_translation_domain(APP)
+        self.builder.set_translation_domain("mintreport")
         self.builder.add_from_file(gladefile)
         self.window = self.builder.get_object("main_window")
         self.window.set_title(_("System Information"))
@@ -283,7 +273,7 @@ class MintReportWindow():
         else:
             self.builder.get_object("crash_internal_stack").set_visible_child_name("page_error")
 
-        page = xapp.SettingsWidgets.SettingsPage()
+        page = Xs.SettingsPage()
         page.set_spacing(24)
         page.set_margin_left(0)
         page.set_margin_right(0)
@@ -421,7 +411,7 @@ class MintReportWindow():
         self.stack.set_visible_child_name(page_name)
 
     def create_info_row(self, key, value):
-        widget = xapp.SettingsWidgets.SettingsWidget()
+        widget = Xs.SettingsWidget()
         widget.set_spacing(40)
         labelKey = Gtk.Label.new(key)
         widget.pack_start(labelKey, False, False, 0)
@@ -480,7 +470,7 @@ class MintReportWindow():
     def on_menu_quit(self, widget):
         self.application.quit()
 
-    @_async
+    @xt.run_async
     def load_inxi_info(self):
         try:
             sysinfo = subprocess.check_output("LANG=C inxi -Fxxxrzc0 --usb", shell=True).decode("utf-8", errors='replace')
@@ -492,7 +482,7 @@ class MintReportWindow():
             subprocess.Popen(['notify-send', '-i', 'xapp-dialog-error-symbolic', _("An error occurred while gathering the system information."), str(e)])
             print (e)
 
-    @idle
+    @xt.run_idle
     def enable_inxi_buttons(self):
         self.builder.get_object("button_sysinfo_copy").set_sensitive(True)
         self.builder.get_object("button_sysinfo_upload").set_sensitive(True)
@@ -512,24 +502,24 @@ class MintReportWindow():
         except Exception as e:
             subprocess.Popen(['notify-send', '-i', 'xapp-dialog-error-symbolic', _("An error occurred while uploading the system information"), _("Copy and paste the system information manually into a pastebin site like https://pastebin.com."), str(e)])
 
-    @idle
+    @xt.run_idle
     def add_report_to_treeview(self, report):
         iter = self.model_info.insert_before(None, None)
         self.model_info.set_value(iter, COL_INFO_ICON, report.instance.icon)
         self.model_info.set_value(iter, COL_INFO_TITLE, report.instance.title)
         self.model_info.set_value(iter, COL_INFO_REPORT, report)
 
-    @idle
+    @xt.run_idle
     def clear_info_treeview(self):
         self.model_info.clear()
         self.builder.get_object("info_box").hide()
 
-    @idle
+    @xt.run_idle
     def show_info_spinner(self):
         self.builder.get_object("box_info_stack").set_visible_child_name("spinner")
         self.builder.get_object("info_spinner").start()
 
-    @idle
+    @xt.run_idle
     def show_info_reports(self):
         if self.num_info_found > 0:
             self.builder.get_object("box_info_stack").set_visible_child_name("reports")
@@ -540,7 +530,7 @@ class MintReportWindow():
             self.builder.get_object("box_info_stack").set_visible_child_name("done")
         self.builder.get_object("info_spinner").stop()
 
-    @_async
+    @xt.run_async
     def load_reports(self):
         self.loading = True
         self.clear_info_treeview()
@@ -563,15 +553,15 @@ class MintReportWindow():
         self.loading = False
         self.show_info_reports()
 
-    @_async
+    @xt.run_async
     def load_usb(self):
         self.usb_widget.load()
 
-    @_async
+    @xt.run_async
     def load_pci(self):
         self.pci_widget.load()
 
-    @_async
+    @xt.run_async
     def load_bios(self):
         self.bios_widget.load()
 
@@ -631,7 +621,7 @@ class MintReportWindow():
                         if self.num_info_found == 0:
                             self.show_info_reports()
 
-    @idle
+    @xt.run_idle
     def load_crashes(self):
         self.loading = True
         self.model_crashes.clear()
@@ -678,7 +668,7 @@ class MintReportWindow():
             report = model.get_value(iter, COL_CRASH_OBJECT)
             self.dump_crash_report(report)
 
-    @_async
+    @xt.run_async
     def dump_crash_report(self, report):
 
         os.chdir(UNPACK_DIR)
@@ -759,14 +749,14 @@ class MintReportWindow():
 
         self.on_unpack_crash_report_finished()
 
-    @idle
+    @xt.run_idle
     def on_unpack_crash_report_finished(self):
         self.treeview_crashes.set_sensitive(True)
         self.localfiles_button.set_sensitive(True)
         self.spinner.stop()
         self.builder.get_object("crash_stack").set_visible_child_name("page1")
 
-    @idle
+    @xt.run_idle
     def show_stack_info(self, text):
         self.buffer.set_language(self.language_manager.get_language("gdb-log"))
         self.buffer.set_text(text)

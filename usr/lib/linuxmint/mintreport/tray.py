@@ -1,28 +1,18 @@
 #!/usr/bin/python3
-import gettext
 import gi
-import locale
 import os
 import psutil
 import setproctitle
 import subprocess
 import xapp.os
-
+import xapp.util
 gi.require_version("Gtk", "3.0")
 gi.require_version('XApp', '1.0')
 from gi.repository import Gtk, Gdk, Gio, XApp, GLib
-
-from common import idle, InfoReportContainer, INFO_DIR
+from common import InfoReportContainer, INFO_DIR
 
 setproctitle.setproctitle("mintreport-tray")
-
-# i18n
-APP = 'mintreport'
-LOCALE_DIR = "/usr/share/locale"
-locale.bindtextdomain(APP, LOCALE_DIR)
-gettext.bindtextdomain(APP, LOCALE_DIR)
-gettext.textdomain(APP)
-_ = gettext.gettext
+_ = xapp.util.gettext("mintreport")
 
 class GtkStatusIcon(Gtk.StatusIcon):
 

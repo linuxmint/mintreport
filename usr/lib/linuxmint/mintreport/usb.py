@@ -1,25 +1,16 @@
 #!/usr/bin/python3
-import gettext
 import gi
-import locale
 import pyudev
 import subprocess
 import threading
+import xapp.threading as xt
+import xapp.util
 gi.require_version("Gtk", "3.0")
-from gi.repository import Gtk, Gdk, GLib, Pango
-from common import _async, idle
+from gi.repository import Gtk, Gdk, Pango
+
+_ = xapp.util.gettext("mintreport")
 
 COL_NAME, COL_ID, COL_SPEED, COL_POWER, COL_SENSITIVE, COL_IS_CONTROLLER, COL_MA_VAL, COL_ICON_NAME, COL_VERSION, COL_POWER_ICON, COL_IS_BUS_POWERED, COL_IS_HUB = range(12)
-
-# ---------- Helpers ----------
-
-# i18n
-APP = 'mintreport'
-LOCALE_DIR = "/usr/share/locale"
-locale.bindtextdomain(APP, LOCALE_DIR)
-gettext.bindtextdomain(APP, LOCALE_DIR)
-gettext.textdomain(APP)
-_ = gettext.gettext
 
 def decode_power(device):
     mA_val = 0
@@ -207,7 +198,7 @@ class USBListWidget(Gtk.ScrolledWindow):
         self.load_usb_hierarchy()
         return False
 
-    @idle
+    @xt.run_idle
     def update_tree(self, rows):
         self.treestore.clear()
         iters = {}
@@ -367,7 +358,9 @@ if __name__ == "__main__":
     win = Gtk.Window()
     win.set_default_size(1100, 620)
     win.set_border_width(10)
-    win.add(USBListWidget())
+    widget = USBListWidget()
+    win.add(widget)
     win.connect("destroy", Gtk.main_quit)
     win.show_all()
+    widget.load()
     Gtk.main()

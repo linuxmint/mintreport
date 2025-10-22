@@ -1,23 +1,16 @@
 #!/usr/bin/python3
 import gi
-gi.require_version("Gtk", "3.0")
-
-import gettext
-import locale
 import os
-import xapp.SettingsWidgets
+import xapp.SettingsWidgets as Xs
+import xapp.threading as xt
+import xapp.util
+gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk
-from common import _async, idle, read_dmi, read_efi, clean_brand, prefix_version
+from common import read_dmi, read_efi, clean_brand
 
-# i18n
-APP = 'mintreport'
-LOCALE_DIR = "/usr/share/locale"
-locale.bindtextdomain(APP, LOCALE_DIR)
-gettext.bindtextdomain(APP, LOCALE_DIR)
-gettext.textdomain(APP)
-_ = gettext.gettext
+_ = xapp.util.gettext("mintreport")
 
-class BIOSListWidget(xapp.SettingsWidgets.SettingsPage):
+class BIOSListWidget(Xs.SettingsPage):
     def __init__(self):
         super().__init__()
         self.set_spacing(24)
@@ -26,7 +19,7 @@ class BIOSListWidget(xapp.SettingsWidgets.SettingsPage):
         self.section_bios = self.add_section(_("BIOS"))
         self.section_motherboard = self.add_section(_("Motherboard"))
 
-    @_async
+    @xt.run_async
     def load(self):
         # Don't load chassis info. It's rarely useful
         # 1. often the same as product info
@@ -61,10 +54,10 @@ class BIOSListWidget(xapp.SettingsWidgets.SettingsPage):
 
         self.update_ui(infos_bios, infos_motherboard)
 
-    @idle
+    @xt.run_idle
     def update_ui(self, infos_bios, infos_motherboard):
         for (key, value) in infos_bios:
-            widget = xapp.SettingsWidgets.SettingsWidget()
+            widget = Xs.SettingsWidget()
             widget.set_spacing(40)
             labelKey = Gtk.Label.new(key)
             widget.pack_start(labelKey, False, False, 0)
@@ -75,7 +68,7 @@ class BIOSListWidget(xapp.SettingsWidgets.SettingsPage):
             widget.pack_end(labelValue, False, False, 0)
             self.section_bios.add_row(widget)
         for (key, value) in infos_motherboard:
-            widget = xapp.SettingsWidgets.SettingsWidget()
+            widget = Xs.SettingsWidget()
             widget.set_spacing(40)
             labelKey = Gtk.Label.new(key)
             widget.pack_start(labelKey, False, False, 0)

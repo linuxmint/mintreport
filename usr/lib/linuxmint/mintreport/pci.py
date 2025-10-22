@@ -1,71 +1,59 @@
 #!/usr/bin/python3
 import gi
 gi.require_version("Gtk", "3.0")
-
-import gettext
-import locale
-import math
+from common import clean_brand
+from gi.repository import Gtk, Gdk, Pango
 import pyudev
 import subprocess
-from gi.repository import Gtk, Gdk, GLib, Pango
-from common import _async, idle, clean_brand
+import xapp.threading as xt
+import xapp.util
 
-# i18n
-APP = 'mintreport'
-LOCALE_DIR = "/usr/share/locale"
-locale.bindtextdomain(APP, LOCALE_DIR)
-gettext.bindtextdomain(APP, LOCALE_DIR)
-gettext.textdomain(APP)
-_ = gettext.gettext
+_ = xapp.util.gettext("mintreport")
 
-# -------------------------------------------------------------------
-# Helpers
-# -------------------------------------------------------------------
-
-COL_FULL, COL_ICON, COL_ACTIVE, COL_BUS, COL_TYPE, COL_VENDOR, COL_NAME, COL_LINK, COL_ID, COL_DRIVER = range(10)
+COL_FULL, COL_ICON, COL_ACTIVE, COL_BUS, COL_TYPE, COL_VENDOR, COL_NAME, COL_ID, COL_DRIVER = range(9)
 
 PCI_CLASS_MAP = {
     # 00h — Unclassified
     (0x00, 0x00): "Non-VGA unclassified device",
     (0x00, 0x01): "VGA compatible unclassified device",
 
-    # 01h — Mass storage controller
-    (0x01, 0x00): "SCSI storage controller",
+    # 01h — Mass storage
+    (0x01, 0x00): "SCSI storage",
     (0x01, 0x01): "IDE interface",
-    (0x01, 0x02): "Floppy disk controller",
-    (0x01, 0x03): "IPI bus controller",
-    (0x01, 0x04): "RAID bus controller",
-    (0x01, 0x05): "ATA controller",
-    (0x01, 0x06): "SATA controller",
-    (0x01, 0x07): "Serial Attached SCSI controller",
-    (0x01, 0x08): "NVME controller",
-    (0x01, 0x80): "Mass storage controller",
+    (0x01, 0x02): "Floppy disk",
+    (0x01, 0x03): "IPI bus",
+    (0x01, 0x04): "RAID bus",
+    (0x01, 0x05): "ATA",
+    (0x01, 0x06): "SATA",
+    (0x01, 0x07): "Serial Attached SCSI",
+    (0x01, 0x08): "NVME",
+    (0x01, 0x80): "Mass storage",
 
-    # 02h — Network controller
-    (0x02, 0x00): "Ethernet controller",
-    (0x02, 0x01): "Token ring network controller",
-    (0x02, 0x02): "FDDI network controller",
-    (0x02, 0x03): "ATM network controller",
-    (0x02, 0x04): "ISDN controller",
-    (0x02, 0x80): "Network controller",
+    # 02h — Network
+    (0x02, 0x00): "Ethernet",
+    (0x02, 0x01): "Token ring network",
+    (0x02, 0x02): "FDDI network",
+    (0x02, 0x03): "ATM network",
+    (0x02, 0x04): "ISDN",
+    (0x02, 0x80): "Network",
 
-    # 03h — Display controller
-    (0x03, 0x00): "VGA compatible controller",
-    (0x03, 0x01): "XGA compatible controller",
-    (0x03, 0x02): "3D controller",
-    (0x03, 0x80): "Display controller",
+    # 03h — Display
+    (0x03, 0x00): "VGA compatible",
+    (0x03, 0x01): "XGA compatible",
+    (0x03, 0x02): "3D",
+    (0x03, 0x80): "Display",
 
-    # 04h — Multimedia controller
-    (0x04, 0x00): "Multimedia video controller",
-    (0x04, 0x01): "Multimedia audio controller",
+    # 04h — Multimedia
+    (0x04, 0x00): "Multimedia video",
+    (0x04, 0x01): "Multimedia audio",
     (0x04, 0x02): "Computer telephony device",
     (0x04, 0x03): "Audio device",
-    (0x04, 0x80): "Multimedia controller",
+    (0x04, 0x80): "Multimedia",
 
-    # 05h — Memory controller
+    # 05h — Memory
     (0x05, 0x00): "RAM",
     (0x05, 0x01): "Flash",
-    (0x05, 0x80): "Memory controller",
+    (0x05, 0x80): "Memory",
 
     # 06h — Bridge device
     (0x06, 0x00): "Host bridge",
@@ -81,30 +69,30 @@ PCI_CLASS_MAP = {
     (0x06, 0x0A): "InfiniBand to PCI host bridge",
     (0x06, 0x80): "Bridge device",
 
-    # 07h — Simple communication controller
-    (0x07, 0x00): "Serial controller",
-    (0x07, 0x01): "Parallel controller",
-    (0x07, 0x02): "Multiport serial controller",
+    # 07h — Simple communication
+    (0x07, 0x00): "Serial",
+    (0x07, 0x01): "Parallel",
+    (0x07, 0x02): "Multiport serial",
     (0x07, 0x03): "Modem",
-    (0x07, 0x80): "Communication controller",
+    (0x07, 0x80): "Communication",
 
     # 08h — Base system peripheral
     (0x08, 0x00): "PIC",
-    (0x08, 0x01): "DMA controller",
+    (0x08, 0x01): "DMA",
     (0x08, 0x02): "Timer",
     (0x08, 0x03): "RTC",
-    (0x08, 0x04): "PCI hot-plug controller",
-    (0x08, 0x05): "SD Host controller",
+    (0x08, 0x04): "PCI hot-plug",
+    (0x08, 0x05): "SD Host",
     (0x08, 0x06): "IOMMU",
     (0x08, 0x80): "System peripheral",
 
-    # 09h — Input device controller
-    (0x09, 0x00): "Keyboard controller",
-    (0x09, 0x01): "Digitizer pen",
-    (0x09, 0x02): "Mouse controller",
-    (0x09, 0x03): "Scanner controller",
-    (0x09, 0x04): "Gameport controller",
-    (0x09, 0x80): "Input device controller",
+    # 09h — Input device
+    (0x09, 0x00): "Keyboard",
+    (0x09, 0x01): "Digitizer",
+    (0x09, 0x02): "Mouse",
+    (0x09, 0x03): "Scanner",
+    (0x09, 0x04): "Gameport",
+    (0x09, 0x80): "Input device",
 
     # 0Ah — Docking station
     (0x0A, 0x00): "Docking station",
@@ -121,80 +109,49 @@ PCI_CLASS_MAP = {
     (0x0B, 0x40): "Co-processor",
     (0x0B, 0x80): "Processor",
 
-    # 0Ch — Serial bus controller
-    (0x0C, 0x00): "FireWire (IEEE 1394) controller",
-    (0x0C, 0x01): "ACCESS bus controller",
+    # 0Ch — Serial bus
+    (0x0C, 0x00): "FireWire (IEEE 1394)",
+    (0x0C, 0x01): "ACCESS bus",
     (0x0C, 0x02): "SSA",
-    (0x0C, 0x03): "USB controller",
+    (0x0C, 0x03): "USB",
     (0x0C, 0x04): "Fibre Channel",
-    (0x0C, 0x05): "SMBus controller",
-    (0x0C, 0x06): "InfiniBand controller",
-    (0x0C, 0x07): "IPMI interface",
-    (0x0C, 0x08): "SERCOS interface",
-    (0x0C, 0x09): "CANbus controller",
-    (0x0C, 0x80): "Serial bus controller",
+    (0x0C, 0x05): "SMBus",
+    (0x0C, 0x06): "InfiniBand",
+    (0x0C, 0x07): "IPMI",
+    (0x0C, 0x08): "SERCOS",
+    (0x0C, 0x09): "CANbus",
+    (0x0C, 0x80): "Serial bus",
 
-    # 0Dh — Wireless controller
-    (0x0D, 0x00): "iRDA controller",
-    (0x0D, 0x01): "Consumer IR controller",
-    (0x0D, 0x10): "RF controller",
-    (0x0D, 0x11): "Bluetooth controller",
-    (0x0D, 0x12): "Broadband controller",
-    (0x0D, 0x20): "Ethernet controller (802.11a/b/g)",
-    (0x0D, 0x80): "Wireless controller",
+    # 0Dh — Wireless
+    (0x0D, 0x00): "iRDA",
+    (0x0D, 0x01): "Consumer IR",
+    (0x0D, 0x10): "RF",
+    (0x0D, 0x11): "Bluetooth",
+    (0x0D, 0x12): "Broadband",
+    (0x0D, 0x20): "Ethernet (802.11a/b/g)",
+    (0x0D, 0x80): "Wireless",
 
-    # 0Eh — Intelligent I/O controller
-    (0x0E, 0x00): "I2O controller",
+    # 0Eh — Intelligent I/O
+    (0x0E, 0x00): "I2O",
 
-    # 0Fh — Satellite communication controller
-    (0x0F, 0x01): "Satellite TV controller",
-    (0x0F, 0x02): "Satellite audio controller",
-    (0x0F, 0x03): "Satellite voice controller",
-    (0x0F, 0x04): "Satellite data controller",
+    # 0Fh — Satellite communication
+    (0x0F, 0x01): "Satellite TV",
+    (0x0F, 0x02): "Satellite audio",
+    (0x0F, 0x03): "Satellite voice",
+    (0x0F, 0x04): "Satellite data",
 
-    # 10h — Encryption / decryption controller
+    # 10h — Encryption / decryption
     (0x10, 0x00): "Network and computing encr/decr",
     (0x10, 0x10): "Entertainment encr/decr",
-    (0x10, 0x80): "Encryption controller",
+    (0x10, 0x80): "Encryption",
 
-    # 11h — Data acquisition / signal processing controller
+    # 11h — Data acquisition / signal processing
     (0x11, 0x00): "DPIO module",
     (0x11, 0x01): "Performance counters",
     (0x11, 0x10): "Communication synchronizer",
     (0x11, 0x20): "Signal processing management",
-    (0x11, 0x80): "Data acquisition controller",
+    (0x11, 0x80): "Data acquisition",
 }
-
-def format_link_info(speed_str, width_str):
-    """Convert raw link data (e.g. '8.0 GT/s', 'x4') into a friendly display string."""
-    if not speed_str or not width_str:
-        return ""
-
-    try:
-        speed_value = float(speed_str.split()[0])
-    except Exception:
-        return f"{speed_str} {width_str}"
-
-    gen_map = {
-        2.5: ("Gen1", 2.0),
-        5.0: ("Gen2", 4.0),
-        8.0: ("Gen3", 8.0),
-        16.0: ("Gen4", 16.0),
-        32.0: ("Gen5", 32.0),
-    }
-
-    gen, per_lane = gen_map.get(speed_value, (f"{speed_value} GT/s", 0))
-    try:
-        lanes = int(width_str.strip().lstrip("x"))
-    except Exception:
-        lanes = 1
-
-    total_gbps = per_lane * lanes
-    if total_gbps > 0:
-        return f"PCIe {gen} x{lanes} ({int(total_gbps)} Gbps)"
-    else:
-        return f"PCIe {gen} x{lanes}"
-
 
 def get_icon_for_device(info):
     """Return an XApp symbolic icon name for a PCI class string."""
@@ -236,8 +193,6 @@ def get_pci_devices():
         except Exception:
             vendor_id = device_id = None
 
-        link_speed = dev.attributes.get("current_link_speed")
-        link_width = dev.attributes.get("current_link_width")
         active = False
         power = dev.attributes.get("power/runtime_status")
         power = decode(power)
@@ -270,13 +225,10 @@ def get_pci_devices():
             "vendor_id": vendor_id,
             "device_id": device_id,
             "driver": dev.driver or "",
-            "link_speed": decode(link_speed),
-            "link_width": decode(link_width),
             "active": active,
             "revision": revision
         }
 
-        info["link_display"] = format_link_info(info["link_speed"], info["link_width"])
         info["icon"] = get_icon_for_device(info)
         info["id_string"] = f"{vendor_id}:{device_id}" if vendor_id and device_id else ""
 
@@ -409,13 +361,13 @@ class PCIListWidget(Gtk.Box):
         clipboard.set_text(text, -1)
         subprocess.Popen(['notify-send', '-i', 'xapp-dialog-information-symbolic', _("Device information copied"), _("The device information was copied into your clipboard.")])
 
-    @_async
+    @xt.run_async
     def populate_pci_devices(self):
         """Enumerate PCI devices in a background thread."""
         devices = get_pci_devices()
         self._update_pci_list(devices)
 
-    @idle
+    @xt.run_idle
     def _update_pci_list(self, devices):
         """Update TreeStore safely inside GTK main loop."""
         self.store.clear()
@@ -424,22 +376,17 @@ class PCIListWidget(Gtk.Box):
             name = f"{d['device']} {d['revision']}"
 
             vendor = clean_brand(d['vendor'])
-            type = d['class'].replace(" controller", "")
-            type = type.replace("Generic system peripheral", "Generic")
             full_info = f"{d['address']} {d['class']} {d['vendor']} {d['device']} {d['revision']} {d['driver']}"
             iter_ = self.store.append()
             self.store.set_value(iter_, COL_FULL, full_info)
             self.store.set_value(iter_, COL_ICON, d["icon"])
             self.store.set_value(iter_, COL_NAME, name)
             self.store.set_value(iter_, COL_BUS, d['address'])
-            self.store.set_value(iter_, COL_TYPE, type)
+            self.store.set_value(iter_, COL_TYPE, d['class'])
             self.store.set_value(iter_, COL_VENDOR, vendor)
-            self.store.set_value(iter_, COL_LINK, d["link_display"])
             self.store.set_value(iter_, COL_ACTIVE, d["active"])
             self.store.set_value(iter_, COL_ID, d["id_string"])
             self.store.set_value(iter_, COL_DRIVER, d["driver"])
-
-    # ----------------------------------------------------------------
 
     def setup_monitor(self):
         """Watch for live PCI changes via udev monitor."""
