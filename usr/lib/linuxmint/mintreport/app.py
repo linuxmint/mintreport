@@ -166,6 +166,22 @@ class MintReportWindow():
         os.system("mkdir -p %s" % UNPACK_DIR)
         os.system("cp -R %s/* %s/" % (DATA_DIR, TMP_DIR))
 
+        # Create a CSS provider
+        css_provider = Gtk.CssProvider()
+        css_provider.load_from_data(b"""
+            .logo-box {
+                background-color: #86be43;
+                border-radius: 10px;
+                padding: 12px;
+            }
+        """)
+        screen = Gdk.Screen.get_default()
+        Gtk.StyleContext.add_provider_for_screen(
+            screen,
+            css_provider,
+            Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION
+        )
+
         self._cache = None
         # Set the Glade file
         gladefile = "/usr/share/linuxmint/mintreport/mintreport.ui"
@@ -277,6 +293,8 @@ class MintReportWindow():
         page.set_spacing(24)
         page.set_margin_left(0)
         page.set_margin_right(0)
+        page.set_margin_top(0)
+        page.set_margin_bottom(0)
         self.builder.get_object("box_info_widget").add(page)
 
         self.sysinfo_section = page.add_section()

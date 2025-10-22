@@ -16,6 +16,8 @@ class BIOSListWidget(Xs.SettingsPage):
         self.set_spacing(24)
         self.set_margin_left(0)
         self.set_margin_right(0)
+        self.set_margin_top(0)
+        self.set_margin_bottom(0)
         self.section_bios = self.add_section(_("BIOS"))
         self.section_motherboard = self.add_section(_("Motherboard"))
 
