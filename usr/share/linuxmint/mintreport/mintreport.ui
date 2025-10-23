@@ -209,6 +209,60 @@
                   </packing>
                 </child>
                 <child>
+                  <object class="GtkBox" id="box_gpu">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="orientation">vertical</property>
+                    <property name="spacing">12</property>
+                    <child>
+                      <object class="GtkBox">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="orientation">vertical</property>
+                        <property name="spacing">6</property>
+                        <child>
+                          <object class="GtkScrolledWindow">
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                            <child>
+                              <object class="GtkViewport">
+                                <property name="visible">True</property>
+                                <property name="can-focus">False</property>
+                                <child>
+                                  <object class="GtkBox" id="box_gpu_widget">
+                                    <property name="visible">True</property>
+                                    <property name="can-focus">False</property>
+                                    <property name="orientation">vertical</property>
+                                    <child>
+                                      <placeholder/>
+                                    </child>
+                                  </object>
+                                </child>
+                              </object>
+                            </child>
+                          </object>
+                          <packing>
+                            <property name="expand">True</property>
+                            <property name="fill">True</property>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">2</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="name">page_gpu</property>
+                    <property name="title" translatable="yes">GPU</property>
+                    <property name="icon-name">xapp-display-symbolic</property>
+                    <property name="position">2</property>
+                  </packing>
+                </child>
+                <child>
                   <object class="GtkBox" id="box_pci">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
@@ -237,7 +291,7 @@
                     <property name="name">page_pci</property>
                     <property name="title" translatable="yes">PCI</property>
                     <property name="icon-name">xapp-pci-card-symbolic</property>
-                    <property name="position">2</property>
+                    <property name="position">3</property>
                   </packing>
                 </child>
                 <child>
@@ -291,7 +345,7 @@
                     <property name="name">page_bios</property>
                     <property name="title" translatable="yes">BIOS</property>
                     <property name="icon-name">xapp-cpu-symbolic</property>
-                    <property name="position">3</property>
+                    <property name="position">4</property>
                   </packing>
                 </child>
                 <child>
@@ -524,7 +578,7 @@
                     <property name="name">page_reports</property>
                     <property name="title" translatable="yes">System reports</property>
                     <property name="icon-name">mintreport-symbolic</property>
-                    <property name="position">4</property>
+                    <property name="position">5</property>
                   </packing>
                 </child>
                 <child>
@@ -803,7 +857,7 @@
                     <property name="name">page_crashes</property>
                     <property name="title" translatable="yes">Crash reports</property>
                     <property name="icon-name">xapp-computer-fail-symbolic</property>
-                    <property name="position">5</property>
+                    <property name="position">6</property>
                   </packing>
                 </child>
               </object>

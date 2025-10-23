@@ -24,6 +24,7 @@ from common import InfoReportContainer, DATA_DIR, INFO_DIR, prefix_version, read
 from bios import BIOSListWidget
 from pci import PCIListWidget
 from usb import USBListWidget
+from gpu import GPUListWidget
 
 setproctitle.setproctitle("mintreport")
 _ = xapp.util.gettext("mintreport")
@@ -418,11 +419,15 @@ class MintReportWindow():
         self.bios_widget = BIOSListWidget()
         self.builder.get_object("box_bios_widget").add(self.bios_widget)
 
+        self.gpu_widget = GPUListWidget()
+        self.builder.get_object("box_gpu_widget").add(self.gpu_widget)
+
         self.load_inxi_info()
         self.load_reports()
         self.load_usb()
         self.load_pci()
         self.load_bios()
+        self.load_gpu()
 
     def show_page(self, page_name):
         page_name = f"page_{page_name}"
@@ -582,6 +587,10 @@ class MintReportWindow():
     @xt.run_async
     def load_bios(self):
         self.bios_widget.load()
+
+    @xt.run_async
+    def load_gpu(self):
+        self.gpu_widget.load()
 
     def on_info_selected(self, selection):
         if self.loading:
