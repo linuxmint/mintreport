@@ -65,6 +65,9 @@ class MyApplication(Gtk.Application):
         group.add_argument("--crashes", action="store_const", dest="page", const="crashes")
         group.add_argument("--usb", action="store_const", dest="page", const="usb")
         group.add_argument("--info", action="store_const", dest="page", const="info")
+        group.add_argument("--bios", action="store_const", dest="page", const="bios")
+        group.add_argument("--pci", action="store_const", dest="page", const="pci")
+        group.add_argument("--gpu", action="store_const", dest="page", const="gpu")
         argv = command_line.get_arguments()[1:]
         args, _ = parser.parse_known_args(argv)
         if args.page is None:

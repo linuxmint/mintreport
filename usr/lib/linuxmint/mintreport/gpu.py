@@ -142,7 +142,8 @@ def detect_video_acceleration():
         if "Driver version" in out or re.search(r"VAProfile", out):
             result.append("VA-API")
     except Exception as e:
-        print(e)
+        pass
+        #print(e)
 
     # VDPAU
     try:
@@ -155,7 +156,8 @@ def detect_video_acceleration():
         if re.search(r"VDPAU Driver", out) and not re.search(r"llvmpipe", out, re.IGNORECASE):
             result.append("VDPAU")
     except Exception as e:
-        print(e)
+        pass
+        #print(e)
 
     return result
 
