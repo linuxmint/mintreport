@@ -71,3 +71,4 @@ Encoding=UTF-8
 Categories=Application;System;Settings;
 StartupNotify=false
 NotShowIn=KDE;
+Keywords=system;information;details;graphic;kernel;version;about;gpu;bios;pci;usb;

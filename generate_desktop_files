@@ -20,6 +20,7 @@ Encoding=UTF-8
 Categories=Application;System;Settings;
 StartupNotify=false
 NotShowIn=KDE;
+Keywords=system;information;details;graphic;kernel;version;about;gpu;bios;pci;usb;
 """
 
 additionalfiles.generate(DOMAIN, PATH, "usr/share/applications/mintreport.desktop", prefix, _("System Information"), _("Troubleshoot problems"), suffix)
