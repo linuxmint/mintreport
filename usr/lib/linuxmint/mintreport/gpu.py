@@ -13,7 +13,7 @@ from gi.repository import Gtk
 from common import read_dmi, read_efi, clean_brand
 from pathlib import Path
 
-_ = xapp.util.gettext("mintreport")
+_ = xapp.util.l10n("mintreport")
 
 
 def run_cmd(cmd):
@@ -192,8 +192,8 @@ class GPUListWidget(Xs.SettingsPage):
         self.set_margin_right(0)
         self.set_margin_top(0)
         self.set_margin_bottom(0)
-        self.section_gpu = self.add_section(_("Default device"))
-        self.section_acceleration = self.add_section(_("GPU Acceleration"))
+        self.section_gpu = self.add_section(_("Default GPU"))
+        self.section_acceleration = self.add_section(_("Hardware Acceleration"))
 
     @xt.run_async
     def load(self):
@@ -217,12 +217,12 @@ class GPUListWidget(Xs.SettingsPage):
         info_gpu.append([_('PCI ID'), pci_id])
         info_gpu.append([_('Driver'), driver])
         if driver_version:
-            info_gpu.append([_('Driver version'), driver_version])
+            info_gpu.append([_('Driver Version'), driver_version])
         info_acceleration = []
-        info_acceleration.append([_('OpenGL'), bool_to_accel(gl)])
-        info_acceleration.append([_('OpenGL ES'), bool_to_accel(es)])
-        info_acceleration.append([_('Vulkan'), bool_to_accel(vk)])
-        info_acceleration.append([_('Video playback'), video])
+        info_acceleration.append(['OpenGL', bool_to_accel(gl)])
+        info_acceleration.append(['OpenGL ES', bool_to_accel(es)])
+        info_acceleration.append(['Vulkan', bool_to_accel(vk)])
+        info_acceleration.append([_('Video Playback'), video])
         self.update_ui(info_gpu, self.section_gpu)
         self.update_ui(info_acceleration, self.section_acceleration)
 

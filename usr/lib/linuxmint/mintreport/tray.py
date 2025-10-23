@@ -12,7 +12,7 @@ from gi.repository import Gtk, Gdk, Gio, XApp, GLib
 from common import InfoReportContainer, INFO_DIR
 
 setproctitle.setproctitle("mintreport-tray")
-_ = xapp.util.gettext("mintreport")
+_ = xapp.util.l10n("mintreport")
 
 class GtkStatusIcon(Gtk.StatusIcon):
 

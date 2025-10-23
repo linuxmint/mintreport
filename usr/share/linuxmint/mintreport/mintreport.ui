@@ -160,7 +160,7 @@
                   </object>
                   <packing>
                     <property name="name">page_info</property>
-                    <property name="title" translatable="yes">System information</property>
+                    <property name="title" translatable="yes">System Information</property>
                     <property name="icon-name">xapp-dialog-information-symbolic</property>
                   </packing>
                 </child>
@@ -576,7 +576,7 @@
                   </object>
                   <packing>
                     <property name="name">page_reports</property>
-                    <property name="title" translatable="yes">System reports</property>
+                    <property name="title" translatable="yes">System Reports</property>
                     <property name="icon-name">mintreport-symbolic</property>
                     <property name="position">5</property>
                   </packing>
@@ -642,7 +642,7 @@
                               <object class="GtkLabel" id="label1">
                                 <property name="visible">True</property>
                                 <property name="can-focus">False</property>
-                                <property name="label" translatable="yes">Crash reports:</property>
+                                <property name="label" translatable="yes">Crash Reports</property>
                                 <property name="xalign">0</property>
                                 <attributes>
                                   <attribute name="weight" value="bold"/>
@@ -701,7 +701,7 @@
                                       <object class="GtkLabel" id="label2">
                                         <property name="visible">True</property>
                                         <property name="can-focus">False</property>
-                                        <property name="label" translatable="yes">Stack trace:</property>
+                                        <property name="label" translatable="yes">Stack Trace</property>
                                         <property name="xalign">0</property>
                                         <attributes>
                                           <attribute name="weight" value="bold"/>
@@ -855,7 +855,7 @@
                   </object>
                   <packing>
                     <property name="name">page_crashes</property>
-                    <property name="title" translatable="yes">Crash reports</property>
+                    <property name="title" translatable="yes">Crash Reports</property>
                     <property name="icon-name">xapp-computer-fail-symbolic</property>
                     <property name="position">6</property>
                   </packing>

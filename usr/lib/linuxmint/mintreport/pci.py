@@ -8,7 +8,7 @@ import subprocess
 import xapp.threading as xt
 import xapp.util
 
-_ = xapp.util.gettext("mintreport")
+_ = xapp.util.l10n("mintreport")
 
 COL_FULL, COL_ICON, COL_ACTIVE, COL_BUS, COL_TYPE, COL_VENDOR, COL_NAME, COL_ID, COL_DRIVER = range(9)
 

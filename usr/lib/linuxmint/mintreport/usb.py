@@ -8,7 +8,7 @@ import xapp.util
 gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk, Gdk, Pango
 
-_ = xapp.util.gettext("mintreport")
+_ = xapp.util.l10n("mintreport")
 
 COL_NAME, COL_ID, COL_SPEED, COL_POWER, COL_SENSITIVE, COL_IS_CONTROLLER, COL_MA_VAL, COL_ICON_NAME, COL_VERSION, COL_POWER_ICON, COL_IS_BUS_POWERED, COL_IS_HUB = range(12)
 

@@ -8,7 +8,7 @@ gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk
 from common import read_dmi, read_efi, clean_brand
 
-_ = xapp.util.gettext("mintreport")
+_ = xapp.util.l10n("mintreport")
 
 class BIOSListWidget(Xs.SettingsPage):
     def __init__(self):

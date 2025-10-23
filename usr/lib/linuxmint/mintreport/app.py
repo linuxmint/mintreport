@@ -27,7 +27,7 @@ from usb import USBListWidget
 from gpu import GPUListWidget
 
 setproctitle.setproctitle("mintreport")
-_ = xapp.util.gettext("mintreport")
+_ = xapp.util.l10n("mintreport")
 
 TMP_DIR = "/tmp/mintreport"
 TMP_INFO_DIR = os.path.join(TMP_DIR, "reports")
@@ -369,7 +369,7 @@ class MintReportWindow():
         architecture = "64-bit"
         if platform.machine() not in ["x86_64", "aarch64"]:
             architecture = "32-bit"
-        infos.append((_("Operating system"), f"{distribution} {release} - {edition} {architecture}"))
+        infos.append((_("Operating System"), f"{distribution} {release} - {edition} {architecture}"))
         infos.append((_("Linux Kernel"), platform.release()))
         infos.append((_("Processor"), processorName))
         cards = get_graphic_cards()
@@ -395,10 +395,10 @@ class MintReportWindow():
             desktop = f"Cinnamon {os.getenv("CINNAMON_VERSION")}"
         infos.append((_("Desktop Environment"), desktop))
 
-        display_server_name = _("X11")
+        display_server_name = "X11"
 
         if os.getenv("XDG_SESSION_TYPE") == "wayland":
-            display_server_name = _("Wayland")
+            display_server_name = "Wayland"
 
         infos.append((_("Display Server"), display_server_name))
 
