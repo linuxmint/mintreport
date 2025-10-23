@@ -11,7 +11,7 @@ class Report(InfoReport):
 
         gettext.install("mintreport", "/usr/share/locale", names="ngettext")
 
-        self.icon = "xapp-software-update-urgent-symbolic"
+        self.icon = "xsi-software-update-urgent-symbolic"
         self.has_ignore_button = False
 
     def is_pertinent(self):

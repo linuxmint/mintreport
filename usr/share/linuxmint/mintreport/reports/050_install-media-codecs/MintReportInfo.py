@@ -14,7 +14,7 @@ class Report(InfoReport):
         gettext.install("mintreport", "/usr/share/locale", names="ngettext")
 
         self.title = _("Install multimedia codecs")
-        self.icon = "xapp-multimedia-symbolic"
+        self.icon = "xsi-multimedia-symbolic"
         self.has_ignore_button = True
 
     def is_pertinent(self):

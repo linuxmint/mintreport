@@ -320,7 +320,7 @@ class MintReportWindow():
         menu.append(Gtk.SeparatorMenuItem())
 
         item = Gtk.ImageMenuItem(label=_("Quit"))
-        image = Gtk.Image.new_from_icon_name("xapp-exit-symbolic", Gtk.IconSize.MENU)
+        image = Gtk.Image.new_from_icon_name("xsi-exit-symbolic", Gtk.IconSize.MENU)
         item.set_image(image)
         item.connect('activate', self.on_menu_quit)
         key, mod = Gtk.accelerator_parse("<Control>Q")
@@ -330,7 +330,7 @@ class MintReportWindow():
         menu.append(item)
 
         item = Gtk.ImageMenuItem()
-        item.set_image(Gtk.Image.new_from_icon_name("xapp-help-about-symbolic", Gtk.IconSize.MENU))
+        item.set_image(Gtk.Image.new_from_icon_name("xsi-help-about-symbolic", Gtk.IconSize.MENU))
         item.set_label(_("About"))
         item.connect("activate", self.open_about)
         menu.append(item)
@@ -505,7 +505,7 @@ class MintReportWindow():
             with open(TMP_INXI_FILE, "w") as f:
                 f.write(sysinfo)
         except Exception as e:
-            subprocess.Popen(['notify-send', '-i', 'xapp-dialog-error-symbolic', _("An error occurred while gathering the system information."), str(e)])
+            subprocess.Popen(['notify-send', '-i', 'xsi-dialog-error-symbolic', _("An error occurred while gathering the system information."), str(e)])
             print (e)
 
     @xt.run_idle
@@ -516,7 +516,7 @@ class MintReportWindow():
     def copy_inxi_info(self, button):
         clipboard = Gtk.Clipboard.get(Gdk.SELECTION_CLIPBOARD)
         clipboard.set_text("[code]\n%s[/code]\n" % self.inxi_info, -1)
-        subprocess.Popen(['notify-send', '-i', 'xapp-dialog-information-symbolic', _("System information copied"), _("Your system information was copied into your clipboard so you can paste it on the forums.")])
+        subprocess.Popen(['notify-send', '-i', 'xsi-dialog-information-symbolic', _("System information copied"), _("Your system information was copied into your clipboard so you can paste it on the forums.")])
 
     def upload_inxi_info(self, button):
         try:
@@ -524,9 +524,9 @@ class MintReportWindow():
             link = output.rstrip('\x00').strip() # Remove ASCII null termination with \x00
             clipboard = Gtk.Clipboard.get(Gdk.SELECTION_CLIPBOARD)
             clipboard.set_text(link, -1)
-            subprocess.Popen(['notify-send', '-i', 'xapp-dialog-information-symbolic', _("System information uploaded"), _("Your system information was uploaded to %s. This link was placed in your clipboard.") % link])
+            subprocess.Popen(['notify-send', '-i', 'xsi-dialog-information-symbolic', _("System information uploaded"), _("Your system information was uploaded to %s. This link was placed in your clipboard.") % link])
         except Exception as e:
-            subprocess.Popen(['notify-send', '-i', 'xapp-dialog-error-symbolic', _("An error occurred while uploading the system information"), _("Copy and paste the system information manually into a pastebin site like https://pastebin.com."), str(e)])
+            subprocess.Popen(['notify-send', '-i', 'xsi-dialog-error-symbolic', _("An error occurred while uploading the system information"), _("Copy and paste the system information manually into a pastebin site like https://pastebin.com."), str(e)])
 
     @xt.run_idle
     def add_report_to_treeview(self, report):

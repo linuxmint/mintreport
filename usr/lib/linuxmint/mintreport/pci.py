@@ -159,24 +159,24 @@ def get_icon_for_device(info):
     dev_name = info['device'].lower()
 
     if "vga" in dev_class or "display" in dev_class or "gpu" in dev_class:
-        return "xapp-display-symbolic"
+        return "xsi-display-symbolic"
     if "network" in dev_class and ("wifi" in dev_name or "wireless" in dev_name):
-        return "xapp-network-wireless-symbolic"
+        return "xsi-network-wireless-symbolic"
     if "network" in dev_class or "ethernet" in dev_class:
-        return "xapp-network-wired-symbolic"
+        return "xsi-network-wired-symbolic"
     if "nvme" in dev_class or " nvme " in dev_name:
-        return "xapp-drive-harddisk-solidstate-symbolic"
+        return "xsi-drive-harddisk-solidstate-symbolic"
     if "storage" in dev_class or "sata" in dev_class or "ahci" in dev_class:
-        return "xapp-drive-harddisk-symbolic"
+        return "xsi-drive-harddisk-symbolic"
     if "audio" in dev_class or "sound" in dev_class:
-        return "xapp-audio-card-symbolic"
+        return "xsi-audio-card-symbolic"
     if "serial" in dev_class and " usb " in dev_name:
-        return "xapp-usb-symbolic"
+        return "xsi-usb-symbolic"
     if "multimedia" in dev_class:
-        return "xapp-audio-card-symbolic"
+        return "xsi-audio-card-symbolic"
     if "thermal" in dev_name:
-        return "xapp-temperature-symbolic"
-    return "xapp-cpu-symbolic"
+        return "xsi-temperature-symbolic"
+    return "xsi-cpu-symbolic"
 
 
 def get_pci_devices():
@@ -349,7 +349,7 @@ class PCIListWidget(Gtk.Box):
         device_id = model[treeiter][COL_ID]
         clipboard = Gtk.Clipboard.get(Gdk.SELECTION_CLIPBOARD)
         clipboard.set_text(device_id, -1)
-        subprocess.Popen(['notify-send', '-i', 'xapp-dialog-information-symbolic', _("Device ID copied"), _("The device ID was copied into your clipboard.")])
+        subprocess.Popen(['notify-send', '-i', 'xsi-dialog-information-symbolic', _("Device ID copied"), _("The device ID was copied into your clipboard.")])
 
     def on_copy_row_clicked(self, button):
         selection = self.treeview.get_selection()
@@ -359,7 +359,7 @@ class PCIListWidget(Gtk.Box):
         text = f"{model[treeiter][COL_FULL]}"
         clipboard = Gtk.Clipboard.get(Gdk.SELECTION_CLIPBOARD)
         clipboard.set_text(text, -1)
-        subprocess.Popen(['notify-send', '-i', 'xapp-dialog-information-symbolic', _("Device information copied"), _("The device information was copied into your clipboard.")])
+        subprocess.Popen(['notify-send', '-i', 'xsi-dialog-information-symbolic', _("Device information copied"), _("The device information was copied into your clipboard.")])
 
     @xt.run_async
     def populate_pci_devices(self):

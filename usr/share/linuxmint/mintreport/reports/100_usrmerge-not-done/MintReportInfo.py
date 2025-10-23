@@ -12,7 +12,7 @@ class Report(InfoReport):
         gettext.install("mintreport", "/usr/share/locale", names="ngettext")
 
         self.title = _("Perform usrmerge conversion")
-        self.icon = "xapp-folder-symbolic"
+        self.icon = "xsi-folder-symbolic"
         self.has_ignore_button = True
 
     def is_pertinent(self):

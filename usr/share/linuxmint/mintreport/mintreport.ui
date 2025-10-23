@@ -161,7 +161,7 @@
                   <packing>
                     <property name="name">page_info</property>
                     <property name="title" translatable="yes">System Information</property>
-                    <property name="icon-name">xapp-dialog-information-symbolic</property>
+                    <property name="icon-name">xsi-dialog-information-symbolic</property>
                   </packing>
                 </child>
                 <child>
@@ -204,7 +204,7 @@
                   <packing>
                     <property name="name">page_usb</property>
                     <property name="title" translatable="yes">USB</property>
-                    <property name="icon-name">xapp-usb-symbolic</property>
+                    <property name="icon-name">xsi-usb-symbolic</property>
                     <property name="position">1</property>
                   </packing>
                 </child>
@@ -258,7 +258,7 @@
                   <packing>
                     <property name="name">page_gpu</property>
                     <property name="title" translatable="yes">GPU</property>
-                    <property name="icon-name">xapp-display-symbolic</property>
+                    <property name="icon-name">xsi-display-symbolic</property>
                     <property name="position">2</property>
                   </packing>
                 </child>
@@ -290,7 +290,7 @@
                   <packing>
                     <property name="name">page_pci</property>
                     <property name="title" translatable="yes">PCI</property>
-                    <property name="icon-name">xapp-pci-card-symbolic</property>
+                    <property name="icon-name">xsi-pci-card-symbolic</property>
                     <property name="position">3</property>
                   </packing>
                 </child>
@@ -344,7 +344,7 @@
                   <packing>
                     <property name="name">page_bios</property>
                     <property name="title" translatable="yes">BIOS</property>
-                    <property name="icon-name">xapp-cpu-symbolic</property>
+                    <property name="icon-name">xsi-cpu-symbolic</property>
                     <property name="position">4</property>
                   </packing>
                 </child>
@@ -536,7 +536,7 @@
                                 <property name="visible">True</property>
                                 <property name="can-focus">False</property>
                                 <property name="pixel-size">96</property>
-                                <property name="icon-name">xapp-object-select-symbolic</property>
+                                <property name="icon-name">xsi-object-select-symbolic</property>
                                 <property name="icon_size">6</property>
                               </object>
                               <packing>
@@ -856,7 +856,7 @@
                   <packing>
                     <property name="name">page_crashes</property>
                     <property name="title" translatable="yes">Crash Reports</property>
-                    <property name="icon-name">xapp-computer-fail-symbolic</property>
+                    <property name="icon-name">xsi-computer-fail-symbolic</property>
                     <property name="position">6</property>
                   </packing>
                 </child>
@@ -893,7 +893,7 @@
               <object class="GtkImage">
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
-                <property name="icon-name">xapp-view-refresh-symbolic</property>
+                <property name="icon-name">xsi-view-refresh-symbolic</property>
               </object>
             </child>
           </object>
@@ -909,7 +909,7 @@
               <object class="GtkImage">
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
-                <property name="icon-name">xapp-open-menu-symbolic</property>
+                <property name="icon-name">xsi-open-menu-symbolic</property>
               </object>
             </child>
           </object>

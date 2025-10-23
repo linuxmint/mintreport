@@ -48,7 +48,7 @@ def usb_limit(version):
     return 900 if ver >= 3.0 else 500
 
 def get_device_icon(device, vid_str):
-    icon_name = "xapp-drive-harddisk-usb-symbolic"
+    icon_name = "xsi-drive-harddisk-usb-symbolic"
 
     if vid_str == "1d6b": # Controller
         return icon_name
@@ -59,34 +59,34 @@ def get_device_icon(device, vid_str):
         device_protocol = device.attributes.get("bDeviceProtocol").decode()
         match (device_class, device_subclass):
             case ("09", _): # Hub
-                icon_name = "xapp-drive-harddisk-usb-symbolic"
+                icon_name = "xsi-drive-harddisk-usb-symbolic"
             case ("08", _): # Storage
-                icon_name = "xapp-usb-stick-symbolic"
+                icon_name = "xsi-usb-stick-symbolic"
             case ("03", "01"):
                 if device_protocol == "01": # Keyboard
-                    icon_name = "xapp-input-keyboard-symbolic"
+                    icon_name = "xsi-input-keyboard-symbolic"
                 elif device_protocol == "02": # Mouse
-                    icon_name = "xapp-input-mouse-symbolic"
+                    icon_name = "xsi-input-mouse-symbolic"
             case ("0e", _): # Camera
-                icon_name = "xapp-camera-video-symbolic"
+                icon_name = "xsi-camera-video-symbolic"
             case ("01", _): # Audio Interface
-                icon_name = "xapp-audio-card-symbolic"
+                icon_name = "xsi-audio-card-symbolic"
             case ("02", "06"): # Ethernet Adapter
-                icon_name = "xapp-network-wired-symbolic"
+                icon_name = "xsi-network-wired-symbolic"
             case ("e0", "01"): # Bluetooth
-                icon_name = "xapp-bluetooth-symbolic"
+                icon_name = "xsi-bluetooth-symbolic"
             case ("e0", "02"): # Wi-Fi Adapter
-                icon_name = "xapp-network-wireless-symbolic"
+                icon_name = "xsi-network-wireless-symbolic"
             case ("07", _): # Printer
-                icon_name = "xapp-printer-symbolic"
+                icon_name = "xsi-printer-symbolic"
             case ("06", _): # Scanner
-                icon_name = "xapp-scanner-symbolic"
+                icon_name = "xsi-scanner-symbolic"
             case ("0b", _): # Smart Card Reader
-                icon_name = "xapp-smartcard-symbolic"
+                icon_name = "xsi-smartcard-symbolic"
             case ("0d", _): # Security Token
-                icon_name = "xapp-smartcard-symbolic"
+                icon_name = "xsi-smartcard-symbolic"
             case ("ef", _): # Phone / Composite
-                icon_name = "xapp-phone-symbolic"
+                icon_name = "xsi-phone-symbolic"
             case ("fe", _): # Firmware Loader
                 pass
             case ("ff", _): # Custom Device"
@@ -102,18 +102,18 @@ def get_device_icon(device, vid_str):
                             break
                         # HID boot devices
                         if ic == "03" and isc == "01" and ip == "01": # Keyboard
-                            icon_name = "input-keyboard-symbolic"
+                            icon_name = "xsi-input-keyboard-symbolic"
                         elif ic == "03" and isc == "01" and ip == "02": # Mouse
-                            icon_name = "xapp-input-mouse-symbolic"
+                            icon_name = "xsi-input-mouse-symbolic"
                             break # priorize mouse over keyboard
                         elif ic == "0e": # Camera
-                            icon_name = "xapp-camera-video-symbolic"
+                            icon_name = "xsi-camera-video-symbolic"
                             break
                         elif ic == "01": # Audio Interface
-                            icon_name = "xapp-audio-card-symbolic"
+                            icon_name = "xsi-audio-card-symbolic"
                             break
                         elif ic == "08": # Storage
-                            icon_name = "xapp-usb-stick-symbolic"
+                            icon_name = "xsi-usb-stick-symbolic"
                             break
     except Exception as e:
         print("Could not find an icon for the device", str(e))
@@ -352,7 +352,7 @@ class USBListWidget(Gtk.ScrolledWindow):
         if device_id and device_id.strip():
             clipboard = Gtk.Clipboard.get(Gdk.SELECTION_CLIPBOARD)
             clipboard.set_text(device_id, -1)
-            subprocess.Popen(['notify-send', '-i', 'xapp-dialog-information-symbolic', _("Device ID copied"), _("The ID of the device was copied into your clipboard.")])
+            subprocess.Popen(['notify-send', '-i', 'xsi-dialog-information-symbolic', _("Device ID copied"), _("The ID of the device was copied into your clipboard.")])
 
 if __name__ == "__main__":
     win = Gtk.Window()

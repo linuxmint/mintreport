@@ -152,7 +152,7 @@ class MyApplication(Gtk.Application):
                 # Show a tray icon
                 self.monitoring_process = process
                 self.monitor_icon.set_visible(True)
-                self.monitor_icon.set_icon_name("xapp-run-symbolic")
+                self.monitor_icon.set_icon_name("xsi-run-symbolic")
                 tooltip = "<b>%s</b>\n%s" % (process.name, process.description)
                 self.monitor_icon.set_tooltip_text(tooltip)
                 # Start a clean up thread to hide the tray when it finishes
