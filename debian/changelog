@@ -1,3 +1,24 @@
+mintreport (1.5.7) zena; urgency=medium
+
+  * Switch to XApp symbolic icons
+  * Rebrand tool as System Information
+  * Add a USB page
+  * Update dependencies
+  * Add more row spacing in the treeviews
+  * Support arguments to open a particular page directly
+  * Add .gitignore
+  * Add a PCI page
+  * Add a BIOS page
+  * Clean up
+  * Improve look
+  * Add a GPU page
+  * Fix argparse, clean up debug info
+  * l10n: Update POT
+  * desktop file: Add keywords
+  * Switch to XSI
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 21 Nov 2025 13:29:06 +0000
+
 mintreport (1.5.6) zara; urgency=medium
 
   * l10n: Update translations
