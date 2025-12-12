@@ -1,107 +1,171 @@
-# Latvian translation for linuxmint
-# Copyright (c) 2025 Rosetta Contributors and Canonical Ltd 2025
-# This file is distributed under the same license as the linuxmint package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: linuxmint\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2024-07-02 17:04+0100\n"
-"PO-Revision-Date: 2025-07-07 11:39+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Latvian <lv@li.org>\n"
+"Project-Id-Version: mintreport\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-23 10:18+0100\n"
+"PO-Revision-Date: 2025-10-24 18:57+0000\n"
+"Last-Translator: Klavs Petersons <Unknown>\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2025-08-26 15:25+0000\n"
-"X-Generator: Launchpad (build 919009172d854f2b8e4e8262db447f12f11d25eb)\n"
+"X-Launchpad-Export-Date: 2025-12-12 13:32+0000\n"
+"X-Generator: Launchpad (build 379e22b8475e3402088a4cdb4a6e7936a4d28414)\n"
+"Language: lv\n"
 
-#: usr/lib/linuxmint/mintreport/app.py:84
-#: usr/lib/linuxmint/mintreport/app.py:237 generate_desktop_files:25
-#: generate_desktop_files:39 generate_desktop_files:53
-#: generate_desktop_files:67 usr/share/linuxmint/mintreport/mintreport.ui.h:22
-msgid "System Reports"
-msgstr ""
+#: usr/lib/linuxmint/mintreport/app.py:130
+#: usr/lib/linuxmint/mintreport/app.py:158
+msgid "Unknown size"
+msgstr "Nezināms izmērs"
 
-#: usr/lib/linuxmint/mintreport/app.py:199
+#: usr/lib/linuxmint/mintreport/app.py:156
+msgid "Unknown CPU"
+msgstr "Nezināms procesors"
+
+#: usr/lib/linuxmint/mintreport/app.py:196
+#: usr/lib/linuxmint/mintreport/app.py:466 generate_desktop_files:25
+#: generate_desktop_files:39 usr/share/linuxmint/mintreport/mintreport.ui.h:5
+msgid "System Information"
+msgstr "Sistēmas informācija"
+
+#: usr/lib/linuxmint/mintreport/app.py:317
 msgid "Restore ignored reports"
-msgstr ""
+msgstr "Atjaunot ignorētos ziņojumus"
 
-#: usr/lib/linuxmint/mintreport/app.py:204
-#: usr/lib/linuxmint/mintreport/tray.py:72
+#: usr/lib/linuxmint/mintreport/app.py:322
+#: usr/lib/linuxmint/mintreport/tray.py:62
 msgid "Quit"
-msgstr ""
+msgstr "Iziet"
 
-#: usr/lib/linuxmint/mintreport/app.py:216
-#: usr/lib/linuxmint/mintreport/app.py:235
+#: usr/lib/linuxmint/mintreport/app.py:334
+#: usr/lib/linuxmint/mintreport/app.py:464
 msgid "About"
-msgstr ""
+msgstr "Par"
 
-#: usr/lib/linuxmint/mintreport/app.py:279
+#: usr/lib/linuxmint/mintreport/app.py:350
+msgid "Computer"
+msgstr "Dators"
+
+#: usr/lib/linuxmint/mintreport/app.py:372
+msgid "Operating System"
+msgstr "Operētājsistēma"
+
+#: usr/lib/linuxmint/mintreport/app.py:373
+msgid "Linux Kernel"
+msgstr "Linux kodols"
+
+#: usr/lib/linuxmint/mintreport/app.py:374
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:28
+msgid "Processor"
+msgstr "Procesors"
+
+#: usr/lib/linuxmint/mintreport/app.py:377
+msgid "Graphics Card"
+msgstr "Grafiskā karte"
+
+#: usr/lib/linuxmint/mintreport/app.py:379
+#: usr/lib/linuxmint/mintreport/app.py:381
+msgid "Memory"
+msgstr "Atmiņa"
+
+#: usr/lib/linuxmint/mintreport/app.py:379
+#: usr/lib/linuxmint/mintreport/app.py:389
+msgid "GB"
+msgstr "GB"
+
+#: usr/lib/linuxmint/mintreport/app.py:385
+msgid "Hard Drives"
+msgstr "Cietie diski"
+
+#: usr/lib/linuxmint/mintreport/app.py:387
+msgid "Hard Drive"
+msgstr "Cietais disks"
+
+#: usr/lib/linuxmint/mintreport/app.py:396
+msgid "Desktop Environment"
+msgstr "Darbvirsmas vide"
+
+#: usr/lib/linuxmint/mintreport/app.py:403
+msgid "Display Server"
+msgstr "Attēlošanas serveris"
+
+#: usr/lib/linuxmint/mintreport/app.py:508
 msgid "An error occurred while gathering the system information."
-msgstr ""
+msgstr "Vācot sistēmas informāciju, radās kļūda."
 
-#: usr/lib/linuxmint/mintreport/app.py:293
+#: usr/lib/linuxmint/mintreport/app.py:519
 msgid "System information copied"
-msgstr ""
+msgstr "Sistēmas informācija nokopēta"
 
-#: usr/lib/linuxmint/mintreport/app.py:293
+#: usr/lib/linuxmint/mintreport/app.py:519
 msgid ""
 "Your system information was copied into your clipboard so you can paste it "
 "on the forums."
 msgstr ""
+"Sistēmas informācija tika iekopēta starpliktuvē, lai to varētu ielīmēt "
+"forumos."
 
-#: usr/lib/linuxmint/mintreport/app.py:302
+#: usr/lib/linuxmint/mintreport/app.py:527
 msgid "System information uploaded"
-msgstr ""
+msgstr "Augšupielādēta sistēmas informācija"
 
-#: usr/lib/linuxmint/mintreport/app.py:302
+#: usr/lib/linuxmint/mintreport/app.py:527
 #, python-format
 msgid ""
 "Your system information was uploaded to %s. This link was placed in your "
 "clipboard."
 msgstr ""
+"Jūsu sistēmas informācija tika augšupielādēta šeit: %s. Šī saite tika "
+"ievietota starpliktuvē."
 
-#: usr/lib/linuxmint/mintreport/app.py:304
+#: usr/lib/linuxmint/mintreport/app.py:529
 msgid "An error occurred while uploading the system information"
-msgstr ""
+msgstr "Augšupielādējot sistēmas informāciju, radās kļūda"
 
-#: usr/lib/linuxmint/mintreport/app.py:304
+#: usr/lib/linuxmint/mintreport/app.py:529
 msgid ""
 "Copy and paste the system information manually into a pastebin site like "
 "https://pastebin.com."
 msgstr ""
+"Sistēmas informācijas manuāla kopēšana un ielīmēšana pastebin vietnē, "
+"piemēram, https://pastebin.com."
 
-#: usr/lib/linuxmint/mintreport/app.py:383
+#: usr/lib/linuxmint/mintreport/app.py:624
 msgid "Ignore this report"
-msgstr ""
+msgstr "Ignorēt šo ziņojumu"
 
-#: usr/lib/linuxmint/mintreport/app.py:399
+#: usr/lib/linuxmint/mintreport/app.py:640
 msgid "Are you sure you want to ignore this report?"
-msgstr ""
+msgstr "Vai tiešām vēlaties ignorēt šo ziņojumu?"
 
-#: usr/lib/linuxmint/mintreport/app.py:400
+#: usr/lib/linuxmint/mintreport/app.py:641
 msgid "The report will be permanently ignored and will no longer be visible."
-msgstr ""
+msgstr "Ziņojums tiks pastāvīgi ignorēts un vairs nebūs redzams."
 
-#: usr/lib/linuxmint/mintreport/app.py:489
+#: usr/lib/linuxmint/mintreport/app.py:730
 #, python-format
 msgid ""
 "The debug symbols are missing for %(program)s.\n"
 "Please install %(package)s."
 msgstr ""
+"Trūkst atkļūdošanas simbolu %(program)s.\n"
+"\n"
+"Lūdzu, instalējiet %(package)s."
 
-#: usr/lib/linuxmint/mintreport/app.py:503
+#: usr/lib/linuxmint/mintreport/app.py:744
 #, python-format
 msgid ""
 "The package providing %s could not be found.\n"
 "If you want to generate a stack trace for this crash report, please "
 "reinstall it."
 msgstr ""
+"Pakotne, kas nodrošina %s , nav atrasta.\n"
+"\n"
+"Ja vēlaties ģenerēt steka izsekošanu šim avārijas ziņojumam, lūdzu, "
+"pārinstalējiet to."
 
-#: usr/lib/linuxmint/mintreport/app.py:531
+#: usr/lib/linuxmint/mintreport/app.py:772
 msgid ""
 "The headers or binaries installed on your system do not match the code which "
 "was executed during the crash.\n"
@@ -109,312 +173,536 @@ msgid ""
 "A stack trace is available in 'Local Files' but its content is probably "
 "inaccurate."
 msgstr ""
+"Jūsu sistēmā instalētie galvenes vai binārā koda faili neatbilst kodam, kas "
+"tika izpildīts sistēmas kļūmes laikā.\n"
+"Iespējams, tie kopš tā laika ir tikuši atjaunināti.\n"
+"Steka trasēšana ir pieejama 'lokālajos failos' , bet tā saturs, iespējams, "
+"ir neprecīzs."
 
-#: usr/lib/linuxmint/mintreport/tray.py:68
+#: usr/lib/linuxmint/mintreport/bios.py:21
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:10
+msgid "BIOS"
+msgstr "BIOS"
+
+#: usr/lib/linuxmint/mintreport/bios.py:22
+msgid "Motherboard"
+msgstr "Mātesplate"
+
+#: usr/lib/linuxmint/mintreport/bios.py:32
+#: usr/lib/linuxmint/mintreport/bios.py:53
+#: usr/lib/linuxmint/mintreport/gpu.py:215
+#: usr/lib/linuxmint/mintreport/pci.py:271
+msgid "Brand"
+msgstr "Zīmols"
+
+#: usr/lib/linuxmint/mintreport/bios.py:33
+#: usr/lib/linuxmint/mintreport/bios.py:55
+msgid "Version"
+msgstr "Versija"
+
+#: usr/lib/linuxmint/mintreport/bios.py:34
+msgid "Release"
+msgstr "Izlaide"
+
+#: usr/lib/linuxmint/mintreport/bios.py:35
+msgid "Release Date"
+msgstr "Izlaišanas datums"
+
+#: usr/lib/linuxmint/mintreport/bios.py:38
+#: usr/lib/linuxmint/mintreport/bios.py:41
+msgid "Boot Mode"
+msgstr "Sāknēšanas režīms"
+
+#: usr/lib/linuxmint/mintreport/bios.py:39
+#: usr/lib/linuxmint/mintreport/bios.py:43
+#: usr/lib/linuxmint/mintreport/bios.py:50
+msgid "Secure Boot"
+msgstr "Drošā sāknēšana"
+
+#: usr/lib/linuxmint/mintreport/bios.py:39
+#: usr/lib/linuxmint/mintreport/bios.py:50
+msgid "Disabled"
+msgstr "Atspējots"
+
+#: usr/lib/linuxmint/mintreport/bios.py:43
+#: usr/lib/linuxmint/mintreport/gpu.py:183
+msgid "Enabled"
+msgstr "Iespējots"
+
+#: usr/lib/linuxmint/mintreport/bios.py:46
+#: usr/lib/linuxmint/mintreport/bios.py:48
+msgid "Secure Boot mode"
+msgstr "Drošās sāknēšanas režīms"
+
+#: usr/lib/linuxmint/mintreport/bios.py:46
+msgid "Setup Mode (keys not enrolled)"
+msgstr "Iestatīšanas režīms (atslēgas nav reģistrētas)"
+
+#: usr/lib/linuxmint/mintreport/bios.py:48
+msgid "User Mode (normal)"
+msgstr "Lietotāja režīms (normāls)"
+
+#: usr/lib/linuxmint/mintreport/bios.py:54
+#: usr/lib/linuxmint/mintreport/gpu.py:216
+#: usr/lib/linuxmint/mintreport/usb.py:149
+msgid "Name"
+msgstr "Nosaukums"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:185
+#: usr/lib/linuxmint/mintreport/gpu.py:211
+msgid "Disabled (Software rendering)"
+msgstr "Atspējots (programmatūras renderēšana)"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:195
+msgid "Default GPU"
+msgstr "Noklusējuma GPU"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:196
+msgid "Hardware Acceleration"
+msgstr "Aparatūras paātrinājums"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:213
+#, python-format
+msgid "Enabled (%s)"
+msgstr "Iespējots (%s)"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:217
+msgid "PCI ID"
+msgstr "PCI ID"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:218
+#: usr/lib/linuxmint/mintreport/pci.py:306
+msgid "Driver"
+msgstr "Draiveris"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:220
+msgid "Driver Version"
+msgstr "Draivera versija"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:225
+msgid "Video Playback"
+msgstr "Video atskaņošana"
+
+#: usr/lib/linuxmint/mintreport/pci.py:255
+msgid "Bus"
+msgstr "Maģistrāle"
+
+#: usr/lib/linuxmint/mintreport/pci.py:263
+msgid "Type"
+msgstr "Tips"
+
+#: usr/lib/linuxmint/mintreport/pci.py:278
+msgid "Device"
+msgstr "Ierīce"
+
+#: usr/lib/linuxmint/mintreport/pci.py:298
+#: usr/lib/linuxmint/mintreport/usb.py:162
+msgid "ID"
+msgstr "ID"
+
+#: usr/lib/linuxmint/mintreport/pci.py:321
+msgid "Copy the ID"
+msgstr "Kopēt ID"
+
+#: usr/lib/linuxmint/mintreport/pci.py:322
+msgid "Copy the entire row"
+msgstr "Kopēt visu rindu"
+
+#: usr/lib/linuxmint/mintreport/pci.py:352
+#: usr/lib/linuxmint/mintreport/usb.py:355
+msgid "Device ID copied"
+msgstr "Ierīces ID nokopēts"
+
+#: usr/lib/linuxmint/mintreport/pci.py:352
+msgid "The device ID was copied into your clipboard."
+msgstr "Ierīces ID tika nokopēts starpliktuvē."
+
+#: usr/lib/linuxmint/mintreport/pci.py:362
+msgid "Device information copied"
+msgstr "Ierīces informācija nokopēta"
+
+#: usr/lib/linuxmint/mintreport/pci.py:362
+msgid "The device information was copied into your clipboard."
+msgstr "Ierīces informācija tika nokopēta starpliktuvē."
+
+#: usr/lib/linuxmint/mintreport/tray.py:58
 msgid "Show System Reports"
-msgstr ""
+msgstr "Rādīt sistēmas pārskatus"
+
+#: usr/lib/linuxmint/mintreport/tray.py:136
+msgid "Some system reports require your attention"
+msgstr "Dažiem sistēmas ziņojumiem ir nepieciešama jūsu uzmanība"
 
 #: usr/lib/linuxmint/mintreport/tray.py:146
-msgid "Some system reports require your attention"
-msgstr ""
-
-#: usr/lib/linuxmint/mintreport/tray.py:156
 msgid "System Snapshots"
-msgstr ""
+msgstr "Sistēmas momentuzņēmumi"
 
-#: usr/lib/linuxmint/mintreport/tray.py:156
+#: usr/lib/linuxmint/mintreport/tray.py:146
 msgid "A Timeshift system snapshot is being created."
-msgstr ""
+msgstr "Tiek izveidots Timeshift sistēmas momentuzņēmums."
 
-#: usr/lib/linuxmint/mintreport/tray.py:157
+#: usr/lib/linuxmint/mintreport/tray.py:147
 msgid "Automatic Updates"
-msgstr ""
+msgstr "Automātiskie atjauninājumi"
 
-#: usr/lib/linuxmint/mintreport/tray.py:157
+#: usr/lib/linuxmint/mintreport/tray.py:147
 msgid "Automatic updates are being installed."
+msgstr "Tiek instalēti automātiskie atjauninājumi."
+
+#: usr/lib/linuxmint/mintreport/usb.py:39
+#, python-format
+msgid "%d Gbps"
+msgstr "%d Gbps"
+
+#: usr/lib/linuxmint/mintreport/usb.py:41
+#, python-format
+msgid "%d Mbps"
+msgstr "%d Mbps"
+
+#: usr/lib/linuxmint/mintreport/usb.py:168
+msgid "Speed"
+msgstr "Ātrums"
+
+#: usr/lib/linuxmint/mintreport/usb.py:176
+msgid "Power"
+msgstr "Jauda"
+
+#: usr/lib/linuxmint/mintreport/usb.py:267
+#, python-format
+msgid "USB %(version)s controller (Bus #%(number)s) – Max speed: %(speed)s"
 msgstr ""
+"USB %(version)s kontrolieris (Magistrāle Nr. %(number)s) – Maksimālais "
+"ātrums: %(speed)s"
+
+#: usr/lib/linuxmint/mintreport/usb.py:285
+#: usr/lib/linuxmint/mintreport/usb.py:288
+#, python-format
+msgid "%d mA"
+msgstr "%d mA"
+
+#: usr/lib/linuxmint/mintreport/usb.py:336
+#, python-format
+msgid "%s mA max"
+msgstr "%s mA maks"
+
+#: usr/lib/linuxmint/mintreport/usb.py:355
+msgid "The ID of the device was copied into your clipboard."
+msgstr "Ierīces ID tika nokopēts starpliktuvē."
 
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:23
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:26
 msgid "Troubleshoot problems"
-msgstr ""
+msgstr "Problēmu novēršana"
+
+#: generate_desktop_files:53 generate_desktop_files:67
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:13
+msgid "System Reports"
+msgstr "Sistēmas ziņojumi"
 
 #: generate_desktop_files:53
 msgid "Troubleshooting Tool"
-msgstr ""
+msgstr "Problēmu novēršanas rīks"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:1
-msgid "Running system checks..."
-msgstr ""
+msgid "Copy"
+msgstr "Kopēt"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:2
-msgid "No problems were detected"
-msgstr ""
-
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:3
-msgid "System reports"
-msgstr ""
-
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:4
-msgid "Copy"
-msgstr ""
-
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:5
 msgid ""
 "Copy to clipboard (code tags are added to make it easy to paste the system "
 "information into the forums)"
 msgstr ""
+"Kopēt uz starpliktuvi (kods ir pievienots, lai sistēmas informāciju varētu "
+"viegli ielīmēt forumos)"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:3
+msgid "Upload"
+msgstr "Augšupielādēt"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:4
+msgid "Upload to a pastebin service (no personal information included)"
+msgstr "Augšupielādēt pastebin pakalpojumā (bez personiskās informācijas)"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:6
-msgid "Upload"
-msgstr ""
+msgid "Note: Double-click a device to copy its ID"
+msgstr "Piezīme: Veiciet dubultklikšķi uz ierīces, lai kopētu tās ID"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:7
-msgid "Upload to a pastebin service (no personal information included)"
-msgstr ""
+msgid "USB"
+msgstr "USB"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:8
-msgid "System information"
-msgstr ""
+msgid "GPU"
+msgstr "GPU"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:9
-msgid "Crash reports are not available"
-msgstr ""
+msgid "PCI"
+msgstr "PCI"
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:10
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:11
+msgid "Running system checks..."
+msgstr "Veic sistēmas pārbaudes..."
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:12
+msgid "No problems were detected"
+msgstr "Problēmas netika konstatētas"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:14
+msgid "Crash reports are not available"
+msgstr "Avārijas ziņojumi nav pieejami"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:15
 msgid ""
 "To enable crash reporting, install systemd-coredump and reboot your computer."
 msgstr ""
+"Lai iespējotu ziņošanu par avārijām, instalējiet systemd-coredump un "
+"restartējiet datoru."
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:11
-msgid "Crash reports:"
-msgstr ""
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:16
+msgid "Crash Reports"
+msgstr "Avāriju ziņojumi"
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:12
-msgid "Stack trace:"
-msgstr ""
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:17
+msgid "Stack Trace"
+msgstr "Staka izsekošana"
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:13
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:18
 msgid ""
 "When seeking help, check for existing bug reports, pastebin the trace, share "
 "crash.tar.gz (from Local Files) and explain how to reproduce the crash."
 msgstr ""
-
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:14
-msgid "Local Files"
-msgstr ""
-
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:15
-msgid "Open the directory containing crash.tar.gz and its content."
-msgstr ""
-
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:16
-msgid "Bug Tracker"
-msgstr ""
-
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:17
-msgid "Find the most appropriate bug tracker."
-msgstr ""
-
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:18
-msgid "Pastebin"
-msgstr ""
+"Kad meklējat palīdzību, pārbaudiet esošos kļūdu ziņojumus, ievietojiet "
+"izsekošanas informāciju pastebin, dalieties ar crash.tar.gz (no lokālajiem  "
+"failiem) un izskaidrojiet, kā reproducēt kļūdu."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:19
-msgid "Upload the trace to the Internet."
-msgstr ""
+msgid "Local Files"
+msgstr "Lokālie faili"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:20
+msgid "Open the directory containing crash.tar.gz and its content."
+msgstr "Atveriet direktoriju, kurā atrodas crash.tar.gz un tā saturs."
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:21
+msgid "Bug Tracker"
+msgstr "Kļūdu izsekotājs"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:22
+msgid "Find the most appropriate bug tracker."
+msgstr "Atrodiet vispiemērotāko kļūdu izsekotāju."
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:23
+msgid "Pastebin"
+msgstr "Pastebin"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:24
+msgid "Upload the trace to the Internet."
+msgstr "Augšupielādējiet informāciju internetā."
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:25
 msgid ""
 "Developers need to know where the code fails or how to reproduce the issue. "
 "Always provide a trace and reliable instructions to trigger/observe the "
 "problem."
 msgstr ""
+"Izstrādātājiem ir jāzina, kur kods nedarbojas vai kā reproducēt problēmu. "
+"Vienmēr sniedziet izsekošanas informāciju un uzticamas instrukcijas, lai "
+"izraisītu/novērotu problēmu."
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:21
-msgid "Crash reports"
-msgstr ""
-
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:24
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:27
 msgid "Refresh"
-msgstr ""
+msgstr "Atsvaidzināt"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
 msgid "Add the XApp Status applet"
-msgstr ""
+msgstr "Pievienot XApp Status lietotni"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:37
 msgid ""
 "The XApp Status applet allows applications to provide a tray icon without "
 "rendering glitches and with support for HiDPI and symbolic icons."
 msgstr ""
+"XApp Status lietotne ļauj programmām nodrošināt ikonu sistēmu bez "
+"renderēšanas kļūdām un ar atbalstu HiDPI un simboliskajām ikonām."
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:39
 msgid "Right-click the panel and choose 'Add to Panel'."
 msgstr ""
+"Ar peles labo pogu noklikšķiniet uz paneļa un izvēlieties 'Pievienot "
+"panelim'."
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:46
 msgid "Add the XApp Status applet to the panel"
-msgstr ""
+msgstr "Pievienot panelim XApp Status lietotni"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:16
 msgid "Install multimedia codecs"
-msgstr ""
+msgstr "Instalēt multivides kodekus"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:30
 msgid ""
 "Multimedia codecs are required to play some video formats and to properly "
 "render some websites."
 msgstr ""
+"Multivides kodeki ir nepieciešami, lai atskaņotu dažus video formātus un "
+"pareizi attēlotu dažas tīmekļa vietnes."
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:36
 msgid "Install the Multimedia Codecs"
-msgstr ""
+msgstr "Instalēt multivides kodekus"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:17
 msgid "Set up the system restore utility"
-msgstr ""
+msgstr "Iestatīt sistēmas atjaunošanas utilītu"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:31
 msgid "Linux Mint provides a system restore utility called Timeshift."
 msgstr ""
+"Linux Mint nodrošina sistēmas atjaunošanas rīku, ko sauc par Timeshift."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:32
 msgid ""
 "Thanks to Timeshift you can take snapshots of the system, either manually or "
 "automatically."
 msgstr ""
+"Pateicoties Timeshift, jūs varat veikt sistēmas momentuzņēmumus, vai nu "
+"manuāli, vai automātiski."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:33
 msgid ""
 "If something goes wrong you can then restore your operating system from a "
 "previously saved snapshot."
 msgstr ""
+"Ja kaut kas noiet greizi, varat atjaunot savu operētājsistēmu no iepriekš "
+"saglabāta momentuzņēmuma."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:39
 msgid "Launch Timeshift"
-msgstr ""
+msgstr "Palaist Timeshift"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:18
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:17
 msgid "A new version of Linux Mint is available"
-msgstr ""
+msgstr "Ir pieejama jauna Linux Mint versija"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:48
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:50
 #, python-format
 msgid "Visit %s for the latest announcements."
-msgstr ""
+msgstr "Apmeklējiet %s ,lai saņemtu jaunākos paziņojumus."
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:54
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:56
 #, python-format
 msgid "Upgrade to %s"
-msgstr ""
+msgstr "Atjaunināt uz %s"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:49
 msgid "Your version of Linux Mint will soon reach End-Of-Life (EOL)"
-msgstr ""
+msgstr "Jūsu Linux Mint versija drīz sasniegs kalpošanas laika beigas (EOL)"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:50
 #, python-brace-format
 msgid "It will stop receiving support and updates in a day."
 msgid_plural "It will stop receiving support and updates in {num_days} days."
-msgstr[0] ""
+msgstr[0] "Pēc dienas tā vairs nesaņems atbalstu un atjauninājumus."
 msgstr[1] ""
+"Pēc {num_days} dienām tā vairs nesaņems atbalstu un atjauninājumus."
+msgstr[2] ""
+"Pēc {num_days} dienām tas vairs nesaņems atbalstu un atjauninājumus."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:54
 msgid "Your version of Linux Mint is no longer supported"
-msgstr ""
+msgstr "Jūsu Linux Mint versija vairs netiek atbalstīta"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:55
 #, python-brace-format
 msgid "It reached End-Of-Life (EOL) yesterday."
 msgid_plural "It reached End-Of-Life (EOL) {num_days} days ago."
-msgstr[0] ""
+msgstr[0] "Tā vakar sasniedza kalpošanas laika beigas (EOL)."
 msgstr[1] ""
+"Tā sasniedza kalpošanas laika beigas (EOL) pirms {num_days} dienām."
+msgstr[2] ""
+"Tā sasniedza kalpošanas laika beigas (EOL) pirms {num_days} dienām."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:66
 #, python-format
 msgid "Visit %s to find information about newer releases."
-msgstr ""
+msgstr "Apmeklējiet %s ,lai iegūtu informāciju par jaunākām versijām."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:14
 msgid "Perform usrmerge conversion"
-msgstr ""
+msgstr "Veiciet usrmerge konvertēšanu"
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:39
 msgid "We recommend you convert your system with usrmerge."
-msgstr ""
+msgstr "Mēs iesakām konvertēt jūsu sistēmu ar usrmerge."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:40
 msgid "This is done already for new installations of Linux Mint."
-msgstr ""
+msgstr "Tas jau tiek darīts jaunajās Linux Mint instalācijās."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:41
 msgid "To convert your system, open a terminal and type:"
-msgstr ""
+msgstr "Lai konvertētu sistēmu, atveriet termināli un ierakstiet:"
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:43
 msgid "You should reboot the computer once this completes."
-msgstr ""
+msgstr "Kad tas būs pabeigts, jums vajadzētu restartēt datoru."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:49
 msgid "More information"
-msgstr ""
+msgstr "Vairāk informācijas"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:17
 msgid "Remove conflicting indicators"
-msgstr ""
+msgstr "Noņemt konfliktējošos indikatorus"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:37
 msgid "The following packages prevent tray icons from working properly:"
-msgstr ""
+msgstr "Šīs pakotnes neļauj ikonām darboties pareizi:"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:39
 msgid "Note: You will need to log out after removing them."
-msgstr ""
+msgstr "Piezīme: Pēc to noņemšanas jums būs jāizrakstās."
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:45
 msgid "Remove the conflicting packages."
-msgstr ""
+msgstr "Noņemiet konfliktējošās pakotnes."
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:26
 msgid "Install language packs"
-msgstr ""
+msgstr "Instalēt valodu pakotnes"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:41
 msgid ""
 "The following localization packages are missing to properly support your "
 "language:"
 msgstr ""
+"Trūkst šādu lokalizācijas pakotņu, lai pareizi atbalstītu jūsu valodu:"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:48
 msgid "Install the Language Packs"
-msgstr ""
+msgstr "Instalēt valodas pakotnes"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:19
 msgid "Install hardware drivers"
-msgstr ""
-
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:28
-msgid "Processor"
-msgstr ""
+msgstr "Instalēt aparatūras draiverus"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:41
 msgid "Unknown"
-msgstr ""
+msgstr "Nezināms"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:45
 #, python-format
 msgid "%s (unknown)"
-msgstr ""
+msgstr "%s (nezināms)"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:100
 msgid "Hardware drivers are available for the following devices:"
-msgstr ""
+msgstr "Aparatūras draiveri ir pieejami šādām ierīcēm:"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:107
 msgid "Launch the Driver Manager"
-msgstr ""
+msgstr "Palaist draiveru pārvaldnieku"

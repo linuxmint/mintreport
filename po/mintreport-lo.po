@@ -1,119 +1,118 @@
-# Kabyle translation for linuxmint
-# Copyright (c) 2018 Rosetta Contributors and Canonical Ltd 2018
+# Lao translation for linuxmint
+# Copyright (c) 2025 Rosetta Contributors and Canonical Ltd 2025
 # This file is distributed under the same license as the linuxmint package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2025-10-23 10:18+0100\n"
-"PO-Revision-Date: 2022-05-27 10:44+0000\n"
-"Last-Translator: Yacine Bouklif <Unknown>\n"
-"Language-Team: Kabyle <kab@li.org>\n"
+"PO-Revision-Date: 2025-11-11 02:05+0000\n"
+"Last-Translator: boneni <Unknown>\n"
+"Language-Team: Lao <lo@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Launchpad-Export-Date: 2025-12-12 13:32+0000\n"
 "X-Generator: Launchpad (build 379e22b8475e3402088a4cdb4a6e7936a4d28414)\n"
-"Language: kab\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:130
 #: usr/lib/linuxmint/mintreport/app.py:158
 msgid "Unknown size"
-msgstr ""
+msgstr "ບໍ່ຮູ້ຂະໜາດ"
 
 #: usr/lib/linuxmint/mintreport/app.py:156
 msgid "Unknown CPU"
-msgstr ""
+msgstr "ບໍ່ຮູ້ CPU"
 
 #: usr/lib/linuxmint/mintreport/app.py:196
 #: usr/lib/linuxmint/mintreport/app.py:466 generate_desktop_files:25
 #: generate_desktop_files:39 usr/share/linuxmint/mintreport/mintreport.ui.h:5
 msgid "System Information"
-msgstr ""
+msgstr "ຂໍ້​ມູນ​ລະ​ບົບ"
 
 #: usr/lib/linuxmint/mintreport/app.py:317
 msgid "Restore ignored reports"
-msgstr "Err-d ineqqisen yettwattun"
+msgstr "ກູ້ຄືນລາຍງານທີ່ບໍ່ສົນໃຈ"
 
 #: usr/lib/linuxmint/mintreport/app.py:322
 #: usr/lib/linuxmint/mintreport/tray.py:62
 msgid "Quit"
-msgstr "Ffeγ"
+msgstr "ອອກ"
 
 #: usr/lib/linuxmint/mintreport/app.py:334
 #: usr/lib/linuxmint/mintreport/app.py:464
 msgid "About"
-msgstr "Ɣef"
+msgstr "ກ່ຽວກັບ"
 
 #: usr/lib/linuxmint/mintreport/app.py:350
 msgid "Computer"
-msgstr ""
+msgstr "ຄອມພິວເຕີ"
 
 #: usr/lib/linuxmint/mintreport/app.py:372
 msgid "Operating System"
-msgstr ""
+msgstr "ລະບົບປະຕິບັດການ"
 
 #: usr/lib/linuxmint/mintreport/app.py:373
 msgid "Linux Kernel"
-msgstr ""
+msgstr "ລີນຸກເຄີເນວ"
 
 #: usr/lib/linuxmint/mintreport/app.py:374
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:28
 msgid "Processor"
-msgstr "Asasker"
+msgstr "ໜ່ວຍປະມວນຜົນ"
 
 #: usr/lib/linuxmint/mintreport/app.py:377
 msgid "Graphics Card"
-msgstr ""
+msgstr "ການ์ດຈໍ"
 
 #: usr/lib/linuxmint/mintreport/app.py:379
 #: usr/lib/linuxmint/mintreport/app.py:381
 msgid "Memory"
-msgstr ""
+msgstr "ໜ່ວຍຄວາມຈຳ"
 
 #: usr/lib/linuxmint/mintreport/app.py:379
 #: usr/lib/linuxmint/mintreport/app.py:389
 msgid "GB"
-msgstr ""
+msgstr "GB"
 
 #: usr/lib/linuxmint/mintreport/app.py:385
 msgid "Hard Drives"
-msgstr ""
+msgstr "ຮາດໄດຣຟ໌"
 
 #: usr/lib/linuxmint/mintreport/app.py:387
 msgid "Hard Drive"
-msgstr ""
+msgstr "ຮາດໄດຣຟ໌"
 
 #: usr/lib/linuxmint/mintreport/app.py:396
 msgid "Desktop Environment"
-msgstr ""
+msgstr "ສະພາບແວດລ້ອມເດັສທັອບ"
 
 #: usr/lib/linuxmint/mintreport/app.py:403
 msgid "Display Server"
-msgstr ""
+msgstr "ເຊີບເວີສະແດງຜົນ"
 
 #: usr/lib/linuxmint/mintreport/app.py:508
 msgid "An error occurred while gathering the system information."
-msgstr "Teḍra-d tucḍa deg ujemmeɛ n isallan n unagraw."
+msgstr "ເກີດຂໍ້ຜິດພາດໃນຂະນະທີ່ກຳລັງເກັບກຳຂໍ້ມູນລະບົບ."
 
 #: usr/lib/linuxmint/mintreport/app.py:519
 msgid "System information copied"
-msgstr "Talɣut n unagraw tettwasuken"
+msgstr "ສຳເນົາຂໍ້ມູນລະບົບແລ້ວ"
 
 #: usr/lib/linuxmint/mintreport/app.py:519
 msgid ""
 "Your system information was copied into your clipboard so you can paste it "
 "on the forums."
 msgstr ""
-"Isallan n unagraw-inek ttusukknen ɣer tecfawit  ihi tzemreḍ ad ten-senteḍeḍ "
-"deg ufurum."
+"ຂໍ້ມູນລະບົບຂອງທ່ານໄດ້ຖືກສຳເນົາໃສ່ຄລິບບອດຂອງທ່ານແລ້ວ "
+"ເພື່ອໃຫ້ທ່ານສາມາດວາງມັນໃສ່ໃນເວັບບອດສົນທະນາໄດ້."
 
 #: usr/lib/linuxmint/mintreport/app.py:527
 msgid "System information uploaded"
-msgstr "Talɣut n unagraw tuli"
+msgstr "ອັບໂຫຼດຂໍ້ມູນລະບົບແລ້ວ"
 
 #: usr/lib/linuxmint/mintreport/app.py:527
 #, python-format
@@ -121,28 +120,32 @@ msgid ""
 "Your system information was uploaded to %s. This link was placed in your "
 "clipboard."
 msgstr ""
+"ຂໍ້ມູນລະບົບຂອງທ່ານໄດ້ຖືກອັບໂຫຼດໄປທີ່ %s ແລ້ວ. "
+"ລິ້ງນີ້ໄດ້ຖືກສຳເນົາໃສ່ຄລິບບອດຂອງທ່ານ."
 
 #: usr/lib/linuxmint/mintreport/app.py:529
 msgid "An error occurred while uploading the system information"
-msgstr "Teḍra-d tuccḍa deg usili n isallan n unagraw"
+msgstr "ເກີດຂໍ້ຜິດພາດໃນຂະນະທີ່ກຳລັງອັບໂຫຼດຂໍ້ມູນລະບົບ"
 
 #: usr/lib/linuxmint/mintreport/app.py:529
 msgid ""
 "Copy and paste the system information manually into a pastebin site like "
 "https://pastebin.com."
 msgstr ""
+"ສຳເນົາ ແລະ ວາງຂໍ້ມູນລະບົບດ້ວຍຕົນເອງໃສ່ເວັບໄຊທ໌ pastebin ເຊັ່ນ "
+"https://pastebin.com."
 
 #: usr/lib/linuxmint/mintreport/app.py:624
 msgid "Ignore this report"
-msgstr "Ttu aneqqis-agi"
+msgstr "ບໍ່ສົນໃຈລາຍງານນີ້"
 
 #: usr/lib/linuxmint/mintreport/app.py:640
 msgid "Are you sure you want to ignore this report?"
-msgstr "Tettḥeqqeḍ belli tebɣiḍ ad tettuḍ aneqqis-agi ?"
+msgstr "ທ່ານແນ່ໃຈບໍ່ວ່າຕ້ອງການທີ່ຈະບໍ່ສົນໃຈລາຍງານນີ້?"
 
 #: usr/lib/linuxmint/mintreport/app.py:641
 msgid "The report will be permanently ignored and will no longer be visible."
-msgstr "Aneqqisi ad yettwattu i lebda yerna dayen ur yettban ara."
+msgstr "ລາຍງານນີ້ຈະຖືກບໍ່ສົນໃຈຢ່າງຖາວອນ ແລະ ຈະບໍ່ປາກົດໃຫ້ເຫັນອີກຕໍ່ໄປ."
 
 #: usr/lib/linuxmint/mintreport/app.py:730
 #, python-format
@@ -150,8 +153,8 @@ msgid ""
 "The debug symbols are missing for %(program)s.\n"
 "Please install %(package)s."
 msgstr ""
-"Izamulen n useɣti xuṣṣen i %(program)s.\n"
-"Ttxil-k sbedd %(package)s."
+"ສັນຍາລັກດີບັກສຳລັບ %(program)s ຂາດຫາຍໄປ.\n"
+"ກະລຸນາຕິດຕັ້ງ %(package)s."
 
 #: usr/lib/linuxmint/mintreport/app.py:744
 #, python-format
@@ -160,9 +163,9 @@ msgid ""
 "If you want to generate a stack trace for this crash report, please "
 "reinstall it."
 msgstr ""
-"Akemmus i d-yettakken %s ur yettwaf ara.\n"
-"Iwakken ad d-teslaleḍ adriz imnennan i uneqqis-agi n uɣelluy, ttxil-k sbedd-"
-"it tikkelt-nniḍen."
+"ບໍ່ສາມາດຊອກຫາແພັກເກັດທີ່ສະໜອງ %s ໄດ້.\n"
+"ຖ້າທ່ານຕ້ອງການສ້າງ stack trace ສໍາລັບລາຍງານການຂັດຂ້ອງນີ້, "
+"ກະລຸນາຕິດຕັ້ງມັນຄືນໃໝ່."
 
 #: usr/lib/linuxmint/mintreport/app.py:772
 msgid ""
@@ -172,322 +175,322 @@ msgid ""
 "A stack trace is available in 'Local Files' but its content is probably "
 "inaccurate."
 msgstr ""
-"Ifuyla imisinen neɣ n inixfen ittusbedden deg unagraw-inek ur nmeɣran ara "
-"akked tengalt ittuselkmen mi d-yella uɣelluy. Ahat ttwaleqqmen seg yimir-"
-"nni.\n"
-"Adriz imnennan iwjed di 'Ifuyla idiganen' maca agbur-ines ahat mačči d "
-"imekdi."
+"ສ່ວນຫົວ (headers) ຫຼື ໄບນາຣີ (binaries) "
+"ທີ່ຕິດຕັ້ງໃນລະບົບຂອງທ່ານບໍ່ກົງກັບໂຄດທີ່ຖືກປະມວນຜົນໃນລະຫວ່າງການຂັດຂ້ອງ.\n"
+"ອາດຈະເປັນຍ້ອນມັນຖືກອັບເກຣດແລ້ວ.\n"
+"ມີ stack trace ຢູ່ໃນ 'ໄຟລ໌ທ້ອງຖິ່ນ' ແຕ່ເນື້ອໃນຂອງມັນອາດຈະບໍ່ຖືກຕ້ອງ."
 
 #: usr/lib/linuxmint/mintreport/bios.py:21
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:10
 msgid "BIOS"
-msgstr ""
+msgstr "ໄບອອດ"
 
 #: usr/lib/linuxmint/mintreport/bios.py:22
 msgid "Motherboard"
-msgstr ""
+msgstr "ແມນບອດ"
 
 #: usr/lib/linuxmint/mintreport/bios.py:32
 #: usr/lib/linuxmint/mintreport/bios.py:53
 #: usr/lib/linuxmint/mintreport/gpu.py:215
 #: usr/lib/linuxmint/mintreport/pci.py:271
 msgid "Brand"
-msgstr ""
+msgstr "ຍີ່ຫໍ້"
 
 #: usr/lib/linuxmint/mintreport/bios.py:33
 #: usr/lib/linuxmint/mintreport/bios.py:55
 msgid "Version"
-msgstr ""
+msgstr "ເວີຊັນ"
 
 #: usr/lib/linuxmint/mintreport/bios.py:34
 msgid "Release"
-msgstr ""
+msgstr "ລຸ້ນທີ່ປ່ອຍອອກ"
 
 #: usr/lib/linuxmint/mintreport/bios.py:35
 msgid "Release Date"
-msgstr ""
+msgstr "ວັນທີເຜີຍແຜ່"
 
 #: usr/lib/linuxmint/mintreport/bios.py:38
 #: usr/lib/linuxmint/mintreport/bios.py:41
 msgid "Boot Mode"
-msgstr ""
+msgstr "ໂໝດການບູ໊ດ"
 
 #: usr/lib/linuxmint/mintreport/bios.py:39
 #: usr/lib/linuxmint/mintreport/bios.py:43
 #: usr/lib/linuxmint/mintreport/bios.py:50
 msgid "Secure Boot"
-msgstr ""
+msgstr "ການບູ໊ດແບບປອດໄພ"
 
 #: usr/lib/linuxmint/mintreport/bios.py:39
 #: usr/lib/linuxmint/mintreport/bios.py:50
 msgid "Disabled"
-msgstr ""
+msgstr "ປິດໃຊ້ງານ"
 
 #: usr/lib/linuxmint/mintreport/bios.py:43
 #: usr/lib/linuxmint/mintreport/gpu.py:183
 msgid "Enabled"
-msgstr ""
+msgstr "ເປີດໃຊ້ງານ"
 
 #: usr/lib/linuxmint/mintreport/bios.py:46
 #: usr/lib/linuxmint/mintreport/bios.py:48
 msgid "Secure Boot mode"
-msgstr ""
+msgstr "ໂໝດການບູ໊ດແບບປອດໄພ"
 
 #: usr/lib/linuxmint/mintreport/bios.py:46
 msgid "Setup Mode (keys not enrolled)"
-msgstr ""
+msgstr "ໂໝດຕັ້ງຄ່າ (ຄີຍັງບໍ່ໄດ້ລົງທະບຽນ)"
 
 #: usr/lib/linuxmint/mintreport/bios.py:48
 msgid "User Mode (normal)"
-msgstr ""
+msgstr "ໂໝດຜູ້ໃຊ້ (ປົກກະຕິ)"
 
 #: usr/lib/linuxmint/mintreport/bios.py:54
 #: usr/lib/linuxmint/mintreport/gpu.py:216
 #: usr/lib/linuxmint/mintreport/usb.py:149
 msgid "Name"
-msgstr ""
+msgstr "ຊື່"
 
 #: usr/lib/linuxmint/mintreport/gpu.py:185
 #: usr/lib/linuxmint/mintreport/gpu.py:211
 msgid "Disabled (Software rendering)"
-msgstr ""
+msgstr "ປິດໃຊ້ງານ (ສະແດງຜົນດ້ວຍຊອບແວ)"
 
 #: usr/lib/linuxmint/mintreport/gpu.py:195
 msgid "Default GPU"
-msgstr ""
+msgstr "GPU ຄ່າເລີ່ມຕົ້ນ"
 
 #: usr/lib/linuxmint/mintreport/gpu.py:196
 msgid "Hardware Acceleration"
-msgstr ""
+msgstr "ການເລັ່ງປະສິດທິພາບດ້ວຍຮາດແວ"
 
 #: usr/lib/linuxmint/mintreport/gpu.py:213
 #, python-format
 msgid "Enabled (%s)"
-msgstr ""
+msgstr "ເປີດໃຊ້ງານ (%s)"
 
 #: usr/lib/linuxmint/mintreport/gpu.py:217
 msgid "PCI ID"
-msgstr ""
+msgstr "ໄອດີ PCI"
 
 #: usr/lib/linuxmint/mintreport/gpu.py:218
 #: usr/lib/linuxmint/mintreport/pci.py:306
 msgid "Driver"
-msgstr ""
+msgstr "ໄດເວີ"
 
 #: usr/lib/linuxmint/mintreport/gpu.py:220
 msgid "Driver Version"
-msgstr ""
+msgstr "ເວີຊັນໄດຣເວີ"
 
 #: usr/lib/linuxmint/mintreport/gpu.py:225
 msgid "Video Playback"
-msgstr ""
+msgstr "ການຫຼິ້ນວິດີໂອ"
 
 #: usr/lib/linuxmint/mintreport/pci.py:255
 msgid "Bus"
-msgstr ""
+msgstr "ທາງຜ່ານຂໍ້ມູນ"
 
 #: usr/lib/linuxmint/mintreport/pci.py:263
 msgid "Type"
-msgstr ""
+msgstr "ປະເພດ"
 
 #: usr/lib/linuxmint/mintreport/pci.py:278
 msgid "Device"
-msgstr ""
+msgstr "ອຸປະກອນ"
 
 #: usr/lib/linuxmint/mintreport/pci.py:298
 #: usr/lib/linuxmint/mintreport/usb.py:162
 msgid "ID"
-msgstr ""
+msgstr "ໄອດີ"
 
 #: usr/lib/linuxmint/mintreport/pci.py:321
 msgid "Copy the ID"
-msgstr ""
+msgstr "ສຳເນົາໄອດີ"
 
 #: usr/lib/linuxmint/mintreport/pci.py:322
 msgid "Copy the entire row"
-msgstr ""
+msgstr "ສຳເນົາທັງແຖວ"
 
 #: usr/lib/linuxmint/mintreport/pci.py:352
 #: usr/lib/linuxmint/mintreport/usb.py:355
 msgid "Device ID copied"
-msgstr ""
+msgstr "ສຳເນົາໄອດີອຸປະກອນແລ້ວ"
 
 #: usr/lib/linuxmint/mintreport/pci.py:352
 msgid "The device ID was copied into your clipboard."
-msgstr ""
+msgstr "ໄອດີອຸປະກອນໄດ້ຖືກສຳເນົາໄປໄວ້ໃນຄລິບບອດຂອງທ່ານແລ້ວ"
 
 #: usr/lib/linuxmint/mintreport/pci.py:362
 msgid "Device information copied"
-msgstr ""
+msgstr "ສຳເນົາຂໍ້ມູນອຸປະກອນແລ້ວ"
 
 #: usr/lib/linuxmint/mintreport/pci.py:362
 msgid "The device information was copied into your clipboard."
-msgstr ""
+msgstr "\"ຂໍ້ມູນອຸປະກອນໄດ້ຖືກສຳເນົາໄປໄວ້ໃນຄລິບບອດຂອງທ່ານແລ້ວ."
 
 #: usr/lib/linuxmint/mintreport/tray.py:58
 msgid "Show System Reports"
-msgstr "Sken ineqqisen n unagraw"
+msgstr "ສະແດງລາຍງານລະບົບ"
 
 #: usr/lib/linuxmint/mintreport/tray.py:136
 msgid "Some system reports require your attention"
-msgstr "Kra n yineqqisen n unagraw sran tamawt-inek"
+msgstr "ມີບາງລາຍງານລະບົບທີ່ຕ້ອງການຄວາມສົນໃຈຈາກທ່ານ"
 
 #: usr/lib/linuxmint/mintreport/tray.py:146
 msgid "System Snapshots"
-msgstr "Tuṭṭfiwin n unagraw"
+msgstr "ພາບຖ່າຍລະບົບ"
 
 #: usr/lib/linuxmint/mintreport/tray.py:146
 msgid "A Timeshift system snapshot is being created."
-msgstr ""
+msgstr "ກຳລັງສ້າງພາບຖ່າຍລະບົບ Timeshift."
 
 #: usr/lib/linuxmint/mintreport/tray.py:147
 msgid "Automatic Updates"
-msgstr "Ileqman iwurmanen"
+msgstr "ການອັບເດດອັດຕະໂນມັດ"
 
 #: usr/lib/linuxmint/mintreport/tray.py:147
 msgid "Automatic updates are being installed."
-msgstr "Ileqman iwurmanen tteddun ad ttwasbedden"
+msgstr "ກຳລັງຕິດຕັ້ງການອັບເດດອັດຕະໂນມັດ."
 
 #: usr/lib/linuxmint/mintreport/usb.py:39
 #, python-format
 msgid "%d Gbps"
-msgstr ""
+msgstr "%d Gbps"
 
 #: usr/lib/linuxmint/mintreport/usb.py:41
 #, python-format
 msgid "%d Mbps"
-msgstr ""
+msgstr "%d Mbps"
 
 #: usr/lib/linuxmint/mintreport/usb.py:168
 msgid "Speed"
-msgstr ""
+msgstr "ຄວາມໄວ"
 
 #: usr/lib/linuxmint/mintreport/usb.py:176
 msgid "Power"
-msgstr ""
+msgstr "ພະລັງງານ"
 
 #: usr/lib/linuxmint/mintreport/usb.py:267
 #, python-format
 msgid "USB %(version)s controller (Bus #%(number)s) – Max speed: %(speed)s"
 msgstr ""
+"ຕົວຄວບຄຸມ USB %(version)s (ບັສ #%(number)s) – ຄວາມໄວສູງສຸດ: %(speed)s"
 
 #: usr/lib/linuxmint/mintreport/usb.py:285
 #: usr/lib/linuxmint/mintreport/usb.py:288
 #, python-format
 msgid "%d mA"
-msgstr ""
+msgstr "%d mA"
 
 #: usr/lib/linuxmint/mintreport/usb.py:336
 #, python-format
 msgid "%s mA max"
-msgstr ""
+msgstr "ສູງສຸດ %s mA"
 
 #: usr/lib/linuxmint/mintreport/usb.py:355
 msgid "The ID of the device was copied into your clipboard."
-msgstr ""
+msgstr "ໄອດີຂອງອຸປະກອນໄດ້ຖືກສຳເນົາໄປໄວ້ໃນຄລິບບອດຂອງທ່ານແລ້ວ."
 
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:26
 msgid "Troubleshoot problems"
-msgstr "Aseggem n wuguren"
+msgstr "ແກ້ໄຂບັນຫາ"
 
 #: generate_desktop_files:53 generate_desktop_files:67
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:13
 msgid "System Reports"
-msgstr "Ineqqisen n unagraw"
+msgstr "ລາຍງານລະບົບ"
 
 #: generate_desktop_files:53
 msgid "Troubleshooting Tool"
-msgstr "Allalen n useggem"
+msgstr "ເຄື່ອງມືແກ້ໄຂບັນຫາ"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:1
 msgid "Copy"
-msgstr "Suken"
+msgstr "ສຳເນົາ"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:2
 msgid ""
 "Copy to clipboard (code tags are added to make it easy to paste the system "
 "information into the forums)"
 msgstr ""
-"Sukken ɣer tecfawit  (ticraḍ n tengalt ttwarennant iwakken ad yishil usenteḍ-"
-"ines deg yifurumen)"
+"ສຳເນົາໃສ່ຄລິບບອດ "
+"(ມີການເພີ່ມແທັກໂຄດເພື່ອໃຫ້ງ່າຍຕໍ່ການວາງຂໍ້ມູນລະບົບລົງໃນເວັບບອດສົນທະນາ)"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:3
 msgid "Upload"
-msgstr "Sili"
+msgstr "ອັບໂຫຼດ"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:4
 msgid "Upload to a pastebin service (no personal information included)"
-msgstr "Sili ɣer umeẓlu n pastebin  (ur tteddun ara isallan udmawanen)"
+msgstr "ອັບໂຫຼດໄປຍັງບໍລິການ pastebin (ບໍ່ລວມຂໍ້ມູນສ່ວນຕົວ)"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:6
 msgid "Note: Double-click a device to copy its ID"
-msgstr ""
+msgstr "ໝາຍເຫດ: ກົດສອງຄັ້ງໃສ່ອຸປະກອນເພື່ອສຳເນົາໄອດີ"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:7
 msgid "USB"
-msgstr ""
+msgstr "USB"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:8
 msgid "GPU"
-msgstr ""
+msgstr "ຈີພີຢູ"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:9
 msgid "PCI"
-msgstr ""
+msgstr "ພີຊີໄອ"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:11
 msgid "Running system checks..."
-msgstr "Selkem iselkinen n unagraw..."
+msgstr "ກຳລັງກວດສອບລະບົບ..."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:12
 msgid "No problems were detected"
-msgstr "Ulac ugur yettwafen"
+msgstr "ບໍ່ພົບເຫັນບັນຫາໃດໆ"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:14
 msgid "Crash reports are not available"
-msgstr "Ineqqisen n uɣelluy ur wjiden ara"
+msgstr "ບໍ່ມີລາຍງານການຂັດຂ້ອງ"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:15
 msgid ""
 "To enable crash reporting, install systemd-coredump and reboot your computer."
 msgstr ""
-"Iwakken ad tesremdeḍ ineqqisen n uɣelluy, sbedd systemd-coredump  sakin "
-"sekker tikkelt-nniḍen aselkim-inek."
+"ເພື່ອເປີດໃຊ້ການລາຍງານການຂັດຂ້ອງ, ກະລຸນາຕິດຕັ້ງ systemd-coredump ແລະ "
+"ຣີບູດຄອມພິວເຕີຂອງທ່ານ."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:16
 msgid "Crash Reports"
-msgstr ""
+msgstr "ລາຍງານການຂັດຂ້ອງ"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:17
 msgid "Stack Trace"
-msgstr ""
+msgstr "ສະແຕັກເທຣສ"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:18
 msgid ""
 "When seeking help, check for existing bug reports, pastebin the trace, share "
 "crash.tar.gz (from Local Files) and explain how to reproduce the crash."
 msgstr ""
-"Ma tettnadiḍ tallalt, nadi gar ineqqisen n tuccḍa i yellan, azen adriz ɣer "
-"pastebin, zuzer afaylu crash.tar.gz (seg ifuyla idiganen) yerna sfehm-d amek "
-"ara talseḍ aɣelluy."
+"ເມື່ອຕ້ອງການຄວາມຊ່ວຍເຫຼືອ, ໃຫ້ກວດເບິ່ງລາຍງານຂໍ້ບົກພ່ອງທີ່ມີຢູ່, pastebin the "
+"trace, ແບ່ງປັນ crash.tar.gz (ຈາກ ໄຟລ໌ທ້ອງຖິ່ນ) ແລະ "
+"ອະທິບາຍວິທີເຮັດໃຫ້ເກີດການຂັດຂ້ອງຄືນໃໝ່."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:19
 msgid "Local Files"
-msgstr "Ifuyla idiganen"
+msgstr "ໄຟລ໌ທ້ອງຖິ່ນ"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:20
 msgid "Open the directory containing crash.tar.gz and its content."
-msgstr "Ldi akaram igebren crash.tar.gz  d ugbur is."
+msgstr "ເປີດໂຟລເດີທີ່ບັນຈຸ crash.tar.gz ແລະ ເນື້ອໃນຂອງມັນ."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:21
 msgid "Bug Tracker"
-msgstr "Aḍfaṛ ibugen"
+msgstr "ໂຕຕິດຕາມຂໍ້ບົກພ່ອງ"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:22
 msgid "Find the most appropriate bug tracker."
-msgstr "Afed aḍfaṛ ibugen ilaqen."
+msgstr "ຊອກຫາໂຕຕິດຕາມຂໍ້ບົກພ່ອງທີ່ເໝາະສົມທີ່ສຸດ."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:23
 msgid "Pastebin"
@@ -495,7 +498,7 @@ msgstr "Pastebin"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:24
 msgid "Upload the trace to the Internet."
-msgstr "Azen adriz ɣer internet."
+msgstr "ອັບໂຫຼດ the trace ຂຶ້ນສູ່ອິນເຕີເນັດ."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:25
 msgid ""
@@ -503,198 +506,193 @@ msgid ""
 "Always provide a trace and reliable instructions to trigger/observe the "
 "problem."
 msgstr ""
-"Ineflayen sran ad ẓren anida tɣelli tengalt, amek ara alsen i uɣelluy. Yalas "
-"ttakk-d adriz akked isallan ɣef wamek ara neḍfer neɣ ara nwali ugur."
+"ນັກພັດທະນາຕ້ອງການຮູ້ວ່າໂຄດຂັດຂ້ອງຢູ່ໃສ ຫຼື ວິທີເຮັດໃຫ້ເກີດບັນຫາຄືນໃໝ່. "
+"ໃຫ້ສະໜອງ the trace ແລະ ຄຳແນະນຳທີ່ເຊື່ອຖືໄດ້ສະເໝີ "
+"ເພື່ອເຮັດໃຫ້ເກີດ/ສັງເກດເຫັນບັນຫາ."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:27
 msgid "Refresh"
-msgstr "Sismeḍ"
+msgstr "ໂຫຼດໃໝ່"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
 msgid "Add the XApp Status applet"
-msgstr "Rnu asnas n waddad XApp"
+msgstr "ເພີ່ມແອັບເປິ້ນສະຖານະ XApp"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:37
 msgid ""
 "The XApp Status applet allows applications to provide a tray icon without "
 "rendering glitches and with support for HiDPI and symbolic icons."
 msgstr ""
-"Asnas n waddad XApp ad yeǧǧ isnasen iwakken ad d-fken tignit n tfeggagt n "
-"twura war ugur n tririt, acku yettɛawan tiddin n tignitin HiDPI akked "
-"tignitin tizamulanin."
+"ແອັບເປິ້ນສະຖານະ XApp "
+"ຊ່ວຍໃຫ້ແອັບພລິເຄຊັນສາມາດສະແດງໄອຄອນເທິງຖາດລະບົບໄດ້ໂດຍບໍ່ມີບັນຫາການສະແດງຜົນ "
+"ແລະ ຮອງຮັບ HiDPI ແລະ ໄອຄອນແບບສັນຍາລັກ."
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:39
 msgid "Right-click the panel and choose 'Add to Panel'."
-msgstr "Sit s teqfalt tayefust n tɣerdayt sakin fren 'Rnu ɣer ugalis'."
+msgstr "ຄລິກຂວາໃສ່ແຜງໜ້າປັດ ແລະ ເລືອກ 'ເພີ່ມໃສ່ແຜງໜ້າປັດ'."
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:46
 msgid "Add the XApp Status applet to the panel"
-msgstr "Rnu addad nXApp ɣer  ugalis"
+msgstr "ເພີ່ມແອັບເປິ້ນສະຖານະ XApp ໃສ່ແຜງໜ້າປັດ"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:16
 msgid "Install multimedia codecs"
-msgstr "Sebded ikudiken n ugetmidya"
+msgstr "ຕິດຕັ້ງໂຄເດັກມັນຕິມີເດຍ"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:30
 msgid ""
 "Multimedia codecs are required to play some video formats and to properly "
 "render some websites."
 msgstr ""
-"Ttwasran ikudaken igetmidyaten iwakken ad ddun kra n imasalen ividyuten "
-"yerna ad ttwabeqqeḍen kra n isemlen akken iwata."
+"ໂຄເດັກມັນຕິມີເດຍແມ່ນຈຳເປັນສຳລັບການຫຼິ້ນວິດີໂອບາງຮູບແບບ ແລະ "
+"ເພື່ອສະແດງຜົນບາງເວັບໄຊທ໌ຢ່າງຖືກຕ້ອງ."
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:36
 msgid "Install the Multimedia Codecs"
-msgstr "Sebded ikudiken n ugetmidya"
+msgstr "ຕິດຕັ້ງໂຄເດັກມັນຕິມີເດຍ"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:17
 msgid "Set up the system restore utility"
-msgstr "Seɣwer ahil n tririt n unagraw"
+msgstr "ຕັ້ງຄ່າເຄື່ອງມືກູ້ຄືນລະບົບ"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:31
 msgid "Linux Mint provides a system restore utility called Timeshift."
-msgstr "Linux Mint yesɛa ahil i tririt n unagraw isem-is Timeshift."
+msgstr "Linux Mint ມີເຄື່ອງມືກູ້ຄືນລະບົບທີ່ເອີ້ນວ່າ Timeshift."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:32
 msgid ""
 "Thanks to Timeshift you can take snapshots of the system, either manually or "
 "automatically."
 msgstr ""
-"S ttawil n Timeshift tzemreḍ ad teṭṭfeḍ tiwaṭṭfiwin n unagraw, ama s ufus "
-"ama s wudem awurman."
+"ດ້ວຍ Timeshift, ທ່ານສາມາດສ້າງພາບຖ່າຍຂອງລະບົບໄດ້, ບໍ່ວ່າຈະດ້ວຍຕົນເອງ ຫຼື "
+"ແບບອັດຕະໂນມັດ."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:33
 msgid ""
 "If something goes wrong you can then restore your operating system from a "
 "previously saved snapshot."
 msgstr ""
-"Ma yella kra yerẓen tzemreḍ ad d-terreḍ anagraw n wamud inek si tuṭṭfa i "
-"teskelseḍ yakan."
+"ຖ້າມີບາງຢ່າງຜິດພາດ, "
+"ທ່ານສາມາດກູ້ຄືນລະບົບປະຕິບັດການຂອງທ່ານຈາກພາບຖ່າຍທີ່ບັນທຶກໄວ້ກ່ອນໜ້ານີ້ໄດ້."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:39
 msgid "Launch Timeshift"
-msgstr "SekkerTimeshift"
+msgstr "ເປີດ Timeshift"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:18
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:17
 msgid "A new version of Linux Mint is available"
-msgstr "Lqem amaynut n Linux Mint yewjed"
+msgstr "ມີ Linux Mint ເວີຊັນໃໝ່ໃຫ້ຕິດຕັ້ງ"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:48
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:50
 #, python-format
 msgid "Visit %s for the latest announcements."
-msgstr "Rzu ɣer %s akken ad tafeḍ isallan ineggura."
+msgstr "ເຂົ້າເບິ່ງ %s ສຳລັບການປະກາດຫຼ້າສຸດ."
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:54
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:56
 #, python-format
 msgid "Upgrade to %s"
-msgstr "Sali lqem ɣer %s"
+msgstr "ອັບເກຣດເປັນ %s"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:49
 msgid "Your version of Linux Mint will soon reach End-Of-Life (EOL)"
-msgstr "Lqem n Linux Mint inek qrib ad yaweḍ taggara n tudert-ines"
+msgstr "Linux Mint ເວີຊັນຂອງທ່ານໃກ້ຈະໝົດອາຍຸການຮອງຮັບ (EOL) ແລ້ວ"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:50
 #, python-brace-format
 msgid "It will stop receiving support and updates in a day."
 msgid_plural "It will stop receiving support and updates in {num_days} days."
-msgstr[0] ""
-"Yegra-yas-d yiwen n wass, imir ad yeḥbes ur d-yettaṭṭaf ara taneṭṭuft  akked "
-"ileqman."
-msgstr[1] ""
-"Gran-as-d {num_days} n wussan,  imir ad yeḥbes ur d-yettaṭṭaf ara taneṭṭuft  "
-"akked ileqman."
+msgstr[0] "ຈະຢຸດໄດ້ຮັບການຮອງຮັບ ແລະ ການອັບເດດໃນອີກ  {num_days} ມື້."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:54
 msgid "Your version of Linux Mint is no longer supported"
-msgstr "Lqem n Linux Mint inek dayen ur yesɛi ara taneṭṭuft"
+msgstr "Linux Mint ເວີຊັນຂອງທ່ານບໍ່ໄດ້ຮັບການຮອງຮັບອີກຕໍ່ໄປ"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:55
 #, python-brace-format
 msgid "It reached End-Of-Life (EOL) yesterday."
 msgid_plural "It reached End-Of-Life (EOL) {num_days} days ago."
-msgstr[0] "Yewweḍ taggara n tudert-ines iḍelli."
-msgstr[1] "Yewweḍ taggara n tudert-ines  {num_days} n wussan aya."
+msgstr[0] "ໄດ້ໝົດອາຍຸການຮອງຮັບ (EOL) {num_days} ມື້ວານນີ້."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:66
 #, python-format
 msgid "Visit %s to find information about newer releases."
-msgstr "Rzu ɣer %s iwakken ad tafeḍ isallan ɣef ileqman imaynuten."
+msgstr "ເຂົ້າເບິ່ງ %s ເພື່ອຊອກຫາຂໍ້ມູນກ່ຽວກັບເວີຊັນທີ່ໃໝ່ກວ່າ."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:14
 msgid "Perform usrmerge conversion"
-msgstr "Eg aselket n usrmerge"
+msgstr "ດຳເນີນການແປງ usrmerge"
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:39
 msgid "We recommend you convert your system with usrmerge."
-msgstr "Ad k m-nsemter ad tselkteḍ anagraw-inek inem s usrmerge."
+msgstr "ພວກເຮົາແນະນຳໃຫ້ທ່ານແປງລະບົບຂອງທ່ານດ້ວຍ usrmerge."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:40
 msgid "This is done already for new installations of Linux Mint."
-msgstr ""
+msgstr "ສິ່ງນີ້ໄດ້ເຮັດແລ້ວສຳລັບການຕິດຕັ້ງ Linux Mint ໃໝ່."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:41
 msgid "To convert your system, open a terminal and type:"
-msgstr "Akken ad tselkteḍ anagraw-inek inem, ldi tadiwent u taruḍ:"
+msgstr "ເພື່ອແປງລະບົບຂອງທ່ານ, ເປີດ terminal ແລະ ພິມ:"
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:43
 msgid "You should reboot the computer once this completes."
-msgstr "Isefk ad talseḍ asekker n uselkim mi yemmed wayagi."
+msgstr "ທ່ານຄວນຣີບູດຄອມພິວເຕີເມື່ອຂະບວນການນີ້ສຳເລັດ."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:49
 msgid "More information"
-msgstr "Ugar n telɣut"
+msgstr "ຂໍ້ມູນເພີ່ມເຕີມ"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:17
 msgid "Remove conflicting indicators"
-msgstr "Kkes inamalen ittemceččawen"
+msgstr "ລຶບໂຕຊີ້ບອກທີ່ຂັດກັນອອກ"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:37
 msgid "The following packages prevent tray icons from working properly:"
-msgstr "Ikemmusen-agi ur ttaǧǧan ara taɣzut n telɣut ad telḥu akken iwata:"
+msgstr "ແພັກເກັດຕໍ່ໄປນີ້ກີດຂວາງບໍ່ໃຫ້ໄອຄອນເທິງຖາດລະບົບເຮັດວຽກຢ່າງຖືກຕ້ອງ:"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:39
 msgid "Note: You will need to log out after removing them."
-msgstr "Tamawt: tesraḍ ad tsensreḍ ticki tekkseḍ-ten."
+msgstr "ໝາຍເຫດ: ທ່ານຈະຕ້ອງອອກຈາກລະບົບຫຼັງຈາກລຶບພວກມັນອອກ."
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:45
 msgid "Remove the conflicting packages."
-msgstr "Kkes ikemmusen yetteceččawen."
+msgstr "ລຶບແພັກເກັດທີ່ຂັດກັນອອກ."
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:26
 msgid "Install language packs"
-msgstr "Sebded ikemussen n tutlayt"
+msgstr "ຕິດຕັ້ງແພັກເກັດພາສາ"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:41
 msgid ""
 "The following localization packages are missing to properly support your "
 "language:"
 msgstr ""
-"Ikemmusen-agi n usideg xuṣṣen iwakken ad teddu tutlayt-inek akken iwata:"
+"ແພັກເກັດພາສາທ້ອງຖິ່ນຕໍ່ໄປນີ້ຂາດຫາຍໄປເພື່ອຮອງຮັບພາສາຂອງທ່ານຢ່າງສົມບູນ:"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:48
 msgid "Install the Language Packs"
-msgstr "Sebded ikemussen n tutlayt"
+msgstr "ຕິດຕັ້ງແພັກເກັດພາສາ"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:19
 msgid "Install hardware drivers"
-msgstr "Sbedd inuḍaf n warrum"
+msgstr "ຕິດຕັ້ງໄດຣເວີຮາດແວ"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:41
 msgid "Unknown"
-msgstr "Ur yettwassen ara"
+msgstr "ບໍ່ຮູ້ຈັກ"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:45
 #, python-format
 msgid "%s (unknown)"
-msgstr "%s (ur yettwassen ara)"
+msgstr "%s (ບໍ່ຮູ້ຈັກ)"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:100
 msgid "Hardware drivers are available for the following devices:"
-msgstr "Inuḍaf n warum wejden deg yibenkan-agi:"
+msgstr "ມີໄດຣເວີຮາດແວສຳລັບອຸປະກອນຕໍ່ໄປນີ້:"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:107
 msgid "Launch the Driver Manager"
-msgstr "Sekker amsefrak n inuḍafen"
+msgstr "ເປີດໂຕຈັດການໄດຣເວີ"

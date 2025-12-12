@@ -7,47 +7,102 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2024-07-02 17:04+0100\n"
-"PO-Revision-Date: 2024-09-04 02:40+0000\n"
-"Last-Translator: Huan Hoa Hong <Unknown>\n"
+"POT-Creation-Date: 2025-10-23 10:18+0100\n"
+"PO-Revision-Date: 2025-11-30 07:38+0000\n"
+"Last-Translator: Loc Huynh <Unknown>\n"
 "Language-Team: Vietnamese <vi@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2025-08-26 15:25+0000\n"
-"X-Generator: Launchpad (build 919009172d854f2b8e4e8262db447f12f11d25eb)\n"
+"X-Launchpad-Export-Date: 2025-12-12 13:32+0000\n"
+"X-Generator: Launchpad (build 379e22b8475e3402088a4cdb4a6e7936a4d28414)\n"
 
-#: usr/lib/linuxmint/mintreport/app.py:84
-#: usr/lib/linuxmint/mintreport/app.py:237 generate_desktop_files:25
-#: generate_desktop_files:39 generate_desktop_files:53
-#: generate_desktop_files:67 usr/share/linuxmint/mintreport/mintreport.ui.h:22
-msgid "System Reports"
-msgstr "Báo cáo hệ thống"
+#: usr/lib/linuxmint/mintreport/app.py:130
+#: usr/lib/linuxmint/mintreport/app.py:158
+msgid "Unknown size"
+msgstr "Không rõ kích cỡ"
 
-#: usr/lib/linuxmint/mintreport/app.py:199
+#: usr/lib/linuxmint/mintreport/app.py:156
+msgid "Unknown CPU"
+msgstr "CPU không xác định"
+
+#: usr/lib/linuxmint/mintreport/app.py:196
+#: usr/lib/linuxmint/mintreport/app.py:466 generate_desktop_files:25
+#: generate_desktop_files:39 usr/share/linuxmint/mintreport/mintreport.ui.h:5
+msgid "System Information"
+msgstr "Thông tin hệ thống"
+
+#: usr/lib/linuxmint/mintreport/app.py:317
 msgid "Restore ignored reports"
-msgstr "Khôi phục các báo cáo bị bỏ qua"
+msgstr "Khôi phục những báo cáo bị bỏ qua."
 
-#: usr/lib/linuxmint/mintreport/app.py:204
-#: usr/lib/linuxmint/mintreport/tray.py:72
+#: usr/lib/linuxmint/mintreport/app.py:322
+#: usr/lib/linuxmint/mintreport/tray.py:62
 msgid "Quit"
 msgstr "Thoát"
 
-#: usr/lib/linuxmint/mintreport/app.py:216
-#: usr/lib/linuxmint/mintreport/app.py:235
+#: usr/lib/linuxmint/mintreport/app.py:334
+#: usr/lib/linuxmint/mintreport/app.py:464
 msgid "About"
 msgstr "Thông Tin"
 
-#: usr/lib/linuxmint/mintreport/app.py:279
+#: usr/lib/linuxmint/mintreport/app.py:350
+msgid "Computer"
+msgstr "Máy tính"
+
+#: usr/lib/linuxmint/mintreport/app.py:372
+msgid "Operating System"
+msgstr "Hệ điều hành"
+
+#: usr/lib/linuxmint/mintreport/app.py:373
+msgid "Linux Kernel"
+msgstr "Nhân Linux"
+
+#: usr/lib/linuxmint/mintreport/app.py:374
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:28
+msgid "Processor"
+msgstr "Bộ xử lý"
+
+#: usr/lib/linuxmint/mintreport/app.py:377
+msgid "Graphics Card"
+msgstr "Card Đồ hoạ"
+
+#: usr/lib/linuxmint/mintreport/app.py:379
+#: usr/lib/linuxmint/mintreport/app.py:381
+msgid "Memory"
+msgstr "Bộ nhớ"
+
+#: usr/lib/linuxmint/mintreport/app.py:379
+#: usr/lib/linuxmint/mintreport/app.py:389
+msgid "GB"
+msgstr "GB"
+
+#: usr/lib/linuxmint/mintreport/app.py:385
+msgid "Hard Drives"
+msgstr "Ổ Cứng"
+
+#: usr/lib/linuxmint/mintreport/app.py:387
+msgid "Hard Drive"
+msgstr "Đĩa cứng"
+
+#: usr/lib/linuxmint/mintreport/app.py:396
+msgid "Desktop Environment"
+msgstr "Desktop Environment"
+
+#: usr/lib/linuxmint/mintreport/app.py:403
+msgid "Display Server"
+msgstr "Máy chủ hiển thị"
+
+#: usr/lib/linuxmint/mintreport/app.py:508
 msgid "An error occurred while gathering the system information."
 msgstr "Đã xảy ra lỗi khi thu thập thông tin hệ thống."
 
-#: usr/lib/linuxmint/mintreport/app.py:293
+#: usr/lib/linuxmint/mintreport/app.py:519
 msgid "System information copied"
 msgstr "Đã sao chép thông tin hệ thống"
 
-#: usr/lib/linuxmint/mintreport/app.py:293
+#: usr/lib/linuxmint/mintreport/app.py:519
 msgid ""
 "Your system information was copied into your clipboard so you can paste it "
 "on the forums."
@@ -55,11 +110,11 @@ msgstr ""
 "Thông tin hệ thống của bạn đã được sao chép vào khay nhớ tạm để bạn có thể "
 "dán nó trên diễn đàn."
 
-#: usr/lib/linuxmint/mintreport/app.py:302
+#: usr/lib/linuxmint/mintreport/app.py:527
 msgid "System information uploaded"
 msgstr "Thông tin hệ thống đã được tải lên"
 
-#: usr/lib/linuxmint/mintreport/app.py:302
+#: usr/lib/linuxmint/mintreport/app.py:527
 #, python-format
 msgid ""
 "Your system information was uploaded to %s. This link was placed in your "
@@ -68,11 +123,11 @@ msgstr ""
 "Thông tin hệ thống của bạn đã được tải lên %s. Đường link này đã được sao "
 "chép vào bảng nhớ tạm của bạn"
 
-#: usr/lib/linuxmint/mintreport/app.py:304
+#: usr/lib/linuxmint/mintreport/app.py:529
 msgid "An error occurred while uploading the system information"
 msgstr "Đã xảy ra lỗi khi tải lên thông tin hệ thống"
 
-#: usr/lib/linuxmint/mintreport/app.py:304
+#: usr/lib/linuxmint/mintreport/app.py:529
 msgid ""
 "Copy and paste the system information manually into a pastebin site like "
 "https://pastebin.com."
@@ -80,19 +135,19 @@ msgstr ""
 "Sao chép và dán thông tin hệ thống của bạn thủ công vào một trang chứa tài "
 "liệu như https://pastebin.com."
 
-#: usr/lib/linuxmint/mintreport/app.py:383
+#: usr/lib/linuxmint/mintreport/app.py:624
 msgid "Ignore this report"
 msgstr "Bỏ qua báo cáo này"
 
-#: usr/lib/linuxmint/mintreport/app.py:399
+#: usr/lib/linuxmint/mintreport/app.py:640
 msgid "Are you sure you want to ignore this report?"
 msgstr "Bỏ qua báo cáo này"
 
-#: usr/lib/linuxmint/mintreport/app.py:400
+#: usr/lib/linuxmint/mintreport/app.py:641
 msgid "The report will be permanently ignored and will no longer be visible."
 msgstr "Báo cáo sẽ vĩnh viễn bị bỏ qua và sẽ không còn hiển thị nữa."
 
-#: usr/lib/linuxmint/mintreport/app.py:489
+#: usr/lib/linuxmint/mintreport/app.py:730
 #, python-format
 msgid ""
 "The debug symbols are missing for %(program)s.\n"
@@ -101,7 +156,7 @@ msgstr ""
 "Thiếu kí tự gỡ rối cho chương trình %(program)s.\n"
 "Vui lòng cài đặt %(package)s"
 
-#: usr/lib/linuxmint/mintreport/app.py:503
+#: usr/lib/linuxmint/mintreport/app.py:744
 #, python-format
 msgid ""
 "The package providing %s could not be found.\n"
@@ -111,7 +166,7 @@ msgstr ""
 "Tệp gói cung cấp %s không tìm thấy.\n"
 "Nếu bạn muốn tạo báo cáo lỗi, vui lòng cài đặt lại."
 
-#: usr/lib/linuxmint/mintreport/app.py:531
+#: usr/lib/linuxmint/mintreport/app.py:772
 msgid ""
 "The headers or binaries installed on your system do not match the code which "
 "was executed during the crash.\n"
@@ -124,57 +179,235 @@ msgstr ""
 "Có lẽ nó đã được nâng cấp.\n"
 "Có dòng lỗi ở \"Tập tin người dùng \" nhưng nội dung nó có lẽ không phù hợp."
 
-#: usr/lib/linuxmint/mintreport/tray.py:68
+#: usr/lib/linuxmint/mintreport/bios.py:21
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:10
+msgid "BIOS"
+msgstr "BIOS"
+
+#: usr/lib/linuxmint/mintreport/bios.py:22
+msgid "Motherboard"
+msgstr "Bo mạch chủ"
+
+#: usr/lib/linuxmint/mintreport/bios.py:32
+#: usr/lib/linuxmint/mintreport/bios.py:53
+#: usr/lib/linuxmint/mintreport/gpu.py:215
+#: usr/lib/linuxmint/mintreport/pci.py:271
+msgid "Brand"
+msgstr "Thương hiệu"
+
+#: usr/lib/linuxmint/mintreport/bios.py:33
+#: usr/lib/linuxmint/mintreport/bios.py:55
+msgid "Version"
+msgstr "Phiên bản"
+
+#: usr/lib/linuxmint/mintreport/bios.py:34
+msgid "Release"
+msgstr "Bản phát hành"
+
+#: usr/lib/linuxmint/mintreport/bios.py:35
+msgid "Release Date"
+msgstr "Ngày phát hành"
+
+#: usr/lib/linuxmint/mintreport/bios.py:38
+#: usr/lib/linuxmint/mintreport/bios.py:41
+msgid "Boot Mode"
+msgstr "Chế độ khởi động"
+
+#: usr/lib/linuxmint/mintreport/bios.py:39
+#: usr/lib/linuxmint/mintreport/bios.py:43
+#: usr/lib/linuxmint/mintreport/bios.py:50
+msgid "Secure Boot"
+msgstr "Khởi động an toàn"
+
+#: usr/lib/linuxmint/mintreport/bios.py:39
+#: usr/lib/linuxmint/mintreport/bios.py:50
+msgid "Disabled"
+msgstr "Đã bị vô hiệu hóa"
+
+#: usr/lib/linuxmint/mintreport/bios.py:43
+#: usr/lib/linuxmint/mintreport/gpu.py:183
+msgid "Enabled"
+msgstr "Đã được bật"
+
+#: usr/lib/linuxmint/mintreport/bios.py:46
+#: usr/lib/linuxmint/mintreport/bios.py:48
+msgid "Secure Boot mode"
+msgstr "Chế độ khởi động an toàn"
+
+#: usr/lib/linuxmint/mintreport/bios.py:46
+msgid "Setup Mode (keys not enrolled)"
+msgstr "Chế Độ Thiết Lập (khóa chưa được đăng ký)"
+
+#: usr/lib/linuxmint/mintreport/bios.py:48
+msgid "User Mode (normal)"
+msgstr "Chế Độ Người Dùng (bình thường)"
+
+#: usr/lib/linuxmint/mintreport/bios.py:54
+#: usr/lib/linuxmint/mintreport/gpu.py:216
+#: usr/lib/linuxmint/mintreport/usb.py:149
+msgid "Name"
+msgstr "Tên"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:185
+#: usr/lib/linuxmint/mintreport/gpu.py:211
+msgid "Disabled (Software rendering)"
+msgstr "Đã tắt (Hiển thị phần mềm)"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:195
+msgid "Default GPU"
+msgstr "GPU mặc định"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:196
+msgid "Hardware Acceleration"
+msgstr "Tăng tốc phần cứng"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:213
+#, python-format
+msgid "Enabled (%s)"
+msgstr "Đã bật (%s)"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:217
+msgid "PCI ID"
+msgstr "PCI ID"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:218
+#: usr/lib/linuxmint/mintreport/pci.py:306
+msgid "Driver"
+msgstr "Trình điều khiển"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:220
+msgid "Driver Version"
+msgstr "Phiên bản Driver"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:225
+msgid "Video Playback"
+msgstr "Phát Lại Video"
+
+#: usr/lib/linuxmint/mintreport/pci.py:255
+msgid "Bus"
+msgstr "Bus"
+
+#: usr/lib/linuxmint/mintreport/pci.py:263
+msgid "Type"
+msgstr "Kiểu"
+
+#: usr/lib/linuxmint/mintreport/pci.py:278
+msgid "Device"
+msgstr "Thiết bị"
+
+#: usr/lib/linuxmint/mintreport/pci.py:298
+#: usr/lib/linuxmint/mintreport/usb.py:162
+msgid "ID"
+msgstr "Mã"
+
+#: usr/lib/linuxmint/mintreport/pci.py:321
+msgid "Copy the ID"
+msgstr "Sao chép mã"
+
+#: usr/lib/linuxmint/mintreport/pci.py:322
+msgid "Copy the entire row"
+msgstr "Sao chép cả hàng"
+
+#: usr/lib/linuxmint/mintreport/pci.py:352
+#: usr/lib/linuxmint/mintreport/usb.py:355
+msgid "Device ID copied"
+msgstr "Đã sao chép mã thiết bị"
+
+#: usr/lib/linuxmint/mintreport/pci.py:352
+msgid "The device ID was copied into your clipboard."
+msgstr "Mã thiết bị đã được sao chép vào trong bảng nhớ tạm"
+
+#: usr/lib/linuxmint/mintreport/pci.py:362
+msgid "Device information copied"
+msgstr "Thông tin thiết bị đã được sao chép"
+
+#: usr/lib/linuxmint/mintreport/pci.py:362
+msgid "The device information was copied into your clipboard."
+msgstr "Thông tin thiết bị đã được sao chép vào trong bảng nhớ tạm"
+
+#: usr/lib/linuxmint/mintreport/tray.py:58
 msgid "Show System Reports"
 msgstr "Hiển thị báo cáo hệ thống"
 
-#: usr/lib/linuxmint/mintreport/tray.py:146
+#: usr/lib/linuxmint/mintreport/tray.py:136
 msgid "Some system reports require your attention"
 msgstr "Một số báo cáo hệ thống yêu cầu bạn chú ý"
 
-#: usr/lib/linuxmint/mintreport/tray.py:156
+#: usr/lib/linuxmint/mintreport/tray.py:146
 msgid "System Snapshots"
 msgstr "Bản sao lưu hệ thống"
 
-#: usr/lib/linuxmint/mintreport/tray.py:156
+#: usr/lib/linuxmint/mintreport/tray.py:146
 msgid "A Timeshift system snapshot is being created."
 msgstr "Bản sao lưu hệ thống Timeshift đang được tạo."
 
-#: usr/lib/linuxmint/mintreport/tray.py:157
+#: usr/lib/linuxmint/mintreport/tray.py:147
 msgid "Automatic Updates"
 msgstr "Cập nhật tự động"
 
-#: usr/lib/linuxmint/mintreport/tray.py:157
+#: usr/lib/linuxmint/mintreport/tray.py:147
 msgid "Automatic updates are being installed."
 msgstr "Cập nhật tự động đang được cài đặt."
 
+#: usr/lib/linuxmint/mintreport/usb.py:39
+#, python-format
+msgid "%d Gbps"
+msgstr "%d Gb/giây"
+
+#: usr/lib/linuxmint/mintreport/usb.py:41
+#, python-format
+msgid "%d Mbps"
+msgstr "%d Mb/giây"
+
+#: usr/lib/linuxmint/mintreport/usb.py:168
+msgid "Speed"
+msgstr "Tốc độ"
+
+#: usr/lib/linuxmint/mintreport/usb.py:176
+msgid "Power"
+msgstr "Nguồn điện"
+
+#: usr/lib/linuxmint/mintreport/usb.py:267
+#, python-format
+msgid "USB %(version)s controller (Bus #%(number)s) – Max speed: %(speed)s"
+msgstr ""
+"Bộ điều khiển USB %(version)s (Bus #%(number)s) – Tốc độ tối đa: %(speed)s"
+
+#: usr/lib/linuxmint/mintreport/usb.py:285
+#: usr/lib/linuxmint/mintreport/usb.py:288
+#, python-format
+msgid "%d mA"
+msgstr "%d mA"
+
+#: usr/lib/linuxmint/mintreport/usb.py:336
+#, python-format
+msgid "%s mA max"
+msgstr "%s mA tối đa"
+
+#: usr/lib/linuxmint/mintreport/usb.py:355
+msgid "The ID of the device was copied into your clipboard."
+msgstr "Mã thiết bị đã được sao chép vào bảng nhớ tạm"
+
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:23
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:26
 msgid "Troubleshoot problems"
 msgstr "Xử lý các vấn đề"
+
+#: generate_desktop_files:53 generate_desktop_files:67
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:13
+msgid "System Reports"
+msgstr "Báo cáo hệ thống"
 
 #: generate_desktop_files:53
 msgid "Troubleshooting Tool"
 msgstr "Công cụ xử lý sự cố"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:1
-msgid "Running system checks..."
-msgstr "Đang chạy kiểm tra hệ thống ..."
-
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:2
-msgid "No problems were detected"
-msgstr "Không có vấn đề được phát hiện"
-
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:3
-msgid "System reports"
-msgstr "Báo cáo hệ thống"
-
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:4
 msgid "Copy"
 msgstr "Sao chép"
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:5
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:2
 msgid ""
 "Copy to clipboard (code tags are added to make it easy to paste the system "
 "information into the forums)"
@@ -182,38 +415,58 @@ msgstr ""
 "Sao chép vào khay nhớ tạm (thẻ mã được thêm vào để dễ dàng dán thông tin hệ "
 "thống vào diễn đàn)"
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:6
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:3
 msgid "Upload"
 msgstr "Tải lên"
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:7
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:4
 msgid "Upload to a pastebin service (no personal information included)"
 msgstr "Tải lên dịch vụ pastebin (không bao gồm thông tin cá nhân)"
 
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:6
+msgid "Note: Double-click a device to copy its ID"
+msgstr "Nhấp 2 lần vào một thiết bị để sao chép ID của nó"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:7
+msgid "USB"
+msgstr "Cổng USB"
+
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:8
-msgid "System information"
-msgstr "Thông tin hệ thống"
+msgid "GPU"
+msgstr "GPU"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:9
+msgid "PCI"
+msgstr "PCI"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:11
+msgid "Running system checks..."
+msgstr "Đang chạy kiểm tra hệ thống ..."
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:12
+msgid "No problems were detected"
+msgstr "Không có vấn đề được phát hiện"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:14
 msgid "Crash reports are not available"
 msgstr "Không có báo cáo sự cố"
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:10
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:15
 msgid ""
 "To enable crash reporting, install systemd-coredump and reboot your computer."
 msgstr ""
 "Để bật báo cáo sự cố, hãy cài đặt systemd-coredump và khởi động lại máy tính "
 "của bạn."
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:11
-msgid "Crash reports:"
-msgstr "Báo cáo lỗi:"
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:16
+msgid "Crash Reports"
+msgstr "Báo lỗi"
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:12
-msgid "Stack trace:"
-msgstr "Stack trace:"
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:17
+msgid "Stack Trace"
+msgstr "Dấu vết ngăn xếp"
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:13
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:18
 msgid ""
 "When seeking help, check for existing bug reports, pastebin the trace, share "
 "crash.tar.gz (from Local Files) and explain how to reproduce the crash."
@@ -221,31 +474,31 @@ msgstr ""
 "Khi gặp giúp đỡ, kiểm tra xem có báo cáo lỗi nào đã tồn tại, dán vào trace, "
 "chia sẻ file crash.tar.xz (từ thư mục Local) và giải thích cách khắc phục."
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:14
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:19
 msgid "Local Files"
 msgstr "Tập tin cục bộ"
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:15
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:20
 msgid "Open the directory containing crash.tar.gz and its content."
 msgstr "Mở thư mục chứa crash.tar.xz và tập tin trong nó."
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:16
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:21
 msgid "Bug Tracker"
 msgstr "Nhận định lỗi"
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:17
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:22
 msgid "Find the most appropriate bug tracker."
 msgstr "Tìm ra lỗi nghiêm trọng nhất"
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:18
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:23
 msgid "Pastebin"
 msgstr "Pastebin"
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:19
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:24
 msgid "Upload the trace to the Internet."
 msgstr "Tải báo cáo lên internet."
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:20
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:25
 msgid ""
 "Developers need to know where the code fails or how to reproduce the issue. "
 "Always provide a trace and reliable instructions to trigger/observe the "
@@ -254,11 +507,7 @@ msgstr ""
 "Nhà phát triển cần biết có lỗi ở đâu và cách khắc phục lỗi này. Luôn cung "
 "cấp báo cáo và cách thức tiếp cận chúng."
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:21
-msgid "Crash reports"
-msgstr "Báo hỏng"
-
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:24
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:27
 msgid "Refresh"
 msgstr "Làm mới"
 
@@ -432,10 +681,6 @@ msgstr "Cài đặt gói ngôn ngữ"
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:19
 msgid "Install hardware drivers"
 msgstr "Cài đặt trình điều khiển phần cứng"
-
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:28
-msgid "Processor"
-msgstr "Bộ xử lý"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:41
 msgid "Unknown"

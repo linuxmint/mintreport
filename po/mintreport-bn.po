@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2024-07-02 17:04+0100\n"
+"POT-Creation-Date: 2025-10-23 10:18+0100\n"
 "PO-Revision-Date: 2022-01-05 13:42+0000\n"
 "Last-Translator: Mahdi Hasan <Unknown>\n"
 "Language-Team: Bengali <bn@li.org>\n"
@@ -15,39 +15,94 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2025-08-26 15:25+0000\n"
-"X-Generator: Launchpad (build 919009172d854f2b8e4e8262db447f12f11d25eb)\n"
+"X-Launchpad-Export-Date: 2025-12-12 13:32+0000\n"
+"X-Generator: Launchpad (build 379e22b8475e3402088a4cdb4a6e7936a4d28414)\n"
 
-#: usr/lib/linuxmint/mintreport/app.py:84
-#: usr/lib/linuxmint/mintreport/app.py:237 generate_desktop_files:25
-#: generate_desktop_files:39 generate_desktop_files:53
-#: generate_desktop_files:67 usr/share/linuxmint/mintreport/mintreport.ui.h:22
-msgid "System Reports"
-msgstr "সিস্টেম রিপোর্টস"
+#: usr/lib/linuxmint/mintreport/app.py:130
+#: usr/lib/linuxmint/mintreport/app.py:158
+msgid "Unknown size"
+msgstr ""
 
-#: usr/lib/linuxmint/mintreport/app.py:199
+#: usr/lib/linuxmint/mintreport/app.py:156
+msgid "Unknown CPU"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/app.py:196
+#: usr/lib/linuxmint/mintreport/app.py:466 generate_desktop_files:25
+#: generate_desktop_files:39 usr/share/linuxmint/mintreport/mintreport.ui.h:5
+msgid "System Information"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/app.py:317
 msgid "Restore ignored reports"
 msgstr "উপেক্ষা করা প্রতিবেদনগুলি(Reports) পুনরুদ্ধার করুন"
 
-#: usr/lib/linuxmint/mintreport/app.py:204
-#: usr/lib/linuxmint/mintreport/tray.py:72
+#: usr/lib/linuxmint/mintreport/app.py:322
+#: usr/lib/linuxmint/mintreport/tray.py:62
 msgid "Quit"
 msgstr "প্রস্থান করুন"
 
-#: usr/lib/linuxmint/mintreport/app.py:216
-#: usr/lib/linuxmint/mintreport/app.py:235
+#: usr/lib/linuxmint/mintreport/app.py:334
+#: usr/lib/linuxmint/mintreport/app.py:464
 msgid "About"
 msgstr "পরিচিতি"
 
-#: usr/lib/linuxmint/mintreport/app.py:279
+#: usr/lib/linuxmint/mintreport/app.py:350
+msgid "Computer"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/app.py:372
+msgid "Operating System"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/app.py:373
+msgid "Linux Kernel"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/app.py:374
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:28
+msgid "Processor"
+msgstr "প্রসেসর"
+
+#: usr/lib/linuxmint/mintreport/app.py:377
+msgid "Graphics Card"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/app.py:379
+#: usr/lib/linuxmint/mintreport/app.py:381
+msgid "Memory"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/app.py:379
+#: usr/lib/linuxmint/mintreport/app.py:389
+msgid "GB"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/app.py:385
+msgid "Hard Drives"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/app.py:387
+msgid "Hard Drive"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/app.py:396
+msgid "Desktop Environment"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/app.py:403
+msgid "Display Server"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/app.py:508
 msgid "An error occurred while gathering the system information."
 msgstr "সিস্টেমের তথ্য সংগ্রহ করার সময় একটি সমস্যা দেখা দিয়েছে।"
 
-#: usr/lib/linuxmint/mintreport/app.py:293
+#: usr/lib/linuxmint/mintreport/app.py:519
 msgid "System information copied"
 msgstr "সিস্টেম তথ্য অনুলিপি করা হয়েছে"
 
-#: usr/lib/linuxmint/mintreport/app.py:293
+#: usr/lib/linuxmint/mintreport/app.py:519
 msgid ""
 "Your system information was copied into your clipboard so you can paste it "
 "on the forums."
@@ -55,40 +110,40 @@ msgstr ""
 "আপনার সিস্টেমের তথ্য আপনার ক্লিপবোর্ডে অনুলিপি করা হয়েছে যাতে আপনি এটি "
 "ফোরামে পেস্ট করতে পারেন।"
 
-#: usr/lib/linuxmint/mintreport/app.py:302
+#: usr/lib/linuxmint/mintreport/app.py:527
 msgid "System information uploaded"
 msgstr "সিস্টেম তথ্য আপলোড করা হয়েছে"
 
-#: usr/lib/linuxmint/mintreport/app.py:302
+#: usr/lib/linuxmint/mintreport/app.py:527
 #, python-format
 msgid ""
 "Your system information was uploaded to %s. This link was placed in your "
 "clipboard."
 msgstr ""
 
-#: usr/lib/linuxmint/mintreport/app.py:304
+#: usr/lib/linuxmint/mintreport/app.py:529
 msgid "An error occurred while uploading the system information"
 msgstr "সিস্টেমের তথ্য আপলোড করার সময় একটি ত্রুটি ঘটেছে"
 
-#: usr/lib/linuxmint/mintreport/app.py:304
+#: usr/lib/linuxmint/mintreport/app.py:529
 msgid ""
 "Copy and paste the system information manually into a pastebin site like "
 "https://pastebin.com."
 msgstr ""
 
-#: usr/lib/linuxmint/mintreport/app.py:383
+#: usr/lib/linuxmint/mintreport/app.py:624
 msgid "Ignore this report"
 msgstr "এই প্রতিবেদনটি উপেক্ষা করুন"
 
-#: usr/lib/linuxmint/mintreport/app.py:399
+#: usr/lib/linuxmint/mintreport/app.py:640
 msgid "Are you sure you want to ignore this report?"
 msgstr "আপনি কি নিশ্চিত যে আপনি এই প্রতিবেদনটি উপেক্ষা করতে চান?"
 
-#: usr/lib/linuxmint/mintreport/app.py:400
+#: usr/lib/linuxmint/mintreport/app.py:641
 msgid "The report will be permanently ignored and will no longer be visible."
 msgstr "প্রতিবেদনটি স্থায়ীভাবে উপেক্ষা করা হবে এবং এটি আর দৃশ্যমান হবে না।"
 
-#: usr/lib/linuxmint/mintreport/app.py:489
+#: usr/lib/linuxmint/mintreport/app.py:730
 #, python-format
 msgid ""
 "The debug symbols are missing for %(program)s.\n"
@@ -97,7 +152,7 @@ msgstr ""
 "ডিবাগ প্রতীকগুলি %(program)s জন্য অনুপস্থিত।\n"
 "অনুগ্রহ করে %(package)s ইনস্টল করুন।"
 
-#: usr/lib/linuxmint/mintreport/app.py:503
+#: usr/lib/linuxmint/mintreport/app.py:744
 #, python-format
 msgid ""
 "The package providing %s could not be found.\n"
@@ -108,7 +163,7 @@ msgstr ""
 "আপনি যদি এই ক্র্যাশ প্রতিবেদনের জন্য স্ট্যাক ট্রেস তৈরি করতে চান তবে দয়া "
 "করে এটি পুনরায় ইনস্টল করুন।"
 
-#: usr/lib/linuxmint/mintreport/app.py:531
+#: usr/lib/linuxmint/mintreport/app.py:772
 msgid ""
 "The headers or binaries installed on your system do not match the code which "
 "was executed during the crash.\n"
@@ -122,57 +177,234 @@ msgstr ""
 "'লোকাল ফাইলস' এ একটি স্ট্যাক ট্রেস উপলব্ধ তবে এটির সামগ্রী সম্ভবত "
 "ত্রুটিযুক্ত।"
 
-#: usr/lib/linuxmint/mintreport/tray.py:68
+#: usr/lib/linuxmint/mintreport/bios.py:21
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:10
+msgid "BIOS"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/bios.py:22
+msgid "Motherboard"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/bios.py:32
+#: usr/lib/linuxmint/mintreport/bios.py:53
+#: usr/lib/linuxmint/mintreport/gpu.py:215
+#: usr/lib/linuxmint/mintreport/pci.py:271
+msgid "Brand"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/bios.py:33
+#: usr/lib/linuxmint/mintreport/bios.py:55
+msgid "Version"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/bios.py:34
+msgid "Release"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/bios.py:35
+msgid "Release Date"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/bios.py:38
+#: usr/lib/linuxmint/mintreport/bios.py:41
+msgid "Boot Mode"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/bios.py:39
+#: usr/lib/linuxmint/mintreport/bios.py:43
+#: usr/lib/linuxmint/mintreport/bios.py:50
+msgid "Secure Boot"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/bios.py:39
+#: usr/lib/linuxmint/mintreport/bios.py:50
+msgid "Disabled"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/bios.py:43
+#: usr/lib/linuxmint/mintreport/gpu.py:183
+msgid "Enabled"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/bios.py:46
+#: usr/lib/linuxmint/mintreport/bios.py:48
+msgid "Secure Boot mode"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/bios.py:46
+msgid "Setup Mode (keys not enrolled)"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/bios.py:48
+msgid "User Mode (normal)"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/bios.py:54
+#: usr/lib/linuxmint/mintreport/gpu.py:216
+#: usr/lib/linuxmint/mintreport/usb.py:149
+msgid "Name"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/gpu.py:185
+#: usr/lib/linuxmint/mintreport/gpu.py:211
+msgid "Disabled (Software rendering)"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/gpu.py:195
+msgid "Default GPU"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/gpu.py:196
+msgid "Hardware Acceleration"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/gpu.py:213
+#, python-format
+msgid "Enabled (%s)"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/gpu.py:217
+msgid "PCI ID"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/gpu.py:218
+#: usr/lib/linuxmint/mintreport/pci.py:306
+msgid "Driver"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/gpu.py:220
+msgid "Driver Version"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/gpu.py:225
+msgid "Video Playback"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/pci.py:255
+msgid "Bus"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/pci.py:263
+msgid "Type"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/pci.py:278
+msgid "Device"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/pci.py:298
+#: usr/lib/linuxmint/mintreport/usb.py:162
+msgid "ID"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/pci.py:321
+msgid "Copy the ID"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/pci.py:322
+msgid "Copy the entire row"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/pci.py:352
+#: usr/lib/linuxmint/mintreport/usb.py:355
+msgid "Device ID copied"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/pci.py:352
+msgid "The device ID was copied into your clipboard."
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/pci.py:362
+msgid "Device information copied"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/pci.py:362
+msgid "The device information was copied into your clipboard."
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/tray.py:58
 msgid "Show System Reports"
 msgstr "সিস্টেম প্রতিবেদনগুলি দেখান"
 
-#: usr/lib/linuxmint/mintreport/tray.py:146
+#: usr/lib/linuxmint/mintreport/tray.py:136
 msgid "Some system reports require your attention"
 msgstr "কিছু সিস্টেম প্রতিবেদনে আপনার খতিয়ে দেখা দরকার"
 
-#: usr/lib/linuxmint/mintreport/tray.py:156
+#: usr/lib/linuxmint/mintreport/tray.py:146
 msgid "System Snapshots"
 msgstr ""
 
-#: usr/lib/linuxmint/mintreport/tray.py:156
+#: usr/lib/linuxmint/mintreport/tray.py:146
 msgid "A Timeshift system snapshot is being created."
 msgstr ""
 
-#: usr/lib/linuxmint/mintreport/tray.py:157
+#: usr/lib/linuxmint/mintreport/tray.py:147
 msgid "Automatic Updates"
 msgstr ""
 
-#: usr/lib/linuxmint/mintreport/tray.py:157
+#: usr/lib/linuxmint/mintreport/tray.py:147
 msgid "Automatic updates are being installed."
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/usb.py:39
+#, python-format
+msgid "%d Gbps"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/usb.py:41
+#, python-format
+msgid "%d Mbps"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/usb.py:168
+msgid "Speed"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/usb.py:176
+msgid "Power"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/usb.py:267
+#, python-format
+msgid "USB %(version)s controller (Bus #%(number)s) – Max speed: %(speed)s"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/usb.py:285
+#: usr/lib/linuxmint/mintreport/usb.py:288
+#, python-format
+msgid "%d mA"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/usb.py:336
+#, python-format
+msgid "%s mA max"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/usb.py:355
+msgid "The ID of the device was copied into your clipboard."
 msgstr ""
 
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:23
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:26
 msgid "Troubleshoot problems"
 msgstr "সমস্যার সমাধান বের করুন"
+
+#: generate_desktop_files:53 generate_desktop_files:67
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:13
+msgid "System Reports"
+msgstr "সিস্টেম রিপোর্টস"
 
 #: generate_desktop_files:53
 msgid "Troubleshooting Tool"
 msgstr "সমস্যা সমাধানের সরঞ্জাম"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:1
-msgid "Running system checks..."
-msgstr "সিস্টেম পরীক্ষা চলছে..."
-
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:2
-msgid "No problems were detected"
-msgstr "কোনও সমস্যা সনাক্ত করা যায়নি"
-
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:3
-msgid "System reports"
-msgstr "সিস্টেম প্রতিবেদন"
-
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:4
 msgid "Copy"
 msgstr "অনুলিপি করুন"
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:5
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:2
 msgid ""
 "Copy to clipboard (code tags are added to make it easy to paste the system "
 "information into the forums)"
@@ -180,39 +412,59 @@ msgstr ""
 "ক্লিপবোর্ডে অনুলিপি করুন (ফোরামগুলিতে সিস্টেমের তথ্য আটকানো সহজ করার জন্য "
 "কোড ট্যাগ যুক্ত করা হয়েছে)"
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:6
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:3
 msgid "Upload"
 msgstr "আপলোড করুন"
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:7
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:4
 msgid "Upload to a pastebin service (no personal information included)"
 msgstr ""
 "একটি পেস্টবিন পরিষেবায় আপলোড করুন (কোনও ব্যক্তিগত তথ্য অন্তর্ভুক্ত নেই)"
 
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:6
+msgid "Note: Double-click a device to copy its ID"
+msgstr ""
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:7
+msgid "USB"
+msgstr ""
+
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:8
-msgid "System information"
-msgstr "সিস্টেম সম্পর্কিত তথ্য"
+msgid "GPU"
+msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:9
+msgid "PCI"
+msgstr ""
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:11
+msgid "Running system checks..."
+msgstr "সিস্টেম পরীক্ষা চলছে..."
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:12
+msgid "No problems were detected"
+msgstr "কোনও সমস্যা সনাক্ত করা যায়নি"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:14
 msgid "Crash reports are not available"
 msgstr "ক্র্যাশ রিপোর্ট পাওয়া যায় নি"
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:10
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:15
 msgid ""
 "To enable crash reporting, install systemd-coredump and reboot your computer."
 msgstr ""
 "ক্র্যাশ প্রতিবেদন সক্ষম করতে, systemd-coredump ইনস্টল করুন এবং আপনার "
 "কম্পিউটারটি রিবুট করুন।"
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:11
-msgid "Crash reports:"
-msgstr "ক্র্যাশ রিপোর্ট:"
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:16
+msgid "Crash Reports"
+msgstr ""
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:12
-msgid "Stack trace:"
-msgstr "স্ট্যাক ট্রেস:"
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:17
+msgid "Stack Trace"
+msgstr ""
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:13
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:18
 msgid ""
 "When seeking help, check for existing bug reports, pastebin the trace, share "
 "crash.tar.gz (from Local Files) and explain how to reproduce the crash."
@@ -221,31 +473,31 @@ msgstr ""
 "পেস্টবিন করুন, crash.tar.gz (স্থানীয় ফাইলগুলি থেকে) শেয়ার করুন এবং কীভাবে "
 "ক্রাশটি পুনরুত্পাদন করা যায় তা ব্যাখ্যা করুন।"
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:14
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:19
 msgid "Local Files"
 msgstr "স্থানীয় ফাইলস"
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:15
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:20
 msgid "Open the directory containing crash.tar.gz and its content."
 msgstr "crash.tar.gz এবং এর সামগ্রীযুক্ত ডিরেক্টরি খুলুন।"
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:16
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:21
 msgid "Bug Tracker"
 msgstr "বাগ তালাশকারী(Tracker)"
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:17
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:22
 msgid "Find the most appropriate bug tracker."
 msgstr "সর্বাধিক উপযুক্ত বাগ ট্র্যাকার সন্ধান করুন।"
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:18
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:23
 msgid "Pastebin"
 msgstr "পেস্টবিন"
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:19
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:24
 msgid "Upload the trace to the Internet."
 msgstr "ইন্টারনেটে ট্রেসটি আপলোড করুন।"
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:20
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:25
 msgid ""
 "Developers need to know where the code fails or how to reproduce the issue. "
 "Always provide a trace and reliable instructions to trigger/observe the "
@@ -255,11 +507,7 @@ msgstr ""
 "হবে তা জানতে হবে। সমস্যাটি পুনরুত্পাদন/পর্যবেক্ষণ করার জন্য সর্বদা একটি "
 "ট্রেস এবং নির্ভরযোগ্য নির্দেশাবলী সরবরাহ করুন।"
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:21
-msgid "Crash reports"
-msgstr "ক্র্যাশ রিপোর্ট"
-
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:24
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:27
 msgid "Refresh"
 msgstr "রিফ্রেশ করুন"
 
@@ -433,10 +681,6 @@ msgstr "ভাষা প্যাকগুলি ইনস্টল করুন
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:19
 msgid "Install hardware drivers"
 msgstr "হার্ডওয়্যার ড্রাইভার ইনস্টল করুন"
-
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:28
-msgid "Processor"
-msgstr "প্রসেসর"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:41
 msgid "Unknown"

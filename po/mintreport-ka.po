@@ -7,102 +7,164 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2024-07-02 17:04+0100\n"
-"PO-Revision-Date: 2023-01-14 09:57+0000\n"
+"POT-Creation-Date: 2025-10-23 10:18+0100\n"
+"PO-Revision-Date: 2025-11-15 23:33+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <ka@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2025-08-26 15:25+0000\n"
-"X-Generator: Launchpad (build 919009172d854f2b8e4e8262db447f12f11d25eb)\n"
+"X-Launchpad-Export-Date: 2025-12-12 13:32+0000\n"
+"X-Generator: Launchpad (build 379e22b8475e3402088a4cdb4a6e7936a4d28414)\n"
 "Language: ka\n"
 
-#: usr/lib/linuxmint/mintreport/app.py:84
-#: usr/lib/linuxmint/mintreport/app.py:237 generate_desktop_files:25
-#: generate_desktop_files:39 generate_desktop_files:53
-#: generate_desktop_files:67 usr/share/linuxmint/mintreport/mintreport.ui.h:22
-msgid "System Reports"
-msgstr "სისტემის ანგარიშები"
+#: usr/lib/linuxmint/mintreport/app.py:130
+#: usr/lib/linuxmint/mintreport/app.py:158
+msgid "Unknown size"
+msgstr "უცნობი ზომა"
 
-#: usr/lib/linuxmint/mintreport/app.py:199
+#: usr/lib/linuxmint/mintreport/app.py:156
+msgid "Unknown CPU"
+msgstr "უცნობი პროცესორი"
+
+#: usr/lib/linuxmint/mintreport/app.py:196
+#: usr/lib/linuxmint/mintreport/app.py:466 generate_desktop_files:25
+#: generate_desktop_files:39 usr/share/linuxmint/mintreport/mintreport.ui.h:5
+msgid "System Information"
+msgstr "სისტემის ინფორმაცია"
+
+#: usr/lib/linuxmint/mintreport/app.py:317
 msgid "Restore ignored reports"
-msgstr "იგნორირებული ანგარიშების აღდგენა"
+msgstr "უგულებელყოფილი მოხსენების აღდგენა"
 
-#: usr/lib/linuxmint/mintreport/app.py:204
-#: usr/lib/linuxmint/mintreport/tray.py:72
+#: usr/lib/linuxmint/mintreport/app.py:322
+#: usr/lib/linuxmint/mintreport/tray.py:62
 msgid "Quit"
 msgstr "გასვლა"
 
-#: usr/lib/linuxmint/mintreport/app.py:216
-#: usr/lib/linuxmint/mintreport/app.py:235
+#: usr/lib/linuxmint/mintreport/app.py:334
+#: usr/lib/linuxmint/mintreport/app.py:464
 msgid "About"
-msgstr "შესახებ"
+msgstr "ინფორმაცია"
 
-#: usr/lib/linuxmint/mintreport/app.py:279
+#: usr/lib/linuxmint/mintreport/app.py:350
+msgid "Computer"
+msgstr "კომპიუტერი"
+
+#: usr/lib/linuxmint/mintreport/app.py:372
+msgid "Operating System"
+msgstr "ოპერატიული სისტემა"
+
+#: usr/lib/linuxmint/mintreport/app.py:373
+msgid "Linux Kernel"
+msgstr "ლინუქსის ბირთვი"
+
+#: usr/lib/linuxmint/mintreport/app.py:374
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:28
+msgid "Processor"
+msgstr "პროცესორი"
+
+#: usr/lib/linuxmint/mintreport/app.py:377
+msgid "Graphics Card"
+msgstr "ვიდეო ბარათი"
+
+#: usr/lib/linuxmint/mintreport/app.py:379
+#: usr/lib/linuxmint/mintreport/app.py:381
+msgid "Memory"
+msgstr "მეხსიერება"
+
+#: usr/lib/linuxmint/mintreport/app.py:379
+#: usr/lib/linuxmint/mintreport/app.py:389
+msgid "GB"
+msgstr "გბ"
+
+#: usr/lib/linuxmint/mintreport/app.py:385
+msgid "Hard Drives"
+msgstr "მყარი დისკები"
+
+#: usr/lib/linuxmint/mintreport/app.py:387
+msgid "Hard Drive"
+msgstr "მყარი დისკი"
+
+#: usr/lib/linuxmint/mintreport/app.py:396
+msgid "Desktop Environment"
+msgstr "მაგიდის გარემოცვა"
+
+#: usr/lib/linuxmint/mintreport/app.py:403
+msgid "Display Server"
+msgstr "მონიტორის სერვერი"
+
+#: usr/lib/linuxmint/mintreport/app.py:508
 msgid "An error occurred while gathering the system information."
-msgstr ""
+msgstr "სისტემის ინფორმაციის შეგროვებისას მოხდა შეცდომა."
 
-#: usr/lib/linuxmint/mintreport/app.py:293
+#: usr/lib/linuxmint/mintreport/app.py:519
 msgid "System information copied"
 msgstr "ინფორმაცის სისტემის შესახებ კოპირებულია"
 
-#: usr/lib/linuxmint/mintreport/app.py:293
+#: usr/lib/linuxmint/mintreport/app.py:519
 msgid ""
 "Your system information was copied into your clipboard so you can paste it "
 "on the forums."
 msgstr ""
+"შენი სისტემის ინფორმაცია კოპირებულია რათა შეძლო მისი ფორუმებზე გაზიარება."
 
-#: usr/lib/linuxmint/mintreport/app.py:302
+#: usr/lib/linuxmint/mintreport/app.py:527
 msgid "System information uploaded"
 msgstr "სისტემის ინფორმაცია განახლდა"
 
-#: usr/lib/linuxmint/mintreport/app.py:302
+#: usr/lib/linuxmint/mintreport/app.py:527
 #, python-format
 msgid ""
 "Your system information was uploaded to %s. This link was placed in your "
 "clipboard."
-msgstr ""
+msgstr "შენი სისტემის ინფორმაცია აიტვირთა %s -ზე. ეს ლინკი კოპირებულია."
 
-#: usr/lib/linuxmint/mintreport/app.py:304
+#: usr/lib/linuxmint/mintreport/app.py:529
 msgid "An error occurred while uploading the system information"
-msgstr ""
+msgstr "სისტემის ინფორმაციის ატვირთვისას მოხდა შეცდომა"
 
-#: usr/lib/linuxmint/mintreport/app.py:304
+#: usr/lib/linuxmint/mintreport/app.py:529
 msgid ""
 "Copy and paste the system information manually into a pastebin site like "
 "https://pastebin.com."
 msgstr ""
+"დააკოპირე და ჩასვი სისტემის ინფორმაცია საიტზე როგორიცაა https://pastebin.com."
 
-#: usr/lib/linuxmint/mintreport/app.py:383
+#: usr/lib/linuxmint/mintreport/app.py:624
 msgid "Ignore this report"
-msgstr "ამ ანგარიშის გამოტოვება"
+msgstr "ამ მოხსენების გამოტოვება"
 
-#: usr/lib/linuxmint/mintreport/app.py:399
+#: usr/lib/linuxmint/mintreport/app.py:640
 msgid "Are you sure you want to ignore this report?"
-msgstr ""
+msgstr "დარწმუნებული ხარ რომ ამ მოხსენების უგულებელყოფა გინდა?"
 
-#: usr/lib/linuxmint/mintreport/app.py:400
+#: usr/lib/linuxmint/mintreport/app.py:641
 msgid "The report will be permanently ignored and will no longer be visible."
-msgstr ""
+msgstr "ეს მოხსენება მუდმივად იქნება უგულებელყოფილი და აღარ გამოჩნდება."
 
-#: usr/lib/linuxmint/mintreport/app.py:489
+#: usr/lib/linuxmint/mintreport/app.py:730
 #, python-format
 msgid ""
 "The debug symbols are missing for %(program)s.\n"
 "Please install %(package)s."
 msgstr ""
+"გამართვის სიმბოლოები აკლია %(program)s.\n"
+"გთხოვ დააყენოთ %(package)s."
 
-#: usr/lib/linuxmint/mintreport/app.py:503
+#: usr/lib/linuxmint/mintreport/app.py:744
 #, python-format
 msgid ""
 "The package providing %s could not be found.\n"
 "If you want to generate a stack trace for this crash report, please "
 "reinstall it."
 msgstr ""
+"პროგრამა რომელიც გვაწვდიდა %s ვერ იქნა ნაპოვნი. \n"
+"თუ გინდა რომ წარმოქმნა ამ პრობლემის კვალის მოხსენება, გთოვ ხელახლა დააყენოთ "
+"იგი."
 
-#: usr/lib/linuxmint/mintreport/app.py:531
+#: usr/lib/linuxmint/mintreport/app.py:772
 msgid ""
 "The headers or binaries installed on your system do not match the code which "
 "was executed during the crash.\n"
@@ -110,203 +172,424 @@ msgid ""
 "A stack trace is available in 'Local Files' but its content is probably "
 "inaccurate."
 msgstr ""
+"შენს სისტემაზე დაყენებული სათაურები ან \"ბინარულები\" არ ემთხვევა კოდს "
+"რომელიც გამოყენებული იქნა ამ შეცდომისას.\n"
+"სავარაუდოდ ისინი უკვე განახლდა.\n"
+"კვალი ხელმისაწვდომია 'Local Files'-ში მაგრამ მისი შინაარსი სავარაუდოდ "
+"არასწორია."
 
-#: usr/lib/linuxmint/mintreport/tray.py:68
+#: usr/lib/linuxmint/mintreport/bios.py:21
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:10
+msgid "BIOS"
+msgstr "BIOS"
+
+#: usr/lib/linuxmint/mintreport/bios.py:22
+msgid "Motherboard"
+msgstr "დედადაფა"
+
+#: usr/lib/linuxmint/mintreport/bios.py:32
+#: usr/lib/linuxmint/mintreport/bios.py:53
+#: usr/lib/linuxmint/mintreport/gpu.py:215
+#: usr/lib/linuxmint/mintreport/pci.py:271
+msgid "Brand"
+msgstr "ბრენდი"
+
+#: usr/lib/linuxmint/mintreport/bios.py:33
+#: usr/lib/linuxmint/mintreport/bios.py:55
+msgid "Version"
+msgstr "ვერსია"
+
+#: usr/lib/linuxmint/mintreport/bios.py:34
+msgid "Release"
+msgstr "გამოშვება"
+
+#: usr/lib/linuxmint/mintreport/bios.py:35
+msgid "Release Date"
+msgstr "გამოშვების თარიღი"
+
+#: usr/lib/linuxmint/mintreport/bios.py:38
+#: usr/lib/linuxmint/mintreport/bios.py:41
+msgid "Boot Mode"
+msgstr "ჩატვირთვის მეთოდი"
+
+#: usr/lib/linuxmint/mintreport/bios.py:39
+#: usr/lib/linuxmint/mintreport/bios.py:43
+#: usr/lib/linuxmint/mintreport/bios.py:50
+msgid "Secure Boot"
+msgstr "უსაფრთხო ჩატვირთვა"
+
+#: usr/lib/linuxmint/mintreport/bios.py:39
+#: usr/lib/linuxmint/mintreport/bios.py:50
+msgid "Disabled"
+msgstr "გამორთულია"
+
+#: usr/lib/linuxmint/mintreport/bios.py:43
+#: usr/lib/linuxmint/mintreport/gpu.py:183
+msgid "Enabled"
+msgstr "ჩართულია"
+
+#: usr/lib/linuxmint/mintreport/bios.py:46
+#: usr/lib/linuxmint/mintreport/bios.py:48
+msgid "Secure Boot mode"
+msgstr "უსაფრთხო ჩატვირთვის მეთოდი"
+
+#: usr/lib/linuxmint/mintreport/bios.py:46
+msgid "Setup Mode (keys not enrolled)"
+msgstr "დამყენებლის მეთოდი (გასაღებები არაა ჩარიცხული)"
+
+#: usr/lib/linuxmint/mintreport/bios.py:48
+msgid "User Mode (normal)"
+msgstr "მომხმარებლის მეთოდი (ჩვეულებრივი)"
+
+#: usr/lib/linuxmint/mintreport/bios.py:54
+#: usr/lib/linuxmint/mintreport/gpu.py:216
+#: usr/lib/linuxmint/mintreport/usb.py:149
+msgid "Name"
+msgstr "სახელი"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:185
+#: usr/lib/linuxmint/mintreport/gpu.py:211
+msgid "Disabled (Software rendering)"
+msgstr "გამორთულია (პროგრამის რენდერი)"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:195
+msgid "Default GPU"
+msgstr "ნაგულისხმევი ვიდეობარათი"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:196
+msgid "Hardware Acceleration"
+msgstr "აპარატურის აჩქარება"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:213
+#, python-format
+msgid "Enabled (%s)"
+msgstr "ჩართულია (%s)"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:217
+msgid "PCI ID"
+msgstr "PCI ID"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:218
+#: usr/lib/linuxmint/mintreport/pci.py:306
+msgid "Driver"
+msgstr "დრაივერი"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:220
+msgid "Driver Version"
+msgstr "დრაივერის ვერსია"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:225
+msgid "Video Playback"
+msgstr "ვიდეოს ჩართვა"
+
+#: usr/lib/linuxmint/mintreport/pci.py:255
+msgid "Bus"
+msgstr "\"ბასი\""
+
+#: usr/lib/linuxmint/mintreport/pci.py:263
+msgid "Type"
+msgstr "ტიპი"
+
+#: usr/lib/linuxmint/mintreport/pci.py:278
+msgid "Device"
+msgstr "მოწყობილობა"
+
+#: usr/lib/linuxmint/mintreport/pci.py:298
+#: usr/lib/linuxmint/mintreport/usb.py:162
+msgid "ID"
+msgstr "ID"
+
+#: usr/lib/linuxmint/mintreport/pci.py:321
+msgid "Copy the ID"
+msgstr "დააკოპირე ID"
+
+#: usr/lib/linuxmint/mintreport/pci.py:322
+msgid "Copy the entire row"
+msgstr "დააკოპირე მთელი რიგი"
+
+#: usr/lib/linuxmint/mintreport/pci.py:352
+#: usr/lib/linuxmint/mintreport/usb.py:355
+msgid "Device ID copied"
+msgstr "მოწყობილების ID კოპირებულია"
+
+#: usr/lib/linuxmint/mintreport/pci.py:352
+msgid "The device ID was copied into your clipboard."
+msgstr "მოწყობილობის ID კოპირებულია თქვენს სანიშნში"
+
+#: usr/lib/linuxmint/mintreport/pci.py:362
+msgid "Device information copied"
+msgstr "მოწყობილობის ინფორმაცია დაკოპირებულია"
+
+#: usr/lib/linuxmint/mintreport/pci.py:362
+msgid "The device information was copied into your clipboard."
+msgstr "მოწყობილობის ინფორმაცია კოპირებულია შენს სანიშნში."
+
+#: usr/lib/linuxmint/mintreport/tray.py:58
 msgid "Show System Reports"
-msgstr "სისტემური ანგარიშების ჩვენება"
+msgstr "სისტემური მოხსენება ჩვენება"
+
+#: usr/lib/linuxmint/mintreport/tray.py:136
+msgid "Some system reports require your attention"
+msgstr "ზოგიერთი სისტემის მოხსენება საჭიროების შენს ყურადღებას"
 
 #: usr/lib/linuxmint/mintreport/tray.py:146
-msgid "Some system reports require your attention"
-msgstr ""
-
-#: usr/lib/linuxmint/mintreport/tray.py:156
 msgid "System Snapshots"
-msgstr "სისტემის სწრაფი ასლები"
+msgstr "სისტემის ანაბეჭდები"
 
-#: usr/lib/linuxmint/mintreport/tray.py:156
+#: usr/lib/linuxmint/mintreport/tray.py:146
 msgid "A Timeshift system snapshot is being created."
-msgstr ""
+msgstr "\"თაიმშიფტი\" სისტემის ანაბეჭდი იქმნება."
 
-#: usr/lib/linuxmint/mintreport/tray.py:157
+#: usr/lib/linuxmint/mintreport/tray.py:147
 msgid "Automatic Updates"
 msgstr "ავტომატური განახლებები"
 
-#: usr/lib/linuxmint/mintreport/tray.py:157
+#: usr/lib/linuxmint/mintreport/tray.py:147
 msgid "Automatic updates are being installed."
+msgstr "ავტომატური განახლებები ყენდება"
+
+#: usr/lib/linuxmint/mintreport/usb.py:39
+#, python-format
+msgid "%d Gbps"
+msgstr "%d გბ/წმ"
+
+#: usr/lib/linuxmint/mintreport/usb.py:41
+#, python-format
+msgid "%d Mbps"
+msgstr "%d მბ/წმ"
+
+#: usr/lib/linuxmint/mintreport/usb.py:168
+msgid "Speed"
+msgstr "სიჩქარე"
+
+#: usr/lib/linuxmint/mintreport/usb.py:176
+msgid "Power"
+msgstr "ძალა"
+
+#: usr/lib/linuxmint/mintreport/usb.py:267
+#, python-format
+msgid "USB %(version)s controller (Bus #%(number)s) – Max speed: %(speed)s"
 msgstr ""
+"USB %(version)s მმართველი (\"ბასი\" #%(number)s) - მაქსიმალური სიჩქარე: "
+"%(speed)s"
+
+#: usr/lib/linuxmint/mintreport/usb.py:285
+#: usr/lib/linuxmint/mintreport/usb.py:288
+#, python-format
+msgid "%d mA"
+msgstr "%d mA"
+
+#: usr/lib/linuxmint/mintreport/usb.py:336
+#, python-format
+msgid "%s mA max"
+msgstr "%s mA მაქსიმალური"
+
+#: usr/lib/linuxmint/mintreport/usb.py:355
+msgid "The ID of the device was copied into your clipboard."
+msgstr "ამ მოწყობილობის ID კოპირებულია შენს სანიშნში."
 
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:23
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:26
 msgid "Troubleshoot problems"
 msgstr "პრობლემების გადაწყვეტა"
 
+#: generate_desktop_files:53 generate_desktop_files:67
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:13
+msgid "System Reports"
+msgstr "სისტემის მოხსნენებები"
+
 #: generate_desktop_files:53
 msgid "Troubleshooting Tool"
-msgstr "პრობლემების გადაჭრის პროგრამა"
+msgstr "პრობლემების გადაჭრის ხელსაწყო"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:1
-msgid "Running system checks..."
-msgstr "სისტემური შემოწმებების გაშვება..."
-
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:2
-msgid "No problems were detected"
-msgstr "პრობლემები ნაპოვნი არაა"
-
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:3
-msgid "System reports"
-msgstr "სისტემის ანგარიშები"
-
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:4
 msgid "Copy"
 msgstr "კოპირება"
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:5
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:2
 msgid ""
 "Copy to clipboard (code tags are added to make it easy to paste the system "
 "information into the forums)"
 msgstr ""
+"დააკოპირე სანიშნში (კოდის იარლიყები დამატებულია რათა უფრო მარტივი გახდეს "
+"სისტემის ინფორმაციის ჩასმა ფორუმებზე)"
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:6
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:3
 msgid "Upload"
 msgstr "ატვირთვა"
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:7
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:4
 msgid "Upload to a pastebin service (no personal information included)"
-msgstr ""
+msgstr "ატვირთე \"ფეისთბინის\" სერვისზე (პირადი ინფორმაცია არ შედის)"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:6
+msgid "Note: Double-click a device to copy its ID"
+msgstr "ჩანაწერი: ორჯერ-დააწკაპე მოწყობილობას რათა დააკოპირო მისი ID"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:7
+msgid "USB"
+msgstr "USB"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:8
-msgid "System information"
-msgstr "ინფორმაცია სისტემის შესახებ"
+msgid "GPU"
+msgstr "ვიდეობარათი"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:9
-msgid "Crash reports are not available"
-msgstr ""
+msgid "PCI"
+msgstr "PCI"
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:10
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:11
+msgid "Running system checks..."
+msgstr "სისტემური შემოწმებების გაშვება..."
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:12
+msgid "No problems were detected"
+msgstr "პრობლემები ვერ ვიპონეთ"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:14
+msgid "Crash reports are not available"
+msgstr "ავარიის მოხსენება არაა ხელმისაწვდომი"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:15
 msgid ""
 "To enable crash reporting, install systemd-coredump and reboot your computer."
 msgstr ""
+"ავარიის მოხსენების ჩასართავად, დააყენე systemd-coredump და გადატვირთე შენი "
+"კომპიუტერი."
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:11
-msgid "Crash reports:"
-msgstr ""
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:16
+msgid "Crash Reports"
+msgstr "ავარიების მოხსენებები"
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:12
-msgid "Stack trace:"
-msgstr "სტეკის ტრეისი:"
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:17
+msgid "Stack Trace"
+msgstr "\"სტაკის\" კვალი"
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:13
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:18
 msgid ""
 "When seeking help, check for existing bug reports, pastebin the trace, share "
 "crash.tar.gz (from Local Files) and explain how to reproduce the crash."
 msgstr ""
-
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:14
-msgid "Local Files"
-msgstr "ლოკალური ფაილები"
-
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:15
-msgid "Open the directory containing crash.tar.gz and its content."
-msgstr ""
-
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:16
-msgid "Bug Tracker"
-msgstr "შეცდომების სია"
-
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:17
-msgid "Find the most appropriate bug tracker."
-msgstr ""
-
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:18
-msgid "Pastebin"
-msgstr "Pastebin"
+"როცა დახმარებას ეძებ, შეამოწმე არსებული პრობლემების მოხსენებები, ჩასვი მათი "
+"კვალი \"ფეისთბინში/Pastebin\", გააზიარე crash.tar.gz (Local Files-ებიდან) და "
+"აუხსენი როგორ გაიმეორონ ავარია."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:19
-msgid "Upload the trace to the Internet."
-msgstr ""
+msgid "Local Files"
+msgstr "ადგილობრივი ფაილები"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:20
+msgid "Open the directory containing crash.tar.gz and its content."
+msgstr ""
+"გახსენი საქაღალდე რომელშიც მოთავსებულია crash.tar.gz და მისი შიგთავსი."
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:21
+msgid "Bug Tracker"
+msgstr "კოდის შეცდომების სია"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:22
+msgid "Find the most appropriate bug tracker."
+msgstr "იპოვნე ყველაზე შესაფერისი პრობლემის კვალის შემქმნელი."
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:23
+msgid "Pastebin"
+msgstr "\"ფეისთბინი\"/Pastebin"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:24
+msgid "Upload the trace to the Internet."
+msgstr "ატვირთე კვალი ინტერნეტში."
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:25
 msgid ""
 "Developers need to know where the code fails or how to reproduce the issue. "
 "Always provide a trace and reliable instructions to trigger/observe the "
 "problem."
 msgstr ""
+"დეველოპერებს სჭირდებათ იმის ცოდნა თუ სად მარცხდება კოდი ან როგორ უნდა "
+"გაიმეორონ პრობლემა. ყოველთვის მიაწოდე კვალი და საიმედო მითითებები რათა "
+"გაიმეორონ/დაათვალიერონ პრობლემა."
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:21
-msgid "Crash reports"
-msgstr ""
-
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:24
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:27
 msgid "Refresh"
 msgstr "განახლება"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
 msgid "Add the XApp Status applet"
-msgstr ""
+msgstr "დაამატე \"XApp Status\"-ის \"აფლეტი\""
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:37
 msgid ""
 "The XApp Status applet allows applications to provide a tray icon without "
 "rendering glitches and with support for HiDPI and symbolic icons."
 msgstr ""
+"\"XApp Status\"-ის \"აფლეტი\" აპლიკაციების აძლევს შესაძლებლობას აჩვენონ "
+"ლანგრის ნახატი პრობლემების გარეშე, HiDPI-ს ხელშეწყობით და სიმბოლოებიანი "
+"ნახატებით."
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:39
 msgid "Right-click the panel and choose 'Add to Panel'."
-msgstr ""
+msgstr "მარჯვენა-დააკლიკე პანელზე და აირჩიე 'დაამატე პანელზე'"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:46
 msgid "Add the XApp Status applet to the panel"
-msgstr ""
+msgstr "დაამატე \"XApp Status\"-ის \"აფლეტი\" პანელზე"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:16
 msgid "Install multimedia codecs"
-msgstr ""
+msgstr "დააყენე \"მულტიმედიის კოდეკი\""
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:30
 msgid ""
 "Multimedia codecs are required to play some video formats and to properly "
 "render some websites."
 msgstr ""
+"\"მულტიმედიის კოდეკი\" საჭიროა ზოგიერდი ვიდეოს ფორმატისთვის და ვებსაიტების "
+"სწორად საჩვენებლად."
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:36
 msgid "Install the Multimedia Codecs"
-msgstr ""
+msgstr "დააყენე \"მულტიმედიის კოდეკი\""
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:17
 msgid "Set up the system restore utility"
-msgstr ""
+msgstr "დააყენე სისტემის აღდგენის ხელსაწყო"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:31
 msgid "Linux Mint provides a system restore utility called Timeshift."
 msgstr ""
+"ლინუქს მინტი გთავაზობთ სისტემის აღსადგენ ხელსაწყოს სახელად \"Timeshift\"."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:32
 msgid ""
 "Thanks to Timeshift you can take snapshots of the system, either manually or "
 "automatically."
 msgstr ""
+"\"Timeshift\"-ის წყალობით შეგიძლია შეინახო სისტემის ანაბეჭდი, შენით ან "
+"ავტომატურად."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:33
 msgid ""
 "If something goes wrong you can then restore your operating system from a "
 "previously saved snapshot."
 msgstr ""
+"თუ რამე არასწორად მოხდება შეგიძლია აღადგინო შენი ოპერატიული სისტემა ადრე "
+"შენახული ანაბეჭდით."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:39
 msgid "Launch Timeshift"
-msgstr ""
+msgstr "გაუშვი \"თაიმშიფტი\""
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:18
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:17
 msgid "A new version of Linux Mint is available"
-msgstr ""
+msgstr "ლინუქს მინტის ახალი ვერსია ხელმისაწვდომია"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:48
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:50
 #, python-format
 msgid "Visit %s for the latest announcements."
-msgstr ""
+msgstr "მოინახულე %s უახლესი განცხადებებისათვის."
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:54
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:56
@@ -316,50 +599,52 @@ msgstr "%s-მდე განახლება"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:49
 msgid "Your version of Linux Mint will soon reach End-Of-Life (EOL)"
-msgstr ""
+msgstr "ლინუქს მინტის შენი ვერსია მალე მიაღწევს \"სიცოცხლის-დასასრულს\""
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:50
 #, python-brace-format
 msgid "It will stop receiving support and updates in a day."
 msgid_plural "It will stop receiving support and updates in {num_days} days."
 msgstr[0] ""
-msgstr[1] ""
+"მხარდაჭერას შეწყვეტს და განაახლებს ერთ დღეში. \n"
+"2. მხარდაჭერას შეწყვეტს და განაახლებს {num_days} დღეში."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:54
 msgid "Your version of Linux Mint is no longer supported"
-msgstr ""
+msgstr "ლინუქს მინტის შენ ვერსიას აღარ აქვს მხარდაჭერა"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:55
 #, python-brace-format
 msgid "It reached End-Of-Life (EOL) yesterday."
 msgid_plural "It reached End-Of-Life (EOL) {num_days} days ago."
 msgstr[0] ""
-msgstr[1] ""
+"მიაღწია სიცოცხლის დასასრულს ერთი დღის წინ.\n"
+"2. მიაღწია სიცოცხლის დასასრულს {num_days} დღის წინ."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:66
 #, python-format
 msgid "Visit %s to find information about newer releases."
-msgstr ""
+msgstr "მოინახულე %s ახალი გამოშვებებზე ინფორმაციის საპოვნელად."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:14
 msgid "Perform usrmerge conversion"
-msgstr ""
+msgstr "შეასრულე \"usrmerge\" გარდაქმნა"
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:39
 msgid "We recommend you convert your system with usrmerge."
-msgstr ""
+msgstr "გირჩევთ გარდაგმნა შენი სისტემა \"usrmerge\"-ით."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:40
 msgid "This is done already for new installations of Linux Mint."
-msgstr ""
+msgstr "ეს უკვე მზადაა ახალი ლინუქს მინტის დაყენებებისთვის."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:41
 msgid "To convert your system, open a terminal and type:"
-msgstr ""
+msgstr "შენი სისტემის გარდასაქმნელად, გახსენი ტერმინალი და ჩაწერე:"
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:43
 msgid "You should reboot the computer once this completes."
-msgstr ""
+msgstr "წესით უნდა გადატვირთო კომპიუტერი ამის დასრულების შემდეგ."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:49
 msgid "More information"
@@ -367,41 +652,38 @@ msgstr "მეტი ინფორმაცია"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:17
 msgid "Remove conflicting indicators"
-msgstr ""
+msgstr "ამოშალე წინააღმდეგობრივი მაჩვენებლები"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:37
 msgid "The following packages prevent tray icons from working properly:"
-msgstr ""
+msgstr "შემდეგი პროგრამები ხელს უშლის ლაგრის ნახატებს სწორად მუშაობაში:"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:39
 msgid "Note: You will need to log out after removing them."
-msgstr ""
+msgstr "ჩანაწერი: საჭიროა გადატვირთვა მათი ამოშლის შემდეგ."
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:45
 msgid "Remove the conflicting packages."
-msgstr "კონფლიქტური პაკეტების წაშლა."
+msgstr "წინააღმდეგობრივი პროგრამების წაშლა."
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:26
 msgid "Install language packs"
-msgstr "ენის პაკეტის დაყენება"
+msgstr "დააყენე ენის კონები"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:41
 msgid ""
 "The following localization packages are missing to properly support your "
 "language:"
 msgstr ""
+"შემდეგი ადგილობრივობის კონები არ გვაქვს რათა სწორად შევუწყოთ ხელი შენს ენას:"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:48
 msgid "Install the Language Packs"
-msgstr "ენის პაკეტების დაყენება"
+msgstr "დააყენე ენის კონები"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:19
 msgid "Install hardware drivers"
-msgstr "აპარატურის დრაივერების დაყენება"
-
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:28
-msgid "Processor"
-msgstr "პროცესორი"
+msgstr "დააყენე აპარატურის დრაივერები"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:41
 msgid "Unknown"
@@ -414,8 +696,8 @@ msgstr "%s (უცნობი)"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:100
 msgid "Hardware drivers are available for the following devices:"
-msgstr ""
+msgstr "აპარატურის დრაივერები ხელმისაწვდომია შემდგომი მოწყობილობებისთვის:"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:107
 msgid "Launch the Driver Manager"
-msgstr "დრაივერების მმართველის გაშვება"
+msgstr "ჩართე დრაივერების მმართველი"

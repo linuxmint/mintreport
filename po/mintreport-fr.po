@@ -7,49 +7,104 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2024-07-02 17:04+0100\n"
-"PO-Revision-Date: 2025-01-10 01:24+0000\n"
+"POT-Creation-Date: 2025-10-23 10:18+0100\n"
+"PO-Revision-Date: 2025-10-24 19:14+0000\n"
 "Last-Translator: AO <Unknown>\n"
 "Language-Team: French <fr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Launchpad-Export-Date: 2025-08-26 15:25+0000\n"
-"X-Generator: Launchpad (build 919009172d854f2b8e4e8262db447f12f11d25eb)\n"
+"X-Launchpad-Export-Date: 2025-12-12 13:32+0000\n"
+"X-Generator: Launchpad (build 379e22b8475e3402088a4cdb4a6e7936a4d28414)\n"
 "Language: fr\n"
 
-#: usr/lib/linuxmint/mintreport/app.py:84
-#: usr/lib/linuxmint/mintreport/app.py:237 generate_desktop_files:25
-#: generate_desktop_files:39 generate_desktop_files:53
-#: generate_desktop_files:67 usr/share/linuxmint/mintreport/mintreport.ui.h:22
-msgid "System Reports"
-msgstr "Relevés du système"
+#: usr/lib/linuxmint/mintreport/app.py:130
+#: usr/lib/linuxmint/mintreport/app.py:158
+msgid "Unknown size"
+msgstr "Taille inconnue"
 
-#: usr/lib/linuxmint/mintreport/app.py:199
+#: usr/lib/linuxmint/mintreport/app.py:156
+msgid "Unknown CPU"
+msgstr "Processeur inconnu"
+
+#: usr/lib/linuxmint/mintreport/app.py:196
+#: usr/lib/linuxmint/mintreport/app.py:466 generate_desktop_files:25
+#: generate_desktop_files:39 usr/share/linuxmint/mintreport/mintreport.ui.h:5
+msgid "System Information"
+msgstr "Renseignements sur le système"
+
+#: usr/lib/linuxmint/mintreport/app.py:317
 msgid "Restore ignored reports"
 msgstr "Restaurer les relevés ignorés"
 
-#: usr/lib/linuxmint/mintreport/app.py:204
-#: usr/lib/linuxmint/mintreport/tray.py:72
+#: usr/lib/linuxmint/mintreport/app.py:322
+#: usr/lib/linuxmint/mintreport/tray.py:62
 msgid "Quit"
 msgstr "Quitter"
 
-#: usr/lib/linuxmint/mintreport/app.py:216
-#: usr/lib/linuxmint/mintreport/app.py:235
+#: usr/lib/linuxmint/mintreport/app.py:334
+#: usr/lib/linuxmint/mintreport/app.py:464
 msgid "About"
 msgstr "À propos"
 
-#: usr/lib/linuxmint/mintreport/app.py:279
+#: usr/lib/linuxmint/mintreport/app.py:350
+msgid "Computer"
+msgstr "Ordinateur"
+
+#: usr/lib/linuxmint/mintreport/app.py:372
+msgid "Operating System"
+msgstr "Système d’exploitation"
+
+#: usr/lib/linuxmint/mintreport/app.py:373
+msgid "Linux Kernel"
+msgstr "Noyau Linux"
+
+#: usr/lib/linuxmint/mintreport/app.py:374
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:28
+msgid "Processor"
+msgstr "Processeur"
+
+#: usr/lib/linuxmint/mintreport/app.py:377
+msgid "Graphics Card"
+msgstr "Carte graphique"
+
+#: usr/lib/linuxmint/mintreport/app.py:379
+#: usr/lib/linuxmint/mintreport/app.py:381
+msgid "Memory"
+msgstr "Mémoire"
+
+#: usr/lib/linuxmint/mintreport/app.py:379
+#: usr/lib/linuxmint/mintreport/app.py:389
+msgid "GB"
+msgstr "Go"
+
+#: usr/lib/linuxmint/mintreport/app.py:385
+msgid "Hard Drives"
+msgstr "Disques durs"
+
+#: usr/lib/linuxmint/mintreport/app.py:387
+msgid "Hard Drive"
+msgstr "Disque dur"
+
+#: usr/lib/linuxmint/mintreport/app.py:396
+msgid "Desktop Environment"
+msgstr "Environnement de bureau"
+
+#: usr/lib/linuxmint/mintreport/app.py:403
+msgid "Display Server"
+msgstr "Serveur d’affichage"
+
+#: usr/lib/linuxmint/mintreport/app.py:508
 msgid "An error occurred while gathering the system information."
 msgstr ""
 "Une erreur est survenue lors de la collecte de renseignements sur le système."
 
-#: usr/lib/linuxmint/mintreport/app.py:293
+#: usr/lib/linuxmint/mintreport/app.py:519
 msgid "System information copied"
 msgstr "Les renseignements sur le système ont été copiés"
 
-#: usr/lib/linuxmint/mintreport/app.py:293
+#: usr/lib/linuxmint/mintreport/app.py:519
 msgid ""
 "Your system information was copied into your clipboard so you can paste it "
 "on the forums."
@@ -57,11 +112,11 @@ msgstr ""
 "Les renseignements sur votre système ont été copiés dans le presse-papiers "
 "afin que vous puissiez les partager sur les forums."
 
-#: usr/lib/linuxmint/mintreport/app.py:302
+#: usr/lib/linuxmint/mintreport/app.py:527
 msgid "System information uploaded"
 msgstr "Les renseignements sur le système ont été téléversés"
 
-#: usr/lib/linuxmint/mintreport/app.py:302
+#: usr/lib/linuxmint/mintreport/app.py:527
 #, python-format
 msgid ""
 "Your system information was uploaded to %s. This link was placed in your "
@@ -70,13 +125,13 @@ msgstr ""
 "Les renseignements sur votre système ont été téléversés sur %s. Ce lien a "
 "été copié dans votre presse-papiers."
 
-#: usr/lib/linuxmint/mintreport/app.py:304
+#: usr/lib/linuxmint/mintreport/app.py:529
 msgid "An error occurred while uploading the system information"
 msgstr ""
 "Une erreur est survenue lors du téléversement des renseignements sur le "
 "système"
 
-#: usr/lib/linuxmint/mintreport/app.py:304
+#: usr/lib/linuxmint/mintreport/app.py:529
 msgid ""
 "Copy and paste the system information manually into a pastebin site like "
 "https://pastebin.com."
@@ -84,28 +139,28 @@ msgstr ""
 "Copiez et collez manuellement les renseignements sur le système dans un site "
 "de partage de texte tel que https://pastebin.com."
 
-#: usr/lib/linuxmint/mintreport/app.py:383
+#: usr/lib/linuxmint/mintreport/app.py:624
 msgid "Ignore this report"
 msgstr "Ignorer ce relevé"
 
-#: usr/lib/linuxmint/mintreport/app.py:399
+#: usr/lib/linuxmint/mintreport/app.py:640
 msgid "Are you sure you want to ignore this report?"
 msgstr "Voulez-vous vraiment ignorer ce relevé ?"
 
-#: usr/lib/linuxmint/mintreport/app.py:400
+#: usr/lib/linuxmint/mintreport/app.py:641
 msgid "The report will be permanently ignored and will no longer be visible."
 msgstr "Le relevé sera ignoré définitivement et ne sera plus visible."
 
-#: usr/lib/linuxmint/mintreport/app.py:489
+#: usr/lib/linuxmint/mintreport/app.py:730
 #, python-format
 msgid ""
 "The debug symbols are missing for %(program)s.\n"
 "Please install %(package)s."
 msgstr ""
-"Des symboles de débogage manquent pour %(program)s.\n"
+"Il manque des symboles de débogage pour %(program)s.\n"
 "Installez %(package)s."
 
-#: usr/lib/linuxmint/mintreport/app.py:503
+#: usr/lib/linuxmint/mintreport/app.py:744
 #, python-format
 msgid ""
 "The package providing %s could not be found.\n"
@@ -116,7 +171,7 @@ msgstr ""
 "Si vous souhaitez générer une trace de pile pour ce relevé de plantage, "
 "réinstallez-le."
 
-#: usr/lib/linuxmint/mintreport/app.py:531
+#: usr/lib/linuxmint/mintreport/app.py:772
 msgid ""
 "The headers or binaries installed on your system do not match the code which "
 "was executed during the crash.\n"
@@ -128,59 +183,238 @@ msgstr ""
 "correspondent pas au code qui était exécuté lors du plantage.\n"
 "Ils ont probablement été mis à niveau depuis.\n"
 "Une trace de pile se trouve dans « Fichiers locaux », mais son contenu n’est "
-"probablement pas juste."
+"probablement pas exact."
 
-#: usr/lib/linuxmint/mintreport/tray.py:68
+#: usr/lib/linuxmint/mintreport/bios.py:21
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:10
+msgid "BIOS"
+msgstr "BIOS"
+
+#: usr/lib/linuxmint/mintreport/bios.py:22
+msgid "Motherboard"
+msgstr "Carte mère"
+
+#: usr/lib/linuxmint/mintreport/bios.py:32
+#: usr/lib/linuxmint/mintreport/bios.py:53
+#: usr/lib/linuxmint/mintreport/gpu.py:215
+#: usr/lib/linuxmint/mintreport/pci.py:271
+msgid "Brand"
+msgstr "Marque"
+
+#: usr/lib/linuxmint/mintreport/bios.py:33
+#: usr/lib/linuxmint/mintreport/bios.py:55
+msgid "Version"
+msgstr "Version"
+
+#: usr/lib/linuxmint/mintreport/bios.py:34
+msgid "Release"
+msgstr "Parution"
+
+#: usr/lib/linuxmint/mintreport/bios.py:35
+msgid "Release Date"
+msgstr "Date de parution"
+
+#: usr/lib/linuxmint/mintreport/bios.py:38
+#: usr/lib/linuxmint/mintreport/bios.py:41
+msgid "Boot Mode"
+msgstr "Mode d’amorçage"
+
+#: usr/lib/linuxmint/mintreport/bios.py:39
+#: usr/lib/linuxmint/mintreport/bios.py:43
+#: usr/lib/linuxmint/mintreport/bios.py:50
+msgid "Secure Boot"
+msgstr "Démarrage sécurisé  Secure Boot"
+
+#: usr/lib/linuxmint/mintreport/bios.py:39
+#: usr/lib/linuxmint/mintreport/bios.py:50
+msgid "Disabled"
+msgstr "Désactivé"
+
+#: usr/lib/linuxmint/mintreport/bios.py:43
+#: usr/lib/linuxmint/mintreport/gpu.py:183
+msgid "Enabled"
+msgstr "Activé"
+
+#: usr/lib/linuxmint/mintreport/bios.py:46
+#: usr/lib/linuxmint/mintreport/bios.py:48
+msgid "Secure Boot mode"
+msgstr "Mode Secure Boot"
+
+#: usr/lib/linuxmint/mintreport/bios.py:46
+msgid "Setup Mode (keys not enrolled)"
+msgstr "Mode configuration (clés non enregistrées)"
+
+#: usr/lib/linuxmint/mintreport/bios.py:48
+msgid "User Mode (normal)"
+msgstr "Mode utilisateur (normal)"
+
+#: usr/lib/linuxmint/mintreport/bios.py:54
+#: usr/lib/linuxmint/mintreport/gpu.py:216
+#: usr/lib/linuxmint/mintreport/usb.py:149
+msgid "Name"
+msgstr "Nom"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:185
+#: usr/lib/linuxmint/mintreport/gpu.py:211
+msgid "Disabled (Software rendering)"
+msgstr "Désactivé (Rendu logiciel)"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:195
+msgid "Default GPU"
+msgstr "Processeur graphique principal"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:196
+msgid "Hardware Acceleration"
+msgstr "Accélération matérielle"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:213
+#, python-format
+msgid "Enabled (%s)"
+msgstr "Activé (%s)"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:217
+msgid "PCI ID"
+msgstr "ID PCI"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:218
+#: usr/lib/linuxmint/mintreport/pci.py:306
+msgid "Driver"
+msgstr "Pilote"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:220
+msgid "Driver Version"
+msgstr "Version du pilote"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:225
+msgid "Video Playback"
+msgstr "Lecture vidéo"
+
+#: usr/lib/linuxmint/mintreport/pci.py:255
+msgid "Bus"
+msgstr "Bus"
+
+#: usr/lib/linuxmint/mintreport/pci.py:263
+msgid "Type"
+msgstr "Type"
+
+#: usr/lib/linuxmint/mintreport/pci.py:278
+msgid "Device"
+msgstr "Périphérique"
+
+#: usr/lib/linuxmint/mintreport/pci.py:298
+#: usr/lib/linuxmint/mintreport/usb.py:162
+msgid "ID"
+msgstr "ID"
+
+#: usr/lib/linuxmint/mintreport/pci.py:321
+msgid "Copy the ID"
+msgstr "Copier l’ID"
+
+#: usr/lib/linuxmint/mintreport/pci.py:322
+msgid "Copy the entire row"
+msgstr "Copier la ligne entière"
+
+#: usr/lib/linuxmint/mintreport/pci.py:352
+#: usr/lib/linuxmint/mintreport/usb.py:355
+msgid "Device ID copied"
+msgstr "L’identifiant du périphérique a été copié"
+
+#: usr/lib/linuxmint/mintreport/pci.py:352
+msgid "The device ID was copied into your clipboard."
+msgstr "L’identifiant du périphérique a été copié dans votre presse-papiers."
+
+#: usr/lib/linuxmint/mintreport/pci.py:362
+msgid "Device information copied"
+msgstr "Les renseignements du périphérique ont été copiés"
+
+#: usr/lib/linuxmint/mintreport/pci.py:362
+msgid "The device information was copied into your clipboard."
+msgstr ""
+"Les renseignements du périphérique ont été copiés dans votre presse-papiers."
+
+#: usr/lib/linuxmint/mintreport/tray.py:58
 msgid "Show System Reports"
 msgstr "Afficher les relevés du système"
 
-#: usr/lib/linuxmint/mintreport/tray.py:146
+#: usr/lib/linuxmint/mintreport/tray.py:136
 msgid "Some system reports require your attention"
 msgstr "Certains relevés du système demandent votre attention"
 
-#: usr/lib/linuxmint/mintreport/tray.py:156
+#: usr/lib/linuxmint/mintreport/tray.py:146
 msgid "System Snapshots"
 msgstr "Instantanés système"
 
-#: usr/lib/linuxmint/mintreport/tray.py:156
+#: usr/lib/linuxmint/mintreport/tray.py:146
 msgid "A Timeshift system snapshot is being created."
 msgstr "Un instantané système Timeshift est en cours de création."
 
-#: usr/lib/linuxmint/mintreport/tray.py:157
+#: usr/lib/linuxmint/mintreport/tray.py:147
 msgid "Automatic Updates"
 msgstr "Mises à jour automatiques"
 
-#: usr/lib/linuxmint/mintreport/tray.py:157
+#: usr/lib/linuxmint/mintreport/tray.py:147
 msgid "Automatic updates are being installed."
 msgstr "Des mises à jour automatiques sont en cours d’installation."
 
+#: usr/lib/linuxmint/mintreport/usb.py:39
+#, python-format
+msgid "%d Gbps"
+msgstr "%d Gbit/s"
+
+#: usr/lib/linuxmint/mintreport/usb.py:41
+#, python-format
+msgid "%d Mbps"
+msgstr "%d Mbit/s"
+
+#: usr/lib/linuxmint/mintreport/usb.py:168
+msgid "Speed"
+msgstr "Débit"
+
+#: usr/lib/linuxmint/mintreport/usb.py:176
+msgid "Power"
+msgstr "Puissance"
+
+#: usr/lib/linuxmint/mintreport/usb.py:267
+#, python-format
+msgid "USB %(version)s controller (Bus #%(number)s) – Max speed: %(speed)s"
+msgstr ""
+"Contrôleur USB %(version)s (bus no %(number)s) – Débit maximale : %(speed)s"
+
+#: usr/lib/linuxmint/mintreport/usb.py:285
+#: usr/lib/linuxmint/mintreport/usb.py:288
+#, python-format
+msgid "%d mA"
+msgstr "%d mA"
+
+#: usr/lib/linuxmint/mintreport/usb.py:336
+#, python-format
+msgid "%s mA max"
+msgstr "%s mA maximum"
+
+#: usr/lib/linuxmint/mintreport/usb.py:355
+msgid "The ID of the device was copied into your clipboard."
+msgstr "L’identifiant du périphérique a été copié dans votre presse-papiers."
+
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:23
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:26
 msgid "Troubleshoot problems"
 msgstr "Dépannage des problèmes"
+
+#: generate_desktop_files:53 generate_desktop_files:67
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:13
+msgid "System Reports"
+msgstr "Relevés du système"
 
 #: generate_desktop_files:53
 msgid "Troubleshooting Tool"
 msgstr "Outil de dépannage"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:1
-msgid "Running system checks..."
-msgstr "Vérification du système…"
-
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:2
-msgid "No problems were detected"
-msgstr "Aucun problème n’a été détecté"
-
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:3
-msgid "System reports"
-msgstr "Relevés du système"
-
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:4
 msgid "Copy"
 msgstr "Copier"
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:5
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:2
 msgid ""
 "Copy to clipboard (code tags are added to make it easy to paste the system "
 "information into the forums)"
@@ -188,40 +422,60 @@ msgstr ""
 "Copier dans le presse-papiers (des balises de code sont ajoutées afin de "
 "faciliter le collage des renseignements sur le système dans les forums)"
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:6
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:3
 msgid "Upload"
 msgstr "Téléverser"
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:7
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:4
 msgid "Upload to a pastebin service (no personal information included)"
 msgstr ""
 "Téléverser vers un site de partage de texte (ne comprend aucun renseignement "
 "personnel)"
 
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:6
+msgid "Note: Double-click a device to copy its ID"
+msgstr "Note : double-cliquez sur un périphérique pour copier son ID"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:7
+msgid "USB"
+msgstr "USB"
+
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:8
-msgid "System information"
-msgstr "Renseignements sur le système"
+msgid "GPU"
+msgstr "Processeur graphique"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:9
+msgid "PCI"
+msgstr "PCI"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:11
+msgid "Running system checks..."
+msgstr "Vérification du système…"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:12
+msgid "No problems were detected"
+msgstr "Aucun problème n’a été détecté"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:14
 msgid "Crash reports are not available"
 msgstr "Aucun relevé de plantage n’est proposé"
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:10
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:15
 msgid ""
 "To enable crash reporting, install systemd-coredump and reboot your computer."
 msgstr ""
 "Pour activer les relevés de plantage, installez systemd-coredump et "
 "redémarrez votre ordinateur."
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:11
-msgid "Crash reports:"
-msgstr "Relevés de plantage :"
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:16
+msgid "Crash Reports"
+msgstr "Relevés de plantage"
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:12
-msgid "Stack trace:"
-msgstr "Trace de la pile :"
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:17
+msgid "Stack Trace"
+msgstr "Trace de la pile"
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:13
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:18
 msgid ""
 "When seeking help, check for existing bug reports, pastebin the trace, share "
 "crash.tar.gz (from Local Files) and explain how to reproduce the crash."
@@ -231,31 +485,31 @@ msgstr ""
 "fichier crash.tar.gz (de « Fichiers locaux ») et expliquez comment "
 "reproduire le plantage."
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:14
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:19
 msgid "Local Files"
 msgstr "Fichiers locaux"
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:15
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:20
 msgid "Open the directory containing crash.tar.gz and its content."
 msgstr "Ouvrir le dossier parent de crash.tar.gz et son contenu."
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:16
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:21
 msgid "Bug Tracker"
 msgstr "Système de suivi des bogues"
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:17
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:22
 msgid "Find the most appropriate bug tracker."
 msgstr "Trouver le système de suivi de bogues le plus approprié."
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:18
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:23
 msgid "Pastebin"
 msgstr "Pastebin"
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:19
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:24
 msgid "Upload the trace to the Internet."
 msgstr "Téléverser la trace sur Internet."
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:20
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:25
 msgid ""
 "Developers need to know where the code fails or how to reproduce the issue. "
 "Always provide a trace and reliable instructions to trigger/observe the "
@@ -265,11 +519,7 @@ msgstr ""
 "reproduire le problème. Fournissez toujours une trace ainsi que des "
 "instructions fiables afin de déclencher ou observer le problème."
 
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:21
-msgid "Crash reports"
-msgstr "Relevés de plantage"
-
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:24
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:27
 msgid "Refresh"
 msgstr "Actualiser"
 
@@ -283,7 +533,7 @@ msgid ""
 "rendering glitches and with support for HiDPI and symbolic icons."
 msgstr ""
 "L’applet État XApp permet aux applications de fournir une icône de zone de "
-"notification sans pépins de rendu tout en prenant en charge HiDPI et les "
+"notification sans problèmes de rendu tout en prenant en charge HiDPI et les "
 "icônes symboliques."
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:39
@@ -442,8 +692,8 @@ msgid ""
 "The following localization packages are missing to properly support your "
 "language:"
 msgstr ""
-"Les paquets de localisation suivants manquent pour prendre adéquatement "
-"votre langue en charge :"
+"Les paquets de localisation suivants sont nécessaires pour une prise en "
+"charge complète de votre langue  :"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:48
 msgid "Install the Language Packs"
@@ -452,10 +702,6 @@ msgstr "Installer les paquets de langue"
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:19
 msgid "Install hardware drivers"
 msgstr "Installer des pilotes de périphérique"
-
-#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:28
-msgid "Processor"
-msgstr "Processeur"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:41
 msgid "Unknown"

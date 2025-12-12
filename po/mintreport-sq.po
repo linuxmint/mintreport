@@ -1,23 +1,22 @@
-# Kabyle translation for linuxmint
-# Copyright (c) 2018 Rosetta Contributors and Canonical Ltd 2018
+# Albanian translation for linuxmint
+# Copyright (c) 2025 Rosetta Contributors and Canonical Ltd 2025
 # This file is distributed under the same license as the linuxmint package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2025-10-23 10:18+0100\n"
-"PO-Revision-Date: 2022-05-27 10:44+0000\n"
-"Last-Translator: Yacine Bouklif <Unknown>\n"
-"Language-Team: Kabyle <kab@li.org>\n"
+"PO-Revision-Date: 2025-09-14 12:33+0000\n"
+"Last-Translator: Vilson Gjeci <vilsongjeci@gmail.com>\n"
+"Language-Team: Albanian <sq@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Launchpad-Export-Date: 2025-12-12 13:32+0000\n"
 "X-Generator: Launchpad (build 379e22b8475e3402088a4cdb4a6e7936a4d28414)\n"
-"Language: kab\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:130
 #: usr/lib/linuxmint/mintreport/app.py:158
@@ -36,17 +35,17 @@ msgstr ""
 
 #: usr/lib/linuxmint/mintreport/app.py:317
 msgid "Restore ignored reports"
-msgstr "Err-d ineqqisen yettwattun"
+msgstr "Rikthe raportet e injoruara"
 
 #: usr/lib/linuxmint/mintreport/app.py:322
 #: usr/lib/linuxmint/mintreport/tray.py:62
 msgid "Quit"
-msgstr "Ffeγ"
+msgstr "Dil"
 
 #: usr/lib/linuxmint/mintreport/app.py:334
 #: usr/lib/linuxmint/mintreport/app.py:464
 msgid "About"
-msgstr "Ɣef"
+msgstr "Rreth"
 
 #: usr/lib/linuxmint/mintreport/app.py:350
 msgid "Computer"
@@ -63,7 +62,7 @@ msgstr ""
 #: usr/lib/linuxmint/mintreport/app.py:374
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:28
 msgid "Processor"
-msgstr "Asasker"
+msgstr "Procesor"
 
 #: usr/lib/linuxmint/mintreport/app.py:377
 msgid "Graphics Card"
@@ -97,23 +96,23 @@ msgstr ""
 
 #: usr/lib/linuxmint/mintreport/app.py:508
 msgid "An error occurred while gathering the system information."
-msgstr "Teḍra-d tucḍa deg ujemmeɛ n isallan n unagraw."
+msgstr "Ndodhi një gabim gjatë mbledhjes së informacionit të sistemit."
 
 #: usr/lib/linuxmint/mintreport/app.py:519
 msgid "System information copied"
-msgstr "Talɣut n unagraw tettwasuken"
+msgstr "Informacioni i sistemit u kopjua"
 
 #: usr/lib/linuxmint/mintreport/app.py:519
 msgid ""
 "Your system information was copied into your clipboard so you can paste it "
 "on the forums."
 msgstr ""
-"Isallan n unagraw-inek ttusukknen ɣer tecfawit  ihi tzemreḍ ad ten-senteḍeḍ "
-"deg ufurum."
+"Informacioni i sistemit tuaj u kopjua në kujtesën tuaj të përkohshme, në "
+"mënyrë që ta ngjisni në forume."
 
 #: usr/lib/linuxmint/mintreport/app.py:527
 msgid "System information uploaded"
-msgstr "Talɣut n unagraw tuli"
+msgstr "Informacioni i sistemit u ngarkua"
 
 #: usr/lib/linuxmint/mintreport/app.py:527
 #, python-format
@@ -121,28 +120,33 @@ msgid ""
 "Your system information was uploaded to %s. This link was placed in your "
 "clipboard."
 msgstr ""
+"Informacioni i sistemit tuaj u ngarkua në %s. Ky link u vendos në kujtesën "
+"tuaj të përkohshme."
 
 #: usr/lib/linuxmint/mintreport/app.py:529
 msgid "An error occurred while uploading the system information"
-msgstr "Teḍra-d tuccḍa deg usili n isallan n unagraw"
+msgstr "Ndodhi një gabim gjatë ngarkimit të informacionit të sistemit"
 
 #: usr/lib/linuxmint/mintreport/app.py:529
 msgid ""
 "Copy and paste the system information manually into a pastebin site like "
 "https://pastebin.com."
 msgstr ""
+"Kopjoni dhe ngjisni manualisht informacionin e sistemit në një faqe pastebin "
+"si https://pastebin.com."
 
 #: usr/lib/linuxmint/mintreport/app.py:624
 msgid "Ignore this report"
-msgstr "Ttu aneqqis-agi"
+msgstr "Injoroje këtë raport"
 
 #: usr/lib/linuxmint/mintreport/app.py:640
 msgid "Are you sure you want to ignore this report?"
-msgstr "Tettḥeqqeḍ belli tebɣiḍ ad tettuḍ aneqqis-agi ?"
+msgstr "Je i sigurt që dëshiron ta injorosh këtë raport?"
 
 #: usr/lib/linuxmint/mintreport/app.py:641
 msgid "The report will be permanently ignored and will no longer be visible."
-msgstr "Aneqqisi ad yettwattu i lebda yerna dayen ur yettban ara."
+msgstr ""
+"Raporti do të injorohet përgjithmonë dhe nuk do të jetë më i dukshëm."
 
 #: usr/lib/linuxmint/mintreport/app.py:730
 #, python-format
@@ -150,8 +154,8 @@ msgid ""
 "The debug symbols are missing for %(program)s.\n"
 "Please install %(package)s."
 msgstr ""
-"Izamulen n useɣti xuṣṣen i %(program)s.\n"
-"Ttxil-k sbedd %(package)s."
+"Simbolet e debugimit mungojnë për %(program)s. \n"
+"Ju lutem instaloni %(package)s."
 
 #: usr/lib/linuxmint/mintreport/app.py:744
 #, python-format
@@ -160,9 +164,9 @@ msgid ""
 "If you want to generate a stack trace for this crash report, please "
 "reinstall it."
 msgstr ""
-"Akemmus i d-yettakken %s ur yettwaf ara.\n"
-"Iwakken ad d-teslaleḍ adriz imnennan i uneqqis-agi n uɣelluy, ttxil-k sbedd-"
-"it tikkelt-nniḍen."
+"Paketa që ofron %s nuk mund të gjendet. \n"
+"Nëse doni të gjeneroni një gjurmë grumbulli për këtë raport rrëzimi, ju "
+"lutemi ta riinstaloni atë."
 
 #: usr/lib/linuxmint/mintreport/app.py:772
 msgid ""
@@ -172,11 +176,11 @@ msgid ""
 "A stack trace is available in 'Local Files' but its content is probably "
 "inaccurate."
 msgstr ""
-"Ifuyla imisinen neɣ n inixfen ittusbedden deg unagraw-inek ur nmeɣran ara "
-"akked tengalt ittuselkmen mi d-yella uɣelluy. Ahat ttwaleqqmen seg yimir-"
-"nni.\n"
-"Adriz imnennan iwjed di 'Ifuyla idiganen' maca agbur-ines ahat mačči d "
-"imekdi."
+"Titujt ose skedarët binare të instaluar në sistemin tuaj nuk përputhen me "
+"kodin që u ekzekutua gjatë rrëzimit. \n"
+"Me shumë mundësi ato janë përditësuar që atëherë. \n"
+"Një gjurmë e grumbullit është e disponueshme në 'Skedarët Lokalë', por "
+"përmbajtja e saj ndoshta është e pasaktë."
 
 #: usr/lib/linuxmint/mintreport/bios.py:21
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:10
@@ -326,27 +330,27 @@ msgstr ""
 
 #: usr/lib/linuxmint/mintreport/tray.py:58
 msgid "Show System Reports"
-msgstr "Sken ineqqisen n unagraw"
+msgstr "Shfaq Raportet e Sistemit"
 
 #: usr/lib/linuxmint/mintreport/tray.py:136
 msgid "Some system reports require your attention"
-msgstr "Kra n yineqqisen n unagraw sran tamawt-inek"
+msgstr "Disa raporte të sistemit kërkojnë vëmendjen tuaj"
 
 #: usr/lib/linuxmint/mintreport/tray.py:146
 msgid "System Snapshots"
-msgstr "Tuṭṭfiwin n unagraw"
+msgstr "Pamje të shpejta të sistemit"
 
 #: usr/lib/linuxmint/mintreport/tray.py:146
 msgid "A Timeshift system snapshot is being created."
-msgstr ""
+msgstr "Po krijohet një pamje e sistemit Timeshift."
 
 #: usr/lib/linuxmint/mintreport/tray.py:147
 msgid "Automatic Updates"
-msgstr "Ileqman iwurmanen"
+msgstr "Përditësime automatike"
 
 #: usr/lib/linuxmint/mintreport/tray.py:147
 msgid "Automatic updates are being installed."
-msgstr "Ileqman iwurmanen tteddun ad ttwasbedden"
+msgstr "Po instalohen përditësime automatike."
 
 #: usr/lib/linuxmint/mintreport/usb.py:39
 #, python-format
@@ -390,36 +394,36 @@ msgstr ""
 #: generate_desktop_files:53 generate_desktop_files:67
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:26
 msgid "Troubleshoot problems"
-msgstr "Aseggem n wuguren"
+msgstr "Zgjidh problemet"
 
 #: generate_desktop_files:53 generate_desktop_files:67
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:13
 msgid "System Reports"
-msgstr "Ineqqisen n unagraw"
+msgstr "Raportet e Sistemit"
 
 #: generate_desktop_files:53
 msgid "Troubleshooting Tool"
-msgstr "Allalen n useggem"
+msgstr "Mjet për zgjidhjen e problemeve"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:1
 msgid "Copy"
-msgstr "Suken"
+msgstr "Kopjo"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:2
 msgid ""
 "Copy to clipboard (code tags are added to make it easy to paste the system "
 "information into the forums)"
 msgstr ""
-"Sukken ɣer tecfawit  (ticraḍ n tengalt ttwarennant iwakken ad yishil usenteḍ-"
-"ines deg yifurumen)"
+"Kopjo në kujtesën e përkohshme (shtohen etiketa kodi për ta bërë të lehtë "
+"ngjitjen e informacionit të sistemit në forume)"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:3
 msgid "Upload"
-msgstr "Sili"
+msgstr "Ngarko"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:4
 msgid "Upload to a pastebin service (no personal information included)"
-msgstr "Sili ɣer umeẓlu n pastebin  (ur tteddun ara isallan udmawanen)"
+msgstr "Ngarko në një shërbim pastebin (pa përfshirë informacione personale)"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:6
 msgid "Note: Double-click a device to copy its ID"
@@ -439,22 +443,22 @@ msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:11
 msgid "Running system checks..."
-msgstr "Selkem iselkinen n unagraw..."
+msgstr "Duke ekzekutuar kontrollet e sistemit..."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:12
 msgid "No problems were detected"
-msgstr "Ulac ugur yettwafen"
+msgstr "Nuk u zbuluan probleme"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:14
 msgid "Crash reports are not available"
-msgstr "Ineqqisen n uɣelluy ur wjiden ara"
+msgstr "Raportet e aksidenteve nuk janë të disponueshme"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:15
 msgid ""
 "To enable crash reporting, install systemd-coredump and reboot your computer."
 msgstr ""
-"Iwakken ad tesremdeḍ ineqqisen n uɣelluy, sbedd systemd-coredump  sakin "
-"sekker tikkelt-nniḍen aselkim-inek."
+"Për të aktivizuar raportimin e rrëzimeve, instaloni systemd-coredump dhe "
+"rinisni kompjuterin tuaj."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:16
 msgid "Crash Reports"
@@ -469,25 +473,25 @@ msgid ""
 "When seeking help, check for existing bug reports, pastebin the trace, share "
 "crash.tar.gz (from Local Files) and explain how to reproduce the crash."
 msgstr ""
-"Ma tettnadiḍ tallalt, nadi gar ineqqisen n tuccḍa i yellan, azen adriz ɣer "
-"pastebin, zuzer afaylu crash.tar.gz (seg ifuyla idiganen) yerna sfehm-d amek "
-"ara talseḍ aɣelluy."
+"Kur kërkoni ndihmë, kontrolloni për raportet ekzistuese të gabimeve, "
+"pastebin gjurmën, ndani crash.tar.gz (nga Local Files) dhe shpjegoni se si "
+"ta riprodhoni rrëzimin."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:19
 msgid "Local Files"
-msgstr "Ifuyla idiganen"
+msgstr "Skedarët lokalë"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:20
 msgid "Open the directory containing crash.tar.gz and its content."
-msgstr "Ldi akaram igebren crash.tar.gz  d ugbur is."
+msgstr "Hapni direktorinë që përmban crash.tar.gz dhe përmbajtjen e tij."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:21
 msgid "Bug Tracker"
-msgstr "Aḍfaṛ ibugen"
+msgstr "Gjurmues i defekteve"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:22
 msgid "Find the most appropriate bug tracker."
-msgstr "Afed aḍfaṛ ibugen ilaqen."
+msgstr "Gjej gjurmuesin më të përshtatshëm të defekteve."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:23
 msgid "Pastebin"
@@ -495,7 +499,7 @@ msgstr "Pastebin"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:24
 msgid "Upload the trace to the Internet."
-msgstr "Azen adriz ɣer internet."
+msgstr "Ngarko gjurmën në internet."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:25
 msgid ""
@@ -503,198 +507,199 @@ msgid ""
 "Always provide a trace and reliable instructions to trigger/observe the "
 "problem."
 msgstr ""
-"Ineflayen sran ad ẓren anida tɣelli tengalt, amek ara alsen i uɣelluy. Yalas "
-"ttakk-d adriz akked isallan ɣef wamek ara neḍfer neɣ ara nwali ugur."
+"Zhvilluesit duhet të dinë se ku dështon kodi ose si ta riprodhojnë "
+"problemin. Gjithmonë jepni një gjurmë dhe udhëzime të besueshme për të "
+"shkaktuar/vëzhguar problemin."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:27
 msgid "Refresh"
-msgstr "Sismeḍ"
+msgstr "Rifresko"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
 msgid "Add the XApp Status applet"
-msgstr "Rnu asnas n waddad XApp"
+msgstr "Shtoni aplikacionin e Statusit XApp"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:37
 msgid ""
 "The XApp Status applet allows applications to provide a tray icon without "
 "rendering glitches and with support for HiDPI and symbolic icons."
 msgstr ""
-"Asnas n waddad XApp ad yeǧǧ isnasen iwakken ad d-fken tignit n tfeggagt n "
-"twura war ugur n tririt, acku yettɛawan tiddin n tignitin HiDPI akked "
-"tignitin tizamulanin."
+"Apleti XApp Status u lejon aplikacioneve të ofrojnë një ikonë në tabaka pa "
+"probleme në renderim dhe me mbështetje për ikonat HiDPI dhe simbolike."
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:39
 msgid "Right-click the panel and choose 'Add to Panel'."
-msgstr "Sit s teqfalt tayefust n tɣerdayt sakin fren 'Rnu ɣer ugalis'."
+msgstr "Klikoni me të djathtën mbi panelin dhe zgjidhni 'Shto në Panel'."
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:46
 msgid "Add the XApp Status applet to the panel"
-msgstr "Rnu addad nXApp ɣer  ugalis"
+msgstr "Shtoni aplikacionin XApp Status në panel"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:16
 msgid "Install multimedia codecs"
-msgstr "Sebded ikudiken n ugetmidya"
+msgstr "Instaloni kodekët multimedialë"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:30
 msgid ""
 "Multimedia codecs are required to play some video formats and to properly "
 "render some websites."
 msgstr ""
-"Ttwasran ikudaken igetmidyaten iwakken ad ddun kra n imasalen ividyuten "
-"yerna ad ttwabeqqeḍen kra n isemlen akken iwata."
+"Kodekët multimedialë janë të nevojshëm për të luajtur disa formate video dhe "
+"për të renderuar siç duhet disa faqe interneti."
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:36
 msgid "Install the Multimedia Codecs"
-msgstr "Sebded ikudiken n ugetmidya"
+msgstr "Instaloni Kodekët Multimedialë"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:17
 msgid "Set up the system restore utility"
-msgstr "Seɣwer ahil n tririt n unagraw"
+msgstr "Konfiguroni programin e rikthimit të sistemit"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:31
 msgid "Linux Mint provides a system restore utility called Timeshift."
-msgstr "Linux Mint yesɛa ahil i tririt n unagraw isem-is Timeshift."
+msgstr ""
+"Linux Mint ofron një program për rikthimin e sistemit të quajtur Timeshift."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:32
 msgid ""
 "Thanks to Timeshift you can take snapshots of the system, either manually or "
 "automatically."
 msgstr ""
-"S ttawil n Timeshift tzemreḍ ad teṭṭfeḍ tiwaṭṭfiwin n unagraw, ama s ufus "
-"ama s wudem awurman."
+"Falë Timeshift, mund të bëni pamje të sistemit, manualisht ose automatikisht."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:33
 msgid ""
 "If something goes wrong you can then restore your operating system from a "
 "previously saved snapshot."
 msgstr ""
-"Ma yella kra yerẓen tzemreḍ ad d-terreḍ anagraw n wamud inek si tuṭṭfa i "
-"teskelseḍ yakan."
+"Nëse diçka shkon keq, mund ta rivendosni sistemin tuaj operativ nga një "
+"pamje e ruajtur më parë."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:39
 msgid "Launch Timeshift"
-msgstr "SekkerTimeshift"
+msgstr "Hap \"Zhvendosjen e Kohës\""
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:18
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:17
 msgid "A new version of Linux Mint is available"
-msgstr "Lqem amaynut n Linux Mint yewjed"
+msgstr "Një version i ri i Linux Mint është i disponueshëm"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:48
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:50
 #, python-format
 msgid "Visit %s for the latest announcements."
-msgstr "Rzu ɣer %s akken ad tafeḍ isallan ineggura."
+msgstr "Vizitoni %s për njoftimet më të fundit."
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:54
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:56
 #, python-format
 msgid "Upgrade to %s"
-msgstr "Sali lqem ɣer %s"
+msgstr "Përmirëso në %s"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:49
 msgid "Your version of Linux Mint will soon reach End-Of-Life (EOL)"
-msgstr "Lqem n Linux Mint inek qrib ad yaweḍ taggara n tudert-ines"
+msgstr ""
+"Versioni juaj i Linux Mint së shpejti do të arrijë në Fundin e Jetës (EOL)"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:50
 #, python-brace-format
 msgid "It will stop receiving support and updates in a day."
 msgid_plural "It will stop receiving support and updates in {num_days} days."
 msgstr[0] ""
-"Yegra-yas-d yiwen n wass, imir ad yeḥbes ur d-yettaṭṭaf ara taneṭṭuft  akked "
-"ileqman."
+"Do të ndalojë së marri mbështetje dhe përditësime brenda një dite."
 msgstr[1] ""
-"Gran-as-d {num_days} n wussan,  imir ad yeḥbes ur d-yettaṭṭaf ara taneṭṭuft  "
-"akked ileqman."
+"Do të ndalojë së marri mbështetje dhe përditësime pas {num_days} ditësh."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:54
 msgid "Your version of Linux Mint is no longer supported"
-msgstr "Lqem n Linux Mint inek dayen ur yesɛi ara taneṭṭuft"
+msgstr "Versioni juaj i Linux Mint nuk mbështetet më"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:55
 #, python-brace-format
 msgid "It reached End-Of-Life (EOL) yesterday."
 msgid_plural "It reached End-Of-Life (EOL) {num_days} days ago."
-msgstr[0] "Yewweḍ taggara n tudert-ines iḍelli."
-msgstr[1] "Yewweḍ taggara n tudert-ines  {num_days} n wussan aya."
+msgstr[0] "Arriti në Fundin e Jetës (EOL) dje."
+msgstr[1] "Arriti në Fundin e Jetës (EOL) {num_days} ditë më parë."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:66
 #, python-format
 msgid "Visit %s to find information about newer releases."
-msgstr "Rzu ɣer %s iwakken ad tafeḍ isallan ɣef ileqman imaynuten."
+msgstr "Vizitoni %s për të gjetur informacion rreth versioneve më të reja."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:14
 msgid "Perform usrmerge conversion"
-msgstr "Eg aselket n usrmerge"
+msgstr "Kryej konvertimin usrmerge"
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:39
 msgid "We recommend you convert your system with usrmerge."
-msgstr "Ad k m-nsemter ad tselkteḍ anagraw-inek inem s usrmerge."
+msgstr "Ne ju rekomandojmë të konvertoni sistemin tuaj me usrmerge."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:40
 msgid "This is done already for new installations of Linux Mint."
-msgstr ""
+msgstr "Kjo është bërë tashmë për instalimet e reja të Linux Mint."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:41
 msgid "To convert your system, open a terminal and type:"
-msgstr "Akken ad tselkteḍ anagraw-inek inem, ldi tadiwent u taruḍ:"
+msgstr "Për të konvertuar sistemin tuaj, hapni një terminal dhe shkruani:"
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:43
 msgid "You should reboot the computer once this completes."
-msgstr "Isefk ad talseḍ asekker n uselkim mi yemmed wayagi."
+msgstr "Duhet ta rinisni kompjuterin pasi të përfundojë kjo."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:49
 msgid "More information"
-msgstr "Ugar n telɣut"
+msgstr "Më shumë informacion"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:17
 msgid "Remove conflicting indicators"
-msgstr "Kkes inamalen ittemceččawen"
+msgstr "Hiq treguesit kontradiktues"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:37
 msgid "The following packages prevent tray icons from working properly:"
-msgstr "Ikemmusen-agi ur ttaǧǧan ara taɣzut n telɣut ad telḥu akken iwata:"
+msgstr ""
+"Paketat e mëposhtme parandalojnë funksionimin e duhur të ikonave të tabakasë:"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:39
 msgid "Note: You will need to log out after removing them."
-msgstr "Tamawt: tesraḍ ad tsensreḍ ticki tekkseḍ-ten."
+msgstr "Shënim: Do të duhet të dilni pasi t'i hiqni ato."
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:45
 msgid "Remove the conflicting packages."
-msgstr "Kkes ikemmusen yetteceččawen."
+msgstr "Hiq paketat kontradiktore."
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:26
 msgid "Install language packs"
-msgstr "Sebded ikemussen n tutlayt"
+msgstr "Instalo paketat gjuhësore"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:41
 msgid ""
 "The following localization packages are missing to properly support your "
 "language:"
 msgstr ""
-"Ikemmusen-agi n usideg xuṣṣen iwakken ad teddu tutlayt-inek akken iwata:"
+"Paketat e mëposhtme të lokalizimit mungojnë për të mbështetur siç duhet "
+"gjuhën tuaj:"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:48
 msgid "Install the Language Packs"
-msgstr "Sebded ikemussen n tutlayt"
+msgstr "Instaloni Paketat Gjuhësore"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:19
 msgid "Install hardware drivers"
-msgstr "Sbedd inuḍaf n warrum"
+msgstr "Instaloni drajverët e pajisjeve"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:41
 msgid "Unknown"
-msgstr "Ur yettwassen ara"
+msgstr "I panjohur"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:45
 #, python-format
 msgid "%s (unknown)"
-msgstr "%s (ur yettwassen ara)"
+msgstr "%s (i panjohur)"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:100
 msgid "Hardware drivers are available for the following devices:"
-msgstr "Inuḍaf n warum wejden deg yibenkan-agi:"
+msgstr "Drajverët e pajisjeve janë të disponueshëm për pajisjet e mëposhtme:"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:107
 msgid "Launch the Driver Manager"
-msgstr "Sekker amsefrak n inuḍafen"
+msgstr "Hap Menaxherin e Drajverëve"
