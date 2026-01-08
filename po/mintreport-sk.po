@@ -8,30 +8,30 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2025-10-23 10:18+0100\n"
-"PO-Revision-Date: 2024-07-09 10:50+0000\n"
+"PO-Revision-Date: 2025-12-21 14:37+0000\n"
 "Last-Translator: menom <Unknown>\n"
 "Language-Team: Slovak <sk@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
-"X-Launchpad-Export-Date: 2025-12-12 13:32+0000\n"
-"X-Generator: Launchpad (build 379e22b8475e3402088a4cdb4a6e7936a4d28414)\n"
+"X-Launchpad-Export-Date: 2026-01-08 15:43+0000\n"
+"X-Generator: Launchpad (build 99c00f518760bdd50fc6e353e7736d2fff8fba4a)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:130
 #: usr/lib/linuxmint/mintreport/app.py:158
 msgid "Unknown size"
-msgstr ""
+msgstr "Neznáma veľkosť"
 
 #: usr/lib/linuxmint/mintreport/app.py:156
 msgid "Unknown CPU"
-msgstr ""
+msgstr "Neznámy procesor"
 
 #: usr/lib/linuxmint/mintreport/app.py:196
 #: usr/lib/linuxmint/mintreport/app.py:466 generate_desktop_files:25
 #: generate_desktop_files:39 usr/share/linuxmint/mintreport/mintreport.ui.h:5
 msgid "System Information"
-msgstr ""
+msgstr "Systémové informácie"
 
 #: usr/lib/linuxmint/mintreport/app.py:317
 msgid "Restore ignored reports"
@@ -49,15 +49,15 @@ msgstr "O aplikácii"
 
 #: usr/lib/linuxmint/mintreport/app.py:350
 msgid "Computer"
-msgstr ""
+msgstr "Počítač"
 
 #: usr/lib/linuxmint/mintreport/app.py:372
 msgid "Operating System"
-msgstr ""
+msgstr "Operačný systém"
 
 #: usr/lib/linuxmint/mintreport/app.py:373
 msgid "Linux Kernel"
-msgstr ""
+msgstr "Linuxové jadro"
 
 #: usr/lib/linuxmint/mintreport/app.py:374
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:28
@@ -66,33 +66,33 @@ msgstr "Procesor"
 
 #: usr/lib/linuxmint/mintreport/app.py:377
 msgid "Graphics Card"
-msgstr ""
+msgstr "Grafická karta"
 
 #: usr/lib/linuxmint/mintreport/app.py:379
 #: usr/lib/linuxmint/mintreport/app.py:381
 msgid "Memory"
-msgstr ""
+msgstr "Pamäť"
 
 #: usr/lib/linuxmint/mintreport/app.py:379
 #: usr/lib/linuxmint/mintreport/app.py:389
 msgid "GB"
-msgstr ""
+msgstr "GB"
 
 #: usr/lib/linuxmint/mintreport/app.py:385
 msgid "Hard Drives"
-msgstr ""
+msgstr "Pevné disky"
 
 #: usr/lib/linuxmint/mintreport/app.py:387
 msgid "Hard Drive"
-msgstr ""
+msgstr "Pevný disk"
 
 #: usr/lib/linuxmint/mintreport/app.py:396
 msgid "Desktop Environment"
-msgstr ""
+msgstr "Pracovné prostredie"
 
 #: usr/lib/linuxmint/mintreport/app.py:403
 msgid "Display Server"
-msgstr ""
+msgstr "Zobrazovací server"
 
 #: usr/lib/linuxmint/mintreport/app.py:508
 msgid "An error occurred while gathering the system information."
@@ -184,148 +184,148 @@ msgstr ""
 #: usr/lib/linuxmint/mintreport/bios.py:21
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:10
 msgid "BIOS"
-msgstr ""
+msgstr "BIOS"
 
 #: usr/lib/linuxmint/mintreport/bios.py:22
 msgid "Motherboard"
-msgstr ""
+msgstr "Základná doska"
 
 #: usr/lib/linuxmint/mintreport/bios.py:32
 #: usr/lib/linuxmint/mintreport/bios.py:53
 #: usr/lib/linuxmint/mintreport/gpu.py:215
 #: usr/lib/linuxmint/mintreport/pci.py:271
 msgid "Brand"
-msgstr ""
+msgstr "Značka"
 
 #: usr/lib/linuxmint/mintreport/bios.py:33
 #: usr/lib/linuxmint/mintreport/bios.py:55
 msgid "Version"
-msgstr ""
+msgstr "Verzia"
 
 #: usr/lib/linuxmint/mintreport/bios.py:34
 msgid "Release"
-msgstr ""
+msgstr "Vydanie"
 
 #: usr/lib/linuxmint/mintreport/bios.py:35
 msgid "Release Date"
-msgstr ""
+msgstr "Dátum vydania"
 
 #: usr/lib/linuxmint/mintreport/bios.py:38
 #: usr/lib/linuxmint/mintreport/bios.py:41
 msgid "Boot Mode"
-msgstr ""
+msgstr "Režim zavádzania"
 
 #: usr/lib/linuxmint/mintreport/bios.py:39
 #: usr/lib/linuxmint/mintreport/bios.py:43
 #: usr/lib/linuxmint/mintreport/bios.py:50
 msgid "Secure Boot"
-msgstr ""
+msgstr "Secure Boot"
 
 #: usr/lib/linuxmint/mintreport/bios.py:39
 #: usr/lib/linuxmint/mintreport/bios.py:50
 msgid "Disabled"
-msgstr ""
+msgstr "Vypnuté"
 
 #: usr/lib/linuxmint/mintreport/bios.py:43
 #: usr/lib/linuxmint/mintreport/gpu.py:183
 msgid "Enabled"
-msgstr ""
+msgstr "Zapnuté"
 
 #: usr/lib/linuxmint/mintreport/bios.py:46
 #: usr/lib/linuxmint/mintreport/bios.py:48
 msgid "Secure Boot mode"
-msgstr ""
+msgstr "Secure Boot režim"
 
 #: usr/lib/linuxmint/mintreport/bios.py:46
 msgid "Setup Mode (keys not enrolled)"
-msgstr ""
+msgstr "Režim nastavenia (kľúče nie sú zaregistrované)"
 
 #: usr/lib/linuxmint/mintreport/bios.py:48
 msgid "User Mode (normal)"
-msgstr ""
+msgstr "Používateľský režim (normálny)"
 
 #: usr/lib/linuxmint/mintreport/bios.py:54
 #: usr/lib/linuxmint/mintreport/gpu.py:216
 #: usr/lib/linuxmint/mintreport/usb.py:149
 msgid "Name"
-msgstr ""
+msgstr "Názov"
 
 #: usr/lib/linuxmint/mintreport/gpu.py:185
 #: usr/lib/linuxmint/mintreport/gpu.py:211
 msgid "Disabled (Software rendering)"
-msgstr ""
+msgstr "Vypnuté (softvérové vykresľovanie)"
 
 #: usr/lib/linuxmint/mintreport/gpu.py:195
 msgid "Default GPU"
-msgstr ""
+msgstr "Predvolené GPU"
 
 #: usr/lib/linuxmint/mintreport/gpu.py:196
 msgid "Hardware Acceleration"
-msgstr ""
+msgstr "Hardvérová akcelerácia"
 
 #: usr/lib/linuxmint/mintreport/gpu.py:213
 #, python-format
 msgid "Enabled (%s)"
-msgstr ""
+msgstr "Zapnuté (%s)"
 
 #: usr/lib/linuxmint/mintreport/gpu.py:217
 msgid "PCI ID"
-msgstr ""
+msgstr "PCI ID"
 
 #: usr/lib/linuxmint/mintreport/gpu.py:218
 #: usr/lib/linuxmint/mintreport/pci.py:306
 msgid "Driver"
-msgstr ""
+msgstr "Ovládač"
 
 #: usr/lib/linuxmint/mintreport/gpu.py:220
 msgid "Driver Version"
-msgstr ""
+msgstr "Verzia ovládača"
 
 #: usr/lib/linuxmint/mintreport/gpu.py:225
 msgid "Video Playback"
-msgstr ""
+msgstr "Prehrávanie videa"
 
 #: usr/lib/linuxmint/mintreport/pci.py:255
 msgid "Bus"
-msgstr ""
+msgstr "Zbernica"
 
 #: usr/lib/linuxmint/mintreport/pci.py:263
 msgid "Type"
-msgstr ""
+msgstr "Typ"
 
 #: usr/lib/linuxmint/mintreport/pci.py:278
 msgid "Device"
-msgstr ""
+msgstr "Zariadenie"
 
 #: usr/lib/linuxmint/mintreport/pci.py:298
 #: usr/lib/linuxmint/mintreport/usb.py:162
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #: usr/lib/linuxmint/mintreport/pci.py:321
 msgid "Copy the ID"
-msgstr ""
+msgstr "Skopírujte ID"
 
 #: usr/lib/linuxmint/mintreport/pci.py:322
 msgid "Copy the entire row"
-msgstr ""
+msgstr "Skopírujte celý riadok"
 
 #: usr/lib/linuxmint/mintreport/pci.py:352
 #: usr/lib/linuxmint/mintreport/usb.py:355
 msgid "Device ID copied"
-msgstr ""
+msgstr "ID zariadenia bolo skopírované"
 
 #: usr/lib/linuxmint/mintreport/pci.py:352
 msgid "The device ID was copied into your clipboard."
-msgstr ""
+msgstr "ID zariadenia bolo skopírované do vašej schránky."
 
 #: usr/lib/linuxmint/mintreport/pci.py:362
 msgid "Device information copied"
-msgstr ""
+msgstr "Informácie o zariadení boli skopírované"
 
 #: usr/lib/linuxmint/mintreport/pci.py:362
 msgid "The device information was copied into your clipboard."
-msgstr ""
+msgstr "Informácie o zariadení boli skopírované do vašej schránky."
 
 #: usr/lib/linuxmint/mintreport/tray.py:58
 msgid "Show System Reports"
@@ -354,40 +354,40 @@ msgstr "Automatické aktualizácie boli inštalované."
 #: usr/lib/linuxmint/mintreport/usb.py:39
 #, python-format
 msgid "%d Gbps"
-msgstr ""
+msgstr "%d Gbps"
 
 #: usr/lib/linuxmint/mintreport/usb.py:41
 #, python-format
 msgid "%d Mbps"
-msgstr ""
+msgstr "%d Mbps"
 
 #: usr/lib/linuxmint/mintreport/usb.py:168
 msgid "Speed"
-msgstr ""
+msgstr "Rýchlosť"
 
 #: usr/lib/linuxmint/mintreport/usb.py:176
 msgid "Power"
-msgstr ""
+msgstr "Napájanie"
 
 #: usr/lib/linuxmint/mintreport/usb.py:267
 #, python-format
 msgid "USB %(version)s controller (Bus #%(number)s) – Max speed: %(speed)s"
-msgstr ""
+msgstr "USB %(version)s controller (Bus #%(number)s) – Max speed: %(speed)s"
 
 #: usr/lib/linuxmint/mintreport/usb.py:285
 #: usr/lib/linuxmint/mintreport/usb.py:288
 #, python-format
 msgid "%d mA"
-msgstr ""
+msgstr "%d mA"
 
 #: usr/lib/linuxmint/mintreport/usb.py:336
 #, python-format
 msgid "%s mA max"
-msgstr ""
+msgstr "%s mA max"
 
 #: usr/lib/linuxmint/mintreport/usb.py:355
 msgid "The ID of the device was copied into your clipboard."
-msgstr ""
+msgstr "ID zariadenia bolo skopírované do vašej schránky."
 
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
@@ -426,19 +426,19 @@ msgstr "Nahrať do složby pastebin (nezahŕňa žiadne osobné informácie)"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:6
 msgid "Note: Double-click a device to copy its ID"
-msgstr ""
+msgstr "Poznámka: Dvojitým kliknutím na zariadenie skopírujte jeho ID"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:7
 msgid "USB"
-msgstr ""
+msgstr "USB"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:8
 msgid "GPU"
-msgstr ""
+msgstr "GPU"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:9
 msgid "PCI"
-msgstr ""
+msgstr "PCI"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:11
 msgid "Running system checks..."
@@ -461,11 +461,11 @@ msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:16
 msgid "Crash Reports"
-msgstr ""
+msgstr "Správy o zlyhaní"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:17
 msgid "Stack Trace"
-msgstr ""
+msgstr "Záznam zásobníka"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:18
 msgid ""

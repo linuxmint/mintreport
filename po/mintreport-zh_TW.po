@@ -8,31 +8,31 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2025-10-23 10:18+0100\n"
-"PO-Revision-Date: 2024-07-10 20:49+0000\n"
-"Last-Translator: 爽自由 <coby2023t@gmail.com>\n"
+"PO-Revision-Date: 2025-12-24 10:50+0000\n"
+"Last-Translator: taijuin lee <Unknown>\n"
 "Language-Team: Chinese (Traditional) <zh_TW@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2025-12-12 13:32+0000\n"
-"X-Generator: Launchpad (build 379e22b8475e3402088a4cdb4a6e7936a4d28414)\n"
+"X-Launchpad-Export-Date: 2026-01-08 15:43+0000\n"
+"X-Generator: Launchpad (build 99c00f518760bdd50fc6e353e7736d2fff8fba4a)\n"
 "Language: zh_TW\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:130
 #: usr/lib/linuxmint/mintreport/app.py:158
 msgid "Unknown size"
-msgstr ""
+msgstr "未知大小"
 
 #: usr/lib/linuxmint/mintreport/app.py:156
 msgid "Unknown CPU"
-msgstr ""
+msgstr "未知 CPU"
 
 #: usr/lib/linuxmint/mintreport/app.py:196
 #: usr/lib/linuxmint/mintreport/app.py:466 generate_desktop_files:25
 #: generate_desktop_files:39 usr/share/linuxmint/mintreport/mintreport.ui.h:5
 msgid "System Information"
-msgstr ""
+msgstr "系統資訊"
 
 #: usr/lib/linuxmint/mintreport/app.py:317
 msgid "Restore ignored reports"
@@ -50,15 +50,15 @@ msgstr "關於"
 
 #: usr/lib/linuxmint/mintreport/app.py:350
 msgid "Computer"
-msgstr ""
+msgstr "電腦"
 
 #: usr/lib/linuxmint/mintreport/app.py:372
 msgid "Operating System"
-msgstr ""
+msgstr "作業系統"
 
 #: usr/lib/linuxmint/mintreport/app.py:373
 msgid "Linux Kernel"
-msgstr ""
+msgstr "Linux 核心"
 
 #: usr/lib/linuxmint/mintreport/app.py:374
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:28
@@ -67,33 +67,33 @@ msgstr "處理器"
 
 #: usr/lib/linuxmint/mintreport/app.py:377
 msgid "Graphics Card"
-msgstr ""
+msgstr "顯示卡"
 
 #: usr/lib/linuxmint/mintreport/app.py:379
 #: usr/lib/linuxmint/mintreport/app.py:381
 msgid "Memory"
-msgstr ""
+msgstr "記憶體"
 
 #: usr/lib/linuxmint/mintreport/app.py:379
 #: usr/lib/linuxmint/mintreport/app.py:389
 msgid "GB"
-msgstr ""
+msgstr "GB"
 
 #: usr/lib/linuxmint/mintreport/app.py:385
 msgid "Hard Drives"
-msgstr ""
+msgstr "硬碟"
 
 #: usr/lib/linuxmint/mintreport/app.py:387
 msgid "Hard Drive"
-msgstr ""
+msgstr "硬碟"
 
 #: usr/lib/linuxmint/mintreport/app.py:396
 msgid "Desktop Environment"
-msgstr ""
+msgstr "桌面環境"
 
 #: usr/lib/linuxmint/mintreport/app.py:403
 msgid "Display Server"
-msgstr ""
+msgstr "顯示服務"
 
 #: usr/lib/linuxmint/mintreport/app.py:508
 msgid "An error occurred while gathering the system information."
@@ -176,148 +176,148 @@ msgstr ""
 #: usr/lib/linuxmint/mintreport/bios.py:21
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:10
 msgid "BIOS"
-msgstr ""
+msgstr "BIOS"
 
 #: usr/lib/linuxmint/mintreport/bios.py:22
 msgid "Motherboard"
-msgstr ""
+msgstr "主機板"
 
 #: usr/lib/linuxmint/mintreport/bios.py:32
 #: usr/lib/linuxmint/mintreport/bios.py:53
 #: usr/lib/linuxmint/mintreport/gpu.py:215
 #: usr/lib/linuxmint/mintreport/pci.py:271
 msgid "Brand"
-msgstr ""
+msgstr "品牌"
 
 #: usr/lib/linuxmint/mintreport/bios.py:33
 #: usr/lib/linuxmint/mintreport/bios.py:55
 msgid "Version"
-msgstr ""
+msgstr "版本"
 
 #: usr/lib/linuxmint/mintreport/bios.py:34
 msgid "Release"
-msgstr ""
+msgstr "釋出"
 
 #: usr/lib/linuxmint/mintreport/bios.py:35
 msgid "Release Date"
-msgstr ""
+msgstr "發布日期"
 
 #: usr/lib/linuxmint/mintreport/bios.py:38
 #: usr/lib/linuxmint/mintreport/bios.py:41
 msgid "Boot Mode"
-msgstr ""
+msgstr "啟動模式"
 
 #: usr/lib/linuxmint/mintreport/bios.py:39
 #: usr/lib/linuxmint/mintreport/bios.py:43
 #: usr/lib/linuxmint/mintreport/bios.py:50
 msgid "Secure Boot"
-msgstr ""
+msgstr "安全啟動"
 
 #: usr/lib/linuxmint/mintreport/bios.py:39
 #: usr/lib/linuxmint/mintreport/bios.py:50
 msgid "Disabled"
-msgstr ""
+msgstr "已停用"
 
 #: usr/lib/linuxmint/mintreport/bios.py:43
 #: usr/lib/linuxmint/mintreport/gpu.py:183
 msgid "Enabled"
-msgstr ""
+msgstr "已啟用"
 
 #: usr/lib/linuxmint/mintreport/bios.py:46
 #: usr/lib/linuxmint/mintreport/bios.py:48
 msgid "Secure Boot mode"
-msgstr ""
+msgstr "安全啟動模式"
 
 #: usr/lib/linuxmint/mintreport/bios.py:46
 msgid "Setup Mode (keys not enrolled)"
-msgstr ""
+msgstr "設定模式（未註冊鍵）"
 
 #: usr/lib/linuxmint/mintreport/bios.py:48
 msgid "User Mode (normal)"
-msgstr ""
+msgstr "使用者模式（正常）"
 
 #: usr/lib/linuxmint/mintreport/bios.py:54
 #: usr/lib/linuxmint/mintreport/gpu.py:216
 #: usr/lib/linuxmint/mintreport/usb.py:149
 msgid "Name"
-msgstr ""
+msgstr "名稱"
 
 #: usr/lib/linuxmint/mintreport/gpu.py:185
 #: usr/lib/linuxmint/mintreport/gpu.py:211
 msgid "Disabled (Software rendering)"
-msgstr ""
+msgstr "已停用（軟體渲染）"
 
 #: usr/lib/linuxmint/mintreport/gpu.py:195
 msgid "Default GPU"
-msgstr ""
+msgstr "預設顯示卡"
 
 #: usr/lib/linuxmint/mintreport/gpu.py:196
 msgid "Hardware Acceleration"
-msgstr ""
+msgstr "硬體加速"
 
 #: usr/lib/linuxmint/mintreport/gpu.py:213
 #, python-format
 msgid "Enabled (%s)"
-msgstr ""
+msgstr "已啟用 (%s)"
 
 #: usr/lib/linuxmint/mintreport/gpu.py:217
 msgid "PCI ID"
-msgstr ""
+msgstr "PCI ID"
 
 #: usr/lib/linuxmint/mintreport/gpu.py:218
 #: usr/lib/linuxmint/mintreport/pci.py:306
 msgid "Driver"
-msgstr ""
+msgstr "驅動程式"
 
 #: usr/lib/linuxmint/mintreport/gpu.py:220
 msgid "Driver Version"
-msgstr ""
+msgstr "驅動程式版本"
 
 #: usr/lib/linuxmint/mintreport/gpu.py:225
 msgid "Video Playback"
-msgstr ""
+msgstr "影片播放"
 
 #: usr/lib/linuxmint/mintreport/pci.py:255
 msgid "Bus"
-msgstr ""
+msgstr "匯流排"
 
 #: usr/lib/linuxmint/mintreport/pci.py:263
 msgid "Type"
-msgstr ""
+msgstr "類型"
 
 #: usr/lib/linuxmint/mintreport/pci.py:278
 msgid "Device"
-msgstr ""
+msgstr "裝置"
 
 #: usr/lib/linuxmint/mintreport/pci.py:298
 #: usr/lib/linuxmint/mintreport/usb.py:162
 msgid "ID"
-msgstr ""
+msgstr "識別碼"
 
 #: usr/lib/linuxmint/mintreport/pci.py:321
 msgid "Copy the ID"
-msgstr ""
+msgstr "複製識別碼"
 
 #: usr/lib/linuxmint/mintreport/pci.py:322
 msgid "Copy the entire row"
-msgstr ""
+msgstr "複製整行"
 
 #: usr/lib/linuxmint/mintreport/pci.py:352
 #: usr/lib/linuxmint/mintreport/usb.py:355
 msgid "Device ID copied"
-msgstr ""
+msgstr "裝置識別碼已複製"
 
 #: usr/lib/linuxmint/mintreport/pci.py:352
 msgid "The device ID was copied into your clipboard."
-msgstr ""
+msgstr "裝置識別碼已複製至您的剪貼簿。"
 
 #: usr/lib/linuxmint/mintreport/pci.py:362
 msgid "Device information copied"
-msgstr ""
+msgstr "裝置資訊已複製"
 
 #: usr/lib/linuxmint/mintreport/pci.py:362
 msgid "The device information was copied into your clipboard."
-msgstr ""
+msgstr "裝置資訊已複製至您的剪貼簿。"
 
 #: usr/lib/linuxmint/mintreport/tray.py:58
 msgid "Show System Reports"
@@ -346,40 +346,40 @@ msgstr "將安裝自動化更新。"
 #: usr/lib/linuxmint/mintreport/usb.py:39
 #, python-format
 msgid "%d Gbps"
-msgstr ""
+msgstr "%d Gbps"
 
 #: usr/lib/linuxmint/mintreport/usb.py:41
 #, python-format
 msgid "%d Mbps"
-msgstr ""
+msgstr "%d Mbps"
 
 #: usr/lib/linuxmint/mintreport/usb.py:168
 msgid "Speed"
-msgstr ""
+msgstr "速度"
 
 #: usr/lib/linuxmint/mintreport/usb.py:176
 msgid "Power"
-msgstr ""
+msgstr "電力"
 
 #: usr/lib/linuxmint/mintreport/usb.py:267
 #, python-format
 msgid "USB %(version)s controller (Bus #%(number)s) – Max speed: %(speed)s"
-msgstr ""
+msgstr "USB %(version)s 控制器 (Bus #%(number)s) – 最大速度：%(speed)s"
 
 #: usr/lib/linuxmint/mintreport/usb.py:285
 #: usr/lib/linuxmint/mintreport/usb.py:288
 #, python-format
 msgid "%d mA"
-msgstr ""
+msgstr "%d mA"
 
 #: usr/lib/linuxmint/mintreport/usb.py:336
 #, python-format
 msgid "%s mA max"
-msgstr ""
+msgstr "%s mA 最大值"
 
 #: usr/lib/linuxmint/mintreport/usb.py:355
 msgid "The ID of the device was copied into your clipboard."
-msgstr ""
+msgstr "裝置的識別碼已複製到您的剪貼簿。"
 
 #: generate_desktop_files:25 generate_desktop_files:39
 #: generate_desktop_files:53 generate_desktop_files:67
@@ -416,19 +416,19 @@ msgstr "上傳至線上張貼服務 (不含個人資料)"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:6
 msgid "Note: Double-click a device to copy its ID"
-msgstr ""
+msgstr "注意：雙擊裝置即可複製其識別碼"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:7
 msgid "USB"
-msgstr ""
+msgstr "USB"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:8
 msgid "GPU"
-msgstr ""
+msgstr "GPU"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:9
 msgid "PCI"
-msgstr ""
+msgstr "PCI"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:11
 msgid "Running system checks..."
@@ -449,11 +449,11 @@ msgstr "欲啟用當機報告功能，請安裝 systemd-coredump 並重開機您
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:16
 msgid "Crash Reports"
-msgstr ""
+msgstr "崩潰報告"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:17
 msgid "Stack Trace"
-msgstr ""
+msgstr "堆疊追蹤"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:18
 msgid ""

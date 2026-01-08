@@ -3,15 +3,15 @@ msgstr ""
 "Project-Id-Version: mintreport\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-10-23 10:18+0100\n"
-"PO-Revision-Date: 2025-10-24 18:57+0000\n"
+"PO-Revision-Date: 2025-12-27 13:27+0000\n"
 "Last-Translator: Klavs Petersons <Unknown>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2025-12-12 13:32+0000\n"
-"X-Generator: Launchpad (build 379e22b8475e3402088a4cdb4a6e7936a4d28414)\n"
+"X-Launchpad-Export-Date: 2026-01-08 15:43+0000\n"
+"X-Generator: Launchpad (build 99c00f518760bdd50fc6e353e7736d2fff8fba4a)\n"
 "Language: lv\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:130
@@ -116,7 +116,7 @@ msgid ""
 "Your system information was uploaded to %s. This link was placed in your "
 "clipboard."
 msgstr ""
-"Jūsu sistēmas informācija tika augšupielādēta šeit: %s. Šī saite tika "
+"Tavas sistēmas informācija tika augšupielādēta šeit: %s. Šī saite tika "
 "ievietota starpliktuvē."
 
 #: usr/lib/linuxmint/mintreport/app.py:529
@@ -137,7 +137,7 @@ msgstr "Ignorēt šo ziņojumu"
 
 #: usr/lib/linuxmint/mintreport/app.py:640
 msgid "Are you sure you want to ignore this report?"
-msgstr "Vai tiešām vēlaties ignorēt šo ziņojumu?"
+msgstr "Vai tiešām vēlies ignorēt šo ziņojumu?"
 
 #: usr/lib/linuxmint/mintreport/app.py:641
 msgid "The report will be permanently ignored and will no longer be visible."
@@ -151,7 +151,7 @@ msgid ""
 msgstr ""
 "Trūkst atkļūdošanas simbolu %(program)s.\n"
 "\n"
-"Lūdzu, instalējiet %(package)s."
+"Lūdzu, instalē %(package)s."
 
 #: usr/lib/linuxmint/mintreport/app.py:744
 #, python-format
@@ -162,8 +162,8 @@ msgid ""
 msgstr ""
 "Pakotne, kas nodrošina %s , nav atrasta.\n"
 "\n"
-"Ja vēlaties ģenerēt steka izsekošanu šim avārijas ziņojumam, lūdzu, "
-"pārinstalējiet to."
+"Ja vēlies ģenerēt steka izsekošanu šim avārijas ziņojumam, lūdzu, pārinstalē "
+"to."
 
 #: usr/lib/linuxmint/mintreport/app.py:772
 msgid ""
@@ -173,10 +173,10 @@ msgid ""
 "A stack trace is available in 'Local Files' but its content is probably "
 "inaccurate."
 msgstr ""
-"Jūsu sistēmā instalētie galvenes vai binārā koda faili neatbilst kodam, kas "
+"Tavā sistēmā instalētie galvenes vai binārā koda faili neatbilst kodam, kas "
 "tika izpildīts sistēmas kļūmes laikā.\n"
 "Iespējams, tie kopš tā laika ir tikuši atjaunināti.\n"
-"Steka trasēšana ir pieejama 'lokālajos failos' , bet tā saturs, iespējams, "
+"Steka izsekošana ir pieejama 'lokālajos failos' , bet tā saturs, iespējams, "
 "ir neprecīzs."
 
 #: usr/lib/linuxmint/mintreport/bios.py:21
@@ -331,7 +331,7 @@ msgstr "Rādīt sistēmas pārskatus"
 
 #: usr/lib/linuxmint/mintreport/tray.py:136
 msgid "Some system reports require your attention"
-msgstr "Dažiem sistēmas ziņojumiem ir nepieciešama jūsu uzmanība"
+msgstr "Dažiem sistēmas ziņojumiem ir nepieciešama tava uzmanība"
 
 #: usr/lib/linuxmint/mintreport/tray.py:146
 msgid "System Snapshots"
@@ -422,11 +422,11 @@ msgstr "Augšupielādēt"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:4
 msgid "Upload to a pastebin service (no personal information included)"
-msgstr "Augšupielādēt pastebin pakalpojumā (bez personiskās informācijas)"
+msgstr "Augšupielādē pastebin pakalpojumā (bez personiskās informācijas)"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:6
 msgid "Note: Double-click a device to copy its ID"
-msgstr "Piezīme: Veiciet dubultklikšķi uz ierīces, lai kopētu tās ID"
+msgstr "Piezīme: Veic dubultklikšķi uz ierīces, lai kopētu tās ID"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:7
 msgid "USB"
@@ -456,8 +456,8 @@ msgstr "Avārijas ziņojumi nav pieejami"
 msgid ""
 "To enable crash reporting, install systemd-coredump and reboot your computer."
 msgstr ""
-"Lai iespējotu ziņošanu par avārijām, instalējiet systemd-coredump un "
-"restartējiet datoru."
+"Lai iespējotu ziņošanu par avārijām, instalēj systemd-coredump un restartē "
+"datoru."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:16
 msgid "Crash Reports"
@@ -465,16 +465,16 @@ msgstr "Avāriju ziņojumi"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:17
 msgid "Stack Trace"
-msgstr "Staka izsekošana"
+msgstr "Steka izsekošana"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:18
 msgid ""
 "When seeking help, check for existing bug reports, pastebin the trace, share "
 "crash.tar.gz (from Local Files) and explain how to reproduce the crash."
 msgstr ""
-"Kad meklējat palīdzību, pārbaudiet esošos kļūdu ziņojumus, ievietojiet "
-"izsekošanas informāciju pastebin, dalieties ar crash.tar.gz (no lokālajiem  "
-"failiem) un izskaidrojiet, kā reproducēt kļūdu."
+"Kad meklē palīdzību, pārbaudi esošos kļūdu ziņojumus, ievieto izsekošanas "
+"informāciju pastebin, dalies ar crash.tar.gz (no lokālajiem failiem) un "
+"izskaidro, kā reproducēt kļūdu."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:19
 msgid "Local Files"
@@ -482,7 +482,7 @@ msgstr "Lokālie faili"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:20
 msgid "Open the directory containing crash.tar.gz and its content."
-msgstr "Atveriet direktoriju, kurā atrodas crash.tar.gz un tā saturs."
+msgstr "Atver direktoriju, kurā atrodas crash.tar.gz un tā saturs."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:21
 msgid "Bug Tracker"
@@ -490,7 +490,7 @@ msgstr "Kļūdu izsekotājs"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:22
 msgid "Find the most appropriate bug tracker."
-msgstr "Atrodiet vispiemērotāko kļūdu izsekotāju."
+msgstr "Atrodi vispiemērotāko kļūdu izsekotāju."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:23
 msgid "Pastebin"
@@ -507,7 +507,7 @@ msgid ""
 "problem."
 msgstr ""
 "Izstrādātājiem ir jāzina, kur kods nedarbojas vai kā reproducēt problēmu. "
-"Vienmēr sniedziet izsekošanas informāciju un uzticamas instrukcijas, lai "
+"Vienmēr sniedz izsekošanas informāciju un uzticamas instrukcijas, lai "
 "izraisītu/novērotu problēmu."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:27
@@ -566,7 +566,7 @@ msgid ""
 "Thanks to Timeshift you can take snapshots of the system, either manually or "
 "automatically."
 msgstr ""
-"Pateicoties Timeshift, jūs varat veikt sistēmas momentuzņēmumus, vai nu "
+"Pateicoties Timeshift, tu vari veikt sistēmas momentuzņēmumus, vai nu "
 "manuāli, vai automātiski."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:33
@@ -574,7 +574,7 @@ msgid ""
 "If something goes wrong you can then restore your operating system from a "
 "previously saved snapshot."
 msgstr ""
-"Ja kaut kas noiet greizi, varat atjaunot savu operētājsistēmu no iepriekš "
+"Ja kaut kas noiet greizi, vari atjaunot savu operētājsistēmu no iepriekš "
 "saglabāta momentuzņēmuma."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:39
@@ -590,7 +590,7 @@ msgstr "Ir pieejama jauna Linux Mint versija"
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:50
 #, python-format
 msgid "Visit %s for the latest announcements."
-msgstr "Apmeklējiet %s ,lai saņemtu jaunākos paziņojumus."
+msgstr "Apmeklē %s ,lai saņemtu jaunākos paziņojumus."
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:54
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:56
@@ -600,56 +600,55 @@ msgstr "Atjaunināt uz %s"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:49
 msgid "Your version of Linux Mint will soon reach End-Of-Life (EOL)"
-msgstr "Jūsu Linux Mint versija drīz sasniegs kalpošanas laika beigas (EOL)"
+msgstr "Tava Linux Mint versija drīz sasniegs kalpošanas laika beigas (EOL)"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:50
 #, python-brace-format
 msgid "It will stop receiving support and updates in a day."
 msgid_plural "It will stop receiving support and updates in {num_days} days."
-msgstr[0] "Pēc dienas tā vairs nesaņems atbalstu un atjauninājumus."
+msgstr[0] ""
+"Tas vienas dienas laikā pārtrauks saņemt atbalstu un atjauninājumus."
 msgstr[1] ""
-"Pēc {num_days} dienām tā vairs nesaņems atbalstu un atjauninājumus."
+"Tas pārtrauks saņemt atbalstu un atjauninājumus pēc {num_days} dienām."
 msgstr[2] ""
-"Pēc {num_days} dienām tas vairs nesaņems atbalstu un atjauninājumus."
+"Tas pārtrauks saņemt atbalstu un atjauninājumus pēc {num_days} dienu."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:54
 msgid "Your version of Linux Mint is no longer supported"
-msgstr "Jūsu Linux Mint versija vairs netiek atbalstīta"
+msgstr "Tava Linux Mint versija vairs netiek atbalstīta"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:55
 #, python-brace-format
 msgid "It reached End-Of-Life (EOL) yesterday."
 msgid_plural "It reached End-Of-Life (EOL) {num_days} days ago."
-msgstr[0] "Tā vakar sasniedza kalpošanas laika beigas (EOL)."
-msgstr[1] ""
-"Tā sasniedza kalpošanas laika beigas (EOL) pirms {num_days} dienām."
-msgstr[2] ""
-"Tā sasniedza kalpošanas laika beigas (EOL) pirms {num_days} dienām."
+msgstr[0] "Tā vakar sasniedza kalpošanas laika beigas End-Of-Life (EOL)."
+msgstr[1] "Tā sasniedza End-Of-Life (EOL) {num_days} dienas atpakaļ."
+msgstr[2] "Tā sasniedza End-Of-Life (EOL) {num_days} dienu atpakaļ."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:66
 #, python-format
 msgid "Visit %s to find information about newer releases."
-msgstr "Apmeklējiet %s ,lai iegūtu informāciju par jaunākām versijām."
+msgstr "Apmeklē %s ,lai iegūtu informāciju par jaunākām versijām."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:14
 msgid "Perform usrmerge conversion"
-msgstr "Veiciet usrmerge konvertēšanu"
+msgstr "Veic usrmerge konvertēšanu"
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:39
 msgid "We recommend you convert your system with usrmerge."
-msgstr "Mēs iesakām konvertēt jūsu sistēmu ar usrmerge."
+msgstr "Mēs iesakām konvertēt tavu sistēmu ar usrmerge."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:40
 msgid "This is done already for new installations of Linux Mint."
-msgstr "Tas jau tiek darīts jaunajās Linux Mint instalācijās."
+msgstr "Tas jau tiek darīts jaunākajās Linux Mint instalācijās."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:41
 msgid "To convert your system, open a terminal and type:"
-msgstr "Lai konvertētu sistēmu, atveriet termināli un ierakstiet:"
+msgstr "Lai konvertētu sistēmu, atver termināli un ieraksti:"
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:43
 msgid "You should reboot the computer once this completes."
-msgstr "Kad tas būs pabeigts, jums vajadzētu restartēt datoru."
+msgstr "Kad tas būs pabeigts, tev vajadzētu restartēt datoru."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:49
 msgid "More information"
@@ -665,11 +664,11 @@ msgstr "Šīs pakotnes neļauj ikonām darboties pareizi:"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:39
 msgid "Note: You will need to log out after removing them."
-msgstr "Piezīme: Pēc to noņemšanas jums būs jāizrakstās."
+msgstr "Piezīme: Pēc to noņemšanas tev būs jāizrakstās."
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:45
 msgid "Remove the conflicting packages."
-msgstr "Noņemiet konfliktējošās pakotnes."
+msgstr "Noņem konfliktējošās pakotnes."
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:26
 msgid "Install language packs"
@@ -680,7 +679,7 @@ msgid ""
 "The following localization packages are missing to properly support your "
 "language:"
 msgstr ""
-"Trūkst šādu lokalizācijas pakotņu, lai pareizi atbalstītu jūsu valodu:"
+"Trūkst šādu lokalizācijas pakotņu, lai pareizi atbalstītu tavu valodu:"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:48
 msgid "Install the Language Packs"
