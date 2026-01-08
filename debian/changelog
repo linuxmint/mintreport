@@ -1,3 +1,10 @@
+mintreport (1.6.0) zena; urgency=medium
+
+  * l10n: Update translations
+  * l10n: Update files
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 08 Jan 2026 16:09:17 +0000
+
 mintreport (1.5.9) zena; urgency=medium
 
   * ui: Make it possible for window to fit in 1024x768px
