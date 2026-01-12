@@ -32,13 +32,14 @@ def decode_power(device):
 
 def speed_label(speed_mbps):
     try:
-        val = int(speed_mbps)
+        val = float(speed_mbps)
     except Exception:
         return speed_mbps
+
     if val >= 10000:
-        return _("%d Gbps") % val
+        return _("%s Gbps") % ("%d" % (val / 1000))
     else:
-        return _("%d Mbps") % val
+        return _("%s Mbps") % speed_mbps
 
 def usb_limit(version):
     try:
