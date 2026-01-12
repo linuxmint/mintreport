@@ -355,13 +355,13 @@ msgstr "Las mesas a jorn automaticas son a s’installar."
 
 #: usr/lib/linuxmint/mintreport/usb.py:39
 #, python-format
-msgid "%d Gbps"
-msgstr "%d Gbit/s"
+msgid "%s Gbps"
+msgstr "%s Gbit/s"
 
 #: usr/lib/linuxmint/mintreport/usb.py:41
 #, python-format
-msgid "%d Mbps"
-msgstr "%d Mbit/s"
+msgid "%s Mbps"
+msgstr "%s Mbit/s"
 
 #: usr/lib/linuxmint/mintreport/usb.py:168
 msgid "Speed"
@@ -375,7 +375,7 @@ msgstr "Poténcia"
 #, python-format
 msgid "USB %(version)s controller (Bus #%(number)s) – Max speed: %(speed)s"
 msgstr ""
-"Contrarotlador USB %(version)s (bus no %(number)s) – Velocitat maximala : "
+"Contrarotlador USB %(version)s (bus no %(number)s) – Velocitat maximala : "
 "%(speed)s"
 
 #: usr/lib/linuxmint/mintreport/usb.py:285
@@ -432,7 +432,7 @@ msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:6
 msgid "Note: Double-click a device to copy its ID"
-msgstr "Nòta : doble-clicatz un periferic per copiar son ID"
+msgstr "Nòta : doble-clicatz un periferic per copiar son ID"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:7
 msgid "USB"
@@ -665,12 +665,12 @@ msgstr "Suprimir los indicadors en conflicte"
 msgid "The following packages prevent tray icons from working properly:"
 msgstr ""
 "Los paquets seguents empachan la zòna de notificacion de foncionar "
-"corrèctament :"
+"corrèctament :"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:39
 msgid "Note: You will need to log out after removing them."
 msgstr ""
-"Nòta : vos devètz desconnectar de la session aprèp los aver suprimits."
+"Nòta : vos devètz desconnectar de la session aprèp los aver suprimits."
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:45
 msgid "Remove the conflicting packages."
@@ -686,7 +686,7 @@ msgid ""
 "language:"
 msgstr ""
 "Los paquets lingüistics seguents son absents per suportar corrèctament "
-"vòstra lenga :"
+"vòstra lenga :"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:48
 msgid "Install the Language Packs"

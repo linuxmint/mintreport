@@ -32,7 +32,7 @@ msgstr "Nieznany procesor"
 #: usr/lib/linuxmint/mintreport/app.py:466 generate_desktop_files:25
 #: generate_desktop_files:39 usr/share/linuxmint/mintreport/mintreport.ui.h:5
 msgid "System Information"
-msgstr "Informacje o systemie"
+msgstr "Informacje o systemie"
 
 #: usr/lib/linuxmint/mintreport/app.py:317
 msgid "Restore ignored reports"
@@ -323,11 +323,11 @@ msgstr "Identyfikator urządzenia został skopiowany do schowka."
 
 #: usr/lib/linuxmint/mintreport/pci.py:362
 msgid "Device information copied"
-msgstr "Skopiowano informacje o urządzeniu"
+msgstr "Skopiowano informacje o urządzeniu"
 
 #: usr/lib/linuxmint/mintreport/pci.py:362
 msgid "The device information was copied into your clipboard."
-msgstr "Informacje o urządzeniu zostały skopiowane do schowka."
+msgstr "Informacje o urządzeniu zostały skopiowane do schowka."
 
 #: usr/lib/linuxmint/mintreport/tray.py:58
 msgid "Show System Reports"
@@ -355,12 +355,12 @@ msgstr "Instalowane są automatyczne aktualizacje."
 
 #: usr/lib/linuxmint/mintreport/usb.py:39
 #, python-format
-msgid "%d Gbps"
+msgid "%s Gbps"
 msgstr "%d Gb/s"
 
 #: usr/lib/linuxmint/mintreport/usb.py:41
 #, python-format
-msgid "%d Mbps"
+msgid "%s Mbps"
 msgstr "%d Mb/s"
 
 #: usr/lib/linuxmint/mintreport/usb.py:168
@@ -466,7 +466,7 @@ msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:16
 msgid "Crash Reports"
-msgstr "Raporty o awariach"
+msgstr "Raporty o awariach"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:17
 msgid "Stack Trace"
@@ -478,8 +478,8 @@ msgid ""
 "crash.tar.gz (from Local Files) and explain how to reproduce the crash."
 msgstr ""
 "Poszukując pomocy, sprawdź dostępne raporty błędów, prześlij ślad stosu do "
-"aplikacji internetowej Pastebin, udostępnij plik crash.tar.gz (z katalogu "
-"plików lokalnych) i wyjaśnij, jak odtworzyć awarię."
+"aplikacji internetowej Pastebin, udostępnij plik crash.tar.gz (z katalogu "
+"plików lokalnych) i wyjaśnij, jak odtworzyć awarię."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:19
 msgid "Local Files"
