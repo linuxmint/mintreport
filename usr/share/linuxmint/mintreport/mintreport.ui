@@ -307,6 +307,34 @@
                   </packing>
                 </child>
                 <child>
+                  <object class="GtkBox" id="box_sensors">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="orientation">vertical</property>
+                    <child>
+                      <object class="GtkBox" id="box_sensors_widget">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="orientation">vertical</property>
+                        <child>
+                          <placeholder/>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="name">pense_sensors</property>
+                    <property name="title" translatable="yes">Sensors</property>
+                    <property name="icon-name">xsi-temperature-symbolic</property>
+                    <property name="position">4</property>
+                  </packing>
+                </child>
+                <child>
                   <object class="GtkBox" id="box_bios">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
@@ -357,7 +385,7 @@
                     <property name="name">page_bios</property>
                     <property name="title" translatable="yes">BIOS</property>
                     <property name="icon-name">xsi-cpu-symbolic</property>
-                    <property name="position">4</property>
+                    <property name="position">5</property>
                   </packing>
                 </child>
                 <child>
@@ -590,7 +618,7 @@
                     <property name="name">page_reports</property>
                     <property name="title" translatable="yes">System Reports</property>
                     <property name="icon-name">mintreport-symbolic</property>
-                    <property name="position">5</property>
+                    <property name="position">6</property>
                   </packing>
                 </child>
                 <child>
@@ -869,7 +897,7 @@
                     <property name="name">page_crashes</property>
                     <property name="title" translatable="yes">Crash Reports</property>
                     <property name="icon-name">xsi-computer-fail-symbolic</property>
-                    <property name="position">6</property>
+                    <property name="position">7</property>
                   </packing>
                 </child>
               </object>
