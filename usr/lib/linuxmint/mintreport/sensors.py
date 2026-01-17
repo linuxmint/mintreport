@@ -18,25 +18,25 @@ def format_sensor(filename, raw):
         return f"{int(raw)/1000:.1f}", _("°C"), "xsi-temperature-symbolic"
 
     if filename.startswith("fan"):
-        return raw, _("RPM"), "xsi-cpu-symbolic"
+        return raw, _("RPM"), "xsi-cog-symbolic"
 
     if filename.startswith("pwm"):
-        return f"{int(raw)*100/255:.0f}", _("%"), "xsi-cpu-symbolic"
+        return f"{int(raw)*100/255:.0f}", _("%"), "xsi-cog-symbolic"
 
     if filename.startswith("in"):
-        return f"{int(raw)/1000:.3f}", _("V"), "xsi-cpu-symbolic"
+        return f"{int(raw)/1000:.3f}", _("V"), "xsi-cog-symbolic"
 
     if filename.startswith("curr"):
-        return f"{int(raw)/1000:.3f}", _("A"), "xsi-cpu-symbolic"
+        return f"{int(raw)/1000:.3f}", _("A"), "xsi-cog-symbolic"
 
     if filename.startswith("power"):
-        return f"{int(raw)/1_000_000:.1f}", _("W"), "xsi-cpu-symbolic"
+        return f"{int(raw)/1_000_000:.1f}", _("W"), "xsi-cog-symbolic"
 
     if filename.startswith("freq"):
-        return f"{int(raw)/1_000_000_000:.3f}", _("GHz"), "xsi-cpu-symbolic"
+        return f"{int(raw)/1_000_000_000:.3f}", _("GHz"), "xsi-cog-symbolic"
 
     if filename.startswith("energy"):
-        return f"{int(raw)/1_000_000:.3f}", _("J"), "xsi-cpu-symbolic"
+        return f"{int(raw)/1_000_000:.3f}", _("J"), "xsi-cog-symbolic"
 
     return raw, "", "xsi-cpu-symbolic"
 
@@ -108,6 +108,7 @@ class SensorsListWidget(Gtk.ScrolledWindow):
             base_path = None
             if os.path.isdir(device_path):
                 # Use device/ only if it contains *_input files
+                # This is required as some modules put sensors files in the device folder (apple-smc for example)
                 inputs = [f for f in os.listdir(device_path) if f.endswith("_input")]
                 if inputs:
                     base_path = device_path
