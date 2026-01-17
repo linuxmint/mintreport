@@ -30,10 +30,13 @@ def format_sensor(filename, raw):
         return f"{int(raw)/1000:.3f}", _("A"), "xsi-cpu-symbolic"
 
     if filename.startswith("power"):
-        return f"{int(raw)/1_000_000:.2f}", _("W"), "xsi-cpu-symbolic"
+        return f"{int(raw)/1_000_000:.1f}", _("W"), "xsi-cpu-symbolic"
+
+    if filename.startswith("freq"):
+        return f"{int(raw)/1_000_000_000:.3f}", _("GHz"), "xsi-cpu-symbolic"
 
     if filename.startswith("energy"):
-        return f"{int(raw)/1_000_000:.2f}", _("J"), "xsi-cpu-symbolic"
+        return f"{int(raw)/1_000_000:.3f}", _("J"), "xsi-cpu-symbolic"
 
     return raw, "", "xsi-cpu-symbolic"
 
