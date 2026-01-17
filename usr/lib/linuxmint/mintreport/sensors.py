@@ -15,28 +15,28 @@ def format_sensor(filename, raw):
     raw = raw.strip()
 
     if filename.startswith("temp"):
-        return f"{int(raw)/1000:.1f}", _("°C"), "xsi-temperature-symbolic"
+        return f"{int(raw)/1000:.1f}", "°C", "xsi-temperature-symbolic"
 
     if filename.startswith("fan"):
         return raw, _("RPM"), "xsi-cog-symbolic"
 
     if filename.startswith("pwm"):
-        return f"{int(raw)*100/255:.0f}", _("%"), "xsi-cog-symbolic"
+        return f"{int(raw)*100/255:.0f}", "%", "xsi-cog-symbolic"
 
     if filename.startswith("in"):
-        return f"{int(raw)/1000:.3f}", _("V"), "xsi-cog-symbolic"
+        return f"{int(raw)/1000:.3f}", "V", "xsi-cog-symbolic"
 
     if filename.startswith("curr"):
-        return f"{int(raw)/1000:.3f}", _("A"), "xsi-cog-symbolic"
+        return f"{int(raw)/1000:.3f}", "A", "xsi-cog-symbolic"
 
     if filename.startswith("power"):
-        return f"{int(raw)/1_000_000:.1f}", _("W"), "xsi-cog-symbolic"
+        return f"{int(raw)/1_000_000:.1f}", "W", "xsi-cog-symbolic"
 
     if filename.startswith("freq"):
-        return f"{int(raw)/1_000_000_000:.3f}", _("GHz"), "xsi-cog-symbolic"
+        return f"{int(raw)/1_000_000_000:.3f}", "GHz", "xsi-cog-symbolic"
 
     if filename.startswith("energy"):
-        return f"{int(raw)/1_000_000:.3f}", _("J"), "xsi-cog-symbolic"
+        return f"{int(raw)/1_000_000:.3f}", "J", "xsi-cog-symbolic"
 
     return raw, "", "xsi-cpu-symbolic"
 
