@@ -88,10 +88,32 @@ class SensorsListWidget(Gtk.ScrolledWindow):
 
         self.sensor_rows = {}
 
+        self.timeout_id = None
+        self.refresh_interval = 1 # seconds
+
+        self.connect("map", self._on_map)
+        self.connect("unmap", self._on_unmap)
+
     def load(self):
-        self.build_tree()
-        self.refresh_values()
-        GLib.timeout_add_seconds(1, self.refresh_values)
+        # do nothing, we do everything in the _on_map() function
+        pass
+
+    def _on_map(self, *arg):
+        if self.timeout_id is None:
+            # Refresh existing tree or build it is does not exist yet
+            if self.sensor_rows:
+                self.refresh_values()
+            else:
+                self.build_tree()
+
+            self.timeout_id = GLib.timeout_add_seconds(
+                self.refresh_interval, self.refresh_values
+            )
+
+    def _on_unmap(self, *arg):
+        if self.timeout_id is not None:
+            GLib.source_remove(self.timeout_id)
+            self.timeout_id = None
 
     def build_tree(self):
         self.treestore.clear()
