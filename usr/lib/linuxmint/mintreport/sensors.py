@@ -151,12 +151,13 @@ class SensorsListWidget(Gtk.ScrolledWindow):
 
                 device_without_sensors = False;
 
-            if (device_without_sensors):
+            if device_without_sensors:
                 self.treestore.set_value(parent, COL_SENSITIVE, False)
 
         self.treeview.expand_all()
 
     def refresh_values(self):
+        self.treestore.freeze_notify()
         for fpath, itr in self.sensor_rows.items():
             raw = self._read_file(fpath)
             if raw is None:
@@ -164,8 +165,9 @@ class SensorsListWidget(Gtk.ScrolledWindow):
 
             fname = os.path.basename(fpath)
             value, _, _ = format_sensor(fname, raw)
-            self.treestore.set_value(itr, COL_VALUE, value)
-
+            if value != self.treestore.get_value(itr, COL_VALUE):
+                self.treestore.set_value(itr, COL_VALUE, value)
+        self.treestore.thaw_notify()
         return True
 
     def _read_file(self, path):
