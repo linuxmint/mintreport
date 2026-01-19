@@ -1,6 +1,8 @@
 import os
 import gi
 import xapp.util
+import re
+from enum import IntEnum
 
 gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk, GLib, Pango
@@ -11,34 +13,99 @@ SYS_HWMON = "/sys/class/hwmon"
 
 COL_NAME, COL_VALUE, COL_UNIT, COL_SENSITIVE, COL_ICON_NAME = range(5)
 
-def format_sensor(filename, raw):
-    raw = raw.strip()
+class SensorType(IntEnum):
+    TEMP = 0
+    FAN = 1
+    PWM = 2
+    FREQ = 3
+    VOLTAGE = 4
+    CURRENT = 5
+    POWER = 6
+    ENERGY = 7
+    OTHER = 99
 
-    if filename.startswith("temp"):
-        return f"{int(raw)/1000:.1f}", "°C", "xsi-temperature-symbolic"
 
-    if filename.startswith("fan"):
-        return raw, _("RPM"), "xsi-cog-symbolic"
+SENSOR_SPECS = {
+    SensorType.TEMP: {
+        "prefix":"temp",
+        "format":lambda raw: f"{int(raw)/1000:.1f}",
+        "unit":"°C",
+        "icon":"xsi-temperature-symbolic"
+    },
+    SensorType.FAN: {
+        "prefix":"fan",
+        "format":lambda raw: raw.strip(),
+        "unit":_("RPM"),
+        "icon":"xsi-cog-symbolic"
+    },
+    SensorType.PWM: {
+        "prefix":"pwm",
+        "format":lambda raw: f"{int(raw)*100/255:.0f}",
+        "unit":"%",
+        "icon":"xsi-cog-symbolic"
+    },
+    SensorType.FREQ: {
+        "prefix":"freq",
+        "format":lambda raw: f"{int(raw)/1_000_000_000:.3f}",
+        "unit":"GHz",
+        "icon":"xsi-cog-symbolic"
+    },
+    SensorType.VOLTAGE: {
+        "prefix":"in",
+        "format":lambda raw: f"{int(raw)/1000:.3f}",
+        "unit":"V",
+        "icon":"xsi-cog-symbolic"
+    },
+    SensorType.CURRENT: {
+        "prefix":"curr",
+        "format":lambda raw: f"{int(raw)/1000:.3f}",
+        "unit":"A",
+        "icon":"xsi-cog-symbolic"
+    },
+    SensorType.POWER: {
+        "prefix":"power",
+        "format":lambda raw: f"{int(raw)/1_000_000:.1f}",
+        "unit":"W",
+        "icon":"xsi-cog-symbolic"
+    },
+    SensorType.ENERGY: {
+        "prefix":"energy",
+        "format":lambda raw: f"{int(raw)/1_000_000:.3f}",
+        "unit":"J",
+        "icon":"xsi-cog-symbolic"
+    },
+    SensorType.OTHER: {
+        "prefix":"",
+        "format":lambda raw: raw.strip(),
+        "unit":"",
+        "icon":"xsi-cog-symbolic"
+    },
+}
 
-    if filename.startswith("pwm"):
-        return f"{int(raw)*100/255:.0f}", "%", "xsi-cog-symbolic"
+def sensor_spec_from_filename(filename):
+    for stype, spec in SENSOR_SPECS.items():
+        prefix = spec["prefix"]
+        if prefix and filename.startswith(prefix):
+            return stype, spec
+    return SensorType.OTHER, SENSOR_SPECS[SensorType.OTHER]
 
-    if filename.startswith("in"):
-        return f"{int(raw)/1000:.3f}", "V", "xsi-cog-symbolic"
+# Helper funcs to sort sensors in correct numerical order (ex in10 after in9)
+def natural_key(label):
+    # Split around any digit sequence
+    parts = re.split(r'(\d+)', label)
+    key = []
+    for part in parts:
+        if part.isdigit():
+            key.append(int(part))
+        else:
+            key.append(part.lower())
+    return key
 
-    if filename.startswith("curr"):
-        return f"{int(raw)/1000:.3f}", "A", "xsi-cog-symbolic"
-
-    if filename.startswith("power"):
-        return f"{int(raw)/1_000_000:.1f}", "W", "xsi-cog-symbolic"
-
-    if filename.startswith("freq"):
-        return f"{int(raw)/1_000_000_000:.3f}", "GHz", "xsi-cog-symbolic"
-
-    if filename.startswith("energy"):
-        return f"{int(raw)/1_000_000:.3f}", "J", "xsi-cog-symbolic"
-
-    return raw, "", "xsi-cpu-symbolic"
+def sort_sensors(sensors):
+    # Natural sort within each sensor type
+    sensors.sort(key=lambda s: natural_key(s["label"]))
+    # Group by sensor type
+    sensors.sort(key=lambda s: s["type"])
 
 class SensorsListWidget(Gtk.ScrolledWindow):
 
@@ -122,7 +189,7 @@ class SensorsListWidget(Gtk.ScrolledWindow):
         if not os.path.isdir(SYS_HWMON):
             return
 
-        for hwmon in sorted(os.listdir(SYS_HWMON)):
+        for hwmon in os.listdir(SYS_HWMON):
             hwmon_path = os.path.join(SYS_HWMON, hwmon)
             device_path = os.path.join(hwmon_path, "device")
 
@@ -146,10 +213,11 @@ class SensorsListWidget(Gtk.ScrolledWindow):
                 None, [name, "", "", True, "xsi-cpu-symbolic"]
             )
 
-            device_without_sensors = True;
+            device_without_sensors = True
 
             # Process all *_input files in base_path
-            for fname in sorted(os.listdir(base_path)):
+            sensors = []
+            for fname in os.listdir(base_path):
                 if not fname.endswith("_input"):
                     continue
 
@@ -158,20 +226,35 @@ class SensorsListWidget(Gtk.ScrolledWindow):
                 if raw is None:
                     continue
 
-                value, unit, icon_name = format_sensor(fname, raw)
+                stype, spec = sensor_spec_from_filename(fname)
+                value = spec["format"](raw)
 
                 # Label
                 label_file = fpath.replace("_input", "_label")
                 label = self._read_file(label_file)
                 label = label.strip() if label else fname.replace("_input", "")
 
+                sensors.append({
+                    "label": label,
+                    "path": fpath,
+                    "value": value,
+                    "unit": spec["unit"],
+                    "icon": spec["icon"],
+                    "type": stype,
+                })
+
+            sort_sensors(sensors)
+
+            # Add sorted sensors to treestore
+            for s in sensors:
                 itr = self.treestore.append(
                     parent,
-                    [label, value, unit,  True, icon_name],
+                    [s["label"], s["value"], s["unit"],  True, s["icon"]],
                 )
-                self.sensor_rows[fpath] = itr
 
-                device_without_sensors = False;
+                # Store TreeStore itr and sensor type by path for refresh
+                self.sensor_rows[s["path"]] = (itr, s["type"])
+                device_without_sensors = False
 
             if device_without_sensors:
                 self.treestore.set_value(parent, COL_SENSITIVE, False)
@@ -180,15 +263,18 @@ class SensorsListWidget(Gtk.ScrolledWindow):
 
     def refresh_values(self):
         self.treestore.freeze_notify()
-        for fpath, itr in self.sensor_rows.items():
+
+        for fpath, (itr, stype) in self.sensor_rows.items():
             raw = self._read_file(fpath)
             if raw is None:
                 continue
 
-            fname = os.path.basename(fpath)
-            value, _, _ = format_sensor(fname, raw)
+            spec = SENSOR_SPECS[stype]
+            value = spec["format"](raw)
+
             if value != self.treestore.get_value(itr, COL_VALUE):
                 self.treestore.set_value(itr, COL_VALUE, value)
+
         self.treestore.thaw_notify()
         return True
 
