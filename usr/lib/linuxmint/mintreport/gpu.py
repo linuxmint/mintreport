@@ -60,8 +60,8 @@ def detect_vulkan_acceleration():
     for gpu in gpus:
         if not gpu.strip():
             continue
-        # Ignore software drivers like lavapipe
-        if re.search(r"lavapipe", gpu, re.IGNORECASE) or re.search(r"llvmpipe", gpu, re.IGNORECASE):
+        # Ignore software drivers like llvmpipe
+        if re.search(r"lavapipe|llvmpipe", gpu, re.IGNORECASE):
             continue
         # If we find a valid hardware vendor/device ID
         if re.search(r"vendorID\s*=\s*0x[0-9a-f]+", gpu, re.IGNORECASE):
