@@ -18,76 +18,78 @@ class SensorType(IntEnum):
     FAN = 1
     PWM = 2
     FREQ = 3
-    VOLTAGE = 4
-    CURRENT = 5
-    POWER = 6
+    POWER = 4
+    VOLTAGE = 5
+    CURRENT = 6
     ENERGY = 7
-    OTHER = 99
 
 
 SENSOR_SPECS = {
     SensorType.TEMP: {
         "prefix":"temp",
+        "suffix":"_input",
         "format":lambda raw: f"{int(raw)/1000:.1f}",
         "unit":"°C",
         "icon":"xsi-temperature-symbolic"
     },
     SensorType.FAN: {
         "prefix":"fan",
+        "suffix":"_input",
         "format":lambda raw: raw.strip(),
         "unit":_("RPM"),
         "icon":"xsi-cog-symbolic"
     },
     SensorType.PWM: {
         "prefix":"pwm",
+        "suffix":"", # no _input suffix for pwm
         "format":lambda raw: f"{int(raw)*100/255:.0f}",
         "unit":"%",
         "icon":"xsi-cog-symbolic"
     },
     SensorType.FREQ: {
         "prefix":"freq",
+        "suffix":"_input",
         "format":lambda raw: f"{int(raw)/1_000_000_000:.3f}",
         "unit":"GHz",
         "icon":"xsi-cog-symbolic"
     },
     SensorType.VOLTAGE: {
         "prefix":"in",
+        "suffix":"_input",
         "format":lambda raw: f"{int(raw)/1000:.3f}",
         "unit":"V",
         "icon":"xsi-cog-symbolic"
     },
     SensorType.CURRENT: {
         "prefix":"curr",
+        "suffix":"_input",
         "format":lambda raw: f"{int(raw)/1000:.3f}",
         "unit":"A",
         "icon":"xsi-cog-symbolic"
     },
     SensorType.POWER: {
         "prefix":"power",
+        "suffix":"_input",
         "format":lambda raw: f"{int(raw)/1_000_000:.1f}",
         "unit":"W",
         "icon":"xsi-cog-symbolic"
     },
     SensorType.ENERGY: {
         "prefix":"energy",
+        "suffix":"_input",
         "format":lambda raw: f"{int(raw)/1_000_000:.3f}",
         "unit":"J",
         "icon":"xsi-cog-symbolic"
-    },
-    SensorType.OTHER: {
-        "prefix":"",
-        "format":lambda raw: raw.strip(),
-        "unit":"",
-        "icon":"xsi-cog-symbolic"
-    },
+    }
 }
 
 def sensor_spec_from_filename(filename):
     for stype, spec in SENSOR_SPECS.items():
         prefix = spec["prefix"]
-        if prefix and filename.startswith(prefix):
+        suffix = spec["suffix"]
+        if filename.startswith(prefix) and filename.endswith(suffix):
             return stype, spec
-    return SensorType.OTHER, SENSOR_SPECS[SensorType.OTHER]
+    return None, None
 
 # Helper funcs to sort sensors in correct numerical order (ex in10 after in9)
 def natural_key(label):
@@ -219,26 +221,25 @@ class SensorsListWidget(Gtk.ScrolledWindow):
             # Process all *_input files in base_path
             sensors = []
             for fname in os.listdir(base_path):
-                if not fname.endswith("_input"):
-                    continue
+                stype, spec = sensor_spec_from_filename(fname)
+                if spec is None:
+                    continue    # that's not a sensor
 
                 fpath = os.path.join(base_path, fname)
                 raw = self._read_file(fpath)
                 if raw is None:
-                    continue
-
-                stype, spec = sensor_spec_from_filename(fname)
-                value = spec["format"](raw)
+                    continue    # unable to read sensor -> skip
 
                 # Label
-                label_file = fpath.replace("_input", "_label")
-                label = self._read_file(label_file)
+                labelname = fname.replace(spec["suffix"], "_label")
+                labelpath = os.path.join(base_path, labelname)
+                label = self._read_file(labelpath)
                 label = label.strip() if label else fname.replace("_input", "")
 
                 sensors.append({
                     "label": label,
                     "path": fpath,
-                    "value": value,
+                    "value": spec["format"](raw),
                     "unit": spec["unit"],
                     "icon": spec["icon"],
                     "type": stype,
