@@ -25,6 +25,8 @@ from bios import BIOSListWidget
 from pci import PCIListWidget
 from usb import USBListWidget
 from gpu import GPUListWidget
+from sensors import SensorsListWidget
+
 
 setproctitle.setproctitle("mintreport")
 _ = xapp.util.l10n("mintreport")
@@ -68,6 +70,7 @@ class MyApplication(Gtk.Application):
         group.add_argument("--bios", action="store_const", dest="page", const="bios")
         group.add_argument("--pci", action="store_const", dest="page", const="pci")
         group.add_argument("--gpu", action="store_const", dest="page", const="gpu")
+        group.add_argument("--sensors", action="store_const", dest="page", const="sensors")
         argv = command_line.get_arguments()[1:]
         args, _ = parser.parse_known_args(argv)
         if args.page is None:
@@ -409,7 +412,6 @@ class MintReportWindow():
         self.builder.get_object("button_sysinfo_copy").connect("clicked", self.copy_inxi_info)
         self.builder.get_object("button_sysinfo_upload").connect("clicked", self.upload_inxi_info)
 
-
         # USB page
         self.usb_widget = USBListWidget()
         self.builder.get_object("box_usb_widget").pack_start(self.usb_widget, True, True, 0)
@@ -417,6 +419,10 @@ class MintReportWindow():
         # PCI page
         self.pci_widget = PCIListWidget()
         self.builder.get_object("box_pci_widget").pack_start(self.pci_widget, True, True, 0)
+
+        # Sensors page
+        self.sensors_widget = SensorsListWidget()
+        self.builder.get_object("box_sensors_widget").pack_start(self.sensors_widget, True, True, 0)
 
         # BIOS page
         self.bios_widget = BIOSListWidget()
@@ -431,6 +437,7 @@ class MintReportWindow():
         self.load_pci()
         self.load_bios()
         self.load_gpu()
+        self.load_sensors()
 
     def show_page(self, page_name):
         page_name = f"page_{page_name}"
@@ -586,6 +593,10 @@ class MintReportWindow():
     @xt.run_async
     def load_pci(self):
         self.pci_widget.load()
+
+    @xt.run_async
+    def load_sensors(self):
+        self.sensors_widget.load()
 
     @xt.run_async
     def load_bios(self):
