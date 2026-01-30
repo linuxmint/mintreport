@@ -354,12 +354,12 @@ msgstr "Az automatikus frissítések telepítve."
 
 #: usr/lib/linuxmint/mintreport/usb.py:39
 #, python-format
-msgid "%d Gbps"
+msgid "%s Gbps"
 msgstr "%d gigabit/másodperc"
 
 #: usr/lib/linuxmint/mintreport/usb.py:41
 #, python-format
-msgid "%d Mbps"
+msgid "%s Mbps"
 msgstr "%d megabit/másodperc"
 
 #: usr/lib/linuxmint/mintreport/usb.py:168

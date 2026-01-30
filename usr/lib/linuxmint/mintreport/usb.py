@@ -32,13 +32,14 @@ def decode_power(device):
 
 def speed_label(speed_mbps):
     try:
-        val = int(speed_mbps)
+        val = float(speed_mbps)
     except Exception:
         return speed_mbps
+
     if val >= 10000:
-        return _("%d Gbps") % val
+        return _("%s Gbps") % ("%d" % (val / 1000))
     else:
-        return _("%d Mbps") % val
+        return _("%s Mbps") % speed_mbps
 
 def usb_limit(version):
     try:
@@ -134,7 +135,6 @@ class USBListWidget(Gtk.ScrolledWindow):
 
         self.treeview = Gtk.TreeView(model=self.treestore)
         self.treeview.connect("row-activated", self.on_row_activated)
-        self.treeview.set_property("level-indentation", 10)
         self.treeview.set_enable_tree_lines(True)
         self.treeview.set_property("expand", True)
         self.treeview.set_headers_clickable(True)

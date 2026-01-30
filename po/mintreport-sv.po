@@ -352,13 +352,13 @@ msgstr "De automatiska uppdateringarna installeras."
 
 #: usr/lib/linuxmint/mintreport/usb.py:39
 #, python-format
-msgid "%d Gbps"
-msgstr "%d Gbit/s"
+msgid "%s Gbps"
+msgstr "%s Gbit/s"
 
 #: usr/lib/linuxmint/mintreport/usb.py:41
 #, python-format
-msgid "%d Mbps"
-msgstr "%d Mbit/s"
+msgid "%s Mbps"
+msgstr "%s Mbit/s"
 
 #: usr/lib/linuxmint/mintreport/usb.py:168
 msgid "Speed"

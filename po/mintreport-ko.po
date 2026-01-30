@@ -344,13 +344,13 @@ msgstr "자동으로 업데이트가 설치됩니다."
 
 #: usr/lib/linuxmint/mintreport/usb.py:39
 #, python-format
-msgid "%d Gbps"
-msgstr "%d Gbps"
+msgid "%s Gbps"
+msgstr "%s Gbps"
 
 #: usr/lib/linuxmint/mintreport/usb.py:41
 #, python-format
-msgid "%d Mbps"
-msgstr "%d Mbps"
+msgid "%s Mbps"
+msgstr "%s Mbps"
 
 #: usr/lib/linuxmint/mintreport/usb.py:168
 msgid "Speed"

@@ -351,12 +351,12 @@ msgstr "Cập nhật tự động đang được cài đặt."
 
 #: usr/lib/linuxmint/mintreport/usb.py:39
 #, python-format
-msgid "%d Gbps"
+msgid "%s Gbps"
 msgstr "%d Gb/giây"
 
 #: usr/lib/linuxmint/mintreport/usb.py:41
 #, python-format
-msgid "%d Mbps"
+msgid "%s Mbps"
 msgstr "%d Mb/giây"
 
 #: usr/lib/linuxmint/mintreport/usb.py:168

@@ -354,12 +354,12 @@ msgstr "Устанавливаются автоматические обновл
 
 #: usr/lib/linuxmint/mintreport/usb.py:39
 #, python-format
-msgid "%d Gbps"
+msgid "%s Gbps"
 msgstr "%d Гб/с"
 
 #: usr/lib/linuxmint/mintreport/usb.py:41
 #, python-format
-msgid "%d Mbps"
+msgid "%s Mbps"
 msgstr "%d Мб/с"
 
 #: usr/lib/linuxmint/mintreport/usb.py:168

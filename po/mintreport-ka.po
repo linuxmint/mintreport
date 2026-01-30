@@ -350,12 +350,12 @@ msgstr "ავტომატური განახლებები ყე�
 
 #: usr/lib/linuxmint/mintreport/usb.py:39
 #, python-format
-msgid "%d Gbps"
+msgid "%s Gbps"
 msgstr "%d გბ/წმ"
 
 #: usr/lib/linuxmint/mintreport/usb.py:41
 #, python-format
-msgid "%d Mbps"
+msgid "%s Mbps"
 msgstr "%d მბ/წმ"
 
 #: usr/lib/linuxmint/mintreport/usb.py:168

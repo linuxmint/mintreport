@@ -352,12 +352,12 @@ msgstr "Instalují se automatické aktualizace."
 
 #: usr/lib/linuxmint/mintreport/usb.py:39
 #, python-format
-msgid "%d Gbps"
+msgid "%s Gbps"
 msgstr "%d Gb/s"
 
 #: usr/lib/linuxmint/mintreport/usb.py:41
 #, python-format
-msgid "%d Mbps"
+msgid "%s Mbps"
 msgstr "%d Mb/s"
 
 #: usr/lib/linuxmint/mintreport/usb.py:168
