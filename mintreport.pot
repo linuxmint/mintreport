@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-23 10:18+0100\n"
+"POT-Creation-Date: 2026-01-12 21:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,8 +28,8 @@ msgid "Unknown CPU"
 msgstr ""
 
 #: usr/lib/linuxmint/mintreport/app.py:196
-#: usr/lib/linuxmint/mintreport/app.py:466 generate_desktop_files:25
-#: generate_desktop_files:39 usr/share/linuxmint/mintreport/mintreport.ui.h:5
+#: usr/lib/linuxmint/mintreport/app.py:466 generate_desktop_files:26
+#: generate_desktop_files:40 usr/share/linuxmint/mintreport/mintreport.ui.h:5
 msgid "System Information"
 msgstr ""
 
@@ -335,14 +335,14 @@ msgstr ""
 msgid "Automatic updates are being installed."
 msgstr ""
 
-#: usr/lib/linuxmint/mintreport/usb.py:39
+#: usr/lib/linuxmint/mintreport/usb.py:40
 #, python-format
-msgid "%d Gbps"
+msgid "%s Gbps"
 msgstr ""
 
-#: usr/lib/linuxmint/mintreport/usb.py:41
+#: usr/lib/linuxmint/mintreport/usb.py:42
 #, python-format
-msgid "%d Mbps"
+msgid "%s Mbps"
 msgstr ""
 
 #: usr/lib/linuxmint/mintreport/usb.py:168
@@ -373,18 +373,18 @@ msgstr ""
 msgid "The ID of the device was copied into your clipboard."
 msgstr ""
 
-#: generate_desktop_files:25 generate_desktop_files:39
-#: generate_desktop_files:53 generate_desktop_files:67
+#: generate_desktop_files:26 generate_desktop_files:40
+#: generate_desktop_files:54 generate_desktop_files:68
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:26
 msgid "Troubleshoot problems"
 msgstr ""
 
-#: generate_desktop_files:53 generate_desktop_files:67
+#: generate_desktop_files:54 generate_desktop_files:68
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:13
 msgid "System Reports"
 msgstr ""
 
-#: generate_desktop_files:53
+#: generate_desktop_files:54
 msgid "Troubleshooting Tool"
 msgstr ""
 

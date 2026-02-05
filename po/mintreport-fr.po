@@ -358,13 +358,13 @@ msgstr "Des mises à jour automatiques sont en cours d’installation."
 
 #: usr/lib/linuxmint/mintreport/usb.py:39
 #, python-format
-msgid "%d Gbps"
-msgstr "%d Gbit/s"
+msgid "%s Gbps"
+msgstr "%s Gbit/s"
 
 #: usr/lib/linuxmint/mintreport/usb.py:41
 #, python-format
-msgid "%d Mbps"
-msgstr "%d Mbit/s"
+msgid "%s Mbps"
+msgstr "%s Mbit/s"
 
 #: usr/lib/linuxmint/mintreport/usb.py:168
 msgid "Speed"
@@ -378,18 +378,18 @@ msgstr "Puissance"
 #, python-format
 msgid "USB %(version)s controller (Bus #%(number)s) – Max speed: %(speed)s"
 msgstr ""
-"Contrôleur USB %(version)s (bus no %(number)s) – Débit maximale : %(speed)s"
+"Contrôleur USB %(version)s (bus no %(number)s) – Débit maximale : %(speed)s"
 
 #: usr/lib/linuxmint/mintreport/usb.py:285
 #: usr/lib/linuxmint/mintreport/usb.py:288
 #, python-format
 msgid "%d mA"
-msgstr "%d mA"
+msgstr "%d mA"
 
 #: usr/lib/linuxmint/mintreport/usb.py:336
 #, python-format
 msgid "%s mA max"
-msgstr "%s mA maximum"
+msgstr "%s mA maximum"
 
 #: usr/lib/linuxmint/mintreport/usb.py:355
 msgid "The ID of the device was copied into your clipboard."
@@ -434,7 +434,7 @@ msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:6
 msgid "Note: Double-click a device to copy its ID"
-msgstr "Note : double-cliquez sur un périphérique pour copier son ID"
+msgstr "Note : double-cliquez sur un périphérique pour copier son ID"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:7
 msgid "USB"
@@ -654,7 +654,7 @@ msgstr "Cela est déjà fait pour les nouvelles installations de Linux Mint."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:41
 msgid "To convert your system, open a terminal and type:"
-msgstr "Pour convertir votre système, ouvrez un terminal et tapez :"
+msgstr "Pour convertir votre système, ouvrez un terminal et tapez :"
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:43
 msgid "You should reboot the computer once this completes."
@@ -672,12 +672,12 @@ msgstr "Supprimer les indicateurs contradictoires"
 msgid "The following packages prevent tray icons from working properly:"
 msgstr ""
 "Les paquets suivants empêchent la zone de notification de fonctionner "
-"correctement :"
+"correctement :"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:39
 msgid "Note: You will need to log out after removing them."
 msgstr ""
-"Note : Vous devrez vous déconnecter de la session après les avoir supprimés."
+"Note : Vous devrez vous déconnecter de la session après les avoir supprimés."
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:45
 msgid "Remove the conflicting packages."
@@ -693,7 +693,7 @@ msgid ""
 "language:"
 msgstr ""
 "Les paquets de localisation suivants sont nécessaires pour une prise en "
-"charge complète de votre langue  :"
+"charge complète de votre langue  :"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:48
 msgid "Install the Language Packs"

@@ -353,12 +353,12 @@ msgstr "स्वतः अपडेट इंस्टॉल हो रही �
 
 #: usr/lib/linuxmint/mintreport/usb.py:39
 #, python-format
-msgid "%d Gbps"
+msgid "%s Gbps"
 msgstr ""
 
 #: usr/lib/linuxmint/mintreport/usb.py:41
 #, python-format
-msgid "%d Mbps"
+msgid "%s Mbps"
 msgstr ""
 
 #: usr/lib/linuxmint/mintreport/usb.py:168
