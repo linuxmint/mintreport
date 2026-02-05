@@ -81,10 +81,13 @@ def detect_gles():
 
 def get_default_gpu_id():
     drm_path = Path("/sys/class/drm")
-    cards = sorted(drm_path.glob("card[0-9]*"))
+    # Only match card0, card1, etc. - not connector entries like card0-DP-1, card1-HDMI-A-1
+    cards = sorted(c for c in drm_path.iterdir() if re.match(r'^card\d+$', c.name))
     for card_dir in cards:
         dev_dir = card_dir / "device"
-        if not dev_dir.exists():
+        vendor_file = dev_dir / "vendor"
+        device_file = dev_dir / "device"
+        if not (vendor_file.exists() and device_file.exists()):
             continue
 
         # Detect display connection (for default GPU)
@@ -94,8 +97,8 @@ def get_default_gpu_id():
             for conn in card_dir.iterdir() if conn.is_dir()
         )
 
-        vendor = (dev_dir / "vendor").read_text().strip()
-        device = (dev_dir / "device").read_text().strip()
+        vendor = vendor_file.read_text().strip()
+        device = device_file.read_text().strip()
         pci_id = f"{vendor}:{device}".replace("0x", "")
 
         if has_display:
@@ -104,9 +107,11 @@ def get_default_gpu_id():
     # Fallback: return the first card's PCI ID
     if cards:
         dev_dir = cards[0] / "device"
-        if (dev_dir / "vendor").exists() and (dev_dir / "device").exists():
-            vendor = (dev_dir / "vendor").read_text().strip()
-            device = (dev_dir / "device").read_text().strip()
+        vendor_file = dev_dir / "vendor"
+        device_file = dev_dir / "device"
+        if vendor_file.exists() and device_file.exists():
+            vendor = vendor_file.read_text().strip()
+            device = device_file.read_text().strip()
             return f"{vendor}:{device}".replace("0x", "")
 
     return None
