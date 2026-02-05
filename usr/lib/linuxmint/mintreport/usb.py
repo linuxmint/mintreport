@@ -134,7 +134,6 @@ class USBListWidget(Gtk.ScrolledWindow):
 
         self.treeview = Gtk.TreeView(model=self.treestore)
         self.treeview.connect("row-activated", self.on_row_activated)
-        self.treeview.set_property("level-indentation", 10)
         self.treeview.set_enable_tree_lines(True)
         self.treeview.set_property("expand", True)
         self.treeview.set_headers_clickable(True)
