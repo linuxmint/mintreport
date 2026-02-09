@@ -1,3 +1,22 @@
+mintreport (1.6.1) zena; urgency=medium
+
+  [ Michael Webster ]
+  * Add CI workflow.
+
+  [ pilatomic ]
+  * Fix indentation increasing for each level in USB device tree (#113)
+
+  [ stellarkookies ]
+  * add llvmpipe as vulkan software renderer (#119)
+
+  [ Michael Webster ]
+  * gpu.py: Fix gpu detection (#120)
+
+  [ Clement Lefebvre ]
+  * dependencies: Add vainfo/vdpauinfo
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 09 Feb 2026 17:00:53 +0000
+
 mintreport (1.6.0) zena; urgency=medium
 
   * l10n: Update translations
