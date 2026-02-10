@@ -520,13 +520,42 @@ class MintReportWindow():
 
     def upload_inxi_info(self, button):
         try:
-            output = subprocess.check_output("pastebin %s" % TMP_INXI_FILE, shell=True).decode("UTF-8")
+            result = subprocess.run(
+                "pastebin %s" % TMP_INXI_FILE,
+                shell=True,
+                capture_output=True,
+                check=True,
+                text=True,
+                encoding="utf-8"
+            )
+            output = result.stdout
             link = output.rstrip('\x00').strip() # Remove ASCII null termination with \x00
+            # pastebin script still returns 0 if it erroed, so check if stdout is empty to determined if it erroed.
+            if (not link):
+                raise ValueError("Error: %s" % result.stderr)
             clipboard = Gtk.Clipboard.get(Gdk.SELECTION_CLIPBOARD)
             clipboard.set_text(link, -1)
-            subprocess.Popen(['notify-send', '-i', 'xsi-dialog-information-symbolic', _("System information uploaded"), _("Your system information was uploaded to %s. This link was placed in your clipboard.") % link])
+            dialog = Gtk.MessageDialog(
+                self.window,
+                0,
+                Gtk.MessageType.INFO,
+                Gtk.ButtonsType.OK,
+                _("System information uploaded")
+            )
+            dialog.format_secondary_text(_("Your system information was uploaded to %s. This link was placed in your clipboard.") % link)
+            dialog.run()
+            dialog.destroy()
         except Exception as e:
-            subprocess.Popen(['notify-send', '-i', 'xsi-dialog-error-symbolic', _("An error occurred while uploading the system information"), _("Copy and paste the system information manually into a pastebin site like https://pastebin.com."), str(e)])
+            dialog = Gtk.MessageDialog(
+                self.window,
+                0,
+                Gtk.MessageType.ERROR,
+                Gtk.ButtonsType.OK,
+                _("An error occurred while uploading the system information")
+            )
+            dialog.format_secondary_text(_("Copy and paste the system information manually into a pastebin site like https://pastebin.com.\n\n%s") % str(e))
+            dialog.run()
+            dialog.destroy()
 
     @xt.run_idle
     def add_report_to_treeview(self, report):
