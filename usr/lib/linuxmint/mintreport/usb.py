@@ -37,7 +37,7 @@ def speed_label(speed_mbps):
         return speed_mbps
 
     if val >= 10000:
-        return _("%s Gbps") % ("%d" % (val / 1000))
+        return _("%d Gbps") % (val / 1000)
     else:
         return _("%s Mbps") % speed_mbps
 
