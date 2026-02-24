@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import gi
 import os
+from datetime import datetime
 import xapp.SettingsWidgets as Xs
 import xapp.threading as xt
 import xapp.util
@@ -32,7 +33,12 @@ class BIOSListWidget(Xs.SettingsPage):
         infos_bios.append([_('Brand'), clean_brand(read_dmi('bios_vendor'))])
         infos_bios.append([_('Version'), read_dmi('bios_version')])
         infos_bios.append([_('Release'), read_dmi('bios_release')])
-        infos_bios.append([_('Release Date'), read_dmi('bios_date')])
+        bios_date = read_dmi('bios_date')
+        try:
+            bios_date = datetime.strptime(bios_date, "%m/%d/%Y").strftime("%x")
+        except (ValueError, TypeError):
+            pass
+        infos_bios.append([_('Release Date'), bios_date])
 
         if not os.path.exists("/sys/firmware/efi"):
             infos_bios.append([_('Boot Mode'), 'BIOS'])
