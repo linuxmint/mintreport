@@ -529,11 +529,13 @@ class MintReportWindow():
         try:
             output = subprocess.check_output("pastebin %s" % TMP_INXI_FILE, shell=True).decode("UTF-8")
             link = output.rstrip('\x00').strip() # Remove ASCII null termination with \x00
+            if not link:
+                raise()
             clipboard = Gtk.Clipboard.get(Gdk.SELECTION_CLIPBOARD)
             clipboard.set_text(link, -1)
             subprocess.Popen(['notify-send', '-i', 'xsi-dialog-information-symbolic', _("System information uploaded"), _("Your system information was uploaded to %s. This link was placed in your clipboard.") % link])
-        except Exception as e:
-            subprocess.Popen(['notify-send', '-i', 'xsi-dialog-error-symbolic', _("An error occurred while uploading the system information"), _("Copy and paste the system information manually into a pastebin site like https://pastebin.com."), str(e)])
+        except Exception:
+            subprocess.Popen(['notify-send', '-i', 'xsi-dialog-error-symbolic', _("An error occurred while uploading the system information"), _("Copy and paste the system information manually into a pastebin site like https://pastebin.com.")])
 
     @xt.run_idle
     def add_report_to_treeview(self, report):
