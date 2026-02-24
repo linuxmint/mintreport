@@ -129,13 +129,12 @@ def get_disk_size():
     try:
         out = get_process_output(("lsblk", "--json", "--output", "size", "--bytes", "--nodeps"))
         jsonobj = json.loads(''.join(out))
+        for blk in jsonobj['blockdevices']:
+            disksize += int(blk['size'])
     except Exception:
-        return _("Unknown size"), False
+        return _("Unknown size")
 
-    for blk in jsonobj['blockdevices']:
-        disksize += int(blk['size'])
-
-    return disksize, (len(jsonobj['blockdevices']) > 1)
+    return disksize
 
 
 def get_proc_infos():
@@ -383,15 +382,11 @@ class MintReportWindow():
         else:
             infos.append((_("Memory"), procInfos['mem_total']))
 
-        diskSize, multipleDisks = get_disk_size()
-        if multipleDisks:
-            diskText = _("Hard Drives")
-        else:
-            diskText = _("Hard Drive")
+        diskSize = get_disk_size()
         try:
-            infos.append((diskText, '%.1f %s' % ((diskSize / (1000**3)), _("GB"))))
+            infos.append((_("Storage"), '%.1f %s' % ((diskSize / (1000**3)), _("GB"))))
         except:
-            infos.append((diskText, diskSize))
+            infos.append((_("Storage"), diskSize))
 
         desktop = os.getenv("XDG_CURRENT_DESKTOP")
         if "cinnamon" in desktop.lower():
