@@ -10,7 +10,7 @@ sudo rm -rf /usr/share/linuxmint/mintreport/reports/080_release-eol
 sudo rm -rf /usr/share/linuxmint/mintreport/mintreport.ui
 sudo cp -R usr /
 
-if [ $1 == "tray" ]
+if [ "$1" == "tray" ]
 then
     killall mintreport-tray
     mintreport-tray
