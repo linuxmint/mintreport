@@ -37,49 +37,49 @@ SENSOR_SPECS = {
         "suffix":"_input",
         "format":lambda raw: raw.strip(),
         "unit":_("RPM"),
-        "icon":"xsi-cog-symbolic"
+        "icon":"xsi-fan-symbolic"
     },
     SensorType.PWM: {
         "prefix":"pwm",
         "suffix":"", # no _input suffix for pwm
         "format":lambda raw: f"{int(raw)*100/255:.0f}",
         "unit":"%",
-        "icon":"xsi-cog-symbolic"
+        "icon":"xsi-fan-symbolic"
     },
     SensorType.FREQ: {
         "prefix":"freq",
         "suffix":"_input",
         "format":lambda raw: f"{int(raw)/1_000_000_000:.3f}",
         "unit":"GHz",
-        "icon":"xsi-cog-symbolic"
+        "icon":"xsi-physics-wavelength-symbolic"
     },
     SensorType.VOLTAGE: {
         "prefix":"in",
         "suffix":"_input",
         "format":lambda raw: f"{int(raw)/1000:.3f}",
         "unit":"V",
-        "icon":"xsi-cog-symbolic"
+        "icon":"xsi-physics-volts-symbolic"
     },
     SensorType.CURRENT: {
         "prefix":"curr",
         "suffix":"_input",
         "format":lambda raw: f"{int(raw)/1000:.3f}",
         "unit":"A",
-        "icon":"xsi-cog-symbolic"
+        "icon":"xsi-physics-wave-symbolic"
     },
     SensorType.POWER: {
         "prefix":"power",
         "suffix":"_input",
         "format":lambda raw: f"{int(raw)/1_000_000:.1f}",
         "unit":"W",
-        "icon":"xsi-cog-symbolic"
+        "icon":"xsi-physics-watts-symbolic"
     },
     SensorType.ENERGY: {
         "prefix":"energy",
         "suffix":"_input",
         "format":lambda raw: f"{int(raw)/1_000_000:.3f}",
         "unit":"J",
-        "icon":"xsi-cog-symbolic"
+        "icon":"xsi-power-symbolic"
     }
 }
 
