@@ -48,21 +48,21 @@ SENSOR_SPECS = {
     SensorType.FREQ: {
         "prefix":"freq",
         "suffix":"_input",
-        "format":lambda raw: f"{int(raw)/1_000_000_000:.3f}",
+        "format":lambda raw: f"{int(raw)/1_000_000_000:.2f}",
         "unit":"GHz",
         "icon":"xsi-physics-wavelength-symbolic"
     },
     SensorType.VOLTAGE: {
         "prefix":"in",
         "suffix":"_input",
-        "format":lambda raw: f"{int(raw)/1000:.3f}",
+        "format":lambda raw: f"{int(raw)/1000:.2f}",
         "unit":"V",
         "icon":"xsi-physics-volts-symbolic"
     },
     SensorType.CURRENT: {
         "prefix":"curr",
         "suffix":"_input",
-        "format":lambda raw: f"{int(raw)/1000:.3f}",
+        "format":lambda raw: f"{int(raw)/1000:.2f}",
         "unit":"A",
         "icon":"xsi-physics-wave-symbolic"
     },
@@ -76,7 +76,7 @@ SENSOR_SPECS = {
     SensorType.ENERGY: {
         "prefix":"energy",
         "suffix":"_input",
-        "format":lambda raw: f"{int(raw)/1_000_000:.3f}",
+        "format":lambda raw: f"{int(raw)/1_000_000:.1f}",
         "unit":"J",
         "icon":"xsi-power-symbolic"
     }
@@ -123,6 +123,8 @@ class SensorsListWidget(Gtk.ScrolledWindow):
         self.add(self.page)
 
         self.sensor_rows = {}  # fpath -> (value_label, stype)
+        self.value_size_group = Gtk.SizeGroup(Gtk.SizeGroupMode.HORIZONTAL)
+        self.unit_size_group = Gtk.SizeGroup(Gtk.SizeGroupMode.HORIZONTAL)
 
         self.timeout_id = None
         self.refresh_interval = 1 # seconds
@@ -228,8 +230,12 @@ class SensorsListWidget(Gtk.ScrolledWindow):
 
                 value_label = Gtk.Label(label=s["value"])
                 value_label.get_style_context().add_class("dim-label")
+                value_label.set_xalign(1.0)
                 unit_label = Gtk.Label(label=s["unit"])
                 unit_label.get_style_context().add_class("dim-label")
+                unit_label.set_xalign(0.0)
+                self.value_size_group.add_widget(value_label)
+                self.unit_size_group.add_widget(unit_label)
                 row.pack_end(unit_label, False, False, 0)
                 row.pack_end(value_label, False, False, 0)
 
