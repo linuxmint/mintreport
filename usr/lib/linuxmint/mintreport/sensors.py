@@ -1,17 +1,16 @@
 import os
 import gi
 import xapp.util
+import xapp.SettingsWidgets as Xs
 import re
 from enum import IntEnum
 
 gi.require_version("Gtk", "3.0")
-from gi.repository import Gtk, GLib, Pango
+from gi.repository import Gtk, GLib
 
 _ = xapp.util.l10n("mintreport")
 
 SYS_HWMON = "/sys/class/hwmon"
-
-COL_NAME, COL_VALUE, COL_UNIT, COL_SENSITIVE, COL_ICON_NAME = range(5)
 
 class SensorType(IntEnum):
     TEMP = 0
@@ -41,7 +40,7 @@ SENSOR_SPECS = {
     },
     SensorType.PWM: {
         "prefix":"pwm",
-        "suffix":"", # no _input suffix for pwm
+        "suffix":"", # no _input suffix for pwm
         "format":lambda raw: f"{int(raw)*100/255:.0f}",
         "unit":"%",
         "icon":"xsi-fan-symbolic"
@@ -113,49 +112,17 @@ class SensorsListWidget(Gtk.ScrolledWindow):
 
     def __init__(self):
         super().__init__()
+        self.set_policy(Gtk.PolicyType.NEVER, Gtk.PolicyType.AUTOMATIC)
 
-        self.treestore = Gtk.TreeStore(str, str, str, bool, str)
+        self.page = Xs.SettingsPage()
+        self.page.set_spacing(24)
+        self.page.set_margin_left(24)
+        self.page.set_margin_right(24)
+        self.page.set_margin_top(12)
+        self.page.set_margin_bottom(12)
+        self.add(self.page)
 
-        self.treeview = Gtk.TreeView(model=self.treestore)
-        self.treeview.set_enable_tree_lines(True)
-        self.treeview.set_property("expand", True)
-        self.treeview.set_headers_clickable(True)
-
-        # --- Columns ---
-        # Name column with device icon
-        icon_renderer = Gtk.CellRendererPixbuf()
-        icon_renderer.set_property("xpad", 2)
-        icon_renderer.set_property("ypad", 2)
-        text_renderer = Gtk.CellRendererText()
-        text_renderer.set_property("ypad", 6)
-        column = Gtk.TreeViewColumn(_("Name"))
-        column.pack_start(icon_renderer, False)
-        column.pack_start(text_renderer, True)
-        column.add_attribute(icon_renderer, "icon-name", COL_ICON_NAME)
-        column.add_attribute(text_renderer, "text", COL_NAME)
-        column.add_attribute(text_renderer, "sensitive", COL_SENSITIVE)
-        text_renderer.set_property("ellipsize", Pango.EllipsizeMode.END)
-        column.set_sizing(Gtk.TreeViewColumnSizing.FIXED)
-        self.treeview.append_column(column)
-        column.set_expand(True)
-        column.set_resizable(True)
-
-        # Value column
-        renderer = Gtk.CellRendererText()
-        column = Gtk.TreeViewColumn(_("Value"), renderer, text=COL_VALUE)
-        column.set_expand(False)
-        self.treeview.append_column(column)
-
-        # Unit column
-        renderer = Gtk.CellRendererText()
-        column = Gtk.TreeViewColumn(_("Unit"), renderer, text=COL_UNIT)
-        column.set_expand(False)
-        self.treeview.append_column(column)
-
-        self.add(self.treeview)
-        self.set_shadow_type(Gtk.ShadowType.IN)
-
-        self.sensor_rows = {}
+        self.sensor_rows = {}  # fpath -> (value_label, stype)
 
         self.timeout_id = None
         self.refresh_interval = 1 # seconds
@@ -167,25 +134,26 @@ class SensorsListWidget(Gtk.ScrolledWindow):
         # do nothing, we do everything in the _on_map() function
         pass
 
-    def _on_map(self, *arg):
+    def _on_map(self, *_):
         if self.timeout_id is None:
-            # Refresh existing tree or build it is does not exist yet
+            # Refresh existing cards or build them if they don't exist yet
             if self.sensor_rows:
                 self.refresh_values()
             else:
-                self.build_tree()
+                self.build_cards()
 
             self.timeout_id = GLib.timeout_add_seconds(
                 self.refresh_interval, self.refresh_values
             )
 
-    def _on_unmap(self, *arg):
+    def _on_unmap(self, *_):
         if self.timeout_id is not None:
             GLib.source_remove(self.timeout_id)
             self.timeout_id = None
 
-    def build_tree(self):
-        self.treestore.clear()
+    def build_cards(self):
+        for child in self.page.get_children():
+            self.page.remove(child)
         self.sensor_rows.clear()
 
         if not os.path.isdir(SYS_HWMON):
@@ -212,13 +180,7 @@ class SensorsListWidget(Gtk.ScrolledWindow):
             name = self._read_file(name_file)
             name = name.strip() if name else hwmon
 
-            parent = self.treestore.append(
-                None, [name, "", "", True, "xsi-cpu-symbolic"]
-            )
-
-            device_without_sensors = True
-
-            # Process all *_input files in base_path
+            # Process all sensor files in base_path
             sensors = []
             for fname in os.listdir(base_path):
                 stype, spec = sensor_spec_from_filename(fname)
@@ -245,28 +207,39 @@ class SensorsListWidget(Gtk.ScrolledWindow):
                     "type": stype,
                 })
 
+            if not sensors:
+                continue
+
             sort_sensors(sensors)
 
-            # Add sorted sensors to treestore
+            section = self.page.add_section(name)
+
             for s in sensors:
-                itr = self.treestore.append(
-                    parent,
-                    [s["label"], s["value"], s["unit"],  True, s["icon"]],
-                )
+                row = Xs.SettingsWidget()
+                row.set_spacing(8)
 
-                # Store TreeStore itr and sensor type by path for refresh
-                self.sensor_rows[s["path"]] = (itr, s["type"])
-                device_without_sensors = False
+                icon = Gtk.Image.new_from_icon_name(s["icon"], Gtk.IconSize.MENU)
+                icon.set_pixel_size(16)
+                row.pack_start(icon, False, False, 0)
 
-            if device_without_sensors:
-                self.treestore.set_value(parent, COL_SENSITIVE, False)
+                name_label = Gtk.Label(label=s["label"])
+                name_label.set_xalign(0)
+                row.pack_start(name_label, True, True, 0)
 
-        self.treeview.expand_all()
+                value_label = Gtk.Label(label=s["value"])
+                value_label.get_style_context().add_class("dim-label")
+                unit_label = Gtk.Label(label=s["unit"])
+                unit_label.get_style_context().add_class("dim-label")
+                row.pack_end(unit_label, False, False, 0)
+                row.pack_end(value_label, False, False, 0)
+
+                section.add_row(row)
+                self.sensor_rows[s["path"]] = (value_label, s["type"])
+
+        self.page.show_all()
 
     def refresh_values(self):
-        self.treestore.freeze_notify()
-
-        for fpath, (itr, stype) in self.sensor_rows.items():
+        for fpath, (value_label, stype) in self.sensor_rows.items():
             raw = self._read_file(fpath)
             if raw is None:
                 continue
@@ -274,10 +247,9 @@ class SensorsListWidget(Gtk.ScrolledWindow):
             spec = SENSOR_SPECS[stype]
             value = spec["format"](raw)
 
-            if value != self.treestore.get_value(itr, COL_VALUE):
-                self.treestore.set_value(itr, COL_VALUE, value)
+            if value != value_label.get_text():
+                value_label.set_text(value)
 
-        self.treestore.thaw_notify()
         return True
 
     def _read_file(self, path):
