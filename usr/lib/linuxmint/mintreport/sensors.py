@@ -86,7 +86,11 @@ def sensor_spec_from_filename(filename):
     for stype, spec in SENSOR_SPECS.items():
         prefix = spec["prefix"]
         suffix = spec["suffix"]
-        if filename.startswith(prefix) and filename.endswith(suffix):
+        if suffix == "":
+            # Empty suffix would match anything — require an exact pwmN match instead
+            if re.fullmatch(rf"{re.escape(prefix)}\d+", filename):
+                return stype, spec
+        elif filename.startswith(prefix) and filename.endswith(suffix):
             return stype, spec
     return None, None
 
@@ -196,7 +200,7 @@ class SensorsListWidget(Gtk.ScrolledWindow):
                     continue    # unable to read sensor -> skip
 
                 # Label
-                labelname = fname.replace(spec["suffix"], "_label")
+                labelname = fname.removesuffix(spec["suffix"]) + "_label" if spec["suffix"] else fname + "_label"
                 labelpath = os.path.join(base_path, labelname)
                 label = self._read_file(labelpath)
                 label = label.strip() if label else fname.replace("_input", "")
