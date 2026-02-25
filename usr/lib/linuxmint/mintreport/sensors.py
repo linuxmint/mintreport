@@ -25,57 +25,49 @@ class SensorType(IntEnum):
 
 SENSOR_SPECS = {
     SensorType.TEMP: {
-        "prefix":"temp",
-        "suffix":"_input",
+        "pattern":re.compile(r"^(temp\d+)_input$"),
         "format":lambda raw: f"{int(raw)/1000:.1f}",
         "unit":"°C",
         "icon":"xsi-temperature-symbolic"
     },
     SensorType.FAN: {
-        "prefix":"fan",
-        "suffix":"_input",
+        "pattern":re.compile(r"^(fan\d+)_input$"),
         "format":lambda raw: raw.strip(),
         "unit":_("RPM"),
         "icon":"xsi-fan-symbolic"
     },
     SensorType.PWM: {
-        "prefix":"pwm",
-        "suffix":"", # no _input suffix for pwm
+        "pattern":re.compile(r"^(pwm\d+)$"), # no _input suffix for pwm type
         "format":lambda raw: f"{int(raw)*100/255:.0f}",
         "unit":"%",
         "icon":"xsi-fan-symbolic"
     },
     SensorType.FREQ: {
-        "prefix":"freq",
-        "suffix":"_input",
+        "pattern":re.compile(r"^(freq\d+)_input$"),
         "format":lambda raw: f"{int(raw)/1_000_000_000:.2f}",
         "unit":"GHz",
         "icon":"xsi-physics-wavelength-symbolic"
     },
     SensorType.VOLTAGE: {
-        "prefix":"in",
-        "suffix":"_input",
+        "pattern":re.compile(r"^(in\d+)_input$"),
         "format":lambda raw: f"{int(raw)/1000:.2f}",
         "unit":"V",
         "icon":"xsi-physics-volts-symbolic"
     },
     SensorType.CURRENT: {
-        "prefix":"curr",
-        "suffix":"_input",
+        "pattern":re.compile(r"^(curr\d+)_input$"),
         "format":lambda raw: f"{int(raw)/1000:.2f}",
         "unit":"A",
         "icon":"xsi-physics-wave-symbolic"
     },
     SensorType.POWER: {
-        "prefix":"power",
-        "suffix":"_input",
+        "pattern":re.compile(r"^(power\d+)_input$"),
         "format":lambda raw: f"{int(raw)/1_000_000:.1f}",
         "unit":"W",
         "icon":"xsi-physics-watts-symbolic"
     },
     SensorType.ENERGY: {
-        "prefix":"energy",
-        "suffix":"_input",
+        "pattern":re.compile(r"^(energy\d+)_input$"),
         "format":lambda raw: f"{int(raw)/1_000_000:.1f}",
         "unit":"J",
         "icon":"xsi-power-symbolic"
@@ -84,11 +76,11 @@ SENSOR_SPECS = {
 
 def sensor_spec_from_filename(filename):
     for stype, spec in SENSOR_SPECS.items():
-        prefix = spec["prefix"]
-        suffix = spec["suffix"]
-        if filename.startswith(prefix) and filename.endswith(suffix):
-            return stype, spec
-    return None, None
+        m = spec["pattern"].match(filename)
+        if m:
+            base = m.group(1)
+            return stype, spec, base
+    return None, None, None
 
 # Helper funcs to sort sensors in correct numerical order (ex in10 after in9)
 def natural_key(label):
@@ -186,7 +178,7 @@ class SensorsListWidget(Gtk.ScrolledWindow):
             # Process all sensor files in base_path
             sensors = []
             for fname in os.listdir(base_path):
-                stype, spec = sensor_spec_from_filename(fname)
+                stype, spec, base_name = sensor_spec_from_filename(fname)
                 if spec is None:
                     continue    # that's not a sensor
 
@@ -196,8 +188,7 @@ class SensorsListWidget(Gtk.ScrolledWindow):
                     continue    # unable to read sensor -> skip
 
                 # Label
-                labelname = fname.replace(spec["suffix"], "_label")
-                labelpath = os.path.join(base_path, labelname)
+                labelpath = os.path.join(base_path, f"{base_name}_label")
                 label = self._read_file(labelpath)
                 label = label.strip() if label else fname.replace("_input", "")
 
