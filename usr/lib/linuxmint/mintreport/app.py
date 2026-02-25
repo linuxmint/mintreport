@@ -197,6 +197,7 @@ class MintReportWindow():
         self.window = self.builder.get_object("main_window")
         self.window.set_title(_("System Information"))
         self.window.set_icon_name("mintreport")
+        self.window.set_wmclass("mintreport", "mintreport")
 
         self.stack = self.builder.get_object("main_stack")
         self.spinner = self.builder.get_object("crash_spinner")
