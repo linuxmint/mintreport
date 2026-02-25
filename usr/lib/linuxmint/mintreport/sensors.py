@@ -161,7 +161,8 @@ class SensorsListWidget(Gtk.ScrolledWindow):
         if not os.path.isdir(SYS_HWMON):
             return
 
-        # sort hwmon folders by natural order, as the listdir order is random
+        # First pass: collect all chips with their sensors
+        chips = []
         for hwmon in sorted(os.listdir(SYS_HWMON), key=natural_key):
             hwmon_path = os.path.join(SYS_HWMON, hwmon)
             device_path = os.path.join(hwmon_path, "device")
@@ -213,6 +214,17 @@ class SensorsListWidget(Gtk.ScrolledWindow):
                 continue
 
             sort_sensors(sensors)
+            chips.append((hwmon, name, sensors))
+
+        # Disambiguate chips that share the same name (e.g. two RAM sticks: spd5118)
+        name_counts = {}
+        for _, name, _ in chips:
+            name_counts[name] = name_counts.get(name, 0) + 1
+
+        # Second pass: build cards
+        for hwmon, name, sensors in chips:
+            if name_counts[name] > 1:
+                name = f"{name} ({hwmon})"
 
             section = self.page.add_section(name)
 
