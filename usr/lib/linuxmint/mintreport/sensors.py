@@ -58,7 +58,7 @@ SENSOR_SPECS = {
         "pattern":re.compile(r"^(curr\d+)_input$"),
         "format":lambda raw: f"{int(raw)/1000:.2f}",
         "unit":"A",
-        "icon":"xsi-physics-wave-symbolic"
+        "icon":"xsi-physics-amps-symbolic"
     },
     SensorType.POWER: {
         "pattern":re.compile(r"^(power\d+)_input$"),
