@@ -1,3 +1,24 @@
+mintreport (1.6.2) alfa; urgency=medium
+
+  [ pilatomic ]
+  * Fix usb speed display (#114)
+
+  [ Clement Lefebvre ]
+  * Fix indentation
+  * test: Fix condition syntax
+  * info: Don't show empty link when upload fails
+  * info: Rename Hard Drives to Storage
+  * bios: Format DMI bios_date
+  * settings_user: Fix blurry app icon
+
+  [ pilatomic ]
+  * Add sensors page (#116)
+
+  [ Michael Webster ]
+  * .github: Add stale workflow.
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 01 May 2026 11:10:03 +0100
+
 mintreport (1.6.1) zena; urgency=medium
 
   [ Michael Webster ]
