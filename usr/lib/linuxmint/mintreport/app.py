@@ -176,8 +176,10 @@ class MintReportWindow():
         css_provider = Gtk.CssProvider()
         css_provider.load_from_data(b"""
             .logo-box {
-                background-color: #86be43;
-                border-radius: 10px;
+                background-color: shade(@theme_bg_color, 0.96);
+                color: @theme_fg_color;
+                border: 1px solid @borders;
+                border-radius: 4px;
                 padding: 12px;
             }
         """)
