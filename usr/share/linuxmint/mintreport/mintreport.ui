@@ -73,7 +73,7 @@
                                 <property name="margin-top">6</property>
                                 <property name="margin-bottom">6</property>
                                 <property name="pixel-size">150</property>
-                                <property name="icon-name">linuxmint-logo-filled-ring</property>
+                                <property name="icon-name">linuxmint-logo-ring-symbolic</property>
                                 <property name="icon_size">6</property>
                               </object>
                               <packing>
