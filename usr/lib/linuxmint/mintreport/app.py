@@ -18,7 +18,7 @@ import xapp.util
 gi.require_version("Gtk", "3.0")
 gi.require_version('GtkSource', '3.0')
 gi.require_version('XApp', '1.0')
-from gi.repository import Gtk, Gdk, GtkSource, Gio
+from gi.repository import Gtk, Gdk, GtkSource, Gio, GLib
 
 from common import InfoReportContainer, DATA_DIR, INFO_DIR, prefix_version, read_dmi, clean_brand
 from bios import BIOSListWidget
@@ -198,7 +198,7 @@ class MintReportWindow():
         self.window = self.builder.get_object("main_window")
         self.window.set_title(_("System Information"))
         self.window.set_icon_name("mintreport")
-        self.window.set_wmclass("mintreport", "mintreport")
+
 
         self.stack = self.builder.get_object("main_stack")
         self.spinner = self.builder.get_object("crash_spinner")
@@ -817,5 +817,6 @@ class MintReportWindow():
         subprocess.call(['xdg-open', output])
 
 if __name__ == "__main__":
+    GLib.set_prgname("mintreport")
     application = MyApplication("com.linuxmint.reports", Gio.ApplicationFlags.HANDLES_COMMAND_LINE)
     application.run(sys.argv)
