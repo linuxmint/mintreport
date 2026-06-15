@@ -175,12 +175,11 @@ class MintReportWindow():
         # Create a CSS provider
         css_provider = Gtk.CssProvider()
         css_provider.load_from_data(b"""
-            .logo-box image {
+            .logo-box {
                 background-color: @theme_selected_bg_color;
-                color: white;
-                border-radius: 50%;
-                padding: 0px;
-                box-shadow: 0 2px 8px @borders;
+                color: @theme_selected_fg_color;
+                border-radius: 3px;
+                padding: 10px;
             }
         """)
         screen = Gdk.Screen.get_default()
