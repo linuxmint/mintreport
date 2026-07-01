@@ -1,3 +1,13 @@
+mintreport (1.6.3) alfa; urgency=medium
+
+  * logo: Refine default look
+  * logo: Use symbolic icon with accent color
+  * Logo fixup
+  * Fix missing icon name
+  * Add sensors to keywords
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 01 Jul 2026 15:39:02 +0200
+
 mintreport (1.6.2) alfa; urgency=medium
 
   [ pilatomic ]
