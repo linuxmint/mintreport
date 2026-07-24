@@ -26,6 +26,7 @@ from pci import PCIListWidget
 from usb import USBListWidget
 from gpu import GPUListWidget
 from sensors import SensorsListWidget
+from memory import MemoryListWidget
 
 
 setproctitle.setproctitle("mintreport")
@@ -421,10 +422,15 @@ class MintReportWindow():
         self.sensors_widget = SensorsListWidget()
         self.builder.get_object("box_sensors_widget").pack_start(self.sensors_widget, True, True, 0)
 
+        # Memory page
+        self.memory_widget = MemoryListWidget()
+        self.builder.get_object("box_memory_widget").pack_start(self.memory_widget, True, True, 0)
+
         # BIOS page
         self.bios_widget = BIOSListWidget()
         self.builder.get_object("box_bios_widget").add(self.bios_widget)
 
+        # GPU page
         self.gpu_widget = GPUListWidget()
         self.builder.get_object("box_gpu_widget").add(self.gpu_widget)
 
@@ -435,6 +441,7 @@ class MintReportWindow():
         self.load_bios()
         self.load_gpu()
         self.load_sensors()
+        self.load_memory()
 
     def show_page(self, page_name):
         page_name = f"page_{page_name}"
@@ -596,6 +603,10 @@ class MintReportWindow():
     @xt.run_async
     def load_sensors(self):
         self.sensors_widget.load()
+
+    @xt.run_async
+    def load_memory(self):
+        self.memory_widget.load()
 
     @xt.run_async
     def load_bios(self):
