@@ -7,7 +7,7 @@ import xapp.threading as xt
 import xapp.util
 gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk
-from common import read_dmi, read_efi, clean_brand
+from common import read_dmi, read_efi, clean_brand, read_virt
 
 _ = xapp.util.l10n("mintreport")
 
@@ -54,6 +54,13 @@ class BIOSListWidget(Xs.SettingsPage):
                     infos_bios.append([_('Secure Boot mode'), _("User Mode (normal)")])
             else:
                 infos_bios.append([_('Secure Boot'), _("Disabled")])
+
+        # Virtualization
+        virt = read_virt()
+        virt_value = _('Disabled')
+        if virt:
+            virt_value = _('Enabled (%s)') % virt
+        infos_bios.append([_('Virtualization'), virt_value])
 
         infos_motherboard = []
         infos_motherboard.append([_('Brand'), clean_brand(read_dmi('board_vendor'))])

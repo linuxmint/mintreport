@@ -129,3 +129,16 @@ BRAND_MAP = {
     "Western Digital": "WD",
     "Xilinx Corporation": "Xilinx",
 }
+
+def read_virt():
+    """Reads '/proc/cpuinfo' to determine whether virtualization is supported."""
+    with open("/proc/cpuinfo", "r") as cpuinfo:
+        for line in cpuinfo:
+            if line[:5] == "flags":
+                if " vmx " in line:
+                    return "VT-x"
+                elif " svm " in line:
+                    return "AMD-V"
+                else:
+                    return None
+
