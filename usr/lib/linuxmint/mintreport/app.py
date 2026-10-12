@@ -28,6 +28,7 @@ from gpu import GPUListWidget
 
 
 setproctitle.setproctitle("mintreport")
+GLib.set_prgname("mintreport")
 _ = xapp.util.l10n("mintreport")
 
 TMP_DIR = "/tmp/mintreport"
