@@ -1,3 +1,9 @@
+mintreport (1.6.4) adrien; urgency=medium
+
+  * Remove sensors
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 13 Oct 2026 15:02:27 +0100
+
 mintreport (1.6.3) alfa; urgency=medium
 
   * logo: Refine default look
