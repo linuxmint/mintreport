@@ -7,104 +7,101 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2025-10-23 10:18+0100\n"
-"PO-Revision-Date: 2024-07-12 13:46+0000\n"
-"Last-Translator: Cosmin Humeniuc <Unknown>\n"
+"POT-Creation-Date: 2026-11-12 13:58+0000\n"
+"PO-Revision-Date: 2026-01-25 16:19+0000\n"
+"Last-Translator: Danut Hintariu <Unknown>\n"
 "Language-Team: Romanian <ro@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n == 1 ? 0: (((n % 100 > 19) || ((n % 100 "
 "== 0) && (n != 0))) ? 2: 1));\n"
-"X-Launchpad-Export-Date: 2026-01-08 15:43+0000\n"
-"X-Generator: Launchpad (build 99c00f518760bdd50fc6e353e7736d2fff8fba4a)\n"
+"X-Launchpad-Export-Date: 2026-11-16 11:59+0000\n"
+"X-Generator: Launchpad (build 72ba15af7e009b17d4aa1467977127ac8392a4de)\n"
 "Language: ro\n"
 
-#: usr/lib/linuxmint/mintreport/app.py:130
+#: usr/lib/linuxmint/mintreport/app.py:133
 #: usr/lib/linuxmint/mintreport/app.py:158
 msgid "Unknown size"
-msgstr ""
+msgstr "Dimensiune necunoscută"
 
 #: usr/lib/linuxmint/mintreport/app.py:156
 msgid "Unknown CPU"
-msgstr ""
+msgstr "CPU necunoscut"
 
-#: usr/lib/linuxmint/mintreport/app.py:196
-#: usr/lib/linuxmint/mintreport/app.py:466 generate_desktop_files:25
-#: generate_desktop_files:39 usr/share/linuxmint/mintreport/mintreport.ui.h:5
+#: usr/lib/linuxmint/mintreport/app.py:197
+#: usr/lib/linuxmint/mintreport/app.py:463 generate_desktop_files:26
+#: generate_desktop_files:40 usr/share/linuxmint/mintreport/mintreport.ui.h:5
 msgid "System Information"
-msgstr ""
+msgstr "Informații despre sistem"
 
-#: usr/lib/linuxmint/mintreport/app.py:317
+#: usr/lib/linuxmint/mintreport/app.py:319
 msgid "Restore ignored reports"
 msgstr "Restaurează rapoartele ignorate"
 
-#: usr/lib/linuxmint/mintreport/app.py:322
+#: usr/lib/linuxmint/mintreport/app.py:324
 #: usr/lib/linuxmint/mintreport/tray.py:62
 msgid "Quit"
 msgstr "Închide"
 
-#: usr/lib/linuxmint/mintreport/app.py:334
-#: usr/lib/linuxmint/mintreport/app.py:464
+#: usr/lib/linuxmint/mintreport/app.py:336
+#: usr/lib/linuxmint/mintreport/app.py:461
 msgid "About"
 msgstr "Despre"
 
-#: usr/lib/linuxmint/mintreport/app.py:350
+#: usr/lib/linuxmint/mintreport/app.py:352
 msgid "Computer"
-msgstr ""
-
-#: usr/lib/linuxmint/mintreport/app.py:372
-msgid "Operating System"
-msgstr ""
-
-#: usr/lib/linuxmint/mintreport/app.py:373
-msgid "Linux Kernel"
-msgstr ""
+msgstr "Computer"
 
 #: usr/lib/linuxmint/mintreport/app.py:374
+msgid "Operating System"
+msgstr "Sistem de operare"
+
+#: usr/lib/linuxmint/mintreport/app.py:375
+msgid "Linux Kernel"
+msgstr "Linux Kernel"
+
+#: usr/lib/linuxmint/mintreport/app.py:376
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:28
 msgid "Processor"
 msgstr "Procesor"
 
-#: usr/lib/linuxmint/mintreport/app.py:377
+#: usr/lib/linuxmint/mintreport/app.py:379
 msgid "Graphics Card"
-msgstr ""
+msgstr "Placa Grafica"
 
-#: usr/lib/linuxmint/mintreport/app.py:379
 #: usr/lib/linuxmint/mintreport/app.py:381
+#: usr/lib/linuxmint/mintreport/app.py:383
 msgid "Memory"
-msgstr ""
+msgstr "Memorie"
 
-#: usr/lib/linuxmint/mintreport/app.py:379
-#: usr/lib/linuxmint/mintreport/app.py:389
+#: usr/lib/linuxmint/mintreport/app.py:381
+#: usr/lib/linuxmint/mintreport/app.py:387
 msgid "GB"
-msgstr ""
-
-#: usr/lib/linuxmint/mintreport/app.py:385
-msgid "Hard Drives"
-msgstr ""
+msgstr "GB"
 
 #: usr/lib/linuxmint/mintreport/app.py:387
-msgid "Hard Drive"
+#: usr/lib/linuxmint/mintreport/app.py:389
+msgid "Storage"
 msgstr ""
 
-#: usr/lib/linuxmint/mintreport/app.py:396
+#: usr/lib/linuxmint/mintreport/app.py:394
 msgid "Desktop Environment"
-msgstr ""
+msgstr "Mediu desktop"
 
-#: usr/lib/linuxmint/mintreport/app.py:403
+#: usr/lib/linuxmint/mintreport/app.py:401
 msgid "Display Server"
-msgstr ""
+msgstr "Afișare server"
 
-#: usr/lib/linuxmint/mintreport/app.py:508
+#: usr/lib/linuxmint/mintreport/app.py:505
 msgid "An error occurred while gathering the system information."
 msgstr "A apărut o eroare la colectarea informațiilor despre sistem."
 
-#: usr/lib/linuxmint/mintreport/app.py:519
+#: usr/lib/linuxmint/mintreport/app.py:516
 msgid "System information copied"
 msgstr "Informațiile despre sistem sunt copiate"
 
-#: usr/lib/linuxmint/mintreport/app.py:519
+#: usr/lib/linuxmint/mintreport/app.py:516
 msgid ""
 "Your system information was copied into your clipboard so you can paste it "
 "on the forums."
@@ -112,11 +109,11 @@ msgstr ""
 "Informațiile sistemului dvs. au fost copiate în clipboard, astfel încât le "
 "puteți lipi pe forumuri."
 
-#: usr/lib/linuxmint/mintreport/app.py:527
+#: usr/lib/linuxmint/mintreport/app.py:526
 msgid "System information uploaded"
 msgstr "Informații despre sistem încărcate"
 
-#: usr/lib/linuxmint/mintreport/app.py:527
+#: usr/lib/linuxmint/mintreport/app.py:526
 #, python-format
 msgid ""
 "Your system information was uploaded to %s. This link was placed in your "
@@ -125,11 +122,11 @@ msgstr ""
 "Informațiile sistemului tău au fost încărcate pe %s. Legătura a fost lăsată "
 "în clipboard."
 
-#: usr/lib/linuxmint/mintreport/app.py:529
+#: usr/lib/linuxmint/mintreport/app.py:528
 msgid "An error occurred while uploading the system information"
 msgstr "A apărut o eroare la încărcarea informațiilor sistemului"
 
-#: usr/lib/linuxmint/mintreport/app.py:529
+#: usr/lib/linuxmint/mintreport/app.py:528
 msgid ""
 "Copy and paste the system information manually into a pastebin site like "
 "https://pastebin.com."
@@ -183,107 +180,113 @@ msgstr ""
 "Un \"stack trace\" este disponibil în 'Fișiere locale' dar conținutul lui "
 "este probabil necorespunzător."
 
-#: usr/lib/linuxmint/mintreport/bios.py:21
+#: usr/lib/linuxmint/mintreport/bios.py:22
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:10
 msgid "BIOS"
-msgstr ""
+msgstr "BIOS"
 
-#: usr/lib/linuxmint/mintreport/bios.py:22
+#: usr/lib/linuxmint/mintreport/bios.py:23
 msgid "Motherboard"
-msgstr ""
-
-#: usr/lib/linuxmint/mintreport/bios.py:32
-#: usr/lib/linuxmint/mintreport/bios.py:53
-#: usr/lib/linuxmint/mintreport/gpu.py:215
-#: usr/lib/linuxmint/mintreport/pci.py:271
-msgid "Brand"
-msgstr ""
+msgstr "Placa de bază"
 
 #: usr/lib/linuxmint/mintreport/bios.py:33
-#: usr/lib/linuxmint/mintreport/bios.py:55
-msgid "Version"
-msgstr ""
+#: usr/lib/linuxmint/mintreport/bios.py:66
+#: usr/lib/linuxmint/mintreport/gpu.py:220
+#: usr/lib/linuxmint/mintreport/pci.py:271
+msgid "Brand"
+msgstr "Marca"
 
 #: usr/lib/linuxmint/mintreport/bios.py:34
-msgid "Release"
-msgstr ""
+#: usr/lib/linuxmint/mintreport/bios.py:68
+msgid "Version"
+msgstr "Versiune"
 
 #: usr/lib/linuxmint/mintreport/bios.py:35
-msgid "Release Date"
-msgstr ""
+msgid "Release"
+msgstr "Lansare"
 
-#: usr/lib/linuxmint/mintreport/bios.py:38
 #: usr/lib/linuxmint/mintreport/bios.py:41
-msgid "Boot Mode"
-msgstr ""
+msgid "Release Date"
+msgstr "Data lansării"
 
-#: usr/lib/linuxmint/mintreport/bios.py:39
-#: usr/lib/linuxmint/mintreport/bios.py:43
-#: usr/lib/linuxmint/mintreport/bios.py:50
+#: usr/lib/linuxmint/mintreport/bios.py:44
+#: usr/lib/linuxmint/mintreport/bios.py:47
+msgid "Boot Mode"
+msgstr "Mod de pornire"
+
+#: usr/lib/linuxmint/mintreport/bios.py:45
+#: usr/lib/linuxmint/mintreport/bios.py:49
+#: usr/lib/linuxmint/mintreport/bios.py:56
 msgid "Secure Boot"
 msgstr ""
 
-#: usr/lib/linuxmint/mintreport/bios.py:39
-#: usr/lib/linuxmint/mintreport/bios.py:50
+#: usr/lib/linuxmint/mintreport/bios.py:45
+#: usr/lib/linuxmint/mintreport/bios.py:56
+#: usr/lib/linuxmint/mintreport/bios.py:60
 msgid "Disabled"
-msgstr ""
+msgstr "Dezactivat"
 
-#: usr/lib/linuxmint/mintreport/bios.py:43
-#: usr/lib/linuxmint/mintreport/gpu.py:183
+#: usr/lib/linuxmint/mintreport/bios.py:49
+#: usr/lib/linuxmint/mintreport/gpu.py:188
 msgid "Enabled"
-msgstr ""
+msgstr "Activat"
 
-#: usr/lib/linuxmint/mintreport/bios.py:46
-#: usr/lib/linuxmint/mintreport/bios.py:48
+#: usr/lib/linuxmint/mintreport/bios.py:52
+#: usr/lib/linuxmint/mintreport/bios.py:54
 msgid "Secure Boot mode"
 msgstr ""
 
-#: usr/lib/linuxmint/mintreport/bios.py:46
+#: usr/lib/linuxmint/mintreport/bios.py:52
 msgid "Setup Mode (keys not enrolled)"
 msgstr ""
 
-#: usr/lib/linuxmint/mintreport/bios.py:48
+#: usr/lib/linuxmint/mintreport/bios.py:54
 msgid "User Mode (normal)"
 msgstr ""
 
-#: usr/lib/linuxmint/mintreport/bios.py:54
-#: usr/lib/linuxmint/mintreport/gpu.py:216
-#: usr/lib/linuxmint/mintreport/usb.py:149
-msgid "Name"
-msgstr ""
-
-#: usr/lib/linuxmint/mintreport/gpu.py:185
-#: usr/lib/linuxmint/mintreport/gpu.py:211
-msgid "Disabled (Software rendering)"
-msgstr ""
-
-#: usr/lib/linuxmint/mintreport/gpu.py:195
-msgid "Default GPU"
-msgstr ""
-
-#: usr/lib/linuxmint/mintreport/gpu.py:196
-msgid "Hardware Acceleration"
-msgstr ""
-
-#: usr/lib/linuxmint/mintreport/gpu.py:213
+#: usr/lib/linuxmint/mintreport/bios.py:62
+#: usr/lib/linuxmint/mintreport/gpu.py:218
 #, python-format
 msgid "Enabled (%s)"
 msgstr ""
 
-#: usr/lib/linuxmint/mintreport/gpu.py:217
-msgid "PCI ID"
+#: usr/lib/linuxmint/mintreport/bios.py:63
+msgid "Virtualization"
 msgstr ""
 
-#: usr/lib/linuxmint/mintreport/gpu.py:218
+#: usr/lib/linuxmint/mintreport/bios.py:67
+#: usr/lib/linuxmint/mintreport/gpu.py:221
+#: usr/lib/linuxmint/mintreport/usb.py:149
+msgid "Name"
+msgstr "Nume"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:190
+#: usr/lib/linuxmint/mintreport/gpu.py:216
+msgid "Disabled (Software rendering)"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/gpu.py:200
+msgid "Default GPU"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/gpu.py:201
+msgid "Hardware Acceleration"
+msgstr "Accelerare hardware"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:222
+msgid "PCI ID"
+msgstr "PCI ID"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:223
 #: usr/lib/linuxmint/mintreport/pci.py:306
 msgid "Driver"
-msgstr ""
-
-#: usr/lib/linuxmint/mintreport/gpu.py:220
-msgid "Driver Version"
-msgstr ""
+msgstr "Driver"
 
 #: usr/lib/linuxmint/mintreport/gpu.py:225
+msgid "Driver Version"
+msgstr "Versiune driver"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:230
 msgid "Video Playback"
 msgstr ""
 
@@ -293,16 +296,16 @@ msgstr ""
 
 #: usr/lib/linuxmint/mintreport/pci.py:263
 msgid "Type"
-msgstr ""
+msgstr "Tip"
 
 #: usr/lib/linuxmint/mintreport/pci.py:278
 msgid "Device"
-msgstr ""
+msgstr "Dispozitiv"
 
 #: usr/lib/linuxmint/mintreport/pci.py:298
 #: usr/lib/linuxmint/mintreport/usb.py:162
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #: usr/lib/linuxmint/mintreport/pci.py:321
 msgid "Copy the ID"
@@ -353,19 +356,19 @@ msgstr "Actualizări automate"
 msgid "Automatic updates are being installed."
 msgstr "Se instalează actualizări automate."
 
-#: usr/lib/linuxmint/mintreport/usb.py:39
+#: usr/lib/linuxmint/mintreport/usb.py:40
 #, python-format
 msgid "%d Gbps"
 msgstr ""
 
-#: usr/lib/linuxmint/mintreport/usb.py:41
+#: usr/lib/linuxmint/mintreport/usb.py:42
 #, python-format
-msgid "%d Mbps"
+msgid "%s Mbps"
 msgstr ""
 
 #: usr/lib/linuxmint/mintreport/usb.py:168
 msgid "Speed"
-msgstr ""
+msgstr "Viteză"
 
 #: usr/lib/linuxmint/mintreport/usb.py:176
 msgid "Power"
@@ -391,18 +394,18 @@ msgstr ""
 msgid "The ID of the device was copied into your clipboard."
 msgstr ""
 
-#: generate_desktop_files:25 generate_desktop_files:39
-#: generate_desktop_files:53 generate_desktop_files:67
+#: generate_desktop_files:26 generate_desktop_files:40
+#: generate_desktop_files:54 generate_desktop_files:68
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:26
 msgid "Troubleshoot problems"
 msgstr "Depanare probleme"
 
-#: generate_desktop_files:53 generate_desktop_files:67
+#: generate_desktop_files:54 generate_desktop_files:68
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:13
 msgid "System Reports"
 msgstr "Rapoarte de sistem"
 
-#: generate_desktop_files:53
+#: generate_desktop_files:54
 msgid "Troubleshooting Tool"
 msgstr "Unelte pentru remediere"
 
@@ -433,15 +436,15 @@ msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:7
 msgid "USB"
-msgstr ""
+msgstr "USB"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:8
 msgid "GPU"
-msgstr ""
+msgstr "GPU"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:9
 msgid "PCI"
-msgstr ""
+msgstr "PCI"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:11
 msgid "Running system checks..."
@@ -468,7 +471,7 @@ msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:17
 msgid "Stack Trace"
-msgstr ""
+msgstr "Urmărire stivă"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:18
 msgid ""

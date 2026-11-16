@@ -7,102 +7,99 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2025-10-23 10:18+0100\n"
-"PO-Revision-Date: 2025-09-14 12:33+0000\n"
+"POT-Creation-Date: 2026-11-12 13:58+0000\n"
+"PO-Revision-Date: 2026-09-24 22:52+0000\n"
 "Last-Translator: Vilson Gjeci <vilsongjeci@gmail.com>\n"
 "Language-Team: Albanian <sq@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2026-01-08 15:43+0000\n"
-"X-Generator: Launchpad (build 99c00f518760bdd50fc6e353e7736d2fff8fba4a)\n"
+"X-Launchpad-Export-Date: 2026-11-16 11:59+0000\n"
+"X-Generator: Launchpad (build 72ba15af7e009b17d4aa1467977127ac8392a4de)\n"
 
-#: usr/lib/linuxmint/mintreport/app.py:130
+#: usr/lib/linuxmint/mintreport/app.py:133
 #: usr/lib/linuxmint/mintreport/app.py:158
 msgid "Unknown size"
-msgstr ""
+msgstr "Madhësi e panjohur"
 
 #: usr/lib/linuxmint/mintreport/app.py:156
 msgid "Unknown CPU"
-msgstr ""
+msgstr "CPU e panjohur"
 
-#: usr/lib/linuxmint/mintreport/app.py:196
-#: usr/lib/linuxmint/mintreport/app.py:466 generate_desktop_files:25
-#: generate_desktop_files:39 usr/share/linuxmint/mintreport/mintreport.ui.h:5
+#: usr/lib/linuxmint/mintreport/app.py:197
+#: usr/lib/linuxmint/mintreport/app.py:463 generate_desktop_files:26
+#: generate_desktop_files:40 usr/share/linuxmint/mintreport/mintreport.ui.h:5
 msgid "System Information"
-msgstr ""
+msgstr "Informacion mbi Sistemin"
 
-#: usr/lib/linuxmint/mintreport/app.py:317
+#: usr/lib/linuxmint/mintreport/app.py:319
 msgid "Restore ignored reports"
 msgstr "Rikthe raportet e injoruara"
 
-#: usr/lib/linuxmint/mintreport/app.py:322
+#: usr/lib/linuxmint/mintreport/app.py:324
 #: usr/lib/linuxmint/mintreport/tray.py:62
 msgid "Quit"
 msgstr "Dil"
 
-#: usr/lib/linuxmint/mintreport/app.py:334
-#: usr/lib/linuxmint/mintreport/app.py:464
+#: usr/lib/linuxmint/mintreport/app.py:336
+#: usr/lib/linuxmint/mintreport/app.py:461
 msgid "About"
 msgstr "Rreth"
 
-#: usr/lib/linuxmint/mintreport/app.py:350
+#: usr/lib/linuxmint/mintreport/app.py:352
 msgid "Computer"
-msgstr ""
-
-#: usr/lib/linuxmint/mintreport/app.py:372
-msgid "Operating System"
-msgstr ""
-
-#: usr/lib/linuxmint/mintreport/app.py:373
-msgid "Linux Kernel"
-msgstr ""
+msgstr "Kompjuter"
 
 #: usr/lib/linuxmint/mintreport/app.py:374
+msgid "Operating System"
+msgstr "Sistemi Operativ"
+
+#: usr/lib/linuxmint/mintreport/app.py:375
+msgid "Linux Kernel"
+msgstr "Bërthama e Linux-it"
+
+#: usr/lib/linuxmint/mintreport/app.py:376
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:28
 msgid "Processor"
 msgstr "Procesor"
 
-#: usr/lib/linuxmint/mintreport/app.py:377
+#: usr/lib/linuxmint/mintreport/app.py:379
 msgid "Graphics Card"
-msgstr ""
+msgstr "Kartë Grafike"
 
-#: usr/lib/linuxmint/mintreport/app.py:379
 #: usr/lib/linuxmint/mintreport/app.py:381
+#: usr/lib/linuxmint/mintreport/app.py:383
 msgid "Memory"
-msgstr ""
+msgstr "Kujtesë"
 
-#: usr/lib/linuxmint/mintreport/app.py:379
-#: usr/lib/linuxmint/mintreport/app.py:389
+#: usr/lib/linuxmint/mintreport/app.py:381
+#: usr/lib/linuxmint/mintreport/app.py:387
 msgid "GB"
-msgstr ""
-
-#: usr/lib/linuxmint/mintreport/app.py:385
-msgid "Hard Drives"
-msgstr ""
+msgstr "GB"
 
 #: usr/lib/linuxmint/mintreport/app.py:387
-msgid "Hard Drive"
+#: usr/lib/linuxmint/mintreport/app.py:389
+msgid "Storage"
 msgstr ""
 
-#: usr/lib/linuxmint/mintreport/app.py:396
+#: usr/lib/linuxmint/mintreport/app.py:394
 msgid "Desktop Environment"
-msgstr ""
+msgstr "Mjedisi në Desktopit"
 
-#: usr/lib/linuxmint/mintreport/app.py:403
+#: usr/lib/linuxmint/mintreport/app.py:401
 msgid "Display Server"
-msgstr ""
+msgstr "Serveri i Shfaqjes"
 
-#: usr/lib/linuxmint/mintreport/app.py:508
+#: usr/lib/linuxmint/mintreport/app.py:505
 msgid "An error occurred while gathering the system information."
 msgstr "Ndodhi një gabim gjatë mbledhjes së informacionit të sistemit."
 
-#: usr/lib/linuxmint/mintreport/app.py:519
+#: usr/lib/linuxmint/mintreport/app.py:516
 msgid "System information copied"
 msgstr "Informacioni i sistemit u kopjua"
 
-#: usr/lib/linuxmint/mintreport/app.py:519
+#: usr/lib/linuxmint/mintreport/app.py:516
 msgid ""
 "Your system information was copied into your clipboard so you can paste it "
 "on the forums."
@@ -110,11 +107,11 @@ msgstr ""
 "Informacioni i sistemit tuaj u kopjua në kujtesën tuaj të përkohshme, në "
 "mënyrë që ta ngjisni në forume."
 
-#: usr/lib/linuxmint/mintreport/app.py:527
+#: usr/lib/linuxmint/mintreport/app.py:526
 msgid "System information uploaded"
 msgstr "Informacioni i sistemit u ngarkua"
 
-#: usr/lib/linuxmint/mintreport/app.py:527
+#: usr/lib/linuxmint/mintreport/app.py:526
 #, python-format
 msgid ""
 "Your system information was uploaded to %s. This link was placed in your "
@@ -123,11 +120,11 @@ msgstr ""
 "Informacioni i sistemit tuaj u ngarkua në %s. Ky link u vendos në kujtesën "
 "tuaj të përkohshme."
 
-#: usr/lib/linuxmint/mintreport/app.py:529
+#: usr/lib/linuxmint/mintreport/app.py:528
 msgid "An error occurred while uploading the system information"
 msgstr "Ndodhi një gabim gjatë ngarkimit të informacionit të sistemit"
 
-#: usr/lib/linuxmint/mintreport/app.py:529
+#: usr/lib/linuxmint/mintreport/app.py:528
 msgid ""
 "Copy and paste the system information manually into a pastebin site like "
 "https://pastebin.com."
@@ -182,151 +179,158 @@ msgstr ""
 "Një gjurmë e grumbullit është e disponueshme në 'Skedarët Lokalë', por "
 "përmbajtja e saj ndoshta është e pasaktë."
 
-#: usr/lib/linuxmint/mintreport/bios.py:21
+#: usr/lib/linuxmint/mintreport/bios.py:22
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:10
 msgid "BIOS"
-msgstr ""
+msgstr "BIOS"
 
-#: usr/lib/linuxmint/mintreport/bios.py:22
+#: usr/lib/linuxmint/mintreport/bios.py:23
 msgid "Motherboard"
-msgstr ""
-
-#: usr/lib/linuxmint/mintreport/bios.py:32
-#: usr/lib/linuxmint/mintreport/bios.py:53
-#: usr/lib/linuxmint/mintreport/gpu.py:215
-#: usr/lib/linuxmint/mintreport/pci.py:271
-msgid "Brand"
-msgstr ""
+msgstr "Pllaka amë"
 
 #: usr/lib/linuxmint/mintreport/bios.py:33
-#: usr/lib/linuxmint/mintreport/bios.py:55
-msgid "Version"
-msgstr ""
+#: usr/lib/linuxmint/mintreport/bios.py:66
+#: usr/lib/linuxmint/mintreport/gpu.py:220
+#: usr/lib/linuxmint/mintreport/pci.py:271
+msgid "Brand"
+msgstr "Markë"
 
 #: usr/lib/linuxmint/mintreport/bios.py:34
-msgid "Release"
-msgstr ""
+#: usr/lib/linuxmint/mintreport/bios.py:68
+msgid "Version"
+msgstr "Versioni"
 
 #: usr/lib/linuxmint/mintreport/bios.py:35
-msgid "Release Date"
-msgstr ""
+msgid "Release"
+msgstr "Publikim"
 
-#: usr/lib/linuxmint/mintreport/bios.py:38
 #: usr/lib/linuxmint/mintreport/bios.py:41
+msgid "Release Date"
+msgstr "Data e publikimit"
+
+#: usr/lib/linuxmint/mintreport/bios.py:44
+#: usr/lib/linuxmint/mintreport/bios.py:47
 msgid "Boot Mode"
-msgstr ""
+msgstr "Modaliteti i nisjes"
 
-#: usr/lib/linuxmint/mintreport/bios.py:39
-#: usr/lib/linuxmint/mintreport/bios.py:43
-#: usr/lib/linuxmint/mintreport/bios.py:50
+#: usr/lib/linuxmint/mintreport/bios.py:45
+#: usr/lib/linuxmint/mintreport/bios.py:49
+#: usr/lib/linuxmint/mintreport/bios.py:56
 msgid "Secure Boot"
-msgstr ""
+msgstr "Nisje e Sigurt"
 
-#: usr/lib/linuxmint/mintreport/bios.py:39
-#: usr/lib/linuxmint/mintreport/bios.py:50
+#: usr/lib/linuxmint/mintreport/bios.py:45
+#: usr/lib/linuxmint/mintreport/bios.py:56
+#: usr/lib/linuxmint/mintreport/bios.py:60
 msgid "Disabled"
-msgstr ""
+msgstr "Unë paaftë"
 
-#: usr/lib/linuxmint/mintreport/bios.py:43
-#: usr/lib/linuxmint/mintreport/gpu.py:183
+#: usr/lib/linuxmint/mintreport/bios.py:49
+#: usr/lib/linuxmint/mintreport/gpu.py:188
 msgid "Enabled"
-msgstr ""
+msgstr "Aktivizuar"
 
-#: usr/lib/linuxmint/mintreport/bios.py:46
-#: usr/lib/linuxmint/mintreport/bios.py:48
+#: usr/lib/linuxmint/mintreport/bios.py:52
+#: usr/lib/linuxmint/mintreport/bios.py:54
 msgid "Secure Boot mode"
-msgstr ""
+msgstr "Modaliteti i nisjes së sigurt"
 
-#: usr/lib/linuxmint/mintreport/bios.py:46
+#: usr/lib/linuxmint/mintreport/bios.py:52
 msgid "Setup Mode (keys not enrolled)"
-msgstr ""
-
-#: usr/lib/linuxmint/mintreport/bios.py:48
-msgid "User Mode (normal)"
-msgstr ""
+msgstr "Modaliteti i Konfigurimit (çelësat nuk janë regjistruar)"
 
 #: usr/lib/linuxmint/mintreport/bios.py:54
-#: usr/lib/linuxmint/mintreport/gpu.py:216
-#: usr/lib/linuxmint/mintreport/usb.py:149
-msgid "Name"
-msgstr ""
+msgid "User Mode (normal)"
+msgstr "Modaliteti i përdoruesit (normal)"
 
-#: usr/lib/linuxmint/mintreport/gpu.py:185
-#: usr/lib/linuxmint/mintreport/gpu.py:211
-msgid "Disabled (Software rendering)"
-msgstr ""
-
-#: usr/lib/linuxmint/mintreport/gpu.py:195
-msgid "Default GPU"
-msgstr ""
-
-#: usr/lib/linuxmint/mintreport/gpu.py:196
-msgid "Hardware Acceleration"
-msgstr ""
-
-#: usr/lib/linuxmint/mintreport/gpu.py:213
+#: usr/lib/linuxmint/mintreport/bios.py:62
+#: usr/lib/linuxmint/mintreport/gpu.py:218
 #, python-format
 msgid "Enabled (%s)"
+msgstr "Aktivizuar (%s)"
+
+#: usr/lib/linuxmint/mintreport/bios.py:63
+msgid "Virtualization"
 msgstr ""
 
-#: usr/lib/linuxmint/mintreport/gpu.py:217
+#: usr/lib/linuxmint/mintreport/bios.py:67
+#: usr/lib/linuxmint/mintreport/gpu.py:221
+#: usr/lib/linuxmint/mintreport/usb.py:149
+msgid "Name"
+msgstr "Emri"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:190
+#: usr/lib/linuxmint/mintreport/gpu.py:216
+msgid "Disabled (Software rendering)"
+msgstr "I çaktivizuar (Renderimi i softuerit)"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:200
+msgid "Default GPU"
+msgstr "GPU-ja e parazgjedhur"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:201
+msgid "Hardware Acceleration"
+msgstr "Përshpejtimi i Pajisjeve"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:222
 msgid "PCI ID"
-msgstr ""
+msgstr "ID-ja e PCI-së"
 
-#: usr/lib/linuxmint/mintreport/gpu.py:218
+#: usr/lib/linuxmint/mintreport/gpu.py:223
 #: usr/lib/linuxmint/mintreport/pci.py:306
 msgid "Driver"
-msgstr ""
-
-#: usr/lib/linuxmint/mintreport/gpu.py:220
-msgid "Driver Version"
-msgstr ""
+msgstr "Shofer"
 
 #: usr/lib/linuxmint/mintreport/gpu.py:225
+msgid "Driver Version"
+msgstr "Versionet në dyqan"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:230
 msgid "Video Playback"
-msgstr ""
+msgstr "Luajtja e videove"
 
 #: usr/lib/linuxmint/mintreport/pci.py:255
 msgid "Bus"
-msgstr ""
+msgstr "Autobus"
 
 #: usr/lib/linuxmint/mintreport/pci.py:263
 msgid "Type"
-msgstr ""
+msgstr "Lloji"
 
 #: usr/lib/linuxmint/mintreport/pci.py:278
 msgid "Device"
-msgstr ""
+msgstr "Pajisja"
 
 #: usr/lib/linuxmint/mintreport/pci.py:298
 #: usr/lib/linuxmint/mintreport/usb.py:162
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #: usr/lib/linuxmint/mintreport/pci.py:321
 msgid "Copy the ID"
-msgstr ""
+msgstr "Kopjo ID-në"
 
 #: usr/lib/linuxmint/mintreport/pci.py:322
 msgid "Copy the entire row"
-msgstr ""
+msgstr "Kopjoni të gjithë rrethin"
 
 #: usr/lib/linuxmint/mintreport/pci.py:352
 #: usr/lib/linuxmint/mintreport/usb.py:355
 msgid "Device ID copied"
-msgstr ""
+msgstr "ID-ja e pajisjes në kopje"
 
 #: usr/lib/linuxmint/mintreport/pci.py:352
 msgid "The device ID was copied into your clipboard."
-msgstr ""
+msgstr "ID-ja e kompjuterëve u kopjua në kujtesën tënde të përkohshme."
 
 #: usr/lib/linuxmint/mintreport/pci.py:362
 msgid "Device information copied"
-msgstr ""
+msgstr "Informacioni i kompjuterëve u kopjua"
 
 #: usr/lib/linuxmint/mintreport/pci.py:362
 msgid "The device information was copied into your clipboard."
 msgstr ""
+"Informacioni i kompjuterit dhe kopjua në kujtesën tuaj të përkohshme."
 
 #: usr/lib/linuxmint/mintreport/tray.py:58
 msgid "Show System Reports"
@@ -352,56 +356,58 @@ msgstr "Përditësime automatike"
 msgid "Automatic updates are being installed."
 msgstr "Po instalohen përditësime automatike."
 
-#: usr/lib/linuxmint/mintreport/usb.py:39
+#: usr/lib/linuxmint/mintreport/usb.py:40
 #, python-format
 msgid "%d Gbps"
-msgstr ""
+msgstr "%d Gbps"
 
-#: usr/lib/linuxmint/mintreport/usb.py:41
+#: usr/lib/linuxmint/mintreport/usb.py:42
 #, python-format
-msgid "%d Mbps"
+msgid "%s Mbps"
 msgstr ""
 
 #: usr/lib/linuxmint/mintreport/usb.py:168
 msgid "Speed"
-msgstr ""
+msgstr "Shpejtësi"
 
 #: usr/lib/linuxmint/mintreport/usb.py:176
 msgid "Power"
-msgstr ""
+msgstr "Fuqia"
 
 #: usr/lib/linuxmint/mintreport/usb.py:267
 #, python-format
 msgid "USB %(version)s controller (Bus #%(number)s) – Max speed: %(speed)s"
 msgstr ""
+"Kontrolluesi USB %(version)s (Nr. i autobusit %(number)s) – Shpejtësia "
+"maksimale: %(speed)s"
 
 #: usr/lib/linuxmint/mintreport/usb.py:285
 #: usr/lib/linuxmint/mintreport/usb.py:288
 #, python-format
 msgid "%d mA"
-msgstr ""
+msgstr "%d mA"
 
 #: usr/lib/linuxmint/mintreport/usb.py:336
 #, python-format
 msgid "%s mA max"
-msgstr ""
+msgstr "%s maks. mA."
 
 #: usr/lib/linuxmint/mintreport/usb.py:355
 msgid "The ID of the device was copied into your clipboard."
-msgstr ""
+msgstr "ID-ja e kompjuterëve u kopjua në kujtesën tënde të përkohshme."
 
-#: generate_desktop_files:25 generate_desktop_files:39
-#: generate_desktop_files:53 generate_desktop_files:67
+#: generate_desktop_files:26 generate_desktop_files:40
+#: generate_desktop_files:54 generate_desktop_files:68
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:26
 msgid "Troubleshoot problems"
 msgstr "Zgjidh problemet"
 
-#: generate_desktop_files:53 generate_desktop_files:67
+#: generate_desktop_files:54 generate_desktop_files:68
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:13
 msgid "System Reports"
 msgstr "Raportet e Sistemit"
 
-#: generate_desktop_files:53
+#: generate_desktop_files:54
 msgid "Troubleshooting Tool"
 msgstr "Mjet për zgjidhjen e problemeve"
 
@@ -427,19 +433,19 @@ msgstr "Ngarko në një shërbim pastebin (pa përfshirë informacione personale
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:6
 msgid "Note: Double-click a device to copy its ID"
-msgstr ""
+msgstr "Shënim: Klikoni dy herë mbi një kompjuter për të kopjuar ID-në e saj"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:7
 msgid "USB"
-msgstr ""
+msgstr "USB"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:8
 msgid "GPU"
-msgstr ""
+msgstr "GPU"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:9
 msgid "PCI"
-msgstr ""
+msgstr "PCI"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:11
 msgid "Running system checks..."
@@ -462,11 +468,11 @@ msgstr ""
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:16
 msgid "Crash Reports"
-msgstr ""
+msgstr "Raportet e Rrëzimeve"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:17
 msgid "Stack Trace"
-msgstr ""
+msgstr "Gjurmimi i stivës"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:18
 msgid ""

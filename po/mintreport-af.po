@@ -1,0 +1,709 @@
+# Afrikaans translation for linuxmint
+# Copyright (c) 2026 Rosetta Contributors and Canonical Ltd 2026
+# This file is distributed under the same license as the linuxmint package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: linuxmint\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2026-11-12 13:58+0000\n"
+"PO-Revision-Date: 2026-10-07 13:12+0000\n"
+"Last-Translator: Stéfan Driaan Turvey <Unknown>\n"
+"Language-Team: Afrikaans <af@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Launchpad-Export-Date: 2026-11-16 12:00+0000\n"
+"X-Generator: Launchpad (build 72ba15af7e009b17d4aa1467977127ac8392a4de)\n"
+
+#: usr/lib/linuxmint/mintreport/app.py:133
+#: usr/lib/linuxmint/mintreport/app.py:158
+msgid "Unknown size"
+msgstr "Onbekende grootte"
+
+#: usr/lib/linuxmint/mintreport/app.py:156
+msgid "Unknown CPU"
+msgstr "Onbekende CPU"
+
+#: usr/lib/linuxmint/mintreport/app.py:197
+#: usr/lib/linuxmint/mintreport/app.py:463 generate_desktop_files:26
+#: generate_desktop_files:40 usr/share/linuxmint/mintreport/mintreport.ui.h:5
+msgid "System Information"
+msgstr "Stelselinligting"
+
+#: usr/lib/linuxmint/mintreport/app.py:319
+msgid "Restore ignored reports"
+msgstr "Herstel geïgnoreerde verslae"
+
+#: usr/lib/linuxmint/mintreport/app.py:324
+#: usr/lib/linuxmint/mintreport/tray.py:62
+msgid "Quit"
+msgstr "Sluit af"
+
+#: usr/lib/linuxmint/mintreport/app.py:336
+#: usr/lib/linuxmint/mintreport/app.py:461
+msgid "About"
+msgstr "Omtrent"
+
+#: usr/lib/linuxmint/mintreport/app.py:352
+msgid "Computer"
+msgstr "Rekenaar"
+
+#: usr/lib/linuxmint/mintreport/app.py:374
+msgid "Operating System"
+msgstr "Bedryfstelsel"
+
+#: usr/lib/linuxmint/mintreport/app.py:375
+msgid "Linux Kernel"
+msgstr "Linux-kernel"
+
+#: usr/lib/linuxmint/mintreport/app.py:376
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:28
+msgid "Processor"
+msgstr "Verwerker"
+
+#: usr/lib/linuxmint/mintreport/app.py:379
+msgid "Graphics Card"
+msgstr "Grafiese kaart"
+
+#: usr/lib/linuxmint/mintreport/app.py:381
+#: usr/lib/linuxmint/mintreport/app.py:383
+msgid "Memory"
+msgstr "Geheue"
+
+#: usr/lib/linuxmint/mintreport/app.py:381
+#: usr/lib/linuxmint/mintreport/app.py:387
+msgid "GB"
+msgstr "GB"
+
+#: usr/lib/linuxmint/mintreport/app.py:387
+#: usr/lib/linuxmint/mintreport/app.py:389
+msgid "Storage"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/app.py:394
+msgid "Desktop Environment"
+msgstr "Werkskermomgewing"
+
+#: usr/lib/linuxmint/mintreport/app.py:401
+msgid "Display Server"
+msgstr "Vertoonbediener"
+
+#: usr/lib/linuxmint/mintreport/app.py:505
+msgid "An error occurred while gathering the system information."
+msgstr ""
+"'n Fout het voorgekom tydens die insameling van die stelselinligting."
+
+#: usr/lib/linuxmint/mintreport/app.py:516
+msgid "System information copied"
+msgstr "Stelselinligting gekopieer"
+
+#: usr/lib/linuxmint/mintreport/app.py:516
+msgid ""
+"Your system information was copied into your clipboard so you can paste it "
+"on the forums."
+msgstr ""
+"U stelselinligting is na u knipbord gekopieer sodat u dit op die forums kan "
+"plak."
+
+#: usr/lib/linuxmint/mintreport/app.py:526
+msgid "System information uploaded"
+msgstr "Stelselinligting opgelaai"
+
+#: usr/lib/linuxmint/mintreport/app.py:526
+#, python-format
+msgid ""
+"Your system information was uploaded to %s. This link was placed in your "
+"clipboard."
+msgstr ""
+"U stelselinligting is na %s opgelaai. Hierdie skakel is op u knipbord "
+"geplaas."
+
+#: usr/lib/linuxmint/mintreport/app.py:528
+msgid "An error occurred while uploading the system information"
+msgstr "'n Fout het voorgekom tydens die oplaai van die stelselinligting"
+
+#: usr/lib/linuxmint/mintreport/app.py:528
+msgid ""
+"Copy and paste the system information manually into a pastebin site like "
+"https://pastebin.com."
+msgstr ""
+"Kopieer en plak die stelselinligting handmatig in 'n pastebin-werf soos "
+"https://pastebin.com."
+
+#: usr/lib/linuxmint/mintreport/app.py:624
+msgid "Ignore this report"
+msgstr "Ignoreer hierdie verslag"
+
+#: usr/lib/linuxmint/mintreport/app.py:640
+msgid "Are you sure you want to ignore this report?"
+msgstr "Is u seker dat u hierdie verslag wil ignoreer?"
+
+#: usr/lib/linuxmint/mintreport/app.py:641
+msgid "The report will be permanently ignored and will no longer be visible."
+msgstr ""
+"Die verslag sal permanent geïgnoreer word en sal nie meer sigbaar wees nie."
+
+#: usr/lib/linuxmint/mintreport/app.py:730
+#, python-format
+msgid ""
+"The debug symbols are missing for %(program)s.\n"
+"Please install %(package)s."
+msgstr ""
+"Die ontfoutingssimbole ontbreek vir %(program)s.\n"
+"Installeer asseblief %(package)s."
+
+#: usr/lib/linuxmint/mintreport/app.py:744
+#, python-format
+msgid ""
+"The package providing %s could not be found.\n"
+"If you want to generate a stack trace for this crash report, please "
+"reinstall it."
+msgstr ""
+"Die pakket wat %s verskaf, kon nie gevind word nie.\n"
+"As u 'n stapelspoor vir hierdie ineenstortingsverslag wil genereer, "
+"herinstalleer dit asseblief."
+
+#: usr/lib/linuxmint/mintreport/app.py:772
+msgid ""
+"The headers or binaries installed on your system do not match the code which "
+"was executed during the crash.\n"
+"They probably got upgraded since.\n"
+"A stack trace is available in 'Local Files' but its content is probably "
+"inaccurate."
+msgstr ""
+"Die kopstukke of binêre lêers wat op u stelsel geïnstalleer is, stem nie "
+"ooreen met die kode wat tydens die ineenstorting uitgevoer is nie.\n"
+"Hulle is waarskynlik sedertdien opgegradeer.\n"
+"'n Stapelspoor is beskikbaar in 'Plaaslike lêers', maar die inhoud is "
+"waarskynlik onakkuraat."
+
+#: usr/lib/linuxmint/mintreport/bios.py:22
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:10
+msgid "BIOS"
+msgstr "BIOS"
+
+#: usr/lib/linuxmint/mintreport/bios.py:23
+msgid "Motherboard"
+msgstr "Moederbord"
+
+#: usr/lib/linuxmint/mintreport/bios.py:33
+#: usr/lib/linuxmint/mintreport/bios.py:66
+#: usr/lib/linuxmint/mintreport/gpu.py:220
+#: usr/lib/linuxmint/mintreport/pci.py:271
+msgid "Brand"
+msgstr "Handelsmerk"
+
+#: usr/lib/linuxmint/mintreport/bios.py:34
+#: usr/lib/linuxmint/mintreport/bios.py:68
+msgid "Version"
+msgstr "Weergawe"
+
+#: usr/lib/linuxmint/mintreport/bios.py:35
+msgid "Release"
+msgstr "Vrystelling"
+
+#: usr/lib/linuxmint/mintreport/bios.py:41
+msgid "Release Date"
+msgstr "Vrystellingsdatum"
+
+#: usr/lib/linuxmint/mintreport/bios.py:44
+#: usr/lib/linuxmint/mintreport/bios.py:47
+msgid "Boot Mode"
+msgstr "Selflaaimodus"
+
+#: usr/lib/linuxmint/mintreport/bios.py:45
+#: usr/lib/linuxmint/mintreport/bios.py:49
+#: usr/lib/linuxmint/mintreport/bios.py:56
+msgid "Secure Boot"
+msgstr "Secure Boot"
+
+#: usr/lib/linuxmint/mintreport/bios.py:45
+#: usr/lib/linuxmint/mintreport/bios.py:56
+#: usr/lib/linuxmint/mintreport/bios.py:60
+msgid "Disabled"
+msgstr "Gedeaktiveer"
+
+#: usr/lib/linuxmint/mintreport/bios.py:49
+#: usr/lib/linuxmint/mintreport/gpu.py:188
+msgid "Enabled"
+msgstr "Geaktiveer"
+
+#: usr/lib/linuxmint/mintreport/bios.py:52
+#: usr/lib/linuxmint/mintreport/bios.py:54
+msgid "Secure Boot mode"
+msgstr "Secure Boot-modus"
+
+#: usr/lib/linuxmint/mintreport/bios.py:52
+msgid "Setup Mode (keys not enrolled)"
+msgstr "Opstellingsmodus (sleutels nie ingeskryf nie)"
+
+#: usr/lib/linuxmint/mintreport/bios.py:54
+msgid "User Mode (normal)"
+msgstr "Gebruikermodus (normaal)"
+
+#: usr/lib/linuxmint/mintreport/bios.py:62
+#: usr/lib/linuxmint/mintreport/gpu.py:218
+#, python-format
+msgid "Enabled (%s)"
+msgstr "Geaktiveer (%s)"
+
+#: usr/lib/linuxmint/mintreport/bios.py:63
+msgid "Virtualization"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/bios.py:67
+#: usr/lib/linuxmint/mintreport/gpu.py:221
+#: usr/lib/linuxmint/mintreport/usb.py:149
+msgid "Name"
+msgstr "Naam"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:190
+#: usr/lib/linuxmint/mintreport/gpu.py:216
+msgid "Disabled (Software rendering)"
+msgstr "Gedeaktiveer (sagtewareweergawe)"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:200
+msgid "Default GPU"
+msgstr "Verstek-GPU"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:201
+msgid "Hardware Acceleration"
+msgstr "Hardewareversnelling"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:222
+msgid "PCI ID"
+msgstr "PCI-ID"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:223
+#: usr/lib/linuxmint/mintreport/pci.py:306
+msgid "Driver"
+msgstr "Drywer"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:225
+msgid "Driver Version"
+msgstr "Drywerweergawe"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:230
+msgid "Video Playback"
+msgstr "Videoterugspeel"
+
+#: usr/lib/linuxmint/mintreport/pci.py:255
+msgid "Bus"
+msgstr "Bus"
+
+#: usr/lib/linuxmint/mintreport/pci.py:263
+msgid "Type"
+msgstr "Tipe"
+
+#: usr/lib/linuxmint/mintreport/pci.py:278
+msgid "Device"
+msgstr "Toestel"
+
+#: usr/lib/linuxmint/mintreport/pci.py:298
+#: usr/lib/linuxmint/mintreport/usb.py:162
+msgid "ID"
+msgstr "ID"
+
+#: usr/lib/linuxmint/mintreport/pci.py:321
+msgid "Copy the ID"
+msgstr "Kopieer die ID"
+
+#: usr/lib/linuxmint/mintreport/pci.py:322
+msgid "Copy the entire row"
+msgstr "Kopieer die hele ry"
+
+#: usr/lib/linuxmint/mintreport/pci.py:352
+#: usr/lib/linuxmint/mintreport/usb.py:355
+msgid "Device ID copied"
+msgstr "Toestel-ID gekopieer"
+
+#: usr/lib/linuxmint/mintreport/pci.py:352
+msgid "The device ID was copied into your clipboard."
+msgstr "Die toestel-ID is na u knipbord gekopieer."
+
+#: usr/lib/linuxmint/mintreport/pci.py:362
+msgid "Device information copied"
+msgstr "Toestelinligting gekopieer"
+
+#: usr/lib/linuxmint/mintreport/pci.py:362
+msgid "The device information was copied into your clipboard."
+msgstr "Die toestelinligting is na u knipbord gekopieer."
+
+#: usr/lib/linuxmint/mintreport/tray.py:58
+msgid "Show System Reports"
+msgstr "Wys stelselverslae"
+
+#: usr/lib/linuxmint/mintreport/tray.py:136
+msgid "Some system reports require your attention"
+msgstr "Sommige stelselverslae vereis u aandag"
+
+#: usr/lib/linuxmint/mintreport/tray.py:146
+msgid "System Snapshots"
+msgstr "Stelselsnitpunte"
+
+#: usr/lib/linuxmint/mintreport/tray.py:146
+msgid "A Timeshift system snapshot is being created."
+msgstr "'n Timeshift-stelselsnitpunt word tans geskep."
+
+#: usr/lib/linuxmint/mintreport/tray.py:147
+msgid "Automatic Updates"
+msgstr "Outomatiese opdaterings"
+
+#: usr/lib/linuxmint/mintreport/tray.py:147
+msgid "Automatic updates are being installed."
+msgstr "Outomatiese opdaterings word tans geïnstalleer."
+
+#: usr/lib/linuxmint/mintreport/usb.py:40
+#, python-format
+msgid "%d Gbps"
+msgstr "%d Gbps"
+
+#: usr/lib/linuxmint/mintreport/usb.py:42
+#, python-format
+msgid "%s Mbps"
+msgstr ""
+
+#: usr/lib/linuxmint/mintreport/usb.py:168
+msgid "Speed"
+msgstr "Spoed"
+
+#: usr/lib/linuxmint/mintreport/usb.py:176
+msgid "Power"
+msgstr "Krag"
+
+#: usr/lib/linuxmint/mintreport/usb.py:267
+#, python-format
+msgid "USB %(version)s controller (Bus #%(number)s) – Max speed: %(speed)s"
+msgstr "USB %(version)s-beheerder (Bus #%(number)s) – Maks. spoed: %(speed)s"
+
+#: usr/lib/linuxmint/mintreport/usb.py:285
+#: usr/lib/linuxmint/mintreport/usb.py:288
+#, python-format
+msgid "%d mA"
+msgstr "%d mA"
+
+#: usr/lib/linuxmint/mintreport/usb.py:336
+#, python-format
+msgid "%s mA max"
+msgstr "%s mA maks"
+
+#: usr/lib/linuxmint/mintreport/usb.py:355
+msgid "The ID of the device was copied into your clipboard."
+msgstr "Die ID van die toestel is na u knipbord gekopieer."
+
+#: generate_desktop_files:26 generate_desktop_files:40
+#: generate_desktop_files:54 generate_desktop_files:68
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:26
+msgid "Troubleshoot problems"
+msgstr "Los probleme op"
+
+#: generate_desktop_files:54 generate_desktop_files:68
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:13
+msgid "System Reports"
+msgstr "Stelselverslae"
+
+#: generate_desktop_files:54
+msgid "Troubleshooting Tool"
+msgstr "Probleemoplossingsnutsding"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:1
+msgid "Copy"
+msgstr "Kopieer"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:2
+msgid ""
+"Copy to clipboard (code tags are added to make it easy to paste the system "
+"information into the forums)"
+msgstr ""
+"Kopieer na knipbord (kodeetikette word bygevoeg om dit maklik te maak om die "
+"stelselinligting op die forums te plak)"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:3
+msgid "Upload"
+msgstr "Laai op"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:4
+msgid "Upload to a pastebin service (no personal information included)"
+msgstr ""
+"Laai op na 'n pastebin-diens (geen persoonlike inligting ingesluit nie)"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:6
+msgid "Note: Double-click a device to copy its ID"
+msgstr "Let wel: Dubbelklik 'n toestel om sy ID te kopieer"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:7
+msgid "USB"
+msgstr "USB"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:8
+msgid "GPU"
+msgstr "GPU"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:9
+msgid "PCI"
+msgstr "PCI"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:11
+msgid "Running system checks..."
+msgstr "Voer tans stelselkontroles uit..."
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:12
+msgid "No problems were detected"
+msgstr "Geen probleme is opgespoor nie"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:14
+msgid "Crash reports are not available"
+msgstr "Ineenstortingsverslae is nie beskikbaar nie"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:15
+msgid ""
+"To enable crash reporting, install systemd-coredump and reboot your computer."
+msgstr ""
+"Om ineenstortingsverslagdoening te aktiveer, installeer systemd-coredump en "
+"herbegin u rekenaar."
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:16
+msgid "Crash Reports"
+msgstr "Ineenstortingsverslae"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:17
+msgid "Stack Trace"
+msgstr "Stapelspoor"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:18
+msgid ""
+"When seeking help, check for existing bug reports, pastebin the trace, share "
+"crash.tar.gz (from Local Files) and explain how to reproduce the crash."
+msgstr ""
+"Wanneer u hulp soek, kyk vir bestaande foutverslae, plaas die spoor op "
+"pastebin, deel crash.tar.gz (vanaf Plaaslike lêers) en verduidelik hoe om "
+"die ineenstorting te herhaal."
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:19
+msgid "Local Files"
+msgstr "Plaaslike lêers"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:20
+msgid "Open the directory containing crash.tar.gz and its content."
+msgstr "Maak die gids oop wat crash.tar.gz en sy inhoud bevat."
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:21
+msgid "Bug Tracker"
+msgstr "Foutnaspoorder"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:22
+msgid "Find the most appropriate bug tracker."
+msgstr "Vind die mees geskikte foutnaspoorder."
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:23
+msgid "Pastebin"
+msgstr "Pastebin"
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:24
+msgid "Upload the trace to the Internet."
+msgstr "Laai die spoor na die Internet op."
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:25
+msgid ""
+"Developers need to know where the code fails or how to reproduce the issue. "
+"Always provide a trace and reliable instructions to trigger/observe the "
+"problem."
+msgstr ""
+"Ontwikkelaars moet weet waar die kode faal of hoe om die probleem te "
+"herhaal. Verskaf altyd 'n spoor en betroubare instruksies om die probleem te "
+"ontlok/waar te neem."
+
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:27
+msgid "Refresh"
+msgstr "Verfris"
+
+#: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
+msgid "Add the XApp Status applet"
+msgstr "Voeg die XApp Status-paneelprogram by"
+
+#: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:37
+msgid ""
+"The XApp Status applet allows applications to provide a tray icon without "
+"rendering glitches and with support for HiDPI and symbolic icons."
+msgstr ""
+"Die XApp Status-paneelprogram laat toepassings toe om 'n laai-ikoon te "
+"verskaf sonder weergaweprobleme en met ondersteuning vir HiDPI en simboliese "
+"ikone."
+
+#: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:39
+msgid "Right-click the panel and choose 'Add to Panel'."
+msgstr "Regsklik die paneel en kies 'Voeg by paneel'."
+
+#: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:46
+msgid "Add the XApp Status applet to the panel"
+msgstr "Voeg die XApp Status-paneelprogram by die paneel"
+
+#: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:16
+msgid "Install multimedia codecs"
+msgstr "Installeer multimedia-kodeks"
+
+#: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:30
+msgid ""
+"Multimedia codecs are required to play some video formats and to properly "
+"render some websites."
+msgstr ""
+"Multimedia-kodeks word vereis om sommige videoformate te speel en sommige "
+"webwerwe behoorlik weer te gee."
+
+#: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:36
+msgid "Install the Multimedia Codecs"
+msgstr "Installeer die multimedia-kodeks"
+
+#: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:17
+msgid "Set up the system restore utility"
+msgstr "Stel die stelselherstelprogram op"
+
+#: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:31
+msgid "Linux Mint provides a system restore utility called Timeshift."
+msgstr "Linux Mint verskaf 'n stelselherstelprogram genaamd Timeshift."
+
+#: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:32
+msgid ""
+"Thanks to Timeshift you can take snapshots of the system, either manually or "
+"automatically."
+msgstr ""
+"Danksy Timeshift kan u snitpunte van die stelsel neem, hetsy handmatig of "
+"outomaties."
+
+#: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:33
+msgid ""
+"If something goes wrong you can then restore your operating system from a "
+"previously saved snapshot."
+msgstr ""
+"As iets verkeerd loop, kan u dan u bedryfstelsel herstel vanaf 'n voorheen "
+"gestoorde snitpunt."
+
+#: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:39
+msgid "Launch Timeshift"
+msgstr "Begin Timeshift"
+
+#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:18
+#: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:17
+msgid "A new version of Linux Mint is available"
+msgstr "'n Nuwe weergawe van Linux Mint is beskikbaar"
+
+#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:48
+#: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:50
+#, python-format
+msgid "Visit %s for the latest announcements."
+msgstr "Besoek %s vir die jongste aankondigings."
+
+#: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:54
+#: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:56
+#, python-format
+msgid "Upgrade to %s"
+msgstr "Gradeer op na %s"
+
+#: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:49
+msgid "Your version of Linux Mint will soon reach End-Of-Life (EOL)"
+msgstr ""
+"U weergawe van Linux Mint sal binnekort einde-van-lewensduur (EOL) bereik"
+
+#: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:50
+#, python-brace-format
+msgid "It will stop receiving support and updates in a day."
+msgid_plural "It will stop receiving support and updates in {num_days} days."
+msgstr[0] ""
+"Dit sal oor 'n dag ophou om ondersteuning en opdaterings te ontvang."
+msgstr[1] ""
+"Dit sal oor {num_days} dae ophou om ondersteuning en opdaterings te ontvang."
+
+#: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:54
+msgid "Your version of Linux Mint is no longer supported"
+msgstr "U weergawe van Linux Mint word nie meer ondersteun nie"
+
+#: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:55
+#, python-brace-format
+msgid "It reached End-Of-Life (EOL) yesterday."
+msgid_plural "It reached End-Of-Life (EOL) {num_days} days ago."
+msgstr[0] "Dit het gister einde-van-lewensduur (EOL) bereik."
+msgstr[1] "Dit het {num_days} dae gelede einde-van-lewensduur (EOL) bereik."
+
+#: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:66
+#, python-format
+msgid "Visit %s to find information about newer releases."
+msgstr "Besoek %s vir inligting oor nuwer vrystellings."
+
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:14
+msgid "Perform usrmerge conversion"
+msgstr "Voer usrmerge-omskakeling uit"
+
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:39
+msgid "We recommend you convert your system with usrmerge."
+msgstr "Ons beveel aan dat u u stelsel met usrmerge omskakel."
+
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:40
+msgid "This is done already for new installations of Linux Mint."
+msgstr "Dit is reeds gedoen vir nuwe installasies van Linux Mint."
+
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:41
+msgid "To convert your system, open a terminal and type:"
+msgstr "Om u stelsel om te skakel, maak 'n terminaal oop en tik:"
+
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:43
+msgid "You should reboot the computer once this completes."
+msgstr "U moet die rekenaar herbegin wanneer dit voltooi is."
+
+#: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:49
+msgid "More information"
+msgstr "Meer inligting"
+
+#: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:17
+msgid "Remove conflicting indicators"
+msgstr "Verwyder teenstrydige aanwysers"
+
+#: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:37
+msgid "The following packages prevent tray icons from working properly:"
+msgstr "Die volgende pakkette verhoed dat laai-ikone behoorlik werk:"
+
+#: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:39
+msgid "Note: You will need to log out after removing them."
+msgstr "Let wel: U moet afmeld nadat u hulle verwyder het."
+
+#: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:45
+msgid "Remove the conflicting packages."
+msgstr "Verwyder die teenstrydige pakkette."
+
+#: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:26
+msgid "Install language packs"
+msgstr "Installeer taalpakke"
+
+#: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:41
+msgid ""
+"The following localization packages are missing to properly support your "
+"language:"
+msgstr ""
+"Die volgende lokalisasiepakkette ontbreek om u taal behoorlik te ondersteun:"
+
+#: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:48
+msgid "Install the Language Packs"
+msgstr "Installeer die taalpakke"
+
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:19
+msgid "Install hardware drivers"
+msgstr "Installeer hardewaredrywers"
+
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:41
+msgid "Unknown"
+msgstr "Onbekend"
+
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:45
+#, python-format
+msgid "%s (unknown)"
+msgstr "%s (onbekend)"
+
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:100
+msgid "Hardware drivers are available for the following devices:"
+msgstr "Hardewaredrywers is beskikbaar vir die volgende toestelle:"
+
+#: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:107
+msgid "Launch the Driver Manager"
+msgstr "Begin die drywerbestuurder"

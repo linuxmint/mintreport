@@ -7,18 +7,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2025-10-23 10:18+0100\n"
-"PO-Revision-Date: 2025-10-25 23:44+0000\n"
+"POT-Creation-Date: 2026-11-12 13:58+0000\n"
+"PO-Revision-Date: 2026-11-12 17:41+0000\n"
 "Last-Translator: Butterfly <Unknown>\n"
 "Language-Team: Turkish <tr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2026-01-08 15:43+0000\n"
-"X-Generator: Launchpad (build 99c00f518760bdd50fc6e353e7736d2fff8fba4a)\n"
+"X-Launchpad-Export-Date: 2026-11-16 11:59+0000\n"
+"X-Generator: Launchpad (build 72ba15af7e009b17d4aa1467977127ac8392a4de)\n"
 
-#: usr/lib/linuxmint/mintreport/app.py:130
+#: usr/lib/linuxmint/mintreport/app.py:133
 #: usr/lib/linuxmint/mintreport/app.py:158
 msgid "Unknown size"
 msgstr "Bilinmeyen boyut"
@@ -27,93 +27,90 @@ msgstr "Bilinmeyen boyut"
 msgid "Unknown CPU"
 msgstr "Bilinmeyen CPU"
 
-#: usr/lib/linuxmint/mintreport/app.py:196
-#: usr/lib/linuxmint/mintreport/app.py:466 generate_desktop_files:25
-#: generate_desktop_files:39 usr/share/linuxmint/mintreport/mintreport.ui.h:5
+#: usr/lib/linuxmint/mintreport/app.py:197
+#: usr/lib/linuxmint/mintreport/app.py:463 generate_desktop_files:26
+#: generate_desktop_files:40 usr/share/linuxmint/mintreport/mintreport.ui.h:5
 msgid "System Information"
 msgstr "Sistem Bilgisi"
 
-#: usr/lib/linuxmint/mintreport/app.py:317
+#: usr/lib/linuxmint/mintreport/app.py:319
 msgid "Restore ignored reports"
-msgstr "Gözardı edilen raporları geri al"
+msgstr "Yok sayılan raporları geri al"
 
-#: usr/lib/linuxmint/mintreport/app.py:322
+#: usr/lib/linuxmint/mintreport/app.py:324
 #: usr/lib/linuxmint/mintreport/tray.py:62
 msgid "Quit"
 msgstr "Çıkış"
 
-#: usr/lib/linuxmint/mintreport/app.py:334
-#: usr/lib/linuxmint/mintreport/app.py:464
+#: usr/lib/linuxmint/mintreport/app.py:336
+#: usr/lib/linuxmint/mintreport/app.py:461
 msgid "About"
 msgstr "Hakkında"
 
-#: usr/lib/linuxmint/mintreport/app.py:350
+#: usr/lib/linuxmint/mintreport/app.py:352
 msgid "Computer"
 msgstr "Bilgisayar"
 
-#: usr/lib/linuxmint/mintreport/app.py:372
+#: usr/lib/linuxmint/mintreport/app.py:374
 msgid "Operating System"
 msgstr "İşletim Sistemi"
 
-#: usr/lib/linuxmint/mintreport/app.py:373
+#: usr/lib/linuxmint/mintreport/app.py:375
 msgid "Linux Kernel"
 msgstr "Linux Çekirdeği"
 
-#: usr/lib/linuxmint/mintreport/app.py:374
+#: usr/lib/linuxmint/mintreport/app.py:376
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:28
 msgid "Processor"
 msgstr "İşlemci"
 
-#: usr/lib/linuxmint/mintreport/app.py:377
+#: usr/lib/linuxmint/mintreport/app.py:379
 msgid "Graphics Card"
 msgstr "Grafik Kartı"
 
-#: usr/lib/linuxmint/mintreport/app.py:379
 #: usr/lib/linuxmint/mintreport/app.py:381
+#: usr/lib/linuxmint/mintreport/app.py:383
 msgid "Memory"
 msgstr "Bellek"
 
-#: usr/lib/linuxmint/mintreport/app.py:379
-#: usr/lib/linuxmint/mintreport/app.py:389
+#: usr/lib/linuxmint/mintreport/app.py:381
+#: usr/lib/linuxmint/mintreport/app.py:387
 msgid "GB"
 msgstr "GB"
 
-#: usr/lib/linuxmint/mintreport/app.py:385
-msgid "Hard Drives"
-msgstr "Sabit Sürücüler"
-
 #: usr/lib/linuxmint/mintreport/app.py:387
-msgid "Hard Drive"
-msgstr "Sabit Sürücü"
+#: usr/lib/linuxmint/mintreport/app.py:389
+msgid "Storage"
+msgstr "Depolama"
 
-#: usr/lib/linuxmint/mintreport/app.py:396
+#: usr/lib/linuxmint/mintreport/app.py:394
 msgid "Desktop Environment"
 msgstr "Masaüstü Ortamı"
 
-#: usr/lib/linuxmint/mintreport/app.py:403
+#: usr/lib/linuxmint/mintreport/app.py:401
 msgid "Display Server"
 msgstr "Görüntü Sunucusu"
 
-#: usr/lib/linuxmint/mintreport/app.py:508
+#: usr/lib/linuxmint/mintreport/app.py:505
 msgid "An error occurred while gathering the system information."
 msgstr "Sistem bilgisi toplanırken bir hata oluştu."
 
-#: usr/lib/linuxmint/mintreport/app.py:519
+#: usr/lib/linuxmint/mintreport/app.py:516
 msgid "System information copied"
 msgstr "Sistem bilgisi kopyalandı"
 
-#: usr/lib/linuxmint/mintreport/app.py:519
+#: usr/lib/linuxmint/mintreport/app.py:516
 msgid ""
 "Your system information was copied into your clipboard so you can paste it "
 "on the forums."
 msgstr ""
 "Sistem bilgileriniz panoya kopyalandı, böylece forumlara yapıştırabilirsiniz."
 
-#: usr/lib/linuxmint/mintreport/app.py:527
+#: usr/lib/linuxmint/mintreport/app.py:526
 msgid "System information uploaded"
 msgstr "Sistem bilgisi karşıya yüklendi"
 
-#: usr/lib/linuxmint/mintreport/app.py:527
+#: usr/lib/linuxmint/mintreport/app.py:526
 #, python-format
 msgid ""
 "Your system information was uploaded to %s. This link was placed in your "
@@ -121,11 +118,11 @@ msgid ""
 msgstr ""
 "Sistem bilgileriniz %s adresine yüklendi. Bunun linki panonuza yerleştirildi."
 
-#: usr/lib/linuxmint/mintreport/app.py:529
+#: usr/lib/linuxmint/mintreport/app.py:528
 msgid "An error occurred while uploading the system information"
 msgstr "Sistem bilgisi karşıya yüklenirken bir hata oluştu"
 
-#: usr/lib/linuxmint/mintreport/app.py:529
+#: usr/lib/linuxmint/mintreport/app.py:528
 msgid ""
 "Copy and paste the system information manually into a pastebin site like "
 "https://pastebin.com."
@@ -135,7 +132,7 @@ msgstr ""
 
 #: usr/lib/linuxmint/mintreport/app.py:624
 msgid "Ignore this report"
-msgstr "Bu raporu yoksay"
+msgstr "Bu raporu yok say"
 
 #: usr/lib/linuxmint/mintreport/app.py:640
 msgid "Are you sure you want to ignore this report?"
@@ -178,107 +175,113 @@ msgstr ""
 "Bunlar sonradan bir yükseltme almış olabilir.\n"
 "Bir ipucu yığını 'Yerel Dosyalar'da mevcut, ama muhtemelen içeriği hatalıdır."
 
-#: usr/lib/linuxmint/mintreport/bios.py:21
+#: usr/lib/linuxmint/mintreport/bios.py:22
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:10
 msgid "BIOS"
 msgstr "BIOS"
 
-#: usr/lib/linuxmint/mintreport/bios.py:22
+#: usr/lib/linuxmint/mintreport/bios.py:23
 msgid "Motherboard"
 msgstr "Anakart"
 
-#: usr/lib/linuxmint/mintreport/bios.py:32
-#: usr/lib/linuxmint/mintreport/bios.py:53
-#: usr/lib/linuxmint/mintreport/gpu.py:215
+#: usr/lib/linuxmint/mintreport/bios.py:33
+#: usr/lib/linuxmint/mintreport/bios.py:66
+#: usr/lib/linuxmint/mintreport/gpu.py:220
 #: usr/lib/linuxmint/mintreport/pci.py:271
 msgid "Brand"
 msgstr "Marka"
 
-#: usr/lib/linuxmint/mintreport/bios.py:33
-#: usr/lib/linuxmint/mintreport/bios.py:55
+#: usr/lib/linuxmint/mintreport/bios.py:34
+#: usr/lib/linuxmint/mintreport/bios.py:68
 msgid "Version"
 msgstr "Sürüm"
 
-#: usr/lib/linuxmint/mintreport/bios.py:34
+#: usr/lib/linuxmint/mintreport/bios.py:35
 msgid "Release"
 msgstr "Yayım"
 
-#: usr/lib/linuxmint/mintreport/bios.py:35
+#: usr/lib/linuxmint/mintreport/bios.py:41
 msgid "Release Date"
 msgstr "Yayım Tarihi"
 
-#: usr/lib/linuxmint/mintreport/bios.py:38
-#: usr/lib/linuxmint/mintreport/bios.py:41
+#: usr/lib/linuxmint/mintreport/bios.py:44
+#: usr/lib/linuxmint/mintreport/bios.py:47
 msgid "Boot Mode"
 msgstr "Açılış Kipi"
 
-#: usr/lib/linuxmint/mintreport/bios.py:39
-#: usr/lib/linuxmint/mintreport/bios.py:43
-#: usr/lib/linuxmint/mintreport/bios.py:50
+#: usr/lib/linuxmint/mintreport/bios.py:45
+#: usr/lib/linuxmint/mintreport/bios.py:49
+#: usr/lib/linuxmint/mintreport/bios.py:56
 msgid "Secure Boot"
 msgstr "Secure Boot"
 
-#: usr/lib/linuxmint/mintreport/bios.py:39
-#: usr/lib/linuxmint/mintreport/bios.py:50
+#: usr/lib/linuxmint/mintreport/bios.py:45
+#: usr/lib/linuxmint/mintreport/bios.py:56
+#: usr/lib/linuxmint/mintreport/bios.py:60
 msgid "Disabled"
 msgstr "Pasif"
 
-#: usr/lib/linuxmint/mintreport/bios.py:43
-#: usr/lib/linuxmint/mintreport/gpu.py:183
+#: usr/lib/linuxmint/mintreport/bios.py:49
+#: usr/lib/linuxmint/mintreport/gpu.py:188
 msgid "Enabled"
 msgstr "Etkin"
 
-#: usr/lib/linuxmint/mintreport/bios.py:46
-#: usr/lib/linuxmint/mintreport/bios.py:48
+#: usr/lib/linuxmint/mintreport/bios.py:52
+#: usr/lib/linuxmint/mintreport/bios.py:54
 msgid "Secure Boot mode"
 msgstr "Secure Boot kipi"
 
-#: usr/lib/linuxmint/mintreport/bios.py:46
+#: usr/lib/linuxmint/mintreport/bios.py:52
 msgid "Setup Mode (keys not enrolled)"
 msgstr "Kurulum Kipi (anahtarlar kaydedilmedi)"
 
-#: usr/lib/linuxmint/mintreport/bios.py:48
+#: usr/lib/linuxmint/mintreport/bios.py:54
 msgid "User Mode (normal)"
 msgstr "Kullanıcı Kipi (normal)"
 
-#: usr/lib/linuxmint/mintreport/bios.py:54
-#: usr/lib/linuxmint/mintreport/gpu.py:216
-#: usr/lib/linuxmint/mintreport/usb.py:149
-msgid "Name"
-msgstr "İsim"
-
-#: usr/lib/linuxmint/mintreport/gpu.py:185
-#: usr/lib/linuxmint/mintreport/gpu.py:211
-msgid "Disabled (Software rendering)"
-msgstr "Pasif (Yazılımsal işleme)"
-
-#: usr/lib/linuxmint/mintreport/gpu.py:195
-msgid "Default GPU"
-msgstr "Varsayılan GPU"
-
-#: usr/lib/linuxmint/mintreport/gpu.py:196
-msgid "Hardware Acceleration"
-msgstr "Donanım Hızlandırma"
-
-#: usr/lib/linuxmint/mintreport/gpu.py:213
+#: usr/lib/linuxmint/mintreport/bios.py:62
+#: usr/lib/linuxmint/mintreport/gpu.py:218
 #, python-format
 msgid "Enabled (%s)"
 msgstr "Etkin (%s)"
 
-#: usr/lib/linuxmint/mintreport/gpu.py:217
+#: usr/lib/linuxmint/mintreport/bios.py:63
+msgid "Virtualization"
+msgstr "Sanallaştırma"
+
+#: usr/lib/linuxmint/mintreport/bios.py:67
+#: usr/lib/linuxmint/mintreport/gpu.py:221
+#: usr/lib/linuxmint/mintreport/usb.py:149
+msgid "Name"
+msgstr "İsim"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:190
+#: usr/lib/linuxmint/mintreport/gpu.py:216
+msgid "Disabled (Software rendering)"
+msgstr "Pasif (Yazılımsal işleme)"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:200
+msgid "Default GPU"
+msgstr "Varsayılan GPU"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:201
+msgid "Hardware Acceleration"
+msgstr "Donanım Hızlandırma"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:222
 msgid "PCI ID"
 msgstr "PCI ID"
 
-#: usr/lib/linuxmint/mintreport/gpu.py:218
+#: usr/lib/linuxmint/mintreport/gpu.py:223
 #: usr/lib/linuxmint/mintreport/pci.py:306
 msgid "Driver"
 msgstr "Sürücü"
 
-#: usr/lib/linuxmint/mintreport/gpu.py:220
+#: usr/lib/linuxmint/mintreport/gpu.py:225
 msgid "Driver Version"
 msgstr "Sürücü Sürümü"
 
-#: usr/lib/linuxmint/mintreport/gpu.py:225
+#: usr/lib/linuxmint/mintreport/gpu.py:230
 msgid "Video Playback"
 msgstr "Video Oynatım"
 
@@ -348,15 +351,15 @@ msgstr "Otomatik Güncellemeler"
 msgid "Automatic updates are being installed."
 msgstr "Otomatik güncellemeler kuruluyor."
 
-#: usr/lib/linuxmint/mintreport/usb.py:39
+#: usr/lib/linuxmint/mintreport/usb.py:40
 #, python-format
 msgid "%d Gbps"
 msgstr "%d Gbps"
 
-#: usr/lib/linuxmint/mintreport/usb.py:41
+#: usr/lib/linuxmint/mintreport/usb.py:42
 #, python-format
-msgid "%d Mbps"
-msgstr "%d Mbps"
+msgid "%s Mbps"
+msgstr "%s Mbps"
 
 #: usr/lib/linuxmint/mintreport/usb.py:168
 msgid "Speed"
@@ -386,18 +389,18 @@ msgstr "%s mA maks."
 msgid "The ID of the device was copied into your clipboard."
 msgstr "Aygıtın ID'si panonuza kopyalandı."
 
-#: generate_desktop_files:25 generate_desktop_files:39
-#: generate_desktop_files:53 generate_desktop_files:67
+#: generate_desktop_files:26 generate_desktop_files:40
+#: generate_desktop_files:54 generate_desktop_files:68
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:26
 msgid "Troubleshoot problems"
 msgstr "Sorunları giderme"
 
-#: generate_desktop_files:53 generate_desktop_files:67
+#: generate_desktop_files:54 generate_desktop_files:68
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:13
 msgid "System Reports"
 msgstr "Sistem Raporları"
 
-#: generate_desktop_files:53
+#: generate_desktop_files:54
 msgid "Troubleshooting Tool"
 msgstr "Sorun Giderme Aracı"
 

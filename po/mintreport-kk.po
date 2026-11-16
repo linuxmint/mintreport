@@ -7,139 +7,142 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2025-10-23 10:18+0100\n"
-"PO-Revision-Date: 2018-07-18 16:04+0000\n"
-"Last-Translator: Murat Käribay <d2vsd1@mail.ru>\n"
+"POT-Creation-Date: 2026-11-12 13:58+0000\n"
+"PO-Revision-Date: 2026-01-24 14:57+0000\n"
+"Last-Translator: Baurzhan Muftakhidinov <Unknown>\n"
 "Language-Team: Kazakh <kk@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2026-01-08 15:43+0000\n"
-"X-Generator: Launchpad (build 99c00f518760bdd50fc6e353e7736d2fff8fba4a)\n"
+"X-Launchpad-Export-Date: 2026-11-16 11:59+0000\n"
+"X-Generator: Launchpad (build 72ba15af7e009b17d4aa1467977127ac8392a4de)\n"
+"Language: kk\n"
 
-#: usr/lib/linuxmint/mintreport/app.py:130
+#: usr/lib/linuxmint/mintreport/app.py:133
 #: usr/lib/linuxmint/mintreport/app.py:158
 msgid "Unknown size"
-msgstr ""
+msgstr "Белгісіз өлшем"
 
 #: usr/lib/linuxmint/mintreport/app.py:156
 msgid "Unknown CPU"
-msgstr ""
+msgstr "Белгісіз CPU"
 
-#: usr/lib/linuxmint/mintreport/app.py:196
-#: usr/lib/linuxmint/mintreport/app.py:466 generate_desktop_files:25
-#: generate_desktop_files:39 usr/share/linuxmint/mintreport/mintreport.ui.h:5
+#: usr/lib/linuxmint/mintreport/app.py:197
+#: usr/lib/linuxmint/mintreport/app.py:463 generate_desktop_files:26
+#: generate_desktop_files:40 usr/share/linuxmint/mintreport/mintreport.ui.h:5
 msgid "System Information"
-msgstr ""
+msgstr "Жүйелік ақпарат"
 
-#: usr/lib/linuxmint/mintreport/app.py:317
+#: usr/lib/linuxmint/mintreport/app.py:319
 msgid "Restore ignored reports"
-msgstr ""
+msgstr "Елемеген есептерді қалпына келтіру"
 
-#: usr/lib/linuxmint/mintreport/app.py:322
+#: usr/lib/linuxmint/mintreport/app.py:324
 #: usr/lib/linuxmint/mintreport/tray.py:62
 msgid "Quit"
-msgstr ""
+msgstr "Шығу"
 
-#: usr/lib/linuxmint/mintreport/app.py:334
-#: usr/lib/linuxmint/mintreport/app.py:464
+#: usr/lib/linuxmint/mintreport/app.py:336
+#: usr/lib/linuxmint/mintreport/app.py:461
 msgid "About"
-msgstr ""
+msgstr "Туралы"
 
-#: usr/lib/linuxmint/mintreport/app.py:350
+#: usr/lib/linuxmint/mintreport/app.py:352
 msgid "Computer"
-msgstr ""
-
-#: usr/lib/linuxmint/mintreport/app.py:372
-msgid "Operating System"
-msgstr ""
-
-#: usr/lib/linuxmint/mintreport/app.py:373
-msgid "Linux Kernel"
-msgstr ""
+msgstr "Компьютер"
 
 #: usr/lib/linuxmint/mintreport/app.py:374
+msgid "Operating System"
+msgstr "Операциялық жүйе"
+
+#: usr/lib/linuxmint/mintreport/app.py:375
+msgid "Linux Kernel"
+msgstr "Linux ядросы"
+
+#: usr/lib/linuxmint/mintreport/app.py:376
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:28
 msgid "Processor"
-msgstr ""
+msgstr "Процессор"
 
-#: usr/lib/linuxmint/mintreport/app.py:377
+#: usr/lib/linuxmint/mintreport/app.py:379
 msgid "Graphics Card"
-msgstr ""
+msgstr "Бейнекарта"
 
-#: usr/lib/linuxmint/mintreport/app.py:379
 #: usr/lib/linuxmint/mintreport/app.py:381
+#: usr/lib/linuxmint/mintreport/app.py:383
 msgid "Memory"
-msgstr ""
+msgstr "Жад"
 
-#: usr/lib/linuxmint/mintreport/app.py:379
-#: usr/lib/linuxmint/mintreport/app.py:389
+#: usr/lib/linuxmint/mintreport/app.py:381
+#: usr/lib/linuxmint/mintreport/app.py:387
 msgid "GB"
-msgstr ""
-
-#: usr/lib/linuxmint/mintreport/app.py:385
-msgid "Hard Drives"
-msgstr ""
+msgstr "ГБ"
 
 #: usr/lib/linuxmint/mintreport/app.py:387
-msgid "Hard Drive"
+#: usr/lib/linuxmint/mintreport/app.py:389
+msgid "Storage"
 msgstr ""
 
-#: usr/lib/linuxmint/mintreport/app.py:396
+#: usr/lib/linuxmint/mintreport/app.py:394
 msgid "Desktop Environment"
-msgstr ""
+msgstr "Жұмыс үстелі ортасы"
 
-#: usr/lib/linuxmint/mintreport/app.py:403
+#: usr/lib/linuxmint/mintreport/app.py:401
 msgid "Display Server"
-msgstr ""
+msgstr "Дисплей сервері"
 
-#: usr/lib/linuxmint/mintreport/app.py:508
+#: usr/lib/linuxmint/mintreport/app.py:505
 msgid "An error occurred while gathering the system information."
-msgstr ""
+msgstr "Жүйелік ақпаратты жинау кезінде қате орын алды."
 
-#: usr/lib/linuxmint/mintreport/app.py:519
+#: usr/lib/linuxmint/mintreport/app.py:516
 msgid "System information copied"
-msgstr ""
+msgstr "Жүйелік ақпарат көшірілді"
 
-#: usr/lib/linuxmint/mintreport/app.py:519
+#: usr/lib/linuxmint/mintreport/app.py:516
 msgid ""
 "Your system information was copied into your clipboard so you can paste it "
 "on the forums."
 msgstr ""
+"Форумдарға кірістіруіңіз үшін жүйелік ақпаратыңыз алмасу буферіне көшірілді."
 
-#: usr/lib/linuxmint/mintreport/app.py:527
+#: usr/lib/linuxmint/mintreport/app.py:526
 msgid "System information uploaded"
-msgstr ""
+msgstr "Жүйелік ақпарат жүктелді"
 
-#: usr/lib/linuxmint/mintreport/app.py:527
+#: usr/lib/linuxmint/mintreport/app.py:526
 #, python-format
 msgid ""
 "Your system information was uploaded to %s. This link was placed in your "
 "clipboard."
 msgstr ""
+"Жүйелік ақпаратыңыз %s адресіне жүктелді. Бұл сілтеме алмасу буферіне "
+"орналастырылды."
 
-#: usr/lib/linuxmint/mintreport/app.py:529
+#: usr/lib/linuxmint/mintreport/app.py:528
 msgid "An error occurred while uploading the system information"
-msgstr ""
+msgstr "Жүйелік ақпаратты жүктеу кезінде қате орын алды"
 
-#: usr/lib/linuxmint/mintreport/app.py:529
+#: usr/lib/linuxmint/mintreport/app.py:528
 msgid ""
 "Copy and paste the system information manually into a pastebin site like "
 "https://pastebin.com."
 msgstr ""
+"Жүйелік ақпаратты https://pastebin.com сияқты pastebin сайтына қолмен "
+"көшіріп, кірістіріңіз."
 
 #: usr/lib/linuxmint/mintreport/app.py:624
 msgid "Ignore this report"
-msgstr ""
+msgstr "Бұл есепті елемеу"
 
 #: usr/lib/linuxmint/mintreport/app.py:640
 msgid "Are you sure you want to ignore this report?"
-msgstr ""
+msgstr "Бұл есепті елемеуге сенімдісіз бе?"
 
 #: usr/lib/linuxmint/mintreport/app.py:641
 msgid "The report will be permanently ignored and will no longer be visible."
-msgstr ""
+msgstr "Есеп біржола еленбейді және бұдан былай көрінбейтін болады."
 
 #: usr/lib/linuxmint/mintreport/app.py:730
 #, python-format
@@ -147,6 +150,8 @@ msgid ""
 "The debug symbols are missing for %(program)s.\n"
 "Please install %(package)s."
 msgstr ""
+"%(program)s үшін жөндеу таңбалары жетіспейді.\n"
+"%(package)s орнатыңыз."
 
 #: usr/lib/linuxmint/mintreport/app.py:744
 #, python-format
@@ -155,6 +160,9 @@ msgid ""
 "If you want to generate a stack trace for this crash report, please "
 "reinstall it."
 msgstr ""
+"%s қамтамасыз ететін пакет табылмады.\n"
+"Егер осы апаттық есеп үшін стекті қадағалауды жасағыңыз келсе, оны қайта "
+"орнатыңыз."
 
 #: usr/lib/linuxmint/mintreport/app.py:772
 msgid ""
@@ -164,318 +172,337 @@ msgid ""
 "A stack trace is available in 'Local Files' but its content is probably "
 "inaccurate."
 msgstr ""
-
-#: usr/lib/linuxmint/mintreport/bios.py:21
-#: usr/share/linuxmint/mintreport/mintreport.ui.h:10
-msgid "BIOS"
-msgstr ""
+"Жүйеңізде орнатылған тақырыптамалар немесе екілік файлдар апат кезінде "
+"орындалған кодқа сәйкес келмейді.\n"
+"Олар содан бері жаңғыртылған болуы мүмкін.\n"
+"'Жергілікті файлдар' бөлімінде стек қадағалауы бар, бірақ оның мазмұны дәл "
+"емес болуы мүмкін."
 
 #: usr/lib/linuxmint/mintreport/bios.py:22
-msgid "Motherboard"
-msgstr ""
+#: usr/share/linuxmint/mintreport/mintreport.ui.h:10
+msgid "BIOS"
+msgstr "BIOS"
 
-#: usr/lib/linuxmint/mintreport/bios.py:32
-#: usr/lib/linuxmint/mintreport/bios.py:53
-#: usr/lib/linuxmint/mintreport/gpu.py:215
-#: usr/lib/linuxmint/mintreport/pci.py:271
-msgid "Brand"
-msgstr ""
+#: usr/lib/linuxmint/mintreport/bios.py:23
+msgid "Motherboard"
+msgstr "Аналық плата"
 
 #: usr/lib/linuxmint/mintreport/bios.py:33
-#: usr/lib/linuxmint/mintreport/bios.py:55
-msgid "Version"
-msgstr ""
+#: usr/lib/linuxmint/mintreport/bios.py:66
+#: usr/lib/linuxmint/mintreport/gpu.py:220
+#: usr/lib/linuxmint/mintreport/pci.py:271
+msgid "Brand"
+msgstr "Бренд"
 
 #: usr/lib/linuxmint/mintreport/bios.py:34
-msgid "Release"
-msgstr ""
+#: usr/lib/linuxmint/mintreport/bios.py:68
+msgid "Version"
+msgstr "Нұсқа"
 
 #: usr/lib/linuxmint/mintreport/bios.py:35
-msgid "Release Date"
-msgstr ""
+msgid "Release"
+msgstr "Шығарылым"
 
-#: usr/lib/linuxmint/mintreport/bios.py:38
 #: usr/lib/linuxmint/mintreport/bios.py:41
+msgid "Release Date"
+msgstr "Шығарылған күні"
+
+#: usr/lib/linuxmint/mintreport/bios.py:44
+#: usr/lib/linuxmint/mintreport/bios.py:47
 msgid "Boot Mode"
-msgstr ""
+msgstr "Жүктеу режимі"
 
-#: usr/lib/linuxmint/mintreport/bios.py:39
-#: usr/lib/linuxmint/mintreport/bios.py:43
-#: usr/lib/linuxmint/mintreport/bios.py:50
+#: usr/lib/linuxmint/mintreport/bios.py:45
+#: usr/lib/linuxmint/mintreport/bios.py:49
+#: usr/lib/linuxmint/mintreport/bios.py:56
 msgid "Secure Boot"
-msgstr ""
+msgstr "Secure Boot"
 
-#: usr/lib/linuxmint/mintreport/bios.py:39
-#: usr/lib/linuxmint/mintreport/bios.py:50
+#: usr/lib/linuxmint/mintreport/bios.py:45
+#: usr/lib/linuxmint/mintreport/bios.py:56
+#: usr/lib/linuxmint/mintreport/bios.py:60
 msgid "Disabled"
-msgstr ""
+msgstr "Сөндірулі"
 
-#: usr/lib/linuxmint/mintreport/bios.py:43
-#: usr/lib/linuxmint/mintreport/gpu.py:183
+#: usr/lib/linuxmint/mintreport/bios.py:49
+#: usr/lib/linuxmint/mintreport/gpu.py:188
 msgid "Enabled"
-msgstr ""
+msgstr "Іске қосулы"
 
-#: usr/lib/linuxmint/mintreport/bios.py:46
-#: usr/lib/linuxmint/mintreport/bios.py:48
+#: usr/lib/linuxmint/mintreport/bios.py:52
+#: usr/lib/linuxmint/mintreport/bios.py:54
 msgid "Secure Boot mode"
-msgstr ""
+msgstr "Secure Boot режимі"
 
-#: usr/lib/linuxmint/mintreport/bios.py:46
+#: usr/lib/linuxmint/mintreport/bios.py:52
 msgid "Setup Mode (keys not enrolled)"
-msgstr ""
-
-#: usr/lib/linuxmint/mintreport/bios.py:48
-msgid "User Mode (normal)"
-msgstr ""
+msgstr "Баптау режимі (кілттер тіркелмеген)"
 
 #: usr/lib/linuxmint/mintreport/bios.py:54
-#: usr/lib/linuxmint/mintreport/gpu.py:216
-#: usr/lib/linuxmint/mintreport/usb.py:149
-msgid "Name"
-msgstr ""
+msgid "User Mode (normal)"
+msgstr "Пайдаланушы режимі (қалыпты)"
 
-#: usr/lib/linuxmint/mintreport/gpu.py:185
-#: usr/lib/linuxmint/mintreport/gpu.py:211
-msgid "Disabled (Software rendering)"
-msgstr ""
-
-#: usr/lib/linuxmint/mintreport/gpu.py:195
-msgid "Default GPU"
-msgstr ""
-
-#: usr/lib/linuxmint/mintreport/gpu.py:196
-msgid "Hardware Acceleration"
-msgstr ""
-
-#: usr/lib/linuxmint/mintreport/gpu.py:213
+#: usr/lib/linuxmint/mintreport/bios.py:62
+#: usr/lib/linuxmint/mintreport/gpu.py:218
 #, python-format
 msgid "Enabled (%s)"
+msgstr "Іске қосулы (%s)"
+
+#: usr/lib/linuxmint/mintreport/bios.py:63
+msgid "Virtualization"
 msgstr ""
 
-#: usr/lib/linuxmint/mintreport/gpu.py:217
+#: usr/lib/linuxmint/mintreport/bios.py:67
+#: usr/lib/linuxmint/mintreport/gpu.py:221
+#: usr/lib/linuxmint/mintreport/usb.py:149
+msgid "Name"
+msgstr "Аты"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:190
+#: usr/lib/linuxmint/mintreport/gpu.py:216
+msgid "Disabled (Software rendering)"
+msgstr "Сөндірулі (Бағдарламалық өңдеу)"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:200
+msgid "Default GPU"
+msgstr "Әдепкі GPU"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:201
+msgid "Hardware Acceleration"
+msgstr "Аппараттық үдеу"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:222
 msgid "PCI ID"
-msgstr ""
+msgstr "PCI ID"
 
-#: usr/lib/linuxmint/mintreport/gpu.py:218
+#: usr/lib/linuxmint/mintreport/gpu.py:223
 #: usr/lib/linuxmint/mintreport/pci.py:306
 msgid "Driver"
-msgstr ""
-
-#: usr/lib/linuxmint/mintreport/gpu.py:220
-msgid "Driver Version"
-msgstr ""
+msgstr "Драйвер"
 
 #: usr/lib/linuxmint/mintreport/gpu.py:225
+msgid "Driver Version"
+msgstr "Драйвер нұсқасы"
+
+#: usr/lib/linuxmint/mintreport/gpu.py:230
 msgid "Video Playback"
-msgstr ""
+msgstr "Видео ойнату"
 
 #: usr/lib/linuxmint/mintreport/pci.py:255
 msgid "Bus"
-msgstr ""
+msgstr "Шина"
 
 #: usr/lib/linuxmint/mintreport/pci.py:263
 msgid "Type"
-msgstr ""
+msgstr "Түрі"
 
 #: usr/lib/linuxmint/mintreport/pci.py:278
 msgid "Device"
-msgstr ""
+msgstr "Құрылғы"
 
 #: usr/lib/linuxmint/mintreport/pci.py:298
 #: usr/lib/linuxmint/mintreport/usb.py:162
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #: usr/lib/linuxmint/mintreport/pci.py:321
 msgid "Copy the ID"
-msgstr ""
+msgstr "ID көшіру"
 
 #: usr/lib/linuxmint/mintreport/pci.py:322
 msgid "Copy the entire row"
-msgstr ""
+msgstr "Бүкіл жолды көшіру"
 
 #: usr/lib/linuxmint/mintreport/pci.py:352
 #: usr/lib/linuxmint/mintreport/usb.py:355
 msgid "Device ID copied"
-msgstr ""
+msgstr "Құрылғының ID-і көшірілді"
 
 #: usr/lib/linuxmint/mintreport/pci.py:352
 msgid "The device ID was copied into your clipboard."
-msgstr ""
+msgstr "Құрылғының ID-і алмасу буферіне көшірілді."
 
 #: usr/lib/linuxmint/mintreport/pci.py:362
 msgid "Device information copied"
-msgstr ""
+msgstr "Құрылғы туралы ақпарат көшірілді"
 
 #: usr/lib/linuxmint/mintreport/pci.py:362
 msgid "The device information was copied into your clipboard."
-msgstr ""
+msgstr "Құрылғы туралы ақпарат алмасу буферіне көшірілді."
 
 #: usr/lib/linuxmint/mintreport/tray.py:58
 msgid "Show System Reports"
-msgstr ""
+msgstr "Жүйелік есептерді көрсету"
 
 #: usr/lib/linuxmint/mintreport/tray.py:136
 msgid "Some system reports require your attention"
-msgstr ""
+msgstr "Кейбір жүйелік есептер назарыңызды қажет етеді"
 
 #: usr/lib/linuxmint/mintreport/tray.py:146
 msgid "System Snapshots"
-msgstr ""
+msgstr "Жүйелік снапшоттар"
 
 #: usr/lib/linuxmint/mintreport/tray.py:146
 msgid "A Timeshift system snapshot is being created."
-msgstr ""
+msgstr "Timeshift жүйелік снапшоты жасалуда."
 
 #: usr/lib/linuxmint/mintreport/tray.py:147
 msgid "Automatic Updates"
-msgstr ""
+msgstr "Автоматты жаңартулар"
 
 #: usr/lib/linuxmint/mintreport/tray.py:147
 msgid "Automatic updates are being installed."
-msgstr ""
+msgstr "Автоматты жаңартулар орнатылуда."
 
-#: usr/lib/linuxmint/mintreport/usb.py:39
+#: usr/lib/linuxmint/mintreport/usb.py:40
 #, python-format
 msgid "%d Gbps"
-msgstr ""
+msgstr "%d Гбит/с"
 
-#: usr/lib/linuxmint/mintreport/usb.py:41
+#: usr/lib/linuxmint/mintreport/usb.py:42
 #, python-format
-msgid "%d Mbps"
+msgid "%s Mbps"
 msgstr ""
 
 #: usr/lib/linuxmint/mintreport/usb.py:168
 msgid "Speed"
-msgstr ""
+msgstr "Жылдамдық"
 
 #: usr/lib/linuxmint/mintreport/usb.py:176
 msgid "Power"
-msgstr ""
+msgstr "Қуат"
 
 #: usr/lib/linuxmint/mintreport/usb.py:267
 #, python-format
 msgid "USB %(version)s controller (Bus #%(number)s) – Max speed: %(speed)s"
 msgstr ""
+"USB %(version)s контроллері (Шина #%(number)s) – Макс. жылдамдық: %(speed)s"
 
 #: usr/lib/linuxmint/mintreport/usb.py:285
 #: usr/lib/linuxmint/mintreport/usb.py:288
 #, python-format
 msgid "%d mA"
-msgstr ""
+msgstr "%d мА"
 
 #: usr/lib/linuxmint/mintreport/usb.py:336
 #, python-format
 msgid "%s mA max"
-msgstr ""
+msgstr "ең көбі %s мА"
 
 #: usr/lib/linuxmint/mintreport/usb.py:355
 msgid "The ID of the device was copied into your clipboard."
-msgstr ""
+msgstr "Құрылғының ID-і алмасу буферіне көшірілді."
 
-#: generate_desktop_files:25 generate_desktop_files:39
-#: generate_desktop_files:53 generate_desktop_files:67
+#: generate_desktop_files:26 generate_desktop_files:40
+#: generate_desktop_files:54 generate_desktop_files:68
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:26
 msgid "Troubleshoot problems"
-msgstr ""
+msgstr "Мәселелерді шешу"
 
-#: generate_desktop_files:53 generate_desktop_files:67
+#: generate_desktop_files:54 generate_desktop_files:68
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:13
 msgid "System Reports"
-msgstr ""
+msgstr "Жүйелік есептер"
 
-#: generate_desktop_files:53
+#: generate_desktop_files:54
 msgid "Troubleshooting Tool"
-msgstr ""
+msgstr "Мәселелерді шешу сайманы"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:1
 msgid "Copy"
-msgstr ""
+msgstr "Көшіру"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:2
 msgid ""
 "Copy to clipboard (code tags are added to make it easy to paste the system "
 "information into the forums)"
 msgstr ""
+"Алмасу буферіне көшіру (жүйелік ақпаратты форумдарға кірістіруді жеңілдету "
+"үшін код тегтері қосылды)"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:3
 msgid "Upload"
-msgstr ""
+msgstr "Жүктеп салу"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:4
 msgid "Upload to a pastebin service (no personal information included)"
-msgstr ""
+msgstr "Pastebin қызметіне жүктеп салу (жеке ақпарат қамтылмаған)"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:6
 msgid "Note: Double-click a device to copy its ID"
-msgstr ""
+msgstr "Ескертпе: ID-ін көшіру үшін құрылғыға екі рет шертіңіз"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:7
 msgid "USB"
-msgstr ""
+msgstr "USB"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:8
 msgid "GPU"
-msgstr ""
+msgstr "GPU"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:9
 msgid "PCI"
-msgstr ""
+msgstr "PCI"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:11
 msgid "Running system checks..."
-msgstr ""
+msgstr "Жүйелік тексерулер орындалуда..."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:12
 msgid "No problems were detected"
-msgstr ""
+msgstr "Ешқандай мәселе табылмады"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:14
 msgid "Crash reports are not available"
-msgstr ""
+msgstr "Қате туралы есептер қолжетімді емес"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:15
 msgid ""
 "To enable crash reporting, install systemd-coredump and reboot your computer."
 msgstr ""
+"Қате туралы есеп беруді іске қосу үшін systemd-coredump орнатып, компьютерді "
+"қайта жүктеңіз."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:16
 msgid "Crash Reports"
-msgstr ""
+msgstr "Қате туралы есептер"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:17
 msgid "Stack Trace"
-msgstr ""
+msgstr "Стек ізі"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:18
 msgid ""
 "When seeking help, check for existing bug reports, pastebin the trace, share "
 "crash.tar.gz (from Local Files) and explain how to reproduce the crash."
 msgstr ""
+"Көмек сұрағанда, бар ақаулық есептерін тексеріңіз, ізді pastebin-ге салыңыз, "
+"crash.tar.gz файлымен (Жергілікті файлдар ішіндегі) бөлісіңіз және қатені "
+"қалай қайталауға болатынын түсіндіріңіз."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:19
 msgid "Local Files"
-msgstr ""
+msgstr "Жергілікті файлдар"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:20
 msgid "Open the directory containing crash.tar.gz and its content."
-msgstr ""
+msgstr "Құрамында crash.tar.gz бар буманы және оның мазмұнын ашу."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:21
 msgid "Bug Tracker"
-msgstr ""
+msgstr "Ақаулық трекері"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:22
 msgid "Find the most appropriate bug tracker."
-msgstr ""
+msgstr "Ең сәйкес келетін ақаулық трекерін табу."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:23
 msgid "Pastebin"
-msgstr ""
+msgstr "Pastebin"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:24
 msgid "Upload the trace to the Internet."
-msgstr ""
+msgstr "Ізді интернетке жүктеп салу."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:25
 msgid ""
@@ -483,182 +510,199 @@ msgid ""
 "Always provide a trace and reliable instructions to trigger/observe the "
 "problem."
 msgstr ""
+"Әзірлеушілер кодтың қай жерде қате беретінін немесе мәселені қалай қайталау "
+"керектігін білуі керек. Мәселені іске қосу/байқау үшін әрдайым трассировканы "
+"және сенімді нұсқауларды беріңіз."
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:27
 msgid "Refresh"
-msgstr ""
+msgstr "Жаңарту"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:17
 msgid "Add the XApp Status applet"
-msgstr ""
+msgstr "XApp Status апплетін қосу"
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:37
 msgid ""
 "The XApp Status applet allows applications to provide a tray icon without "
 "rendering glitches and with support for HiDPI and symbolic icons."
 msgstr ""
+"XApp Status апплеті қолданбаларға кескіндеу ақауларынсыз және HiDPI мен "
+"символдық таңбашаларды қолдаумен жүйелік науа таңбашасын ұсынуға мүмкіндік "
+"береді."
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:39
 msgid "Right-click the panel and choose 'Add to Panel'."
-msgstr ""
+msgstr "Панельді оң жақпен шертіп, 'Панельге қосу' таңдаңыз."
 
 #: usr/share/linuxmint/mintreport/reports/045_xappstatusapplet-missing/MintReportInfo.py:46
 msgid "Add the XApp Status applet to the panel"
-msgstr ""
+msgstr "XApp Status апплетін панельге қосу"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:16
 msgid "Install multimedia codecs"
-msgstr ""
+msgstr "Мультимедиа кодектерін орнату"
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:30
 msgid ""
 "Multimedia codecs are required to play some video formats and to properly "
 "render some websites."
 msgstr ""
+"Кейбір видео пішімдерін ойнату және кейбір веб-сайттарды дұрыс кескіндеу "
+"үшін мультимедиа кодектері қажет."
 
 #: usr/share/linuxmint/mintreport/reports/050_install-media-codecs/MintReportInfo.py:36
 msgid "Install the Multimedia Codecs"
-msgstr ""
+msgstr "Мультимедиа кодектерін орнату"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:17
 msgid "Set up the system restore utility"
-msgstr ""
+msgstr "Жүйені қалпына келтіру утилитасын баптау"
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:31
 msgid "Linux Mint provides a system restore utility called Timeshift."
 msgstr ""
+"Linux Mint жүйесі Timeshift деп аталатын жүйені қалпына келтіру утилитасын "
+"ұсынады."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:32
 msgid ""
 "Thanks to Timeshift you can take snapshots of the system, either manually or "
 "automatically."
 msgstr ""
+"Timeshift арқасында жүйенің снапшоттарын қолмен немесе автоматты түрде "
+"жасауға болады."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:33
 msgid ""
 "If something goes wrong you can then restore your operating system from a "
 "previously saved snapshot."
 msgstr ""
+"Егер бірдеңе дұрыс болмаса, операциялық жүйеңізді бұрын сақталған снапшоттан "
+"қалпына келтіре аласыз."
 
 #: usr/share/linuxmint/mintreport/reports/060_timeshift-no-setup/MintReportInfo.py:39
 msgid "Launch Timeshift"
-msgstr ""
+msgstr "Timeshift бағдарламасын іске қосу"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:18
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:17
 msgid "A new version of Linux Mint is available"
-msgstr ""
+msgstr "Linux Mint-тің жаңа нұсқасы қолжетімді"
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:48
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:50
 #, python-format
 msgid "Visit %s for the latest announcements."
-msgstr ""
+msgstr "Соңғы хабарландырулар үшін %s сайтына кіріңіз."
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:54
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:56
 #, python-format
 msgid "Upgrade to %s"
-msgstr ""
+msgstr "%s нұсқасына жаңғырту"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:49
 msgid "Your version of Linux Mint will soon reach End-Of-Life (EOL)"
-msgstr ""
+msgstr "Linux Mint нұсқасының қолдау мерзімі жақында аяқталады (EOL)"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:50
 #, python-brace-format
 msgid "It will stop receiving support and updates in a day."
 msgid_plural "It will stop receiving support and updates in {num_days} days."
-msgstr[0] ""
+msgstr[0] "Ол бір күннен кейін қолдау мен жаңартуларды алуды тоқтатады."
 msgstr[1] ""
+"Ол {num_days} күннен кейін қолдау мен жаңартуларды алуды тоқтатады."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:54
 msgid "Your version of Linux Mint is no longer supported"
-msgstr ""
+msgstr "Linux Mint нұсқасына енді қолдау көрсетілмейді"
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:55
 #, python-brace-format
 msgid "It reached End-Of-Life (EOL) yesterday."
 msgid_plural "It reached End-Of-Life (EOL) {num_days} days ago."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Ол бір күн бұрын қолдау мерзімінің аяқталуына (EOL) жетті."
+msgstr[1] "Ол {num_days} күн бұрын қолдау мерзімінің аяқталуына (EOL) жетті."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:66
 #, python-format
 msgid "Visit %s to find information about newer releases."
-msgstr ""
+msgstr "Жаңа шығарылымдар туралы ақпаратты табу үшін %s сайтына кіріңіз."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:14
 msgid "Perform usrmerge conversion"
-msgstr ""
+msgstr "usrmerge түрлендіруін орындау"
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:39
 msgid "We recommend you convert your system with usrmerge."
-msgstr ""
+msgstr "Жүйеңізді usrmerge көмегімен түрлендіруді ұсынамыз."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:40
 msgid "This is done already for new installations of Linux Mint."
-msgstr ""
+msgstr "Бұл Linux Mint-тің жаңа орнатылымдары үшін жасалып қойған."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:41
 msgid "To convert your system, open a terminal and type:"
-msgstr ""
+msgstr "Жүйені түрлендіру үшін терминалды ашып, келесіні теріңіз:"
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:43
 msgid "You should reboot the computer once this completes."
-msgstr ""
+msgstr "Бұл аяқталғаннан кейін компьютерді қайта жүктеуіңіз керек."
 
 #: usr/share/linuxmint/mintreport/reports/100_usrmerge-not-done/MintReportInfo.py:49
 msgid "More information"
-msgstr ""
+msgstr "Қосымша ақпарат"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:17
 msgid "Remove conflicting indicators"
-msgstr ""
+msgstr "Қайшы келетін индикаторларды өшіру"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:37
 msgid "The following packages prevent tray icons from working properly:"
 msgstr ""
+"Келесі пакеттер жүйелік науа таңбашаларының дұрыс жұмыс істеуіне кедергі "
+"жасайды:"
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:39
 msgid "Note: You will need to log out after removing them."
-msgstr ""
+msgstr "Ескертпе: Оларды өшіргеннен кейін жүйеден шығу қажет болады."
 
 #: usr/share/linuxmint/mintreport/reports/200_xappstatusapplet-blocked/MintReportInfo.py:45
 msgid "Remove the conflicting packages."
-msgstr ""
+msgstr "Қайшы келетін пакеттерді өшіру."
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:26
 msgid "Install language packs"
-msgstr ""
+msgstr "Тілдік пакеттерді орнату"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:41
 msgid ""
 "The following localization packages are missing to properly support your "
 "language:"
-msgstr ""
+msgstr "Тіліңізді дұрыс қолдау үшін келесі локализация пакеттері жетіспейді:"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:48
 msgid "Install the Language Packs"
-msgstr ""
+msgstr "Тілдік пакеттерді орнату"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:19
 msgid "Install hardware drivers"
-msgstr ""
+msgstr "Құрылғы драйверлерін орнату"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:41
 msgid "Unknown"
-msgstr ""
+msgstr "Белгісіз"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:45
 #, python-format
 msgid "%s (unknown)"
-msgstr ""
+msgstr "%s (белгісіз)"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:100
 msgid "Hardware drivers are available for the following devices:"
-msgstr ""
+msgstr "Келесі құрылғылар үшін драйверлер қолжетімді:"
 
 #: usr/share/linuxmint/mintreport/reports/900_drivers/MintReportInfo.py:107
 msgid "Launch the Driver Manager"
-msgstr ""
+msgstr "Драйверлер менеджерін іске қосу"
