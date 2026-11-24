@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2026-11-12 13:58+0000\n"
-"PO-Revision-Date: 2026-01-10 17:53+0000\n"
+"PO-Revision-Date: 2026-11-18 15:35+0000\n"
 "Last-Translator: Niko Košćina <nikokoscina@icloud.com>\n"
 "Language-Team: Croatian <hr@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -16,8 +16,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2026-11-16 11:59+0000\n"
-"X-Generator: Launchpad (build 72ba15af7e009b17d4aa1467977127ac8392a4de)\n"
+"X-Launchpad-Export-Date: 2026-11-24 12:00+0000\n"
+"X-Generator: Launchpad (build 012091084314157d19ae714f55ef4c582ff0feb5)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:133
 #: usr/lib/linuxmint/mintreport/app.py:158
@@ -82,7 +82,7 @@ msgstr "GB"
 #: usr/lib/linuxmint/mintreport/app.py:387
 #: usr/lib/linuxmint/mintreport/app.py:389
 msgid "Storage"
-msgstr ""
+msgstr "Pohrana"
 
 #: usr/lib/linuxmint/mintreport/app.py:394
 msgid "Desktop Environment"
@@ -251,7 +251,7 @@ msgstr "Omogućeno (%s)"
 
 #: usr/lib/linuxmint/mintreport/bios.py:63
 msgid "Virtualization"
-msgstr ""
+msgstr "Virtualizacija"
 
 #: usr/lib/linuxmint/mintreport/bios.py:67
 #: usr/lib/linuxmint/mintreport/gpu.py:221
@@ -363,7 +363,7 @@ msgstr "%d Gbps"
 #: usr/lib/linuxmint/mintreport/usb.py:42
 #, python-format
 msgid "%s Mbps"
-msgstr ""
+msgstr "%s Mbps"
 
 #: usr/lib/linuxmint/mintreport/usb.py:168
 msgid "Speed"

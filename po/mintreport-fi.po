@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2026-11-12 13:58+0000\n"
-"PO-Revision-Date: 2026-11-13 18:41+0000\n"
-"Last-Translator: Kimmo Kujansuu <Unknown>\n"
+"PO-Revision-Date: 2026-11-17 15:09+0000\n"
+"Last-Translator: Hiiri522 <hhiiri522@gmail.com>\n"
 "Language-Team: Finnish <fi@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2026-11-16 11:59+0000\n"
-"X-Generator: Launchpad (build 72ba15af7e009b17d4aa1467977127ac8392a4de)\n"
+"X-Launchpad-Export-Date: 2026-11-24 12:00+0000\n"
+"X-Generator: Launchpad (build 012091084314157d19ae714f55ef4c582ff0feb5)\n"
 "Language: fi\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:133
@@ -26,7 +26,7 @@ msgstr "Tuntematon koko"
 
 #: usr/lib/linuxmint/mintreport/app.py:156
 msgid "Unknown CPU"
-msgstr "Tuntematon CPU"
+msgstr "Tuntematon suoritin"
 
 #: usr/lib/linuxmint/mintreport/app.py:197
 #: usr/lib/linuxmint/mintreport/app.py:463 generate_desktop_files:26
@@ -36,17 +36,17 @@ msgstr "Tietokoneen tiedot"
 
 #: usr/lib/linuxmint/mintreport/app.py:319
 msgid "Restore ignored reports"
-msgstr "Palauta sivuutetut raportit"
+msgstr "Palauta ohitetut raportit"
 
 #: usr/lib/linuxmint/mintreport/app.py:324
 #: usr/lib/linuxmint/mintreport/tray.py:62
 msgid "Quit"
-msgstr "Sulje"
+msgstr "Lopeta"
 
 #: usr/lib/linuxmint/mintreport/app.py:336
 #: usr/lib/linuxmint/mintreport/app.py:461
 msgid "About"
-msgstr "Tietoja"
+msgstr "Lisätietoa"
 
 #: usr/lib/linuxmint/mintreport/app.py:352
 msgid "Computer"
@@ -94,19 +94,18 @@ msgstr "Näyttöpalvelin"
 
 #: usr/lib/linuxmint/mintreport/app.py:505
 msgid "An error occurred while gathering the system information."
-msgstr "Tietojen keräämisessä tapahtui virhe."
+msgstr "Tietokoneen tietojen kerääminen epäonnistui."
 
 #: usr/lib/linuxmint/mintreport/app.py:516
 msgid "System information copied"
-msgstr "Tiedot kopioitu"
+msgstr "Tietokoneen tiedot kopioitu"
 
 #: usr/lib/linuxmint/mintreport/app.py:516
 msgid ""
 "Your system information was copied into your clipboard so you can paste it "
 "on the forums."
 msgstr ""
-"Tietokoneen tiedot kopioitiin leikepöydälle, voit liittää ohjelmiin tai "
-"foorumille."
+"Tietokoneen tiedot kopioitiin leikepöydällesi. Voit liittää ne foorumeille."
 
 #: usr/lib/linuxmint/mintreport/app.py:526
 msgid "System information uploaded"
@@ -118,31 +117,32 @@ msgid ""
 "Your system information was uploaded to %s. This link was placed in your "
 "clipboard."
 msgstr ""
-"Tietokoneen tiedot lähetettiin %s. Linkki tallennettiin leikepöydälle."
+"Tietokoneen tiedot lähetettiin sivustolle %s. Linkki tallennettiin "
+"leikepöydällesi."
 
 #: usr/lib/linuxmint/mintreport/app.py:528
 msgid "An error occurred while uploading the system information"
-msgstr "Tietokoneen tietojen lähettämisessä tapahtui virhe"
+msgstr "Tietokoneen tietojen lähettäminen epäonnistui"
 
 #: usr/lib/linuxmint/mintreport/app.py:528
 msgid ""
 "Copy and paste the system information manually into a pastebin site like "
 "https://pastebin.com."
 msgstr ""
-"Kopioi ja liitä tiedot manuaalisesti pastebin https://pastebin.com "
-"sivustolle."
+"Kopioi ja liitä tiedot manuaalisesti Pastebin-sivustolle osoitteessa "
+"https://pastebin.com."
 
 #: usr/lib/linuxmint/mintreport/app.py:624
 msgid "Ignore this report"
-msgstr "Ohita tämä raportti"
+msgstr "Ohita raportti"
 
 #: usr/lib/linuxmint/mintreport/app.py:640
 msgid "Are you sure you want to ignore this report?"
-msgstr "Haluatko varmasti ohittaa tämän raportin?"
+msgstr "Oletko varma, että haluat ohittaa raportin?"
 
 #: usr/lib/linuxmint/mintreport/app.py:641
 msgid "The report will be permanently ignored and will no longer be visible."
-msgstr "Raportti jätetään pysyvästi huomiotta, eikä se ole enää näkyvissä."
+msgstr "Raportti jätetään pysyvästi huomiotta, eikä se tule enää näkyviin."
 
 #: usr/lib/linuxmint/mintreport/app.py:730
 #, python-format
@@ -150,8 +150,8 @@ msgid ""
 "The debug symbols are missing for %(program)s.\n"
 "Please install %(package)s."
 msgstr ""
-"Ohjelmalta %(program)s puuttuvat virheenjäljityssymbolit.\n"
-"Asenna %(package)s."
+"Virheenetsintämerkit puuttuvat ohjelmalta %(program)s.\n"
+"Asenna paketit %(package)s."
 
 #: usr/lib/linuxmint/mintreport/app.py:744
 #, python-format
@@ -160,7 +160,7 @@ msgid ""
 "If you want to generate a stack trace for this crash report, please "
 "reinstall it."
 msgstr ""
-"Pakettia joka tarjoaa %s ei löytynyt.\n"
+"Pakettia, joka tarjoaa toiminnon %s, ei löytynyt.\n"
 "Jos haluat luoda pinolistauksen tähän virheraporttiin, asenna se uudelleen."
 
 #: usr/lib/linuxmint/mintreport/app.py:772
@@ -173,8 +173,9 @@ msgid ""
 msgstr ""
 "Tietokoneeseen asennetut binäärit eivät vastaa kaatumisen aikana suoritettua "
 "koodia.\n"
-"Ne luultavasti ovat päivitetty sen jälkeen.\n"
-"Pinolistaus löytyy \"Local Files\", mutta on luultavasti epätarkka."
+"Ne ovat luultavasti päivitetty sen jälkeen.\n"
+"Pinolistaus löytyy sijainnista \"Paikalliset tiedostot\", mutta on "
+"luultavasti epätarkka."
 
 #: usr/lib/linuxmint/mintreport/bios.py:22
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:10
@@ -190,7 +191,7 @@ msgstr "Emolevy"
 #: usr/lib/linuxmint/mintreport/gpu.py:220
 #: usr/lib/linuxmint/mintreport/pci.py:271
 msgid "Brand"
-msgstr "Merkki"
+msgstr "Valmistaja"
 
 #: usr/lib/linuxmint/mintreport/bios.py:34
 #: usr/lib/linuxmint/mintreport/bios.py:68
@@ -220,7 +221,7 @@ msgstr "Secure Boot"
 #: usr/lib/linuxmint/mintreport/bios.py:56
 #: usr/lib/linuxmint/mintreport/bios.py:60
 msgid "Disabled"
-msgstr "Ei käytössä"
+msgstr "Pois käytöstä"
 
 #: usr/lib/linuxmint/mintreport/bios.py:49
 #: usr/lib/linuxmint/mintreport/gpu.py:188
@@ -230,7 +231,7 @@ msgstr "Käytössä"
 #: usr/lib/linuxmint/mintreport/bios.py:52
 #: usr/lib/linuxmint/mintreport/bios.py:54
 msgid "Secure Boot mode"
-msgstr "Secure Boot moodi"
+msgstr "Secure Boot -tila"
 
 #: usr/lib/linuxmint/mintreport/bios.py:52
 msgid "Setup Mode (keys not enrolled)"

@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2026-11-12 13:58+0000\n"
-"PO-Revision-Date: 2025-12-08 13:59+0000\n"
+"PO-Revision-Date: 2026-11-17 10:09+0000\n"
 "Last-Translator: KAMI <kami911@gmail.com>\n"
 "Language-Team: Hungarian <hu@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2026-11-16 11:59+0000\n"
-"X-Generator: Launchpad (build 72ba15af7e009b17d4aa1467977127ac8392a4de)\n"
+"X-Launchpad-Export-Date: 2026-11-24 12:00+0000\n"
+"X-Generator: Launchpad (build 012091084314157d19ae714f55ef4c582ff0feb5)\n"
 "Language: hu\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:133
@@ -82,7 +82,7 @@ msgstr "GB"
 #: usr/lib/linuxmint/mintreport/app.py:387
 #: usr/lib/linuxmint/mintreport/app.py:389
 msgid "Storage"
-msgstr ""
+msgstr "Tároló"
 
 #: usr/lib/linuxmint/mintreport/app.py:394
 msgid "Desktop Environment"
@@ -251,7 +251,7 @@ msgstr "Bekapcsolva (%s)"
 
 #: usr/lib/linuxmint/mintreport/bios.py:63
 msgid "Virtualization"
-msgstr ""
+msgstr "Virtualizáció"
 
 #: usr/lib/linuxmint/mintreport/bios.py:67
 #: usr/lib/linuxmint/mintreport/gpu.py:221
@@ -363,7 +363,7 @@ msgstr "%d gigabit/másodperc"
 #: usr/lib/linuxmint/mintreport/usb.py:42
 #, python-format
 msgid "%s Mbps"
-msgstr ""
+msgstr "%s Mbps"
 
 #: usr/lib/linuxmint/mintreport/usb.py:168
 msgid "Speed"

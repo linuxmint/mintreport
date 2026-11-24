@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2026-11-12 13:58+0000\n"
-"PO-Revision-Date: 2026-11-12 18:29+0000\n"
+"PO-Revision-Date: 2026-11-21 10:37+0000\n"
 "Last-Translator: Quentin PAGÈS <Unknown>\n"
 "Language-Team: Occitan (post 1500) <oc@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Launchpad-Export-Date: 2026-11-16 11:59+0000\n"
-"X-Generator: Launchpad (build 72ba15af7e009b17d4aa1467977127ac8392a4de)\n"
+"X-Launchpad-Export-Date: 2026-11-24 12:00+0000\n"
+"X-Generator: Launchpad (build 012091084314157d19ae714f55ef4c582ff0feb5)\n"
 
 #: usr/lib/linuxmint/mintreport/app.py:133
 #: usr/lib/linuxmint/mintreport/app.py:158
@@ -109,7 +109,7 @@ msgstr ""
 
 #: usr/lib/linuxmint/mintreport/app.py:526
 msgid "System information uploaded"
-msgstr "Informacions sistèma actualizadas"
+msgstr "Informacions sistèma mandadas"
 
 #: usr/lib/linuxmint/mintreport/app.py:526
 #, python-format
@@ -247,7 +247,7 @@ msgstr "Mòde utilizaire (normal)"
 #: usr/lib/linuxmint/mintreport/gpu.py:218
 #, python-format
 msgid "Enabled (%s)"
-msgstr "Activada (%s)"
+msgstr "Activat (%s)"
 
 #: usr/lib/linuxmint/mintreport/bios.py:63
 msgid "Virtualization"
@@ -329,8 +329,7 @@ msgstr "Informacions sistèma copiadas"
 
 #: usr/lib/linuxmint/mintreport/pci.py:362
 msgid "The device information was copied into your clipboard."
-msgstr ""
-"Las informacions del periferics son estadas copiadas al quichapapièrs"
+msgstr "Las informacions del periferic son estadas copiadas al quichapapièrs"
 
 #: usr/lib/linuxmint/mintreport/tray.py:58
 msgid "Show System Reports"
@@ -338,7 +337,7 @@ msgstr "Afichar los senhalaments sistèma"
 
 #: usr/lib/linuxmint/mintreport/tray.py:136
 msgid "Some system reports require your attention"
-msgstr "D’unes senhalament sistèma demanda vòstra atencion"
+msgstr "D’unes senhalament sistèma demandan vòstra atencion"
 
 #: usr/lib/linuxmint/mintreport/tray.py:146
 msgid "System Snapshots"
@@ -400,7 +399,7 @@ msgstr "L’identificant del periferic es estat copiat al quichapapièrs."
 #: generate_desktop_files:54 generate_desktop_files:68
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:26
 msgid "Troubleshoot problems"
-msgstr "Reparacion dels problèmas"
+msgstr "Resolucion dels problèmas"
 
 #: generate_desktop_files:54 generate_desktop_files:68
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:13
@@ -409,7 +408,7 @@ msgstr "Rapòrts sistèma"
 
 #: generate_desktop_files:54
 msgid "Troubleshooting Tool"
-msgstr "Aisinas de reparacion de problèmas"
+msgstr "Aisinas de resolucion de problèmas"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:1
 msgid "Copy"
@@ -459,7 +458,7 @@ msgstr "Cap de problèma pas detectat"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:14
 msgid "Crash reports are not available"
-msgstr "Los rapòrt de plantatge son pas disponibles"
+msgstr "Los rapòrts de plantatge son pas disponibles"
 
 #: usr/share/linuxmint/mintreport/mintreport.ui.h:15
 msgid ""
@@ -599,7 +598,7 @@ msgstr "Una nòva version de Linux Mint es disponibla"
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:50
 #, python-format
 msgid "Visit %s for the latest announcements."
-msgstr "Consultatz %s per las darrièras anóncias."
+msgstr "Consultatz %s per legir las darrièras anóncias."
 
 #: usr/share/linuxmint/mintreport/reports/070_new-release/MintReportInfo.py:54
 #: usr/share/linuxmint/mintreport/reports/071_new_major_release/MintReportInfo.py:56
@@ -616,9 +615,9 @@ msgstr ""
 #, python-brace-format
 msgid "It will stop receiving support and updates in a day."
 msgid_plural "It will stop receiving support and updates in {num_days} days."
-msgstr[0] "Recebrà pas mai d’assisténcia e de mesas a jorn d’aquí un jorn."
+msgstr[0] "Recebrà pas mai d’assisténcia ni de mesas a jorn d’aquí un jorn."
 msgstr[1] ""
-"Recebrà pas mai d’assisténcia e de mesas a jorn d’aquí un {num_days} jorns."
+"Recebrà pas mai d’assisténcia ni de mesas a jorn d’aquí {num_days} jorns."
 
 #: usr/share/linuxmint/mintreport/reports/080_release-eol/MintReportInfo.py:54
 msgid "Your version of Linux Mint is no longer supported"
@@ -688,8 +687,8 @@ msgid ""
 "The following localization packages are missing to properly support your "
 "language:"
 msgstr ""
-"Los paquets lingüistics seguents son absents per suportar corrèctament "
-"vòstra lenga :"
+"Los paquets lingüistics seguents mancan per assegurar una presa en carga "
+"corrècta de vòstra lenga :"
 
 #: usr/share/linuxmint/mintreport/reports/500_install-language-packs/MintReportInfo.py:48
 msgid "Install the Language Packs"
