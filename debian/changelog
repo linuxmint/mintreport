@@ -1,3 +1,10 @@
+mintreport (1.6.7) adrien; urgency=medium
+
+  * l10n: Update translations
+  * l10n: Update files
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 24 Nov 2026 16:18:43 +0000
+
 mintreport (1.6.6) adrien; urgency=medium
 
   * l10n: Update translations
