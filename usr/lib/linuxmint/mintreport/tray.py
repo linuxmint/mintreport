@@ -1,9 +1,11 @@
 #!/usr/bin/python3
 import gi
+import json
 import os
 import psutil
 import setproctitle
 import subprocess
+import time
 import xapp.os
 import xapp.util
 gi.require_version("Gtk", "3.0")
@@ -44,6 +46,102 @@ class MonitoredProcess():
             except:
                 continue
         return False
+
+    # Returns the tooltip text and the progress (0..1, or None if unknown)
+    def get_status(self):
+        return (self.description, None, None)
+
+# Timeshift keeps a lock file saying which kind of run holds it ("backup" for the scheduled check,
+# "ondemand", "delete", "restore", "" for the window). Newer versions also publish what they are
+# doing and how far they have got in a status file next to it.
+TIMESHIFT_LOCK = "/var/run/lock/timeshift/lock"
+TIMESHIFT_STATUS = "/var/run/lock/timeshift/status"
+
+class TimeshiftProcess(MonitoredProcess):
+    def __init__(self):
+        MonitoredProcess.__init__(self, _("System Snapshots"), "timeshift", _("A Timeshift system snapshot is being created."), is_binary=True)
+        # the scheduled check whose task is being shown, and the last task it published
+        self.task_pid = None
+        self.task_action = ""
+
+    def read_lock(self):
+        try:
+            with open(TIMESHIFT_LOCK) as f:
+                fields = f.read().split(";")
+            pid = int(fields[0])
+            mode = fields[1].strip() if len(fields) > 1 else ""
+            if psutil.Process(pid).name().startswith("timeshift"):
+                return (pid, mode)
+        except (OSError, ValueError, psutil.Error):
+            pass
+        return (None, None)
+
+    def lock_age(self):
+        try:
+            return time.time() - os.stat(TIMESHIFT_LOCK).st_mtime
+        except OSError:
+            return 0
+
+    def read_status(self, pid):
+        try:
+            with open(TIMESHIFT_STATUS) as f:
+                status = json.load(f)
+            if status.get("pid") == pid:
+                return status
+        except (OSError, ValueError):
+            pass
+        return {}
+
+    def is_running(self):
+        pid, mode = self.read_lock()
+        if pid is None:
+            return False
+        if mode == "backup":
+            # The hourly check holds the lock for a few seconds even when nothing is due. Only show it
+            # once it has started a task, or has held the lock for longer than that (versions without
+            # the status file), then keep it shown until it ends, also between its steps.
+            if pid != self.task_pid and ("action" in self.read_status(pid) or self.lock_age() > 10):
+                self.task_pid = pid
+            return pid == self.task_pid
+        if mode == "" or mode.startswith("list"):
+            # the window, or a quick listing: only show while it publishes a task (creating, deleting...)
+            return "action" in self.read_status(pid)
+        return True
+
+    def get_status(self):
+        pid, mode = self.read_lock()
+        mode = mode or ""
+        status = self.read_status(pid) if pid is not None else {}
+        action = status.get("action", "")
+        if pid == self.task_pid:
+            # between two steps of a scheduled check there is no status file, keep its last task
+            if action:
+                self.task_action = action
+            else:
+                action = self.task_action
+
+        if action == "checking-space":
+            description = _("Timeshift is checking the free space for a new snapshot.")
+        elif action == "creating" or (action == "" and mode == "ondemand"):
+            description = _("A Timeshift system snapshot is being created.")
+        elif action == "deleting" or (action == "" and mode.startswith("delete")):
+            description = _("A Timeshift snapshot is being deleted.")
+        elif action in ("restoring", "comparing") or (action == "" and mode == "restore"):
+            description = _("A Timeshift snapshot is being restored.")
+        else:
+            description = _("Timeshift is running.")
+
+        progress = status.get("progress")
+        remaining = status.get("seconds_remaining", -1)
+        if progress is not None and progress >= 0:
+            description += "\n" + _("%d%% complete") % round(progress * 100)
+            if remaining is not None and remaining >= 0:
+                duration = "%d:%02d:%02d" % (remaining // 3600, remaining % 3600 // 60, remaining % 60)
+                description += ", " + _("%s remaining") % duration
+        else:
+            progress = None
+
+        return (description, progress, status.get("snapshot"))
 
 class MyApplication(Gtk.Application):
     # Main initialization routine
@@ -143,7 +241,7 @@ class MyApplication(Gtk.Application):
         if self.monitoring_process != None:
             return GLib.SOURCE_CONTINUE
         processes = []
-        processes.append(MonitoredProcess(_("System Snapshots"), "timeshift", _("A Timeshift system snapshot is being created."), is_binary=True))
+        processes.append(TimeshiftProcess())
         processes.append(MonitoredProcess(_("Automatic Updates"), "/usr/lib/linuxmint/mintUpdate/automatic_upgrades.py", _("Automatic updates are being installed.")))
         self.monitor_icon.set_visible(False)
         for process in processes:
@@ -153,11 +251,17 @@ class MyApplication(Gtk.Application):
                 self.monitoring_process = process
                 self.monitor_icon.set_visible(True)
                 self.monitor_icon.set_icon_name("xsi-run-symbolic")
-                tooltip = "<b>%s</b>\n%s" % (process.name, process.description)
-                self.monitor_icon.set_tooltip_text(tooltip)
+                self.update_monitor_icon()
                 # Start a clean up thread to hide the tray when it finishes
                 self.monitor_source_id = GLib.timeout_add_seconds(2, self.clean_up)
         return GLib.SOURCE_CONTINUE
+
+    def update_monitor_icon(self):
+        process = self.monitoring_process
+        description, progress, _snapshot = process.get_status()
+        self.monitor_icon.set_tooltip_text("<b>%s</b>\n%s" % (process.name, description))
+        # the percentage next to the icon, when the process publishes it
+        self.monitor_icon.set_label("" if progress is None else "%d%%" % round(progress * 100))
 
     def clean_up(self):
         if self.monitoring_process == None:
@@ -165,8 +269,11 @@ class MyApplication(Gtk.Application):
         if not self.monitoring_process.is_running():
             # The process is finished, hide the tray
             self.monitoring_process = None
+            self.monitor_icon.set_label("")
             self.monitor_icon.set_visible(False)
             GLib.source_remove(self.monitor_source_id)
+        else:
+            self.update_monitor_icon()
         return GLib.SOURCE_CONTINUE
 
 if __name__ == "__main__":
